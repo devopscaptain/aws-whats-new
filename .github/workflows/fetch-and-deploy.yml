@@ -7,13 +7,6 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths:
-      - 'src/**'
-      - 'public/**'
-      - 'index.html'
-      - 'package.json'
-      - 'vite.config.ts'
-      - 'tailwind.config.ts'
 
 permissions:
   contents: write
@@ -68,7 +61,6 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     needs: fetch-data
-    if: needs.fetch-data.outputs.data-changed == 'true' || github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
