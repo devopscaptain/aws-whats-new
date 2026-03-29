@@ -1,0 +1,49 @@
+import { useState, useCallback, useMemo } from 'react'
+import type { WhatsNewItem } from '../types/news'
+
+export type FilterMode = 'category' | 'service'
+
+export function useFilters(items: WhatsNewItem[]) {
+  const [activeFilters, setActiveFilters] = useState<Set<string>>(new Set())
+
+  // Build available categories from current items
+  const allCategories = useMemo(() => {
+    const counts = new Map<string, number>()
+    for (const item of items) {
+      for (const cat of item.categories) {
+        counts.set(cat, (counts.get(cat) ?? 0) + 1)
+      }
+    }
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 20)
+      .map(([cat]) => cat)
+  }, [items])
+
+  const toggleFilter = useCallback((tag: string) => {
+    setActiveFilters((prev) => {
+      const next = new Set(prev)
+      if (next.has(tag)) {
+        next.delete(tag)
+      } else {
+        next.add(tag)
+      }
+      return next
+    })
+  }, [])
+
+  const clearFilters = useCallback(() => {
+    setActiveFilters(new Set())
+  }, [])
+
+  const filtered = useMemo(() => {
+    if (activeFilters.size === 0) return items
+    return items.filter((item) =>
+      [...activeFilters].every(
+        (f) => item.categories.includes(f) || item.services.includes(f) || item.tags.includes(f.toLowerCase())
+      )
+    )
+  }, [items, activeFilters])
+
+  return { activeFilters, allCategories, toggleFilter, clearFilters, filtered }
+}
