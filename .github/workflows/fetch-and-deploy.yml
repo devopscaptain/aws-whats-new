@@ -30,6 +30,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Pull latest before fetch
+        run: git pull --rebase origin main
+
       - name: Fetch AWS What's New RSS
         run: node scripts/fetch-rss.js
 
@@ -42,7 +45,6 @@ jobs:
             echo "No new data"
           else
             git commit -m "chore(data): sync AWS What's New $(date -u +%Y-%m-%d)"
-            git pull --rebase origin main
             git push
           fi
 
