@@ -1,7 +1,191 @@
 {
-  "lastUpdated": "2026-04-01T09:07:19.872Z",
-  "itemCount": 131,
+  "lastUpdated": "2026-04-02T08:59:36.708Z",
+  "itemCount": 141,
   "items": [
+    {
+      "id": "2422bf1aa1c1df20",
+      "title": "Amazon SES Mail Manager adds new features for enhanced security and email processing",
+      "description": "Amazon Simple Email Service (SES) Mail Manager now offers enhancements to email security and processing while simplifying email infrastructure migrations. These enhancements include optional TLS and certificate-based authentication (mTLS) support in Ingress Endpoint, and two new rule actions: Invoke Lambda function and Bounce. These enhancements benefit organizations seeking to maintain compatibility with legacy systems while implementing stronger security controls, and advanced email routing capabilities. For example customers can now configure STARTTLS as an optional TLS configuration, enabl",
+      "descriptionHtml": "&lt;p&gt;Amazon Simple Email Service (SES) Mail Manager now offers enhancements to email security and processing while simplifying email infrastructure migrations. These enhancements include optional TLS and certificate-based authentication (mTLS) support in Ingress Endpoint, and two new rule actions: Invoke Lambda function and Bounce.&lt;br&gt; &lt;br&gt; These enhancements benefit organizations seeking to maintain compatibility with legacy systems while implementing stronger security controls, and advanced email routing capabilities. For example customers can now configure STARTTLS as an optional TLS configuration, enabling legacy systems that don't support STARTTLS to connect to Mail Manager. With Mutual TLS (mTLS) in Ingress Endpoint customers can now used certificate-based authentication for enhanced security. The Invoke Lambda function rule action allows direct invocation of AWS Lambda functions from rule sets, enabling custom email processing workflows and the Bounce rule action provides RFC-compliant SMTP responses to sending servers.&lt;/p&gt; \n&lt;p&gt;These new enhancements are available today in all AWS Regions where Amazon SES Mail Manager is offered, except for the Middle East (UAE) and Middle East (Bahrain) regions. To learn more about Amazon SES Mail Manager and how these features can help streamline your email operations, visit &lt;a href=\"https://aws.amazon.com/ses/\"&gt;https://aws.amazon.com/ses/&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/ses-mail-manager-introduces-new-features/",
+      "publishedAt": "2026-04-01T21:13:00.000Z",
+      "updatedAt": "2026-04-01T21:13:00.000Z",
+      "categories": [
+        "Amazon Simple Email Service"
+      ],
+      "services": [
+        "SES"
+      ],
+      "tags": [
+        "amazon simple email service",
+        "ses"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b163a62faf9bbeb4",
+      "title": "Amazon ECS announces Managed Daemons for ECS Managed Instances",
+      "description": "Amazon ECS announces Managed Daemons for ECS Managed Instances , enabling organizations to centrally deploy and manage software agents such as security, observability, and networking across their container infrastructure independent of application deployments. By decoupling daemon lifecycle management from application operations, Managed Daemons helps guarantee reliable agent coverage across all workloads, simplifies deployments and version updates, and improves resource utilization by running a single daemon task per managed instance. With Managed Daemons, you can create a daemon for one or m",
+      "descriptionHtml": "&lt;p&gt;Amazon ECS announces Managed Daemons for &lt;a href=\"https://aws.amazon.com/ecs/managed-instances/\"&gt;ECS Managed Instances&lt;/a&gt;, enabling organizations to centrally deploy and manage software agents such as security, observability, and networking across their container infrastructure independent of application deployments. By decoupling daemon lifecycle management from application operations, Managed Daemons helps guarantee reliable agent coverage across all workloads, simplifies deployments and version updates, and improves resource utilization by running a single daemon task per managed instance.&lt;br&gt; &lt;br&gt; With Managed Daemons, you can create a daemon for one or more Managed Instances capacity providers in your cluster. ECS places exactly one daemon task per managed instance and guarantees that daemons are running before any application tasks are placed, so cross-cutting functions such as logging, tracing, and metrics collection are always available. ECS orchestrates daemons as independent processes bound to the instance lifecycle rather than individual application tasks, allowing platform administrators to manage them independently from application teams. When you update daemon versions, ECS drains existing instances and provisions new instances with the updated daemon, automatically replacing service tasks with circuit breaker protection and rollback capabilities for reliable coverage across all your workloads.&lt;br&gt; &lt;br&gt; To get started, you can use AWS Console, CLI, CloudFormation, or AWS SDKs to register a daemon task definition specifying your container image, then create a daemon with associated capacity providers in your clusters. This feature is now available in all AWS Regions. For more details, refer to our &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons.html\"&gt;documentation&lt;/a&gt; and launch &lt;a href=\"http://aws.amazon.com/blogs/aws/announcing-managed-daemon-support-for-amazon-ecs-managed-instances\"&gt;blog post&lt;/a&gt;. There is no additional cost - you pay only for the standard compute resources consumed by your daemon tasks.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ecs-managed-daemons/",
+      "publishedAt": "2026-04-01T21:00:00.000Z",
+      "updatedAt": "2026-04-01T21:00:00.000Z",
+      "categories": [
+        "Amazon Ecs",
+        "Containers",
+        "Compute"
+      ],
+      "services": [
+        "ECS"
+      ],
+      "tags": [
+        "amazon ecs",
+        "containers",
+        "compute",
+        "ecs"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "08a7b69ab615f82c",
+      "title": "Amazon SageMaker Data Agent now supports geo-specific inference for Japan and Australia",
+      "description": "Amazon SageMaker Data Agent now supports cross-region inference profiles for Japan and Australia through Amazon Bedrock. With this update, inference requests from Data Agent in the Asia Pacific (Tokyo) and Asia Pacific (Sydney) regions are processed within their respective geographies, supporting data sovereignty requirements for customers in Japan and Australia. Data Agent provides an AI-powered conversational experience for data exploration, Python and SQL code generation, troubleshooting, and analytics directly within Amazon SageMaker Unified Studio Notebook and Query Editor. With geo-speci",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Data Agent now supports cross-region inference profiles for Japan and Australia through Amazon Bedrock. With this update, inference requests from Data Agent in the Asia Pacific (Tokyo) and Asia Pacific (Sydney) regions are processed within their respective geographies, supporting data sovereignty requirements for customers in Japan and Australia.&lt;/p&gt; \n&lt;p&gt;Data Agent provides an AI-powered conversational experience for data exploration, Python and SQL code generation, troubleshooting, and analytics directly within Amazon SageMaker Unified Studio Notebook and Query Editor. With geo-specific inference through JP-CRIS (Japan Cross-Region Inference) and AU-CRIS (Australia Cross-Region Inference), you can use Data Agent with confidence that your inference requests are routed exclusively within your geography over the AWS Global Network. Customers in regulated industries such as financial services, healthcare, and the public sector can meet data residency requirements while using the full set of Data Agent capabilities.&lt;/p&gt; \n&lt;p&gt;To get started, open a project in &lt;a href=\"https://aws.amazon.com/sagemaker/unified-studio/\" style=\"background-color: rgb(255,255,255);\"&gt;SageMaker Unified Studio&lt;/a&gt; in a supported region and use Data Agent in notebooks or Query Editor. For more information, see SageMaker Data Agent in the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started.html\" style=\"background-color: rgb(255,255,255);\"&gt;Amazon SageMaker Unified Studio&lt;/a&gt; User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/sage-maker-da-infr-jp-au/",
+      "publishedAt": "2026-04-01T20:30:00.000Z",
+      "updatedAt": "2026-04-01T20:30:00.000Z",
+      "categories": [],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8b7c41da96e4f403",
+      "title": "AWS VPC Encryption Controls now available in AWS GovCloud (US) Regions",
+      "description": "AWS launches VPC Encryption Controls in AWS GovCloud (US) Regions to make it easy to audit and enforce encryption in transit within and across Amazon Virtual Private Clouds (VPC), and demonstrate compliance with encryption standards. You can turn it on your existing VPCs to monitor encryption status of traffic flows and identify VPC resources that are unintentionally allowing plaintext traffic. This feature also makes it easy to enforce encryption across different network paths by automatically (and transparently) turning on hardware-based AES-256 encryption on traffic between multiple VPC res",
+      "descriptionHtml": "&lt;p&gt;AWS launches VPC Encryption Controls in AWS GovCloud (US) Regions to make it easy to audit and enforce encryption in transit within and across Amazon Virtual Private Clouds (VPC), and demonstrate compliance with encryption standards. You can turn it on your existing VPCs to monitor encryption status of traffic flows and identify VPC resources that are unintentionally allowing plaintext traffic. This feature also makes it easy to enforce encryption across different network paths by automatically (and transparently) turning on hardware-based AES-256 encryption on traffic between multiple VPC resources including AWS Fargate, Network Load Balancers, and Application Load Balancers.&lt;/p&gt; \n&lt;p&gt;To meet stringent compliance standards like HIPAA, PCI DSS, FedRAMP, and FIPS 140-2, government customers rely on both application layer encryption and the hardware-based encryption that AWS offers across different network paths. AWS provides hardware-based AES-256 encryption transparently between modern EC2 Nitro instances. AWS also encrypts all network traffic between AWS data centers in and across Availability Zones, and AWS Regions before the traffic leaves our secure facilities. All inter-region traffic that uses VPC Peering, Transit Gateway Peering, or AWS Cloud WAN receives an additional layer of transparent encryption before leaving AWS data centers. Prior to this release, customers had to track and confirm encryption across all network paths. With VPC Encryption Controls, customers can now monitor, enforce and demonstrate encryption within and across Virtual Private Clouds (VPCs) in just a few clicks. Your information security team can turn it on centrally to maintain a secure and compliant environment, and generate audit logs for compliance and reporting.&lt;/p&gt; \n&lt;p&gt;With this launch, VPC Encryption Controls is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions. To learn more about this feature and its use cases, please see our &lt;a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/vpc-encryption-controls.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-vpc-encryption-controls/",
+      "publishedAt": "2026-04-01T18:20:00.000Z",
+      "updatedAt": "2026-04-01T18:20:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Amazon Vpc",
+        "Networking And Content Delivery"
+      ],
+      "services": [
+        "VPC"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "amazon vpc",
+        "networking and content delivery",
+        "vpc"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0def2dca1dc98b4d",
+      "title": "Amazon CloudFront now supports SHA-256 for signed URLs and signed cookies",
+      "description": "Amazon CloudFront now supports SHA-256 as a hash algorithm for creating signed URLs and signed cookies. SHA-256 provides an improved security posture with stronger collision detection and alignment with modern cryptographic standards, giving you stronger cryptographic signing when restricting access to content. Previously, CloudFront signed URLs and signed cookies used SHA-1 exclusively for signature generation. This feature helps you meet security and compliance requirements that mandate SHA-256 for digital signatures, while also future-proofing your content delivery workflows. To use SHA-256",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudFront now supports SHA-256 as a hash algorithm for creating signed URLs and signed cookies. SHA-256 provides an improved security posture with stronger collision detection and alignment with modern cryptographic standards, giving you stronger cryptographic signing when restricting access to content. Previously, CloudFront signed URLs and signed cookies used SHA-1 exclusively for signature generation. This feature helps you meet security and compliance requirements that mandate SHA-256 for digital signatures, while also future-proofing your content delivery workflows.&lt;br&gt; &lt;br&gt; To use SHA-256, include the &lt;i&gt;Hash-Algorithm=SHA256&lt;/i&gt; query parameter in your signed URLs, or the &lt;i&gt;CloudFront-Hash-Algorithm=SHA256&lt;/i&gt; cookie attribute for signed cookies. Existing signed URLs and signed cookies that don't specify a hash algorithm continue to use SHA-1, so this change is fully backwards compatible.&lt;/p&gt; \n&lt;p&gt;This feature is available in all edge locations where Amazon CloudFront is available. There is no additional cost to use SHA-256 signing. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-creating-signed-url-canned-policy.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Create a signed URL using a canned policy&lt;/a&gt; or &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-setting-signed-cookie-canned-policy.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Set signed cookies using a canned policy&lt;/a&gt; in the &lt;i&gt;Amazon CloudFront Developer Guide&lt;/i&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-cloudfront-sha-256-signed-urls/",
+      "publishedAt": "2026-04-01T17:38:00.000Z",
+      "updatedAt": "2026-04-01T17:38:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "Amazon Cloudfront"
+      ],
+      "services": [
+        "CloudFront"
+      ],
+      "tags": [
+        "networking and content delivery",
+        "amazon cloudfront",
+        "cloudfront"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "208b2c3409248385",
+      "title": "Amazon RDS for Oracle now supports cross-account snapshot sharing with additional storage volumes",
+      "description": "Amazon RDS for Oracle now supports cross-account snapshot sharing for database instances with additional storage volumes. Additional storage volumes allow customers to scale database storage up to 256 TiB by adding up to three storage volumes, each with up to 64 TiB, in addition to the primary storage volume. With this launch, customers can create, share, and copy a database snapshot across AWS accounts for database instances set up with additional storage volumes. Cross account snapshots enable customers to set up isolated backup environments in separate accounts for compliance requirements a",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/oracle/\"&gt;Amazon RDS for Oracle&lt;/a&gt; now supports cross-account snapshot sharing for database instances with additional storage volumes. Additional storage volumes allow customers to scale database storage up to 256 TiB by adding up to three storage volumes, each with up to 64 TiB, in addition to the primary storage volume. With this launch, customers can create, share, and copy a database snapshot across AWS accounts for database instances set up with additional storage volumes. Cross account snapshots enable customers to set up isolated backup environments in separate accounts for compliance requirements and to perform diagnostics, such as investigating production issues by restoring database snapshots in a separate account for development and testing.&lt;br&gt; &lt;br&gt; Cross account snapshots for database instances with additional storage volumes preserve the storage layout of the original database instance, including the configuration of additional storage volumes. When a snapshot is shared to a target AWS account, authorized users in the target account can restore it to another database instance, copy the snapshot within the same or different AWS Region, or create independent backups under different AWS Identity and Access Management (IAM) access permissions for backup and disaster recovery.&lt;br&gt; &lt;br&gt; Cross-account snapshot sharing with additional storage volumes is available in all AWS commercial Regions. Customers can start using this feature today through the AWS Management Console, AWS CLI, or AWS SDKs. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSnapshot.html\"&gt;Sharing a DB snapshot for Amazon RDS&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CopySnapshot.html\"&gt;Copying a DB snapshot for Amazon RDS&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/User_Oracle_AdditionalStorage.html\"&gt;Working with storage in RDS for Oracle&lt;/a&gt; in the Amazon RDS User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/rds-oracle-cross-account-snapshot-sharing-additional-storage-volume/",
+      "publishedAt": "2026-04-01T15:00:00.000Z",
+      "updatedAt": "2026-04-01T15:00:00.000Z",
+      "categories": [
+        "Amazon Rds",
+        "Amazon Rds For Oracle",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "amazon rds",
+        "amazon rds for oracle",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d02fd5f971cf79dd",
+      "title": "Amazon Bedrock now supports structured outputs to AWS GovCloud (US) Regions",
+      "description": "Amazon Bedrock is a fully managed service that provides access to a wide selection of high-performing foundation models from leading AI companies through a single API. Today, Amazon Bedrock expands structured outputs support to AWS GovCloud (US) Regions. Structured outputs enables foundation models to return consistent, schema-compliant, machine-readable responses—making it well-suited for government and regulated workloads that must meet strict compliance and data handling requirements. Structured outputs helps with common production tasks, such as extracting key fields and powering workflows",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock is a fully managed service that provides access to a wide selection of high-performing foundation models from leading AI companies through a single API. Today, Amazon Bedrock expands structured outputs support to AWS GovCloud (US) Regions. Structured outputs enables foundation models to return consistent, schema-compliant, machine-readable responses—making it well-suited for government and regulated workloads that must meet strict compliance and data handling requirements.&lt;/p&gt; \n&lt;p&gt;Structured outputs helps with common production tasks, such as extracting key fields and powering workflows that use APIs or tools, where even minor formatting errors can break downstream systems. By ensuring schema compliance, it reduces the need for custom validation logic and lowers operational overhead by minimizing failed requests and retries—so you can confidently deploy AI applications that require predictable, machine-readable outputs. You can use structured outputs either by defining a JSON schema that describes your desired response format or by using strict tool definitions to ensure a model's tool calls match your specifications.&lt;/p&gt; \n&lt;p&gt;Structured outputs is now generally available in all commercial AWS and AWS GovCloud (US)&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/bedrock.html\" target=\"_blank\"&gt;Regions&lt;/a&gt;&amp;nbsp;where Amazon Bedrock is supported. To learn more about structured outputs and the supported models, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/structured-output.html\" target=\"_blank\"&gt;Amazon Bedrock documentation.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-structured-outputs-govcloud/",
+      "publishedAt": "2026-04-01T10:00:00.000Z",
+      "updatedAt": "2026-04-01T10:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "156a1b1fffbaa3cc",
+      "title": "AWS Managed Microsoft AD adds Multi-Region replication for Opt-In regions",
+      "description": "AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, now supports Multi-Region replication in AWS Opt-In regions. This expands the existing Multi-Region replication capability to additional AWS regions, eliminating the need to create and manually synchronize independent directories in each region and allowing domain-joined workloads in those regions to connect to AWS Managed Microsoft AD. With automated Multi-Region replication, AWS Managed Microsoft AD handles inter-region networking, deploys domain controllers in separate Availability Zones per region",
+      "descriptionHtml": "&lt;p&gt;AWS Directory Service for Microsoft Active Directory, also known as AWS Managed Microsoft AD, now supports Multi-Region replication in AWS Opt-In regions. This expands the existing Multi-Region replication capability to&amp;nbsp;additional&amp;nbsp;AWS regions,&amp;nbsp;eliminating&amp;nbsp;the need to create and manually synchronize independent directories in each region&amp;nbsp;and allowing domain-joined workloads in those regions to connect to AWS Managed Microsoft AD.&lt;/p&gt; \n&lt;p&gt;With automated Multi-Region replication, AWS Managed Microsoft AD handles inter-region networking, deploys domain controllers in separate Availability Zones per region, and replicates all directory data including users, groups, Group Policy Objects, and schema. The service configures an Active Directory site per region to&amp;nbsp;optimize&amp;nbsp;authentication performance and minimize cross-region data transfer costs.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Multi-Region replication is available in&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.html\"&gt;AWS Opt-In regions&lt;/a&gt;&amp;nbsp;where AWS Managed Microsoft AD is available, except the Middle East (UAE) and Middle East (Bahrain) Regions. You pay by the hour for the domain controllers in each region, plus the cross-region data transfer.&amp;nbsp; To get started, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_configure_multi_region_replication.html\"&gt;Configure Multi-Region replication guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/multi-region-opt-in-aws-microsoft-ad/",
+      "publishedAt": "2026-04-01T07:00:00.000Z",
+      "updatedAt": "2026-04-01T07:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "AWS Directory Service"
+      ],
+      "services": [],
+      "tags": [
+        "security identity and compliance",
+        "aws directory service"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f33274605a8e8b71",
+      "title": "Oracle Database@AWS launches sub-millisecond network latency for high performance applications",
+      "description": "Today, Oracle Database@AWS (ODB@AWS) announced high performance networking that provides customers consistent sub-millisecond roundtrip latency from their AWS applications to the database. Many applications such as payment processing, securities trading, and high volume transaction processing require predictable and consistent low-latency network connectivity to the application database. Customers who run such latency-sensitive applications on Oracle Exadata systems on-premises optimize their infrastructure to obtain the performance that these applications require. With high performance networ",
+      "descriptionHtml": "&lt;p&gt;Today,&lt;b&gt; &lt;/b&gt;&lt;a href=\"https://aws.amazon.com/marketplace/featured-seller/oracle/\" target=\"_blank\"&gt;Oracle Database@AWS&lt;/a&gt; (ODB@AWS) announced high performance networking that provides customers consistent sub-millisecond roundtrip latency from their AWS applications to the database. Many applications such as payment processing, securities trading, and high volume transaction processing require predictable and consistent low-latency network connectivity to the application database. Customers who run such latency-sensitive applications on Oracle Exadata systems on-premises optimize their infrastructure to obtain the performance that these applications require. With high performance networking for ODB@AWS, customers can now seamlessly migrate these applications to an equivalent optimized environment on AWS.&lt;br&gt; &lt;br&gt; ODB@AWS automatically provides consistent and predictable low-latency network connectivity from Amazon EC2 instances to ODB@AWS databases through optimized placement of compute instances. When customers create an ODB@AWS network for their databases, they can now launch placement optimized Amazon EC2 instances with consistent, sub-millisecond latency network connectivity to their databases using existing Amazon EC2 APIs and workflows, such as launching new EC2 instances, or reserving compute capacity with EC2 On-Demand Capacity Reservations. There is no additional charge for EC2 instances using optimized placement for connectivity to ODB@AWS databases.&lt;br&gt; &lt;br&gt; The feature is available in the US-East-2 (Ohio), CA-Central-1 (Canada Central), EU-Central-1 (Frankfurt), EU-West-1 (Dublin), AP-Northeast-1 (Tokyo), and AP-Southeast-2 (Sydney) AWS Regions, with more Regions coming soon. For more information, see &lt;a href=\"https://docs.aws.amazon.com/odb/latest/UserGuide/high-performance-networking.html\" target=\"_blank\"&gt;High performance networking for Oracle Database@AWS&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/oracle-database-aws-launches-high-performance-networking/",
+      "publishedAt": "2026-04-01T07:00:00.000Z",
+      "updatedAt": "2026-04-01T07:00:00.000Z",
+      "categories": [
+        "Databases"
+      ],
+      "services": [],
+      "tags": [
+        "databases"
+      ],
+      "isNew": true
+    },
     {
       "id": "83bb9aa22149501f",
       "title": "Amazon CloudWatch now supports ingesting Security Hub CSPM findings with organization-wide enablement",
@@ -262,7 +446,7 @@
       "id": "785f493104948ecd",
       "title": "AWS Service Availability Updates",
       "description": "We’re announcing availability changes to the following AWS services and features. Services moving to Maintenance Services moving to maintenance will no longer be accessible to new customers starting April 30, 2026. Customers already using these services and features can continue to do so. AWS will continue to operate and support these services and features. We recommend that customers learn about the changes in the product pages and documentation. Amazon Application Recovery Controller (ARC) - Readiness Check Feature Amazon Comprehend - Topic Modeling, Event Detection, and Prompt Safety Classi",
-      "descriptionHtml": "&lt;p&gt;We’re announcing availability changes to the following AWS services and features.&lt;br&gt; &lt;br&gt; Services moving to Maintenance&lt;/p&gt; \n&lt;p&gt;Services moving to maintenance will no longer be accessible to new customers starting April 30, 2026. Customers already using these services and features can continue to do so. AWS will continue to operate and support these services and features. We recommend that customers learn about the changes in the product pages and documentation.&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/r53recovery/latest/dg/arc-readiness-availability-change.html\"&gt;Amazon Application Recovery Controller (ARC) - Readiness Check Feature&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/comprehend/latest/dg/comprehend-availability-change.html\"&gt;Amazon Comprehend - Topic Modeling, Event Detection, and Prompt Safety Classification Features&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/rekognition/latest/dg/rekognition-streaming-video-analysis-availability-change.html\"&gt;Amazon Rekognition - Streaming Events and Batch Image Content Moderation Features&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/sns/latest/dg/sns-message-data-protection-availability-change.html\"&gt;Amazon Simple Notification Service (SNS) - Message Data Protection (MDP) Feature&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.html\"&gt;AWS App Runner&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html\"&gt;AWS Audit Manager&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html\"&gt;AWS CloudTrail Lake&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/awsglue-ray-jobs-availability-change.html\"&gt;AWS Glue - Ray Jobs Feature&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html\"&gt;AWS IoT FleetWise&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Services entering Sunset&lt;/p&gt; \n&lt;p&gt;The following services are entering sunset, and we are announcing the date upon which we will end operations and support of the service. Customers using these services should click on the links below to understand the sunset timeline and begin planning migration to alternatives as recommended in the updated service web pages and documentation.&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS-Custom-for-Oracle-end-of-support.html\"&gt;Amazon RDS Custom for Oracle&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html\"&gt;Amazon WorkMail&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/workspacesthinclient-end-of-support.html\"&gt;Amazon WorkSpaces Thin Client&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/smc/latest/ag/smc-end-of-support.html\"&gt;AWS Service Management Connector&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Services reaching End of Support&lt;/p&gt; \n&lt;p&gt;The following feature has reached end of support and is no longer available as of March 31, 2026.&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;Amazon Chime SDK – Proxy Sessions&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;For customers affected by these changes, we've prepared comprehensive migration guides, and our support teams are ready to assist with your transition. Visit&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/service-lifecycle.html\"&gt;AWS Product Lifecycle Page&lt;/a&gt;&amp;nbsp;to learn more, and subscribe to the RSS feed for future updates.&amp;nbsp;&lt;/p&gt;",
+      "descriptionHtml": "&lt;p&gt;We’re announcing availability changes to the following AWS services and features.&lt;br&gt; &lt;br&gt; Services moving to Maintenance&lt;/p&gt; \n&lt;p&gt;Services moving to maintenance will no longer be accessible to new customers starting April 30, 2026. Customers already using these services and features can continue to do so. AWS will continue to operate and support these services and features. We recommend that customers learn about the changes in the product pages and documentation.&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/r53recovery/latest/dg/arc-readiness-availability-change.html\"&gt;Amazon Application Recovery Controller (ARC) - Readiness Check Feature&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/comprehend/latest/dg/comprehend-availability-change.html\"&gt;Amazon Comprehend - Topic Modeling, Event Detection, and Prompt Safety Classification Features&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/rekognition/latest/dg/rekognition-streaming-video-analysis-availability-change.html\"&gt;Amazon Rekognition - Streaming Events and Batch Image Content Moderation Features&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/sns/latest/dg/sns-message-data-protection-availability-change.html\"&gt;Amazon Simple Notification Service (SNS) - Message Data Protection (MDP) Feature&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/apprunner/latest/dg/apprunner-availability-change.html\"&gt;AWS App Runner&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/audit-manager/latest/userguide/audit-manager-availability-change.html\"&gt;AWS Audit Manager&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake-service-availability-change.html\"&gt;AWS CloudTrail Lake&lt;/a&gt;&amp;nbsp;(CloudTrail Lake will stop accepting new customers on May 31, 2026)&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/awsglue-ray-jobs-availability-change.html\"&gt;AWS Glue - Ray Jobs Feature&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/iot-fleetwise/latest/developerguide/iotfleetwise-availability-change.html\"&gt;AWS IoT FleetWise&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Services entering Sunset&lt;/p&gt; \n&lt;p&gt;The following services are entering sunset, and we are announcing the date upon which we will end operations and support of the service. Customers using these services should click on the links below to understand the sunset timeline and begin planning migration to alternatives as recommended in the updated service web pages and documentation.&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS-Custom-for-Oracle-end-of-support.html\"&gt;Amazon RDS Custom for Oracle&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/workmail/latest/adminguide/workmail-end-of-support.html\"&gt;Amazon WorkMail&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/workspaces-thin-client/latest/ug/workspacesthinclient-end-of-support.html\"&gt;Amazon WorkSpaces Thin Client&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/smc/latest/ag/smc-end-of-support.html\"&gt;AWS Service Management Connector&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Services reaching End of Support&lt;/p&gt; \n&lt;p&gt;The following feature has reached end of support and is no longer available as of March 31, 2026.&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;Amazon Chime SDK – Proxy Sessions&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;For customers affected by these changes, we've prepared comprehensive migration guides, and our support teams are ready to assist with your transition. Visit&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/service-lifecycle.html\"&gt;AWS Product Lifecycle Page&lt;/a&gt;&amp;nbsp;to learn more, and subscribe to the RSS feed for future updates.&amp;nbsp;&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-service-availability/",
       "publishedAt": "2026-03-31T17:00:00.000Z",
       "updatedAt": "2026-03-31T17:00:00.000Z",
@@ -376,6 +560,32 @@
         "contact center",
         "amazon connect",
         "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3163d7e2b1ce0e16",
+      "title": "AWS Direct Connect now supports AWS CloudFormation",
+      "description": "AWS Direct Connect now supports AWS CloudFormation, enabling infrastructure-as-code provisioning of Direct Connect resources. This integration allows you to define your entire Direct Connect topology in CloudFormation templates alongside other AWS resources, enabling repeatable, version-controlled deployments with drift detection and change management capabilities. You can now automate creation and management of connections, virtual interfaces, Direct Connect gateways, Link Aggregation Groups (LAGs), and BGP peering configurations. CloudFormation support for Direct Connect is available in all ",
+      "descriptionHtml": "&lt;p&gt;AWS Direct Connect now supports AWS CloudFormation, enabling infrastructure-as-code provisioning of Direct Connect resources. This integration allows you to define your entire Direct Connect topology in CloudFormation templates alongside other AWS resources, enabling repeatable, version-controlled deployments with drift detection and change management capabilities. You can now automate creation and management of connections, virtual interfaces, Direct Connect gateways, Link Aggregation Groups (LAGs), and BGP peering configurations.&lt;/p&gt; \n&lt;p&gt;CloudFormation support for Direct Connect is available in all AWS Regions globally.&lt;/p&gt; \n&lt;p&gt;To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/cloudformation/\" target=\"_blank\"&gt;AWS CloudFormation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/directconnect/\" target=\"_blank\"&gt;AWS Direct Connect&lt;/a&gt; documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-direct-connect-supports-aws-cloudformation/",
+      "publishedAt": "2026-03-31T15:00:00.000Z",
+      "updatedAt": "2026-03-31T15:00:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "AWS Direct Connect"
+      ],
+      "services": [
+        "Direct Connect",
+        "Connect",
+        "CloudFormation"
+      ],
+      "tags": [
+        "networking and content delivery",
+        "aws direct connect",
+        "direct connect",
+        "connect",
+        "cloudformation"
       ],
       "isNew": true
     },
@@ -1302,7 +1512,7 @@
         "aws firewall manager",
         "security identity and compliance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b86991888f1f2752",
@@ -1323,7 +1533,7 @@
         "developer tools",
         "serverless"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b8f3fa4157b246a6",
@@ -1342,7 +1552,7 @@
         "batch",
         "health"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "95fbbe0d807185f0",
@@ -1364,7 +1574,7 @@
         "analytics",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "67031450eb5358e0",
@@ -1388,7 +1598,7 @@
         "developer tools",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "23b9a3ccdddde3c0",
@@ -1407,7 +1617,7 @@
         "batch",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "15dabedfc93f0482",
@@ -1433,7 +1643,7 @@
         "route 53",
         "iam"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "365530bf3ec04f54",
@@ -1446,7 +1656,7 @@
       "categories": [],
       "services": [],
       "tags": [],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "76299fc598735b94",
@@ -1468,7 +1678,7 @@
         "amazon aurora",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f52c03e01eefe714",
@@ -1490,7 +1700,7 @@
         "databases",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "083f3c4d5a084acd",
@@ -1503,7 +1713,7 @@
       "categories": [],
       "services": [],
       "tags": [],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "95f44a02ffbc7a44",
@@ -1516,7 +1726,7 @@
       "categories": [],
       "services": [],
       "tags": [],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "777521d912fc894b",
@@ -1540,7 +1750,7 @@
         "artificial intelligence",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "29cc1e7b107be594",
@@ -1564,7 +1774,7 @@
         "storage",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "aba117677dcff424",
@@ -1590,7 +1800,7 @@
         "backup",
         "documentdb"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e066c4d2e705b93e",
@@ -1612,7 +1822,7 @@
         "aws transfer family",
         "transfer family"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "00f5e402a692e459",
