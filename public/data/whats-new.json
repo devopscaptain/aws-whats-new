@@ -1,7 +1,155 @@
 {
-  "lastUpdated": "2026-04-08T09:03:27.313Z",
-  "itemCount": 180,
+  "lastUpdated": "2026-04-09T09:09:58.489Z",
+  "itemCount": 188,
   "items": [
+    {
+      "id": "3dcf17a26af240c7",
+      "title": "SageMaker HyperPod now supports gang scheduling for distributed training workloads",
+      "description": "Amazon SageMaker HyperPod task governance now supports gang scheduling, which ensures all pods required for a distributed training job are ready before training begins. Administrators can configure gang scheduling to prevent wasted compute from partial job runs and avoid deadlocks from jobs waiting for resources. Data scientists running distributed AI/ML training jobs on Amazon SageMaker HyperPod clusters using the EKS orchestrator require multiple pods to work together across nodes with pod-to-pod communication. When some pods start but others do not, jobs can hold onto resources without maki",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod task governance now supports gang scheduling, which ensures all pods required for a distributed training job are ready before training begins. Administrators can configure gang scheduling to prevent wasted compute from partial job runs and avoid deadlocks from jobs waiting for resources.&lt;br&gt; &lt;br&gt; Data scientists running distributed AI/ML training jobs on Amazon SageMaker HyperPod clusters using the EKS orchestrator require multiple pods to work together across nodes with pod-to-pod communication. When some pods start but others do not, jobs can hold onto resources without making progress, block other workloads, and increase costs. Gang scheduling resolves this by monitoring all pods in a workload and pulling the workload back if not all pods are ready within a set time. Pulled-back workloads are automatically requeued to prevent stalling. Administrators can adjust settings on the HyperPod Console, such as how long to wait for pods to be ready, how to handle node failures, whether to admit workloads one at a time to avoid deadlocks on busy clusters, and how retries are scheduled.&lt;br&gt; &lt;br&gt; This capability is currently available for Amazon SageMaker HyperPod clusters using the EKS orchestrator across the following &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt;: US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), and Asia Pacific (Tokyo), Asia Pacific (Jakarta), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Stockholm), Europe (Spain), and South America (São Paulo).&lt;br&gt; &lt;br&gt; To learn more, visit &lt;a href=\"https://aws.amazon.com/sagemaker-ai/hyperpod/\"&gt;SageMaker HyperPod webpage&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-eks-operate-console-ui-governance-tasks-gang-scheduling.html\"&gt;HyperPod task governance documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-hyperpod-gang-scheduling/",
+      "publishedAt": "2026-04-08T19:26:00.000Z",
+      "updatedAt": "2026-04-08T19:26:00.000Z",
+      "categories": [
+        "Amazon Sagemaker",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "amazon sagemaker",
+        "artificial intelligence",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9dd92323717d034e",
+      "title": "Amazon IVS Real-Time Streaming now supports redundant ingest",
+      "description": "Amazon Interactive Video Service (Amazon IVS) Real-Time Streaming now supports redundant ingest, helping protect your live streams against source encoder failures and first-mile network issues. With redundant ingest, you can stream from two encoders simultaneously to a single stage with automated failover, ensuring uninterrupted delivery to your viewers. Redundant ingest is ideal for live events, 24/7 live streams, or any scenario where uninterrupted delivery is essential. This capability helps you maintain viewer engagement during unexpected disruptions and enables continuous 24/7 streaming. ",
+      "descriptionHtml": "&lt;p&gt;Amazon Interactive Video Service (Amazon IVS) Real-Time Streaming now supports redundant ingest, helping protect your live streams against source encoder failures and first-mile network issues. With redundant ingest, you can stream from two encoders simultaneously to a single stage with automated failover, ensuring uninterrupted delivery to your viewers.&lt;/p&gt; \n&lt;p&gt;Redundant ingest is ideal for live events, 24/7 live streams, or any scenario where uninterrupted delivery is essential. This capability helps you maintain viewer engagement during unexpected disruptions and enables continuous 24/7 streaming.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ivs/\"&gt;Amazon IVS&lt;/a&gt; is a managed live streaming solution designed to make low-latency or real-time video available to viewers around the world. Visit the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS region table&lt;/a&gt; for a full list of AWS Regions where the Amazon IVS console and APIs for control and creation of video streams are available.&lt;/p&gt; \n&lt;p&gt;To learn more, please visit the &lt;a href=\"https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-rtmp-publishing.html\"&gt;Amazon IVS Real-Time Streaming RTMP ingest documentation&lt;/a&gt; page.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ivs-real-time-streaming-redundant-ingest/",
+      "publishedAt": "2026-04-08T19:25:00.000Z",
+      "updatedAt": "2026-04-08T19:25:00.000Z",
+      "categories": [],
+      "services": [
+        "IVS"
+      ],
+      "tags": [
+        "ivs"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d17a963ef2ccadf6",
+      "title": "Amazon EKS managed node groups now support EC2 Auto Scaling warm pools",
+      "description": "Amazon Elastic Kubernetes Service (Amazon EKS) managed node groups now support Auto Scaling warm pools , enabling you to maintain pre-initialized EC2 instances ready for rapid scale-out. This reduces node provisioning latency for applications with burst traffic patterns, time-sensitive workloads, or long instance boot times due to complex initialization scripts and software dependencies. With warm pools enabled, your EKS managed node group maintains a pool of instances that have already completed OS initialization, user data execution, and software configuration. When demand increases and the ",
+      "descriptionHtml": "&lt;p&gt;Amazon Elastic Kubernetes Service (Amazon EKS) &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html\"&gt;managed node groups&lt;/a&gt; now support &lt;a href=\"https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-warm-pools.html\"&gt;Auto Scaling warm pools&lt;/a&gt;, enabling you to maintain pre-initialized EC2 instances ready for rapid scale-out. This reduces node provisioning latency for applications with burst traffic patterns, time-sensitive workloads, or long instance boot times due to complex initialization scripts and software dependencies.&lt;br&gt; &lt;br&gt; With warm pools enabled, your EKS managed node group maintains a pool of instances that have already completed OS initialization, user data execution, and software configuration. When demand increases and the Auto Scaling group scales out, instances transition from the warm pool to active service without repeating the full cold-start sequence. You can configure instances in the warm pool as Stopped (lower cost, longer transition) or Running (higher cost, faster transition). You can also enable reuse on scale-in, which returns instances to the warm pool during scale-down instead of terminating them. Warm pools work with Cluster Autoscaler without requiring any additional configuration.&lt;br&gt; &lt;br&gt; You can enable warm pools through the EKS API, AWS CLI, AWS Management Console, or AWS CloudFormation by adding a warmPoolConfig to your CreateNodegroup or UpdateNodegroupConfig requests. Existing managed node groups that do not enable warm pools are unaffected.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon EKS is available, except for the China (Beijing) Region, operated by Sinnet and the China (Ningxia) Region, operated by NWCD. To get started, see the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html\"&gt;Amazon EKS managed node groups documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-eks-managed-node-groups-ec2-warm-pools/",
+      "publishedAt": "2026-04-08T19:00:00.000Z",
+      "updatedAt": "2026-04-08T19:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Containers",
+        "Amazon Eks"
+      ],
+      "services": [
+        "EC2",
+        "EKS"
+      ],
+      "tags": [
+        "compute",
+        "containers",
+        "amazon eks",
+        "ec2",
+        "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "80ff8ea6825227ab",
+      "title": "Amazon Bedrock AgentCore Browser adds OS-level interaction capabilities",
+      "description": "Amazon Bedrock AgentCore Browser now supports OS-level interaction capabilities, enabling automation of browser workflows that require direct operating system control beyond Chrome DevTools Protocol (CDP) capabilities. This enhancement addresses automation scenarios where CDP alone is insufficient, such as mouse operations, print dialogs, native system alerts, and keyboard shortcuts. The feature serves AI agent developers, test automation engineers, and organizations building LLM-powered web interaction tools. The new capabilities provide automation through mouse operations (click, move, drag,",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore Browser now supports OS-level interaction capabilities, enabling automation of browser workflows that require direct operating system control beyond Chrome DevTools Protocol (CDP) capabilities. This enhancement addresses automation scenarios where CDP alone is insufficient, such as mouse operations, print dialogs, native system alerts, and keyboard shortcuts. The feature serves AI agent developers, test automation engineers, and organizations building LLM-powered web interaction tools.&lt;br&gt; &lt;br&gt; The new capabilities provide automation through mouse operations (click, move, drag, scroll), keyboard operations (type, press, shortcuts like ctrl+a and ctrl+p), and full desktop screenshots, all at OS-level coordinates extending beyond the browser viewport. Key use cases include automated testing with system dialog handling, document management workflows, complex UI interactions with right-click menus, and vision-based AI agents that require complete browser environment visibility.&lt;br&gt; &lt;br&gt; This feature is available by default on all browser instances in all 14 &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html\"&gt;AWS Regions&lt;/a&gt; where Amazon Bedrock AgentCore Browser is available: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Asia Pacific (Seoul), and Canada (Central).&lt;br&gt; &lt;br&gt; To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-tool.html\"&gt;AgentCore Browser documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/agentcore-browser-os-actions/",
+      "publishedAt": "2026-04-08T17:03:00.000Z",
+      "updatedAt": "2026-04-08T17:03:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9e1f626511880734",
+      "title": "Amazon WorkSpaces Advisor now available for AI-powered troubleshooting",
+      "description": "Amazon WorkSpaces Advisor is a new AI-powered tool that helps administrators quickly troubleshoot and resolve issues with Amazon WorkSpaces Personal. Using generative AI capabilities, it analyzes WorkSpace configurations, identifies problems, and provides actionable recommendations to restore service and optimize performance. WorkSpaces Advisor streamlines administrative workflows by reducing the time needed to investigate and fix common issues. Administrators can leverage AI-driven insights to proactively maintain their virtual desktop infrastructure, improve end-user experience, and minimize",
+      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces Advisor is a new AI-powered tool that helps administrators quickly troubleshoot and resolve issues with Amazon WorkSpaces Personal. Using generative AI capabilities, it analyzes WorkSpace configurations, identifies problems, and provides actionable recommendations to restore service and optimize performance.&lt;br&gt; &lt;/p&gt; \n&lt;p&gt;WorkSpaces Advisor streamlines administrative workflows by reducing the time needed to investigate and fix common issues. Administrators can leverage AI-driven insights to proactively maintain their virtual desktop infrastructure, improve end-user experience, and minimize downtime across their WorkSpaces.&lt;/p&gt; \n&lt;p&gt;Amazon WorkSpaces Advisor is now available in all AWS commercial regions where Amazon WorkSpaces is offered. Visit the Amazon WorkSpaces console to access WorkSpaces Advisor and begin troubleshooting your environment. Learn more in the &lt;a href=\"https://aws.amazon.com/blogs/desktop-and-application-streaming/troubleshoot-amazon-workspaces-personal-issues-faster-with-workspaces-advisor/\"&gt;feature blog&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-advisor.html\"&gt;user guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/workspaces-advisor-ai-troubleshooting/",
+      "publishedAt": "2026-04-08T17:00:00.000Z",
+      "updatedAt": "2026-04-08T17:00:00.000Z",
+      "categories": [
+        "Desktop And App Streaming",
+        "Amazon Workspaces"
+      ],
+      "services": [
+        "WorkSpaces"
+      ],
+      "tags": [
+        "desktop and app streaming",
+        "amazon workspaces",
+        "workspaces"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "67ca7594dd16b6af",
+      "title": "Amazon OpenSearch Service now supports Graviton4 based i8ge instances",
+      "description": "Amazon OpenSearch Service now supports i8ge instances, which is the latest generation of storage optimized instances offering the best performance for storage-intensive workloads. Powered by AWS Graviton4 processors, I8ge instances deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Im4gn instances. I8ge instances use the latest third generation AWS Nitro SSDs, local NVMe storage that deliver up to 55% better real-time storage performance per TB while offering up to 60% lower storage I/O latency and up to 75% lower storage I/O latency ",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now supports i8ge instances, which is the latest generation of storage optimized instances offering the best performance for storage-intensive workloads.&lt;br&gt; &lt;br&gt; Powered by AWS Graviton4 processors, I8ge instances deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Im4gn instances. I8ge instances use the latest third generation AWS Nitro SSDs, local NVMe storage that deliver up to 55% better real-time storage performance per TB while offering up to 60% lower storage I/O latency and up to 75% lower storage I/O latency variability compared to previous generation Im4gn instances. Built on the &lt;a href=\"https://aws.amazon.com/ec2/nitro/\"&gt;AWS Nitro System&lt;/a&gt;, these instances oﬄoad CPU virtualization, storage, and networking functions to dedicated hardware and software enhancing the performance and security for your workloads.&lt;br&gt; &lt;br&gt; I8ge instances are available of sizes up to 18xlarge and 45 TB instance storage. At 112.5 Gbps, these instances have the highest networking bandwidth among storage optimized instances available in Amazon OpenSearch Service.&lt;br&gt; &lt;br&gt; I8ge instances support all OpenSearch versions &amp;amp; Elasticsearch (open source) versions 7.9 and 7.10.&lt;br&gt; &lt;br&gt; Amazon OpenSearch Service supports i8ge instances in following &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; : US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Frankfurt), Europe (Ireland), Europe (Stockholm), Asia Pacific (Malaysia), Asia Pacific (Mumbai), Asia Pacific (Singapore) and Asia Pacific (Sydney).&lt;br&gt; &lt;br&gt; For region specific availability &amp;amp; pricing, visit our &lt;a href=\"https://aws.amazon.com/opensearch-service/pricing/\"&gt;pricing page&lt;/a&gt;. To learn more about Amazon OpenSearch Service and its capabilities, visit our &lt;a href=\"https://aws.amazon.com/opensearch-service/\"&gt;product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/4/amazon-opensearch-service-supports-i8ge/",
+      "publishedAt": "2026-04-08T16:30:24.000Z",
+      "updatedAt": "2026-04-08T16:30:24.000Z",
+      "categories": [
+        "Amazon Opensearch Service",
+        "Analytics"
+      ],
+      "services": [
+        "OpenSearch"
+      ],
+      "tags": [
+        "amazon opensearch service",
+        "analytics",
+        "opensearch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0b2ff8134e28f598",
+      "title": "Oracle Database@AWS is now available in twelve AWS Regions",
+      "description": "Oracle Database@AWS is now generally available in five additional AWS Regions: EU-West-1 (Dublin), EU-West-2 (London), AP-South-1 (Mumbai), AP-South-2 (Hyderabad), and AP-Northeast-2 (Seoul). Oracle Database@AWS enables customers to access Oracle Cloud Infrastructure (OCI) managed Oracle Exadata systems within AWS data centers. With this launch, customers in Europe and Asia Pacific with in-region data residency requirements can migrate on-premises Oracle Exadata and Oracle Real Application Clusters (RAC) applications to AWS. Dublin, Mumbai, and Hyderabad are available with two Availability Zon",
+      "descriptionHtml": "&lt;p&gt;Oracle Database@AWS is now generally available in five additional AWS Regions: EU-West-1 (Dublin), EU-West-2 (London), AP-South-1 (Mumbai), AP-South-2 (Hyderabad), and AP-Northeast-2 (Seoul). Oracle Database@AWS enables customers to access Oracle Cloud Infrastructure (OCI) managed Oracle Exadata systems within AWS data centers. With this launch, customers in Europe and Asia Pacific with in-region data residency requirements can migrate on-premises Oracle Exadata and Oracle Real Application Clusters (RAC) applications to AWS. Dublin, Mumbai, and Hyderabad are available with two Availability Zones (AZs), while London and Seoul are available with one Availability Zone. Additionally, CA-Central-1 (Canada Central) and AP-Southeast-2 (Sydney) now support two Availability Zones, providing enhanced high availability for production workloads.&lt;br&gt; &lt;br&gt; With this expansion, Oracle Database@AWS services are now available in twelve Regions: US-East-1 (N. Virginia), US-West-2 (Oregon), US-East-2 (Ohio), CA-Central-1 (Canada Central), EU-Central-1 (Frankfurt), EU-West-1 (Dublin), EU-West-2 (London), AP-Northeast-1 (Tokyo), AP-Southeast-2 (Sydney), AP-South-1 (Mumbai), AP-South-2 (Hyderabad), and AP-Northeast-2 (Seoul). To use Oracle Database@AWS services, request a &lt;a href=\"https://aws.amazon.com/marketplace/pp/prodview-qks5dl3hr7nfw?sr=0-1&amp;amp;ref_=beagle&amp;amp;applicationId=AWSMPContessa\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;private offer from Oracle through the AWS Marketplace&lt;/u&gt;&lt;/a&gt;, and use AWS Management Console to setup and use your databases.&lt;br&gt; &lt;br&gt; To learn more, visit Oracle Database@AWS &lt;a href=\"https://aws.amazon.com/marketplace/featured-seller/oracle\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;overview &lt;/a&gt;and &lt;a href=\"https://docs.aws.amazon.com/odb/latest/UserGuide/getting-started.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;documentation&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/oracle-database-aws-available-twelve-regions/",
+      "publishedAt": "2026-04-08T07:00:00.000Z",
+      "updatedAt": "2026-04-08T07:00:00.000Z",
+      "categories": [
+        "Databases"
+      ],
+      "services": [],
+      "tags": [
+        "databases"
+      ],
+      "isNew": true
+    },
     {
       "id": "c953707f4254b2c2",
       "title": "AWS Lambda expands response streaming support to all commercial AWS Regions",
@@ -809,6 +957,23 @@
       "isNew": true
     },
     {
+      "id": "b1d7b1436aa3bac8",
+      "title": "Amazon Location Service announces enhanced map styling with contour line density, traffic visualization, and 3D terrain",
+      "description": "Amazon Location Service today announced new map styling capabilities, providing developers with greater control over terrain visualization, traffic display, and immersive 3D experiences. This release introduces customizable contour line density levels, a traffic congestion-only mode, 3D Terrain and Globe View features, and expands support for existing features across multiple map styles. These capabilities enable you to customize maps for diverse use cases. Choose from three contour line density levels (Low, Medium, and High) to control elevation data visualization, with Low density emphasizin",
+      "descriptionHtml": "&lt;p&gt;Amazon Location Service today announced new map styling capabilities, providing developers with greater control over terrain visualization, traffic display, and immersive 3D experiences. This release introduces customizable contour line density levels, a traffic congestion-only mode, 3D Terrain and Globe View features, and expands support for existing features across multiple map styles.&lt;br&gt; &lt;br&gt; These capabilities enable you to customize maps for diverse use cases. Choose from three contour line density levels (Low, Medium, and High) to control elevation data visualization, with Low density emphasizing major elevation changes, Medium density providing balanced detail, and High density showing double the contour lines for intricate terrain views. Display traffic strategically with the new traffic congestion-only mode, which filters out free-flowing traffic to highlight incidents and congestion. Create immersive experiences with 3D Terrain and 3D Globe View with Atmosphere, featuring realistic elevation and atmospheric effects. Additionally, existing features like full traffic visualization, Transit and Truck travel modes, and dark and light color schemes are now available across more map styles, including Monochrome, Hybrid, and Satellite.&lt;br&gt; &lt;br&gt; Amazon Location Service is available in the following AWS Regions: US East (Ohio), US East (N. Virginia), US West (Oregon), Asia Pacific (Malaysia), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Spain), Europe (Stockholm), South America (São Paulo), and AWS GovCloud (US-West).&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/maps-concepts.html\"&gt;Amazon Location Service Developer Guide&lt;/a&gt; or try the hands-on &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/dynamic-maps-how-to.html\"&gt;how to code samples&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-location-enhanced-map-styling/",
+      "publishedAt": "2026-04-02T14:00:00.000Z",
+      "updatedAt": "2026-04-02T14:00:00.000Z",
+      "categories": [
+        "Amazon Location Service"
+      ],
+      "services": [],
+      "tags": [
+        "amazon location service"
+      ],
+      "isNew": true
+    },
+    {
       "id": "2422bf1aa1c1df20",
       "title": "Amazon SES Mail Manager adds new features for enhanced security and email processing",
       "description": "Amazon Simple Email Service (SES) Mail Manager now offers enhancements to email security and processing while simplifying email infrastructure migrations. These enhancements include optional TLS and certificate-based authentication (mTLS) support in Ingress Endpoint, and two new rule actions: Invoke Lambda function and Bounce. These enhancements benefit organizations seeking to maintain compatibility with legacy systems while implementing stronger security controls, and advanced email routing capabilities. For example customers can now configure STARTTLS as an optional TLS configuration, enabl",
@@ -826,7 +991,7 @@
         "amazon simple email service",
         "ses"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b163a62faf9bbeb4",
@@ -850,7 +1015,7 @@
         "compute",
         "ecs"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "08a7b69ab615f82c",
@@ -867,7 +1032,7 @@
       "tags": [
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8b7c41da96e4f403",
@@ -891,7 +1056,7 @@
         "networking and content delivery",
         "vpc"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0def2dca1dc98b4d",
@@ -913,7 +1078,7 @@
         "amazon cloudfront",
         "cloudfront"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "208b2c3409248385",
@@ -937,7 +1102,7 @@
         "databases",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d02fd5f971cf79dd",
@@ -954,7 +1119,7 @@
       "tags": [
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "156a1b1fffbaa3cc",
