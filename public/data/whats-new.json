@@ -1,7 +1,162 @@
 {
-  "lastUpdated": "2026-04-17T09:19:45.648Z",
-  "itemCount": 236,
+  "lastUpdated": "2026-04-18T08:53:30.757Z",
+  "itemCount": 244,
   "items": [
+    {
+      "id": "94266a00f6e8ad32",
+      "title": "Amazon EC2 High Memory U7i instances now available in AWS Asia Pacific (Singapore) region",
+      "description": "Amazon EC2 High Memory U7i-8TB instances (u7i-8tb.112xlarge) and U7i-12TB instances (u7i-12tb.224xlarge) are now available in AWS Asia Pacific (Singapore) region. U7i instances are part of AWS 7th generation and are powered by custom fourth generation Intel Xeon Scalable Processors (Sapphire Rapids). U7i-8tb instances offer 8TiB of DDR5 memory, and U7i-12tb instances offer 12TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment. U7i-8tb instances deliver 448 vCPUs; U7i-12tb instances deliver 896 vCPUs. Both instances support up to ",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 High Memory U7i-8TB instances (u7i-8tb.112xlarge) and U7i-12TB instances (u7i-12tb.224xlarge) are now available in AWS Asia Pacific (Singapore) region. U7i instances are part of AWS 7th generation and are powered by custom fourth generation Intel Xeon Scalable Processors (Sapphire Rapids). U7i-8tb instances offer 8TiB of DDR5 memory, and U7i-12tb instances offer 12TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment.&lt;/p&gt; \n&lt;p&gt;U7i-8tb instances deliver 448 vCPUs; U7i-12tb instances deliver 896 vCPUs. Both instances support up to 100 Gbps of Amazon EBS bandwidth for faster data loading and backups, 100 Gbps of network bandwidth, and ENA Express. U7i instances are ideal for customers using mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.&lt;/p&gt; \n&lt;p&gt;To learn more about U7i instances, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/u7i/\"&gt;High Memory instances page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/ec2-high-memory-u7i-asia-pacific/",
+      "publishedAt": "2026-04-17T20:30:00.000Z",
+      "updatedAt": "2026-04-17T20:30:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "80bad49b9cfedfd9",
+      "title": "Amazon SageMaker HyperPod now supports flexible instance groups",
+      "description": "Amazon SageMaker HyperPod now supports flexible instance groups, enabling customers to specify multiple instance types and multiple subnets within a single instance group. Customers running training and inference workloads on HyperPod often need to span multiple instance types and availability zones for capacity resilience, cost optimization, and subnet utilization, but previously had to create and manage a separate instance group for every instance type and availability zone combination, resulting in operational overhead across cluster configuration, scaling, patching, and monitoring. With fl",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports flexible instance groups, enabling customers to specify multiple instance types and multiple subnets within a single instance group. Customers running training and inference workloads on HyperPod often need to span multiple instance types and availability zones for capacity resilience, cost optimization, and subnet utilization, but previously had to create and manage a separate instance group for every instance type and availability zone combination, resulting in operational overhead across cluster configuration, scaling, patching, and monitoring.&lt;br&gt; &lt;br&gt; With flexible instance groups, you can define an ordered list of instance types using the new InstanceRequirements parameter and provide multiple subnets across availability zones in a single instance group. HyperPod provisions instances using the highest-priority type first and automatically falls back to lower-priority types when capacity is unavailable, eliminating the need for customers to manually retry across individual instance groups. Training customers benefit from multi-subnet distribution within an availability zone to avoid subnet exhaustion. Inference customers scaling manually get automatic priority-based fallback across instance types without needing to retry each instance group individually, while those using Karpenter autoscaling can reference a single flexible instance group. Karpenter automatically detects supported instance types from the flexible instance group and provisions the optimal type and availability zone based on pod requirements. You can create flexible instance groups using the CreateCluster and UpdateCluster APIs, the AWS CLI, or the AWS Management Console.&lt;br&gt; &lt;br&gt; Flexible instance groups are available for SageMaker HyperPod clusters using the EKS orchestrator in all AWS Regions where SageMaker HyperPod is supported. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-scaling-eks.html#sagemaker-hyperpod-scaling-eks-flexible-ig\"&gt;Flexible instance groups&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-hyperpod-flexible-instance-groups/",
+      "publishedAt": "2026-04-17T20:03:00.000Z",
+      "updatedAt": "2026-04-17T20:03:00.000Z",
+      "categories": [
+        "Compute",
+        "Aiml",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "compute",
+        "aiml",
+        "artificial intelligence",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5fdce8f99a69aee2",
+      "title": "Amazon ECR Pull Through Cache Now Supports Referrer Discovery and Sync",
+      "description": "Amazon Elastic Container Registry (Amazon ECR) now automatically discovers and syncs OCI referrers, such as image signatures, SBOMs, and attestations, from upstream registries into your Amazon ECR private repositories with its pull through cache feature. Previously, when you listed referrers on a repository with a matching pull through cache rule, Amazon ECR would not return or sync referrers from the upstream repository. This meant that you had to manually list and fetch the upstream referrers. With today's launch, Amazon ECR's pull through cache will now reach upstream during referrers API r",
+      "descriptionHtml": "&lt;p&gt;Amazon Elastic Container Registry (Amazon ECR) now automatically discovers and syncs OCI referrers, such as image signatures, SBOMs, and attestations, from upstream registries into your Amazon ECR private repositories with its pull through cache feature.&lt;br&gt; &lt;br&gt; Previously,&amp;nbsp;when you listed referrers on a repository with a matching pull through cache rule, Amazon ECR would not return or sync referrers from the upstream repository. This meant that you had to manually list and fetch the upstream referrers.&lt;br&gt; &lt;br&gt; With today's launch, Amazon ECR's pull through cache will now reach upstream during referrers API requests and automatically cache related referrer artifacts in your private repository. This enables end-to-end image signature verification, SBOM discovery, and attestation retrieval workflows to work seamlessly with pull through cache repositories without requiring any client-side workarounds.&lt;br&gt; &lt;br&gt; This feature is available today in all AWS Regions where Amazon ECR pull through cache is supported. To learn more, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonECR/latest/userguide/pull-through-cache.html\"&gt;Amazon ECR documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ecr-pull-through-cache-referrers/",
+      "publishedAt": "2026-04-17T18:29:00.000Z",
+      "updatedAt": "2026-04-17T18:29:00.000Z",
+      "categories": [
+        "Amazon Ecr",
+        "Containers"
+      ],
+      "services": [
+        "ECR"
+      ],
+      "tags": [
+        "amazon ecr",
+        "containers",
+        "ecr"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8265eea640272f53",
+      "title": "AWS Deadline Cloud announces AI-powered troubleshooting assistant for render jobs",
+      "description": "Today, AWS Deadline Cloud announces an AI-powered troubleshooting assistant that helps you quickly diagnose and resolve render job failures. AWS Deadline Cloud is a fully managed service that simplifies render management for computer-generated 2D/3D graphics and visual effects for films, TV shows, commercials, games, and industrial design. Render job failures from missing assets, software errors, configuration mismatches, and resource constraints can stall production pipelines and waste compute resources. Previously, diagnosing these issues required specialized technical staff to manually pars",
+      "descriptionHtml": "&lt;p&gt;Today, AWS Deadline Cloud announces an AI-powered troubleshooting assistant that helps you quickly diagnose and resolve render job failures. AWS Deadline Cloud is a fully managed service that simplifies render management for computer-generated 2D/3D graphics and visual effects for films, TV shows, commercials, games, and industrial design.&lt;br&gt; &lt;br&gt; Render job failures from missing assets, software errors, configuration mismatches, and resource constraints can stall production pipelines and waste compute resources. Previously, diagnosing these issues required specialized technical staff to manually parse logs and identify root causes — a process that is time-consuming, difficult to scale, and often unavailable to smaller studios. The new Deadline Cloud assistant investigates failed jobs you identify, analyzes logs and metrics, detects common issues, and provides troubleshooting recommendations based on industry best practices and a pre-trained knowledge base covering Deadline Cloud, common render farm issues, and popular digital content creation applications including Autodesk Maya, 3ds Max, VRED, Blender, SideFX Houdini, Maxon Cinema 4D, Foundry Nuke, and Adobe After Effects. The assistant runs within your AWS account using Amazon Bedrock, keeping all data and analysis within your control.&lt;br&gt; &lt;br&gt; The Deadline Cloud assistant is available today in all AWS Regions where AWS Deadline Cloud is supported. Watch a &lt;a href=\"https://youtu.be/zz10CeybNeQ\"&gt;demo on YouTube&lt;/a&gt; to see it in action, or visit the &lt;a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/userguide/deadline-cloud-assistant.html\"&gt;AWS Deadline Cloud documentation&lt;/a&gt; to learn more.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/deadline-cloud-ai-troubleshooting/",
+      "publishedAt": "2026-04-17T16:40:00.000Z",
+      "updatedAt": "2026-04-17T16:40:00.000Z",
+      "categories": [
+        "AWS Deadline Cloud",
+        "Media Services"
+      ],
+      "services": [],
+      "tags": [
+        "aws deadline cloud",
+        "media services"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "80fb152767c073ac",
+      "title": "Amazon Managed Grafana now supports creating Grafana 12.4 workspaces",
+      "description": "Amazon Managed Grafana now supports creating new workspaces with Grafana version 12.4. This release includes features that were launched as a part of open source Grafana versions 11.0 to 12.4, including Drilldown apps, scenes powered dashboards, variables in transformations, visualization enhancements, and new features with the Amazon CloudWatch plugin. Queryless Drilldown apps enable customers to perform point-and-click exploration of Prometheus metrics, Loki logs, Tempo traces, and Pyroscope profiles. The Scenes-powered rendering engine boosts dashboard performance. Amazon CloudWatch Logs ad",
+      "descriptionHtml": "&lt;p&gt;Amazon Managed Grafana&amp;nbsp;now supports creating new workspaces with&amp;nbsp;Grafana version 12.4.&amp;nbsp;&amp;nbsp;This release includes features that were launched as a part of open source Grafana versions 11.0&amp;nbsp;to 12.4,&amp;nbsp;including Drilldown apps,&amp;nbsp;scenes powered dashboards, variables in transformations,&amp;nbsp;visualization enhancements, and&amp;nbsp;new features with&amp;nbsp;the&amp;nbsp;Amazon CloudWatch plugin.&lt;/p&gt; \n&lt;p&gt;Queryless&amp;nbsp;Drilldown apps enable customers to perform point-and-click exploration of Prometheus metrics, Loki logs, Tempo traces, and&amp;nbsp;Pyroscope&amp;nbsp;profiles. The Scenes-powered rendering engine boosts dashboard&amp;nbsp;performance. Amazon CloudWatch Logs adds support for PPL and SQL queries, cross-account Metrics&amp;nbsp;Insights, and log anomaly detection.&amp;nbsp;The rebuilt table visualization improves performance with CSS cell styling and interactive Actions buttons, while trendline transformations and navigation bookmarks enhance data exploration.&amp;nbsp;Grafana 12.4 is supported in all&amp;nbsp;&lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS regions&lt;/a&gt;&amp;nbsp;where Amazon Managed Grafana is&amp;nbsp;generally available.&lt;/p&gt; \n&lt;p&gt;You can create a new Amazon Managed Grafana workspace from the AWS Console, SDK, or CLI.&amp;nbsp;To explore the complete list of new features, please refer to the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/version-differences.html#version-diff-v12\"&gt;user documentation&lt;/a&gt;. Follow the instructions &lt;a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/AMG-create-workspace.html\"&gt;here&lt;/a&gt; to create workspaces with version 12.4.&amp;nbsp;To&amp;nbsp;learn more about Amazon Managed&amp;nbsp;Grafana&amp;nbsp;features and its pricing, visit the &lt;a href=\"https://aws.amazon.com/grafana/\"&gt;product page&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/grafana/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-managed-grafana-v12-create/",
+      "publishedAt": "2026-04-17T15:00:00.000Z",
+      "updatedAt": "2026-04-17T15:00:00.000Z",
+      "categories": [
+        "Management And Governance",
+        "Amazon Managed Service For Grafana"
+      ],
+      "services": [
+        "WorkSpaces"
+      ],
+      "tags": [
+        "management and governance",
+        "amazon managed service for grafana",
+        "workspaces"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d5b79a73794a1aea",
+      "title": "SageMaker JumpStart now offers optimized deployments for foundation models",
+      "description": "SageMaker JumpStart now offers optimized deployments, enabling customers to deploy foundation models with pre-configured settings tailored to specific use cases and performance constraints. SageMaker JumpStart optimized deployments simplify model deployment by offering task-aware configurations that optimize for cost, throughput, or latency based on your workload requirements - whether content generation, summarization, or Q&amp;A. This launch includes support for 30+ popular models from Meta, Microsoft, Mistral AI, Qwen, Google, and TII, with visibility into key performance metrics like P50 l",
+      "descriptionHtml": "&lt;p&gt;SageMaker JumpStart now offers optimized deployments, enabling customers to deploy foundation models with pre-configured settings tailored to specific use cases and performance constraints. SageMaker JumpStart optimized deployments simplify model deployment by offering task-aware configurations that optimize for cost, throughput, or latency based on your workload requirements - whether content generation, summarization, or Q&amp;amp;A. This launch includes support for 30+ popular models from Meta, Microsoft, Mistral AI, Qwen, Google, and TII, with visibility into key performance metrics like P50 latency, time-to-first token (TTFT), and throughput before deployment.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart optimized deployments, customers can select from use case-specific configurations (such as generative writing or chat-style interactions) and choose optimization targets including cost-optimized, throughput-optimized, latency-optimized, or balanced performance. Models deploy to SageMaker AI Managed Inference endpoints or SageMaker HyperPod clusters with pre-set configurations that eliminate guesswork while maintaining full visibility into deployment details. Available models include Meta Llama 3.1 and 3.2 variants, Microsoft Phi-3, Mistral AI models including the new Mistral-Small-24B-Instruct-2501, Qwen 2 and 3 series including multimodal Qwen2-VL, Google Gemma, and TII Falcon3. All deployments leverage SageMaker's VPC deployment capabilities, ensuring data control and production-ready infrastructure with enterprise-grade security. The feature is available in all AWS regions where SageMaker JumpStart is curretly supported.&lt;/p&gt; \n&lt;p&gt;To get started with optimized deployments, navigate to Models in SageMaker Studio, select your desired foundation model in the JumpStart Models tab, choose \"Deploy,\" and select your use case and performance optimization target. For details, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models-use-studio-updated-deploy.html\"&gt;SageMaker JumpStart documentation&lt;/a&gt;. AWS is actively expanding support to include additional models.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-jumpstart-optimized-deployments/",
+      "publishedAt": "2026-04-17T00:00:00.000Z",
+      "updatedAt": "2026-04-17T00:00:00.000Z",
+      "categories": [
+        "Amazon Sagemaker",
+        "Amazon Sagemaker Jumpstart",
+        "Marketing:Marchitecture"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "amazon sagemaker",
+        "amazon sagemaker jumpstart",
+        "marketing:marchitecture",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f412dad3dfe98933",
+      "title": "Amazon CloudWatch RUM now available in AWS European Sovereign Cloud",
+      "description": "Amazon CloudWatch RUM (Real User Monitoring) is a feature of Amazon CloudWatch that enables developers and operations teams to collect, view, and analyze client-side performance data from real end-user sessions in web and mobile applications. With its expansion to the AWS European Sovereign Cloud, customers operating under strict European data residency and sovereignty requirements can now monitor their web application performance without data leaving the sovereign boundary. This capability is designed for enterprises, public sector organizations, and regulated industries in Europe that requir",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch RUM (Real User Monitoring) is a feature of Amazon CloudWatch that enables developers and operations teams to collect, view, and analyze client-side performance data from real end-user sessions in web and mobile applications. With its expansion to the AWS European Sovereign Cloud, customers operating under strict European data residency and sovereignty requirements can now monitor their web application performance without data leaving the sovereign boundary. This capability is designed for enterprises, public sector organizations, and regulated industries in Europe that require full control over where their data is stored and processed.&lt;/p&gt; \n&lt;p&gt;CloudWatch RUM helps teams proactively identify and resolve performance bottlenecks across both web and mobile applications by surfacing real-time metrics such as page load times, JavaScript errors, HTTP failures, and mobile-specific signals like crash rates and network latency — enabling faster root cause analysis and improved end-user experience. For example, a European public sector organization can use CloudWatch RUM within the AWS European Sovereign Cloud to monitor citizen-facing web portals and mobile apps while maintaining full data sovereignty compliance.&lt;/p&gt; \n&lt;p&gt;CloudWatch RUM in the AWS European Sovereign Cloud is available today in the EU Sovereign (eusc-de-east-1) region — to get started, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html\"&gt;Amazon CloudWatch RUM documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-cloudwatch-rum-european-sovereign-cloud/",
+      "publishedAt": "2026-04-16T21:47:00.000Z",
+      "updatedAt": "2026-04-16T21:47:00.000Z",
+      "categories": [
+        "Amazon Cloudwatch",
+        "Management And Governance"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "amazon cloudwatch",
+        "management and governance",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
     {
       "id": "1ad98ddac47f23ed",
       "title": "Amazon CloudWatch now supports cross-region telemetry auditing and enablement rules",
@@ -79,6 +234,28 @@
         "storage",
         "amazon fsx for lustre",
         "fsx"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "220d9589fa0c688a",
+      "title": "Amazon EC2 X8aedz instances are now available in Europe (Stockholm) region",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8aedz instances are available in Europe (Stockholm) region. These instances are powered by 5th Gen AMD EPYC processors (formerly code named Turin). These instances offer the highest maximum CPU frequency, 5GHz in the cloud. X8aedz instances are built using the latest sixth generation AWS Nitro Cards and are ideal for electronic design automation (EDA) workloads such as physical layout and physical verification jobs, and relational databases that benefit from high single-threaded processor performance and a large memory footprint. The c",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8aedz instances are available in&amp;nbsp;Europe (Stockholm) region. These instances are powered by 5th Gen AMD EPYC processors (formerly code named Turin). These instances offer the highest maximum CPU frequency, 5GHz in the cloud.&lt;br&gt; &lt;br&gt; X8aedz instances are built using the latest sixth generation &lt;a href=\"https://aws.amazon.com/ec2/nitro/\"&gt;AWS Nitro Cards&lt;/a&gt; and are ideal for electronic design automation (EDA) workloads such as physical layout and physical verification jobs, and relational databases that benefit from high single-threaded processor performance and a large memory footprint. The combination of 5 GHz processors and local NVMe storage enables faster processing of memory-intensive backend EDA workloads such as floor planning, logic placement, clock tree synthesis (CTS), routing, and power/signal integrity analysis.&lt;br&gt; &lt;br&gt; X8aedz instances feature a 32:1 ratio of memory to vCPU and are available in 8 sizes ranging from 2 to 96 vCPUs with 64 to 3,072 GiB of memory, including two bare metal variants, and up to 8 TB of local NVMe SSD storage.&lt;br&gt; &lt;br&gt; Customers can purchase X8aedz instances via Savings Plans, On-Demand instances, and Spot instances. To get started, sign in to the AWS Management Console. For more information visit the Amazon EC2 &lt;a href=\"https://aws.amazon.com/ec2/instance-types/x8aedz\"&gt;X8aedz instance page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/ec2-x8aedz-instances-stockholm/",
+      "publishedAt": "2026-04-16T16:00:00.000Z",
+      "updatedAt": "2026-04-16T16:00:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
       ],
       "isNew": true
     },
@@ -586,7 +763,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0080833a6556aa56",
@@ -608,7 +785,7 @@
         "management and governance",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "4692f607f61d712c",
@@ -627,7 +804,7 @@
         "aws deadline cloud",
         "media services"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "40ec512e4cc8cd4a",
@@ -649,7 +826,7 @@
         "amazon cloudwatch",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "bfcd013577deff13",
@@ -673,7 +850,7 @@
         "storage",
         "fsx"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a511f112e65024ee",
@@ -693,7 +870,7 @@
         "artificial intelligence",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "92e4f461e44fe833",
@@ -714,7 +891,7 @@
         "cost management",
         "cloud financial management"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d420a1cc8e6752e3",
@@ -734,7 +911,7 @@
         "networking",
         "health"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7c3a275869f709f0",
@@ -762,7 +939,7 @@
         "fsx",
         "backup"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "50e7bca64d992a61",
@@ -1077,18 +1254,20 @@
       "publishedAt": "2026-04-08T19:00:00.000Z",
       "updatedAt": "2026-04-08T19:00:00.000Z",
       "categories": [
-        "Containers",
+        "Amazon Eks",
+        "AWS Govcloud Us",
         "Compute",
-        "Amazon Eks"
+        "Containers"
       ],
       "services": [
         "EC2",
         "EKS"
       ],
       "tags": [
-        "containers",
-        "compute",
         "amazon eks",
+        "aws govcloud us",
+        "compute",
+        "containers",
         "ec2",
         "eks"
       ],
