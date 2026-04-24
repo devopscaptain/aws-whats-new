@@ -1,7 +1,307 @@
 {
-  "lastUpdated": "2026-04-23T09:45:43.780Z",
-  "itemCount": 296,
+  "lastUpdated": "2026-04-24T09:46:07.611Z",
+  "itemCount": 311,
   "items": [
+    {
+      "id": "5f586865803f3c34",
+      "title": "Amazon Athena simplifies federated queries with managed connectors",
+      "description": "Amazon Athena now offers managed connectors for 12 data sources, including Amazon DynamoDB, PostgreSQL, MySQL, and Snowflake. Managed connectors are AWS Glue Data Catalog federated connectors that Athena creates and manages on your behalf, so you can query data outside Amazon S3 without deploying or maintaining connector resources in your AWS account. With Athena, you can interactively query relational, non-relational, object, and custom data sources without moving or duplicating data. To get started with managed connectors, you create a connection for your data source in Athena. Athena automa",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/athena\"&gt;Amazon Athena&lt;/a&gt; now offers managed connectors for 12 data sources, including Amazon DynamoDB, PostgreSQL, MySQL, and Snowflake. Managed connectors are AWS Glue Data Catalog federated connectors that Athena creates and manages on your behalf, so you can query data outside Amazon S3 without deploying or maintaining connector resources in your AWS account.&lt;br&gt; &lt;br&gt; With Athena, you can interactively query relational, non-relational, object, and custom data sources without moving or duplicating data. To get started with managed connectors, you create a connection for your data source in Athena. Athena automatically sets up and manages connector resources on your behalf, registering the data source as a federated catalog in AWS Glue Data Catalog. You can then query the data source alongside your Amazon S3 data and optionally set up fine-grained access controls through AWS Lake Formation.&lt;br&gt; &lt;br&gt; Federated queries with managed connectors are available in all AWS Regions where Athena is available, except the AWS GovCloud (US) Regions and the China Regions.&lt;br&gt; &lt;br&gt; To learn more, visit&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/athena/latest/ug/federated-queries.html\"&gt;Use Amazon Athena Federated Query&lt;/a&gt; in the Athena User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-athena/",
+      "publishedAt": "2026-04-23T21:15:00.000Z",
+      "updatedAt": "2026-04-23T21:15:00.000Z",
+      "categories": [
+        "Amazon Athena",
+        "Analytics"
+      ],
+      "services": [
+        "Athena"
+      ],
+      "tags": [
+        "amazon athena",
+        "analytics",
+        "athena"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "370c6405b3bc600a",
+      "title": "Amazon SageMaker HyperPod now supports automatic Slurm topology management",
+      "description": "Amazon SageMaker HyperPod now automatically selects and continuously maintains the optimal network topology configuration for Slurm clusters based on the GPU instance types in the cluster. Network topology directly impacts distributed training performance — when jobs are placed on nodes that are topologically close, GPU-to-GPU communication is faster, NCCL collective operations are more efficient, and training throughput improves. HyperPod dynamically adapts the topology as the cluster evolves through scaling operations and node replacements, so job placement remains optimized throughout the c",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now automatically selects and continuously maintains the optimal network topology configuration for Slurm clusters based on the GPU instance types in the cluster. Network topology directly impacts distributed training performance — when jobs are placed on nodes that are topologically close, GPU-to-GPU communication is faster, NCCL collective operations are more efficient, and training throughput improves. HyperPod dynamically adapts the topology as the cluster evolves through scaling operations and node replacements, so job placement remains optimized throughout the cluster lifecycle without requiring manual updates to topology files or Slurm reconfiguration.&lt;br&gt; &lt;br&gt; HyperPod inspects the instance types across all instance groups at cluster creation, identifies the networking and interconnect characteristics of each instance type, and automatically selects the best-fit topology model. HyperPod supports tree topology for instance types with hierarchical interconnects such as ml.p5.48xlarge, ml.p5e.48xlarge, and ml.p5en.48xlarge, and block topology for instance types with uniform high-bandwidth connectivity such as ml.p6e-gb200.NVL72. For clusters with mixed instance types, HyperPod selects a compatible topology that works across all nodes. As the cluster changes through scale-up, scale-down, or node replacement events, HyperPod automatically updates the topology configuration without manual intervention, so the topology always reflects the actual state of the cluster.&lt;/p&gt; \n&lt;p&gt;To get started, create a SageMaker HyperPod Slurm cluster with supported GPU instance types. Topology-aware scheduling is enabled by default and requires no configuration.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where Amazon SageMaker HyperPod is supported. To learn more about topology-aware scheduling, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-topology.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon SageMaker HyperPod documentation&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-hyperpod-automatic-slurm-topology/",
+      "publishedAt": "2026-04-23T20:00:00.000Z",
+      "updatedAt": "2026-04-23T20:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Compute"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "compute",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2346bff85ae39cad",
+      "title": "AWS Parallel Computing Service now supports Slurm 25.11",
+      "description": "AWS Parallel Computing Service (AWS PCS) now supports Slurm version 25.11, with support for a Prometheus-compatible OpenMetrics endpoint, and introduces new log types including scheduler audit logs. This release of Slurm 25.11 introduces expedited re-queue, which can automatically reschedule jobs affected by node issues at the highest priority to help your workloads recover faster. You can enable a new OpenMetrics endpoint for real-time visibility into jobs, nodes, and scheduling using your existing monitoring tools. AWS PCS can now also send Slurm database daemon (slurmdbd) and REST API daemo",
+      "descriptionHtml": "&lt;p&gt;AWS Parallel Computing Service (AWS PCS) now supports Slurm version 25.11, with support for a Prometheus-compatible OpenMetrics endpoint, and introduces new log types including scheduler audit logs.&lt;br&gt; &lt;br&gt; This release of Slurm 25.11 introduces expedited re-queue, which can automatically reschedule jobs affected by node issues at the highest priority to help your workloads recover faster. You can enable a new OpenMetrics endpoint for real-time visibility into jobs, nodes, and scheduling using your existing monitoring tools. AWS PCS can now also send Slurm database daemon (slurmdbd) and REST API daemon (slurmrestd) logs to Amazon CloudWatch Logs, Amazon S3, or Amazon Data Firehose, helping diagnose accounting issues and debug API integrations. Scheduler audit logs, previously included in operational logs, are now delivered as a dedicated log type, providing independent control over ingestion and storage costs.&lt;br&gt; &lt;br&gt; AWS PCS is a managed service that makes it easier for you to run and scale your high performance computing (HPC) workloads and build scientific and engineering models on AWS using Slurm. You can use AWS PCS to build complete, elastic environments that integrate compute, storage, networking, and visualization tools. AWS PCS simplifies cluster operations with managed updates and built-in observability features, helping to remove the burden of maintenance. You can work in a familiar environment, focusing on your research and innovation instead of worrying about infrastructure.&lt;br&gt; &lt;br&gt; These features are available in all AWS Regions where AWS PCS is available. Standard charges apply for log delivery destinations. To learn more about AWS PCS, refer to the &lt;a href=\"https://docs.aws.amazon.com/pcs/latest/userguide/what-is-service.html\"&gt;service documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-pcs-slurm-25-11/",
+      "publishedAt": "2026-04-23T20:00:00.000Z",
+      "updatedAt": "2026-04-23T20:00:00.000Z",
+      "categories": [
+        "Compute"
+      ],
+      "services": [],
+      "tags": [
+        "compute"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ba61ad042513052d",
+      "title": "Amazon SageMaker supports notebooks and data agent for IdC domains",
+      "description": "Amazon SageMaker Unified Studio now supports serverless notebooks with a built-in data agent for AWS IAM Identity Center (IdC) domains. Previously, the notebook experience and data agent were available only in IAM domains. With this launch, customers who use IdC for authentication and access management can access the high-performance, serverless notebook environment for analytics and machine learning (ML) workloads. The serverless notebook gives data engineers, analysts, and data scientists one place to perform SQL queries, execute Python code, process large-scale data jobs, run ML workloads, ",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now supports serverless notebooks with a built-in data agent for AWS IAM Identity Center (IdC) domains. Previously, the notebook experience and data agent were available only in IAM domains. With this launch, customers who use IdC for authentication and access management can access the high-performance, serverless notebook environment for analytics and machine learning (ML) workloads.&lt;/p&gt; \n&lt;p&gt;The serverless notebook gives data engineers, analysts, and data scientists one place to perform SQL queries, execute Python code, process large-scale data jobs, run ML workloads, and create visualizations. A built-in AI data agent accelerates development by generating code and SQL statements from natural language prompts and guides users through their tasks. Customers can flexibly combine SQL, Python, and natural language within a single interactive workspace, removing the need to switch between different tools based on the workload. For example, you can start with SQL queries to explore your data, use Python for advanced analytics or to build ML models, or use natural language prompts to generate code automatically. The notebook is backed by Amazon Athena for Apache Spark, scaling from interactive SQL queries to petabyte-scale data processing.&lt;/p&gt; \n&lt;p&gt;You can use the SageMaker notebook and data agent features in &lt;a href=\"https://www.google.com/url?sa=t&amp;amp;source=web&amp;amp;rct=j&amp;amp;opi=89978449&amp;amp;url=https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html&amp;amp;ved=2ahUKEwjo8d7u8vyTAxXNHjQIHRT0KKIQFnoECBgQAQ&amp;amp;usg=AOvVaw3H9HTpx1fPYLIDdE0yougk\"&gt;all AWS Regions where Amazon SageMaker Unified Studio is supported&lt;/a&gt;. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/notebooks.html\"&gt;SageMaker notebooks user guide&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/sagemaker-data-agent.html\"&gt;SageMaker data agent user guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-idc/",
+      "publishedAt": "2026-04-23T19:13:00.000Z",
+      "updatedAt": "2026-04-23T19:13:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Analytics",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "analytics",
+        "amazon sagemaker",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0b5d33aad29f4f63",
+      "title": "Attributed Revenue Dashboard Now Available in AWS Partner Central",
+      "description": "Today, AWS announces the launch of the Attributed Revenue dashboard in AWS Partner Central in the AWS Console, giving Partners self-service visibility into the revenue impact of their solutions as measured by Partner Revenue Measurement. The dashboard displays aggregated monthly attributed revenue by Partner product, AWS service, and billing period. It provides consolidated insights from all three Partner Revenue Measurement capabilities— Resource Tagging , User Agent string , and AWS Marketplace Metering —in a single view. Partners who implement Partner Revenue Measurement can now access the ",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the launch of the &lt;a href=\"https://aws.amazon.com/blogs/apn/unlock-revenue-insights-in-the-new-attributed-revenue-dashboard/\"&gt;Attributed Revenue dashboard&lt;/a&gt; in AWS Partner Central in the AWS Console, giving Partners self-service visibility into the revenue impact of their solutions as measured by Partner Revenue Measurement. The dashboard displays aggregated monthly attributed revenue by Partner product, AWS service, and billing period. It provides consolidated insights from all three Partner Revenue Measurement capabilities—&lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/resource-tagging.html\"&gt;Resource Tagging&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/user-agent-string.html\"&gt;User Agent string&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/marketplace-metering-prerequisites.html\"&gt;AWS Marketplace Metering&lt;/a&gt;—in a single view.&lt;/p&gt; \n&lt;p&gt;Partners who implement Partner Revenue Measurement can now access the Attributed Revenue Dashboard through Partner Analytics to view monthly consumption patterns, monitor revenue trends over time, and verify that their implementation is actively measuring AWS service consumption driven by their solutions. Partners with multiple AWS Marketplace seller accounts can &lt;a href=\"https://docs.aws.amazon.com/partner-central/latest/getting-started/manage-subsidiary.html\"&gt;connect subsidiary accounts&lt;/a&gt;&amp;nbsp;to see aggregated revenue across all connected accounts.&lt;/p&gt; \n&lt;p&gt;The Attributed Revenue Dashboard is available in all commercial regions for Partners that have &lt;a href=\"https://partnercentral.awspartner.com/partnercentral2/s/login?ec=302&amp;amp;startURL=%2Fpartnercentral2%2Fs%2Farticle%3Fcategory%3DIntroductory_resources%26article%3DPartner-Central-Migration-Guide\"&gt;migrated to AWS Partner Central in the AWS Console&lt;/a&gt;. To learn more about Partner Revenue Measurement, review the &lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/what-is-service.html\"&gt;onboarding guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/attributed-revenue-dashboard-launch/",
+      "publishedAt": "2026-04-23T16:30:00.000Z",
+      "updatedAt": "2026-04-23T16:30:00.000Z",
+      "categories": [
+        "Partner Network",
+        "Analytics"
+      ],
+      "services": [],
+      "tags": [
+        "partner network",
+        "analytics"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "44fba20fc4837995",
+      "title": "AWS Elastic Beanstalk AI-powered environment analysis now supports Windows",
+      "description": "AWS Elastic Beanstalk AI-powered environment analysis is now available on Windows Server platforms. Previously available on Amazon Linux 2 and AL2023, this feature now extends to Windows-based environments, enabling you to quickly identify root causes and get recommended solutions for environment health issues. Elastic Beanstalk collects recent events, instance health, and logs from your Windows environment and sends them to Amazon Bedrock for analysis. With this expansion, developers and operations teams running .NET applications and other Windows workloads on Elastic Beanstalk can now diagno",
+      "descriptionHtml": "&lt;p&gt;AWS Elastic Beanstalk AI-powered environment analysis is now available on Windows Server platforms. Previously available on Amazon Linux 2 and AL2023, this feature now extends to Windows-based environments, enabling you to quickly identify root causes and get recommended solutions for environment health issues. Elastic Beanstalk collects recent events, instance health, and logs from your Windows environment and sends them to Amazon Bedrock for analysis.&lt;br&gt; &lt;br&gt; With this expansion, developers and operations teams running .NET applications and other Windows workloads on Elastic Beanstalk can now diagnose and resolve environment issues faster without manually reviewing logs and events. You can request an AI analysis from the Elastic Beanstalk console using the AI Analysis button or using the AWS CLI with the RequestEnvironmentInfo and RetrieveEnvironmentInfo API operations. The analysis provides step-by-step troubleshooting recommendations tailored to your Windows environment's current state.&lt;/p&gt; \n&lt;p&gt;AI-powered environment analysis is available in all AWS Regions where both AWS Elastic Beanstalk and Amazon Bedrock are available.&lt;br&gt; &lt;br&gt; For more information about the AI-powered environment analysis and for a full list of supported platform versions, see the Elastic Beanstalk&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/health-ai-analysis.html\"&gt;developer guide&lt;/a&gt;. To learn more about Elastic Beanstalk, visit the Elastic Beanstalk&amp;nbsp;&lt;a href=\"https://aws.amazon.com/elasticbeanstalk/\"&gt;product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/elastic-beanstalk-ai-analysis-windows/",
+      "publishedAt": "2026-04-23T16:00:00.000Z",
+      "updatedAt": "2026-04-23T16:00:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "AWS Elastic Beanstalk"
+      ],
+      "services": [
+        "Elastic Beanstalk"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "aws elastic beanstalk",
+        "elastic beanstalk"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "063e84ab88c5d373",
+      "title": "Second-generation AWS Outposts racks now supported in the AWS Asia Pacific (Seoul, Sydney) and Europe (Paris) Regions",
+      "description": "Second-generation AWS Outposts racks are now supported in the AWS Asia Pacific (Seoul, Sydney) and Europe (Paris) Regions. Outposts racks extend AWS infrastructure, AWS services, APIs, and tools to virtually any on-premises data center or colocation space for a truly consistent hybrid experience. Organizations from startups to enterprises and the public sector in and outside of South Korea, Australia, and France can now order their Outposts racks connected to this new supported region, optimizing for their latency and data residency needs. Outposts allows customers to run workloads that need l",
+      "descriptionHtml": "&lt;p&gt;Second-generation AWS Outposts racks are now supported in the AWS Asia Pacific (Seoul, Sydney) and Europe (Paris) Regions. Outposts racks extend AWS infrastructure, AWS services, APIs, and tools to virtually any on-premises data center or colocation space for a truly consistent hybrid experience.&lt;br&gt; &lt;br&gt; Organizations from startups to enterprises and the public sector in and outside of South Korea, Australia, and France can now order their Outposts racks connected to this new supported region, optimizing for their latency and data residency needs. Outposts allows customers to run workloads that need low latency access to on-premises systems locally while connecting back to their home Region for application management. Customers can also use Outposts and AWS services to manage and process data that needs to remain on-premises to meet data residency requirements. This regional expansion provides additional flexibility in the AWS Regions that customers’ Outposts can connect to.&lt;br&gt; &lt;br&gt; To learn more about second-generation Outposts racks, read &lt;a href=\"https://aws.amazon.com/blogs/aws/announcing-second-generation-aws-outposts-racks-with-breakthrough-performance-and-scalability-on-premises/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;this blog post&lt;/u&gt;&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/outposts/latest/network-userguide/what-is-outposts.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;user guide&lt;/u&gt;&lt;/a&gt;. For the most updated list of countries and territories and the AWS Regions where second-generation Outposts racks are supported, check out the &lt;a href=\"https://aws.amazon.com/outposts/rack/faqs/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;Outposts rack FAQs page&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/second-generation-aws-outposts-racks-sydney-seoul-paris/",
+      "publishedAt": "2026-04-23T16:00:00.000Z",
+      "updatedAt": "2026-04-23T16:00:00.000Z",
+      "categories": [
+        "Storage",
+        "Networking",
+        "AWS Outposts",
+        "Compute"
+      ],
+      "services": [
+        "Outposts"
+      ],
+      "tags": [
+        "storage",
+        "networking",
+        "aws outposts",
+        "compute",
+        "outposts"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3d65b16931df67c4",
+      "title": "Amazon Quick now supports multiple owners for admin-managed SharePoint and Google Drive knowledge bases",
+      "description": "Amazon Quick now enables you to add co-owners to knowledge bases and data source connections for admin-managed Microsoft SharePoint Online and Google Drive integrations. This makes it easier to collaborate across teams and reuse existing connections without re-entering credentials. Knowledge base owners can share their knowledge bases with two roles: Owner (full management access including editing, syncing, sharing, and deleting) and Viewer (query-only access). Co-owner sharing with the Owner role is available exclusively for admin-managed SharePoint and Google Drive knowledge bases. All other",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick now enables you to add co-owners to knowledge bases and data source connections for admin-managed Microsoft SharePoint Online and Google Drive integrations. This makes it easier to collaborate across teams and reuse existing connections without re-entering credentials.&lt;br&gt; &lt;br&gt; Knowledge base owners can share their knowledge bases with two roles: Owner (full management access including editing, syncing, sharing, and deleting) and Viewer (query-only access). Co-owner sharing with the Owner role is available exclusively for admin-managed SharePoint and Google Drive knowledge bases. All other knowledge base types support Viewer sharing only. To share, navigate to the actions menu next to any knowledge base or use the Permissions tab.&lt;br&gt; &lt;br&gt; Administrators can also share data source connections, allowing other users to create knowledge bases from the same connection. Data source sharing supports Owner (create knowledge bases and edit connection details) and Viewer (create knowledge bases only) roles. To share a data source, go to Manage account &amp;gt; Manage assets &amp;gt; Data sources and select the connection to share.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon Quick is available. For more information, see &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/sharing-kb-datasources.html\" target=\"_blank\"&gt;Knowledge Base Sharing&lt;/a&gt; in the Amazon Quick User Guide.&lt;br&gt; &lt;br&gt; Amazon Quick is available in US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (London), and Europe (Ireland). For more information, visit the &lt;a href=\"https://aws.amazon.com/quick/\" target=\"_blank\"&gt;Amazon Quick page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-sharepoint/",
+      "publishedAt": "2026-04-23T15:59:00.000Z",
+      "updatedAt": "2026-04-23T15:59:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2bbb8b580da10e19",
+      "title": "Amazon EC2 X8g instances now available in Europe (Ireland) region",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8g instances are available in Europe (Ireland) region. These instances are powered by AWS Graviton4 processors and deliver up to 60% better performance than AWS Graviton2-based Amazon EC2 X2gd instances. X8g instances offer up to 3 TiB of total memory and increased memory per vCPU compared to other Graviton4-based instance. They have the best price performance among EC2 X-series instances, and are ideal for memory-intensive workloads such as electronic design automation (EDA) workloads, in-memory databases (Redis, Memcached), relationa",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8g instances are available in Europe (Ireland) region. These instances are powered by AWS Graviton4 processors and deliver up to 60% better performance than AWS Graviton2-based Amazon EC2 X2gd instances. X8g instances offer up to 3 TiB of total memory and increased memory per vCPU compared to other Graviton4-based instance. They have the best price performance among EC2 X-series instances, and are ideal for memory-intensive workloads such as electronic design automation (EDA) workloads, in-memory databases (Redis, Memcached), relational databases (MySQL, PostgreSQL), real-time big data analytics, real-time caching servers, and memory-intensive containerized applications.&lt;br&gt; &lt;br&gt; X8g instances offer larger instance sizes with up to 3x more vCPU (up to 48xlarge) and memory (up to 3TiB) than Graviton2-based X2gd instances. They offer up to 50 Gbps enhanced networking bandwidth and up to 40 Gbps of bandwidth to the Amazon Elastic Block Store (Amazon EBS). Elastic Fabric Adapter (EFA) networking support is offered on 24xlarge, 48xlarge, and bare metal sizes, and Elastic Network Adapter (ENA) Express support is available on instance sizes larger than 12xlarge.&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://aws.amazon.com/ec2/instance-types/x8g/\"&gt;Amazon EC2 X8g Instances&lt;/a&gt;. To quickly migrate your workloads to Graviton-based instances, see &lt;a href=\"https://aws.amazon.com/ec2/graviton/fast-start/\"&gt;AWS Graviton Fast Start program&lt;/a&gt;. To get started, see the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface (AWS CLI)&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html\"&gt;AWS SDKs&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ec2-x8g-instances-europe-ireland/",
+      "publishedAt": "2026-04-23T15:00:00.000Z",
+      "updatedAt": "2026-04-23T15:00:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1393d4272fbcda13",
+      "title": "Amazon Redshift supports UPDATE, DELETE, MERGE for Apache Iceberg tables",
+      "description": "Amazon Redshift now supports row-level UPDATE, DELETE, and MERGE operations on Apache Iceberg tables. Customers who use Iceberg to build interoperable data lakes can now perform data manipulation language (DML) operations directly from Amazon Redshift, without moving data to external processing engines. Previously, modifying individual rows in Iceberg tables required using separate engines, adding complexity and latency to data pipelines. With this launch, you can run UPDATE, DELETE, and MERGE (UPSERT) statements on both partitioned and unpartitioned Iceberg tables, including S3 Tables. Suppor",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/redshift/\"&gt;Amazon Redshift&lt;/a&gt; now supports row-level UPDATE, DELETE, and MERGE operations on Apache Iceberg tables. Customers who use Iceberg to build interoperable data lakes can now perform data manipulation language (DML) operations directly from Amazon Redshift, without moving data to external processing engines. Previously, modifying individual rows in Iceberg tables required using separate engines, adding complexity and latency to data pipelines.&lt;br&gt; &lt;br&gt; With this launch, you can run UPDATE, DELETE, and MERGE (UPSERT) statements on both partitioned and unpartitioned Iceberg tables, including S3 Tables. Supported Iceberg partition transforms include identity, bucket, truncate, year, month, day, and hour. MERGE enables you to combine insert and update logic in a single statement for common data integration patterns such as change data capture and slowly changing dimensions. Tables modified by Redshift are compatible with other Iceberg-compatible engines, including Amazon EMR and Amazon Athena, preserving cross-engine interoperability. AWS Lake Formation permissions are supported for Iceberg write operations.&lt;br&gt; &lt;br&gt; Amazon Redshift support for UPDATE, DELETE, and MERGE commands on Apache Iceberg tables is available in all AWS Regions where Amazon Redshift is available. To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/dg/iceberg-writes.html\"&gt;Writing to Apache Iceberg tables&lt;/a&gt; section in the Amazon Redshift Database Developer Guide, where you will also find documentation for the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/dg/iceberg-writes-sql-syntax.html\"&gt;SQL syntax&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/redshift-update-delete-merge-iceberg-tables/",
+      "publishedAt": "2026-04-23T15:00:00.000Z",
+      "updatedAt": "2026-04-23T15:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Redshift"
+      ],
+      "services": [
+        "Redshift"
+      ],
+      "tags": [
+        "analytics",
+        "amazon redshift",
+        "redshift"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7d963498fc4728e2",
+      "title": "Amazon Quick now supports permission verification for ACL-enabled knowledge bases",
+      "description": "Amazon Quick now provides ACL verification for ACL enabled knowledge bases, enabling administrators to check whether a specific user has access to a specific document. This feature simplifies troubleshooting access issues and helps confirm that sensitive documents are properly restricted, without manually tracing permission inheritance across your data sources. To verify document access, open a knowledge base with document-level ACLs enabled, navigate to the Sync reports tab, and choose View Access Details from the actions menu next to any synced item. From the Access Details panel, use the Pe",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick now provides ACL verification for ACL enabled knowledge bases, enabling administrators to check whether a specific user has access to a specific document. This feature simplifies troubleshooting access issues and helps confirm that sensitive documents are properly restricted, without manually tracing permission inheritance across your data sources.&lt;br&gt; &lt;br&gt; To verify document access, open a knowledge base with document-level ACLs enabled, navigate to the &lt;b&gt;Sync reports&lt;/b&gt; tab, and choose &lt;b&gt;View Access Details&lt;/b&gt; from the actions menu next to any synced item. From the Access Details panel, use the &lt;b&gt;Permission Checker&lt;/b&gt; to enter a user's email address and instantly confirm whether they can access the document. The panel also displays all users and groups with access to the document, giving you full visibility into the applied permissions.&lt;br&gt; The Permission Checker returns one of three results: the user has access, the user does not have access, or no ACL was found for the document.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; This feature is available for ACL enabled Knowledge Bases in all AWS Regions where Amazon Quick is available. For more information, see &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/sync-reports-observability.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Sync reports and observability&lt;/a&gt; in the Amazon Quick User Guide.&lt;br&gt; &lt;br&gt; Amazon Quick is available in US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (London), and Europe (Ireland). For more information, visit the &lt;a href=\"https://aws.amazon.com/quick/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Quick page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-acl/",
+      "publishedAt": "2026-04-23T14:56:00.000Z",
+      "updatedAt": "2026-04-23T14:56:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f561d762e65d8556",
+      "title": "Amazon S3 now supports five additional checksum algorithms",
+      "description": "Amazon S3 now supports five additional checksum algorithms: MD5, XXHash3, XXHash64, XXHash128, and SHA-512, bringing the total to ten. S3 validates and stores the checksum alongside your object for any of these supported algorithms, so you can verify data integrity end to end without additional tooling. When uploading objects, you can provide a checksum value and S3 validates it against the uploaded data before storing the object. For multipart uploads, you provide part-level checksums and S3 calculates a composite checksum upon completion. If you do not provide a checksum on upload, S3 automa",
+      "descriptionHtml": "&lt;p&gt;Amazon S3 now supports five additional checksum algorithms: MD5, XXHash3, XXHash64, XXHash128, and SHA-512, bringing the total to ten. S3 validates and stores the checksum alongside your object for any of these supported algorithms, so you can verify data integrity end to end without additional tooling.&lt;br&gt; &lt;br&gt; When uploading objects, you can provide a checksum value and S3 validates it against the uploaded data before storing the object. For multipart uploads, you provide part-level checksums and S3 calculates a composite checksum upon completion. If you do not provide a checksum on upload, S3 automatically calculates and applies a CRC64NVME checksum as default integrity protection. Similarly, you can request the stored checksum when downloading to verify your data. The new algorithms work with S3 Replication, so you can replicate objects across buckets while preserving checksums, as well as S3 Inventory so you can audit checksums for datasets over time. For pre-existing objects that were uploaded without a checksum or with a different algorithm, you can use S3 Batch Operations to calculate checksums at scale without downloading or restoring data.&lt;br&gt; &lt;br&gt; The new checksum algorithms are available at no additional cost across 37 AWS Regions, including the AWS China and AWS GovCloud (US) Regions. You can get started using the AWS CLI or AWS SDKs. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/checking-object-integrity.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;S3 User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/s3-five-additional-checksum-algorithms/",
+      "publishedAt": "2026-04-23T13:00:00.000Z",
+      "updatedAt": "2026-04-23T13:00:00.000Z",
+      "categories": [
+        "Amazon S3",
+        "Storage"
+      ],
+      "services": [
+        "S3"
+      ],
+      "tags": [
+        "amazon s3",
+        "storage",
+        "s3"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f21c352d49fe6db1",
+      "title": "AWS Backup expands support for Amazon Aurora PITR to six Regions",
+      "description": "AWS Backup support for Amazon Aurora Point-in-time Recovery (PITR) is now available in six additional AWS Regions: Asia Pacific (Malaysia, Thailand, Taipei, New Zealand), Canada West (Calgary) and Mexico (Central). This expansion brings policy-based data protection and recovery with support for PITR to your Amazon Aurora clusters in these newly supported Regions. To start protecting your Aurora clusters with support for PITR utilizing AWS Backup, add your Aurora clusters to your existing backup plans, or create a new backup plan and attach your Aurora clusters to it. Ensure continuous backups ",
+      "descriptionHtml": "&lt;p&gt;AWS Backup support for Amazon Aurora Point-in-time Recovery (PITR) is now available in six additional AWS Regions: Asia Pacific (Malaysia, Thailand, Taipei, New Zealand), Canada West (Calgary) and Mexico (Central).&lt;/p&gt; \n&lt;p&gt;This expansion brings policy-based data protection and recovery with support for PITR to your Amazon Aurora clusters in these newly supported Regions.&lt;/p&gt; \n&lt;p&gt;To start protecting your Aurora clusters with support for PITR utilizing AWS Backup, add your Aurora clusters to your existing backup plans, or create a new backup plan and attach your Aurora clusters to it. Ensure continuous backups or PITR is enabled on the associated backup rule. To learn more about AWS Backup for Amazon Aurora, visit the &lt;a href=\"https://aws.amazon.com/backup/\"&gt;product page&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/backup/pricing/\"&gt;pricing page&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html\"&gt;documentation&lt;/a&gt;. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/backup\"&gt;AWS Backup console&lt;/a&gt;, AWS Command Line Interface (CLI), or AWS SDKs.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-backup-amazon-aurora-pitr/",
+      "publishedAt": "2026-04-23T10:00:00.000Z",
+      "updatedAt": "2026-04-23T10:00:00.000Z",
+      "categories": [
+        "Storage",
+        "AWS Backup"
+      ],
+      "services": [
+        "Backup",
+        "Aurora"
+      ],
+      "tags": [
+        "storage",
+        "aws backup",
+        "backup",
+        "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "695a67b4f832a67c",
+      "title": "Amazon SageMaker Unified Studio now supports VPC for notebook kernels",
+      "description": "Amazon SageMaker Unified Studio now supports Amazon Virtual Private Cloud (Amazon VPC) for notebook kernels. With this launch, notebook kernels execute within the VPC configured at the domain level, giving enterprises network isolation for interactive data and machine learning (ML) workloads. This helps customers meet security and compliance requirements by keeping applicable notebook compute traffic within their VPC boundaries. With VPC support for notebook kernels, data engineers, analysts, and data scientists can connect to private resources from their notebooks. The notebook kernel inherit",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now supports Amazon Virtual Private Cloud (Amazon VPC) for notebook kernels. With this launch, notebook kernels execute within the VPC configured at the domain level, giving enterprises network isolation for interactive data and machine learning (ML) workloads. This helps customers meet security and compliance requirements by keeping applicable notebook compute traffic within their VPC boundaries.&lt;/p&gt; \n&lt;p&gt;With VPC support for notebook kernels, data engineers, analysts, and data scientists can connect to private resources from their notebooks. The notebook kernel inherits the VPC settings, subnets, and security groups defined at the SageMaker Unified Studio domain level, so administrators can manage network policies centrally. This means you can query private databases, access internal APIs, and work with data sources that are not publicly accessible, all from the same notebook environment that supports SQL, Python, and natural language through the built-in data agent. This VPC configuration only applies to the notebook's interactive compute, where your Python code and dataframes execute. For VPC configurations with other compute engines, refer to the documentation for each individual engine.&lt;/p&gt; \n&lt;p&gt;You can use VPC-enabled notebook kernels in &lt;a href=\"https://www.google.com/url?sa=t&amp;amp;source=web&amp;amp;rct=j&amp;amp;opi=89978449&amp;amp;url=https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html&amp;amp;ved=2ahUKEwjo8d7u8vyTAxXNHjQIHRT0KKIQFnoECBgQAQ&amp;amp;usg=AOvVaw3H9HTpx1fPYLIDdE0yougk\"&gt;all AWS Regions where Amazon SageMaker Unified Studio is supported&lt;/a&gt;. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/notebooks.html\"&gt;SageMaker Unified Studio user guide&lt;/a&gt; and the Amazon SageMaker product page.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-unified-studio-vpc/",
+      "publishedAt": "2026-04-23T00:57:00.000Z",
+      "updatedAt": "2026-04-23T00:57:00.000Z",
+      "categories": [
+        "Amazon Sagemaker",
+        "Analytics"
+      ],
+      "services": [
+        "VPC",
+        "SageMaker"
+      ],
+      "tags": [
+        "amazon sagemaker",
+        "analytics",
+        "vpc",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
     {
       "id": "a7a72308d7bbe7c2",
       "title": "Amazon SageMaker Unified Studio now supports multiple code spaces within projects for IAM domains",
@@ -1034,6 +1334,23 @@
       "isNew": true
     },
     {
+      "id": "381d7c691288d413",
+      "title": "AWS Transform automates landing zone creation in migration workflows",
+      "description": "AWS Transform now supports landing zone creation directly within migration workflows, delivering a secure, multi-account AWS environment tailored to your migration needs. By consolidating orchestration into AWS Transform, it automates the setup that previously required configuration across AWS Control Tower, AWS Organizations and AWS Identity and Access Management, accelerating migration readiness with a ready-to-deploy target environment. This new capability extends the end-to-end automation that AWS Transform provides across the migration lifecycle from discovery and migration planning to ne",
+      "descriptionHtml": "&lt;p&gt;AWS Transform now supports landing zone creation directly within migration workflows, delivering a secure, multi-account AWS environment tailored to your migration needs. By consolidating orchestration into AWS Transform, it automates the setup that previously required configuration across AWS Control Tower, AWS Organizations and AWS Identity and Access Management, accelerating migration readiness with a ready-to-deploy target environment. This new capability extends the end-to-end automation that AWS Transform provides across the migration lifecycle from discovery and migration planning to network and server migration, so that preparing the target environment is no longer a separate workstream.&lt;br&gt; &lt;br&gt; Whether starting from scratch or extending an existing AWS organization, AWS Transform aligns landing zone foundations with AWS best practices, recommending optimal account structures based on migration data and business requirements. Customers can customize Organizational Unit (OU) hierarchies, accounts, and Service Control Policies (SCP), then choose between agent-managed deployment or generate Infrastructure as Code templates downloadable in CloudFormation, AWS CDK, or Landing Zone Accelerator (LZA) formats for self deployment.&lt;/p&gt; \n&lt;p&gt;The landing zone creation capability is now available in AWS Transform across all &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-app-vmware-acct-connections.html\"&gt;supported target regions&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the&lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html\"&gt;&amp;nbsp;AWS Transform User Guide.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-transform-automates-landing-zone/",
+      "publishedAt": "2026-04-20T11:59:00.000Z",
+      "updatedAt": "2026-04-20T11:59:00.000Z",
+      "categories": [
+        "Migration"
+      ],
+      "services": [],
+      "tags": [
+        "migration"
+      ],
+      "isNew": true
+    },
+    {
       "id": "4650aaf78ffc7820",
       "title": "AWS Managed Microsoft AD is now available on Windows functional level 2016",
       "description": "Starting today, all AWS Directory Service for Microsoft AD (AWS Managed Microsoft AD) directories run on Windows functional level 2016. The upgrade to Windows functional level 2016 has been applied automatically to all existing AWS Managed Microsoft AD directories. The functional level upgrade includes enhanced authentication mechanisms and improved security for privileged access management, helping you better protect your Active Directory infrastructure in the cloud. This upgrade provides LAPS (Local Administrator Password Solution), which helps you manage local administrator passwords on dom",
@@ -1287,7 +1604,7 @@
         "marketing:marchitecture",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f412dad3dfe98933",
@@ -1309,7 +1626,7 @@
         "management and governance",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1ad98ddac47f23ed",
@@ -1331,7 +1648,7 @@
         "management and governance",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "4300abca8e3769d4",
@@ -1350,7 +1667,7 @@
         "storage",
         "aws elastic disaster recovery"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "16b3cf924c479c91",
@@ -1367,7 +1684,7 @@
       "tags": [
         "workspaces"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6ed01c477c16e1f8",
@@ -1389,7 +1706,7 @@
         "amazon fsx for lustre",
         "fsx"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "220d9589fa0c688a",
@@ -1411,7 +1728,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5e62a53706ee00b3",
@@ -1433,7 +1750,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a71c4f84e6a83a35",
@@ -1457,7 +1774,7 @@
         "bedrock",
         "claude"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "711734359a4ca0e6",
@@ -1474,7 +1791,7 @@
       "tags": [
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "76eafedfac3dbe4c",
