@@ -1,7 +1,145 @@
 {
-  "lastUpdated": "2026-04-24T09:46:07.611Z",
-  "itemCount": 311,
+  "lastUpdated": "2026-04-25T08:55:05.966Z",
+  "itemCount": 320,
   "items": [
+    {
+      "id": "3d9b6fca22f6867a",
+      "title": "AWS Lambda Provisioned Mode for Kafka event source mappings (ESMs) now available in AWS Asia Pacific (Taipei) and AWS GovCloud (US) Regions",
+      "description": "AWS Lambda now supports Provisioned Mode for event source mappings (ESMs) that subscribe to Apache Kafka event sources in the Asia Pacific (Taipei), AWS GovCloud (US-East), and AWS GovCloud (US-West) Regions. Provisioned Mode allows you to optimize the throughput of your Kafka ESM by provisioning event polling resources that remain ready to handle sudden spikes in traffic, helping you build highly responsive and scalable event-driven Kafka applications with stringent performance requirements. Customers building streaming data applications often use Kafka as an event source for Lambda functions",
+      "descriptionHtml": "&lt;p&gt;AWS Lambda now supports Provisioned Mode for event source mappings (ESMs) that subscribe to Apache Kafka event sources in the Asia Pacific (Taipei), AWS GovCloud (US-East), and AWS GovCloud (US-West) Regions. Provisioned Mode allows you to optimize the throughput of your Kafka ESM by provisioning event polling resources that remain ready to handle sudden spikes in traffic, helping you build highly responsive and scalable event-driven Kafka applications with stringent performance requirements.&lt;/p&gt; \n&lt;p&gt;Customers building streaming data applications often use Kafka as an event source for Lambda functions, relying on Lambda's fully managed ESM to automatically scale polling resources in response to events. However, for event-driven Kafka applications that need to handle unpredictable bursts of traffic, lack of control over the throughput of ESM can lead to delays in your users' experience. Provisioned Mode for Kafka ESM enables customers to fine-tune the throughput of their Amazon Managed Streaming for Apache Kafka (MSK) ESM or self-managed Kafka ESM by provisioning and auto-scaling between a minimum and maximum number of polling resources called event pollers. With this launch, this feature is now available in three additional regions. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;You can activate Provisioned Mode for MSK ESM or self-managed Kafka ESM by configuring a minimum and maximum number of event pollers in the ESM API, AWS Console, AWS CLI, AWS SDK, and AWS CloudFormation. You pay for the usage of event pollers, along a billing unit called Event Poller Unit (EPU). To learn more, read the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventsourcemapping.html\"&gt;Lambda ESM documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/lambda/pricing/\"&gt;AWS Lambda pricing&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-Lambda-provisioned-esm-region-expansion/",
+      "publishedAt": "2026-04-24T21:13:00.000Z",
+      "updatedAt": "2026-04-24T21:13:00.000Z",
+      "categories": [],
+      "services": [
+        "Lambda",
+        "Kafka"
+      ],
+      "tags": [
+        "lambda",
+        "kafka"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3fe9e46691a279b1",
+      "title": "Amazon Quick now integrates with Visier’s Vee agent for workforce intelligence",
+      "description": "Amazon Quick now integrates with Vee, the AI assistant from Visier's people analytics platform, through the model context protocol (MCP). HR business partners, finance managers, and operations leaders can now get governed access to live workforce intelligence from Visier directly within their Amazon Quick workspace without switching tools. After setting up the connection in Quick using Visier’s remote MCP server, you can ask questions in natural language about headcount, attrition, tenure, and open requisitions and receive answers grounded in Visier's governed workforce data model. Vee can als",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick now integrates with Vee, the AI assistant from Visier's people analytics platform, through the model context protocol (MCP). HR business partners, finance managers, and operations leaders can now get governed access to live workforce intelligence from Visier directly within their Amazon Quick workspace without switching tools.&lt;/p&gt; \n&lt;p&gt;After setting up the connection in Quick using Visier’s remote MCP server, you can ask questions in natural language about headcount, attrition, tenure, and open requisitions and receive answers grounded in Visier's governed workforce data model. Vee can also be invoked from automated Quick Flows to run recurring workforce reviews or draft documents. Quick intelligently routes relevant prompts to Vee and returns contextualized answers alongside enterprise knowledge – such as budgets, policies, and plans stored in Quick Spaces – so every answer reflects the full organizational picture.&lt;/p&gt; \n&lt;p&gt;The Visier integration with Amazon Quick is available in all AWS Regions where Amazon Quick is available.&lt;/p&gt; \n&lt;p&gt;To get started with Amazon Quick, &lt;a href=\"https://aws.amazon.com/quick/\" target=\"_blank\"&gt;visit the website&lt;/a&gt;. To learn more about the Visier integration, read the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/visier-integration.html\" target=\"_blank\"&gt;Visier integration guide&lt;/a&gt;, see the &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/building-workforce-ai-agents-with-visier-and-amazon-quick/\" target=\"_blank\"&gt;blog&lt;/a&gt;, and explore more integrations on the &lt;a href=\"https://aws.amazon.com/quick/integrations/\" target=\"_blank\"&gt;integrations page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-visier-vee/",
+      "publishedAt": "2026-04-24T21:03:00.000Z",
+      "updatedAt": "2026-04-24T21:03:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "238464e1491b3c82",
+      "title": "Amazon Bedrock AgentCore Gateway and Identity support VPC egress",
+      "description": "Amazon Bedrock AgentCore Gateway and Identity now provide secure and controlled egress traffic management for your applications, enabling seamless communication with resources in your Virtual Private Cloud (VPC). VPC egress for AgentCore Gateway targets and Identity credential providers are offered in both managed and self-managed configurations. With VPC egress support, customers can now invoke private resources (e.g., EKS-hosted MCP servers) directly from their AgentCore Gateway. Managed VPC egress covers most customer use cases. For more complex networking setups, customers can configure th",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore Gateway and Identity now provide secure and controlled egress traffic management for your applications, enabling seamless communication with resources in your Virtual Private Cloud (VPC). VPC egress for AgentCore Gateway targets and Identity credential providers are offered in both managed and self-managed configurations.&lt;/p&gt; \n&lt;p&gt;With VPC egress support, customers can now invoke private resources (e.g., EKS-hosted MCP servers) directly from their AgentCore Gateway. Managed VPC egress covers most customer use cases. For more complex networking setups, customers can configure their own VPC Lattice resources. AgentCore Identity VPC egress supports connectivity to Identity Providers (IdPs) running inside a customer’s VPC. This enables two key capabilities: validating inbound access tokens issued by your private IdP and fetching tokens from your IdP for outbound request authentication. Finally, this launch supports private DNS resolution for managed VPC egress resources across Gateway and Identity.&lt;/p&gt; \n&lt;p&gt;AgentCore Gateway and Identity are available in&lt;a&gt;&amp;nbsp;fourteen AWS Regions&lt;/a&gt;: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), and Europe (Stockholm).&lt;/p&gt; \n&lt;p&gt;Learn more about VPC egress capabilities through AgentCore Gateway&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-quick-start.html\"&gt;documentation,&lt;/a&gt; and AgentCore Identity &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity-private-idp.html\"&gt;documentation&lt;/a&gt;. Get started with the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-get-started-cli.html\"&gt;AgentCore CLI&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2024/04/agentcore-gateway-identity-vpc/",
+      "publishedAt": "2026-04-24T21:00:00.000Z",
+      "updatedAt": "2026-04-24T21:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "VPC",
+        "Bedrock"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "vpc",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b3a44dddc8e3a31c",
+      "title": "Amazon EC2 High Memory U7i instances now available in additional regions",
+      "description": "Amazon EC2 High Memory U7i-8TB instances (u7i-8tb.112xlarge) are now available in AWS Europe (Stockholm, Zurich) regions, U7in-16TB instances (u7in-16tb.224xlarge) are now available in the AWS US East (Ohio) region, and U7in-24TB instances (u7in-24tb.224xlarge) are now available in the AWS Europe (Stockholm) region. U7i instances are part of the AWS 7th generation and are powered by custom fourth-generation Intel Xeon Scalable processors (Sapphire Rapids). U7i-8TB instances offer 8 TiB of DDR5 memory, U7in-16TB instances offer 16 TiB of DDR5 memory, and U7in-24TB instances offer 24 TiB of DDR5",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 High Memory U7i-8TB instances (u7i-8tb.112xlarge) are now available in AWS Europe (Stockholm, Zurich) regions, U7in-16TB instances (u7in-16tb.224xlarge) are now available in the AWS US East (Ohio) region, and U7in-24TB instances (u7in-24tb.224xlarge) are now available in the AWS Europe (Stockholm) region. U7i instances are part of the AWS 7th generation and are powered by custom fourth-generation Intel Xeon Scalable processors (Sapphire Rapids). U7i-8TB instances offer 8 TiB of DDR5 memory, U7in-16TB instances offer 16 TiB of DDR5 memory, and U7in-24TB instances offer 24 TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment.&lt;/p&gt; \n&lt;p&gt;U7i-8TB instances deliver 448 vCPUs and support up to 100 Gbps of Amazon EBS bandwidth, 100 Gbps of network bandwidth, and ENA Express. Both U7in-16TB and U7in-24TB instances deliver 896 vCPUs and support up to 100 Gbps of Amazon EBS bandwidth for faster data loading and backups, 200 Gbps of network bandwidth, and ENA Express. U7i instances are ideal for customers running mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.&lt;/p&gt; \n&lt;p&gt;To learn more about U7i instances, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/u7i/\"&gt;High Memory instances page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ec2-high-memory-u7i/",
+      "publishedAt": "2026-04-24T17:00:00.000Z",
+      "updatedAt": "2026-04-24T17:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9cf2c57b1babf0a1",
+      "title": "Amazon Connect now provides eight new metrics to measure and improve AI agent performance",
+      "description": "Amazon Connect now provides eight new metrics to measure and improve AI agent performance, including goal success rate, faithfulness score, and tool selection accuracy. These metrics offer visibility into the quality of AI-driven customer interactions, enabling measurement and continuous improvement of AI agent outcomes. With this launch, you can monitor whether AI agents successfully resolved customer requests, assess faithfulness and detect contextual hallucinations. You can also evaluate tool selection and utilization accuracy, and capture customer feedback through thumbs up/down ratings wh",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect now provides eight new metrics to measure and improve AI agent performance, including goal success rate, faithfulness score, and tool selection accuracy. These metrics offer visibility into the quality of AI-driven customer interactions, enabling measurement and continuous improvement of AI agent outcomes.&amp;nbsp;With this launch, you can monitor whether AI agents successfully resolved customer requests, assess faithfulness and detect contextual hallucinations. You can also evaluate tool selection and utilization accuracy, and capture customer feedback through thumbs up/down ratings when enabled.&amp;nbsp;&lt;br&gt; &lt;br&gt; You can access these new metrics through Amazon Connect's AI Agent Performance dashboard, or through the GetMetricDataV2 API and zero-ETL data lake for custom reporting or integration with your existing analytics workflows.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where Amazon Connect AI Agents is supported. For more information, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/ai-agent-performance-dashboard.html\"&gt;&lt;u&gt;Amazon Connect Administrator Guide&lt;/u&gt;&lt;/a&gt;. To learn more about Amazon Connect, an AI-native solution that turns every customer interaction into a moment worth remembering, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/connect/\"&gt;&lt;u&gt;Amazon Connect website&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-connect-ai-agent-metrics/",
+      "publishedAt": "2026-04-24T17:00:00.000Z",
+      "updatedAt": "2026-04-24T17:00:00.000Z",
+      "categories": [
+        "Contact Center",
+        "Amazon Connect"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "amazon connect",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1ca4cca8852b44de",
+      "title": "AWS Marketplace Management Portal now supports bank account deletion",
+      "description": "AWS Marketplace sellers can now delete bank accounts directly from the Payment Settings page in the AWS Marketplace Management Portal (AMMP). This new self-service capability addresses a long-standing gap in payment account management, allowing sellers to remove ACH-type and SWIFT-type bank accounts without contacting customer service. This enhancement is particularly valuable for global enterprises and ISVs managing multiple currencies and banking relationships. With this update, sellers gain complete control over their payment account management. Key benefits include the ability to clean up ",
+      "descriptionHtml": "&lt;p&gt;AWS Marketplace sellers can now delete bank accounts directly from the Payment Settings page in the AWS Marketplace Management Portal (AMMP). This new self-service capability addresses a long-standing gap in payment account management, allowing sellers to remove ACH-type and SWIFT-type bank accounts without contacting customer service. This enhancement is particularly valuable for global enterprises and ISVs managing multiple currencies and banking relationships.&lt;/p&gt; \n&lt;p&gt;With this update, sellers gain complete control over their payment account management. Key benefits include the ability to clean up unused accounts, remove failed or outdated banking relationships, and reduce payment routing risks. The feature also includes Last Updated timestamps to help differentiate between modified bank accounts.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/provide-bank-information.html\"&gt;AWS Marketplace Seller Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-marketplace-management-portal/",
+      "publishedAt": "2026-04-24T16:37:00.000Z",
+      "updatedAt": "2026-04-24T16:37:00.000Z",
+      "categories": [
+        "AWS Marketplace"
+      ],
+      "services": [],
+      "tags": [
+        "aws marketplace"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ef164900a1ef5a6d",
+      "title": "AWS Deadline Cloud now supports custom scripting for job submission workflows",
+      "description": "AWS Deadline Cloud now supports running custom scripts before and after job submission, giving studios the ability to integrate their pipeline directly into the submission workflow. AWS Deadline Cloud is a fully managed service that simplifies render management for teams creating computer-generated graphics and visual effects for films, television, web content, and design. With the new submission scripting capability, you can configure scripts that run automatically as part of every job submission. Pre-submission scripts run before job attachments are uploaded, allowing you to validate job con",
+      "descriptionHtml": "&lt;p&gt;AWS Deadline Cloud now supports running custom scripts before and after job submission, giving studios the ability to integrate their pipeline directly into the submission workflow. AWS Deadline Cloud is a fully managed service that simplifies render management for teams creating computer-generated graphics and visual effects for films, television, web content, and design.&lt;br&gt; &lt;br&gt; With the new submission scripting capability, you can configure scripts that run automatically as part of every job submission. Pre-submission scripts run before job attachments are uploaded, allowing you to validate job configurations, discover and add additional input files such as textures or caches, modify submission parameters, or enforce studio policies. Post-submission scripts run after the job is created, enabling you to send notifications, update tracking systems, or log submission details. Scripts are defined in a simple YAML or JSON configuration file placed in your job bundle directory or in a shared studio-wide directory using an environment variable, making it easy for pipeline teams to enforce standards across all artists. Each script receives job metadata automatically and supports configurable timeouts.&amp;nbsp;&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://github.com/aws-deadline/deadline-cloud/blob/mainline/README.md#submission-hooks\"&gt;Deadline Cloud Client documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-deadline-cloud/",
+      "publishedAt": "2026-04-24T15:42:00.000Z",
+      "updatedAt": "2026-04-24T15:42:00.000Z",
+      "categories": [
+        "AWS Deadline Cloud",
+        "Media Services"
+      ],
+      "services": [],
+      "tags": [
+        "aws deadline cloud",
+        "media services"
+      ],
+      "isNew": true
+    },
     {
       "id": "5f586865803f3c34",
       "title": "Amazon Athena simplifies federated queries with managed connectors",
@@ -21,6 +159,30 @@
         "amazon athena",
         "analytics",
         "athena"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a7602bb71630dc99",
+      "title": "AWS Client VPN now supports native AWS Transit Gateway integration",
+      "description": "AWS Client VPN now supports native integration with AWS Transit Gateway, simplifying centralized remote access for your end users across multiple VPCs and on-premises, and providing end-to-end source IP visibility. AWS Transit Gateway interconnects your Amazon Virtual Private Clouds (VPCs) and on-premises networks, while AWS Client VPN enables secure remote access to AWS and on-premises resources connected through your AWS network. Previously, connecting Client VPN to multiple VPCs required provisioning and managing an intermediate VPC, adding operational complexity as you needed to manage add",
+      "descriptionHtml": "&lt;p&gt;AWS Client VPN now supports native integration with AWS Transit Gateway, simplifying centralized remote access for your end users across multiple VPCs and on-premises, and providing end-to-end source IP visibility.&lt;br&gt; &lt;br&gt; AWS Transit Gateway interconnects your Amazon Virtual Private Clouds (VPCs) and on-premises networks, while AWS Client VPN enables secure remote access to AWS and on-premises resources connected through your AWS network. Previously, connecting Client VPN to multiple VPCs required provisioning and managing an intermediate VPC, adding operational complexity as you needed to manage additional resources. Moreover, client source IPs were translated through Source Network Address Translation (SNAT), making it difficult to identify which remote user generated specific traffic and complicating security audits. Native Transit Gateway attachment eliminates the need for an intermediate VPC, letting you provide centralized remote access to multiple VPCs and on-premises networks directly from your Client VPN endpoint. Additionally, the end-user source IP is now preserved end-to-end, so you can create authorization rules based on actual client IPs and trace traffic back to specific users, simplifying security, compliance, and troubleshooting workflows. Furthermore, Transit Gateway flow logs capture connection-level details tied to preserved source IPs for improved troubleshooting and compliance audits.&lt;br&gt; &lt;br&gt; This integration is available in all AWS Regions where AWS Client VPN is available. There are no additional charges for this native integration beyond standard &lt;a href=\"https://aws.amazon.com/vpn/pricing/\"&gt;pricing &lt;/a&gt;of AWS Client VPN and AWS Transit Gateway.&lt;/p&gt; \n&lt;p&gt;To learn more about Client VPN:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;Visit the AWS Client VPN &lt;a href=\"https://aws.amazon.com/vpn/\"&gt;product page&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;Read the AWS Client VPN &lt;a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-tgw.html\"&gt;documentation&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-client-vpn-transit-gateway/",
+      "publishedAt": "2026-04-23T21:11:00.000Z",
+      "updatedAt": "2026-04-23T21:11:00.000Z",
+      "categories": [
+        "AWS Client Vpn",
+        "Networking And Content Delivery",
+        "AWS Transit Gateway"
+      ],
+      "services": [
+        "Transit Gateway"
+      ],
+      "tags": [
+        "aws client vpn",
+        "networking and content delivery",
+        "aws transit gateway",
+        "transit gateway"
       ],
       "isNew": true
     },
@@ -84,6 +246,25 @@
         "analytics",
         "amazon sagemaker",
         "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "26168faf7e7f8463",
+      "title": "AWS Compute Optimizer supports 162 new EC2 instance types and 32 new RDS DB instance classes",
+      "description": "AWS Compute Optimizer now supports the latest generation of Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Relational Database Service (Amazon RDS) instance types. This expansion enables Compute Optimizer to help you take advantage of the price-to-performance improvements offered by the newest EC2 and RDS instance types. AWS Compute Optimizer has expanded support to include the latest generation EC2 instance types, including Compute Optimized (C8a, C8gb, C8i, C8i-flex, C8id), General Purpose (M8a, M8azn, M8gb, M8gn, M8id), Memory Optimized (R8a, R8gb, R8gn, R8id), Memory Intensive (x8i),",
+      "descriptionHtml": "&lt;p&gt;AWS Compute Optimizer now supports the latest generation of Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Relational Database Service (Amazon RDS) instance types. This expansion enables Compute Optimizer to help you take advantage of the price-to-performance improvements offered by the newest EC2 and RDS instance types.&lt;/p&gt; \n&lt;p&gt;AWS Compute Optimizer has expanded support to include the latest generation EC2 instance types, including Compute Optimized (C8a, C8gb, C8i, C8i-flex, C8id), General Purpose (M8a, M8azn, M8gb, M8gn, M8id), Memory Optimized (R8a, R8gb, R8gn, R8id), Memory Intensive (x8i), and Storage Optimized (i7i) in its EC2 and EC2 Auto Scaling group recommendations. For RDS recommendations, Compute Optimizer has added support for M7i, M8g, R8g, X1, and Z1d DB instance classes across RDS for MySQL, RDS for PostgreSQL, Amazon Aurora MySQL, and Aurora PostgreSQL.&lt;/p&gt; \n&lt;p&gt;This new feature is available in all AWS Regions where Compute Optimizer is available except the AWS GovCloud (US) Regions, the AWS China (Beijing) Region, operated by Sinnet, and the AWS China (Ningxia) Region, operated by NWCD. For more information about Compute Optimizer, visit our &lt;a href=\"https://aws.amazon.com/compute-optimizer/\"&gt;&lt;u&gt;product page&lt;/u&gt;&lt;/a&gt; &lt;u&gt;and&lt;/u&gt; &lt;a href=\"https://docs.aws.amazon.com/compute-optimizer/latest/ug/view-ec2-recommendations.html\"&gt;&lt;u&gt;documentation&lt;/u&gt;&lt;/a&gt;. You can start using Compute Optimizer through the AWS Management Console, AWS CLI, or AWS SDK.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-compute-optimizer-ec2-rds/",
+      "publishedAt": "2026-04-23T18:28:00.000Z",
+      "updatedAt": "2026-04-23T18:28:00.000Z",
+      "categories": [],
+      "services": [
+        "EC2",
+        "RDS"
+      ],
+      "tags": [
+        "ec2",
+        "rds"
       ],
       "isNew": true
     },
@@ -1408,7 +1589,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "80bad49b9cfedfd9",
@@ -1432,7 +1613,7 @@
         "artificial intelligence",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "be9438416e97b35a",
@@ -1451,7 +1632,7 @@
         "artificial intelligence",
         "compute"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5fdce8f99a69aee2",
@@ -1473,7 +1654,7 @@
         "containers",
         "ecr"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "da39894219d6d055",
@@ -1497,7 +1678,7 @@
         "sagemaker",
         "health"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8265eea640272f53",
@@ -1516,7 +1697,7 @@
         "aws deadline cloud",
         "media services"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8178e55d15fe82f4",
@@ -1536,7 +1717,7 @@
         "amazon connect",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "80fb152767c073ac",
@@ -1558,7 +1739,7 @@
         "amazon managed service for grafana",
         "workspaces"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "04a035556f75f0a7",
@@ -1580,7 +1761,7 @@
         "aws clean rooms",
         "clean rooms"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d5b79a73794a1aea",
