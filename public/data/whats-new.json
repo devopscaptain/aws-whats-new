@@ -1,7 +1,231 @@
 {
-  "lastUpdated": "2026-04-27T10:17:41.218Z",
-  "itemCount": 320,
+  "lastUpdated": "2026-04-28T10:15:07.056Z",
+  "itemCount": 334,
   "items": [
+    {
+      "id": "108a8c05e4fcdf85",
+      "title": "Amazon Redshift Serverless AI-driven scaling is now the default for new workgroups",
+      "description": "Amazon Redshift Serverless now makes AI-driven scaling and optimization the default for all new workgroups. AI-driven scaling uses machine learning to predict compute needs and automatically adjust resources before queries queue, delivering better price-performance without manual tuning. This release also expands support to workloads with a Base RPU range of 8–512 RPU, up from the previous 32–512 RPU, reducing the entry cost for AI-driven scaling. With AI-driven scaling and optimization, Amazon Redshift monitors your workload patterns and automatically adjusts compute resources based on query ",
+      "descriptionHtml": "&lt;p&gt;Amazon Redshift Serverless now makes AI-driven scaling and optimization the default for all new workgroups. AI-driven scaling uses machine learning to predict compute needs and automatically adjust resources before queries queue, delivering better price-performance without manual tuning. This release also expands support to workloads with a Base RPU range of 8–512 RPU, up from the previous 32–512 RPU, reducing the entry cost for AI-driven scaling.&lt;br&gt; &lt;br&gt; With AI-driven scaling and optimization, Amazon Redshift monitors your workload patterns and automatically adjusts compute resources based on query complexity, data volume, and expected data scan size. You can use the price-performance slider to choose whether to prioritize cost, performance, or a balance of both. Amazon Redshift also applies additional optimizations, including automatic materialized views and automatic table design optimization, to meet your selected target. To configure price-performance targets, use the AWS Management Console or Amazon Redshift API operations. You can also modify the target after you create the workgroup.&lt;br&gt; &lt;br&gt; Amazon Redshift Serverless AI-driven scaling and optimization is available in all AWS Regions where Amazon Redshift Serverless is available.&amp;nbsp;For more information,&amp;nbsp;see Amazon Redshift Serverless &lt;a href=\"https://aws.amazon.com/redshift/redshift-serverless/\"&gt;product page&lt;/a&gt;&amp;nbsp;and&amp;nbsp;AI-driven scaling and optimization &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-capacity.html#serverless-auto-optimization\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-redshift-serverless-ai-driven-scaling-default/",
+      "publishedAt": "2026-04-27T22:03:00.000Z",
+      "updatedAt": "2026-04-27T22:03:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Redshift"
+      ],
+      "services": [
+        "Redshift"
+      ],
+      "tags": [
+        "analytics",
+        "amazon redshift",
+        "redshift"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2f0585c1899972c6",
+      "title": "AWS KMS now tracks last usage of all KMS keys",
+      "description": "AWS Key Management Service (KMS) now provides visibility into the last cryptographic operation performed with your KMS keys, eliminating the need to manually query and analyze logs. This feature helps security administrators and compliance teams quickly determine when their KMS keys were last used for cryptographic operations. You can view the timestamp, the type of operation performed, and the associated AWS CloudTrail event ID from the AWS KMS management console, or via API. You can use this feature to help identify unused keys for cleanup, verify that keys are actively used, and track down ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/kms/\"&gt;AWS Key Management Service (KMS)&lt;/a&gt; now provides visibility into the last cryptographic operation performed with your KMS keys, eliminating the need to manually query and analyze logs. This feature helps security administrators and compliance teams quickly determine when&amp;nbsp;their KMS keys were last used for cryptographic operations. You can view the timestamp,&amp;nbsp;the type of operation performed, and the associated AWS CloudTrail event ID from the AWS KMS management console, or via API.&lt;/p&gt; \n&lt;p&gt;You can use this feature to help identify unused keys for cleanup, verify that keys are actively used, and track down how your keys are used in AWS CloudTrail. In addition, you can use the &lt;a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html\"&gt;new condition key&lt;/a&gt; (kms:TrailingDaysWithoutKeyUsage) that enables policy-based protection against accidental deletion of recently used keys.&lt;/p&gt; \n&lt;p&gt;The feature is available in all AWS Regions where AWS KMS is available, including all commercial AWS Regions, AWS GovCloud (US) Regions, and AWS China Regions.&amp;nbsp;For more information, see &lt;a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/monitoring-keys-determining-usage.html\"&gt;Determine past usage of a KMS key&lt;/a&gt; in the AWS KMS Developer Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-kms-tracks-last-usage-kms-keys/",
+      "publishedAt": "2026-04-27T19:00:00.000Z",
+      "updatedAt": "2026-04-27T19:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "AWS Govcloud Us",
+        "P&Gt;",
+        "AWS Kms"
+      ],
+      "services": [
+        "KMS"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "aws govcloud us",
+        "p&gt;",
+        "aws kms",
+        "kms"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "981571a64b13410d",
+      "title": "Amazon Redshift Serverless is now available in the AWS Asia Pacific (Melbourne) and Canada West (Calgary) regions",
+      "description": "Amazon Redshift Serverless , which allows you to run and scale analytics without having to provision and manage data warehouse clusters, is now generally available in the AWS Asia Pacific (Melbourne) and Canada West (Calgary) regions. With Amazon Redshift Serverless, all users, including data analysts, developers, and data scientists, can use Amazon Redshift to get insights from data in seconds. Amazon Redshift Serverless automatically provisions and intelligently scales data warehouse capacity to deliver high performance for all your analytics. You only pay for the compute used for the durati",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/redshift/redshift-serverless/\"&gt;Amazon Redshift Serverless&lt;/a&gt;, which allows you to run and scale analytics without having to provision and manage data warehouse clusters, is now generally available in the AWS&amp;nbsp;Asia Pacific (Melbourne) and Canada West (Calgary) regions. With Amazon Redshift Serverless, all users, including data analysts, developers, and data scientists, can use Amazon Redshift to get insights from data in seconds. Amazon Redshift Serverless automatically provisions and intelligently scales data warehouse capacity to deliver high performance for all your analytics. You only pay for the compute used for the duration of the workloads on a per-second basis. You can benefit from this simplicity without making any changes to your existing analytics and business intelligence applications.&lt;br&gt; &lt;br&gt; With a few clicks in the AWS Management Console, you can get started with querying data using the Query Editor V2 or your tool of choice with Amazon Redshift Serverless. There is no need to choose node types, node count, workload management, scaling, and other manual configurations. You can create databases, schemas, and tables, and load your own data from Amazon S3, access data using Amazon Redshift data shares, or restore an existing Amazon Redshift provisioned cluster snapshot. With Amazon Redshift Serverless, you can directly query data in open formats, such as Apache Parquet, Apache Iceberg in Amazon S3 data lakes. Amazon Redshift Serverless provides unified billing for queries on any of these data sources, helping you efficiently monitor and manage costs.&lt;br&gt; &lt;br&gt; To get started, see the Amazon Redshift Serverless &lt;a href=\"https://aws.amazon.com/redshift/redshift-serverless/\"&gt;feature page&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-serverless.html\"&gt;user documentation&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/Welcome.html\"&gt;API Reference&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-redshift-serverless-melbourne-calgary-regions/",
+      "publishedAt": "2026-04-27T19:00:00.000Z",
+      "updatedAt": "2026-04-27T19:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Redshift",
+        "Serverless"
+      ],
+      "services": [
+        "Redshift"
+      ],
+      "tags": [
+        "analytics",
+        "amazon redshift",
+        "serverless",
+        "redshift"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "af03dd986d219a64",
+      "title": "Amazon Connect increases attachment file sizes and adds custom file types",
+      "description": "Amazon Connect now supports attachment file sizes up to 100 MB for chat, cases, and tasks, up from the previous 20 MB limit. Administrators can enable these higher limits and configure custom file extensions for attachments across chat, email, cases, and tasks through the Amazon Connect admin website or Amazon Connect APIs . A technology company supporting enterprise customers can now accept files like diagnostic bundles and log archives up to 100 MB through chat, reducing back-and-forth and helping agents resolve issues faster. A financial services firm can add file extensions for signed cont",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect now supports attachment file sizes up to 100 MB for chat, cases, and tasks, up from the previous 20 MB limit.&amp;nbsp;Administrators can enable these higher limits and configure custom file extensions for attachments across chat, email, cases, and tasks through the Amazon Connect admin website or &lt;a href=\"https://docs.aws.amazon.com/connect/latest/APIReference/files-api.html\"&gt;Amazon Connect APIs&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;A technology company supporting enterprise customers can now accept files like diagnostic bundles and log archives up to 100 MB through chat, reducing back-and-forth and helping agents resolve issues faster. A financial services firm can add file extensions for signed contracts or compliance documents, giving customers the ability to attach paperwork directly in chat or email.&lt;/p&gt; \n&lt;p&gt;You can use these features in the following AWS Regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Osaka), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Africa (Cape Town), Canada (Central), Europe (Frankfurt), and Europe (London).&lt;/p&gt; \n&lt;p&gt;To learn more, visit &lt;a href=\"https://aws.amazon.com/connect/\"&gt;Amazon Connect&lt;/a&gt;&amp;nbsp;and see &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/enable-attachments.html\"&gt;Enable Attachments&lt;/a&gt;&amp;nbsp;in the Amazon Connect Administrator Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-connect-increases-attachment/",
+      "publishedAt": "2026-04-27T18:45:00.000Z",
+      "updatedAt": "2026-04-27T18:45:00.000Z",
+      "categories": [
+        "Contact Center",
+        "Amazon Connect"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "amazon connect",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "78035cacd80739c0",
+      "title": "Amazon FSx for OpenZFS Single-AZ (HA) file systems are now available in 17 additional AWS commercial and AWS GovCloud (US) Regions",
+      "description": "You can now create Amazon FSx for OpenZFS Single-AZ (HA) file systems in seventeen additional AWS Regions across the South America, Europe, Africa, Asia Pacific, and AWS GovCloud (US). Amazon FSx for OpenZFS provides fully managed, cost-effective, shared file storage powered by the popular OpenZFS file system. It’s designed to deliver sub-millisecond latencies and multi-GB/s throughput along with rich ZFS-powered data management capabilities (like snapshots, data cloning, and compression). Single-AZ (HA) file systems are a cost-effective solution for workloads that need high availability but d",
+      "descriptionHtml": "&lt;p&gt;You can now create Amazon FSx for OpenZFS Single-AZ (HA) file systems in seventeen additional AWS Regions across the South America, Europe, Africa, Asia Pacific, and AWS GovCloud (US).&lt;/p&gt; \n&lt;p&gt;Amazon FSx for OpenZFS provides fully managed, cost-effective, shared file storage powered by the popular OpenZFS file system. It’s designed to deliver sub-millisecond latencies and multi-GB/s throughput along with rich ZFS-powered data management capabilities (like snapshots, data cloning, and compression). Single-AZ (HA) file systems are a cost-effective solution for workloads that need high availability but don’t need storage redundancy across multiple availability zones, such as data analytics, machine learning, and semiconductor chip design.&lt;/p&gt; \n&lt;p&gt;With this expansion, FSx for OpenZFS Single-AZ (HA) file systems are now available in the following additional AWS Regions: Africa (Cape Town), Asia Pacific (Hyderabad, Jakarta, Malaysia, Osaka, Taipei, Thailand), Canada West (Calgary), Europe (Milan, Paris, Spain, Zurich), Israel (Tel Aviv), Mexico (Central), South America (São Paulo), and AWS GovCloud (US-East, US-West). To learn more about Amazon FSx for OpenZFS, visit our &lt;a href=\"https://aws.amazon.com/fsx/openzfs/\"&gt;product page&lt;/a&gt;, and see the FSx for OpenZFS &lt;a href=\"https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/available-aws-regions.html\"&gt;Region Table&lt;/a&gt; for complete regional availability information.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-fsx-openzfs-single-az-ha/",
+      "publishedAt": "2026-04-27T16:53:00.000Z",
+      "updatedAt": "2026-04-27T16:53:00.000Z",
+      "categories": [
+        "Storage",
+        "AWS Govcloud Us",
+        "Amazon Fsx For Openzfs"
+      ],
+      "services": [
+        "FSx"
+      ],
+      "tags": [
+        "storage",
+        "aws govcloud us",
+        "amazon fsx for openzfs",
+        "fsx"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5a17ed817d12bb75",
+      "title": "Amazon SageMaker HyperPod now supports G7e and r5d.16xlarge instances",
+      "description": "Amazon SageMaker HyperPod now supports G7e and r5d.16xlarge instances. SageMaker HyperPod is a purpose-built infrastructure for developing, training, and deploying foundation models at scale. It provides a resilient and performant environment with built-in fault tolerance, automated cluster recovery, and optimized distributed training libraries, reducing the undifferentiated heavy lifting of managing large-scale AI/ML infrastructure. G7e instances are powered by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs and deliver up to 2.3x better inference performance than G6e instances, allowing yo",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g7e/\" target=\"_blank\"&gt;G7e&lt;/a&gt; and r5d.16xlarge instances. SageMaker HyperPod is a purpose-built infrastructure for developing, training, and deploying foundation models at scale. It provides a resilient and performant environment with built-in fault tolerance, automated cluster recovery, and optimized distributed training libraries, reducing the undifferentiated heavy lifting of managing large-scale AI/ML infrastructure.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;G7e instances are powered by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs and deliver up to 2.3x better inference performance than G6e instances, allowing you to process more requests per second while reducing latency. With up to 768 GB of total GPU memory, G7e instances let you deploy larger language models or run multiple models on a single endpoint. You can use these instances for deploying LLMs, agentic AI, multimodal generative AI, and physical AI models. G7e instances are also well suited for cost-efficient single-node fine-tuning or training of NLP, computer vision, and smaller generative AI models, with up to 1.27x the TFLOPs and up to 4x the GPU-to-GPU bandwidth compared to G6e. In addition, HyperPod now supports r5d.16xlarge as well. The r5d.16xlarge instance provides 64 vCPUs, 512 GB of memory, and 5 x 600 GB NVMe SSD instance storage, powered by Intel Xeon Platinum 8000 series processors with a sustained all-core turbo frequency of up to 3.1 GHz. This instance is well suited for distributed training data preprocessing especially with frameworks such as Ray, large-scale feature engineering, and running memory-heavy orchestration services alongside GPU compute.&lt;br&gt; &lt;br&gt; G7e instances are available in US East (N. Virginia), US East (Ohio), Asia Pacific (Tokyo), and US West (Oregon) and r5d.16xlarge is available in all regions Amazon SageMaker HyperPod is available in.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-hyperpod-g7e-r5d/",
+      "publishedAt": "2026-04-27T15:30:00.000Z",
+      "updatedAt": "2026-04-27T15:30:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "30a19a72569f82dc",
+      "title": "Introducing Amazon EC2 M8in and M8ib instances",
+      "description": "AWS is announcing the general availability of Amazon EC2 M8in network optimized instances and Amazon EC2 M8ib EBS optimized instances. The new instances are powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS. These instances also feature the latest sixth generation AWS Nitro cards. M8in and M8ib deliver up to 43% higher performance compared to previous generation M6in and M6ib instances. M8in instances deliver 600 Gbps network bandwidth, the highest network bandwidth among enhanced networking EC2 instances, and are ideal for workloads such as real-time big",
+      "descriptionHtml": "&lt;p&gt;AWS is announcing the general availability of Amazon EC2 M8in network optimized instances and Amazon EC2 M8ib EBS optimized instances. The new instances are powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS. These instances also feature the latest sixth generation AWS Nitro cards. M8in and M8ib deliver up to 43% higher performance compared to previous generation M6in and M6ib instances.&lt;br&gt; &lt;br&gt; M8in instances deliver 600 Gbps network bandwidth, the highest network bandwidth among enhanced networking EC2 instances, and are ideal for workloads such as real-time big data analytics, distributed web scale in-memory caches, caching fleets for AI/ML clusters, and Telco applications such as 5G User Plane Function (UPF).&lt;br&gt; &lt;br&gt; M8ib instances deliver up to 300Gbps EBS bandwidth, the highest among non-accelerated compute EC2 instances, and are best suited for workloads that benefit from high block storage performance, such as high-performance file systems and NoSQL databases.&lt;br&gt; &lt;br&gt; Amazon EC2 M8in and Amazon EC2 M8ib instances are available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and Europe (Spain) regions, via Savings Plans, On-Demand, and Spot instances. For more information, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8i/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon EC2 M8i instance&lt;/a&gt;&amp;nbsp;page.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ec2-m8in-m8ib/",
+      "publishedAt": "2026-04-27T15:00:00.000Z",
+      "updatedAt": "2026-04-27T15:00:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "10f0c721834c87cc",
+      "title": "Introducing Amazon EC2 R8in and R8ib instances",
+      "description": "AWS is announcing the general availability of memory optimized Amazon EC2 R8in network optimized instances and Amazon EC2 R8ib EBS optimized instances. These new instances are powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS. These instances also feature the latest sixth generation AWS Nitro cards. M8in and M8ib deliver up to 43% higher performance compared to previous generation M6in and M6ib instances. R8in instances deliver 600 Gbps network bandwidth, the highest network bandwidth among enhanced networking EC2 instances, and are ideal for workloads su",
+      "descriptionHtml": "&lt;p&gt;AWS is announcing the general availability of memory optimized Amazon EC2 R8in network optimized instances and Amazon EC2 R8ib EBS optimized instances. These new instances are powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS. These instances also feature the latest sixth generation AWS Nitro cards. M8in and M8ib deliver up to 43% higher performance compared to previous generation M6in and M6ib instances.&lt;br&gt; &lt;br&gt; R8in instances deliver 600 Gbps network bandwidth, the highest network bandwidth among enhanced networking EC2 instances, and are ideal for workloads such as real-time big data analytics, caching fleets for AI/ML clusters, and distributed web scale in-memory caches.&lt;br&gt; &lt;br&gt; R8ib instances deliver up to 300Gbps EBS bandwidth, the highest among non-accelerated compute EC2 instances, and are best suited for workloads that benefit from high block storage performance, such as large commercial databases, data lakes, SQL and NoSQL databases, and in-memory databases such as SAP HANA.&lt;br&gt; &lt;br&gt; Amazon EC2 R8in and Amazon EC2 R8ib instances are available in US East (N. Virginia, Ohio), US West (Oregon), and Europe (Spain) regions, via Savings Plans, On-Demand, and Spot instances. For more information, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/r8i/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon EC2 R8i instance&lt;/a&gt;&amp;nbsp;page.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ec2-r8in-r8ib/",
+      "publishedAt": "2026-04-27T15:00:00.000Z",
+      "updatedAt": "2026-04-27T15:00:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f416d4fbdcd97ef9",
+      "title": "Introducing Amazon EC2 C8ine and M8ine instances",
+      "description": "AWS is announcing the general availability of Amazon EC2 C8ine and Amazon EC2 M8ine instances, powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS. These also instances feature the latest sixth generation AWS Nitro cards. C8ine and M8ine instances deliver up to 43% higher performance compared to previous generation C6in and M6in instances. C8ine and M8ine instances offer up to 2.5 times higher packet performance per vCPU versus prior generation network optimized instances. They provide up to 2x higher network throughput for traffic going through Internet ga",
+      "descriptionHtml": "&lt;p&gt;AWS is announcing the general availability of Amazon EC2 C8ine and Amazon EC2 M8ine instances, powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS. These also instances feature the latest sixth generation AWS Nitro cards. C8ine and M8ine instances deliver up to 43% higher performance compared to previous generation C6in and M6in instances.&lt;/p&gt; \n&lt;p&gt;C8ine and M8ine instances offer up to 2.5 times higher packet performance per vCPU versus prior generation network optimized instances. They provide up to 2x higher network throughput for traffic going through Internet gateways compared to existing C6in and M6in network optimized instances.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Both instance families are designed for security and network virtual appliances, including virtual firewalls, load balancers, and Telco 5G UPF workloads.&lt;br&gt; &lt;br&gt; Amazon EC2 C8ine instances are available in US East (N. Virginia), US West (Oregon), and Asia Pacific (Tokyo), while Amazon EC2 M8ine instances are available in US East (N. Virginia) and US West (Oregon). C8ine and M8ine instances are available via Savings Plans and On-Demand instances. For more information, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/c8i/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon EC2 C8i instance&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8i/\"&gt;Amazon EC2 M8i instance&lt;/a&gt;&amp;nbsp;pages.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/ec2-c8ine-m8ine/",
+      "publishedAt": "2026-04-27T15:00:00.000Z",
+      "updatedAt": "2026-04-27T15:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f4f27782ac7ecc04",
+      "title": "Amazon WorkSpaces Personal Supports Rocky 9, Red Hat Enterprise Linux 9, and Ubuntu 24.04",
+      "description": "AWS announces availability of new Linux bundles for Amazon WorkSpaces Personal, including Rocky Linux 9, Red Hat Enterprise Linux 9, and Ubuntu 24.04. With these bundles, customers can launch WorkSpaces powered by the latest enterprise-grade Linux operating systems and take advantage of modern versions of Linux packages only available in these updated releases. While Rocky Linux 8, Red Hat Enterprise Linux 8, and Ubuntu 22.04 powered WorkSpaces bundles remain available, the new OS options bring access to the latest software ecosystems, improved security postures, and extended long-term support",
+      "descriptionHtml": "&lt;p&gt;AWS announces availability of new Linux bundles for Amazon WorkSpaces Personal, including Rocky Linux 9, Red Hat Enterprise Linux 9, and Ubuntu 24.04. With these bundles, customers can launch WorkSpaces powered by the latest enterprise-grade Linux operating systems and take advantage of modern versions of Linux packages only available in these updated releases.&lt;br&gt; &lt;br&gt; While Rocky Linux 8, Red Hat Enterprise Linux 8, and Ubuntu 22.04 powered WorkSpaces bundles remain available, the new OS options bring access to the latest software ecosystems, improved security postures, and extended long-term support lifecycles offered by each respective distribution. These new bundles also provide a migration path for Amazon Linux 2 customers ahead of its end of life in June 2026.&lt;br&gt; &lt;br&gt; You can get started using managed Rocky Linux 9, Red Hat Enterprise Linux 9, or Ubuntu 24.04 WorkSpaces bundles by selecting one when creating a new Linux WorkSpace. These new bundles are available in all AWS Regions where Amazon WorkSpaces is available. For pricing information, visit the Amazon WorkSpaces &lt;a href=\"https://aws.amazon.com/workspaces/desktop-as-a-service/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-workspaces-rocky9-rhel9-ubuntu24/",
+      "publishedAt": "2026-04-24T22:03:00.000Z",
+      "updatedAt": "2026-04-24T22:03:00.000Z",
+      "categories": [
+        "Desktop And App Streaming"
+      ],
+      "services": [
+        "WorkSpaces"
+      ],
+      "tags": [
+        "desktop and app streaming",
+        "workspaces"
+      ],
+      "isNew": true
+    },
     {
       "id": "3d9b6fca22f6867a",
       "title": "AWS Lambda Provisioned Mode for Kafka event source mappings (ESMs) now available in AWS Asia Pacific (Taipei) and AWS GovCloud (US) Regions",
@@ -245,6 +469,28 @@
         "artificial intelligence",
         "analytics",
         "amazon sagemaker",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5e0384f92b0463b5",
+      "title": "Amazon SageMaker Unified Studio now offers CI/CD CLI for data and AI applications",
+      "description": "Amazon SageMaker Unified Studio now offers the CI/CD CLI (aws-smus-cicd-cli), an open-source command line tool that automates deployment of multi-service data and AI applications across development, test, and production. Organizations building applications in SageMaker Unified Studio combine multiple AWS services, including AWS Glue, Amazon Athena, Amazon MWAA, Amazon SageMaker AI, Amazon Bedrock, and Amazon QuickSight, into single applications. The CLI allows data teams to define applications once in a YAML manifest while DevOps teams deploy with a single command, reducing deployment bottlene",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now offers the CI/CD CLI (aws-smus-cicd-cli), an open-source command line tool that automates deployment of multi-service data and AI applications across development, test, and production. Organizations building applications in SageMaker Unified Studio combine multiple AWS services, including AWS Glue, Amazon Athena, Amazon MWAA, Amazon SageMaker AI, Amazon Bedrock, and Amazon QuickSight, into single applications. The CLI allows data teams to define applications once in a YAML manifest while DevOps teams deploy with a single command, reducing deployment bottlenecks and configuration drift.&lt;/p&gt; \n&lt;p&gt;The CLI reads a declarative&amp;nbsp;manifest.yaml&amp;nbsp;that maps each pipeline stage to an isolated SageMaker Unified Studio project. At deploy time, it substitutes stage-specific configurations (S3 paths, IAM roles, account IDs, and connection strings) and provisions resources in dependency order. Four commands cover the lifecycle:&amp;nbsp;describe&amp;nbsp;validates permissions and connections,&amp;nbsp;bundle&amp;nbsp;packages an immutable artifact from the source target,&amp;nbsp;deploy&amp;nbsp;writes that artifact to the destination target, and&amp;nbsp;test&amp;nbsp;runs post-deployment validation.&amp;nbsp;It works with existing CI/CD solutions such as GitHub Actions, Jenkins, and GitLab CI.&lt;/p&gt; \n&lt;p&gt;The CI/CD CLI is available at no additional cost in all AWS Regions where Amazon SageMaker Unified Studio is available. You pay only for the underlying AWS resources provisioned during deployment.&lt;/p&gt; \n&lt;p&gt;To get started, visit the following resources:&lt;/p&gt; \n&lt;p&gt;The CI/CD CLI is available at no additional cost in all AWS Regions where Amazon SageMaker Unified Studio is available. You pay only for the underlying AWS resources provisioned during deployment.&lt;/p&gt; \n&lt;p&gt;To get started, visit the following resources:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;a href=\"https://pypi.org/project/aws-smus-cicd-cli/\"&gt;Install from PyPI&lt;/a&gt;&amp;nbsp;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://github.com/aws/CICD-for-SageMakerUnifiedStudio\"&gt;GitHub repository&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/cicd.html\"&gt;Amazon SageMaker Unified Studio documentation&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-smus-ci-cd-cli/",
+      "publishedAt": "2026-04-23T19:00:00.000Z",
+      "updatedAt": "2026-04-23T19:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Sagemaker Studio"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "analytics",
+        "amazon sagemaker studio",
         "sagemaker"
       ],
       "isNew": true
@@ -1179,7 +1425,24 @@
         "redshift",
         "organizations"
       ],
-      "isNew": true
+      "isNew": false
+    },
+    {
+      "id": "a315091e709eb29d",
+      "title": "Amazon Quick Automate announces shared file storage for automations",
+      "description": "Amazon Quick Automate now supports in-app file storage, enabling you to seamlessly manage files within your automations without requiring external storage solutions or connectors. This feature provides a centralized location for uploading, downloading, and sharing files across multiple automations within the same automation group, eliminating the friction previously experienced when working with files in automation workflows. Previously, providing files as inputs to automations or receiving file outputs required uploading to external services like Amazon S3, OneDrive, or SharePoint, and config",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick Automate now supports in-app file storage, enabling you to seamlessly manage files within your automations without requiring external storage solutions or connectors. This feature provides a centralized location for uploading, downloading, and sharing files across multiple automations within the same automation group, eliminating the friction previously experienced when working with files in automation workflows.&lt;br&gt; Previously, providing files as inputs to automations or receiving file outputs required uploading to external services like Amazon S3, OneDrive, or SharePoint, and configuring connectors. With shared file storage, automation builders and business users can now upload files directly through an intuitive drag-and-drop interface and access them immediately across all automations in their automation group.&amp;nbsp;Key use cases include static lookup files that business users can update as needed, such as contact lists or pricing tables; configuration files where business users can manage agent guidelines outside the automation itself; multi-automation workflows where one automation's output feeds into another; and daily or weekly reporting where automations share outputs with users for review.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where Quick Automate is enabled, including US East (N. Virginia), US West (Oregon), Europe (Dublin), Europe (London), Europe (Frankfurt), Asia Pacific (Tokyo), and Asia Pacific (Sydney).&amp;nbsp;To learn more about shared file storage, visit the &lt;a href=\"https://aws.amazon.com/quick/automate/\"&gt;Amazon Quick Automate product page&lt;/a&gt; or read the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/actions-quick.html#shared-file-actions\"&gt;shared file actions&amp;nbsp;documentation.&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-automate-shared-file-storage/",
+      "publishedAt": "2026-04-21T06:22:00.000Z",
+      "updatedAt": "2026-04-21T06:22:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence"
+      ],
+      "isNew": false
     },
     {
       "id": "24db114c58302e30",
@@ -1201,7 +1464,24 @@
         "serverless",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
+    },
+    {
+      "id": "05f0e1f992cc40b0",
+      "title": "Amazon Quick Automate now provides APIs to trigger and monitor automation jobs",
+      "description": "Amazon Quick Automate now provides APIs that enable you to programmatically start automation jobs and check their status from external applications and services. The new StartAutomationJob and DescribeAutomationJob APIs allow automation developers and DevOps engineers to invoke deployed automations with custom input data and retrieve structured results when jobs complete, extending Quick Automate's capabilities beyond scheduled execution. These APIs enable seamless integration of Quick Automate workflows into your existing applications and event-driven architectures. You can trigger automation",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick Automate now provides APIs that enable you to programmatically start automation jobs and check their status from external applications and services. The new StartAutomationJob and DescribeAutomationJob APIs allow automation developers and DevOps engineers to invoke deployed automations with custom input data and retrieve structured results when jobs complete, extending Quick Automate's capabilities beyond scheduled execution.&lt;/p&gt; \n&lt;p&gt;These APIs enable seamless integration of Quick Automate workflows into your existing applications and event-driven architectures. You can trigger automations in response to application events such as new user registrations or order completions, pass dynamic input parameters with typed schemas, and use the output data for further processing. Use cases include incorporating automations into data pipelines, coordinating workflows across multiple AWS services or third-party applications, and executing batch operations with different input parameters from a single application.&lt;/p&gt; \n&lt;p&gt;This feature is available through AWS SDK and AWS CLI in all AWS Regions where Quick Automate is enabled, including US East (N. Virginia), US West (Oregon), Europe (Dublin), Europe (London), Europe (Frankfurt), Asia Pacific (Tokyo), and Asia Pacific (Sydney). To learn more, visit the &lt;a href=\"https://aws.amazon.com/quick/automate/\"&gt;Amazon Quick Automate marketing page&lt;/a&gt; or see the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/deploying-automations.html#setting-up-triggers\"&gt;API documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-automate-api-trigger/",
+      "publishedAt": "2026-04-21T05:49:00.000Z",
+      "updatedAt": "2026-04-21T05:49:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence"
+      ],
+      "isNew": false
     },
     {
       "id": "65b4aeed640c549c",
@@ -1223,7 +1503,7 @@
         "business productivity",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b476ca03c7cc53f6",
@@ -1245,7 +1525,24 @@
         "amazon elastic block store",
         "ebs"
       ],
-      "isNew": true
+      "isNew": false
+    },
+    {
+      "id": "d703c3664ebf858d",
+      "title": "Amazon Quick Automate now supports import and export of automations across AWS accounts",
+      "description": "Amazon Quick Automate now enables you to migrate automation versions across automation groups, AWS accounts, and AWS Regions. Previously, moving automations between environments required time-consuming manual recreation of workflows. This new capability is designed for DevOps teams and organizations managing multi-environment deployments who need to promote tested automations from development to production, deploy across geographic regions, or share proven workflows with other teams. The migration process packages your workflow, runtime configuration, and process step metadata into a secure, e",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick Automate now enables you to migrate automation versions across automation groups, AWS accounts, and AWS Regions. Previously, moving automations between environments required time-consuming manual recreation of workflows. This new capability is designed for DevOps teams and organizations managing multi-environment deployments who need to promote tested automations from development to production, deploy across geographic regions, or share proven workflows with other teams.&lt;br&gt; &lt;br&gt; The migration process packages your workflow, runtime configuration, and process step metadata into a secure, encrypted link using AWS KMS encryption. Export links remain valid for 12 hours and can be reused multiple times, eliminating repeated exports. This streamlined approach saves significant time compared to manual recreation and enables point-in-time snapshots for disaster recovery scenarios. Key use cases include promoting automations between development, staging, and production environments, deploying across AWS Regions, and sharing proven automation with teams outside&amp;nbsp;your automation group.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Quick Automate is enabled, including US East (N. Virginia), US West (Oregon), Europe (Dublin), Europe (London), Europe (Frankfurt), Asia Pacific (Tokyo), and Asia Pacific (Sydney).&amp;nbsp;Note that dependencies such as action connectors, credentials, and humn-in-the-loop task queue configurations are not included in the migration bundle and must be configured separately in the destination environment.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://aws.amazon.com/quick/automate/\"&gt;Amazon Quick Automate marketing page&lt;/a&gt; or see the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/export-import-automations.html\"&gt;export and import documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/quick-automate-import-export/",
+      "publishedAt": "2026-04-20T20:12:00.000Z",
+      "updatedAt": "2026-04-20T20:12:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence"
+      ],
+      "isNew": false
     },
     {
       "id": "18e735c007ee6ed5",
@@ -1264,7 +1561,7 @@
         "migration",
         "compute"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f369f6658b888a82",
@@ -1286,7 +1583,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ffadb9e9b07b6b69",
@@ -1308,7 +1605,7 @@
         "internet of things",
         "iot greengrass"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "04ab9cc8fc224376",
@@ -1330,7 +1627,7 @@
         "databases",
         "documentdb"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7dc0856464eb16de",
@@ -1354,7 +1651,7 @@
         "eks",
         "iam"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1502f22d99e94a66",
@@ -1376,7 +1673,7 @@
         "business productivity",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f6aed18a4cdc045b",
@@ -1400,7 +1697,7 @@
         "amazon cloudwatch",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fd17f34726e6108a",
@@ -1422,7 +1719,7 @@
         "amazon msk",
         "msk"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "94cc6b778f27c361",
@@ -1444,7 +1741,7 @@
         "analytics",
         "msk"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7bd62966359a44a5",
@@ -1468,7 +1765,7 @@
         "msk",
         "kafka"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5880eb47c28d18c8",
@@ -1490,7 +1787,7 @@
         "amazon s3",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "feb55bc6a34b8e2f",
@@ -1512,7 +1809,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "381d7c691288d413",
@@ -1529,7 +1826,7 @@
       "tags": [
         "migration"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "4650aaf78ffc7820",
