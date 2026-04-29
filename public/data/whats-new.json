@@ -1,25 +1,281 @@
 {
-  "lastUpdated": "2026-04-28T10:15:07.056Z",
-  "itemCount": 334,
+  "lastUpdated": "2026-04-29T10:06:55.377Z",
+  "itemCount": 351,
   "items": [
+    {
+      "id": "5c63b4bd1516724f",
+      "title": "AWS Glue 5.1 is now available in all AWS Commercial and AWS GovCloud (US) Regions",
+      "description": "AWS Glue 5.1 is now available in the Asia Pacific (New Zealand), AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions. AWS Glue is a serverless, scalable data integration service that simplifies discovering, preparing, moving, and integrating data from multiple sources. AWS Glue 5.1 upgrades core engines to Apache Spark 3.5.6, Python 3.11, and Scala 2.12.18, bringing performance and security enhancements. This release also updates support for open table format libraries, including Apache Hudi 1.0.2, Apache Iceberg 1.10.0, and Delta Lake 3.3.2. Additionally, AWS Glue 5.1 introduces support",
+      "descriptionHtml": "&lt;p&gt;AWS Glue 5.1 is now available in the Asia Pacific (New Zealand), AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions.&lt;br&gt; &lt;br&gt; &lt;a href=\"https://aws.amazon.com/glue/\"&gt;AWS Glue&lt;/a&gt; is a serverless, scalable data integration service that simplifies discovering, preparing, moving, and integrating data from multiple sources. AWS Glue 5.1 upgrades core engines to Apache Spark 3.5.6, Python 3.11, and Scala 2.12.18, bringing performance and security enhancements. This release also updates support for open table format libraries, including Apache Hudi 1.0.2, Apache Iceberg 1.10.0, and Delta Lake 3.3.2. Additionally, AWS Glue 5.1 introduces support for Apache Iceberg format version 3.0, adding default column values, deletion vectors for merge-on-read tables, multi-argument transforms, and row lineage tracking. This release extends &lt;a href=\"https://aws.amazon.com/lake-formation/\"&gt;AWS Lake Formation&lt;/a&gt; fine-grained access control to write operations - both DML and DDL - for Spark DataFrames and Spark SQL. Previously, this capability was limited to read operations only. AWS Glue 5.1 also adds full-table access control in Apache Spark for Apache Hudi and Delta Lake tables, providing more comprehensive security options for your data.&lt;br&gt; &lt;br&gt; With this expansion, AWS Glue 5.1 is now available all AWS commercial and AWS GovCloud (US) Regions.&lt;br&gt; &lt;br&gt; You can get started with AWS Glue 5.1 using AWS APIs, AWS CLI, AWS SDK, or AWS Glue Studio. To learn more, visit the AWS Glue &lt;a href=\"https://aws.amazon.com/glue/\"&gt;product page&lt;/a&gt; and our &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/release-notes.html\"&gt;documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-glue-5-1-all-govcloud-commercial-regions/",
+      "publishedAt": "2026-04-28T18:44:00.000Z",
+      "updatedAt": "2026-04-28T18:44:00.000Z",
+      "categories": [
+        "Analytics",
+        "AWS Glue"
+      ],
+      "services": [
+        "Glue"
+      ],
+      "tags": [
+        "analytics",
+        "aws glue",
+        "glue"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "15fa6f48e05bca25",
+      "title": "AWS Cost Optimization Hub now supports CSV download",
+      "description": "AWS Cost Optimization Hub now supports direct CSV download in the console, enabling you to export your cost optimization recommendations to your local machine with a single click. This capability provides a one click export option directly from the console and complements the existing Data Export feature for automated exports to Amazon S3. With CSV download, you can instantly export recommendations that use your current console filters, sorting preferences, and grouping settings. The download begins immediately, making it easy to analyze recommendations in spreadsheet applications, share with ",
+      "descriptionHtml": "&lt;p&gt;AWS Cost Optimization Hub now supports direct CSV download in the console, enabling you to export your cost optimization recommendations to your local machine with a single click. This capability provides a one click export option directly from the console and complements the existing Data Export feature for automated exports to Amazon S3.&lt;/p&gt; \n&lt;p&gt;With CSV download, you can instantly export recommendations that use your current console filters, sorting preferences, and grouping settings. The download begins immediately, making it easy to analyze recommendations in spreadsheet applications, share with stakeholders who don't have AWS console access, or work with recommendations offline in your preferred tools.&lt;/p&gt; \n&lt;p&gt;This feature is available now in all regions where AWS Cost Optimization Hub is offered. To learn more, visit the &lt;a href=\"https://aws.amazon.com/aws-cost-management/cost-optimization-hub/\"&gt;Cost Optimization Hub page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-cost-optimization-hub-csv-download/",
+      "publishedAt": "2026-04-28T17:00:00.000Z",
+      "updatedAt": "2026-04-28T17:00:00.000Z",
+      "categories": [
+        "Cost Management"
+      ],
+      "services": [],
+      "tags": [
+        "cost management"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5d5b470e9e14da70",
+      "title": "Amazon WorkSpaces Personal enhances PCoIP to DCV protocol migration",
+      "description": "Amazon WorkSpaces Personal now provides an enhanced experience for administrators migrating WorkSpaces from PCoIP to DCV protocol, including a guided console action for protocol modification, checkpoint snapshots for rollback support, and session blocking during migration. Amazon DCV is a high-performance streaming protocol built by AWS that powers Amazon WorkSpaces services. By migrating to DCV, customers gain access to broader operating system support including Windows 11 and Windows Server 2025, enhanced security features such as certificate-based authentication and WebAuthN, and improved s",
+      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces Personal now provides an enhanced experience for administrators migrating WorkSpaces from PCoIP to DCV protocol, including a guided console action for protocol modification, checkpoint snapshots for rollback support, and session blocking during migration.&lt;br&gt; &lt;br&gt; Amazon DCV is a high-performance streaming protocol built by AWS that powers Amazon WorkSpaces services. By migrating to DCV, customers gain access to broader operating system support including Windows 11 and Windows Server 2025, enhanced security features such as certificate-based authentication and WebAuthN, and improved streaming performance. Administrators can now modify a WorkSpace's streaming protocol directly from the AWS Management Console through a single-click action, in addition to the existing command line interface (CLI) and API methods. Before migration begins, WorkSpaces automatically takes a checkpoint snapshot, enabling administrators to restore to a known-good state if migration fails, ensuring no data loss. Session provisioning is also blocked during migration with clear error messaging for end users who attempt to connect, preventing connection attempts from interfering with the migration process. Together, these enhancements help administrators migrate WorkSpaces to DCV with greater confidence and operational simplicity.&lt;br&gt; &lt;br&gt; These enhancements are available in all AWS commercial and AWS GovCloud (US) &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Regions&lt;/a&gt; where Amazon WorkSpaces Personal is supported.&lt;br&gt; &lt;br&gt; To get started, sign in to the &lt;a href=\"https://aws.amazon.com/console/\"&gt;Amazon WorkSpaces console&lt;/a&gt;. For more information, see &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/modify-workspaces.html#modify_protocols\"&gt;Modify protocols section&lt;/a&gt; in the &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html\"&gt;Amazon WorkSpaces Administration Guide&lt;/a&gt;. To learn more about Amazon WorkSpaces, visit the &lt;a href=\"https://aws.amazon.com/workspaces/\"&gt;Amazon WorkSpaces product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-workspaces-personal-pcoip/",
+      "publishedAt": "2026-04-28T16:51:00.000Z",
+      "updatedAt": "2026-04-28T16:51:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "Desktop And App Streaming",
+        "Business Productivity",
+        "Amazon Workspaces"
+      ],
+      "services": [
+        "WorkSpaces"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "desktop and app streaming",
+        "business productivity",
+        "amazon workspaces",
+        "workspaces"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c2e149b692dc8d25",
+      "title": "Amazon EC2 C8gn instances are now available in additional regions",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8gn instances, powered by the latest-generation AWS Graviton4 processors, are available in the AWS Europe (Milan) and Asia Pacific (Hong Kong) regions. The new instances provide up to 30% better compute performance than Graviton3-based Amazon EC2 C7gn instances. Amazon EC2 C8gn instances feature the latest 6th generation AWS Nitro Cards, and offer up to 600 Gbps network bandwidth, the highest network bandwidth among network optimized EC2 instances. Take advantage of the enhanced networking capabilities of C8gn to scale performance and ",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8gn instances, powered by the latest-generation AWS Graviton4 processors, are available in the AWS&amp;nbsp;Europe (Milan) and&amp;nbsp;Asia Pacific (Hong Kong) regions. The new instances provide up to 30% better compute performance than Graviton3-based Amazon EC2 C7gn instances. Amazon EC2 C8gn instances feature the latest 6th generation AWS Nitro Cards, and offer up to 600 Gbps network bandwidth, the highest network bandwidth among network optimized EC2 instances.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Take advantage of the enhanced networking capabilities of C8gn to scale performance and throughput, while optimizing the cost of running network-intensive workloads such as network virtual appliances, data analytics, CPU-based artificial&amp;nbsp;intelligence&amp;nbsp;and machine learning&amp;nbsp;(AI/ML) inference.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;For increased scalability, C8gn instances offer instance sizes up to 48xlarge, up to 384 GiB of memory, and up to 120 Gbps of bandwidth to Amazon Elastic Block Store (EBS). C8gn instances support Elastic Fabric Adapter (EFA) networking on the 16xlarge, 24xlarge, 48xlarge, metal-24xl, and metal-48xl sizes, which enables lower latency and improved cluster performance for workloads deployed on tightly coupled clusters.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;C8gn instances are available in the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon, N.California), Europe (Frankfurt, Stockholm, Ireland, London, Spain, Zurich, Milan), Asia Pacific (Singapore, Malaysia, Sydney, Thailand, Mumbai, Seoul, Melbourne, Jakarta, Hyderabad, Tokyo, Hong Kong), Middle East (UAE), Africa (Cape Town), Canada West (Calgary,&amp;nbsp;Central),&amp;nbsp;South America (Sao Paulo), AWS GovCloud (US-East, US-West).&lt;br&gt; &amp;nbsp;&lt;br&gt; To learn more, see&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/c8g/\"&gt;Amazon C8gn Instances&lt;/a&gt;. To begin your Graviton journey, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\"&gt;Level up your compute with AWS Graviton page&lt;/a&gt;. To get started, see&amp;nbsp;&lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;,&amp;nbsp;&lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface (AWS CLI)&lt;/a&gt;, and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html\"&gt;AWS SDKs&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ec2-c8gn-milan-hong-kong/",
+      "publishedAt": "2026-04-28T16:00:00.000Z",
+      "updatedAt": "2026-04-28T16:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3793fc3db6a40447",
+      "title": "Amazon Connect Talent for AI-powered hiring (now available in Preview)",
+      "description": "Amazon Connect Talent is now available in Preview, giving talent acquisition leaders an AI-powered hiring solution that accelerates candidate selection at scale. Informed by decades of Amazon's hiring science, Amazon Connect Talent uses AI agents to conduct structured voice interviews, administer science-backed assessments, and score candidates consistently — freeing recruiters to focus on strategic decisions. Candidates interview 24/7 from any device. Recruiters review scores, transcripts, and detailed candidate evaluations generated by their AI teammate — empowering them to make faster hirin",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Talent is now available in Preview, giving talent acquisition leaders an AI-powered hiring solution that accelerates candidate selection at scale. Informed by decades of Amazon's hiring science, Amazon Connect Talent uses AI agents to conduct structured voice interviews, administer science-backed assessments, and score candidates consistently — freeing recruiters to focus on strategic decisions. Candidates interview 24/7 from any device. Recruiters review scores, transcripts, and detailed candidate evaluations generated by their AI teammate — empowering them to make faster hiring decisions with consistent objectivity.&lt;br&gt; &lt;br&gt; Preview capabilities include AI-driven skills assessments, AI-led voice interviews with adaptive questioning, a brand-customizable mobile-first candidate portal, a comprehensive recruiter dashboard, system admin onboarding tools, and Applicant Tracking System (ATS) integrations for quick deployment. Amazon Connect Talent scales to handle hiring surges, evaluating hundreds of candidates simultaneously.&lt;br&gt; &lt;br&gt; Amazon Connect Talent is available in AWS US East (N. Virginia) and US West (Oregon) regions. To learn more and request access, visit the &lt;a href=\"https://aws.amazon.com/products/connect/talent/\"&gt;Amazon Connect Talent page.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-connect-talent-ai-powered/",
+      "publishedAt": "2026-04-28T15:30:00.000Z",
+      "updatedAt": "2026-04-28T15:30:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Amazon Connect",
+        "Aiml",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "business productivity",
+        "amazon connect",
+        "aiml",
+        "artificial intelligence",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f0055811639afbe7",
+      "title": "Amazon Bedrock now offers OpenAI models, Codex, and Managed Agents (Limited Preview)",
+      "description": "AWS and OpenAI are expanding their partnership to bring frontier intelligence to the infrastructure millions of organizations already trust. Enterprises want the most capable AI models and agents, with the security, operational maturity, and data governance that production workloads demand. Today, we’re bringing those together with three new offerings on Amazon Bedrock, all in limited preview: the latest OpenAI models, Codex, and Managed Agents powered by OpenAI. First, the latest OpenAI models are available on Amazon Bedrock. For the first time, AWS customers can access OpenAI frontier models",
+      "descriptionHtml": "&lt;p&gt;AWS and OpenAI are expanding their partnership to bring frontier&amp;nbsp;intelligence to the&amp;nbsp;infrastructure millions of organizations already trust. Enterprises want the most capable AI models and agents, with the security, operational maturity, and data governance that production&amp;nbsp;workloads demand. Today,&amp;nbsp;we’re&amp;nbsp;bringing those together&amp;nbsp;with&amp;nbsp;three new offerings&amp;nbsp;on&amp;nbsp;Amazon&amp;nbsp;Bedrock, all&amp;nbsp;in&amp;nbsp;limited preview: the latest OpenAI models, Codex, and Managed Agents powered by OpenAI.&lt;/p&gt; \n&lt;p&gt;First, the latest OpenAI models&amp;nbsp;are&amp;nbsp;available&amp;nbsp;on&amp;nbsp;Amazon&amp;nbsp;Bedrock. For the first time, AWS customers can access OpenAI frontier models through the same Bedrock&amp;nbsp;services&amp;nbsp;they already use for model access, fine-tuning, and orchestration. OpenAI models&amp;nbsp;on&amp;nbsp;Bedrock&amp;nbsp;inherit the enterprise controls customers depend on,&amp;nbsp;including IAM, AWS&amp;nbsp;PrivateLink, guardrails,&amp;nbsp;encryption, and CloudTrail logging. Second, Codex&amp;nbsp;on&amp;nbsp;Amazon&amp;nbsp;Bedrock&amp;nbsp;brings&amp;nbsp;the&amp;nbsp;OpenAI&amp;nbsp;coding agent&amp;nbsp;into the AWS environments where enterprise teams already build. Customers authenticate with AWS credentials&amp;nbsp;and&amp;nbsp;run&amp;nbsp;inference through&amp;nbsp;Bedrock.&amp;nbsp;Codex will be available through&amp;nbsp;Bedrock&amp;nbsp;via&amp;nbsp;the Codex CLI, desktop app, and VS Code extension.&amp;nbsp;Usage of both OpenAI models and Codex can be applied toward existing AWS&amp;nbsp;cloud commitments.&amp;nbsp;Lastly, Amazon&amp;nbsp;Bedrock&amp;nbsp;Managed Agents, powered by OpenAI, makes it fast to deploy production-ready OpenAI-powered agents&amp;nbsp;on&amp;nbsp;AWS.&amp;nbsp;At the core are the latest OpenAI frontier models and the OpenAI agent harness, engineered for faster execution, sharper reasoning, and reliable steering of long-running tasks. Every agent has&amp;nbsp;its&amp;nbsp;own identity,&amp;nbsp;logs&amp;nbsp;each action, and runs&amp;nbsp;in&amp;nbsp;your environment with all&amp;nbsp;inference&amp;nbsp;on&amp;nbsp;Amazon&amp;nbsp;Bedrock. Managed Agents works with Amazon&amp;nbsp;Bedrock&amp;nbsp;AgentCore, which provides&amp;nbsp;the default&amp;nbsp;compute&amp;nbsp;environment.&lt;/p&gt; \n&lt;p&gt;Read the&amp;nbsp;&lt;a href=\"http://aboutamazon.com/news/aws/bedrock-openai-models\"&gt;blog&lt;/a&gt;&amp;nbsp;to learn more. To follow our progress and be among the first to hear about the latest updates, register&amp;nbsp;&lt;a href=\"https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html\"&gt;here&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-openai-models-codex-managed-agents/",
+      "publishedAt": "2026-04-28T15:00:00.000Z",
+      "updatedAt": "2026-04-28T15:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "950888795cbbf8c7",
+      "title": "AWS Announces Amazon Connect Decisions",
+      "description": "Today, AWS announces the general availability of Amazon Connect Decisions, an agentic AI planning and intelligence solution that helps supply chain teams shift from firefighting to proactive operations. Combining 30 years of Amazon operational science and 25+ specialized supply chain tools, AI teammates adapt to your business, learn from your team's decisions, and continuously improve operations. Amazon Connect Decisions can be used by businesses across retail, CPG, automotive, and industrial manufacturing industries, among others, that want to transform their supply chain operations without h",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of Amazon Connect Decisions, an agentic AI planning and intelligence solution that helps supply chain teams shift from firefighting to proactive operations. Combining 30 years of Amazon operational science and 25+ specialized supply chain tools, AI teammates adapt to your business, learn from your team's decisions, and continuously improve operations. Amazon Connect Decisions can be used by businesses across retail, CPG, automotive, and industrial manufacturing industries, among others, that want to transform their supply chain operations without having to replace their existing systems.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;AI teammates work 24/7 to harmonize demand signals into consensus forecasts, generate constraint-aware supply plans, and monitor operations across your supply chain — detecting variances, performing automated root cause analysis, and triaging thousands of exceptions, surfacing only what matters most based on your business priorities as actionable recommendations.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Click &lt;a href=\"https://aws.amazon.com/products/connect/decisions\" title=\"Hyperlink to Amazon Connect Decisions PDP\"&gt;here&lt;/a&gt; to start a free trial or learn more about how Amazon Connect Decisions can help you make better decisions, faster, so your organization can prevent stockouts, reduce working capital waste, and transform supply chain performance.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-connect-decisions-april/",
+      "publishedAt": "2026-04-28T14:30:00.000Z",
+      "updatedAt": "2026-04-28T14:30:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Amazon Connect",
+        "Applications",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "business productivity",
+        "amazon connect",
+        "applications",
+        "artificial intelligence",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e3a4a6359f5e794a",
+      "title": "Build custom applications using natural language in Amazon Quick (Preview)",
+      "description": "Today, AWS announces new features in preview for Amazon Quick , allowing users to create custom web applications in minutes using natural language. Creating internal tools and web applications typically requires developer resources or technical skills, but with this new capability, any user can simply describe what they need and get a fully interactive application—no coding required. These applications connect to live data sources, implement complex workflows, embed AI-powered features, and can be published and shared with your team in one click. Whether you’re a sales leader wanting to create",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces new features in preview for &lt;a href=\"https://www.aws.com/quick/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Quick&lt;/a&gt;, allowing users to create custom web applications in minutes using natural language. Creating internal tools and web applications typically requires developer resources or technical skills, but with this new capability, any user can simply describe what they need and get a fully interactive application—no coding required. These applications connect to live data sources, implement complex workflows, embed AI-powered features, and can be published and shared with your team in one click.&lt;/p&gt; \n&lt;p&gt;Whether you’re a sales leader wanting to create an application for pipeline review by pulling data from a CRM and other business applications in real time, or a finance manager looking to simplify monthly close by aggregating information from QuickBooks, Excel, and internal systems, Quick allows anyone to create applications that will drive their business forward using a simple prompt.&lt;/p&gt; \n&lt;p&gt;Amazon Quick is an AI assistant for work that turns questions into answers, answers into actions, and actions into outcomes — for you and your entire team. You can &lt;a href=\"https://us-east-1.signin.aws/platform/d-9067642ac7/login?workflowStateHandle=d95d4042-bc2a-48d9-9c53-f08910af24d8#/validation\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;sign up&lt;/a&gt; for an account and start working with Amazon Quick for free; no AWS account or credit card is required. A guided onboarding experience helps you find value in less than 5 minutes, with role-specific workflows for sales, marketing, finance, HR, and more. To learn more about building applications in Quick, visit the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/using-amazon-quick-apps.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;product documentation&lt;/a&gt; or &lt;a href=\"https://www.aws.com/quick/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Quick product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/custom-applications/",
+      "publishedAt": "2026-04-28T14:30:00.000Z",
+      "updatedAt": "2026-04-28T14:30:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "business productivity",
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e8e9f884b1797a94",
+      "title": "Amazon Quick now available as a desktop application for macOS and Windows (Preview)",
+      "description": "Amazon Quick is now available as a native desktop application for MacOS and Windows in preview. The desktop application extends Quick beyond your browser and utilizes the capabilities on your computer– including direct access to local files, proactive OS-level notifications, and native desktop control. Teams and individuals who want an AI assistant that understands their full work context across files, calendar, communications, and applications can now run Quick directly on their desktop. With Quick on your desktop, you can read and work with files on your computer without uploading them, rece",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick is now available as a native desktop application for MacOS and Windows in preview. The desktop application extends Quick beyond your browser and utilizes the capabilities on your computer– including direct access to local files, proactive OS-level notifications, and native desktop control. Teams and individuals who want an AI assistant that understands their full work context across files, calendar, communications, and applications can now run Quick directly on their desktop.&lt;br&gt; &lt;br&gt; With Quick on your desktop, you can read and work with files on your computer without uploading them, receive notifications when action items, calendar conflicts, or messages need your attention, and automate browser-based tasks and desktop applications. Quick builds a personal knowledge graph that learns your people, projects, and relationships across every interaction–compounding context over time. For builders, the desktop application supports local Model Context Protocol (MCP) connections to coding agents. Memory, knowledge graph, and agents are shared across web and desktop, so your context travels with you across surfaces.&lt;br&gt; &lt;br&gt; The Amazon Quick desktop application is available in preview to all Quick subscribers on MacOS and Windows in all US East (N. Virginia).&lt;br&gt; &lt;br&gt; To get started, download the Quick desktop application &lt;a href=\"https://aws.amazon.com/quick/download/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;here.&lt;/u&gt;&lt;/a&gt;&amp;nbsp; Start working with Amazon Quick by &lt;a href=\"https://portal.aws.amazon.com/billing/signup/service?app=AmazonQuickSuite&amp;amp;tier=free&amp;amp;funnel=boost#/validation\"&gt;&lt;u&gt;signing up for an account&lt;/u&gt;&lt;/a&gt;. To learn more, visit our &lt;a href=\"https://aws.amazon.com/quick/desktop/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;website&lt;/u&gt;&lt;/a&gt;&amp;nbsp;and &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/amazon-quick-desktop.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;Amazon Quick documentation.&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-macos-windows-preview/",
+      "publishedAt": "2026-04-28T14:30:00.000Z",
+      "updatedAt": "2026-04-28T14:30:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Business Productivity"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence",
+        "business productivity"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1695f35f6a54faf6",
+      "title": "Amazon Quick expands integrations to include Google Workspace, Zoom, Airtable, and more",
+      "description": "Amazon Quick is expanding integrations with 13 new built-in action connectors, all supporting managed authentication so users can securely connect their accounts in just a few clicks without manual credentials setup. Amazon Quick is an AI assistant that turns questions into answers, answers into actions, and actions into outcomes—for you and your entire team. Quick brings all your tools and data together in one place. It learns what matters to you and your team, grounds every answer in your real business data, and goes beyond answers: scheduling, building deliverables, creating dashboards, and",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick is expanding integrations with 13 new built-in action connectors, all supporting managed authentication so users can securely connect their accounts in just a few clicks without manual credentials setup. Amazon Quick is an AI assistant that turns questions into answers, answers into actions, and actions into outcomes—for you and your entire team. Quick brings all your tools and data together in one place. It learns what matters to you and your team, grounds every answer in your real business data, and goes beyond answers: scheduling, building deliverables, creating dashboards, and acting on your behalf.&lt;br&gt; &lt;br&gt; With Quick, business users can now take action directly across Gmail, Google Sheets, Google Docs, Google Calendar, Google Drive, Google Slides, Google Meet, Google Analytics, Zoom, QuickBooks, Airtable, and Dropbox. For example, you can draft and send emails in Gmail, update a Google Sheet with the latest data, schedule a meeting in Google Calendar, share files from Google Drive or Dropbox, schedule a Zoom meeting, sync financial records in QuickBooks, manage projects in Airtable, or collaborate with your team in Microsoft Teams, all without leaving Quick. Each connector includes built-in sign-in support, so Quick securely handles the account authorization flow on your behalf, making it easy to get connected in just a few clicks.&lt;br&gt; &lt;br&gt; These connectors are now available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions&lt;/a&gt; where Amazon Quick is available.&lt;br&gt; &lt;br&gt; Start working with Amazon Quick by &lt;a href=\"https://portal.aws.amazon.com/billing/signup/service?app=AmazonQuickSuite&amp;amp;tier=free&amp;amp;funnel=boost#/validation\" target=\"_blank\"&gt;&lt;u&gt;signing up for an account&lt;/u&gt;&lt;/a&gt;. To learn more about integrations, visit the &lt;a href=\"https://aws.amazon.com/quick/integrations/\" target=\"_blank\"&gt;integrations webpage&lt;/a&gt; and&lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/working-with-integrations.html\" target=\"_blank\"&gt; documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-google-workspace-zoom/",
+      "publishedAt": "2026-04-28T11:30:00.000Z",
+      "updatedAt": "2026-04-28T11:30:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "business productivity",
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b1517ac9448be22c",
+      "title": "Amazon Quick now supports document and visual creation in chat",
+      "description": "Today, Amazon Quick introduces document and visual creation capabilities, enabling you to produce polished documents, presentations, spreadsheets, and more through natural language without leaving your conversation. No more switching between multiple tools to draft reports, build decks, or format tables. Quick users can now create documents and visuals, refine them in conversation or inline, and download finished files including Word, PDF, PowerPoint, and Excel formats. Quick also generates images, infographics, charts, and other visuals you can embed in any document or presentation, or export",
+      "descriptionHtml": "&lt;p&gt;Today, Amazon Quick introduces document and visual creation capabilities, enabling you to produce polished documents, presentations, spreadsheets, and more through natural language without leaving your conversation. No more switching between multiple tools to draft reports, build decks, or format tables. Quick users can now create documents and visuals, refine them in conversation or inline, and download finished files including Word, PDF, PowerPoint, and Excel formats.&lt;br&gt; &lt;br&gt; Quick also generates images, infographics, charts, and other visuals you can embed in any document or presentation, or export as standalone image files, all from the same conversation. Visual creation is currently available in preview.&lt;br&gt; Whether you need to generate an executive briefing from meeting notes, create a deck to review quarterly sales trends, build a spreadsheet in Excel or produce an infographic that brings your data to life, Quick handles the end-to-end creation process within your existing chat workflow. This capability is ideal for business analysts, product managers, marketing, finance, and operations teams who need to quickly transform data and insights into shareable, presentation-ready materials without switching tools.&lt;br&gt; &lt;br&gt; Document creation is available in all AWS Regions where Amazon Quick is currently supported. Visual creation (preview) is available in the US East (N. Virginia) and US West (Oregon) AWS Regions.&lt;br&gt; You can &lt;a href=\"https://portal.aws.amazon.com/billing/signup/service?app=AmazonQuickSuite&amp;amp;tier=free&amp;amp;funnel=boost#/validation\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;sign up for an account&lt;/u&gt;&lt;/a&gt; and start working with Quick for free; no AWS account or credit card is required. To get started with document and visual creation, open a chat conversation and describe whatever you need created. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/document-and-visual-creation.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;Amazon Quick User Guide&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick/",
+      "publishedAt": "2026-04-28T11:30:00.000Z",
+      "updatedAt": "2026-04-28T11:30:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "business productivity",
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "149fa0165ecfbab6",
+      "title": "Start using Amazon Quick for free in minutes with Free and Plus pricing plans",
+      "description": "Starting today, new Free and Plus pricing plans for Amazon Quick allow you to sign up in minutes using your personal email address or existing Google, Apple, Github, or Amazon credentials—no AWS account required. A guided onboarding experience helps you find value in less than 5 minutes, with role-specific workflows for sales, marketing, finance, operations, and more. Amazon Quick is an AI assistant that turns questions into answers, answers into actions, and actions into outcomes—for you and your entire team. Quick connects with all your applications, tools, and data, creating your own person",
+      "descriptionHtml": "&lt;p&gt;Starting today, new Free and Plus pricing plans for &lt;u&gt;&lt;a href=\"https://aws.com/quick\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Quick&lt;/a&gt;&lt;/u&gt; allow you to &lt;a href=\"https://portal.aws.amazon.com/billing/signup/service?app=AmazonQuickSuite&amp;amp;tier=free&amp;amp;funnel=boost#/validation\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;sign up in minutes&lt;/u&gt;&lt;/a&gt; using your personal email address or existing Google, Apple, Github, or Amazon credentials—no AWS account required. A guided onboarding experience helps you find value in less than 5 minutes, with role-specific workflows for sales, marketing, finance, operations, and more.&lt;br&gt; &lt;br&gt; Amazon Quick is an AI assistant that turns questions into answers, answers into actions, and actions into outcomes—for you and your entire team. Quick connects with all your applications, tools, and data, creating your own personal knowledge graph that learns your priorities, preferences, and network. It doesn't just answer your questions; it knows how you want to work. Give it a task and it takes action—scheduling meetings, sending emails, and following up on action items. Whether you’re a seller looking to prioritize leads and generate personalized outreach to top prospects or a marketing manager looking to optimize campaign performance, Quick learns what matters to you and your team, grounds every answer in your real business data, and goes beyond answers: scheduling, building deliverables, and acting on your behalf.&lt;br&gt; &lt;br&gt; You &lt;a href=\"https://portal.aws.amazon.com/billing/signup/service?app=AmazonQuickSuite&amp;amp;tier=free&amp;amp;funnel=boost#/validation\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;can sign up for an account&lt;/u&gt;&lt;/a&gt; and start working in Amazon Quick in minutes. By the end of the day, you'll wonder how you ever worked without it. Amazon Quick is also available through Professional and Enterprise plans that include additional agentic/business intelligence capabilities, enterprise governance, support for any number of users, and more. To compare plans, visit the &lt;a href=\"https://aws.amazon.com/quick/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;Amazon Quick pricing plans page&lt;/u&gt;&lt;/a&gt;. Visit &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/standalone-signup.html\" target=\"_blank\"&gt;Signing up at quick.aws.com documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-free-plus/",
+      "publishedAt": "2026-04-28T11:30:00.000Z",
+      "updatedAt": "2026-04-28T11:30:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "business productivity",
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
     {
       "id": "108a8c05e4fcdf85",
       "title": "Amazon Redshift Serverless AI-driven scaling is now the default for new workgroups",
-      "description": "Amazon Redshift Serverless now makes AI-driven scaling and optimization the default for all new workgroups. AI-driven scaling uses machine learning to predict compute needs and automatically adjust resources before queries queue, delivering better price-performance without manual tuning. This release also expands support to workloads with a Base RPU range of 8–512 RPU, up from the previous 32–512 RPU, reducing the entry cost for AI-driven scaling. With AI-driven scaling and optimization, Amazon Redshift monitors your workload patterns and automatically adjusts compute resources based on query ",
-      "descriptionHtml": "&lt;p&gt;Amazon Redshift Serverless now makes AI-driven scaling and optimization the default for all new workgroups. AI-driven scaling uses machine learning to predict compute needs and automatically adjust resources before queries queue, delivering better price-performance without manual tuning. This release also expands support to workloads with a Base RPU range of 8–512 RPU, up from the previous 32–512 RPU, reducing the entry cost for AI-driven scaling.&lt;br&gt; &lt;br&gt; With AI-driven scaling and optimization, Amazon Redshift monitors your workload patterns and automatically adjusts compute resources based on query complexity, data volume, and expected data scan size. You can use the price-performance slider to choose whether to prioritize cost, performance, or a balance of both. Amazon Redshift also applies additional optimizations, including automatic materialized views and automatic table design optimization, to meet your selected target. To configure price-performance targets, use the AWS Management Console or Amazon Redshift API operations. You can also modify the target after you create the workgroup.&lt;br&gt; &lt;br&gt; Amazon Redshift Serverless AI-driven scaling and optimization is available in all AWS Regions where Amazon Redshift Serverless is available.&amp;nbsp;For more information,&amp;nbsp;see Amazon Redshift Serverless &lt;a href=\"https://aws.amazon.com/redshift/redshift-serverless/\"&gt;product page&lt;/a&gt;&amp;nbsp;and&amp;nbsp;AI-driven scaling and optimization &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-capacity.html#serverless-auto-optimization\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "description": "Amazon Redshift Serverless now makes AI-driven scaling and optimization the default for all new workgroups. AI-driven scaling uses machine learning to predict compute needs and automatically adjust resources before queries queue, delivering better price-performance without manual tuning. This release also expands support to workloads with a Base RPU range of 8–512 RPU, from the previous range of 32–512 RPU, reducing the entry cost for AI-driven scaling. With AI-driven scaling and optimization, Amazon Redshift monitors your workload patterns and automatically adjusts compute resources based on ",
+      "descriptionHtml": "&lt;p&gt;Amazon Redshift Serverless now makes AI-driven scaling and optimization the default for all new workgroups. AI-driven scaling uses machine learning to predict compute needs and automatically adjust resources before queries queue, delivering better price-performance without manual tuning. This release also expands support to workloads with a Base RPU range of 8–512 RPU, from the previous range of 32–512 RPU, reducing the entry cost for AI-driven scaling.&lt;br&gt; &lt;br&gt; With AI-driven scaling and optimization, Amazon Redshift monitors your workload patterns and automatically adjusts compute resources based on query complexity, data volume, and expected data scan size. You can use the price-performance slider to choose whether to prioritize cost, performance, or a balance of both. Amazon Redshift also applies additional optimizations, including automatic materialized views and automatic table design optimization, to meet your selected target. To configure price-performance targets, use the AWS Management Console or Amazon Redshift API operations. You can also modify the target after you create the workgroup.&lt;br&gt; &lt;br&gt; Amazon Redshift Serverless AI-driven scaling and optimization is available in all AWS Regions where Amazon Redshift Serverless is available.&amp;nbsp;For more information,&amp;nbsp;see Amazon Redshift Serverless &lt;a href=\"https://aws.amazon.com/redshift/redshift-serverless/\"&gt;product page&lt;/a&gt;&amp;nbsp;and&amp;nbsp;AI-driven scaling and optimization &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-capacity.html#serverless-auto-optimization\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-redshift-serverless-ai-driven-scaling-default/",
       "publishedAt": "2026-04-27T22:03:00.000Z",
       "updatedAt": "2026-04-27T22:03:00.000Z",
       "categories": [
-        "Analytics",
-        "Amazon Redshift"
+        "Amazon Redshift",
+        "Analytics"
       ],
       "services": [
         "Redshift"
       ],
       "tags": [
-        "analytics",
         "amazon redshift",
+        "analytics",
         "redshift"
       ],
       "isNew": true
@@ -75,6 +331,28 @@
       "isNew": true
     },
     {
+      "id": "37d78564da8373c7",
+      "title": "Amazon EVS now supports i7i.metal-24xl Amazon EC2 instance type",
+      "description": "Today, we're announcing that Amazon Elastic VMware Service (Amazon EVS) now supports the i7i.metal-24xl Amazon Elastic Cloud Compute (Amazon EC2) bare-metal instance type, offering a lower-core-count option with a newer generation processor to help you realize cost-performance benefits for your VMware-based workloads on AWS. With this release, you now have more options for running your virtual machines (VMs) on Amazon EVS environments and growing your cloud presence at your own pace, as your business demands. Powered by 5th generation Intel Xeon Scalable processors, i7i instances offer the bes",
+      "descriptionHtml": "&lt;p&gt;Today, we're announcing that Amazon Elastic VMware Service (Amazon EVS) now supports the i7i.metal-24xl Amazon Elastic Cloud Compute (Amazon EC2) bare-metal instance type, offering a lower-core-count option with a newer generation processor to help you realize cost-performance benefits for your VMware-based workloads on AWS.&lt;/p&gt; \n&lt;p&gt;With this release, you now have more options for running your virtual machines (VMs) on Amazon EVS environments and growing your cloud presence at your own pace, as your business demands. Powered by 5th generation Intel Xeon Scalable processors, i7i instances offer the best compute and storage performance for x86-based storage optimized instances in Amazon EC2, delivering up to 23% better compute performance and more than 10% better price performance over i4i instances.&lt;/p&gt; \n&lt;p&gt;This latest release is available in AWS Regions where Amazon EVS and Amazon EC2 i7i are both available. See &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Amazon EVS regional availability&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-instance-regions.html\"&gt;Amazon EC2 i7i regional availability&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Learn more about Amazon EVS by visiting the &lt;a href=\"https://aws.amazon.com/evs/\"&gt;product detail page&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/evs/latest/userguide/what-is-evs.html\"&gt;user guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-evs-i7i-instance-type/",
+      "publishedAt": "2026-04-27T19:00:00.000Z",
+      "updatedAt": "2026-04-27T19:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Migration"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "migration",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
       "id": "af03dd986d219a64",
       "title": "Amazon Connect increases attachment file sizes and adds custom file types",
       "description": "Amazon Connect now supports attachment file sizes up to 100 MB for chat, cases, and tasks, up from the previous 20 MB limit. Administrators can enable these higher limits and configure custom file extensions for attachments across chat, email, cases, and tasks through the Amazon Connect admin website or Amazon Connect APIs . A technology company supporting enterprise customers can now accept files like diagnostic bundles and log archives up to 100 MB through chat, reducing back-and-forth and helping agents resolve issues faster. A financial services firm can add file extensions for signed cont",
@@ -93,6 +371,23 @@
         "contact center",
         "amazon connect",
         "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "4b92a5ce1c91d199",
+      "title": "AWS Billing Conductor launches Passthrough Pricing Plan for Billing Transfer users",
+      "description": "AWS Billing Conductor now supports the Passthrough Pricing Plan, a new managed pricing plan for Billing Transfer users. Customers using Billing Transfer can now select the AWS-managed Passthrough Pricing Plan for their billing groups. Under this plan, all accounts in a billing group view billable data that reflects the AWS invoice value through their primary view. Customers can apply the new Passthrough Pricing Plan by logging into their Bill-Transfer account and selecting a pricing plan in the Billing Transfer page as they configure a new transfer. For existing billing groups, Customers can a",
+      "descriptionHtml": "&lt;p&gt;AWS Billing Conductor now supports the Passthrough Pricing Plan, a new managed pricing plan for Billing Transfer users.&lt;/p&gt; \n&lt;p&gt;Customers using Billing Transfer can now select the AWS-managed Passthrough Pricing Plan for their billing groups. Under this plan, all accounts in a billing group view billable data that reflects the AWS invoice value through their primary view.&lt;/p&gt; \n&lt;p&gt;Customers can apply the new Passthrough Pricing Plan by logging into their Bill-Transfer account and selecting a pricing plan in the Billing Transfer page as they configure a new transfer. For existing billing groups, Customers can apply Passthrough Pricing&amp;nbsp;via the AWS Billing Conductor Console. Once configured, the Bill-Transfer account will see the same billing data across both the My View and Showback/Chargeback views associated with billing group's consumption.&lt;/p&gt; \n&lt;p&gt;Direct Customers or Channel Partners who wish to use Billing Transfer to centralize billing and simplify payments without protecting proprietary discounts or customizing the billing data visible to the accounts in the billing groups, can do so by selecting the Passthrough Pricing plan, free of charge. &lt;/p&gt; \n&lt;p&gt;This feature is available in the US East (N. Virginia) region. To get started, visit the Billing Transfer page in the AWS Billing and Cost Management Console or the &lt;a href=\"https://console.aws.amazon.com/billingconductor\"&gt;AWS Billing Conductor console&lt;/a&gt;. To learn more about Billing Transfer and AWS Billing Conductor visit the &lt;a href=\"https://aws.amazon.com/aws-cost-management/aws-billing-transfer/\"&gt;Billing Transfer product page&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/orgs_transfer_billing.html\"&gt;AWS Billing documentation&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html\"&gt;AWS Cost Management documentation.&lt;/a&gt;&lt;/p&gt; \n&lt;p&gt; &amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-billing-conductor-launches-passthrough/",
+      "publishedAt": "2026-04-27T18:44:00.000Z",
+      "updatedAt": "2026-04-27T18:44:00.000Z",
+      "categories": [
+        "Cost Management"
+      ],
+      "services": [],
+      "tags": [
+        "cost management"
       ],
       "isNew": true
     },
@@ -207,6 +502,32 @@
       "isNew": true
     },
     {
+      "id": "237c0b2f8cd0fa14",
+      "title": "Amazon SageMaker Training Plans now provides capacity utilization monitoring through Amazon CloudWatch",
+      "description": "Amazon SageMaker Training Plans now supports Amazon CloudWatch metrics to monitor the utilization of capacity reservations associated with your purchased plan. SageMaker Flexible Training Plans helps you create the most cost-efficient training plans that fit within your timeline and AI budget. Once you create and purchase your training plans, SageMaker automatically provisions the infrastructure and runs the AI workloads on these compute resources without requiring any manual intervention. This feature provides administrators access to both historical and real-time metrics on instance usage—at",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/reserve-capacity-with-training-plans.html\"&gt;Amazon SageMaker Training Plans&lt;/a&gt; now supports &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html\"&gt;Amazon CloudWatch&lt;/a&gt; metrics to monitor the utilization of capacity reservations associated with your purchased plan. SageMaker Flexible Training Plans helps you create the most cost-efficient training plans that fit within your timeline and AI budget. Once you create and purchase your training plans, SageMaker automatically provisions the infrastructure and runs the AI workloads on these compute resources without requiring any manual intervention. &lt;/p&gt; \n&lt;p&gt;This feature provides administrators access to both historical and real-time metrics on instance usage—at the individual plan level and across all plans in your account—enabling them to make informed decisions about capacity and cost. To learn more about the Flexible Training Plan reservation monitoring feature, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-cw-metrics.html\"&gt;Amazon SageMaker Training Plans User Guide&lt;/a&gt;.&lt;br&gt; &lt;br&gt; For a detailed breakdown of Training Plan instance availability by AWS Region, see the &lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/\"&gt;SageMaker AI pricing page&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-training-plan-cloudwatch-observability/",
+      "publishedAt": "2026-04-27T15:00:00.000Z",
+      "updatedAt": "2026-04-27T15:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Sagemaker",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "SageMaker",
+        "CloudWatch"
+      ],
+      "tags": [
+        "compute",
+        "amazon sagemaker",
+        "artificial intelligence",
+        "sagemaker",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
       "id": "f4f27782ac7ecc04",
       "title": "Amazon WorkSpaces Personal Supports Rocky 9, Red Hat Enterprise Linux 9, and Ubuntu 24.04",
       "description": "AWS announces availability of new Linux bundles for Amazon WorkSpaces Personal, including Rocky Linux 9, Red Hat Enterprise Linux 9, and Ubuntu 24.04. With these bundles, customers can launch WorkSpaces powered by the latest enterprise-grade Linux operating systems and take advantage of modern versions of Linux packages only available in these updated releases. While Rocky Linux 8, Red Hat Enterprise Linux 8, and Ubuntu 22.04 powered WorkSpaces bundles remain available, the new OS options bring access to the latest software ecosystems, improved security postures, and extended long-term support",
@@ -281,6 +602,34 @@
         "artificial intelligence",
         "vpc",
         "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ae39e1fa7bbce6e1",
+      "title": "Amazon Connect now logs supervisor agent activity status changes to AWS CloudTrail",
+      "description": "Amazon Connect now provides audit logging for agent activity status changes made through analytics dashboards to AWS CloudTrail. This enhancement provides visibility into who changed agent activity status, and when changes occurred, helping contact centers maintain clear audit trails. For example, if an agent is scheduled to be on break, a supervisor can change an agent's status from \"Available\" to \"Break\", this action is now captured in CloudTrail with details including the supervisor's identity, timestamp, and the specific status change. Logging agent activity status changes made from analyt",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect now provides audit logging for agent activity status changes made through analytics dashboards to AWS CloudTrail. This enhancement provides visibility into who changed agent activity status, and when changes occurred, helping contact centers maintain clear audit trails. For example, if an agent is scheduled to be on break, a supervisor can change an agent's status from \"Available\" to \"Break\", this action is now captured in CloudTrail with details including the supervisor's identity, timestamp, and the specific status change.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; Logging agent activity status changes made from analytics dashboards to AWS CloudTrail is available in all AWS commercial and AWS GovCloud (US-West) &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;regions&lt;/a&gt; where Amazon Connect is offered. To get started, ensure CloudTrail logging is enabled for your AWS account, and status changes made through Amazon Connect analytics dashboards will automatically appear in your CloudTrail logs. To learn more about dashboards, see the &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/dashboards.html\"&gt;Amazon Connect Administrator Guide&lt;/a&gt;. To learn more about Amazon Connect, the AWS cloud-based contact center, please visit the &lt;a href=\"https://aws.amazon.com/connect/\"&gt;Amazon Connect website&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-connect-logs-supervisor/",
+      "publishedAt": "2026-04-24T18:39:00.000Z",
+      "updatedAt": "2026-04-24T18:39:00.000Z",
+      "categories": [
+        "Contact Center",
+        "Business Productivity",
+        "Amazon Connect",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "CloudTrail",
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "business productivity",
+        "amazon connect",
+        "aws govcloud us",
+        "cloudtrail",
+        "connect"
       ],
       "isNew": true
     },
@@ -660,6 +1009,23 @@
       "isNew": true
     },
     {
+      "id": "a533c4632b80c870",
+      "title": "Amazon Quick now supports document-level access controls for SharePoint knowledge bases",
+      "description": "Amazon Quick now supports document-level access controls (ACLs) for Microsoft SharePoint knowledge bases, enabling organizations to maintain native SharePoint permissions when indexing content. Users with whom knowledge bases are shared can only access documents through Amazon Quick that they have permission to view in SharePoint, ensuring security and compliance with your organization's sharing policies. Quick combines ACL replication for efficient pre-retrieval filtering with real-time permission checks directly with SharePoint at query time. This dual approach delivers the performance benef",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick now supports document-level access controls (ACLs) for Microsoft SharePoint knowledge bases, enabling organizations to maintain native SharePoint permissions when indexing content. Users with whom knowledge bases are shared can only access documents through Amazon Quick that they have permission to view in SharePoint, ensuring security and compliance with your organization's sharing policies.&lt;br&gt; &lt;br&gt; Quick combines ACL replication for efficient pre-retrieval filtering with real-time permission checks directly with SharePoint at query time. This dual approach delivers the performance benefits of indexed ACLs while guarding against stale or incorrectly mapped permission data. When a user submits a query, Quick verifies their current permissions with SharePoint before generating a response, ensuring answers are based on live access rights.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon Quick is available. To get started, create an admin-managed SharePoint knowledge base in the Amazon Quick console and configure document-level access controls in advanced settings. For more information, see &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/sharepoint-kb-admin-managed.html\"&gt;Microsoft SharePoint integration&lt;/a&gt; in the Amazon Quick User Guide.&lt;br&gt; &lt;br&gt; Amazon Quick is available in US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (London), and Europe (Ireland). For more information about Amazon Quick, visit the &lt;a href=\"https://aws.amazon.com/quick/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Quick page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/quick-sharepoint-access-control/",
+      "publishedAt": "2026-04-23T14:26:00.000Z",
+      "updatedAt": "2026-04-23T14:26:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
       "id": "f561d762e65d8556",
       "title": "Amazon S3 now supports five additional checksum algorithms",
       "description": "Amazon S3 now supports five additional checksum algorithms: MD5, XXHash3, XXHash64, XXHash128, and SHA-512, bringing the total to ten. S3 validates and stores the checksum alongside your object for any of these supported algorithms, so you can verify data integrity end to end without additional tooling. When uploading objects, you can provide a checksum value and S3 validates it against the uploaded data before storing the object. For multipart uploads, you provide part-level checksums and S3 calculates a composite checksum upon completion. If you do not provide a checksum on upload, S3 automa",
@@ -1028,7 +1394,7 @@
         "amazon rds for sql server",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3136754956e7fac4",
@@ -1050,7 +1416,7 @@
         "serverless",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0338b00e215c7bc3",
@@ -1072,7 +1438,7 @@
         "amazon elasticsearch service",
         "opensearch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f675b890075cbe3b",
@@ -1094,7 +1460,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b2286ab4a9938238",
@@ -1120,7 +1486,7 @@
         "iam identity center",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8efa034f8ccec551",
@@ -1146,7 +1512,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a38c3c4bef456ca6",
@@ -1170,7 +1536,7 @@
         "networking",
         "eks"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f85ea2da01efedcd",
@@ -1189,7 +1555,7 @@
         "aws marketplace and partners",
         "partner network"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6a3d4e31c9505c27",
@@ -1213,7 +1579,7 @@
         "privatelink",
         "athena"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e2deaf6fcd66bf88",
@@ -1241,7 +1607,7 @@
         "lambda",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9b8f88302241a54e",
@@ -1263,7 +1629,7 @@
         "management and governance",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "164bc499d221f483",
@@ -1285,7 +1651,7 @@
         "analytics",
         "glue"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3b21ef062111bbc8",
@@ -1310,7 +1676,7 @@
         "migration",
         "applications"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a94612a14017fce7",
@@ -1332,7 +1698,7 @@
         "analytics",
         "msk"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "681e33832cddcbfd",
@@ -1360,7 +1726,7 @@
         "ec2",
         "local zones"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "403bb7edb396d4d7",
@@ -1373,7 +1739,7 @@
       "categories": [],
       "services": [],
       "tags": [],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f56bdb3ddfc74d09",
@@ -1395,7 +1761,7 @@
         "databases",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ecb13cbf2e01dbfa",
