@@ -1,7 +1,305 @@
 {
-  "lastUpdated": "2026-04-29T10:06:55.377Z",
-  "itemCount": 351,
+  "lastUpdated": "2026-04-30T10:08:03.110Z",
+  "itemCount": 366,
   "items": [
+    {
+      "id": "1628d3b783bf898e",
+      "title": "Amazon RDS for MySQL announces Innovation Release 9.6 in Amazon RDS Database Preview Environment",
+      "description": "Amazon RDS for MySQL now supports community MySQL Innovation Release 9.6 in the Amazon RDS Database Preview Environment , allowing you to evaluate the latest Innovation Release on Amazon RDS for MySQL. You can deploy MySQL 9.6 in the Amazon RDS Database Preview Environment which provides the benefits of a fully managed database, making it simpler to set up, operate, and monitor databases. MySQL 9.6 is the latest Innovation Release from the MySQL community. MySQL Innovation releases include bug fixes, security patches, as well as new features. MySQL Innovation releases are supported by the comm",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/mysql/\"&gt;Amazon RDS for MySQL&lt;/a&gt;&amp;nbsp;now supports community MySQL Innovation Release 9.6 in the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/rds/databasepreview/\"&gt;Amazon RDS Database Preview Environment&lt;/a&gt;, allowing you to evaluate the latest Innovation Release on Amazon RDS for MySQL. You can deploy MySQL 9.6 in the Amazon RDS Database Preview Environment which provides the benefits of a fully managed database, making it simpler to set up, operate, and monitor databases.&lt;br&gt; &lt;br&gt; MySQL 9.6 is the latest Innovation Release from the MySQL community. MySQL Innovation releases include bug fixes, security patches, as well as new features. MySQL Innovation releases are supported by the community until the next innovation minor, whereas MySQL Long Term Support (LTS) Releases, such as MySQL 8.0 and MySQL 8.4, are supported by the community for up to eight years. Please refer to the&amp;nbsp;&lt;a href=\"https://dev.mysql.com/doc/relnotes/mysql/9.6/en/\"&gt;MySQL 9.6 release notes&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Concepts.VersionMgmt.html#mysql-preview-environment-version-9-6\"&gt;Amazon RDS MySQL release notes&lt;/a&gt;&amp;nbsp;for more details.&lt;br&gt; &lt;br&gt; Amazon RDS Database Preview Environment supports both Single-AZ and Multi-AZ deployments on the latest generation of instance classes. Amazon RDS Database Preview Environment database instances are retained for a maximum of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots created in the Preview Environment can only be used to create or restore database instances within the Preview Environment.&lt;br&gt; &lt;br&gt; Amazon RDS Database Preview Environment database instances are&amp;nbsp;&lt;a href=\"https://aws.amazon.com/rds/mysql/pricing/\"&gt;priced the same as production RDS instances created in the US East (Ohio) Region&lt;/a&gt;. For further information, see&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Concepts.VersionMgmt.html#mysql-working-with-the-database-preview-environment\"&gt;Working with the Database Preview Environment&lt;/a&gt;. To get started with the Preview Environment from the RDS console, navigate here.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-rds-mysql-innovation/",
+      "publishedAt": "2026-04-29T20:37:00.000Z",
+      "updatedAt": "2026-04-29T20:37:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds For Mysql"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds for mysql",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "51aeb52a9eb2e94f",
+      "title": "Amazon DocumentDB (with MongoDB compatibility) is Now Available in the Canada West (Calgary) Region",
+      "description": "Amazon DocumentDB (with MongoDB compatibility) is now available in the Canada West (Calgary) region adding to the list of available regions where you can use Amazon DocumentDB . Amazon DocumentDB is a fully managed, native JSON database that makes it simple and cost-effective to operate critical document workloads at virtually any scale without managing infrastructure. Amazon DocumentDB is designed to give you the scalability and durability you need when operating mission-critical MongoDB workloads. Storage scales automatically up to 128TiB without any impact to your application. In addition, ",
+      "descriptionHtml": "&lt;p&gt;Amazon DocumentDB (with MongoDB compatibility) is now available in the Canada West (Calgary) region adding to the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;list of available regions where you can use Amazon DocumentDB&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Amazon DocumentDB is a fully managed, native JSON database that makes it simple and cost-effective to operate critical document workloads at virtually any scale without managing infrastructure. Amazon DocumentDB is designed to give you the scalability and durability you need when operating mission-critical MongoDB workloads. Storage scales automatically up to 128TiB without any impact to your application. In addition, Amazon DocumentDB natively integrates with AWS Database Migration Service (DMS), Amazon CloudWatch, AWS CloudTrail, AWS Lambda, AWS Backup and more. Amazon DocumentDB supports millions of requests per second and can be scaled out to 15 low latency read replicas in minutes with no application downtime.&lt;/p&gt; \n&lt;p&gt;To learn more about Amazon DocumentDB, please visit the Amazon DocumentDB &lt;a href=\"https://aws.amazon.com/documentdb/\"&gt;product page&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/documentdb/pricing/\"&gt;pricing page&lt;/a&gt;. You can create a Amazon DocumentDB cluster from the &lt;a href=\"https://console.aws.amazon.com/docdb\"&gt;AWS Management console&lt;/a&gt;, &lt;a href=\"https://awscli.amazonaws.com/v2/documentation/api/latest/reference/docdb/index.html\"&gt;AWS Command Line Interface (CLI)&lt;/a&gt;, or SDK.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-documentdb-available-in-canada-west-region/",
+      "publishedAt": "2026-04-29T18:00:00.000Z",
+      "updatedAt": "2026-04-29T18:00:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Documentdb"
+      ],
+      "services": [
+        "DocumentDB"
+      ],
+      "tags": [
+        "databases",
+        "amazon documentdb",
+        "documentdb"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7fa57850c61c7177",
+      "title": "Amazon CloudFront now supports invalidation by cache tag",
+      "description": "Amazon CloudFront now allows you to invalidate cached objects by cache tag, enabling you to remove groups of related content from CloudFront edge locations with a single invalidation request. Cache tag invalidation simplifies common operational workflows such as updating product information across multiple pages, managing legal takedown requests, handling regulatory compliance requests, and refreshing content across multi-tenant platforms. Previously, invalidating related objects that didn't share a common URL path required tracking individual URLs or using broad wildcard patterns that could u",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudFront now allows you to invalidate cached objects by cache tag, enabling you to remove groups of related content from CloudFront edge locations with a single invalidation request. Cache tag invalidation simplifies common operational workflows such as updating product information across multiple pages, managing legal takedown requests, handling regulatory compliance requests, and refreshing content across multi-tenant platforms.&lt;br&gt; &lt;br&gt; Previously, invalidating related objects that didn't share a common URL path required tracking individual URLs or using broad wildcard patterns that could unnecessarily clear unrelated content. With invalidation by cache tag, developers and site reliability engineers can tag cached objects when returning an object by including a specified header in HTTP responses with comma-separated tag values. When needed, they can invalidate all objects sharing a tag in one request, maintaining high cache hit ratios while ensuring end users see fresh content within seconds. You can configure the header name through the Amazon CloudFront console, AWS CLI, or API, and assign multiple tags per object for flexible, precise cache management. Over the years, CloudFront has made improvements to propagation times. Currently, invalidations take effect in under 5 seconds at P95. The end-to-end completion time, which includes reporting the invalidation status back, is under 25 seconds at P95.&lt;br&gt; &lt;br&gt; Amazon CloudFront invalidation by cache tag is available in all AWS Regions where CloudFront is&amp;nbsp;offered&amp;nbsp;except China (Beijing,&amp;nbsp;operated&amp;nbsp;by Sinnet) and China (Ningxia,&amp;nbsp;operated&amp;nbsp;by NWCD).&amp;nbsp;To learn more,&amp;nbsp;view the &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/invalidation-by-tags.html\"&gt;Invalidations&amp;nbsp;By&amp;nbsp;Cache Tag documentation&lt;/a&gt;.&amp;nbsp;Each cache tag is priced as one path.&amp;nbsp;For details on pricing, refer to the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/cloudfront/pricing/\"&gt;CloudFront pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/cloudfront-invalidation-cache-tag/",
+      "publishedAt": "2026-04-29T17:06:00.000Z",
+      "updatedAt": "2026-04-29T17:06:00.000Z",
+      "categories": [
+        "Amazon Cloudfront",
+        "Networking And Content Delivery"
+      ],
+      "services": [
+        "CloudFront"
+      ],
+      "tags": [
+        "amazon cloudfront",
+        "networking and content delivery",
+        "cloudfront"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "dd3578423121c98e",
+      "title": "Paraphrase-multilingual-MiniLM-L12-v2, Table Transformer Detection, and Bielik-11B-v3.0-Instruct are now available in Amazon SageMaker JumpStart",
+      "description": "Today, AWS announced the availability of paraphrase-multilingual-MiniLM-L12-v2, Microsoft Table Transformer Detection, and Bielik-11B-v3.0-Instruct in Amazon SageMaker JumpStart. Paraphrase-multilingual-MiniLM-L12-v2 from Sentence Transformers is a lightweight semantic similarity model that maps sentences and paragraphs to a 384-dimensional dense vector space across 50+ languages. It is well suited for finding semantically similar content within and across languages, making it ideal for cross-lingual semantic search, multilingual document clustering, and sentence similarity scoring without req",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announced the availability of paraphrase-multilingual-MiniLM-L12-v2, Microsoft Table Transformer Detection, and Bielik-11B-v3.0-Instruct in Amazon SageMaker JumpStart.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Paraphrase-multilingual-MiniLM-L12-v2 &lt;/b&gt;from Sentence Transformers is a lightweight semantic similarity model that maps sentences and paragraphs to a 384-dimensional dense vector space across 50+ languages. It is well suited for finding semantically similar content within and across languages, making it ideal for cross-lingual semantic search, multilingual document clustering, and sentence similarity scoring without requiring language-specific configuration.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Microsoft Table Transformer&lt;/b&gt;&amp;nbsp;&lt;b&gt;Detection &lt;/b&gt;is a DETR-based object detection model trained on the PubTables-1M dataset, purpose-built for detecting tables in unstructured documents such as PDFs and scanned images. It is well suited for document digitization pipelines and automated data extraction workflows that require reliably locating tabular content at scale across research papers, financial reports, and other document types.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Bielik-11B-v3.0-Instruct&lt;/b&gt; is an 11-billion-parameter generative language model developed by SpeakLeash and ACK Cyfronet AGH, trained on multilingual corpora spanning 32 European languages with a strong emphasis on Polish. It excels at Polish and European language dialogue, STEM and mathematical reasoning, logic and tool-use tasks, and enterprise applications requiring deep linguistic understanding across European languages.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases. To get started with these models, navigate to the Models section of SageMaker Studio or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the Amazon SageMaker JumpStart documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/paraphrase-multilingual-table-transformer-bielik-on-sagemaker-jumpstart/",
+      "publishedAt": "2026-04-29T17:05:00.000Z",
+      "updatedAt": "2026-04-29T17:05:00.000Z",
+      "categories": [
+        "Aiml",
+        "Amazon Sagemaker",
+        "Amazon Sagemaker Jumpstart",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "aiml",
+        "amazon sagemaker",
+        "amazon sagemaker jumpstart",
+        "artificial intelligence",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "98791add23021c0f",
+      "title": "Gemma 4 models are now available in Amazon SageMaker JumpStart",
+      "description": "Today, AWS announced the availability of Gemma 4 E4B, Gemma 4 26B-A4B, and Gemma 4 31B in Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three instruction-tuned models from Google DeepMind bring multimodal capabilities with configurable reasoning, native function calling, and multilingual support across 140+ languages, enabling customers to build sophisticated AI applications across diverse use cases on AWS infrastructure. All three models share a common set of capabilities that address a broad range of enterprise AI use cases: Thinki",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announced the availability of Gemma 4 E4B, Gemma 4 26B-A4B, and Gemma 4 31B in Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three instruction-tuned models from Google DeepMind bring multimodal capabilities with configurable reasoning, native function calling, and multilingual support across 140+ languages, enabling customers to build sophisticated AI applications across diverse use cases on AWS infrastructure.&lt;/p&gt; \n&lt;p&gt;All three models share a common set of capabilities that address a broad range of enterprise AI use cases:&lt;/p&gt; \n&lt;p&gt;Thinking - Built-in reasoning mode that lets the model think step-by-step before answering&lt;/p&gt; \n&lt;p&gt;Image Understanding - Object detection, document and PDF parsing, screen and UI understanding, chart comprehension, OCR including multilingual, and handwriting recognition&lt;/p&gt; \n&lt;p&gt;Video Understanding - Analyze video content by processing sequences of frames&lt;/p&gt; \n&lt;p&gt;Interleaved Multimodal Input - Freely mix text and images in any order within a single prompt&lt;/p&gt; \n&lt;p&gt;Function Calling - Native support for structured tool use, enabling agentic workflows&lt;/p&gt; \n&lt;p&gt;Coding - Code generation, completion, and correction&lt;/p&gt; \n&lt;p&gt;Multilingual - Out-of-the-box support for 35+ languages, pre-trained on 140+ languages&lt;/p&gt; \n&lt;p&gt;Customers can choose the model that best fits their workload: Gemma 4 E4B additionally supports audio input for automatic speech recognition (ASR) and speech-to-translated-text translation across multiple languages.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases. To get started with these models, navigate to the Models section of SageMaker Studio or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the Amazon SageMaker JumpStart documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/gemma-4-models-on-sagemaker-jumpstart/",
+      "publishedAt": "2026-04-29T17:05:00.000Z",
+      "updatedAt": "2026-04-29T17:05:00.000Z",
+      "categories": [
+        "Aiml",
+        "Amazon Sagemaker Jumpstart",
+        "Artificial Intelligence",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "aiml",
+        "amazon sagemaker jumpstart",
+        "artificial intelligence",
+        "amazon sagemaker",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8f198aa71a1276a6",
+      "title": "Amazon CloudWatch adds visual agent configuration to the EC2 console",
+      "description": "Amazon CloudWatch now provides a visual configuration editor for the CloudWatch agent directly in the Amazon EC2 console, enabling you to set up and manage observability for your EC2 instances without hand-editing JSON. The CloudWatch agent collects infrastructure and application metrics, logs, and traces from EC2 instances and sends them to CloudWatch and AWS X-Ray. With the new visual editor, you can build agent configurations graphically, selecting metrics, log sources, and deployment targets, and deploy with a single click. From the EC2 console, you can select one or more instances, instal",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch now provides a visual configuration editor for the CloudWatch agent directly in the Amazon EC2 console, enabling you to set up and manage observability for your EC2 instances without hand-editing JSON. The CloudWatch agent collects infrastructure and application metrics, logs, and traces from EC2 instances and sends them to CloudWatch and AWS X-Ray. With the new visual editor, you can build agent configurations graphically,&amp;nbsp;selecting metrics, log sources, and deployment targets,&amp;nbsp;and deploy with a single click.&lt;/p&gt; \n&lt;p&gt;From the EC2 console, you can select one or more instances, install the CloudWatch agent, or create tag-based policies for automated fleet-wide management.&amp;nbsp;From the instance detail page, you can view agent status, update configurations, and troubleshoot agent health.&amp;nbsp;Automated policies automatically apply the correct monitoring settings to every new instance, including those launched by auto-scaling.&lt;/p&gt; \n&lt;p&gt;To get started, navigate to&amp;nbsp;&lt;a href=\"https://console.aws.amazon.com/ec2/v2/home#Instances:instanceState=running\"&gt;the Amazon EC2 console&lt;/a&gt;, select an instance, and choose the EC2 monitoring tab&amp;nbsp;to access the CloudWatch agent management experience. CloudWatch in-console agent management is available&amp;nbsp;in all AWS Commercial Regions at no&amp;nbsp;additional&amp;nbsp;cost.&amp;nbsp;&lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;Standard CloudWatch pricing&lt;/a&gt;&amp;nbsp;applies for metrics, logs, and other telemetry collected by the agent.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-cloudwatch-agent-ec2/",
+      "publishedAt": "2026-04-29T17:00:00.000Z",
+      "updatedAt": "2026-04-29T17:00:00.000Z",
+      "categories": [
+        "Management And Governance",
+        "Amazon Cloudwatch",
+        "Compute"
+      ],
+      "services": [
+        "EC2",
+        "CloudWatch"
+      ],
+      "tags": [
+        "management and governance",
+        "amazon cloudwatch",
+        "compute",
+        "ec2",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5e890b21265fea0f",
+      "title": "OpenAI GPT OSS and NVIDIA Nemotron Models Available on Amazon Bedrock in AWS GovCloud (US)",
+      "description": "Amazon Bedrock now supports OpenAI's open-weight GPT OSS models (120B and 20B) and NVIDIA Nemotron (Nano 9B v2, Nano 12B v2, Nano 30B, Super 120B) models expanding your ability to build and scale generative AI applications with diverse, high-performance foundation models. This offers the flexibility to leverage OpenAI's and NVIDIA's latest models alongside other leading AI models through a single, unified API—allowing you to select the best model for each specific use case without changing your application code. OpenAI GPT OSS models deliver powerful language understanding and generation capab",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock now supports OpenAI's open-weight GPT OSS models (120B and 20B) and NVIDIA Nemotron (Nano 9B v2, Nano 12B v2, Nano 30B, Super 120B) models expanding your ability to build and scale generative AI applications with diverse, high-performance foundation models. This offers the flexibility to leverage OpenAI's and NVIDIA's latest models alongside other leading AI models through a single, unified API—allowing you to select the best model for each specific use case without changing your application code.&lt;br&gt; &lt;br&gt; OpenAI GPT OSS models deliver powerful language understanding and generation capabilities with open-weight architectures, enabling enterprises to build sophisticated AI applications with transparency and flexibility. NVIDIA Nemotron models offer both small language model (SLM) and large language model (LLM) capabilities delivering high compute efficiency and accuracy that developers can use to build specialized agentic AI systems. The models are fully open with open weights, datasets, and recipes facilitating transparency and confidence for developers and enterprises.&lt;br&gt; &lt;br&gt; These models are powered by Mantle, a new distributed inference engine for large-scale machine learning model serving on Amazon Bedrock. Mantle simplifies and expedites onboarding of new models onto Amazon Bedrock, provides highly performant and reliable serverless inference with sophisticated quality of service controls, unlocks higher default customer quotas with automated capacity management and unified pools, and provides out-of-the-box compatibility with OpenAI API specifications. With OpenAI GPT OSS and NVIDIA Nemotron models available in Amazon Bedrock on AWS GovCloud (US), you can accelerate innovation while benefiting from AWS's enterprise-grade security, seamless scaling, and cost-optimization features compliantly.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/openai-gpt-oss-nvidia-nemotron-govcloud/",
+      "publishedAt": "2026-04-29T15:18:00.000Z",
+      "updatedAt": "2026-04-29T15:18:00.000Z",
+      "categories": [
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "82228cfb3b5d5088",
+      "title": "Amazon Quick Adds Custom Sort for Filter Controls",
+      "description": "Quick Sight in Amazon Quick now supports custom sort for filter controls, giving authors control over how values appear in dropdown and list controls. Previously, filter control values were always sorted alphabetically. With custom sort, authors can arrange values to match business logic or rank them by a related metric, so the most relevant options appear first. Custom sort applies to dropdown and list controls, both single-select and multi-select. Authors can choose ascending, descending, or a fully user-defined order for controls with manually entered values. For controls tied to a dataset ",
+      "descriptionHtml": "&lt;p&gt;Quick Sight in Amazon Quick&amp;nbsp;now supports custom sort for filter controls, giving authors control over how values appear in dropdown and list controls. Previously, filter control values were always sorted alphabetically. With custom sort, authors can arrange values to match business logic or rank them by a related metric, so the most relevant options appear first.&lt;/p&gt; \n&lt;p&gt;Custom sort applies to dropdown and list controls, both single-select and multi-select. Authors can choose ascending, descending, or a fully user-defined order for controls with manually entered values. For controls tied to a dataset column, authors can sort by that column or by a different field using aggregation functions like Sum, Average, Count, Min, and Max. For example, a priority field can be ordered as Critical, High, Medium, Low instead of alphabetically, or a list of product categories can be ranked by total revenue so top sellers surface first.&lt;/p&gt; \n&lt;p&gt;This feature is now available in &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html#regions-qs\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;all Amazon Quick regions where Quick Sight is supported&lt;/a&gt;. Learn more about &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/filter-controls.html#filter-controls-sort\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;sorting filter control values&lt;/a&gt; in the Amazon Quick User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/quick-filter-control-sort/",
+      "publishedAt": "2026-04-29T15:00:00.000Z",
+      "updatedAt": "2026-04-29T15:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Quicksight"
+      ],
+      "services": [
+        "QuickSight"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon quicksight",
+        "quicksight"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "abf5312566e7d0ba",
+      "title": "AWS Transfer Family Terraform module now supports Okta and Microsoft Entra ID integration examples",
+      "description": "AWS Transfer Family Terraform module now includes end-to-end examples for deploying Transfer Family endpoints integrated with Okta and Microsoft Entra ID as custom identity providers (IdP) for authentication and access control. This allows enterprises already using these platforms to automate and streamline the deployment of Transfer Family servers with their existing identity infrastructure. The Terraform module and examples are based on the open source Custom IdP solution , which provides standardized integration with widely used identity providers and includes built-in security controls suc",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://github.com/aws-ia/terraform-aws-transfer-family\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Transfer Family Terraform module&lt;/a&gt;&amp;nbsp;now&amp;nbsp;includes end-to-end examples for deploying Transfer Family endpoints integrated with&amp;nbsp;Okta&amp;nbsp;and&amp;nbsp;Microsoft Entra ID&amp;nbsp;as custom identity providers (IdP) for authentication and access control. This allows enterprises already using these platforms to automate and streamline the deployment of Transfer Family servers with their existing identity infrastructure.&lt;/p&gt; \n&lt;p&gt;The&amp;nbsp;Terraform&amp;nbsp;module&amp;nbsp;and examples are based on the open source&amp;nbsp;&lt;a href=\"https://github.com/aws-samples/toolkit-for-aws-transfer-family/tree/main/solutions/custom-idp\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Custom IdP solution&lt;/a&gt;, which provides standardized integration with&amp;nbsp;widely used&amp;nbsp;identity providers and includes built-in security controls such as multi-factor authentication, audit logging, and per-user IP allowlisting. The Okta example supports password-based&amp;nbsp;authentication flows,&amp;nbsp;time-based one-time password (TOTP)-based MFA, and attribute retrieval, while the Entra ID example&amp;nbsp;demonstrates&amp;nbsp;password-based authentication for organizations standardized on Microsoft's identity platform.&lt;/p&gt; \n&lt;p&gt;Customers can get started by using the new module from the&amp;nbsp;&lt;a href=\"https://registry.terraform.io/modules/aws-ia/transfer-family/aws/latest\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Terraform Registry&lt;/a&gt;. To learn more about the Transfer Family Custom IdP solution, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/transfer/latest/userguide/custom-idp-toolkit.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;user guide&lt;/a&gt;. To see all the AWS Regions where Transfer Family is available, visit the&amp;nbsp;&lt;a href=\"https://builder.aws.com/build/capabilities\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Capabilities table&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-transfer-family-terraform-okta-microsoft-entra-id/",
+      "publishedAt": "2026-04-29T10:00:00.000Z",
+      "updatedAt": "2026-04-29T10:00:00.000Z",
+      "categories": [
+        "Migration",
+        "AWS Transfer Family"
+      ],
+      "services": [
+        "Terraform",
+        "Transfer Family"
+      ],
+      "tags": [
+        "migration",
+        "aws transfer family",
+        "terraform",
+        "transfer family"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1ef471b6a6cece17",
+      "title": "Amazon RDS for Db2 is now available in the AWS GovCloud (US-East, US-West) Regions",
+      "description": "Amazon Relational Database Service (Amazon RDS) for Db2 is now available in the AWS GovCloud (US-East, US-West) Regions. Amazon RDS for Db2 makes it easy to set up, operate, and scale Db2 databases in the cloud. Customers can deploy a Db2 database in minutes with automatically configured parameters for optimal performance. For databases setup with Multi-AZ configuration, Amazon RDS performs synchronous replication to a standby instance in a different Availability Zone to provide high availability. To use Amazon RDS for Db2, customers can use Bring Your Own License (BYOL) available in Standard ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/db2/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (Amazon RDS) for Db2&lt;/a&gt; is now available in the AWS GovCloud (US-East, US-West) Regions. Amazon RDS for Db2 makes it easy to set up, operate, and scale Db2 databases in the cloud. Customers can deploy a Db2 database in minutes with automatically configured parameters for optimal performance. For databases setup with Multi-AZ configuration, Amazon RDS performs synchronous replication to a standby instance in a different Availability Zone to provide high availability.&lt;br&gt; &lt;br&gt; To use Amazon RDS for Db2, customers can use Bring Your Own License (BYOL) available in Standard and Advanced Editions. Your RDS for Db2 usage may be eligible for Database Savings Plan, a flexible pricing model that offers savings in exchange for a commitment to a specific amount of usage (measured in $/hour) over a 1-year term. You can learn more about eligible usage on the &lt;a href=\"https://aws.amazon.com/savingsplans/database-pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Database Savings Plans pricing page&lt;/a&gt;.&lt;br&gt; &lt;br&gt; To learn more about Amazon RDS for Db2, refer to &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Db2.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/rds/db2/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;pricing&lt;/a&gt; pages.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-rds-db2-available-aws-govcloud-us-east-us-west-regions/",
+      "publishedAt": "2026-04-29T07:21:00.000Z",
+      "updatedAt": "2026-04-29T07:21:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Databases",
+        "Amazon Rds"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "databases",
+        "amazon rds",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "34e4f3df374feaa4",
+      "title": "Amazon EMR 7.13 now available with Python 3.11",
+      "description": "Amazon EMR 7.13 is now available with Python 3.11 and version upgrades for additional applications. EMR 7.13 ships with Python 3.11 for Apache Spark by default. This release also includes patch version upgrades for Apache HBase 2.6.3, Apache Hadoop 3.4.2, Apache Phoenix 5.3.0, and AWS SDK v2.41.11. Amazon EMR 7.13 is available in all AWS regions where Amazon EMR is available. To learn more about EMR 7.13, visit the Amazon EMR 7.13 Release Guide .",
+      "descriptionHtml": "&lt;p&gt;Amazon EMR 7.13 is now available with Python 3.11 and version upgrades for&amp;nbsp;additional&amp;nbsp;applications.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;EMR 7.13 ships with&amp;nbsp;Python 3.11&amp;nbsp;for Apache Spark by default. This release&amp;nbsp;also&amp;nbsp;includes&amp;nbsp;patch version upgrades for Apache HBase 2.6.3, Apache Hadoop 3.4.2, Apache Phoenix 5.3.0, and AWS SDK v2.41.11.&lt;/p&gt; \n&lt;p&gt;Amazon EMR 7.13 is available in all AWS regions where Amazon EMR is available.&amp;nbsp;To&amp;nbsp;learn more&amp;nbsp;about EMR 7.13, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-7130-release.html\"&gt;Amazon EMR 7.13 Release Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-emr-713-python-311/",
+      "publishedAt": "2026-04-29T07:00:00.000Z",
+      "updatedAt": "2026-04-29T07:00:00.000Z",
+      "categories": [
+        "Amazon Emr",
+        "Analytics"
+      ],
+      "services": [
+        "EMR"
+      ],
+      "tags": [
+        "amazon emr",
+        "analytics",
+        "emr"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "20e9c559b1d0f72d",
+      "title": "Amazon OpenSearch Service now supports JWKS URL configuration for JWT authentication",
+      "description": "Amazon OpenSearch Service now supports JSON Web Key Set (JWKS) URL configuration for JWT authentication. You can configure a JWKS URL as part of your JWT authentication setup, allowing your OpenSearch domains to automatically fetch and validate public keys from your identity provider's JWKS endpoint. Previously, JWT authentication required you to manually configure and update static public keys. With JWKS URL support, your domains automatically retrieve the latest public keys from your identity provider, eliminating the need to manually update keys when your identity provider rotates signing k",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now supports JSON Web Key Set (JWKS) URL configuration for JWT authentication. You can configure a JWKS URL as part of your JWT authentication setup, allowing your OpenSearch domains to automatically fetch and validate public keys from your identity provider's JWKS endpoint.&lt;/p&gt; \n&lt;p&gt;Previously, JWT authentication required you to manually configure and update static public keys. With JWKS URL support, your domains automatically retrieve the latest public keys from your identity provider, eliminating the need to manually update keys when your identity provider rotates signing keys. The configuration includes built-in security validation checks and clear error messaging to help troubleshoot issues.&lt;/p&gt; \n&lt;p&gt;JWKS URL support requires OpenSearch version 3.3 or later. You can set up JWKS URL configuration using the Amazon OpenSearch Service console, the AWS CLI, or the CreateDomain and UpdateDomainConfig APIs.&lt;/p&gt; \n&lt;p&gt;JWKS URL configuration for JWT authentication is available in all AWS Regions where Amazon OpenSearch Service is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/JSON-Web-tokens.html#jwks-endpoint\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;JWT authentication and authorization&lt;/a&gt; in the Amazon OpenSearch Service Developer Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-opensearch-jwks-url-jwt/",
+      "publishedAt": "2026-04-29T02:30:00.000Z",
+      "updatedAt": "2026-04-29T02:30:00.000Z",
+      "categories": [
+        "Amazon Opensearch Service",
+        "Analytics"
+      ],
+      "services": [
+        "OpenSearch"
+      ],
+      "tags": [
+        "amazon opensearch service",
+        "analytics",
+        "opensearch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "fcfeec66008531b5",
+      "title": "Amazon Bedrock AgentCore Runtime now supports Node.js for direct code deployment",
+      "description": "Amazon Bedrock AgentCore Runtime now supports Node.js as a managed language runtime for direct code deployment, alongside the existing Python support. Developers can bring their Node.js-based agents to AgentCore Runtime by packaging their agent code and dependencies into a .zip file archive, without building or managing a container image. To deploy, write your agent in Node.js, zip it up with its dependencies, upload the zip to Amazon S3, and create your agent runtime. You can deploy a plain Node.js app, a TypeScript project (compiled to JavaScript first), or an agent built with any agent fram",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore Runtime now supports Node.js as a managed language runtime for direct code deployment, alongside the existing Python support. Developers can bring their Node.js-based agents to AgentCore Runtime by packaging their agent code and dependencies into a .zip file archive, without building or managing a container image.&lt;/p&gt; \n&lt;p&gt;To deploy, write your agent in Node.js, zip it up with its dependencies, upload the zip to Amazon S3, and create your agent runtime. You can deploy a plain Node.js app, a TypeScript project (compiled to JavaScript first), or an agent built with any agent framework like the Strands Agents SDK. Dependencies can be included as a `node_modules` folder in the zip, or bundled into a single JavaScript file using esbuild to keep the package smaller.&lt;/p&gt; \n&lt;p&gt;Node.js agents on AgentCore Runtime benefit from the same capabilities as other supported runtimes, including session isolation, built-in authentication with SigV4 and OAuth 2.0, bidirectional streaming, managed session storage, and observability with Amazon CloudWatch. Observability is available through the AWS Distro for OpenTelemetry Node.js auto-instrumentation package.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/runtime-get-started-code-deploy-node.html\"&gt;Direct code deployment for Node.js&lt;/a&gt; in the Amazon Bedrock AgentCore documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-agentcore-runtime/",
+      "publishedAt": "2026-04-28T19:44:00.000Z",
+      "updatedAt": "2026-04-28T19:44:00.000Z",
+      "categories": [
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
     {
       "id": "5c63b4bd1516724f",
       "title": "AWS Glue 5.1 is now available in all AWS Commercial and AWS GovCloud (US) Regions",
@@ -21,6 +319,23 @@
         "analytics",
         "aws glue",
         "glue"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2c23a8ac89ef6372",
+      "title": "Amazon GameLift Streams now supports Proton 10 runtime",
+      "description": "Amazon GameLift Streams now supports Proton 10, an updated version of the Proton compatibility layer for running Windows games on Linux-based stream classes. Proton 10 improves game compatibility for newer titles, has updated graphic translation layers for improved performance (VKD3D/DXVK) for many titles, updates to the Media Foundation to fix black screen, color bar, long standing video playback issues, and much more. With Proton 10, game developers can stream a broader catalog of Windows titles — including modern DirectX 12 games — to end users on any device with improved rendering quality ",
+      "descriptionHtml": "&lt;p&gt;Amazon GameLift Streams now supports Proton 10, an updated version of the Proton compatibility layer for running Windows games on Linux-based stream classes. Proton 10 improves game compatibility for newer titles, has updated graphic translation layers for improved performance (VKD3D/DXVK) for many titles, updates to the Media Foundation to fix black screen, color bar, long standing video playback issues, and much more.&lt;br&gt; &lt;br&gt; With Proton 10, game developers can stream a broader catalog of Windows titles — including modern DirectX 12 games — to end users on any device with improved rendering quality and performance. Proton 10 is available at no additional cost; existing &lt;a href=\"https://aws.amazon.com/gamelift/streams/pricing/\"&gt;Amazon GameLift Streams&lt;/a&gt; pricing for Linux stream classes applies.&lt;br&gt; &lt;br&gt; You can use Proton 10 in all AWS Regions where Amazon GameLift Streams is available. For a full list of supported Regions, see the &lt;a href=\"https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/regions-quotas-rande.html\"&gt;AWS Region&lt;/a&gt; table.&lt;br&gt; &lt;br&gt; To get started, select Proton 10 as the runtime when creating or updating stream groups. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/configuration-options.html\"&gt;Runtime environment&lt;/a&gt; in the &lt;i&gt;Amazon GameLift Streams Developer Guide&lt;/i&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-gamelift-streams-proton-10-runtime/",
+      "publishedAt": "2026-04-28T18:09:00.000Z",
+      "updatedAt": "2026-04-28T18:09:00.000Z",
+      "categories": [],
+      "services": [
+        "Proton"
+      ],
+      "tags": [
+        "proton"
       ],
       "isNew": true
     },
@@ -277,6 +592,28 @@
         "amazon redshift",
         "analytics",
         "redshift"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "748a507893c04c79",
+      "title": "Amazon CloudWatch RUM now supports an improved App Monitors overview with health, SLO, and tracing status",
+      "description": "Amazon CloudWatch RUM, which provides real user monitoring for web, iOS, and Android applications, now supports an improved App Monitors overview that surfaces fleet-wide health, SLO breaches, and distributed tracing coverage on a single page. DevOps and SRE teams can now triage critical and degraded monitors, spot worsening trends, and identify gaps in observability setup across their entire fleet without clicking into each monitor individually. The overview groups monitors into four summary cards: Needs attention by health status, Trending worse, Setup and coverage, and SLOs and Alarms. This",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch RUM, which provides real user monitoring for web, iOS, and Android applications, now supports an improved App Monitors overview that surfaces fleet-wide health, SLO breaches, and distributed tracing coverage on a single page. DevOps and SRE teams can now triage critical and degraded monitors, spot worsening trends, and identify gaps in observability setup across their entire fleet without clicking into each monitor individually.&lt;/p&gt; \n&lt;p&gt;The overview groups monitors into four summary cards: Needs attention by health status, Trending worse, Setup and coverage, and SLOs and Alarms. This helps customers see at a glance how many app monitors are critical or degraded, how many are worsening, and how many are missing SLOs or tracing. Quick filters helps narrow the list so customers can focus on specific app monitors by platform, health, SLI status, and tracing state.&amp;nbsp;Each row in the App Monitors table shows session volume, SLI status, health status primary issue type (such as JavaScript errors on a web monitor or performance regressions on an iOS monitor), trend direction, a direct link to traces in AWS X-Ray, linked-service health from CloudWatch Application Signals, and last event received. A selectable side panel shows additional details like correlated sessions, app monitor health and SLO and alarm details which is particularly useful when troubleshooting a given app monitor on the overview page itself, while also allowing to navigate to per-app monitor page for further deep-dive.&lt;/p&gt; \n&lt;p&gt;The CloudWatch RUM App Monitors overview is available in all AWS commercial Regions where CloudWatch RUM is available, at no additional cost. To learn more, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html\"&gt;CloudWatch RUM documentation&lt;/a&gt;&amp;nbsp;and the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;pricing page&lt;/a&gt;. To get started, open the&amp;nbsp;CloudWatch in AWS Management&amp;nbsp;and select RUM in the left-navigation panel under APM.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-cloudwatch-rum-app-monitors/",
+      "publishedAt": "2026-04-27T19:32:00.000Z",
+      "updatedAt": "2026-04-27T19:32:00.000Z",
+      "categories": [
+        "Amazon Cloudwatch"
+      ],
+      "services": [
+        "CloudWatch",
+        "Health"
+      ],
+      "tags": [
+        "amazon cloudwatch",
+        "cloudwatch",
+        "health"
       ],
       "isNew": true
     },
@@ -1069,7 +1406,7 @@
         "backup",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "695a67b4f832a67c",
@@ -1093,7 +1430,7 @@
         "vpc",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a7a72308d7bbe7c2",
@@ -1121,7 +1458,7 @@
         "iam",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "884082ffcb6d3e0a",
@@ -1143,7 +1480,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8d322f1dd92dabb0",
@@ -1165,7 +1502,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a9da36754ab98699",
@@ -1188,7 +1525,7 @@
         "networking and content delivery",
         "security identity and compliance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b42efdf9ba708999",
@@ -1210,7 +1547,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9254e63fe4e7bec2",
@@ -1232,7 +1569,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b279a63c8da8cec5",
@@ -1258,7 +1595,7 @@
         "ecs",
         "health"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "57c117334a27e2d4",
@@ -1278,7 +1615,7 @@
         "aws secrets manager",
         "secrets manager"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "011b085c9122bb50",
@@ -1300,7 +1637,7 @@
         "amazon bedrock",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a69a3f9948539093",
@@ -1317,7 +1654,7 @@
       "tags": [
         "ivs"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a3f1c91e0c6ab3d7",
@@ -1351,7 +1688,7 @@
         "cloudfront",
         "health"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8789c5c95809938b",
@@ -1372,7 +1709,7 @@
         "amazon corretto",
         "aws govcloud us"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "27fa1f55f1624335",
