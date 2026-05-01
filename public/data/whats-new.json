@@ -1,7 +1,206 @@
 {
-  "lastUpdated": "2026-04-30T10:08:03.110Z",
-  "itemCount": 366,
+  "lastUpdated": "2026-05-01T09:47:16.206Z",
+  "itemCount": 375,
   "items": [
+    {
+      "id": "0004995dbeece897",
+      "title": "AWS Outposts racks now support LagStatus CloudWatch metric",
+      "description": "AWS Outposts racks now support the LagStatus Amazon CloudWatch metric in all AWS commercial Regions and the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions. This metric provides you with the ability to monitor Outposts LAG connectivity status directly within the CloudWatch console, without having to rely on external networking tools or coordination with other teams. You can use this metric to set alarms, troubleshoot connectivity issues, and ensure your Outposts racks are properly integrated with your on-premises infrastructure. The LagStatus metric indicates whether an Outposts LAG ",
+      "descriptionHtml": "&lt;p&gt;AWS Outposts racks now support the LagStatus Amazon CloudWatch metric in all AWS commercial Regions and the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions.&lt;/p&gt; \n&lt;p&gt;This metric provides you with the ability to monitor Outposts LAG connectivity status directly within the CloudWatch console, without having to rely on external networking tools or coordination with other teams. You can use this metric to set alarms, troubleshoot connectivity issues, and ensure your Outposts racks are properly integrated with your on-premises infrastructure. The LagStatus metric indicates whether an Outposts LAG is operationally up and ready to forward traffic. A value of \"1\" means that the LAG is up, while \"0\" means that it is down. When combined with the existing VifConnectionStatus and VifBgpSessionState metrics, you can quickly identify whether issues stem from LAG configuration, BGP peering, or connection problems.&lt;/p&gt; \n&lt;p&gt;The LagStatus metric is now available for all Outposts LAGs in all commercial AWS Regions and the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions where Outposts racks are available.&lt;/p&gt; \n&lt;p&gt;To get started, read this &lt;a href=\"https://aws.amazon.com/blogs/compute/enhancing-network-observability-with-new-aws-outposts-racks-lag-metrics/\"&gt;blog post&lt;/a&gt; and access the metrics in the CloudWatch console. To learn more, check out the CloudWatch metrics for AWS Outposts documentation for &lt;a href=\"https://docs.aws.amazon.com/outposts/latest/network-userguide/outposts-cloudwatch-metrics.html\"&gt;second-generation Outposts racks&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html\"&gt;first-generation Outposts racks&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-outposts-lagstatus-cloudwatch/",
+      "publishedAt": "2026-04-30T20:17:00.000Z",
+      "updatedAt": "2026-04-30T20:17:00.000Z",
+      "categories": [],
+      "services": [
+        "Outposts",
+        "CloudWatch"
+      ],
+      "tags": [
+        "outposts",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "bc65649cee33d2ea",
+      "title": "Amazon ECS Managed Instances now supports NVIDIA GPU metrics",
+      "description": "Amazon Elastic Container Service (Amazon ECS) now offers NVIDIA GPU metrics for containerized workloads running on Amazon ECS Managed Instances. These metrics are available through Amazon CloudWatch Container Insights with enhanced observability , giving customers visibility into GPU health and performance to help troubleshoot and optimize GPU-accelerated workloads on Amazon ECS. With the new GPU metrics, Amazon ECS Managed Instances customers can now monitor GPU capacity, utilization, memory, hardware health, and thermal conditions directly in CloudWatch. Using Container Insights with enhance",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\"&gt;Amazon Elastic Container Service (Amazon ECS)&lt;/a&gt; now offers NVIDIA GPU metrics for containerized workloads running on Amazon ECS Managed Instances. These metrics are available through&lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/container-insights-detailed-ecs-metrics.html\"&gt; Amazon CloudWatch Container Insights with enhanced observability&lt;/a&gt;, giving customers visibility into GPU health and performance to help troubleshoot and optimize GPU-accelerated workloads on Amazon ECS.&lt;br&gt; &lt;br&gt; With the new GPU metrics, Amazon ECS Managed Instances customers can now monitor GPU capacity, utilization, memory, hardware health, and thermal conditions directly in CloudWatch. Using Container Insights with enhanced observability, customers get granular visibility into these metrics, including at the GPU device level. These metrics give customers visibility into GPU operational and hardware health across their Amazon ECS Managed Instances fleet, enabling them to right-size GPU capacity, troubleshoot performance issues, and detect problems before they impact GPU-accelerated workloads, such as AI/ML training and inference.&lt;br&gt; &lt;br&gt; NVIDIA GPU metrics for Amazon ECS Managed Instances are available through Container Insights in all commercial AWS Regions. To get started, enable Container Insights with enhanced observability on your Amazon ECS cluster, and launch GPU-accelerated Amazon EC2 instance types through an Amazon ECS Managed Instances capacity provider. For Container Insights pricing, see &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;Amazon CloudWatch Pricing&lt;/a&gt;. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-enhanced-observability-metrics-ECS.html\"&gt;Amazon ECS Container Insights with enhanced observability metrics user guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ecs-mi-gpu-metrics/",
+      "publishedAt": "2026-04-30T19:00:00.000Z",
+      "updatedAt": "2026-04-30T19:00:00.000Z",
+      "categories": [
+        "Amazon Ecs",
+        "Containers"
+      ],
+      "services": [
+        "ECS"
+      ],
+      "tags": [
+        "amazon ecs",
+        "containers",
+        "ecs"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "dbedf3b391fdbe36",
+      "title": "Amazon MQ for RabbitMQ now supports Prometheus metrics",
+      "description": "Amazon MQ for RabbitMQ now supports the Prometheus plugin on RabbitMQ 4.2 brokers, providing a native Prometheus-compatible metrics endpoint on your RabbitMQ brokers. You can scrape broker, queue, and connection metrics directly from your brokers using any Prometheus-compatible monitoring tool, giving you more flexibility in how you observe and alert on your messaging infrastructure. The plugin exposes metrics through the /metrics, /metrics/detailed, and /metrics/memory-breakdown endpoints in Prometheus text format. Amazon MQ also publishes a curated subset of these Prometheus metrics to Cloud",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/amazon-mq/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon MQ&lt;/a&gt; for RabbitMQ now supports the Prometheus plugin on RabbitMQ 4.2 brokers, providing a native Prometheus-compatible metrics endpoint on your RabbitMQ brokers. You can scrape broker, queue, and connection metrics directly from your brokers using any Prometheus-compatible monitoring tool, giving you more flexibility in how you observe and alert on your messaging infrastructure.&lt;br&gt; &lt;br&gt; The plugin exposes metrics through the /metrics, /metrics/detailed, and /metrics/memory-breakdown endpoints in Prometheus text format. Amazon MQ also publishes a curated subset of these Prometheus metrics to CloudWatch. With the Prometheus plugin, you can now integrate your brokers into existing Prometheus-based monitoring stacks including Grafana dashboards, Amazon Managed Service for Prometheus, and self-hosted Prometheus servers.&lt;br&gt; &lt;br&gt; The Prometheus plugin is enabled by default on all Amazon MQ for RabbitMQ 4.2 brokers in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions&lt;/a&gt; where Amazon MQ is available. To learn more about monitoring with Prometheus, see the &lt;a href=\"https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-release-notes.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon MQ release notes&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-mq-rabbitmq-prometheus-metrics/",
+      "publishedAt": "2026-04-30T18:10:00.000Z",
+      "updatedAt": "2026-04-30T18:10:00.000Z",
+      "categories": [
+        "Amazon Mq",
+        "Developer Tools",
+        "AWS Govcloud Us",
+        "Messaging",
+        "Analytics"
+      ],
+      "services": [
+        "MQ"
+      ],
+      "tags": [
+        "amazon mq",
+        "developer tools",
+        "aws govcloud us",
+        "messaging",
+        "analytics",
+        "mq"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0768b907464c9f89",
+      "title": "Amazon Bedrock AgentCore Identity now supports On-Behalf-Of (OBO) token exchange",
+      "description": "Amazon Bedrock AgentCore Identity now supports On-Behalf-Of (OBO) token exchange, enabling developers to build agents that securely access protected resources on behalf of authenticated users — without requiring users to complete multiple consent flows. Previously, developers building agents that needed to act on behalf of a user had to manage separate consent flows for each protected resource, adding friction for end users and complexity for builders. With OBO token exchange, developers can exchange an access token for a new scoped-down access token that carries both the original user identit",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore Identity now supports On-Behalf-Of (OBO) token exchange, enabling developers to build agents that securely access protected resources on behalf of authenticated users — without requiring users to complete multiple consent flows.&lt;br&gt; &lt;br&gt; Previously, developers building agents that needed to act on behalf of a user had to manage separate consent flows for each protected resource, adding friction for end users and complexity for builders. With OBO token exchange, developers can exchange an access token for a new scoped-down access token that carries both the original user identity and the agent identity. This token is targeted specifically to the outbound protected resource, granting just-in-time, least-privilege access without prompting the user for additional consent.&lt;br&gt; &lt;br&gt; Amazon Bedrock AgentCore Identity OBO token exchange is now generally available in 14 AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), and Europe (Stockholm). To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/on-behalf-of-token-exchange.html\"&gt;Amazon Bedrock AgentCore Identity documentation &lt;/a&gt;.&lt;br&gt; &lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-agentcore/",
+      "publishedAt": "2026-04-30T17:00:00.000Z",
+      "updatedAt": "2026-04-30T17:00:00.000Z",
+      "categories": [
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "791ec333229530ab",
+      "title": "AWS Neuron SDK now available with Neuron Agentic Development for NKI kernel development on Trainium",
+      "description": "AWS Neuron announces the Neuron Agentic Development capabilities, an open-source collection of agents and skills that equip AI coding assistants to accelerate development on AWS Trainium and AWS Inferentia . The initial release provides agentic coding capabilities for Neuron Kernel Interface (NKI) kernel development, covering the workflow from authoring to profiling and performance analysis. NKI gives developers direct, low-level programming access to Trainium for writing custom compute kernels that maximize hardware performance. Neuron Agentic Development brings NKI expertise directly into th",
+      "descriptionHtml": "&lt;p&gt;AWS Neuron announces the Neuron Agentic Development capabilities, an open-source collection of agents and skills that equip AI coding assistants to accelerate development on &lt;a href=\"https://aws.amazon.com/ai/machine-learning/trainium/\"&gt;AWS Trainium&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/ai/machine-learning/inferentia/\"&gt;AWS Inferentia&lt;/a&gt;. The initial release provides agentic coding capabilities for Neuron Kernel Interface (NKI) kernel development, covering the workflow from authoring to profiling and performance analysis.&lt;br&gt; &lt;br&gt; NKI gives developers direct, low-level programming access to Trainium for writing custom compute kernels that maximize hardware performance. Neuron Agentic Development brings NKI expertise directly into the developer's agentic IDE&amp;nbsp;(such as Claude Code and Kiro) through natural language. For example, a developer can describe a PyTorch operation and receive a working NKI kernel, ask the agent to fix a compilation error and have it automatically identify the issue and apply a correction, or request a performance analysis and receive a report identifying which lines of kernel code are causing bottlenecks. The capabilities span kernel authoring, debugging, documentation lookup, profile capture, and profile analysis.&lt;br&gt; &lt;br&gt; Neuron Agentic Development is designed as a broad framework for agentic capabilities across the Neuron stack, with NKI kernel development as the initial release. The repository is available on &lt;a href=\"https://github.com/aws-neuron/neuron-agentic-development/tree/main\"&gt;GitHub&lt;/a&gt;.&lt;br&gt; &lt;br&gt; &lt;b&gt;Learn more:&lt;/b&gt;&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;a href=\"https://github.com/aws-neuron/neuron-agentic-development/tree/main\"&gt;Neuron Agentic Development GitHub repository&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/\"&gt;AWS Neuron documentation&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/announcing-neuron-agentic-development/",
+      "publishedAt": "2026-04-30T15:00:00.000Z",
+      "updatedAt": "2026-04-30T15:00:00.000Z",
+      "categories": [
+        "AWS Inferentia",
+        "Artificial Intelligence",
+        "Developer Tools",
+        "Compute"
+      ],
+      "services": [],
+      "tags": [
+        "aws inferentia",
+        "artificial intelligence",
+        "developer tools",
+        "compute"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7e84029d3a63144e",
+      "title": "Amazon Bedrock AgentCore launches capabilities for optimizing agent performance in preview",
+      "description": "Amazon Bedrock AgentCore launches recommendations and two ways to validate performance (batch evaluations and A/B tests). This completes the observe, evaluate, improve loop for AI agents in production. Until now, translating evaluation findings into concrete, validated improvements required manual developer intervention and intuition rather than a systematic approach. With recommendations, batch evaluations and A/B tests, developers now have the tools to act on what evaluations surface. As models evolve and user behavior shifts, agent quality degrades quietly over time. The recommendations cap",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore launches recommendations and two ways to validate performance (batch evaluations and A/B tests). This completes the observe, evaluate, improve loop for AI agents in production. Until now, translating evaluation findings into concrete, validated improvements required manual developer intervention and intuition rather than a systematic approach. With recommendations, batch evaluations and A/B tests, developers now have the tools to act on what evaluations surface.&lt;br&gt; &lt;br&gt; As models evolve and user behavior shifts, agent quality degrades quietly over time. The recommendations capability analyzes production traces and evaluation outputs generated by AgentCore to create optimized system prompts and tool descriptions tailored to your specific workload. Batch evaluations are then used for validating the recommendations against pre-defined test cases. A/B tests further validate those recommendations through controlled A/B testing against pre-defined test sets or live production traffic, with statistical significance reported before any change is promoted. Every recommendation requires your approval before it ships. Together, these capabilities complete the performance improvement cycle for agents. Agents don't just run, they get better, on your terms.&lt;br&gt; &lt;br&gt; You can use optimization capabilities in all &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html\"&gt;AWS Regions&lt;/a&gt; where AgentCore Evaluations is available. To learn more, visit the AgentCore &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/optimization.html\"&gt;documentation.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/bedrock-agentcore-optimization-preview/",
+      "publishedAt": "2026-04-30T15:00:00.000Z",
+      "updatedAt": "2026-04-30T15:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "da94bb9cdbad0bac",
+      "title": "AWS Lambda adds support for Ruby 4.0",
+      "description": "AWS Lambda now supports creating serverless applications using Ruby 4.0. Developers can use Ruby 4.0 as both a managed runtime and a container base image, and AWS will automatically apply updates to the managed runtime and base image as they become available. Ruby 4.0 is the latest long-term support (LTS) release of Ruby and is expected to be supported for security and bug fixes until March 2029. In addition to providing access to the latest Ruby language features, the Lambda Runtime for Ruby 4.0 also adds support for Lambda advanced logging controls , providing customers with JSON structured ",
+      "descriptionHtml": "&lt;p&gt;AWS Lambda now supports creating serverless applications using Ruby 4.0. Developers can use Ruby 4.0 as both a managed runtime and a container base image, and AWS will automatically apply updates to the managed runtime and base image as they become available.&lt;br&gt; &lt;br&gt; Ruby 4.0 is the latest long-term support (LTS) release of Ruby and is expected to be supported for security and bug fixes until March 2029. In addition to providing access to the latest Ruby language features, the Lambda Runtime for Ruby 4.0 also adds support for &lt;a href=\"https://aws.amazon.com/blogs/compute/introducing-advanced-logging-controls-for-aws-lambda-functions/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Lambda advanced logging controls&lt;/a&gt;, providing customers with JSON structured logs, configurable logging levels, and the ability to configure the target Amazon CloudWatch log group.&lt;br&gt; &lt;br&gt; The Ruby 4.0 runtime is available in all AWS Regions, including China Regions and the AWS GovCloud (US) Regions.&lt;br&gt; &lt;br&gt; You can use the full range of AWS deployment tools, including the Lambda console, AWS CLI, AWS Serverless Application Model (AWS SAM), CDK, and AWS CloudFormation to deploy and manage serverless applications written in Ruby 4.0. For more information on using Ruby 4.0 in Lambda, see our &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-ruby.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;. For more information about AWS Lambda, visit our &lt;a href=\"https://aws.amazon.com/lambda/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;product page&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-lambda-adds-ruby/",
+      "publishedAt": "2026-04-30T13:00:00.000Z",
+      "updatedAt": "2026-04-30T13:00:00.000Z",
+      "categories": [
+        "Serverless",
+        "AWS Govcloud Us",
+        "AWS Lambda"
+      ],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "serverless",
+        "aws govcloud us",
+        "aws lambda",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2a13daec5aacb0eb",
+      "title": "Amazon Quick adds Microsoft Excel, PowerPoint extensions and updates the Word extension (Preview)",
+      "description": "Today, Amazon Quick introduces new and upgraded Microsoft 365 extensions in preview for Excel, PowerPoint, and Word, enabling Quick to perform tasks directly within users’ Microsoft 365 environments. These extensions allow you to use AI to perform complex local tasks such as redlining documents, building financial models, and creating presentation-ready decks. The Microsoft Excel extension helps with complex spreadsheet analysis, creating pivot tables and charts, and importing and cleaning data. The Microsoft PowerPoint extension helps you create and refine presentations from Quick data using ",
+      "descriptionHtml": "&lt;p&gt;Today, Amazon Quick introduces new and upgraded Microsoft 365 extensions in preview for Excel, PowerPoint, and Word, enabling Quick to perform tasks directly within users’ Microsoft 365 environments. These extensions allow you to use AI to perform complex local tasks such as redlining documents, building financial models, and creating presentation-ready decks.&lt;br&gt; The Microsoft Excel extension helps with complex spreadsheet analysis, creating pivot tables and charts, and importing and cleaning data. The Microsoft PowerPoint extension helps you create and refine presentations from Quick data using organization-defined templates. Updates to the Microsoft Word extension include the ability to generate formatted documents with Word primitives, make sweeping edits with track changes enabled, and participate as a reviewer in comments.&lt;br&gt; &lt;br&gt; These extensions transform daily work across teams. Finance teams can build complex models by describing what they need, and sales teams can draft proposals that automatically pull from CRM data. Marketing teams can create branded presentations without manual formatting, legal teams can streamline contract reviews, and IT teams can automate routine data analysis that previously required manual effort.&lt;br&gt; Amazon Quick extensions are available in US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Europe (Ireland), Asia Pacific (Tokyo), Europe (Frankfurt), and Europe (London).&lt;br&gt; Start working with Amazon Quick by &lt;a href=\"https://portal.aws.amazon.com/billing/signup/service?app=AmazonQuickSuite&amp;amp;tier=free&amp;amp;funnel=boost#/validation\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;signing up for an account&lt;/u&gt;&lt;/a&gt;. To learn more about Amazon Quick, visit the &lt;a href=\"https://aws.amazon.com/quick/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Quick website&lt;/a&gt;, and install extensions on the &lt;a href=\"https://aws.amazon.com/quick/download/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Quick download page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-quick-microsoft-excel/",
+      "publishedAt": "2026-04-30T11:30:00.000Z",
+      "updatedAt": "2026-04-30T11:30:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Business Productivity"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence",
+        "business productivity"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e96bcd87913d6766",
+      "title": "Amazon OpenSearch Service now supports index-level encryption",
+      "description": "Amazon OpenSearch Service now supports index-level encryption, enabling you to encrypt data at rest on a per-index basis using AWS Key Management Service (KMS) customer managed keys. You can use different customer managed keys for different indexes on the same domain, enabling more granular, tenant-specific encryption policies. Index-level encryption builds on the existing encryption at rest capability in Amazon OpenSearch Service. While domain-level encryption uses a single AWS KMS key to encrypt all data on a domain, index-level encryption lets you specify a customer managed key for each ind",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now supports index-level encryption, enabling you to encrypt data at rest on a per-index basis using AWS Key Management Service (KMS) customer managed keys. You can use different customer managed keys for different indexes on the same domain, enabling more granular, tenant-specific encryption policies.&lt;/p&gt; \n&lt;p&gt;Index-level encryption builds on the existing &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/encryption-at-rest.html\" target=\"_blank\"&gt;encryption at rest&lt;/a&gt; capability in Amazon OpenSearch Service. While domain-level encryption uses a single AWS KMS key to encrypt all data on a domain, index-level encryption lets you specify a customer managed key for each index, isolating encrypted data across indexes. To get started, register your KMS key using the Amazon OpenSearch Service API, then specify the key ARN in the index settings when creating an encrypted index.&lt;/p&gt; \n&lt;p&gt;Index-level encryption is available at no additional cost for Amazon OpenSearch Service domains running OpenSearch version 3.3 or later. This feature is available in 14 AWS Regions: US West (Oregon), US East (Ohio), US East (N. Virginia), South America (São Paulo), Europe (Paris), Europe (London), Europe (Ireland), Europe (Frankfurt), Canada (Central), Asia Pacific (Tokyo), Asia Pacific (Sydney), Asia Pacific (Singapore), Asia Pacific (Seoul), and Asia Pacific (Mumbai).&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/index-level-encryption.html\" target=\"_blank\"&gt;Index-level encryption&lt;/a&gt; in the Amazon OpenSearch Service Developer Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-opensearch-service-supports-index-level-encryption/",
+      "publishedAt": "2026-04-30T02:30:00.000Z",
+      "updatedAt": "2026-04-30T02:30:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Opensearch Service"
+      ],
+      "services": [
+        "OpenSearch"
+      ],
+      "tags": [
+        "analytics",
+        "amazon opensearch service",
+        "opensearch"
+      ],
+      "isNew": true
+    },
     {
       "id": "1628d3b783bf898e",
       "title": "Amazon RDS for MySQL announces Innovation Release 9.6 in Amazon RDS Database Preview Environment",
@@ -1070,7 +1269,7 @@
         "analytics",
         "athena"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a7602bb71630dc99",
@@ -1094,7 +1293,7 @@
         "aws transit gateway",
         "transit gateway"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "370c6405b3bc600a",
@@ -1116,7 +1315,7 @@
         "compute",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2346bff85ae39cad",
@@ -1133,7 +1332,7 @@
       "tags": [
         "compute"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ba61ad042513052d",
@@ -1157,13 +1356,13 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5e0384f92b0463b5",
       "title": "Amazon SageMaker Unified Studio now offers CI/CD CLI for data and AI applications",
       "description": "Amazon SageMaker Unified Studio now offers the CI/CD CLI (aws-smus-cicd-cli), an open-source command line tool that automates deployment of multi-service data and AI applications across development, test, and production. Organizations building applications in SageMaker Unified Studio combine multiple AWS services, including AWS Glue, Amazon Athena, Amazon MWAA, Amazon SageMaker AI, Amazon Bedrock, and Amazon QuickSight, into single applications. The CLI allows data teams to define applications once in a YAML manifest while DevOps teams deploy with a single command, reducing deployment bottlene",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now offers the CI/CD CLI (aws-smus-cicd-cli), an open-source command line tool that automates deployment of multi-service data and AI applications across development, test, and production. Organizations building applications in SageMaker Unified Studio combine multiple AWS services, including AWS Glue, Amazon Athena, Amazon MWAA, Amazon SageMaker AI, Amazon Bedrock, and Amazon QuickSight, into single applications. The CLI allows data teams to define applications once in a YAML manifest while DevOps teams deploy with a single command, reducing deployment bottlenecks and configuration drift.&lt;/p&gt; \n&lt;p&gt;The CLI reads a declarative&amp;nbsp;manifest.yaml&amp;nbsp;that maps each pipeline stage to an isolated SageMaker Unified Studio project. At deploy time, it substitutes stage-specific configurations (S3 paths, IAM roles, account IDs, and connection strings) and provisions resources in dependency order. Four commands cover the lifecycle:&amp;nbsp;describe&amp;nbsp;validates permissions and connections,&amp;nbsp;bundle&amp;nbsp;packages an immutable artifact from the source target,&amp;nbsp;deploy&amp;nbsp;writes that artifact to the destination target, and&amp;nbsp;test&amp;nbsp;runs post-deployment validation.&amp;nbsp;It works with existing CI/CD solutions such as GitHub Actions, Jenkins, and GitLab CI.&lt;/p&gt; \n&lt;p&gt;The CI/CD CLI is available at no additional cost in all AWS Regions where Amazon SageMaker Unified Studio is available. You pay only for the underlying AWS resources provisioned during deployment.&lt;/p&gt; \n&lt;p&gt;To get started, visit the following resources:&lt;/p&gt; \n&lt;p&gt;The CI/CD CLI is available at no additional cost in all AWS Regions where Amazon SageMaker Unified Studio is available. You pay only for the underlying AWS resources provisioned during deployment.&lt;/p&gt; \n&lt;p&gt;To get started, visit the following resources:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;a href=\"https://pypi.org/project/aws-smus-cicd-cli/\"&gt;Install from PyPI&lt;/a&gt;&amp;nbsp;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://github.com/aws/CICD-for-SageMakerUnifiedStudio\"&gt;GitHub repository&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/cicd.html\"&gt;Amazon SageMaker Unified Studio documentation&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt;",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now offers the CI/CD CLI (aws-smus-cicd-cli), an open-source command line tool that automates deployment of multi-service data and AI applications across development, test, and production. Organizations building applications in SageMaker Unified Studio combine multiple AWS services, including AWS Glue, Amazon Athena, Amazon MWAA, Amazon SageMaker AI, Amazon Bedrock, and Amazon QuickSight, into single applications. The CLI allows data teams to define applications once in a YAML manifest while DevOps teams deploy with a single command, reducing deployment bottlenecks and configuration drift.&lt;/p&gt; \n&lt;p&gt;The CLI reads a declarative&amp;nbsp;manifest.yaml&amp;nbsp;that maps each pipeline stage to an isolated SageMaker Unified Studio project. At deploy time, it substitutes stage-specific configurations (S3 paths, IAM roles, account IDs, and connection strings) and provisions resources in dependency order. Four commands cover the lifecycle:&amp;nbsp;describe&amp;nbsp;validates permissions and connections,&amp;nbsp;bundle&amp;nbsp;packages an immutable artifact from the source target,&amp;nbsp;deploy&amp;nbsp;writes that artifact to the destination target, and&amp;nbsp;test&amp;nbsp;runs post-deployment validation.&amp;nbsp;It works with existing CI/CD solutions such as GitHub Actions, Jenkins, and GitLab CI.&lt;/p&gt; \n&lt;p&gt;The CI/CD CLI is available at no additional cost in all AWS Regions where Amazon SageMaker Unified Studio is available. You pay only for the underlying AWS resources provisioned during deployment.&lt;/p&gt; \n&lt;p&gt;To get started, visit the following resources:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;a href=\"https://pypi.org/project/aws-smus-cicd-cli/\"&gt;Install from PyPI&lt;/a&gt;&amp;nbsp;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://github.com/aws/CICD-for-SageMakerUnifiedStudio\"&gt;GitHub repository&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/cicd.html\"&gt;Amazon SageMaker Unified Studio documentation&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-smus-ci-cd-cli/",
       "publishedAt": "2026-04-23T19:00:00.000Z",
       "updatedAt": "2026-04-23T19:00:00.000Z",
@@ -1179,7 +1378,7 @@
         "amazon sagemaker studio",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "26168faf7e7f8463",
@@ -1198,7 +1397,7 @@
         "ec2",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0b5d33aad29f4f63",
@@ -1217,7 +1416,7 @@
         "partner network",
         "analytics"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "44fba20fc4837995",
@@ -1239,7 +1438,7 @@
         "aws elastic beanstalk",
         "elastic beanstalk"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "063e84ab88c5d373",
@@ -1265,7 +1464,7 @@
         "compute",
         "outposts"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3d65b16931df67c4",
@@ -1282,7 +1481,7 @@
       "tags": [
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2bbb8b580da10e19",
@@ -1304,7 +1503,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1393d4272fbcda13",
@@ -1326,7 +1525,7 @@
         "amazon redshift",
         "redshift"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7d963498fc4728e2",
@@ -1343,7 +1542,7 @@
       "tags": [
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a533c4632b80c870",
@@ -1360,7 +1559,7 @@
       "tags": [
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f561d762e65d8556",
@@ -1382,7 +1581,7 @@
         "storage",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f21c352d49fe6db1",
