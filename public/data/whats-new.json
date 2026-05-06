@@ -1,7 +1,357 @@
 {
-  "lastUpdated": "2026-05-05T10:03:56.493Z",
-  "itemCount": 405,
+  "lastUpdated": "2026-05-06T10:20:21.052Z",
+  "itemCount": 423,
   "items": [
+    {
+      "id": "629048b2531fa9ee",
+      "title": "AWS Elemental MediaTailor now provides automatic secure server-to-server integration with Google's ad platforms",
+      "description": "AWS Elemental MediaTailor now automatically authenticates server-to-server connections with Google Ad Manager (GAM), Google Campaign Manager (GCM), and Google Display &amp; Video 360 (DV360). This delivers a seamless integration experience for customers using Google's ad platforms. MediaTailor provides server-side ad insertion (SSAI) to personalize ads in video streams. Google requires SSAI providers to establish a secure, authenticated connection when making ad requests and firing ad tracking events. Previously, MediaTailor customers needed to request activation of this integration through an",
+      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaTailor now automatically authenticates server-to-server connections with Google Ad Manager (GAM), Google Campaign Manager (GCM), and Google Display &amp;amp; Video 360 (DV360). This delivers a seamless integration experience for customers using Google's ad platforms.&lt;br&gt; &lt;br&gt; MediaTailor provides server-side ad insertion (SSAI) to personalize ads in video streams. Google requires SSAI providers to establish a secure, authenticated connection when making ad requests and firing ad tracking events. Previously, MediaTailor customers needed to request activation of this integration through an AWS support case and be added to an allow list. With this update, MediaTailor automatically detects requests destined for Google's ad servers and establishes the required secure connection — no customer action required. Specifically:&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;b&gt;Google Ad Manager (GAM):&lt;/b&gt; Server-side ad requests to Google's ad server for publishers are automatically secured, which is required for access to Authorized Buyers — Google's real-time ad sales marketplace and ad exchange.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Google Campaign Manager (GCM) and DV360:&lt;/b&gt; Server-side impression tracking requests are automatically routed through Google's authenticated endpoint and secured, supporting advertisers who run campaigns on these platforms with more accurate reporting and fewer rejected impressions.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;All other ad requests:&lt;/b&gt; continue to operate without modification.&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Elemental MediaTailor’s automatic server-to-server Google integration is available in all AWS Regions where MediaTailor is available, including US East (Ohio), US East (N. Virginia), US West (Oregon); Africa (Cape Town); Asia Pacific (Hyderabad, Malaysia, Melbourne, Mumbai, Osaka, Seoul, Singapore, Sydney, Tokyo); Canada (Central); Europe (Frankfurt, Ireland, London, Paris, Stockholm); Middle East (UAE); and South America (São Paulo). There is no additional cost for this feature. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/mediatailor/\"&gt;AWS Elemental MediaTailor documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/mediatailor-automatic-google-ad-platform-integration",
+      "publishedAt": "2026-05-05T21:44:00.000Z",
+      "updatedAt": "2026-05-05T21:44:00.000Z",
+      "categories": [
+        "Media Services",
+        "AWS Elemental Mediatailor"
+      ],
+      "services": [
+        "Elemental",
+        "MediaTailor"
+      ],
+      "tags": [
+        "media services",
+        "aws elemental mediatailor",
+        "elemental",
+        "mediatailor"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "4dbc271844de03aa",
+      "title": "AWS SAM CLI adds BuildKit support for AWS Lambda functions packaged as container images",
+      "description": "AWS Serverless Application Model Command Line Interface (SAM CLI) now supports BuildKit for building container images from Dockerfiles, enabling faster, more efficient container image builds for Lambda functions packaged as container images. SAM CLI is a command-line tool for building, testing, debugging, and packaging serverless applications locally before deploying to AWS Cloud. Developers packaging Lambda functions as container images often need advanced build features provided by BuildKit to optimize their images for production. However, SAM CLI previously did not support BuildKit features",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/using-sam-cli.html\" target=\"_blank\"&gt;AWS Serverless Application Model Command Line Interface (SAM CLI)&lt;/a&gt; now supports BuildKit for building container images from Dockerfiles, enabling faster, more efficient container image builds for Lambda functions packaged as container images.&lt;/p&gt; \n&lt;p&gt;SAM CLI is a command-line tool for building, testing, debugging, and packaging serverless applications locally before deploying to AWS Cloud. Developers packaging Lambda functions as container images often need advanced build features provided by BuildKit to optimize their images for production. However, SAM CLI previously did not support BuildKit features. Now, with BuildKit support in SAM CLI, you can utilize multi-stage builds to create smaller final images without development dependencies, improved caching to reduce rebuild times, and better parallelization of build steps. BuildKit also enables cross-architecture builds, allowing you to build container images targeting both x86_64 and arm64 (AWS Graviton2) instruction set architectures from the same development machine. You can also use Docker secrets during builds, keeping sensitive data such as credentials and API keys out of your final image layers.&lt;/p&gt; \n&lt;p&gt;To get started, download or update SAM CLI to version 1.159.0 or later and use the --use-buildkit flag with sam build. This feature works regardless of whether you are using Docker or Finch with SAM CLI, unlocking the full set of BuildKit capabilities.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-build.html\" target=\"_blank\"&gt;SAM CLI developer guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-sam-cli-buildkit-aws-lambda/",
+      "publishedAt": "2026-05-05T18:50:00.000Z",
+      "updatedAt": "2026-05-05T18:50:00.000Z",
+      "categories": [
+        "AWS Serverless Application Model Sam",
+        "Developer Tools",
+        "Serverless",
+        "AWS Lambda"
+      ],
+      "services": [
+        "Lambda",
+        "SAM"
+      ],
+      "tags": [
+        "aws serverless application model sam",
+        "developer tools",
+        "serverless",
+        "aws lambda",
+        "lambda",
+        "sam"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1b90f62318f29b16",
+      "title": "AWS SAM now supports WebSocket APIs for Amazon API Gateway",
+      "description": "AWS Serverless Application Model (AWS SAM) now supports WebSocket APIs for Amazon API Gateway, enabling you to define complete WebSocket APIs with minimal configuration in your SAM template. AWS SAM is a collection of open-source tools that make it easy for you to build and manage serverless applications. WebSocket APIs are critical for real-time applications such as chat, live dashboards, AI/LLM streaming, and IoT. However, SAM previously did not support WebSocket APIs, requiring you to manually configure all of the underlying resources in AWS CloudFormation. This made it difficult to debug c",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html\" target=\"_blank\"&gt;AWS Serverless Application Model (AWS SAM)&lt;/a&gt; now supports WebSocket APIs for Amazon API Gateway, enabling you to define complete WebSocket APIs with minimal configuration in your SAM template.&lt;/p&gt; \n&lt;p&gt;AWS SAM is a collection of open-source tools that make it easy for you to build and manage serverless applications. WebSocket APIs are critical for real-time applications such as chat, live dashboards, AI/LLM streaming, and IoT. However, SAM previously did not support WebSocket APIs, requiring you to manually configure all of the underlying resources in AWS CloudFormation. This made it difficult to debug common issues such as missing IAM permissions for Lambda functions. Now, SAM handles all of this automatically, generating the required resources and permissions from your template. The new resource provides feature parity with &lt;a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-overview.html\" target=\"_blank\"&gt;API Gateway WebSocket APIs&lt;/a&gt;, including IAM and Lambda authorization, custom domains, RouteSettings, Models, and StageVariables. Globals support lets you share common configuration across multiple WebSocket APIs.&lt;/p&gt; \n&lt;p&gt;To get started, add the AWS::Serverless::WebSocketApi resource type to your SAM template. Define your routes by specifying Lambda function handlers for $connect, $disconnect, and $default routes, along with any custom routes your application requires. SAM automatically wires up the integrations and permissions for each route. You can also configure authorization, stage settings, and custom domains directly within the resource definition.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-websocketapi.html\" target=\"_blank\"&gt;SAM developer guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-sam-websocket-apis-api-gateway/",
+      "publishedAt": "2026-05-05T18:31:00.000Z",
+      "updatedAt": "2026-05-05T18:31:00.000Z",
+      "categories": [
+        "Developer Tools",
+        "Amazon Api Gateway",
+        "Serverless",
+        "AWS Serverless Application Model Sam"
+      ],
+      "services": [
+        "API Gateway",
+        "SAM"
+      ],
+      "tags": [
+        "developer tools",
+        "amazon api gateway",
+        "serverless",
+        "aws serverless application model sam",
+        "api gateway",
+        "sam"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0a9b95b23061ae24",
+      "title": "Amazon ElastiCache adds thirteen new Amazon CloudWatch metrics for network capacity planning and engine diagnostics",
+      "description": "Amazon ElastiCache customers can now detect network throttling, memory fragmentation, and connection exhaustion, using thirteen new Amazon CloudWatch metrics for node-based clusters. You can monitor these host-level and engine-level diagnostics directly from CloudWatch without running INFO commands on individual nodes or calculating baselines from raw byte counters. Network capacity: NetworkBaselineUsageInPercentage, NetworkBaselineUsageOutPercentage, NetworkBaselineMaxUsageInPercentage, and NetworkBaselineMaxUsageOutPercentage report network utilization relative to instance baseline, enabling",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/elasticache/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon ElastiCache&lt;/a&gt; customers can now detect network throttling, memory fragmentation, and connection exhaustion, using thirteen new Amazon CloudWatch metrics for node-based clusters. You can monitor these host-level and engine-level diagnostics directly from CloudWatch without running INFO commands on individual nodes or calculating baselines from raw byte counters.&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;b&gt;Network capacity:&lt;/b&gt; NetworkBaselineUsageInPercentage, NetworkBaselineUsageOutPercentage, NetworkBaselineMaxUsageInPercentage, and NetworkBaselineMaxUsageOutPercentage report network utilization relative to instance baseline, enabling portable alarms that remain valid across instance type changes. Values above 100 percent signal that a host is consuming burst credits, a leading indicator that a sustained workload will eventually lead to credit exhaustion and throttling. The variants capturing max report per-second bursts that averaged metrics can hide.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Memory health:&lt;/b&gt; UsedMemoryDataset shows memory consumed by actual stored data excluding engine overhead. AllocatorFragmentationBytes and AllocatorFragmentationRatio isolate fragmentation that the &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ParameterGroups.Engine.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;activedefrag parameter&lt;/a&gt; can address. MajorPageFaults captures OS-level page faults that indicate memory pressure beyond what the engine can surface.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Connectivity health:&lt;/b&gt; BlockedConnections and RejectedConnections surface connections waiting on blocking commands and connections turned away when the maxclients limit is reached. When RejectedConnections is non-zero, raise maxclients or diagnose client-side connection pool leaks.&lt;i&gt; &lt;/i&gt;&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Pub/sub workloads:&lt;/b&gt; PubSubChannels and PubSubShardChannels expose active classic and sharded channels on each node. When classic channel counts are growing with utilization, consider switching to sharded pub/sub to scale horizontally.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Command throughput:&lt;/b&gt; ProcessedCommands provides total command throughput across all command types.&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;These metrics are available for node-based clusters in all commercial AWS Regions and the AWS China and AWS GovCloud (US) Regions where ElastiCache is supported, at no additional cost.&lt;br&gt; &lt;br&gt; To get started, view the new metrics in the &lt;a href=\"https://console.aws.amazon.com/elasticache/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;ElastiCache console&lt;/a&gt; monitoring tab or in the AWS/ElastiCache namespace in the CloudWatch console. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics.HostLevel.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Host-Level Metrics &lt;/a&gt;and &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics.Redis.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Metrics for Valkey and Redis OSS&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-elasticache-cloudwatch-metrics-network-engine-diagnostics/",
+      "publishedAt": "2026-05-05T18:00:00.000Z",
+      "updatedAt": "2026-05-05T18:00:00.000Z",
+      "categories": [
+        "Amazon Elasticache",
+        "Databases"
+      ],
+      "services": [
+        "ElastiCache",
+        "CloudWatch"
+      ],
+      "tags": [
+        "amazon elasticache",
+        "databases",
+        "elasticache",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b2f282acb138ff51",
+      "title": "Amazon WorkSpaces now lets AI agents operate desktop applications (Preview)",
+      "description": "Amazon WorkSpaces, AWS's fully managed cloud desktop service, now enables AI agents to securely access and operate desktop applications through managed WorkSpaces environments. Many enterprises run critical business processes on desktop applications—mainframes, ERP systems, and proprietary tools—that lack modern APIs, creating a \"last-mile challenge\" for AI agents. WorkSpaces now allows organizations to automate everyday workflows at scale while maintaining full enterprise-grade governance and compliance. AI agents built on any framework and running anywhere—cloud-hosted, on-premises, or hybri",
+      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces, AWS's fully managed cloud desktop service, now enables AI agents to securely access and operate desktop applications through managed WorkSpaces environments. Many enterprises run critical business processes on desktop applications—mainframes, ERP systems, and proprietary tools—that lack modern APIs, creating a \"last-mile challenge\" for AI agents. WorkSpaces now allows organizations to automate everyday workflows at scale while maintaining full enterprise-grade governance and compliance.&lt;/p&gt; \n&lt;p&gt;AI agents built on any framework and running anywhere—cloud-hosted, on-premises, or hybrid—can now connect to business applications with minimal code using industry-standard Model Context Protocol (MCP) integration. Builders gain fast time-to-value without standing up new infrastructure, while IT administrators maintain centralized permissions, logging, and auditing controls identical to human WorkSpaces environments. Enterprise observability features including screenshots and metrics provide full visibility into agent activities. Organizations can automate workflows spanning claims processing, trade settlement, candidate screening, and back-office operations across financial services, healthcare, and other regulated industries—all without requiring application modernization.&lt;/p&gt; \n&lt;p&gt;WorkSpaces delivers secure environments where agents can point, click, and navigate on desktop applications just like humans. With pay-as-you-go pricing and elastic scale built on AWS's global infrastructure, enterprises reduce IT overhead while expanding what's possible when people and AI work together. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-access.html\"&gt;WorkSpaces documentation.&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/workspaces-ai-agents/",
+      "publishedAt": "2026-05-05T17:25:00.000Z",
+      "updatedAt": "2026-05-05T17:25:00.000Z",
+      "categories": [
+        "Amazon Workspaces",
+        "Flexibility",
+        "Desktop And App Streaming"
+      ],
+      "services": [
+        "WorkSpaces"
+      ],
+      "tags": [
+        "amazon workspaces",
+        "flexibility",
+        "desktop and app streaming",
+        "workspaces"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1155fd685130b110",
+      "title": "AWS IoT Core for Device Location adds Confidence Level Configuration and Measurement Type support",
+      "description": "AWS IoT Core for Device Location now supports two enhancements that give developers greater control over location resolution and richer metadata for resolved device locations. Customers using the Cell ID, Wi-Fi, or Cell+Wi-Fi solvers can now specify a desired confidence level between 50% and 99% when resolving device locations. The confidence level represents the statistical probability that the actual device location falls within the reported accuracy radius. A higher confidence level (for example, 95%) increases certainty that the device falls within the reported radius but produces a larger",
+      "descriptionHtml": "&lt;p&gt;AWS IoT Core for Device Location now supports two enhancements that give developers greater control over location resolution and richer metadata for resolved device locations.&lt;br&gt; &lt;br&gt; Customers using the Cell ID, Wi-Fi, or Cell+Wi-Fi solvers can now specify a desired confidence level between 50% and 99% when resolving device locations. The confidence level represents the statistical probability that the actual device location falls within the reported accuracy radius. A higher confidence level (for example, 95%) increases certainty that the device falls within the reported radius but produces a larger accuracy radius. A lower confidence level (for example, 50%) yields a smaller radius with less certainty. Customers can now configure this value to balance accuracy and confidence based on their specific requirements. This feature is currently supported for HTTP-based location resolution.&lt;br&gt; &lt;br&gt; This update also introduces a measurement type field in resolved location metadata, giving developers greater visibility into how each device location was determined — whether through GNSS, Wi-Fi or BLE location resolvers. This make it easier to assess location data quality, debug positioning issues, and make more informed decisions based on how each location was determined.&lt;br&gt; &lt;br&gt; These updates are available in all AWS IoT Core for Device Location supported regions. For detailed guidance and implementation instructions, visit the &lt;a href=\"https://docs.aws.amazon.com/iot/latest/developerguide/device-location.html\"&gt;AWS IoT Core Device Location&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/iot-wireless/latest/developerguide/what-is-iot-wireless.html\"&gt;IoT Wireless Developer Guide&lt;/a&gt; .&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-iot-core-device-location/",
+      "publishedAt": "2026-05-05T16:59:00.000Z",
+      "updatedAt": "2026-05-05T16:59:00.000Z",
+      "categories": [],
+      "services": [
+        "IoT Core"
+      ],
+      "tags": [
+        "iot core"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d0299c50c823cdc5",
+      "title": "Amazon MQ now supports in-place major version upgrades for RabbitMQ 4",
+      "description": "Amazon MQ now supports in-place version upgrades for RabbitMQ brokers, enabling you to upgrade your brokers to RabbitMQ 4 without creating a new broker or migrating your data. You can now upgrade from RabbitMQ 3.13 to 4.2, directly from the Amazon MQ console, AWS CLI, or API. In-place upgrades preserve your broker configuration, queues, exchanges, bindings, users, and policies. RabbitMQ 4.2 introduces breaking changes including the removal of classic mirrored queues and migration from Mnesia to the Khepri metadata store. Brokers must be running on M7G (Graviton) instance types and must not hav",
+      "descriptionHtml": "&lt;p&gt;Amazon MQ now supports in-place version upgrades for RabbitMQ brokers, enabling you to upgrade your brokers to RabbitMQ 4 without creating a new broker or migrating your data. You can now upgrade from RabbitMQ 3.13 to 4.2, directly from the Amazon MQ console, AWS CLI, or API.&lt;br&gt; &lt;br&gt; In-place upgrades preserve your broker configuration, queues, exchanges, bindings, users, and policies. RabbitMQ 4.2 introduces breaking changes including the removal of classic mirrored queues and migration from Mnesia to the Khepri metadata store. Brokers must be running on M7G (Graviton) instance types and must not have classic mirrored queues to be eligible for the upgrade. A queue migration tool is available to convert classic mirrored queues to quorum queues before upgrading. During a major version upgrade, your broker will be unavailable while Amazon MQ performs the upgrade.&lt;br&gt; &lt;br&gt; To upgrade your broker, simply select RabbitMQ 4.2 as your version through the AWS Management console, AWS CLI, or AWS SDKs. Amazon MQ automatically manages patch version upgrades for your RabbitMQ 4.2 brokers, so you need to only specify the major.minor version. To learn more about RabbitMQ 4.2 and the upgrade process, see the &lt;a href=\"https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-release-notes.html\" target=\"_blank\"&gt;Amazon MQ release notes&lt;/a&gt; and the Amazon MQ &lt;a href=\"https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/working-with-rabbitmq.html\" target=\"_blank\"&gt;developer guide&lt;/a&gt;. This capability is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\"&gt;regions&lt;/a&gt; where RabbitMQ 4 instances are available today.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-mq-inplace-upgrades-rabbitmq4/",
+      "publishedAt": "2026-05-05T16:50:00.000Z",
+      "updatedAt": "2026-05-05T16:50:00.000Z",
+      "categories": [
+        "Messaging",
+        "Developer Tools",
+        "AWS Govcloud Us",
+        "Migration",
+        "Analytics",
+        "Amazon Mq"
+      ],
+      "services": [
+        "MQ"
+      ],
+      "tags": [
+        "messaging",
+        "developer tools",
+        "aws govcloud us",
+        "migration",
+        "analytics",
+        "amazon mq",
+        "mq"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a782edcdc6f488dc",
+      "title": "Amazon Quick now integrates with New Relic for observability-driven AI agents",
+      "description": "Amazon Quick, your AI assistant for work, now integrates with New Relic's AI agents, enabling on-call engineers, SREs, and engineering leaders to investigate incidents, generate root cause analysis briefs, and create tracked tasks without leaving their Amazon Quick workspace. After connecting to New Relic's remote model context protocol (MCP) server, you can invoke New Relic's AI agents directly from a conversational prompt in Quick – including alert insights, user impact analysis, log analysis, transaction diagnostics, and natural language NRQL queries. In a single chat exchange, you can inve",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick, your AI assistant for work,&amp;nbsp;now integrates with New Relic's AI agents, enabling&amp;nbsp;on-call engineers, SREs, and engineering leaders&amp;nbsp;to&amp;nbsp;investigate incidents, generate root cause analysis briefs, and create tracked tasks without leaving their Amazon Quick workspace.&lt;/p&gt; \n&lt;p&gt;After connecting to New Relic's remote model context protocol (MCP) server, you can invoke New Relic's AI&amp;nbsp;agents&amp;nbsp;directly from a conversational prompt in Quick&amp;nbsp;–&amp;nbsp;including alert insights, user impact analysis, log analysis, transaction diagnostics, and natural language NRQL queries. In a single chat exchange, you can investigate an incident across your observability data, generate a root cause analysis (RCA) document with evidence links, and send it as an email attachment. Quick Flows can also invoke New Relic AI agents to automate recurring triage runbooks or escalation workflows. Because Quick surfaces responses alongside enterprise knowledge stored in Spaces&amp;nbsp;-&amp;nbsp;such as runbooks, architecture docs, and on-call policies—every answer reflects both live telemetry and organizational context.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;The New Relic integration with Amazon Quick is available in all&amp;nbsp;&lt;a href=\"https://aws.amazon.com//about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\"&gt;AWS Regions&lt;/a&gt;&amp;nbsp;where Amazon Quick is available.&lt;/p&gt; \n&lt;p&gt;To get started with Amazon Quick,&amp;nbsp;&lt;a href=\"https://aws.amazon.com/quick/\" target=\"_blank\"&gt;visit the website&lt;/a&gt;&amp;nbsp;and sign up in minutes. To learn more about the&amp;nbsp;New Relic integration, read the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/newrelic-integration.html\" target=\"_blank\"&gt;New Relic integration guide&lt;/a&gt;, and explore more&amp;nbsp;Quick&amp;nbsp;integrations on the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/quick/integrations/\" target=\"_blank\"&gt;integrations page&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-quick-new-relic/",
+      "publishedAt": "2026-05-05T16:35:00.000Z",
+      "updatedAt": "2026-05-05T16:35:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "business productivity",
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "bd68fa30245b32e4",
+      "title": "EC2 Instance Store CSI driver now generally available in EKS add-ons",
+      "description": "Amazon Elastic Kubernetes Service (Amazon EKS) now supports using the Amazon EKS console, and AWS Command Line Interface (CLI) to install and manage the Amazon Elastic Cloud Compute (EC2) Container Storage Interface (CSI) driver. This launch enables a simple experience for attaching a EC2 local instance store to an EKS cluster. The Amazon EC2 Instance Store CSI driver is a plugin that enables Kubernetes to use EC2 instance store volumes. Instance store volumes provide ephemeral block-level storage that is physically attached to the host computer. The driver manages the lifecycle of these NVMe ",
+      "descriptionHtml": "&lt;p&gt;Amazon Elastic Kubernetes Service (Amazon EKS) now supports using the Amazon EKS console, and AWS Command Line Interface (CLI) to install and manage the Amazon&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/lis-csi.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Elastic Cloud Compute (EC2)&lt;/a&gt;&amp;nbsp;Container Storage Interface (CSI) driver. This launch enables a simple experience for attaching a EC2 local instance store to an EKS cluster.&lt;/p&gt; \n&lt;p&gt;The Amazon EC2 Instance Store CSI driver is a plugin that enables Kubernetes to use EC2 instance store volumes. Instance store volumes provide ephemeral block-level storage that is physically attached to the host computer. The driver manages the lifecycle of these NVMe storage volumes and makes them available as Kubernetes&amp;nbsp;&lt;a href=\"https://kubernetes.io/docs/concepts/storage/persistent-volumes/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;persistent volumes&lt;/a&gt;.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This feature is available in all commercial regions. To get started and learn more visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon EKS documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/ec2-csi-eks/",
+      "publishedAt": "2026-05-05T16:22:00.000Z",
+      "updatedAt": "2026-05-05T16:22:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Containers",
+        "Amazon Eks",
+        "Storage"
+      ],
+      "services": [
+        "EC2",
+        "EKS"
+      ],
+      "tags": [
+        "amazon ec2",
+        "containers",
+        "amazon eks",
+        "storage",
+        "ec2",
+        "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7d4546bebf09e54b",
+      "title": "Amazon Connect Cases now supports customer profile identity resolution",
+      "description": "Amazon Connect Cases now automatically reassociates cases when duplicate customer profiles are merged, so agents always see a complete case history for each customer. When the same customer has multiple profiles, such as when they reach out through different channels or provide different contact details, Identity Resolution in Amazon Connect Customer Profiles detects and merges those duplicates, and Cases now brings all associated cases together under the unified profile. Agents no longer have to search across profiles or piece together a customer's history manually. Amazon Connect Cases is av",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Cases now automatically reassociates cases when duplicate customer profiles are merged, so agents always see a complete case history for each customer. When the same customer has multiple profiles, such as when they reach out through different channels or provide different contact details, Identity Resolution in Amazon Connect Customer Profiles detects and merges those duplicates, and Cases now brings all associated cases together under the unified profile. Agents no longer have to search across profiles or piece together a customer's history manually.&lt;br&gt; &lt;br&gt; Amazon Connect Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town). To learn more and get started, visit the Amazon Connect Cases &lt;a href=\"https://aws.amazon.com/connect/cases/\" target=\"_blank\"&gt;webpage&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/cases.html\" target=\"_blank\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-connect-cases-customer-profiles-id-res/",
+      "publishedAt": "2026-05-05T15:25:00.000Z",
+      "updatedAt": "2026-05-05T15:25:00.000Z",
+      "categories": [
+        "Contact Center",
+        "Amazon Connect",
+        "Messaging",
+        "Business Productivity"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "amazon connect",
+        "messaging",
+        "business productivity",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "934a11d361814289",
+      "title": "Amazon Bedrock AgentCore is now available in AWS GovCloud (US-West)",
+      "description": "Amazon Bedrock AgentCore brings enterprise-grade agentic AI capabilities to workloads with elevated compliance needs in the AWS GovCloud (US-West) Region. AgentCore is a platform for building, deploying, and operating AI agents securely at scale—without managing infrastructure. With AgentCore, organizations can accelerate agents from prototype to production using any framework and any model, while maintaining the security and compliance controls required for government and regulated workloads. AgentCore provides composable services that work together or independently. AgentCore Runtime deploys",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore brings enterprise-grade agentic AI capabilities to workloads with elevated compliance needs in the AWS GovCloud (US-West) Region. AgentCore is a platform for building, deploying, and operating AI agents securely at scale—without managing infrastructure. With AgentCore, organizations can accelerate agents from prototype to production using any framework and any model, while maintaining the security and compliance controls required for government and regulated workloads.&lt;br&gt; &lt;br&gt; AgentCore provides composable services that work together or independently. AgentCore Runtime deploys agents with complete session isolation and support for long-running workloads. AgentCore Gateway converts existing Application Programming Interfaces (APIs) and Lambda functions into agent-ready tools through the Model Context Protocol (MCP), giving agents secure access to enterprise data and services. AgentCore Identity integrates with existing identity providers for automated authentication and permission delegation, while AgentCore Observability and Evaluations provide real-time monitoring and continuous quality assessment of agent performance in production.&lt;br&gt; &lt;br&gt; To learn more about Amazon Bedrock AgentCore, visit the &lt;a href=\"https://aws.amazon.com/bedrock/agentcore/\"&gt;AgentCore product page&lt;/a&gt;. For details about AgentCore in AWS GovCloud (US), visit the &lt;a href=\"https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-bedrock-agentcore.html\"&gt;GovCloud documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/bedrock-agentcore-launch-aws-govcloud-us/",
+      "publishedAt": "2026-05-05T12:00:00.000Z",
+      "updatedAt": "2026-05-05T12:00:00.000Z",
+      "categories": [
+        "Amazon Bedrock",
+        "Security Identity And Compliance",
+        "AWS Govcloud Us",
+        "Artificial Intelligence",
+        "Developer Tools"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "amazon bedrock",
+        "security identity and compliance",
+        "aws govcloud us",
+        "artificial intelligence",
+        "developer tools",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "db4c7293476b665d",
+      "title": "AWS Backup improves performance for Amazon EKS cluster backups",
+      "description": "AWS Backup for Amazon EKS now completes cluster state backups up to 10x faster. This performance improvement enables you to back up Amazon EKS clusters with a large numbers of namespaces and Kubernetes resources significantly faster, reducing backup windows from days to hours for the largest clusters. AWS Backup is a policy-based, fully managed, and cost-effective solution that enables you to centralize and automate data protection of Amazon EKS along with other AWS services that span compute, storage, and databases. The performance improvement is automatically enabled at no additional cost in",
+      "descriptionHtml": "&lt;p&gt;AWS Backup for Amazon EKS now completes cluster state backups up to 10x faster. This performance improvement enables you to back up Amazon EKS clusters with a large numbers of namespaces and Kubernetes resources significantly faster, reducing backup windows from days to hours for the largest clusters. AWS Backup is a policy-based, fully managed, and cost-effective solution that enables you to centralize and automate data protection of Amazon EKS along with other AWS services that span compute, storage, and databases. The performance improvement is automatically enabled at no additional cost in all AWS Regions where AWS Backup support for Amazon EKS is available.&lt;/p&gt; \n&lt;p&gt;AWS Backup support for Amazon EKS is available in all AWS commercial Regions and AWS GovCloud (US) Regions. For more information on regional availability and pricing, see the &lt;a href=\"https://aws.amazon.com/backup/pricing/\"&gt;AWS Backup pricing page&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;To learn more about AWS Backup for Amazon EKS, visit the &lt;a href=\"https://aws.amazon.com/backup/\"&gt;product page&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/eks-backups.html\"&gt;technical documentation&lt;/a&gt;. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/backup\"&gt;AWS Backup console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-backup-amazon-eks-performance-improvement/",
+      "publishedAt": "2026-05-05T10:00:00.000Z",
+      "updatedAt": "2026-05-05T10:00:00.000Z",
+      "categories": [
+        "Containers",
+        "Amazon Eks",
+        "Storage",
+        "AWS Backup"
+      ],
+      "services": [
+        "EKS",
+        "Backup"
+      ],
+      "tags": [
+        "containers",
+        "amazon eks",
+        "storage",
+        "aws backup",
+        "eks",
+        "backup"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "40c1e50528d83137",
+      "title": "Amazon OpenSearch Service expands Cluster Insights with a new insight",
+      "description": "Amazon OpenSearch Service expands Cluster Insights availability to all OpenSearch versions and Elasticsearch version 6.8 and above, bringing proactive cluster health and performance visibility through the Console. In addition, a new Unused Index insight helps customers identify indices in an OpenSearch cluster that have had zero search and indexing activity over the past 30 days, and provides actionable recommendation to optimize costs. Cluster Insights now supports expanded version coverage — customers running OpenSearch 1.0 and later, and Elasticsearch 6.8 and later, can easily identify and ",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service expands Cluster Insights availability to all OpenSearch versions and Elasticsearch version 6.8 and above, bringing proactive cluster health and performance visibility through the Console. In addition, a new Unused Index insight helps customers identify indices in an OpenSearch cluster that have had zero search and indexing activity over the past 30 days, and provides actionable recommendation to optimize costs.&lt;br&gt; &lt;br&gt; Cluster Insights now supports expanded version coverage — customers running OpenSearch 1.0 and later, and Elasticsearch 6.8 and later, can easily identify and resolve performance and stability risks before they impact workloads. Additionally, the new Unused Index insight detects indices with no search or indexing activity and recommends migration to warm or cold storage tiers for cost optimization. These insights are available through the Console, OpenSearch Service Notifications, OpenSearch UI, and Amazon EventBridge, giving users instant visibility into cluster health along with actionable recommendations to prevent issues before they affect stability or performance.&lt;br&gt; &lt;br&gt; Cluster Insights is available at no additional cost in all Regions where Amazon OpenSearch Service is available. View the complete list of supported Regions &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/opensearch-ui-endpoints-quotas.html\"&gt;here&lt;/a&gt;. To learn more about Cluster Insights, refer to our &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/cluster-insights.html\"&gt;technical documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-opensearch-cluster-insights/",
+      "publishedAt": "2026-05-05T10:00:00.000Z",
+      "updatedAt": "2026-05-05T10:00:00.000Z",
+      "categories": [
+        "Amazon Opensearch Service",
+        "Databases",
+        "Analytics"
+      ],
+      "services": [
+        "OpenSearch"
+      ],
+      "tags": [
+        "amazon opensearch service",
+        "databases",
+        "analytics",
+        "opensearch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "349ed61a8eab79a2",
+      "title": "AWS IAM now provides higher maximum quotas for roles, role trust policies, instance profiles, managed policies, and identity providers",
+      "description": "AWS Identity and Access Management (IAM) has increased maximum quotas for six resources: Customer managed policies per account (5,000 to 10,000) Instance profiles per account (5,000 to 10,000) Managed policies per role (20 to 25) Role trust policy length (4,096 to 8,192 characters) Roles per account (5,000 to 10,000) OpenId connect providers per account (100 to 700) These updates address common scaling constraints customers encounter as their AWS environments grow. With these higher maximum quotas, customers have more flexibility to customize IAM controls and support additional workloads that ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/iam/\"&gt;AWS Identity and Access Management (IAM)&lt;/a&gt; has increased maximum quotas for six resources:&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;Customer managed policies per account (5,000 to 10,000)&lt;/li&gt; \n &lt;li&gt;Instance profiles per account (5,000 to 10,000)&lt;/li&gt; \n &lt;li&gt;Managed policies per role (20 to 25)&lt;/li&gt; \n &lt;li&gt;Role trust policy length (4,096 to 8,192 characters)&lt;/li&gt; \n &lt;li&gt;Roles per account (5,000 to 10,000)&lt;/li&gt; \n &lt;li&gt;OpenId connect providers per account (100 to 700)&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;These updates address common scaling constraints customers encounter as their AWS environments grow. With these higher maximum quotas, customers have more flexibility to customize IAM controls and support additional workloads that require creation of IAM resources.&lt;/p&gt; \n&lt;p&gt;Customers can view the latest IAM quotas in the &lt;a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html\"&gt;IAM and AWS STS quotas&lt;/a&gt; documentation. To request quota increases for accounts in AWS commercial regions, use &lt;a href=\"https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html\"&gt;Service Quotas&lt;/a&gt; in US East (N. Virginia). In AWS GovCloud (US) and China Regions, customers can request increases through AWS Support. For more information, see &lt;a href=\"https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html\"&gt;Requesting a Quota Increase&lt;/a&gt; in the Service Quotas User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-iam-increased-quotas/",
+      "publishedAt": "2026-05-05T02:28:00.000Z",
+      "updatedAt": "2026-05-05T02:28:00.000Z",
+      "categories": [
+        "AWS Iam",
+        "AWS Identity And Access Management"
+      ],
+      "services": [
+        "IAM"
+      ],
+      "tags": [
+        "aws iam",
+        "aws identity and access management",
+        "iam"
+      ],
+      "isNew": true
+    },
     {
       "id": "84eb917cd674dc49",
       "title": "Amazon CloudWatch Logs Insights supports querying by log group tags",
@@ -145,6 +495,65 @@
       "tags": [
         "databases",
         "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "72c2c836c5b59aac",
+      "title": "4 new Qwen models for multimodal reasoning, agentic coding, and multilingual applications are now available in Amazon SageMaker JumpStart",
+      "description": "Today, we are excited to announce the availability of four new Qwen models in Amazon SageMaker JumpStart : Qwen3.5-27B-FP8 , Qwen3.6-35B-A3B , Qwen3.5-0.8B , and Qwen3.5-2B . These models address different AI application needs with specialized capabilities: Qwen3.5-27B-FP8 – A multimodal vision-language model for reasoning over images, video, and text. Designed for applications such as agentic tool use, coding assistance, complex mathematical reasoning, multilingual communication in over 200 languages, and long-context processing with support for up to 1 million tokens. Qwen3.6-35B-A3B – An ef",
+      "descriptionHtml": "&lt;p&gt;Today, we are excited to announce the availability of four new Qwen models in &lt;a data-agent-id=\"30\"&gt;Amazon SageMaker JumpStart&lt;/a&gt;: &lt;b&gt;Qwen3.5-27B-FP8&lt;/b&gt;, &lt;b&gt;Qwen3.6-35B-A3B&lt;/b&gt;, &lt;b&gt;Qwen3.5-0.8B&lt;/b&gt;, and &lt;b&gt;Qwen3.5-2B&lt;/b&gt;.&lt;/p&gt; \n&lt;p&gt;These models address different AI application needs with specialized capabilities:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;b&gt;Qwen3.5-27B-FP8&lt;/b&gt; – A multimodal vision-language model for reasoning over images, video, and text. Designed for applications such as agentic tool use, coding assistance, complex mathematical reasoning, multilingual communication in over 200 languages, and long-context processing with support for up to 1 million tokens.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Qwen3.6-35B-A3B&lt;/b&gt; – An efficient Mixture-of-Experts model with 3 billion active parameters optimized for agentic coding workflows. Suited for tasks including frontend development, repository-level code reasoning, multi-step agent interactions, and coding copilot applications.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Qwen3.5-0.8B&lt;/b&gt; – A compact multimodal model designed for rapid prototyping, fine-tuning, on-device inference, and edge deployments. Supports multilingual capabilities and multimodal understanding at a minimal compute footprint.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Qwen3.5-2B&lt;/b&gt; – A lightweight multimodal model for prototyping, fine-tuning, and moderate-compute deployments. Handles multilingual text generation, visual understanding, and conversational AI tasks efficiently.&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;All four models are available today through Amazon SageMaker JumpStart. You can deploy them with a few clicks in &lt;a&gt;Amazon SageMaker Studio&lt;/a&gt; or programmatically using the SageMaker Python SDK.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/qwen-models-on-sagemaker-jumpstart/",
+      "publishedAt": "2026-05-04T17:00:00.000Z",
+      "updatedAt": "2026-05-04T17:00:00.000Z",
+      "categories": [],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c6fa3210fd8f61a5",
+      "title": "Amazon EC2 I8ge instances are now generally available in additional AWS regions",
+      "description": "Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in Europe (Paris), Asia Pacific (Thailand), Asia Pacific (Hong Kong), Asia Pacific (Seoul), and Asia Pacific (Tokyo) AWS regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn insta",
+      "descriptionHtml": "&lt;p&gt;Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in Europe (Paris), Asia Pacific (Thailand), Asia Pacific (Hong Kong), Asia Pacific (Seoul), and Asia Pacific (Tokyo) AWS regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn instances . They offer up to 60% lower storage I/O latency and up to 75% lower storage I/O latency variability compared to Im4gn instances. &lt;br&gt; &lt;br&gt; I8ge instances are storage-optimized instances, and offer up to 120TB of local NVMe storage. They are ideal for workloads that demand rapid local storage with high random read/write performance and consistently low latency for accessing large datasets. These versatile instances are offered in eleven different sizes including two metal sizes, providing flexibility to match customers’ computational needs. They deliver up to 180 Gbps of network performance bandwidth and 60 Gbps of dedicated bandwidth for Amazon Elastic Block Store (EBS), ensuring fast and efficient data transfer for the most demanding applications.&lt;br&gt; &lt;br&gt; To begin your Graviton journey, visit the &lt;a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\"&gt;Level up your compute with AWS Graviton page&lt;/a&gt;. To get started, see &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface (AWS CLI)&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html\"&gt;AWS SDKs&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/i8g/\"&gt;I8ge instances page.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/ec2-i8ge-available-new-regions/",
+      "publishedAt": "2026-05-04T17:00:00.000Z",
+      "updatedAt": "2026-05-04T17:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "43045a16541e6627",
+      "title": "Amazon VPC Lattice resource configurations now support private domain-name targets",
+      "description": "VPC Lattice resource configurations now support domain-name targets that are private to your network. You can define a resource configuration for a private FQDN and share it with other accounts, enabling secure cross-account access to privately-hosted resources. Previously, only publicly resolvable domain-name targets could be shared using resource configurations. Customers with private DNS servers could not share FQDNs with other accounts using this mechanism. To enable this feature, set the 'Resource Config DNS Resolution' property to 'IN_VPC' on your resource gateway. VPC Lattice uses your ",
+      "descriptionHtml": "&lt;p&gt;VPC Lattice resource configurations now support domain-name targets that are private to your network. You can define a resource configuration for a private FQDN and share it with other accounts, enabling secure cross-account access to privately-hosted resources.&lt;br&gt; &lt;br&gt; Previously, only publicly resolvable domain-name targets could be shared using resource configurations. Customers with private DNS servers could not share FQDNs with other accounts using this mechanism. To enable this feature, set the&lt;b&gt; &lt;/b&gt;'Resource Config DNS Resolution' property to 'IN_VPC' on your resource gateway. VPC Lattice uses your VPC's DNS configuration to resolve&lt;b&gt; &lt;/b&gt;FQDNs, routing traffic to the correct backend without requiring public DNS entries.&lt;br&gt; &lt;br&gt; You can enable this feature through the AWS Management Console, AWS CLI, AWS SDKs, and AWS APIs. The feature is available at no additional cost in all AWS Regions where VPC Lattice is available. For more information, see the VPC Lattice &lt;a href=\"https://docs.aws.amazon.com/vpc-lattice/latest/ug/resource-configuration.html\"&gt;user guide.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-vpc-lattice/",
+      "publishedAt": "2026-05-04T17:00:00.000Z",
+      "updatedAt": "2026-05-04T17:00:00.000Z",
+      "categories": [
+        "Networking And Content Delivery"
+      ],
+      "services": [
+        "VPC"
+      ],
+      "tags": [
+        "networking and content delivery",
+        "vpc"
       ],
       "isNew": true
     },
@@ -343,6 +752,28 @@
       "tags": [
         "aws iot",
         "internet of things"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f3c9acd1a63fc5ea",
+      "title": "Amazon CloudWatch RUM now supports Session Replay for Web Applications",
+      "description": "Amazon CloudWatch RUM (Real User Monitoring) Session Replay gives developers a video-like playback of user experiences on their web applications — capturing clicks, scrolls, page changes, and errors — so they can see exactly what a user encountered in their browser without needing to reproduce the issue. CloudWatch RUM collects client-side performance metrics and error data from both web and mobile applications; Session Replay extends this visibility for web applications by letting developers visually diagnose issues like broken navigation flows or unresponsive UI elements that don't surface i",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch RUM (Real User Monitoring) Session Replay gives developers a video-like playback of user experiences on their web applications — capturing clicks, scrolls, page changes, and errors — so they can see exactly what a user encountered in their browser without needing to reproduce the issue. CloudWatch RUM collects client-side performance metrics and error data from both web and mobile applications; Session Replay extends this visibility for web applications by letting developers visually diagnose issues like broken navigation flows or unresponsive UI elements that don't surface in server-side logs. This capability is built for front-end developers and application owners who need to move quickly from a user-reported problem to its root cause.&lt;br&gt; &lt;br&gt; Session Replay helps developers identify user experience issues — such as forms that fail to render or navigation flows that break — that can silently impact conversion and engagement, even when no one reports them. Developers can also replay sessions to study navigation patterns and identify drop-off points. To get started, enable Session Replay in your app monitor and view recorded sessions from the Session Replay tab in the CloudWatch RUM console — the feature is opt-in, supports sensitive field masking, and is included at no additional cost.&lt;/p&gt; \n&lt;p&gt;Session Replay for Amazon CloudWatch RUM is available in all AWS Regions where CloudWatch RUM is supported. To learn more about Session Replay for Amazon CloudWatch RUM, see the &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html\"&gt;Amazon CloudWatch RUM documentation&amp;nbsp;&lt;/a&gt;. For pricing details, see the &amp;nbsp;&lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;Amazon CloudWatch pricing page&amp;nbsp;&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-cloudwatch-rum-session/",
+      "publishedAt": "2026-05-01T21:07:00.000Z",
+      "updatedAt": "2026-05-01T21:07:00.000Z",
+      "categories": [
+        "Amazon Cloudwatch",
+        "Management And Governance"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "amazon cloudwatch",
+        "management and governance",
+        "cloudwatch"
       ],
       "isNew": true
     },
@@ -1062,7 +1493,7 @@
         "terraform",
         "transfer family"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1ef471b6a6cece17",
@@ -1086,7 +1517,7 @@
         "amazon rds",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "34e4f3df374feaa4",
@@ -1108,7 +1539,7 @@
         "analytics",
         "emr"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "20e9c559b1d0f72d",
@@ -1130,7 +1561,7 @@
         "analytics",
         "opensearch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fcfeec66008531b5",
@@ -1150,7 +1581,7 @@
         "amazon bedrock",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5c63b4bd1516724f",
@@ -1172,7 +1603,7 @@
         "aws glue",
         "glue"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2c23a8ac89ef6372",
@@ -1189,7 +1620,7 @@
       "tags": [
         "proton"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "15fa6f48e05bca25",
@@ -1206,7 +1637,7 @@
       "tags": [
         "cost management"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5d5b470e9e14da70",
@@ -1232,7 +1663,7 @@
         "amazon workspaces",
         "workspaces"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c2e149b692dc8d25",
@@ -1254,7 +1685,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3793fc3db6a40447",
@@ -1280,7 +1711,7 @@
         "artificial intelligence",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f0055811639afbe7",
@@ -1302,7 +1733,7 @@
         "amazon bedrock",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "950888795cbbf8c7",
@@ -1328,7 +1759,7 @@
         "artificial intelligence",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e3a4a6359f5e794a",
@@ -1347,7 +1778,7 @@
         "business productivity",
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e8e9f884b1797a94",
@@ -1366,7 +1797,7 @@
         "artificial intelligence",
         "business productivity"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1695f35f6a54faf6",
@@ -1385,7 +1816,7 @@
         "business productivity",
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b1517ac9448be22c",
@@ -1404,7 +1835,7 @@
         "business productivity",
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "149fa0165ecfbab6",
@@ -1423,7 +1854,7 @@
         "business productivity",
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "108a8c05e4fcdf85",
