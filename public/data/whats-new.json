@@ -1,7 +1,243 @@
 {
-  "lastUpdated": "2026-05-06T10:20:21.052Z",
-  "itemCount": 423,
+  "lastUpdated": "2026-05-07T08:59:20.304Z",
+  "itemCount": 435,
   "items": [
+    {
+      "id": "c3cbd3463a7aa109",
+      "title": "AWS Site-to-Site VPN now supports modifying tunnel bandwidth on existing VPN connections",
+      "description": "AWS Site-to-Site VPN now supports modifying tunnel bandwidth between standard (up to 1.25 Gbps) and large (up to 5 Gbps) on existing connections, making it easier to update your VPN connections’ bandwidth per your organization’s need. Previously, changing tunnel bandwidth required deleting and recreating the connection, which generated new tunnel IP addresses and meant updating your on-premises VPN device configuration and firewall rules. With this launch, tunnels are upgraded while preserving your IP addresses, CIDR blocks, pre-shared keys, and all configuration settings, eliminating the need",
+      "descriptionHtml": "&lt;p&gt;AWS Site-to-Site VPN now supports modifying tunnel bandwidth between standard (up to 1.25 Gbps) and large (up to 5 Gbps) on existing connections, making it easier to update your VPN connections’ bandwidth per your organization’s need.&lt;br&gt; &lt;br&gt; Previously, changing tunnel bandwidth required deleting and recreating the connection, which generated new tunnel IP addresses and meant updating your on-premises VPN device configuration and firewall rules. With this launch, tunnels are upgraded while preserving your IP addresses, CIDR blocks, pre-shared keys, and all configuration settings, eliminating the need to make any changes to your on-premises device.&lt;br&gt; &lt;br&gt; This feature is available in the following AWS Regions: US East (N. Virginia, Ohio), US West (N. California), AWS GovCloud (US-West), Europe (Frankfurt, London, Paris, Spain, Stockholm), Asia Pacific (Hong Kong, Hyderabad, Jakarta, Malaysia, Mumbai, New Zealand, Osaka, Seoul, Sydney, Taipei, Thailand, Tokyo), Africa (Cape Town), Mexico (Central), and South America (São Paulo). To learn more and get started, visit the AWS Site-to-Site VPN &lt;a href=\"https://docs.aws.amazon.com/vpn/latest/s2svpn/modify-vpn-connection-options.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-site-to-site-vpn-modify-bandwidth/",
+      "publishedAt": "2026-05-06T21:09:00.000Z",
+      "updatedAt": "2026-05-06T21:09:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "AWS Site To Site"
+      ],
+      "services": [],
+      "tags": [
+        "networking and content delivery",
+        "aws site to site"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0d54aa6bf7c5039e",
+      "title": "Amazon EC2 P6-B300 instances are now available in the US East (N. Virginia) Region",
+      "description": "Starting today, Amazon Elastic Cloud Compute (Amazon EC2) P6-B300 instances are available in the US East (N. Virginia) Region. P6-B300 instances provide 8xNVIDIA Blackwell Ultra GPUs with 2.1 TB high bandwidth GPU memory, 6.4 Tbps EFA networking, 300 Gbps dedicated ENA throughput, and 4 TB of system memory. P6-B300 instances deliver 2x networking bandwidth, 1.5x GPU memory size, and 1.5x GPU TFLOPS (at FP4, without sparsity) compared to P6-B200 instances, making them well suited to train and deploy large trillion-parameter foundation models (FMs) and large language models (LLMs) with sophistic",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Cloud Compute (Amazon EC2) P6-B300 instances are available in the US East (N. Virginia) Region.&amp;nbsp;P6-B300 instances provide 8xNVIDIA Blackwell Ultra GPUs with 2.1 TB high bandwidth GPU memory, 6.4 Tbps EFA networking, 300 Gbps dedicated ENA throughput, and 4 TB of system memory.&lt;br&gt; &lt;br&gt; P6-B300 instances deliver 2x networking bandwidth, 1.5x GPU memory size, and 1.5x GPU TFLOPS (at FP4, without sparsity) compared to P6-B200 instances, making them well suited to train and deploy large trillion-parameter foundation models (FMs) and large language models (LLMs) with sophisticated techniques. The higher networking and larger memory deliver faster training times and more token throughput for AI workloads.&amp;nbsp;&lt;br&gt; &lt;br&gt; P6-B300 instances are now available in p6-b300.48xlarge size in the following AWS Regions: US West (Oregon), AWS GovCloud (US-East) and US East (N. Virginia). To learn more about P6-B300 instances, visit&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/p6/\"&gt;Amazon EC2 P6 instances.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-p6-b300-us-east",
+      "publishedAt": "2026-05-06T19:24:00.000Z",
+      "updatedAt": "2026-05-06T19:24:00.000Z",
+      "categories": [
+        "Compute",
+        "Artificial Intelligence",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "artificial intelligence",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b11e3a4aa14ea625",
+      "title": "AWS Marketplace now supports programmatic procurement with Agreements API",
+      "description": "Today, AWS Marketplace announces the Agreements API, enabling you to procure AWS Marketplace products and manage agreements programmatically. With this launch, you can generate estimates, accept offers, track charges and entitlements, update purchase orders and manage agreements all within your existing tools and workflows. Combined with the Discovery API, the Agreements API provides an end-to-end procurement journey from product discovery to purchase. You can integrate these APIs into your procurement systems to build custom workflows and streamline operations across your organization. Partne",
+      "descriptionHtml": "&lt;p&gt;Today, AWS Marketplace announces the Agreements API, enabling you to procure AWS Marketplace products and manage agreements programmatically. With this launch, you can generate estimates, accept offers, track charges and entitlements, update purchase orders and manage agreements all within your existing tools and workflows.&lt;/p&gt; \n&lt;p&gt;Combined with the Discovery API, the Agreements API provides an end-to-end procurement journey from product discovery to purchase. You can integrate these APIs into your procurement systems to build custom workflows and streamline operations across your organization. Partners can also use these APIs to build custom storefronts that deliver unified procurement experiences for their customers.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;The AWS Marketplace Agreements APIs is available in the US East (N. Virginia) Region.&lt;/p&gt; \n&lt;p&gt;To get started, configure AWS Identity and Access Management (IAM) permissions for your AWS account and call the API through the AWS SDK. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/APIReference/agreement-apis.html\"&gt;AWS Marketplace Agreement APIs documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-marketplace-agreements-api/",
+      "publishedAt": "2026-05-06T18:00:00.000Z",
+      "updatedAt": "2026-05-06T18:00:00.000Z",
+      "categories": [
+        "AWS Marketplace",
+        "Partner Network"
+      ],
+      "services": [],
+      "tags": [
+        "aws marketplace",
+        "partner network"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f72d2f17875bf346",
+      "title": "Amazon Neptune now supports 1-click connect with CloudShell",
+      "description": "Amazon Neptune now offers 1-click connect capability, enabling you to quickly connect to Neptune Database and Neptune Analytics using CloudShell. Previously, connecting to Neptune resources required manual configuration network settings and access permissions, taking time from database administrators, developers, and data analysts who needed to query their graph databases. With 1-click connect, you can immediately start querying your Neptune resources without manual network configuration, significantly reducing setup time and technical complexity. This streamlined approach works across differe",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/neptune/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Neptune&lt;/a&gt; now offers 1-click connect capability, enabling you to quickly connect to Neptune Database and Neptune Analytics using CloudShell.&lt;/p&gt; \n&lt;p&gt;Previously, connecting to Neptune resources required manual configuration network settings and access permissions, taking time from database administrators, developers, and data analysts who needed to query their graph databases. With 1-click connect, you can immediately start querying your Neptune resources without manual network configuration, significantly reducing setup time and technical complexity. This streamlined approach works across different network configurations, including VPC only resources. 1-click connect is particularly valuable for testing and development workflows, troubleshooting, and for customers new to Neptune who want to quickly explore and experiment with their graph data.&lt;br&gt; &lt;br&gt; 1-click connect is available at no additional charge in all regions where Amazon Neptune is currently offered. To learn more and how to get started, visit &lt;a href=\"https://aws.amazon.com/neptune/\"&gt;https://aws.amazon.com/neptune/&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-neptune-cloudshell/",
+      "publishedAt": "2026-05-06T17:00:00.000Z",
+      "updatedAt": "2026-05-06T17:00:00.000Z",
+      "categories": [
+        "User Experience",
+        "Ease Of Use",
+        "Databases",
+        "Amazon Neptune"
+      ],
+      "services": [
+        "Neptune",
+        "CloudShell",
+        "Connect"
+      ],
+      "tags": [
+        "user experience",
+        "ease of use",
+        "databases",
+        "amazon neptune",
+        "neptune",
+        "cloudshell",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "00c9c701c86fbd3e",
+      "title": "Amazon Bedrock AgentCore Memory announces metadata for long-term memory",
+      "description": "Amazon Bedrock AgentCore Memory now supports metadata on long-term memory (LTM) records, enabling agents to tag, filter, and retrieve memories using structured attributes alongside semantic search. You can define up to ten indexed keys per memory resource - with support for STRING, NUMBER, and STRING_LIST types - and use different operator types to filter retrieval results. Metadata can be attached to events at ingestion time or inferred automatically by the LLM based on extraction instructions you define on the memory resource. During ingestion, the LLM processes all events and determines how",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock&amp;nbsp;AgentCore&amp;nbsp;Memory now supports&amp;nbsp;metadata on long-term memory (LTM) records, enabling agents to tag, filter, and retrieve memories using structured attributes alongside semantic search. You can define up to ten indexed keys&amp;nbsp;per memory resource&amp;nbsp;-&amp;nbsp;with support for STRING, NUMBER, and STRING_LIST types&amp;nbsp;-&amp;nbsp;and use&amp;nbsp;different&amp;nbsp;operator&amp;nbsp;types&amp;nbsp;to filter retrieval results.&lt;/p&gt; \n&lt;p&gt;Metadata can be attached to events at ingestion&amp;nbsp;time or&amp;nbsp;inferred automatically by the LLM based on extraction instructions you define on the memory&amp;nbsp;resource. During ingestion, the LLM processes all events and&amp;nbsp;determines&amp;nbsp;how metadata is applied to the resulting memory records.&lt;/p&gt; \n&lt;p&gt;You define a metadata schema on the memory resource that includes indexed key definitions (key name, type, and optional allowed values) along with extraction instructions that guide the LLM on how to generate metadata from conversation&amp;nbsp;content.&amp;nbsp;With metadata filters on retrieval&amp;nbsp;-&amp;nbsp;agents can retrieve records by structured attributes like ticket number, priority,&amp;nbsp;or date&amp;nbsp;-&amp;nbsp;eliminating&amp;nbsp;irrelevant context and improving response accuracy.&lt;/p&gt; \n&lt;p&gt;To get started, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/long-term-memory-metadata.html\"&gt;Amazon Bedrock AgentCore Memory&amp;nbsp;documentation&lt;/a&gt;. This feature is available today in all AWS Regions where Amazon Bedrock&amp;nbsp;AgentCore&amp;nbsp;Memory is supported.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/agentcore-longterm-memory-metadata",
+      "publishedAt": "2026-05-06T17:00:00.000Z",
+      "updatedAt": "2026-05-06T17:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b2eee38e9a82f946",
+      "title": "AWS Elastic Beanstalk now supports TLS listeners for Network Load Balancers",
+      "description": "AWS Elastic Beanstalk now supports TLS listeners for environments configured with a Network Load Balancer. You can configure a TLS listener with an SSL certificate and security policy, allowing the load balancer to handle secure connections and forward decrypted traffic to your instances. You can configure TLS listeners through the Elastic Beanstalk console or CLI. Previously, Elastic Beanstalk did not support TLS listeners for NLB environments as a managed configuration option. With this launch, you can configure TLS listener settings directly through Elastic Beanstalk. This feature is availa",
+      "descriptionHtml": "&lt;p&gt;AWS Elastic Beanstalk now supports TLS listeners for environments configured with a Network Load Balancer. You can configure a TLS listener with an SSL certificate and security policy, allowing the load balancer to handle secure connections and forward decrypted traffic to your instances. You can configure TLS listeners through the Elastic Beanstalk console or CLI.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Previously, Elastic Beanstalk did not support TLS listeners for NLB environments as a managed configuration option. With this launch, you can configure TLS listener settings directly through Elastic Beanstalk.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS regions that support Elastic Beanstalk and Network Load Balancers.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To get started, see Configuring a Network Load Balancer in the AWS Elastic Beanstalk &lt;a href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environments-cfg-nlb.html\"&gt;Developer Guide&lt;/a&gt;. For more information about SSL certificates and security policies, see the Elastic Load Balancing &lt;a href=\"https://docs.aws.amazon.com/elasticloadbalancing/latest/network/describe-ssl-policies.html#tls-security-policies\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/elastic-beanstalk-tls-support/",
+      "publishedAt": "2026-05-06T16:00:00.000Z",
+      "updatedAt": "2026-05-06T16:00:00.000Z",
+      "categories": [
+        "AWS Elastic Beanstalk",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "Elastic Beanstalk"
+      ],
+      "tags": [
+        "aws elastic beanstalk",
+        "aws govcloud us",
+        "elastic beanstalk"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "cae3739b1b4d2dd5",
+      "title": "AWS Elemental MediaTailor now supports ad trickplay personalization and compact DASH manifest optimization via dynamic transcoding",
+      "description": "AWS Elemental MediaTailor now enhances streaming ad personalization with support for trickplay features in HLS and DASH formats. This update also introduces compact DASH manifests for more efficient manifest delivery. Previously, these capabilities required a custom transcode profile. They are now supported natively through dynamic transcoding, eliminating that requirement. MediaTailor provides server-side ad insertion (SSAI) to personalize ads in video streams. As streaming platforms increasingly support trickplay navigation, ensuring that advertisements are properly transcoded with trickplay",
+      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaTailor now enhances streaming ad personalization with support for trickplay features in HLS and DASH formats. This update also introduces compact DASH manifests for more efficient manifest delivery. Previously, these capabilities required a custom transcode profile. They are now supported natively through dynamic transcoding, eliminating that requirement.&lt;/p&gt; \n&lt;p&gt;MediaTailor provides server-side ad insertion (SSAI) to personalize ads in video streams. As streaming platforms increasingly support trickplay navigation, ensuring that advertisements are properly transcoded with trickplay variants and associated image streams is critical for a seamless viewer experience. These variants must match the specifications of the origin content. With this update:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Ad Trickplay Personalization: Trickplay personalization matching is now fully supported for both HLS and DASH workflows via dynamic transcoding. MediaTailor ensures that advertisements include trickplay variants and associated image streams that align with origin content specifications. This delivers a consistent experience when viewers fast-forward or rewind through content. A custom transcode profile is no longer required to enable this capability.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Compact DASH Manifest Support: MediaTailor now supports compact DASH manifests via dynamic transcoding. This optimization elevates the SegmentTemplate element from individual Representation elements to the AdaptationSet level, reducing overall manifest size. Thise results ins more efficient manifest delivery and improved compatibility with players and workflows that rely on compact manifest structures. A custom transcode profile is no longer required to enable this capability.&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Elemental MediaTailor’s ad trickplay personalization and compact DASH manifest optimization are available in all AWS Regions where MediaTailor is available, including US East (Ohio), US East (N. Virginia), US West (Oregon); Africa (Cape Town); Asia Pacific (Hyderabad, Malaysia, Melbourne, Mumbai, Osaka, Seoul, Singapore, Sydney, Tokyo); Canada (Central); Europe (Frankfurt, Ireland, London, Paris, Stockholm); Middle East (UAE); and South America (São Paulo). There is no additional cost for this feature. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/mediatailor/latest/ug/what-is.html\"&gt;AWS Elemental MediaTailor User Guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/mediatail-ad-trickplay-and-compact-dash-manifest-optimization",
+      "publishedAt": "2026-05-06T14:24:00.000Z",
+      "updatedAt": "2026-05-06T14:24:00.000Z",
+      "categories": [
+        "AWS Elemental Mediatailor",
+        "Media Services"
+      ],
+      "services": [
+        "Elemental",
+        "MediaTailor"
+      ],
+      "tags": [
+        "aws elemental mediatailor",
+        "media services",
+        "elemental",
+        "mediatailor"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "bacc1bcb412bc554",
+      "title": "Announcing Agent Toolkit for AWS — help AI coding agents build effectively on AWS",
+      "description": "Today, AWS is launching the Agent Toolkit for AWS, a production-ready suite of tools and guidance that helps AI coding agents build on AWS with fewer errors, lower token costs, and enterprise-grade security controls. The Agent Toolkit for AWS is the successor to the MCP servers, plugins, and skills available on AWS Labs . Developers using coding agents to build on AWS often find that their agents struggle with complex multi-service workflows, rely on outdated knowledge of AWS services, and are difficult to govern — leading to wasted time, wasted tokens, and a reluctance to deploy agents in pro",
+      "descriptionHtml": "&lt;p&gt;Today, AWS is launching the Agent Toolkit for AWS, a production-ready suite of tools and guidance that helps AI coding agents build on AWS with fewer errors, lower token costs, and enterprise-grade security controls. The Agent Toolkit for AWS is the successor to the MCP servers, plugins, and skills available on &lt;a href=\"https://github.com/awslabs\"&gt;AWS Labs&lt;/a&gt;.&lt;br&gt; &lt;br&gt; Developers using coding agents to build on AWS often find that their agents struggle with complex multi-service workflows, rely on outdated knowledge of AWS services, and are difficult to govern — leading to wasted time, wasted tokens, and a reluctance to deploy agents in production. The Agent Toolkit for AWS addresses these challenges through agent skills, a fully-managed MCP server, and easy-to-install plugins. Agent skills give agents validated, up-to-date procedures for tasks like authoring CloudFormation templates, configuring data pipelines, and building serverless applications — so agents follow best practices rather than improvising from general knowledge. Today, we are launching more than 40 skills across infrastructure-as-code, storage, analytics, serverless, containers, and AI services, and we plan to release more in the coming weeks: including for databases, networking, and IAM. Each skill has been rigorously evaluated to ensure that it helps agents complete tasks more accurately and reliably. The AWS MCP Server, now generally available, is a fully-managed MCP server that allows coding agents to interact with any AWS service. It offers IAM-based guardrails on which actions agents can perform, Amazon CloudWatch and AWS CloudTrail observability, and sandboxed code execution for multi-step operations. The AWS MCP server also equips agents with tools to efficiently search and retrieve documentation, so they always have the latest knowledge and guidance. Agent plugins bundle the AWS MCP server and curated sets of skills into a single install. Today, we are releasing three agent plugins: AWS Core, to help application developers build and manage full-stack applications on AWS, AWS Data Analytics, which helps data analysts and business intelligence engineers create data pipelines and load and query data, and AWS Agents, which helps AI engineers build production-ready agents using Amazon Bedrock AgentCore.&lt;br&gt; &lt;br&gt; The MCP servers, skills, and plugins available on AWS Labs will continue to be available, and over time the best of AWS Labs will be transitioned to the Agent Toolkit for AWS to ensure that customers can access the broadest array of tooling and guidance for their agents. The Agent Toolkit for AWS is available at no additional charge; you pay only for the AWS resources your agents use. To learn more, see &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\"&gt;Agent Toolkit for AWS&lt;/a&gt;. To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/quick-start.html\"&gt;Quick Start guide&lt;/a&gt; or browse the available skills and plugins on &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws\"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/",
+      "publishedAt": "2026-05-06T12:00:00.000Z",
+      "updatedAt": "2026-05-06T12:00:00.000Z",
+      "categories": [
+        "AWS Developer Tools",
+        "Developer Tools"
+      ],
+      "services": [],
+      "tags": [
+        "aws developer tools",
+        "developer tools"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "484f6806f11473b7",
+      "title": "The AWS MCP Server is now generally available",
+      "description": "Today, AWS announces the general availability of the AWS MCP Server, a managed server that gives AI coding agents secure, auditable access to AWS services through the Model Context Protocol (MCP). The AWS MCP Server is a core component of the Agent Toolkit for AWS , which helps coding agents build on AWS more effectively. With the AWS MCP Server, organizations can let coding agents interact with AWS while maintaining visibility and control through IAM-based guardrails, Amazon CloudWatch metrics, and AWS CloudTrail logging. Since the preview launch at re:Invent 2025, the AWS MCP Server has adde",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of the AWS MCP Server, a managed server that gives AI coding agents secure, auditable access to AWS services through the Model Context Protocol (MCP). The AWS MCP Server is a core component of the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\"&gt;Agent Toolkit for AWS&lt;/a&gt;, which helps coding agents build on AWS more effectively. With the AWS MCP Server, organizations can let coding agents interact with AWS while maintaining visibility and control through IAM-based guardrails, Amazon CloudWatch metrics, and AWS CloudTrail logging.&lt;/p&gt; \n&lt;p&gt;Since the preview launch at re:Invent 2025, the AWS MCP Server has added several capabilities. Agents can now call any AWS API through a single tool, including operations that require file uploads or long-running execution. Sandboxed script execution lets agents run Python code against AWS services for multi-step operations, without access to your local filesystem or shell tools. Agent skills replace agent SOPs with a more flexible format: agents discover and load curated guidance on demand, keeping context window usage low while providing tested procedures for complex tasks. Additionally, documentation search and skill discovery no longer require AWS credentials, removing a common barrier to getting started.&lt;/p&gt; \n&lt;p&gt;The AWS MCP Server is available at no additional charge; you pay only for the AWS resources your agents use. To learn more, see &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\"&gt;Agent Toolkit for AWS&lt;/a&gt;. To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/quick-start.html\"&gt;Agent Toolkit for AWS Quick Start guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
+      "publishedAt": "2026-05-06T12:00:00.000Z",
+      "updatedAt": "2026-05-06T12:00:00.000Z",
+      "categories": [
+        "Developer Tools",
+        "AWS Developer Tools"
+      ],
+      "services": [],
+      "tags": [
+        "developer tools",
+        "aws developer tools"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5a781cf9e0ad0ab1",
+      "title": "AWS Transfer Family web apps are now available in the AWS Asia Pacific (New Zealand) Region",
+      "description": "Customers in the Asia Pacific (New Zealand) Region can now use AWS Transfer Family web apps to provide their workforce with a fully managed, branded portal for browsing, uploading, and downloading data in Amazon S3 through a web browser. AWS Transfer Family web apps provide a simple interface for accessing your data in Amazon S3 through a web browser. With Transfer Family web apps, you can provide your workforce with a fully managed, branded, and secure portal for your end users to browse, upload, and download data in S3. To learn more about AWS Transfer Family web apps, visit the Transfer Fam",
+      "descriptionHtml": "&lt;p&gt;Customers in the Asia Pacific (New Zealand) Region can now use AWS Transfer Family web apps to provide their workforce with a fully managed, branded portal for browsing, uploading, and downloading data in Amazon S3 through a web browser.&lt;/p&gt; \n&lt;p&gt;AWS Transfer Family web apps provide a simple interface for accessing your data&amp;nbsp;in&amp;nbsp;Amazon S3 through a web browser. With Transfer Family web apps, you can provide your workforce with a fully managed, branded, and secure portal for your end users to browse, upload, and download data in S3.&lt;/p&gt; \n&lt;p&gt;To learn more about AWS Transfer Family web apps, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/transfer/latest/userguide/web-app.html\"&gt;Transfer Family User Guide&lt;/a&gt;. For the full list of supported regions, visit the&amp;nbsp;&lt;a href=\"https://builder.aws.com/build/capabilities\"&gt;AWS Capabilities tool&lt;/a&gt;&amp;nbsp;in Builder&amp;nbsp;Center.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-transfer-family-asia-pacific/",
+      "publishedAt": "2026-05-06T10:00:00.000Z",
+      "updatedAt": "2026-05-06T10:00:00.000Z",
+      "categories": [
+        "Migration",
+        "AWS Transfer Family",
+        "Storage"
+      ],
+      "services": [
+        "Transfer Family"
+      ],
+      "tags": [
+        "migration",
+        "aws transfer family",
+        "storage",
+        "transfer family"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7d27880c8f0caf9c",
+      "title": "AWS Directory Service expands directory security settings with STIG-aligned controls for Managed AD",
+      "description": "AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) now has expanded its security settings to include STIG-aligned configurations for high-impact security areas. These new security settings help customers meet their organizations requirements for directory-level security and compliance configurations. For regulated or security-focused customers, these settings align with the Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIG) for Windows Server and Active Directory . These expanded STIG-aligned security settings are available to",
+      "descriptionHtml": "&lt;p&gt;&lt;br&gt; AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) now has expanded its security settings to include STIG-aligned configurations for high-impact security areas. These new security settings help customers meet their organizations requirements for directory-level security and compliance configurations. For regulated or security-focused customers, these settings align with the Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIG) for &lt;a href=\"https://stigviewer.com/stigs/microsoft_windows_server_2019\"&gt;Windows Server&lt;/a&gt; and &lt;a href=\"https://stigviewer.com/stigs/active_directory_domain\"&gt;Active Directory&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;These expanded STIG-aligned security settings are available today through a self-service interface, both programmatically and via the AWS Management Console. Security and Identity Management professionals can now ensure consistent configuration across multiple managed directories by declaring their desired configuration and letting AWS implement and persist these configurations. When expanding to additional regions or scaling out with additional domain controllers, AWS Managed Microsoft AD automatically applies these settings to all new instances.&lt;br&gt; &lt;br&gt; For information about AWS Regions where AWS Directory Service is available, see the &lt;a href=\"https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.html\"&gt;AWS Region table&lt;/a&gt;. To learn more about configuring these security settings, see the &lt;a href=\"https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_directory_settings.html\"&gt;AWS Directory Service Administration Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/add-security-settings-stig-aws-microsoft-ad/",
+      "publishedAt": "2026-05-06T07:00:00.000Z",
+      "updatedAt": "2026-05-06T07:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "AWS Directory Service"
+      ],
+      "services": [],
+      "tags": [
+        "security identity and compliance",
+        "aws directory service"
+      ],
+      "isNew": true
+    },
     {
       "id": "629048b2531fa9ee",
       "title": "AWS Elemental MediaTailor now provides automatic secure server-to-server integration with Google's ad platforms",
@@ -399,6 +635,30 @@
         "aws govcloud us",
         "workspaces",
         "appstream"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6b72ac0cd6aa63ee",
+      "title": "AWS Console Mobile App adds interactive graphs, AI log ssummaries, and natural language logs search to CloudWatch Alarms",
+      "description": "Amazon Web Services (AWS) is announcing new CloudWatch Alarms capabilities in the AWS Console Mobile Application. You can now investigate alarms and move from notification to root cause faster with interactive graphs, AI-generated logs summaries, natural language logs search, and streamlined access to related metrics and resources. When a CloudWatch Alarm triggers, engineers often need to quickly understand what went wrong. Previously, investigating an alarm on the mobile app required switching between multiple screens and services to view metrics, access logs, and identify the root cause. Thi",
+      "descriptionHtml": "&lt;p&gt;Amazon Web Services (AWS) is announcing new CloudWatch Alarms capabilities in the AWS Console Mobile Application. You can now investigate alarms and move from notification to root cause faster with interactive graphs, AI-generated logs summaries, natural language logs search, and streamlined access to related metrics and resources.&lt;/p&gt; \n&lt;p&gt;When a CloudWatch Alarm triggers, engineers often need to quickly understand what went wrong. Previously, investigating an alarm on the mobile app required switching between multiple screens and services to view metrics, access logs, and identify the root cause. This update brings these capabilities together in a single view, reducing the time from notification to resolution.&lt;/p&gt; \n&lt;p&gt;CloudWatch Alarms now include interactive graphs that let you visualize the metric that triggered the alarm, zoom in on specific time windows, and explore the data to quickly identify anomalies. You can access related logs and review an AI-generated summary that highlights key contributing factors. To refine log search results, you can type queries, use voice input, or select pre-saved Logs Insights queries using natural language. A time selector lets you view custom time ranges and adjust time zones to match your operational needs. Related metrics and resources are conveniently displayed alongside the alarm, facilitating a more thorough investigation.&lt;/p&gt; \n&lt;p&gt;To get started, download the AWS Console Mobile App from the&amp;nbsp;&lt;a href=\"https://apps.apple.com/us/app/aws-console/id580990573\"&gt;Apple App Store&lt;/a&gt;&amp;nbsp;or&amp;nbsp;&lt;a href=\"https://play.google.com/store/apps/details?id=com.amazon.aws.console.mobile\"&gt;Google Play Store&lt;/a&gt;, then navigate to CloudWatch in the app to investigate Alarms. The AWS Console Mobile App is available in all AWS Commercial Regions at no additional cost. For more information, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/console/mobile/\"&gt;AWS Console Mobile Application product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-console-mobile-app/",
+      "publishedAt": "2026-05-04T17:49:00.000Z",
+      "updatedAt": "2026-05-04T17:49:00.000Z",
+      "categories": [
+        "Amazon Cloudwatch Logs",
+        "Amazon Cloudwatch",
+        "AWS Management Console"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "amazon cloudwatch logs",
+        "amazon cloudwatch",
+        "aws management console",
+        "cloudwatch"
       ],
       "isNew": true
     },
@@ -1305,7 +1565,7 @@
         "amazon rds for mysql",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "51aeb52a9eb2e94f",
@@ -1327,7 +1587,7 @@
         "amazon documentdb",
         "documentdb"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7fa57850c61c7177",
@@ -1349,7 +1609,7 @@
         "networking and content delivery",
         "cloudfront"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "dd3578423121c98e",
@@ -1375,7 +1635,7 @@
         "artificial intelligence",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "98791add23021c0f",
@@ -1401,7 +1661,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8f198aa71a1276a6",
@@ -1427,7 +1687,7 @@
         "ec2",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5e890b21265fea0f",
@@ -1447,7 +1707,7 @@
         "aws govcloud us",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "82228cfb3b5d5088",
@@ -1469,7 +1729,7 @@
         "amazon quicksight",
         "quicksight"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "abf5312566e7d0ba",
