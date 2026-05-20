@@ -1,7 +1,112 @@
 {
-  "lastUpdated": "2026-05-19T09:16:33.974Z",
+  "lastUpdated": "2026-05-20T09:14:16.782Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "d18cd3ec7291c392",
+      "title": "Amazon SageMaker HyperPod now supports data capture for inference workloads",
+      "description": "Amazon SageMaker HyperPod now supports data capture for inference workloads, enabling customers to record inference request and response payloads for model monitoring, compliance, debugging, and offline analysis. Organizations deploying generative AI and machine learning models on HyperPod need systematic visibility into the inputs flowing into their models and the outputs returned to clients to detect model drift, satisfy regulatory audit requirements, debug production issues, and build ground-truth datasets for fine-tuning. Previously, customers had to either accept limited operational visib",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports data capture for inference workloads, enabling customers to record inference request and response payloads for model monitoring, compliance, debugging, and offline analysis. Organizations deploying generative AI and machine learning models on HyperPod need systematic visibility into the inputs flowing into their models and the outputs returned to clients to detect model drift, satisfy regulatory audit requirements, debug production issues, and build ground-truth datasets for fine-tuning. Previously, customers had to either accept limited operational visibility into their inference workloads or build expensive custom logging pipelines outside the HyperPod Inference Operator.&lt;br&gt; &lt;br&gt; With data capture, you can choose to record inference traffic at the SageMaker endpoint, at the load balancer, or at the model pod, depending on the level of visibility you need, and combine these options for layered observability. Captured data is delivered asynchronously to your Amazon S3 bucket and supports configurable sampling and encryption with customer-managed AWS KMS keys, so you can balance coverage with cost while keeping sensitive data protected. Data capture is designed to never block inference, ensuring production availability is preserved. You can enable data capture by configuring it on your inference endpoint when deploying models through the HyperPod Inference Operator or with SageMaker JumpStart.&lt;br&gt; &lt;br&gt; This feature is available for SageMaker HyperPod clusters using the EKS orchestrator in all AWS Regions where Amazon SageMaker HyperPod is supported. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-model-deployment-data-capture.html\"&gt;Data capture for inference on HyperPod&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-sagemaker-hyperpod-data-capture",
+      "publishedAt": "2026-05-20T01:08:00.000Z",
+      "updatedAt": "2026-05-20T01:08:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1a92a7ece4654894",
+      "title": "Amazon MWAA now supports Apache Airflow 3.2",
+      "description": "Amazon Managed Workflows for Apache Airflow (MWAA) now supports Apache Airflow version 3.2, the latest major release of the popular open-source workflow orchestration framework. Amazon MWAA is a managed service that lets you run Apache Airflow at scale without managing the underlying infrastructure. This release brings new data-aware scheduling capabilities and developer productivity improvements to teams building and operating data pipelines on AWS. With Apache Airflow 3.2, you can now use asset partitioning to trigger downstream DAGs based on specific slices of data, such as a date-partition",
+      "descriptionHtml": "&lt;p&gt;Amazon Managed Workflows for Apache Airflow (MWAA) now supports Apache Airflow version 3.2, the latest major release of the popular open-source workflow orchestration framework. Amazon MWAA is a managed service that lets you run Apache Airflow at scale without managing the underlying infrastructure. This release brings new data-aware scheduling capabilities and developer productivity improvements to teams building and operating data pipelines on AWS.&lt;/p&gt; \n&lt;p&gt;With Apache Airflow 3.2, you can now use asset partitioning to trigger downstream DAGs based on specific slices of data, such as a date-partitioned S3 path, rather than an entire asset, giving data engineering teams more precise control over pipeline execution. This release also expands Human-in-the-Loop (HITL) capabilities with a full audit history view for approvals, HITL support for the AgenticOperator, and synchronous callback support for Deadline Alerts. Additional improvements include Grid View virtualization for faster rendering of large DAGs, full XCom management from the Airflow UI, and async callable support in PythonOperator..&lt;/p&gt; \n&lt;p&gt;You can launch a new Apache Airflow 3.2 environment on Amazon MWAA, or upgrade from 2.11 or later, with just a few clicks in the&amp;nbsp;&lt;a href=\"https://console.aws.amazon.com/mwaa/home\"&gt;AWS Management Console&lt;/a&gt;&amp;nbsp;in all currently supported&amp;nbsp;&lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Amazon MWAA regions&lt;/a&gt;. To learn more about Apache Airflow 3.2 visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html\"&gt;Amazon MWAA documentation&lt;/a&gt;, and the&amp;nbsp;&lt;a href=\"https://airflow.apache.org/docs/apache-airflow/stable/release_notes.html#airflow-3-2-0-2026-04-07\"&gt;Apache Airflow 3.2 change log&lt;/a&gt;&amp;nbsp;in the Apache Airflow documentation.&lt;br&gt; &lt;br&gt; &lt;i&gt;Apache, Apache Airflow, and Airflow are either registered trademarks or trademarks of the&amp;nbsp;&lt;a href=\"https://www.apache.org/\"&gt;Apache Software Foundation&lt;/a&gt;&amp;nbsp;in the United States and/or other countries.&lt;/i&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-mwaa-now-supports-apache-airflow-3-2/",
+      "publishedAt": "2026-05-19T20:00:00.000Z",
+      "updatedAt": "2026-05-19T20:00:00.000Z",
+      "categories": [],
+      "services": [
+        "MWAA"
+      ],
+      "tags": [
+        "mwaa"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0f54f79166802c8d",
+      "title": "Amazon Inspector is now available in the AWS Asia Pacific (Taipei) Region",
+      "description": "Today, AWS announces the availability of Amazon Inspector in the AWS Asia Pacific (Taipei) Region. Amazon Inspector is an automated vulnerability management service that continually scans AWS workloads including Amazon EC2 instances, container images, and AWS Lambda functions for software vulnerabilities and unintended network exposure across your AWS Organization. With this expansion, Amazon Inspector extends its security coverage to AWS Asia Pacific (Taipei) Region, designed to help customers automatically discover workloads, conduct continuous vulnerability assessments, and receive actionab",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the availability of Amazon Inspector in the AWS Asia Pacific (Taipei) Region. Amazon Inspector is an automated vulnerability management service that continually scans AWS workloads including Amazon EC2 instances, container images, and AWS Lambda functions for software vulnerabilities and unintended network exposure across your AWS Organization.&amp;nbsp;&lt;br&gt; &lt;br&gt; With this expansion, Amazon Inspector extends its security coverage to AWS Asia Pacific (Taipei) Region, designed to help customers automatically discover workloads, conduct continuous vulnerability assessments, and receive actionable security findings. The service is designed to detect newly launched Amazon EC2 instances, Lambda functions, and eligible container images pushed to Amazon Elastic Container Registry (ECR) and scan them for software vulnerabilities and unintended network exposure.&lt;br&gt; &lt;br&gt; All accounts new to Amazon Inspector are eligible for a 15-day free trial to evaluate the service and estimate its cost. During the trial, all eligible Amazon EC2 instances, AWS Lambda functions, and container images pushed to Amazon ECR are continually scanned at no cost. After the trial period, you will be charged based on public pricing for Amazon Inspector. Visit the Amazon Inspector &lt;a href=\"https://aws.amazon.com/inspector/pricing/\"&gt;pricing page&lt;/a&gt; for more details.&lt;br&gt; &lt;br&gt; To get started with &lt;a href=\"https://aws.amazon.com/inspector/\"&gt;Amazon Inspector&lt;/a&gt; visit our documentation or begin your &lt;a href=\"https://aws.amazon.com/inspector/pricing/\"&gt;free trial today&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-inspector-taipei/",
+      "publishedAt": "2026-05-19T17:00:00.000Z",
+      "updatedAt": "2026-05-19T17:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Inspector"
+      ],
+      "tags": [
+        "inspector"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f5080e20cc4c2983",
+      "title": "Amazon ECS introduces pause and continue controls for service deployments",
+      "description": "Amazon Elastic Container Service (Amazon ECS) now enables you to pause service deployments at critical stages during deployment progression and continue deployments when ready. You can use these pause points to introduce manual decision points and interactive controls into your deployments for scenarios such as manual approval workflows, operational checks, integration tests, or custom automation, while continuing to use native Amazon ECS deployment strategies with managed traffic shifting, bake times, fast rollbacks, CloudWatch alarms, and deployment circuit breaker. With this launch, you can",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\"&gt;Amazon Elastic Container Service&lt;/a&gt; (Amazon ECS) now enables you to pause service deployments at critical stages during deployment progression and continue deployments when ready. You can use these pause points to introduce manual decision points and interactive controls into your deployments for scenarios such as manual approval workflows, operational checks, integration tests, or custom automation, while continuing to use native Amazon ECS deployment strategies with managed traffic shifting, bake times, fast rollbacks, CloudWatch alarms, and deployment circuit breaker.&lt;/p&gt; \n&lt;p&gt;With this launch, you can configure a new PAUSE deployment lifecycle hook as part of your Amazon ECS service deployment configuration. When a deployment reaches a configured pause point, Amazon ECS pauses deployment progression and emits Amazon EventBridge events that you can use to trigger automation workflows, approval systems, or external validation processes. You can then continue or roll back the deployment using the new ContinueServiceDeployment API. With pause hooks, you can configure timeout durations up to 14 days and timeout actions to automatically continue or roll back the deployment if no action is received.&lt;/p&gt; \n&lt;p&gt;You can configure pause hooks for rolling, blue/green, linear, and canary deployment strategies using the Amazon ECS Console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS CDK, and Terraform. You can use the ContinueServiceDeployment API through the Amazon ECS Console, AWS CLI, and AWS SDKs. This feature is available in all AWS commercial and AWS GovCloud (US) &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\"&gt;Regions&lt;/a&gt;. To learn more, see our documentation on &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/pause-lifecycle-hooks.html\" target=\"_blank\"&gt;pause hooks for service deployments&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/continue-service-deployment.html\" target=\"_blank\"&gt;continuing service deployments&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ecs-pause-continue-deployments/",
+      "publishedAt": "2026-05-19T17:00:00.000Z",
+      "updatedAt": "2026-05-19T17:00:00.000Z",
+      "categories": [
+        "Serverless",
+        "Compute",
+        "AWS Govcloud Us",
+        "AWS Fargate",
+        "Containers",
+        "Amazon Ecs"
+      ],
+      "services": [
+        "ECS",
+        "Fargate"
+      ],
+      "tags": [
+        "serverless",
+        "compute",
+        "aws govcloud us",
+        "aws fargate",
+        "containers",
+        "amazon ecs",
+        "ecs",
+        "fargate"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d5be2dc756ccc9fb",
+      "title": "Amazon Managed Grafana now supports dual-stack connectivity (IPv6 and IPv4)",
+      "description": "Amazon Managed Grafana now supports dual-stack connectivity, enabling workspaces to communicate over both Internet Protocol version 4 (IPv4) and Internet Protocol version 6 (IPv6). Dual-stack mode is available for workspaces running Grafana version 10.4 or later. With dual-stack support, customers can simplify their network stack by eliminating the need to manage overlapping address spaces in their VPCs. Customers migrating to IPv6 can connect to their Grafana workspaces over IPv6 while maintaining IPv4 compatibility, and those not yet on IPv6 can continue using IPv4-only connections. This is ",
+      "descriptionHtml": "&lt;p&gt;Amazon Managed Grafana now supports dual-stack connectivity, enabling workspaces to communicate over both Internet Protocol version 4 (IPv4) and Internet Protocol version 6 (IPv6). Dual-stack mode is available for&amp;nbsp;workspaces&amp;nbsp;running Grafana version 10.4 or later.&lt;/p&gt; \n&lt;p&gt;With dual-stack support, customers can simplify their network stack by&amp;nbsp;eliminating&amp;nbsp;the need to manage overlapping address spaces in their VPCs. Customers migrating to IPv6 can connect to their Grafana workspaces over IPv6 while maintaining IPv4 compatibility, and those not yet on IPv6 can continue using IPv4-only connections. This is especially beneficial as the continued growth of the internet exhausts&amp;nbsp;available&amp;nbsp;IPv4 addresses.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Support for&amp;nbsp;dual-stack connectivity&amp;nbsp;on Amazon Managed Grafana is available in all&amp;nbsp;&lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;regions&lt;/a&gt;&amp;nbsp;where the service is&amp;nbsp;generally available.&amp;nbsp;To get started, update your workspace configuration via the Amazon Managed Grafana console, API, or CLI. For more information, see&amp;nbsp;the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/AMG-configure-workspace.html\"&gt;Amazon Managed Grafana User Guide&lt;/a&gt;.&amp;nbsp;To learn more about best practices for configuring IPv6 in your environment, visit the whitepaper on&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/internet-protocol-version-6.html\"&gt;IPv6 in AWS&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-managed-grafana-ipv6/",
+      "publishedAt": "2026-05-19T15:00:00.000Z",
+      "updatedAt": "2026-05-19T15:00:00.000Z",
+      "categories": [
+        "Management And Governance",
+        "Amazon Managed Service For Grafana"
+      ],
+      "services": [],
+      "tags": [
+        "management and governance",
+        "amazon managed service for grafana"
+      ],
+      "isNew": true
+    },
     {
       "id": "e267c7bec31f330a",
       "title": "AWS Management Console now displays AWS Local Zones in the Region Selector",
@@ -166,6 +271,28 @@
         "artificial intelligence",
         "compute",
         "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ff85b715a13d8be9",
+      "title": "Introducing pre-fetching and IAM role assumption for AWS Secrets Manager Agent",
+      "description": "AWS Secrets Manager Agent now supports two new capabilities: pre-fetching secrets at startup and assuming an IAM role to retrieve secrets. With pre-fetching, you can specify a list of secrets or a tag value to retrieve and cache at agent startup, reducing application startup latency and optimizing cost through the BatchGetSecretValue API. With IAM role assumption, you can pass a role ARN in your pre-fetch configuration or HTTP requests for secret retrieval. The agent assumes the specified role to retrieve secrets, enabling cross-account secret retrieval by assuming a role in a different accoun",
+      "descriptionHtml": "&lt;p&gt;AWS Secrets Manager Agent now supports two new capabilities: pre-fetching secrets at startup and assuming an IAM role to retrieve secrets. With pre-fetching, you can specify a list of secrets or a tag value to retrieve and cache at agent&amp;nbsp;startup, reducing application startup latency and&amp;nbsp;optimizing&amp;nbsp;cost through the&amp;nbsp;BatchGetSecretValue&amp;nbsp;API. With IAM role assumption, you can pass a role ARN in your pre-fetch configuration or HTTP requests&amp;nbsp;for secret retrieval. The agent assumes the specified role to retrieve secrets, enabling cross-account secret retrieval by assuming a role in a different account.&lt;/p&gt; \n&lt;p&gt;Together, these enhancements strengthen your security posture through role-based secret access and reduce operational overhead by&amp;nbsp;eliminating&amp;nbsp;custom pre-loading logic. For example, a microservice that requires 20 secrets at startup can now pre-fetch them in a single batch operation, cutting startup latency by avoiding sequential&amp;nbsp;GetSecretValue&amp;nbsp;calls. IAM role assumption also simplifies multi-account architectures by enabling you to specify a different IAM role per secret.&lt;/p&gt; \n&lt;p&gt;AWS Secrets Manager Agent with pre-fetching and IAM role assumption is supported in all AWS Regions where AWS Secrets Manager is offered. To learn more, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/secretsmanager/latest/userguide/secrets-manager-agent.html\"&gt;AWS Secrets Manager Agent documentation&lt;/a&gt;.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/secrets-manager-agent-prefetch-and-role-assumption/",
+      "publishedAt": "2026-05-18T07:00:00.000Z",
+      "updatedAt": "2026-05-18T07:00:00.000Z",
+      "categories": [
+        "AWS Secrets Manager"
+      ],
+      "services": [
+        "IAM",
+        "Secrets Manager"
+      ],
+      "tags": [
+        "aws secrets manager",
+        "iam",
+        "secrets manager"
       ],
       "isNew": true
     },
@@ -858,7 +985,7 @@
         "amazon rds",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "768cea8bfbf0afdf",
@@ -880,7 +1007,7 @@
         "aws lambda",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ec1556af8ee6bb00",
@@ -904,7 +1031,7 @@
         "lambda",
         "eventbridge"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "bcc5fccee4dcbe75",
@@ -917,7 +1044,7 @@
       "categories": [],
       "services": [],
       "tags": [],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fec5f342ef5626f6",
@@ -939,7 +1066,7 @@
         "artificial intelligence",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "774c42af9d4eb7e7",
@@ -963,7 +1090,7 @@
         "containers",
         "eks"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ba5175e8f77f9841",
@@ -985,7 +1112,7 @@
         "amazon redshift",
         "redshift"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a3be84ccd9c79b56",
@@ -1007,7 +1134,7 @@
         "amazon cloudfront",
         "cloudfront"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "dbcca5c147ae8e80",
@@ -1033,7 +1160,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9f853d1b20a903fd",
@@ -10770,140 +10897,6 @@
         "compute",
         "aws lambda",
         "lambda"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "e62c9481f8d71b77",
-      "title": "AWS Direct Connect announces new location in Sydney, Australia",
-      "description": "Today, AWS announced the opening of a new AWS Direct Connect location at Equinix SY5 in Sydney, Australia. You can now establish private, direct network access to all public AWS Regions (except those in China), AWS GovCloud Regions, and AWS Local Zones from this location. This site is the fourth AWS Direct Connect location in Sydney and the tenth AWS Direct Connect location within Australia. This Direct Connect location offers dedicated 10 Gbps and 100 Gbps connections with MACsec encryption available. The Direct Connect service enables you to establish a private, physical network connection b",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announced the opening of a new &lt;a href=\"https://aws.amazon.com/directconnect\"&gt;AWS Direct Connect&lt;/a&gt; location at Equinix SY5 in Sydney, Australia. You can now establish private, direct network access to all public AWS Regions (except those in China), AWS GovCloud Regions, and &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/\"&gt;AWS Local Zones&lt;/a&gt; from this location.&amp;nbsp;This site is the fourth AWS Direct Connect location in Sydney and the tenth AWS Direct Connect location within Australia. This Direct Connect location offers dedicated 10 Gbps and 100 Gbps connections with MACsec encryption available.&lt;br&gt; &lt;br&gt; The Direct Connect service enables you to establish a private, physical network connection between AWS and your data center, office, or colocation environment. These private connections can provide a more consistent network experience than those made over the public internet.&lt;br&gt; &lt;br&gt; For more information on the over 150 Direct Connect locations worldwide, visit the &lt;a href=\"https://aws.amazon.com/directconnect/locations/\"&gt;locations&lt;/a&gt; section of the Direct Connect &lt;a href=\"https://aws.amazon.com/directconnect\"&gt;product detail pages&lt;/a&gt;. Or, visit our &lt;a href=\"https://aws.amazon.com/directconnect/getting-started/\"&gt;getting started&lt;/a&gt; page to learn more about how to purchase and deploy Direct Connect.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-direct-connect-sydney-sy5/",
-      "publishedAt": "2026-03-19T16:00:00.000Z",
-      "updatedAt": "2026-03-19T16:00:00.000Z",
-      "categories": [
-        "AWS Direct Connect",
-        "Networking And Content Delivery"
-      ],
-      "services": [
-        "Direct Connect",
-        "Connect"
-      ],
-      "tags": [
-        "aws direct connect",
-        "networking and content delivery",
-        "direct connect",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "62092204563f89c1",
-      "title": "Amazon RDS Custom for SQL Server adds ability to view and schedule new operating system updates",
-      "description": "Amazon RDS Custom for SQL Server now provides customers with ability to view and schedule new operating system (OS) updates for RDS provided engine versions (RPEV). With RPEV, RDS Custom provides a SQL Server version pre-installed on an Amazon Machine Image (AMI). When new operating system updates are available for RPEV, customers can now view upcoming updates, apply them immediately, or schedule them for application in the next maintenance window using RDS Custom APIs. To view available OS updates, customers can use the describe-pending-maintenance-actions API, or subscribe to RDS-EVENT-0230 ",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/custom/\" target=\"_blank\"&gt;Amazon RDS Custom&lt;/a&gt; for SQL Server now provides customers with ability to view and schedule new operating system (OS) updates for RDS provided engine versions (RPEV). With RPEV, RDS Custom provides a SQL Server version pre-installed on an Amazon Machine Image (AMI). When new operating system updates are available for RPEV, customers can now view upcoming updates, apply them immediately, or schedule them for application in the next maintenance window using RDS Custom APIs.&lt;br&gt; &lt;br&gt; To view available OS updates, customers can use the &lt;a href=\"https://docs.aws.amazon.com/cli/latest/reference/rds/describe-pending-maintenance-actions.html\" target=\"_blank\"&gt;describe-pending-maintenance-actions&lt;/a&gt; API, or subscribe to RDS-EVENT-0230 to receive an alert when new updates become available for their database instance. Customers can use &lt;a href=\"https://docs.aws.amazon.com/cli/latest/reference/rds/apply-pending-maintenance-action.html\" target=\"_blank\"&gt;apply-pending-maintenance-action&lt;/a&gt; API to apply the updates immediately or schedule them within their next maintenance window.&lt;/p&gt; \n&lt;p&gt;Using these features, customers can efficiently track and apply OS updates. To learn more, refer to the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/working-with-custom-sqlserver.html\" target=\"_blank\"&gt;Amazon RDS Custom for SQL Server User Guide&lt;/a&gt;. These features are available in all the AWS Regions where RDS Custom for SQL Server is available.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-rds-custom-sql-server-operating-system-updates/",
-      "publishedAt": "2026-03-19T07:00:00.000Z",
-      "updatedAt": "2026-03-19T07:00:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Rds For Sql Server"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "databases",
-        "amazon rds for sql server",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "1c7f4a978178bf62",
-      "title": "Minimax M2.5 and GLM 5 models now available on Amazon Bedrock",
-      "description": "Amazon Bedrock expands model selection for customers by adding support for GLM 5 and Minimax M2.5. GLM 5 is a frontier‑class, general‑purpose large language model optimized for complex systems engineering and long‑horizon agentic tasks. It builds on the GLM 4.5 agent‑centric lineage and is designed to support multi‑step reasoning, math (including AIME‑style benchmarks), advanced coding, and tool‑augmented workflows, with long context support suitable for sophisticated agents and enterprise applications. MiniMax M2.5 is an agent‑native frontier model trained explicitly to reason efficiently, de",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock expands model selection for customers by adding support for GLM 5 and Minimax M2.5. GLM 5 is a frontier‑class, general‑purpose large language model optimized for complex systems engineering and long‑horizon agentic tasks. It builds on the GLM 4.5 agent‑centric lineage and is designed to support multi‑step reasoning, math (including AIME‑style benchmarks), advanced coding, and tool‑augmented workflows, with long context support suitable for sophisticated agents and enterprise applications. MiniMax M2.5 is an agent‑native frontier model trained explicitly to reason efficiently, decompose tasks optimally, and complete complex workflows under real‑world time and cost constraints. It achieves task completion speeds comparable to or faster than leading proprietary frontier models by combining high inference throughput with reinforcement learning focused on token‑efficient reasoning and better decision‑making in agentic scaffolds.&lt;/p&gt; \n&lt;p&gt;MiniMax M2.5 and GLM 5 are now available in Amazon Bedrock across select AWS Regions. For the full list of available AWS Regions, refer to the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-minimax-glm/",
-      "publishedAt": "2026-03-18T21:07:00.000Z",
-      "updatedAt": "2026-03-18T21:07:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "31049872b3e0570f",
-      "title": "Amazon EC2 High Memory U7i-6TB instances now available in Asia Pacific (Malaysia)",
-      "description": "Amazon EC2 High Memory U7i instances with 6TB of memory (u7i-6tb.112xlarge) are now available in AWS Asia Pacific (Malaysia). U7i instances are part of AWS 7th generation and are powered by custom fourth generation Intel Xeon Scalable Processors (Sapphire Rapids). U7i-6tb instances offer 6TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment. U7i-6tb instances deliver 448 vCPUs with up to 100 Gbps of Amazon EBS bandwidth for faster data loading and backups, 100 Gbps of network bandwidth, and ENA Express. U7i instances are ideal for",
-      "descriptionHtml": "&lt;p&gt;Amazon EC2 High Memory U7i instances with 6TB of memory (u7i-6tb.112xlarge) are now available in AWS Asia Pacific (Malaysia). U7i instances are part of AWS 7th generation and are powered by custom fourth generation Intel Xeon Scalable Processors (Sapphire Rapids). U7i-6tb instances offer 6TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment.&lt;/p&gt; \n&lt;p&gt;U7i-6tb instances deliver 448 vCPUs with up to 100 Gbps of Amazon EBS bandwidth for faster data loading and backups, 100 Gbps of network bandwidth, and ENA Express. U7i instances are ideal for customers using mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.&lt;/p&gt; \n&lt;p&gt;To learn more about U7i instances, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/u7i/\"&gt;High Memory instances page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/ec2-high-memory-u7i-6tb-asia-pacific/",
-      "publishedAt": "2026-03-18T19:00:00.000Z",
-      "updatedAt": "2026-03-18T19:00:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "939e133a8fbdefe0",
-      "title": "NVIDIA Nemotron 3 Super now available on Amazon Bedrock",
-      "description": "Amazon Bedrock now supports NVIDIA Nemotron 3 Super, an open hybrid Mixture-of-Experts (MoE) model designed for complex multi-agent applications. Built for agentic workloads, Nemotron 3 Super delivers fast, and cost-efficient inference enabling AI agents to maintain focus and accuracy across long, multi-step tasks without losing context. Fully open with weights, datasets, and recipes, the model supports easy customization and secure deployment, making it well-suited for enterprises, startups, and individual developers building multi-agent workflows, and advanced reasoning applications. Amazon ",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock now supports NVIDIA Nemotron 3 Super, an open hybrid Mixture-of-Experts (MoE) model designed for complex multi-agent applications. Built for agentic workloads, Nemotron 3 Super delivers fast, and cost-efficient inference enabling AI agents to maintain focus and accuracy across long, multi-step tasks without losing context. Fully open with weights, datasets, and recipes, the model supports easy customization and secure deployment, making it well-suited for enterprises, startups, and individual developers building multi-agent workflows, and advanced reasoning applications.&lt;/p&gt; \n&lt;p&gt;Amazon Bedrock gives customers access to Nemotron 3 Super through a single, fully managed API — with no infrastructure to provision or models to host. Bedrock's serverless inference, built-in security controls, and compatibility with OpenAI API specifications make it easy to integrate Nemotron 3 Super into existing workflows and deploy at production scale with confidence.&lt;/p&gt; \n&lt;p&gt;NVIDIA Nemotron 3 Super is now available in Amazon Bedrock across &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html#model-regions-nvidia\" target=\"_blank\"&gt;select AWS Regions&lt;/a&gt;. For the full list of available AWS Regions, refer to the documentation. To learn more and get started, visit the Amazon Bedrock console or the service documentation here. To get started with Amazon Bedrock OpenAI API-compatible service endpoints, visit documentation &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html\" target=\"_blank\"&gt;here.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-bedrock-nemotron-3-super/",
-      "publishedAt": "2026-03-18T18:00:00.000Z",
-      "updatedAt": "2026-03-18T18:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "4f78607dca22d2a9",
-      "title": "Amazon ECR now supports pull through cache for Chainguard",
-      "description": "Amazon Elastic Container Registry (Amazon ECR) pull through cache now supports Chainguard’s registry as an upstream source. With today’s release, customers now benefit from the security and availability of Amazon ECR for private Chainguard images. As customers continue to scale their use of Chainguard images, keeping them synchronized with Chainguard's registry becomes increasingly important. With ECR's pull through cache feature, customers can keep Chainguard images in sync without additional workflows or tools to manage. Amazon ECR's pull through cache supports frequent registry syncs, helpi",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecr/\"&gt;Amazon Elastic Container Registry (Amazon ECR)&lt;/a&gt;&amp;nbsp;pull through cache now supports Chainguard’s registry as an upstream source.&amp;nbsp;With today’s release, customers now benefit from the security and availability of Amazon ECR for private Chainguard images.&lt;br&gt; &lt;br&gt; As customers continue to scale their use of Chainguard images, keeping them synchronized with Chainguard's registry becomes increasingly important. With ECR's pull through cache feature, customers can keep Chainguard images in sync without additional workflows or tools to manage. Amazon ECR's pull through cache supports frequent registry syncs, helping to keep container images sourced from Chainguard up to&amp;nbsp;date. Later,&amp;nbsp;customers can apply ECR features such as image scanning and lifecycle policies to their cached Chainguard images.&lt;br&gt; &lt;br&gt; The pull through cache for Chainguard is available in all AWS Regions where Amazon ECR pull through cache is supported. To get started, review our&lt;a href=\"https://docs.aws.amazon.com/AmazonECR/latest/userguide/pull-through-cache.html\"&gt;&amp;nbsp;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-ecr-pull-through-cache-chainguard/",
-      "publishedAt": "2026-03-18T18:00:00.000Z",
-      "updatedAt": "2026-03-18T18:00:00.000Z",
-      "categories": [
-        "Amazon Ecr",
-        "Containers"
-      ],
-      "services": [
-        "ECR"
-      ],
-      "tags": [
-        "amazon ecr",
-        "containers",
-        "ecr"
       ],
       "isNew": false
     }
