@@ -1,7 +1,173 @@
 {
-  "lastUpdated": "2026-05-22T09:12:13.953Z",
+  "lastUpdated": "2026-05-23T08:46:41.702Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "17eaf08bd1b6f299",
+      "title": "Amazon SageMaker expands domain management across domain types",
+      "description": "Amazon SageMaker Unified Studio now provides domain management experience for Identity Center and IAM-based domains outside of AWS console, allows administrators and data management teams to create and manage projects, configure workforce identity, manage users and permissions, and set networking properties for projects. Previously, this was only available for IAM based domains. With this launch, administrators of Identity Center-based domains can access domain management capabilities in SageMaker Unified Studio portal to create projects with configurable execution roles that define which AWS ",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now provides domain management experience for Identity Center and IAM-based domains outside of AWS console, allows administrators and data management teams to create and manage projects, configure workforce identity, manage users and permissions, and set networking properties for projects. Previously, this was only available for IAM based domains.&lt;br&gt; &lt;br&gt; With this launch, administrators of Identity Center-based domains can access domain management capabilities in SageMaker Unified Studio portal to create projects with configurable execution roles that define which AWS analytics, AI, and ML services the project can access. VPC configuration is consistent across both domain types, inherited by all projects, and can be edited to change the VPC, subnets, or security group. Administrators can also manage associated accounts, enabling users to publish and consume data from other AWS accounts within SageMaker Unified Studio.&lt;br&gt; &lt;br&gt; These features are available in all &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;AWS Regions where Amazon SageMaker Unified Studio&lt;/a&gt; is available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/access-domain-admin-portal-idc.html\"&gt;Domain administration for Identity Center-based domains&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/domain-management-iam-idc/",
+      "publishedAt": "2026-05-22T19:30:00.000Z",
+      "updatedAt": "2026-05-22T19:30:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "analytics",
+        "amazon sagemaker",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b08e3e46705a8676",
+      "title": "New agentic migration assessment capabilities now available with AWS Transform",
+      "description": "AWS Transform now offers advanced migration assessment capabilities including what-if scenarios, customizable assumptions, flexible file format support, and multiple new total cost of ownership (TCO) assessment features. These latest features let you quickly build a migration business case and accelerate your migration decisions. You can start your migration assessment with whatever data you have including RVTools exports, CMDB data, exports from the AWS Transform discovery tool, and a wide variety of third-party discovery tools. Create what-if scenarios for your migrations with customized ass",
+      "descriptionHtml": "&lt;p&gt;AWS Transform now offers advanced migration assessment capabilities including what-if scenarios, customizable assumptions, flexible file format support, and multiple new total cost of ownership (TCO) assessment features. These latest features let you quickly build a migration business case and accelerate your migration decisions.&lt;br&gt; &lt;br&gt; You can start your migration assessment with whatever data you have including RVTools exports, CMDB data, exports from the AWS Transform discovery tool, and a wide variety of third-party discovery tools. Create what-if scenarios for your migrations with customized assumptions including region, resource utilization, and service mapping. You can also compare scenarios and find the best path for your AWS migration. This latest release lets you include multiple analyses in your what-if scenarios including cost modelling of EC2, FSx, S3, SQL Server on EC2, and virtual desktops. On top of this, you can enhance your assessment with the inclusion of additional pillars of the &lt;a href=\"https://aws.amazon.com/executive-insights/content/business-value-on-aws/\"&gt;Cloud Value Framework&lt;/a&gt; such as staff productivity, operational resilience, business agility, and sustainability.&lt;br&gt; &lt;br&gt; Now you can build a comprehensive assessment for migrating to AWS faster than ever before and start your migration with the confidence of having an optimized TCO.&lt;br&gt; &lt;br&gt; AWS Transform migration assessments are available in all AWS Regions where &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/regions.html\"&gt;AWS Transform is offered&lt;/a&gt;. Learn more here on the &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html\"&gt;user guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/assessment-capabilities-transform",
+      "publishedAt": "2026-05-22T18:58:00.000Z",
+      "updatedAt": "2026-05-22T18:58:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Migration",
+        "Compute"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence",
+        "migration",
+        "compute"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1b3e423019e149df",
+      "title": "Amazon SageMaker adds business metadata and governance in IAM-based domains",
+      "description": "Amazon SageMaker Unified Studio now supports business context, metadata and data governance capabilities in IAM-based domains. With this launch, customers using Amazon SageMaker IAM-based domains can add business context to their AWS Glue Data Catalog tables, including business names, descriptions, and README documentation. They can use AI-generated metadata to produce business names and descriptions automatically, reducing the effort of cataloging large numbers of tables. Customers can also create business glossaries so that teams across the organization use consistent definitions for terms l",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/sagemaker/unified-studio/\"&gt;Amazon SageMaker Unified Studio&lt;/a&gt; now supports business context, metadata and data governance capabilities in IAM-based domains. With this launch, customers using Amazon SageMaker IAM-based domains can add business context to their AWS Glue Data Catalog tables, including business names, descriptions, and README documentation. They can use AI-generated metadata to produce business names and descriptions automatically, reducing the effort of cataloging large numbers of tables. Customers can also create business glossaries so that teams across the organization use consistent definitions for terms like \"ARR\" or \"churn rate,\" and define metadata form templates to capture structured attributes such as data classification, retention policies, or ownership details.&lt;/p&gt; \n&lt;p&gt;With this business context in place, data engineers, analysts, and data scientists can search for and discover tables across the entire domain, filter results by glossary terms and metadata form fields, and request access through subscriptions. After an administrator approves the request, SageMaker Unified Studio automatically grants the necessary AWS Lake Formation permissions to the project. Administrators can also grant access to tables directly from within SageMaker Unified Studio without waiting for a request.&lt;/p&gt; \n&lt;p&gt;Amazon SageMaker Unified Studio business context, metadata, and governance capabilities in IAM-based domains are available in all AWS Regions where SageMaker Unified Studio is &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;supported&lt;/a&gt;. To learn more, visit the Amazon SageMaker Unified Studio &lt;a href=\"https://preview.docs.aws.dev/preview/utmittal/SEA/AWSMaxdomeDocs/utkarsh-m2-catalog-branch/sagemaker-unified-studio/latest/userguide/catalog-iam-based-domains.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/sagemaker-catalog-iam-domains/",
+      "publishedAt": "2026-05-22T18:24:00.000Z",
+      "updatedAt": "2026-05-22T18:24:00.000Z",
+      "categories": [
+        "Amazon Sagemaker",
+        "Analytics"
+      ],
+      "services": [
+        "IAM",
+        "SageMaker"
+      ],
+      "tags": [
+        "amazon sagemaker",
+        "analytics",
+        "iam",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8f3243725cceb0c4",
+      "title": "AWS Security Agent adds verification scripts for pentest findings",
+      "description": "AWS Security Agent now generates verification scripts for penetration test findings, enabling security teams to independently reproduce and validate discovered vulnerabilities. Previously, teams manually followed reproduction steps from finding details. Now, AWS Security Agent automatically generates ready-to-run scripts for each confirmed finding. Teams download the script, configure environment variables, and execute it against their target system to verify the vulnerability, streamlining triage and accelerating remediation. Verification scripts include setup instructions, documented environ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/security-agent/\"&gt;AWS Security Agent&lt;/a&gt; now generates verification scripts for penetration test findings, enabling security teams to independently reproduce and validate discovered vulnerabilities.&lt;br&gt; &lt;br&gt; Previously, teams manually followed reproduction steps from finding details. Now, AWS Security Agent automatically generates ready-to-run scripts for each confirmed finding. Teams download the script, configure environment variables, and execute it against their target system to verify the vulnerability, streamlining triage and accelerating remediation.&lt;br&gt; &lt;br&gt; Verification scripts include setup instructions, documented environment variables, and redacted sensitive values. Available in all AWS Regions where AWS Security Agent is supported.&lt;br&gt; &lt;br&gt; To get started, run a penetration test, navigate to findings, and expand the Verification Script section. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/securityagent/latest/userguide/review-penetration-findings.html\"&gt;Review findings&lt;/a&gt; from a penetration test in the AWS Security Agent User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-security-agent/",
+      "publishedAt": "2026-05-22T17:21:00.000Z",
+      "updatedAt": "2026-05-22T17:21:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
+    {
+      "id": "966c64bdfaef0842",
+      "title": "Amazon WorkSpaces Personal now supports WorkSpace Migration for Linux WorkSpaces",
+      "description": "Amazon WorkSpaces now supports the WorkSpace Migration feature for all Linux operating systems that Amazon WorkSpaces offers. This allows customers to seamlessly migrate WorkSpaces from one Linux operating system to another, automating the process to migrate to newer operating system versions or to move from one Linux operating system to another. When customers migrate their WorkSpaces from one operating system to another, the user data on a Linux WorkSpace’s home directory is now automatically moved to the new WorkSpace. Customers can seamlessly migrate WorkSpaces without having to manually c",
+      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces now supports the WorkSpace Migration feature for all Linux operating systems that Amazon WorkSpaces offers. This allows customers to seamlessly migrate WorkSpaces from one Linux operating system to another, automating the process to migrate to newer operating system versions or to move from one Linux operating system to another.&lt;br&gt; &lt;br&gt; When customers migrate their WorkSpaces from one operating system to another, the user data on a Linux WorkSpace’s home directory is now automatically moved to the new WorkSpace. Customers can seamlessly migrate WorkSpaces without having to manually copy data between WorkSpaces. This streamlines the process to upgrade Linux WorkSpaces to take advantage of the latest Linux operating systems without disrupting end users with manual migration steps.&lt;br&gt; &lt;br&gt; The WorkSpace Migration feature is now supported for all Linux operating systems in AWS commercial and AWS GovCloud (US) Regions where Amazon WorkSpaces Personal is supported. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/migrate-linux-workspaces.html\"&gt;Migrate a Linux WorkSpace section&lt;/a&gt; in the &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html\"&gt;Amazon WorkSpaces Administration Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/workspaces-linux-migration",
+      "publishedAt": "2026-05-22T16:24:00.000Z",
+      "updatedAt": "2026-05-22T16:24:00.000Z",
+      "categories": [
+        "Amazon Workspaces",
+        "Desktop And App Streaming"
+      ],
+      "services": [
+        "WorkSpaces"
+      ],
+      "tags": [
+        "amazon workspaces",
+        "desktop and app streaming",
+        "workspaces"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "4249177511ce0738",
+      "title": "Amazon Keyspaces (for Apache Cassandra) expands to Asia Pacific (Malaysia) and Asia Pacific (Thailand) Regions",
+      "description": "Amazon Keyspaces (for Apache Cassandra) is now available in the Asia Pacific (Malaysia) and Asia Pacific (Thailand) Regions, allowing customers in Asia Pacific Region to build Cassandra-compatible applications with lower latency while keeping their data within the Region to meet data residency requirements. Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. Amazon Keyspaces is serverless, so you pay for only the resources that you use and you can build applications that serve thousands of requests per second with v",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/keyspaces/\"&gt;Amazon Keyspaces (for Apache Cassandra)&lt;/a&gt; is now available in the Asia Pacific (Malaysia) and Asia Pacific (Thailand) Regions, allowing customers in Asia Pacific Region to build Cassandra-compatible applications with lower latency while keeping their data within the Region to meet data residency requirements.&lt;br&gt; &amp;nbsp;&amp;nbsp;&lt;br&gt; Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. Amazon Keyspaces is serverless, so you pay for only the resources that you use and you can build applications that serve thousands of requests per second with virtually unlimited throughput and storage.&lt;br&gt; &amp;nbsp;&amp;nbsp;&lt;br&gt; The Asia Pacific (Malaysia) and Asia Pacific (Thailand) Regions provide the same Amazon Keyspaces features available in other AWS Regions, including point-in-time recovery, Multi-Region replication, CDC streams, and IPv6 support. This regional expansion enables organizations in Asia Pacific to build highly scalable, low-latency applications using familiar Cassandra Query Language (CQL) without the operational burden of managing Cassandra clusters.&lt;/p&gt; \n&lt;p&gt;To learn more about Keyspaces, visit the &lt;a href=\"https://docs.aws.amazon.com/keyspaces/latest/devguide/what-is-keyspaces.html\"&gt;Amazon Keyspaces documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-keyspaces-malaysia-thailand/",
+      "publishedAt": "2026-05-22T16:00:00.000Z",
+      "updatedAt": "2026-05-22T16:00:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Keyspaces"
+      ],
+      "services": [
+        "Keyspaces"
+      ],
+      "tags": [
+        "databases",
+        "amazon keyspaces",
+        "keyspaces"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f83f5d3db11fa6b4",
+      "title": "AWS Clean Rooms now supports mutable payment configurations for collaborations",
+      "description": "AWS Clean Rooms now supports mutable fine-grained payment configurations for collaboration members. This capability offers customers greater flexibility and control over payment responsibilities as they develop new use cases with their partners. With this launch, customers can specify which partners are authorized to pay for specific cost types after a collaboration is created—including SQL queries, PySpark jobs, ML model training and inference jobs, and synthetic data generation in AWS Clean Rooms. With AWS Clean Rooms, you can add or remove authorized payers for specific cost types through a",
+      "descriptionHtml": "&lt;p&gt;AWS Clean Rooms now supports mutable fine-grained &lt;a href=\"https://docs.aws.amazon.com/clean-rooms/latest/userguide/change-requests.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;payment configurations&lt;/a&gt; for collaboration members. This capability offers customers greater flexibility and control over payment responsibilities as they develop new use cases with their partners. With this launch, customers can specify which partners are authorized to pay for specific cost types after a collaboration is created—including SQL queries, PySpark jobs, ML model training and inference jobs, and synthetic data generation in AWS Clean Rooms.&lt;/p&gt; \n&lt;p&gt;With AWS Clean Rooms, you can add or remove authorized payers for specific cost types through a change request. Collaboration members must approve the results before it takes effect. Payment configurations support multiple authorized payers for SQL and PySpark analyses. You can select an authorized payer when submitting the analysis. For example, a pharmaceutical research company collaborates with healthcare organizations for real-world clinical trial data. The pharmaceutical research company can pay for complex analysis, and the healthcare organizations can pay for simple SQL analyses in a collaboration.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;AWS Clean Rooms helps companies and their partners easily analyze and collaborate on their collective datasets without revealing or copying one another’s underlying data. For more information about the AWS Regions where AWS Clean Rooms is available, see the &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/clean-rooms.html#clean-rooms_region\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions&lt;/a&gt; table. To learn more about collaborating with AWS Clean Rooms, visit &lt;a href=\"https://aws.amazon.com/clean-rooms/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Clean Rooms&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-clean-rooms-mutable-payments",
+      "publishedAt": "2026-05-22T12:00:00.000Z",
+      "updatedAt": "2026-05-22T12:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "AWS Clean Rooms"
+      ],
+      "services": [
+        "Clean Rooms"
+      ],
+      "tags": [
+        "analytics",
+        "aws clean rooms",
+        "clean rooms"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "77c247e7bf7ff8b5",
+      "title": "AWS Secrets Manager adds managed external secrets support for Datadog vended keys and Snowflake Programmatic Access Tokens",
+      "description": "AWS Secrets Manager now extends its managed external secrets capability to include Datadog Keys and Snowflake Programmatic Access Tokens (PATs). Managed external secrets enable customers to automatically rotate third-party credentials directly from AWS Secrets Manager by offering first-class integration with supported third-party services. With this launch, you can manage rotation for three types of Datadog credentials — API keys, Application keys, and admin credential pairs for service accounts. For Snowflake, you can now rotate Programmatic Access Tokens using Snowflake's native authenticati",
+      "descriptionHtml": "&lt;p&gt;AWS Secrets Manager now extends its managed external secrets capability to include Datadog Keys and Snowflake Programmatic Access Tokens (PATs). Managed external secrets enable customers to automatically rotate third-party credentials directly from AWS Secrets Manager by offering first-class integration with supported third-party services.&lt;/p&gt; \n&lt;p&gt;With this launch, you can manage rotation for three types of Datadog credentials —&lt;a&gt;&lt;/a&gt;&lt;a&gt; API keys, Application keys, and admin credential pairs&lt;/a&gt;&amp;nbsp;for service accounts. For Snowflake, you can now rotate Programmatic Access Tokens using Snowflake's native authentication, with a configurable grace period that allows applications to seamlessly transition to new tokens without interruption.&lt;/p&gt; \n&lt;p&gt;These new integrations join existing managed external secrets integrations with BigID, Confluent Cloud, MongoDB Atlas, and Salesforce, enabling customers to manage third-party software vended secrets.&lt;/p&gt; \n&lt;p&gt;Datadog and Snowflake PAT managed external secrets are available in all AWS Regions where AWS Secrets Manager managed external secrets is supported. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/secretsmanager/latest/userguide/managed-external-secrets.html\"&gt;AWS Secrets Manager managed external secrets documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/secrets-manager-managed-external-secrets-datadog-snowflake/",
+      "publishedAt": "2026-05-22T07:00:00.000Z",
+      "updatedAt": "2026-05-22T07:00:00.000Z",
+      "categories": [
+        "AWS Secrets Manager"
+      ],
+      "services": [
+        "Secrets Manager"
+      ],
+      "tags": [
+        "aws secrets manager",
+        "secrets manager"
+      ],
+      "isNew": true
+    },
     {
       "id": "d22daa9f6128bb17",
       "title": "Amazon CloudWatch Logs Insights adds new query commands and functions",
@@ -671,7 +837,7 @@
         "amazon cloudwatch logs",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "27b517efc349258e",
@@ -693,7 +859,7 @@
         "amazon emr",
         "emr"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "98da0d827829c721",
@@ -710,7 +876,7 @@
       "tags": [
         "aws marketplace and partners"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "61d7d059578c4d50",
@@ -736,7 +902,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fd08810e814720d4",
@@ -758,7 +924,7 @@
         "databases",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a6bc6364e7917541",
@@ -777,7 +943,7 @@
         "amazon managed service for grafana",
         "management and governance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d4ee18f6ecea0de1",
@@ -799,7 +965,7 @@
         "aws direct connect",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8c8cfaa75b243cd5",
@@ -825,7 +991,7 @@
         "iam",
         "organizations"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c9ebb90740181420",
@@ -10747,169 +10913,6 @@
         "amazon aurora",
         "databases",
         "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "083f3c4d5a084acd",
-      "title": "Amazon Quick Now Available in the AWS Frankfurt Region",
-      "description": "Amazon Quick is now available in the AWS Europe (Frankfurt) region (eu-central-1). This launch allows customers in Germany to access the full power of Amazon Quick while meeting local and regional requirements for data sovereignty. Amazon Quick provides business users an agentic teammate that quickly answers questions at work and turns those answers into actions. With Amazon Quick, every user is empowered to make better decisions, faster and take actions without switching applications using AI they can trust. Today’s launch allows customers to take advantage of Amazon Quick’s capabilities incl",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick is now available in the AWS Europe (Frankfurt) region (eu-central-1). This launch allows customers in Germany to access the full power of Amazon Quick while meeting local and regional requirements for data sovereignty.&lt;/p&gt; \n&lt;p&gt;Amazon Quick provides business users an agentic teammate that quickly answers questions at work and turns those answers into actions. With Amazon Quick, every user is empowered to make better decisions, faster and take actions without switching applications using AI they can trust. Today’s launch allows customers to take advantage of Amazon Quick’s capabilities including AI-powered chat, Research, Spaces, Flows, and QuickSight dashboards — with their data stored and processed locally within the Frankfurt region. This expansion also supports in-region inference through EU-CRIS (Europe Cross-Region Inference), ensuring that inference requests from Frankfurt instances are routed exclusively within European AWS Regions. Customers in regulated industries such as financial services, healthcare, and the public sector can meet strict data sovereignty requirements of EU data protection frameworks including GDPR.&lt;/p&gt; \n&lt;p&gt;For a full list of AWS regions where Amazon Quick is available, visit the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Quick regional availability page.&lt;/a&gt; To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/quick/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Quick documentation&lt;/a&gt; or &lt;a href=\"/quick/\"&gt;product detail page&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-quick-now-available-in-the-aws-frankfurt-region/",
-      "publishedAt": "2026-03-25T16:56:00.000Z",
-      "updatedAt": "2026-03-25T16:56:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "95f44a02ffbc7a44",
-      "title": "Amazon Quick Now Available in the AWS London Region",
-      "description": "Amazon Quick is now available in the AWS Europe (London) region (eu-west-2). This launch allows customers in the United Kingdom to access the full power of Amazon Quick while meeting local and regional requirements for data sovereignty. Amazon Quick provides business users an agentic teammate that quickly answers questions at work and turns those answers into actions. With Amazon Quick, every user is empowered to make better decisions, faster and take actions without switching applications using AI they can trust. Today’s launch allows customers to take advantage of Amazon Quick’s capabilities",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick is now available in the AWS Europe (London) region (eu-west-2). This launch allows customers in the United Kingdom to access the full power of Amazon Quick while meeting local and regional requirements for data sovereignty.&lt;/p&gt; \n&lt;p&gt;Amazon Quick provides business users an agentic teammate that quickly answers questions at work and turns those answers into actions. With Amazon Quick, every user is empowered to make better decisions, faster and take actions without switching applications using AI they can trust. Today’s launch allows customers to take advantage of Amazon Quick’s capabilities including AI-powered chat, Research, Spaces, Flows, and QuickSight dashboards — with their data stored and processed locally within the London region. This expansion also supports in-region inference through EU-CRIS (Europe Cross-Region Inference), ensuring that inference requests from London instances are routed exclusively within European AWS Regions. Customers in regulated industries such as financial services, healthcare, and the public sector can meet strict data sovereignty requirements of UK data protection frameworks.&lt;/p&gt; \n&lt;p&gt;For a full list of AWS regions where Amazon Quick is available, visit the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Quick regional availability page&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/quick/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Quick documentation&lt;/a&gt; or &lt;a href=\"/quick/\"&gt;product detail page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-quick-now-available-in-the-aws-london-region/",
-      "publishedAt": "2026-03-25T16:47:00.000Z",
-      "updatedAt": "2026-03-25T16:47:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "777521d912fc894b",
-      "title": "Amazon SageMaker AI now supports serverless reinforcement fine-tuning for 12 additional models",
-      "description": "Amazon SageMaker AI now supports serverless model customization and reinforcement fine-tuning for 12 additional open-weight models, enabling you to fine-tune and evaluate them without provisioning or managing infrastructure. The newly supported models are: gpt-oss-120b, Qwen2.5 72B Instruct, DeepSeek-R1-Distill-Llama-70B, Qwen3 14B, DeepSeek-R1-Distill-Qwen-14B, Qwen2.5 14B Instruct, DeepSeek-R1-Distill-Llama-8B, DeepSeek-R1-Distill-Qwen-7B, Qwen3 4B, Meta Llama 3.2 3B Instruct, Qwen3 1.7B, and DeepSeek-R1-Distill-Qwen-1.5B. With this expansion, you can customize these models using supervised ",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker AI now supports serverless model customization and reinforcement fine-tuning for 12 additional open-weight models, enabling you to fine-tune and evaluate them without provisioning or managing infrastructure. The newly supported models are: gpt-oss-120b, Qwen2.5 72B Instruct, DeepSeek-R1-Distill-Llama-70B, Qwen3 14B, DeepSeek-R1-Distill-Qwen-14B, Qwen2.5 14B Instruct, DeepSeek-R1-Distill-Llama-8B, DeepSeek-R1-Distill-Qwen-7B, Qwen3 4B, Meta Llama 3.2 3B Instruct, Qwen3 1.7B, and DeepSeek-R1-Distill-Qwen-1.5B. With this expansion, you can customize these models using supervised fine-tuning (SFT), direct preference optimization (DPO), and reinforcement fine-tuning (RFT) techniques including RLVR and RLAIF, and only pay for what you use.&lt;br&gt; &lt;br&gt; Reinforcement fine-tuning enables you to align models to complex, domain-specific reasoning tasks where techniques such as traditional SFT alone fall short. With RLVR, you can improve model accuracy on verifiable tasks such as code generation, math, and structured extraction by providing reward signals based on correctness. RLAIF uses AI-generated feedback to steer model behavior toward your quality and safety preferences. These techniques are available on previously supported and newly added models, with no cluster setup, capacity planning, or distributed training expertise required.&lt;br&gt; &lt;br&gt; These models and fine-tuning techniques are available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and EU (Ireland). To get started, see the Amazon SageMaker AI model customization &lt;a href=\"https://aws.amazon.com/sagemaker/ai/model-customization/\"&gt;product page&lt;/a&gt; and visit the Amazon SageMaker AI &lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/\"&gt;pricing page&lt;/a&gt; (Model Customization tab) to see the full list of models, techniques, and prices.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-ai-serverless-additional-models/",
-      "publishedAt": "2026-03-25T16:25:00.000Z",
-      "updatedAt": "2026-03-25T16:25:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Amazon Machine Learning",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "amazon machine learning",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "29cc1e7b107be594",
-      "title": "Amazon EC2 I7ie instances now available in additional AWS regions",
-      "description": "AWS is announcing starting today, Amazon EC2 I7ie instances are now available in AWS Asia Pacific (Hong Kong), Asia Pacific (Seoul), Asia Pacific (Melbourne), Asia Pacific (Thailand), Europe (Zurich), Europe (Milan) and Mexico (Central) regions. Designed for large storage I/O intensive workloads, I7ie instances are powered by 5th Gen Intel Xeon Processors with an all-core turbo frequency of 3.2 GHz, offering up to 40% better compute performance and 20% better price performance versus I3en instances. I7ie instances offer up to 120TB local NVMe storage density for storage optimized instances and",
-      "descriptionHtml": "&lt;p&gt;AWS is announcing starting today, Amazon EC2 I7ie instances are now available in AWS Asia Pacific (Hong Kong), Asia Pacific (Seoul),&amp;nbsp;Asia Pacific (Melbourne),&amp;nbsp;Asia Pacific (Thailand),&amp;nbsp;Europe (Zurich),&amp;nbsp;Europe (Milan) and Mexico (Central) regions. Designed for large storage I/O intensive workloads, I7ie instances are powered by 5th Gen Intel Xeon Processors with an all-core turbo frequency of 3.2 GHz, offering up to 40% better compute performance and 20% better price performance versus I3en instances.&lt;/p&gt; \n&lt;p&gt;I7ie instances offer up to 120TB local NVMe storage density for storage optimized instances and offer up to twice as many vCPUs and memory compared to prior generation instances. Powered by 3rd generation AWS Nitro SSDs, I7ie instances deliver up to 65% better real-time storage performance, up to 50% lower storage I/O latency, and 65% lower storage I/O latency variability compared to I3en instances.&lt;/p&gt; \n&lt;p&gt;I7ie are high density storage optimized instances, ideal for workloads requiring fast local storage with high random read/write performance at very low latency consistency to access large data sets. These instances are available in 9 virtual sizes and deliver up to 100Gbps of network bandwidth and 60Gbps of bandwidth for Amazon Elastic Block Store (EBS).&lt;/p&gt; \n&lt;p&gt;To learn more, visit the I7ie instances&lt;a href=\"https://aws.amazon.com/ec2/instance-types/i7ie/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&amp;nbsp;page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-ec2-i7ie-instances-additional-aws-regions/",
-      "publishedAt": "2026-03-25T15:24:00.000Z",
-      "updatedAt": "2026-03-25T15:24:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2",
-        "Storage"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "storage",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "aba117677dcff424",
-      "title": "AWS Backup expands support for Amazon DocumentDB to 12 Regions",
-      "description": "AWS Backup now supports Amazon DocumentDB in 12 additional AWS Regions: Asia Pacific (Malaysia, Thailand, Osaka, Hong Kong, Jakarta, Melbourne), Europe (Stockholm, Spain, Zurich), Africa (Cape Town), Israel (Tel Aviv), and Mexico (Central). This expansion brings policy-based data protection and recovery to your Amazon DocumentDB clusters in these newly supported Regions. To start protecting your DocumentDB clusters with AWS Backup, add your DocumentDB clusters to your existing backup plans, or create a new backup plan and attach your DocumentDB clusters to it. To learn more about AWS Backup fo",
-      "descriptionHtml": "&lt;p&gt;AWS Backup now supports Amazon DocumentDB in 12 additional AWS Regions: Asia Pacific (Malaysia, Thailand, Osaka, Hong Kong, Jakarta, Melbourne), Europe (Stockholm, Spain, Zurich), Africa (Cape Town), Israel (Tel Aviv), and Mexico (Central).&lt;/p&gt; \n&lt;p&gt;This expansion brings policy-based data protection and recovery to your Amazon DocumentDB clusters in these newly supported Regions.&lt;/p&gt; \n&lt;p&gt;To start protecting your DocumentDB clusters with AWS Backup, add your DocumentDB clusters to your existing backup plans, or create a new backup plan and attach your DocumentDB clusters to it. To learn more about AWS Backup for Amazon DocumentDB, visit the &lt;a href=\"https://aws.amazon.com/backup/\"&gt;product page&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/backup/pricing/\"&gt;pricing page&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html\"&gt;documentation&lt;/a&gt;. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/backup\"&gt;AWS Backup console&lt;/a&gt;, AWS Command Line Interface (CLI), or AWS SDKs.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-backup-amazon-documentdb-regions/",
-      "publishedAt": "2026-03-25T10:00:00.000Z",
-      "updatedAt": "2026-03-25T10:00:00.000Z",
-      "categories": [
-        "Amazon Documentdb",
-        "Storage",
-        "AWS Backup"
-      ],
-      "services": [
-        "Backup",
-        "DocumentDB"
-      ],
-      "tags": [
-        "amazon documentdb",
-        "storage",
-        "aws backup",
-        "backup",
-        "documentdb"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "e066c4d2e705b93e",
-      "title": "AWS Transfer Family AS2 now supports receipts of MDNs asynchronously",
-      "description": "AWS Transfer Family now supports receiving Message Disposition Notifications (MDNs) asynchronously for messages sent to trading partners over Applicability Statement 2 (AS2). This enables you to migrate your AS2 workflows to Transfer Family while maintaining interoperability with your trading partners, regardless of their message processing times or network requirements. Organizations across healthcare, life sciences, retail, manufacturing, and supply chain sectors depend on Transfer Family for secure AS2-based data exchange with trading partners and regulatory bodies. You can now send AS2 mes",
-      "descriptionHtml": "&lt;p&gt;AWS Transfer Family now supports receiving&amp;nbsp;Message Disposition Notifications (MDNs) asynchronously for messages sent to trading partners over Applicability Statement 2 (AS2). This enables you to migrate your AS2 workflows to Transfer Family while&amp;nbsp;maintaining&amp;nbsp;interoperability with your trading partners, regardless of their message processing times or network requirements.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Organizations across healthcare, life sciences, retail, manufacturing, and supply chain sectors depend on Transfer Family for secure AS2-based data exchange with trading partners and regulatory bodies.&amp;nbsp;You can now send AS2 messages while requesting MDNs asynchronously over a separate TLS connection, ensuring compatibility with partner AS2 systems that have extended processing times or high latency.&amp;nbsp;With this launch, Transfer Family&amp;nbsp;supports both synchronous and asynchronous MDN requests, enabling you to migrate AS2 workflows to AWS without&amp;nbsp;impacting&amp;nbsp;your partner integrations.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This capability is available&amp;nbsp;in the majority of AWS regions where AWS Transfer&amp;nbsp;Family is offered.&amp;nbsp;For the full list of supported regions, visit the&amp;nbsp;&lt;a href=\"https://builder.aws.com/build/capabilities\"&gt;AWS Capabilities tool&lt;/a&gt;&amp;nbsp;in Builder&amp;nbsp;Center.&amp;nbsp;For detailed implementation guidance, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/transfer/latest/userguide/create-b2b-server.html\"&gt;Transfer Family user guide&lt;/a&gt;. To learn more, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/aws-transfer-family/\"&gt;AWS Transfer Family product page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-transfer-family-as2-mdns/",
-      "publishedAt": "2026-03-25T10:00:00.000Z",
-      "updatedAt": "2026-03-25T10:00:00.000Z",
-      "categories": [
-        "Migration",
-        "AWS Transfer Family"
-      ],
-      "services": [
-        "Transfer Family"
-      ],
-      "tags": [
-        "migration",
-        "aws transfer family",
-        "transfer family"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "00f5e402a692e459",
-      "title": "AWS ParallelCluster 3.15 with support for P6-B300 and Slurm 25.11",
-      "description": "AWS ParallelCluster 3.15 is now generally available. This release adds support for P6-B300 instance types and upgrades Slurm to version 25.11 with expedited job requeue. With P6-B300 support, you can run demanding AI/ML and high-performance computing workloads on the latest NVIDIA Blackwell GPU infrastructure. This release includes improved EFA network configuration defaults and support for network interface customization. To learn how to customize network interfaces, see Customize compute node network interfaces with launch template overrides . Other improvements include more reliable cluster",
-      "descriptionHtml": "&lt;p&gt;AWS ParallelCluster 3.15 is now generally available. This release adds support for P6-B300 instance types and upgrades Slurm to version 25.11 with expedited job requeue.&lt;br&gt; &lt;br&gt; With P6-B300 support, you can run demanding AI/ML and high-performance computing workloads on the latest NVIDIA Blackwell GPU infrastructure. This release includes improved EFA network configuration defaults and support for network interface customization. To learn how to customize network interfaces, see &lt;a href=\"https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorial-network-customization-v3.html\"&gt;Customize compute node network interfaces with launch template overrides&lt;/a&gt;. Other improvements include more reliable cluster updates, improved performance for tightly-coupled workloads in large clusters, and support for updating cluster tags without disruption. For more details, review the AWS ParallelCluster 3.15.0 &lt;a href=\"https://github.com/aws/aws-parallelcluster/releases/tag/v3.15.0\"&gt;release notes&lt;/a&gt;.&lt;br&gt; &lt;br&gt; AWS ParallelCluster is an open-source cluster management tool that makes it possible for R&amp;amp;D customers and IT administrators to operate high-performance computing (HPC) clusters on AWS. ParallelCluster is designed to automatically and securely provision cloud resources into elastically-scaling HPC clusters capable of running scientific and engineering workloads at scale on AWS. ParallelCluster is available at no additional charge in the AWS Regions listed &lt;a href=\"https://docs.aws.amazon.com/parallelcluster/latest/ug/supported-regions.html\"&gt;here&lt;/a&gt;, and you pay only for the AWS resources needed to run your applications.&lt;br&gt; &lt;br&gt; To learn more about launching HPC clusters on AWS, visit the ParallelCluster &lt;a href=\"https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorials-v3.html\"&gt;User Guide&lt;/a&gt;. To start using ParallelCluster, see the installation instructions for ParallelCluster &lt;a href=\"https://docs.aws.amazon.com/parallelcluster/latest/ug/install-pcui-v3.html\"&gt;UI&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/parallelcluster/latest/ug/install-v3-parallelcluster.html\"&gt;CLI&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-parallelcluster-p6-b300-slurm/",
-      "publishedAt": "2026-03-25T07:00:00.000Z",
-      "updatedAt": "2026-03-25T07:00:00.000Z",
-      "categories": [
-        "Compute",
-        "Artificial Intelligence"
-      ],
-      "services": [],
-      "tags": [
-        "compute",
-        "artificial intelligence"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "eccf8e3a77b739f2",
-      "title": "Amazon SageMaker HyperPod now supports continuous provisioning for Slurm-orchestrated clusters",
-      "description": "Amazon SageMaker HyperPod now extends continuous provisioning support to clusters using the Slurm orchestrator, enabling greater flexibility and efficiency for enterprise customers running large-scale AI/ML training workloads. AI/ML customers running Slurm-based clusters need to start training quickly, scale seamlessly, perform maintenance without disrupting operations, and have granular visibility into cluster operations. Previously, if any instance group could not be fully provisioned, the entire cluster creation or scaling operation failed and rolled back, causing delays and requiring manua",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now extends continuous provisioning support to clusters using the Slurm orchestrator, enabling greater flexibility and efficiency for enterprise customers running large-scale AI/ML training workloads. AI/ML customers running Slurm-based clusters need to start training quickly, scale seamlessly, perform maintenance without disrupting operations, and have granular visibility into cluster operations. Previously, if any instance group could not be fully provisioned, the entire cluster creation or scaling operation failed and rolled back, causing delays and requiring manual intervention.&lt;br&gt; &lt;br&gt; With continuous provisioning for Slurm, SageMaker HyperPod automatically provisions remaining capacity in the background while training jobs can begin immediately on available instances. The system uses priority-based provisioning to bring up the Slurm controller node first, followed by login and worker nodes in parallel, so your cluster reaches an operational state as quickly as possible. HyperPod retries failed node launches asynchronously and adds nodes to the Slurm cluster automatically as they become available, ensuring clusters reliably reach their desired scale without requiring manual intervention. You can now perform concurrent, non-blocking scaling operations across multiple instance groups simultaneously — a capacity shortage in one instance group no longer blocks scaling in others. These capabilities help customers reduce time-to-training, maximize resource utilization, and focus on innovation rather than infrastructure management.&lt;br&gt; &lt;br&gt; This feature is available for new SageMaker HyperPod clusters using the Slurm orchestrator. You can enable continuous provisioning by setting the NodeProvisioningMode parameter to \"Continuous\" when creating new HyperPod clusters using the CreateCluster API. Continuous provisioning can also be enabled when creating new clusters through the AWS CLI and the SageMaker AI console.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon SageMaker HyperPod is supported. To learn more about continuous provisioning for Slurm clusters, see the &lt;a href=\"https://docs.amazonaws.cn/en_us/sagemaker/latest/dg/sagemaker-hyperpod-scaling-slurm.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon SageMaker HyperPod User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-hyperpod-continuous-provisioning/",
-      "publishedAt": "2026-03-25T04:30:00.000Z",
-      "updatedAt": "2026-03-25T04:30:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Compute"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "compute",
-        "sagemaker"
       ],
       "isNew": false
     }
