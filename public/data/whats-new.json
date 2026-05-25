@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-24T08:56:30.277Z",
+  "lastUpdated": "2026-05-25T09:27:07.081Z",
   "itemCount": 500,
   "items": [
     {
@@ -445,6 +445,23 @@
       "isNew": true
     },
     {
+      "id": "d8ce7e7ca14c2fe4",
+      "title": "AWS Transform now modernizes networks during migrations",
+      "description": "Network migration teams previously spent days manually reviewing network designs and discovered conflicts only at deployment. AWS Transform now includes two new capabilities that solve both. A new modernization engine goes beyond network mapping to optimize constructs across naming, sizing, security, and structure while surfacing conflicts with existing VPCs already deployed in target accounts. It replaces days of manual review with instant guidance before a single resource provisions in AWS. The service also accepts network configuration files in any format, processing them for migration rega",
+      "descriptionHtml": "&lt;p&gt;Network migration teams previously spent days manually reviewing network designs and discovered conflicts only at deployment. AWS Transform now includes two new capabilities that solve both. A new modernization engine goes beyond network mapping to optimize constructs across naming, sizing, security, and structure while surfacing conflicts with existing VPCs already deployed in target accounts. It replaces days of manual review with instant guidance before a single resource provisions in AWS. The service also accepts network configuration files in any format, processing them for migration regardless of source tool or vendor.&lt;br&gt; Before provisioning begins, network teams review and act on modernization recommendations directly or edit any mapped VPC or subnet, retaining full control over the final network design. AWS Transform recommendations include:&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;Splitting VPCs with mixed workload tiers into segmented environments&lt;/li&gt; \n &lt;li&gt;Consolidating constructs fragmented by on-premises hardware constraints&lt;/li&gt; \n &lt;li&gt;Right-sizing CIDR allocations to eliminate waste and improve address space management&lt;/li&gt; \n &lt;li&gt;Standardizing naming conventions across all constructs&lt;/li&gt; \n &lt;li&gt;Flagging unrestricted security group rules that pose security risks&lt;/li&gt; \n &lt;li&gt;Removing out-of-scope resources from the target environment&lt;/li&gt; \n &lt;li&gt;Identifying CIDR conflicts between mapped and existing VPCs across target accounts, recommending resolutions, and implementing the customer's chosen path&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Customers can now upload their network configuration files as-is, and AWS Transform translates them into AWS-compatible networks. Customers reach deployment faster, as they optimized their network, resolved conflicts, and made every decision themselves.&lt;br&gt; &lt;br&gt; These features are available in all &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html#transform-vmware-cta-supported-regions\" target=\"_blank\"&gt;AWS Transform Target Regions. &lt;/a&gt;&lt;br&gt; To learn more, visit the AWS Transform &lt;a href=\"https://aws.amazon.com/transform/vmware/\" target=\"_blank\"&gt;product page&lt;/a&gt; and read the network migration &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-migrate-network.html\" target=\"_blank\"&gt;user guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-transform-network-modernization",
+      "publishedAt": "2026-05-20T14:53:00.000Z",
+      "updatedAt": "2026-05-20T14:53:00.000Z",
+      "categories": [
+        "Migration"
+      ],
+      "services": [],
+      "tags": [
+        "migration"
+      ],
+      "isNew": true
+    },
+    {
       "id": "94ac5b3a0c9627f3",
       "title": "Announcing the general availability of a new AWS Local Zone in Istanbul, Türkiye",
       "description": "Today, AWS announces the general availability of a new AWS Local Zone in Istanbul, Türkiye, bringing AWS infrastructure closer to end users, while enabling organizations to meet data residency requirements by storing and backing up data locally. AWS Local Zones are AWS infrastructure deployments that extend core services, such as compute, storage, networking, and other select services, closer to metropolitan areas worldwide. AWS Local Zones help you achieve single-digit millisecond latency for end-user workloads, meet data residency requirements, support AI/ML inference workloads, and accelera",
@@ -813,7 +830,7 @@
         "iam",
         "secrets manager"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "72ed79afefd0b64a",
@@ -10890,28 +10907,6 @@
       "tags": [
         "databases",
         "amazon aurora",
-        "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f52c03e01eefe714",
-      "title": "Amazon Aurora PostgreSQL now supports creating and connecting to a database in seconds",
-      "description": "Amazon Aurora PostgreSQL now offers a new experience to create a cluster with express configuration, enabling you to create and query an Aurora serverless database in seconds. With pre-configured settings, the new experience accelerates initial setup and reduces time to first query. You have the flexibility to modify certain settings during creation and most other settings afterward. Aurora clusters created using express configuration reside outside a virtual private cloud (VPC) network and include an internet access gateway for secure connections from your favorite development tools - no VPN,",
-      "descriptionHtml": "&lt;p&gt;Amazon Aurora PostgreSQL now offers a new experience to create a cluster with express configuration, enabling you to create and query an Aurora serverless database in seconds. With pre-configured settings, the new experience accelerates initial setup and reduces time to first query. You have the flexibility to modify certain settings during creation and most other settings afterward.&lt;/p&gt; \n&lt;p&gt;Aurora clusters created using express configuration reside outside a virtual private cloud (VPC) network and include an internet access gateway for secure connections from your favorite development tools - no VPN, or AWS Direct Connect required. The internet access gateway supports the full PostgreSQL wire protocol, enabling connectivity from a broad range of development tools and clients. It is distributed across multiple Availability Zones, providing the same level of high availability as your Aurora cluster. It also sets up AWS Identity and Access Management (IAM) authentication for your administrator user by default, enabling passwordless database authentication from the beginning without additional configuration.&lt;/p&gt; \n&lt;p&gt;Aurora PostgreSQL serverless is now available with the &lt;a href=\"https://aws.amazon.com/free/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Free Tier&lt;/a&gt; on both the Free and Paid plans. &amp;nbsp;For regional availability and more details, see the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_GettingStartedAurora.AuroraPostgreSQL.ExpressConfig.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Aurora documentation&lt;/a&gt; or read the &lt;a href=\"https://aws.amazon.com/blogs/aws/announcing-amazon-aurora-postgresql-serverless-database-creation-in-seconds\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;launch blog&lt;/a&gt;. To get started, use the&amp;nbsp;&lt;a href=\"https://console.aws.amazon.com/rds/home\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Console&lt;/a&gt;, AWS CLI, or AWS SDKs.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-aurora-postgresql-database/",
-      "publishedAt": "2026-03-25T17:00:00.000Z",
-      "updatedAt": "2026-03-25T17:00:00.000Z",
-      "categories": [
-        "Amazon Aurora",
-        "Databases"
-      ],
-      "services": [
-        "Aurora"
-      ],
-      "tags": [
-        "amazon aurora",
-        "databases",
         "aurora"
       ],
       "isNew": false
