@@ -1,7 +1,148 @@
 {
-  "lastUpdated": "2026-05-26T09:17:26.647Z",
+  "lastUpdated": "2026-05-27T09:15:24.151Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "3d68d46bbce32437",
+      "title": "Amazon RDS now supports ENA Express for Multi-AZ replication",
+      "description": "Amazon RDS Multi-AZ instances now use ENA Express for replication traffic between Availability Zones. ENA Express uses AWS's Scalable Reliable Datagram (SRD) protocol to optimize network performance by delivering up to 25 Gbps single-flow bandwidth for cross-AZ replication traffic leveraging advanced congestion control and multi-pathing capabilities, and reducing latency variability for Multi-AZ deployments. RDS Multi-AZ instances replicate data synchronously to a standby in a different Availability Zone to provide high availability and automatic failover. AWS SRD, used by ENA Express, improve",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS &lt;/a&gt;Multi-AZ instances now use ENA Express for replication traffic between Availability Zones. ENA Express uses AWS's Scalable Reliable Datagram (SRD) protocol to optimize network performance by delivering up to 25 Gbps single-flow bandwidth for cross-AZ replication traffic leveraging advanced congestion control and multi-pathing capabilities, and reducing latency variability for Multi-AZ deployments.&lt;br&gt; &lt;br&gt; RDS Multi-AZ instances replicate data synchronously to a standby in a different Availability Zone to provide high availability and automatic failover. AWS SRD, used by ENA Express, improves replication by dynamically distributing traffic across multiple network paths and adapting to congestion in real time. Amazon RDS Multi-AZ with ENA Express delivers increased write throughput and lower write latencies for write-intensive database workloads.&lt;br&gt; &lt;br&gt; ENA Express for Amazon RDS is available at no additional charge for Amazon RDS for MariaDB, Amazon RDS for MySQL, Amazon RDS for PostgreSQL, Amazon RDS for Db2, and Amazon RDS for Oracle. It is supported in Africa (Cape Town), Asia Pacific (Hong Kong, Hyderabad, Jakarta, Malaysia, Melbourne, Mumbai, New Zealand, Osaka, Seoul, Singapore, Sydney, Taipei, Thailand, Tokyo), Canada (Central), Canada West (Calgary), Europe (Frankfurt, Ireland, London, Milan, Paris, Spain, Stockholm, Zurich), Israel (Tel Aviv), Mexico (Central), US East (N. Virginia, Ohio), US West (N. California, Oregon), and AWS GovCloud (US) Regions. To enable this on your existing Amazon RDS instances, perform a start-stop or scale compute action. For a list of supported instance types on ENA Express, refer the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.CrossAZENAExpress.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;user guide&lt;/u&gt;&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-rds-ena-express-multiAZ/",
+      "publishedAt": "2026-05-26T19:00:00.000Z",
+      "updatedAt": "2026-05-26T19:00:00.000Z",
+      "categories": [
+        "Amazon Rds",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "amazon rds",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "863620836515248d",
+      "title": "Amazon EC2 R8i and R8i-flex instances are now available in AWS GovCloud (US-East) Region",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the AWS GovCloud (US-East) Region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads. The",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the AWS GovCloud (US-East) Region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads. They are up to 30% faster for PostgreSQL databases, up to 60% faster for NGINX web applications, and up to 40% faster for AI deep learning recommendation models compared to R7i.&lt;br&gt; &lt;br&gt; R8i-flex, our first memory-optimized Flex instances, are the easiest way to get price performance benefits for a majority of memory-intensive workloads. They offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources.&lt;br&gt; &lt;br&gt; R8i instances are a great choice for all memory-intensive workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. R8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications. &lt;a href=\"https://docs.aws.amazon.com/sap/latest/general/sap-hana-aws-ec2.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;R8i instances are SAP-certified &lt;/a&gt;and deliver 142,100 aSAPS, delivering exceptional performance for mission-critical SAP workloads.&lt;br&gt; &lt;br&gt; To get started, sign in to the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Management Console&lt;/a&gt;. For more information about the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/r8i\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;R8i and R8i-flex &lt;/a&gt;instances visit the AWS News &lt;a href=\"https://aws.amazon.com/blogs/aws/best-performance-and-fastest-memory-with-the-new-amazon-ec2-r8i-and-r8i-flex-instances/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;blog&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-r8i-r8i-flex-govcloud-east/",
+      "publishedAt": "2026-05-26T16:00:00.000Z",
+      "updatedAt": "2026-05-26T16:00:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "830ffbbe121a2290",
+      "title": "Amazon EC2 M8i and M8i-flex instances are now available in AWS GovCloud (US-East) Region",
+      "description": "Starting today, Amazon EC2 M8i and M8i-flex instances are now available in AWS GovCloud (US-East) Region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and M8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up to 20% better performance than M7i and M7i-flex instances, with even higher gains for specific workloads. The M8i and M8i",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon EC2 M8i and M8i-flex instances are now available in AWS GovCloud (US-East)&lt;b&gt; &lt;/b&gt;Region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and M8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up to 20% better performance than M7i and M7i-flex instances, with even higher gains for specific workloads. The M8i and M8i-flex instances are up to 30% faster for PostgreSQL databases, up to 60% faster for NGINX web applications, and up to 40% faster for AI deep learning recommendation models compared to M7i and M7i-flex instances.&lt;br&gt; &lt;br&gt; M8i-flex are the easiest way to get price performance benefits for a majority of general-purpose workloads like web and application servers, microservices, small and medium data stores, virtual desktops, and enterprise applications. They offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources.&lt;br&gt; &lt;br&gt; M8i instances are a great choice for all general purpose workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. The SAP-certified M8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications.&lt;br&gt; &lt;br&gt; To get started, sign in to the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Management Console&lt;/a&gt;. For more information about the new instances, visit the&lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8i/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt; M8i and M8i-flex instance page&lt;/a&gt; or visit the AWS News &lt;a href=\"https://aws.amazon.com/blogs/aws/new-general-purpose-amazon-ec2-m8i-and-m8i-flex-instances-are-now-available/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;blog&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-m8i-m8i-flex-govcloud-east/",
+      "publishedAt": "2026-05-26T16:00:00.000Z",
+      "updatedAt": "2026-05-26T16:00:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "aws govcloud us",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "bf7c553b282b5c18",
+      "title": "Amazon VPC IPAM now supports tags on IPAM pool allocations",
+      "description": "Amazon VPC IP Address Manager (IPAM) now supports tags on IPAM pool allocations, enabling customers to organize, govern, and control access to individual IP address allocations using the same tagging workflows they use across other AWS resources. Amazon VPC IP Address Manager (IPAM) helps customers plan, track, and monitor IP addresses across their AWS environments. With this launch, customers can tag allocations at creation time or add tags to existing allocations. These tags can be referenced in AWS Identity and Access Management and Service Control Policies, enabling centralized governance ",
+      "descriptionHtml": "&lt;p&gt;Amazon VPC IP Address Manager (IPAM) now supports tags on IPAM pool allocations, enabling customers to organize, govern, and control access to individual IP address allocations using the same tagging workflows they use across other AWS resources.&lt;/p&gt; \n&lt;p&gt;Amazon VPC IP Address Manager (IPAM) helps customers plan, track, and monitor IP addresses across their AWS environments. With this launch, customers can tag allocations at creation time or add tags to existing allocations. These tags can be referenced in AWS Identity and Access Management and Service Control Policies, enabling centralized governance over IP address usage at scale. For example, a network administrator can tag allocations by environment and enforce an IAM policy that allows only the production networking role to allocate from the pool, while development teams are restricted to development pools. Customers can also search and filter allocations by tag across all IPAM pools, making it faster to locate specific IP address ranges in large, multi-account environments.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where IPAM is available at no additional cost. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/vpc/latest/ipam/allocate-cidrs-ipam.html\"&gt;IPAM User Guide&lt;/a&gt;. To get started with IPAM, visit the &lt;a href=\"https://console.aws.amazon.com/ipam/\"&gt;IPAM console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-vpc-ipam-tags/",
+      "publishedAt": "2026-05-26T13:00:00.000Z",
+      "updatedAt": "2026-05-26T13:00:00.000Z",
+      "categories": [
+        "Amazon Vpc",
+        "Networking And Content Delivery"
+      ],
+      "services": [
+        "VPC"
+      ],
+      "tags": [
+        "amazon vpc",
+        "networking and content delivery",
+        "vpc"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "481a1f3d5ddd5871",
+      "title": "Amazon GuardDuty Malware Protection for AWS Backup supports Amazon S3 continuous backups",
+      "description": "Amazon GuardDuty Malware Protection for AWS Backup is now available for Amazon S3 continuous backups. You can now scan your S3 continuous backups for malware and identify clean points in time across your entire backup timeline for safe recovery. You can enable full or incremental malware scans for S3 continuous backups within your backup plan, and run on-demand scans up to any restorable point in time. You can now query the malware scan status at any point in time within your continuous backup using the new GetPITRMalwareScanResults API, allowing you to verify whether a specific recovery time ",
+      "descriptionHtml": "&lt;p&gt;Amazon GuardDuty Malware Protection for AWS Backup is now available for Amazon S3 continuous backups. You can now scan your S3 continuous backups for malware and identify clean points in time across your entire backup timeline for safe recovery.&lt;/p&gt; \n&lt;p&gt;You can enable full or incremental malware scans for S3 continuous backups within your backup plan, and run on-demand scans up to any restorable point in time. You can now query the malware scan status at any point in time within your continuous backup using the new GetPITRMalwareScanResults API, allowing you to verify whether a specific recovery time is clean before initiating a restore.&lt;/p&gt; \n&lt;p&gt;Support for S3 continuous backups is available in all AWS Regions where Amazon GuardDuty Malware Protection for AWS Backup is supported. You can get started using the &lt;a href=\"https://console.aws.amazon.com/backup/home\"&gt;AWS Backup console&lt;/a&gt;, API, or CLI. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/malware-protection.html\"&gt;AWS Backup documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html\"&gt;Amazon GuardDuty Malware Protection documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-guardduty-aws-backup-s3-continuous/",
+      "publishedAt": "2026-05-26T10:00:00.000Z",
+      "updatedAt": "2026-05-26T10:00:00.000Z",
+      "categories": [
+        "Amazon Guardduty",
+        "Storage",
+        "Security Identity And Compliance",
+        "AWS Backup"
+      ],
+      "services": [
+        "S3",
+        "Backup",
+        "GuardDuty"
+      ],
+      "tags": [
+        "amazon guardduty",
+        "storage",
+        "security identity and compliance",
+        "aws backup",
+        "s3",
+        "backup",
+        "guardduty"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0bc081b209309cde",
+      "title": "Amazon SageMaker Unified Studio adds interactive interface for managing Feature Store in IAM Domains",
+      "description": "Amazon SageMaker Unified Studio IAM domains now includes an interactive interface for creating and managing feature groups in SageMaker Feature Store, eliminating the need to write code for common feature management tasks. This launch makes feature management accessible to data scientists, ML engineers, and business analysts from a single collaborative environment. Features are the inputs to ML models used during training and inference. For example, a music recommendation app might use features like song ratings, listening duration, and listener demographics to personalize which songs are sugg",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio IAM domains now includes an interactive interface for creating and managing feature groups in SageMaker Feature Store, eliminating the need to write code for common feature management tasks. This launch makes feature management accessible to data scientists, ML engineers, and business analysts from a single collaborative environment.&lt;/p&gt; \n&lt;p&gt;Features are the inputs to ML models used during training and inference. For example, a music recommendation app might use features like song ratings, listening duration, and listener demographics to personalize which songs are suggested to each user. With this interactive interface for creating and managing features, you can now discover and search existing features, create and modify feature groups, view definitions and schemas, monitor data ingestion status - all without writing API calls. Features created elsewhere appear immediately in SageMaker Unified Studio when sharing the same IAM role, ensuring seamless workflows across your ML development lifecycle.&lt;/p&gt; \n&lt;p&gt;To learn more about using the interactive interface for creating and managing features in SageMaker Unified Studio, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/feature-store.html\"&gt;Amazon SageMaker Unifed Studio User Guide.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-feature-store/",
+      "publishedAt": "2026-05-22T20:07:00.000Z",
+      "updatedAt": "2026-05-22T20:07:00.000Z",
+      "categories": [],
+      "services": [
+        "IAM",
+        "SageMaker"
+      ],
+      "tags": [
+        "iam",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
     {
       "id": "17eaf08bd1b6f299",
       "title": "Amazon SageMaker expands domain management across domain types",
@@ -77,6 +218,19 @@
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-security-agent/",
       "publishedAt": "2026-05-22T17:21:00.000Z",
       "updatedAt": "2026-05-22T17:21:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
+    {
+      "id": "3da727124f27466c",
+      "title": "Amazon GameLift Streams launches Generation 6e stream classes for high-fidelity game streaming",
+      "description": "Today, Amazon GameLift Streams launched Generation 6e (G6e) stream classes, providing enhanced GPU performance for streaming high-fidelity, graphically demanding games and applications. The new G6e stream classes are powered by EC2 G6e instances featuring NVIDIA L40S Tensor Core GPUs and 3rd generation AMD EPYC processors, delivering 2x the GPU memory and up to 2.9x faster GPU memory bandwidth compared to standard Generation 6 stream classes. The two new G6e stream classes -- gen6e_pro and gen6e_pro_win2022 -- are designed for customers who need maximum GPU performance for AAA-quality game str",
+      "descriptionHtml": "&lt;p&gt;Today, Amazon GameLift Streams launched Generation 6e (G6e) stream classes, providing enhanced GPU performance for streaming high-fidelity, graphically demanding games and applications. The new G6e stream classes are powered by EC2 G6e instances featuring NVIDIA L40S Tensor Core GPUs and 3rd generation AMD EPYC processors, delivering 2x the GPU memory and up to 2.9x faster GPU memory bandwidth compared to standard Generation 6 stream classes.&lt;/p&gt; \n&lt;p&gt;The two new G6e stream classes -- gen6e_pro and gen6e_pro_win2022 -- are designed for customers who need maximum GPU performance for AAA-quality game streaming or GPU-intensive applications. These classes provide a full dedicated NVIDIA L40S GPU with 48 GB of GPU memory, making them ideal for streaming experiences that require high frame rates at high resolutions.&lt;/p&gt; \n&lt;p&gt;Generation 6e stream classes are available in the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt, Stockholm), and Asia Pacific (Tokyo, Seoul).&lt;/p&gt; \n&lt;p&gt;To learn more and get started, visit:&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;AWS Docs: Configuration options - Stream classes&amp;nbsp;&lt;br&gt; https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/configuration-options.html#configuration-options-stream-classes&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;API Reference Guide: CreateStreamGroup&amp;nbsp;&lt;br&gt; https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_CreateStreamGroup.html&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-gamelift-streams-g6e-stream-class/",
+      "publishedAt": "2026-05-22T16:39:00.000Z",
+      "updatedAt": "2026-05-22T16:39:00.000Z",
       "categories": [],
       "services": [],
       "tags": [],
@@ -327,6 +481,25 @@
       "isNew": true
     },
     {
+      "id": "784bde9f7ce5b70e",
+      "title": "AWS Deadline Cloud now supports browsing job attachments in the monitor",
+      "description": "AWS Deadline Cloud now supports browsing job attachment files directly within the Deadline Cloud monitor. AWS Deadline Cloud is a fully managed service that simplifies render management for teams creating computer-generated graphics and visual effects, for films, television, broadcasting, web content, and design. The Deadline Cloud job attachments feature simplifies managing input and output files for render jobs by handling uploads and downloads through Amazon S3. Previously, you could download all outputs for a job but couldn't easily see which specific files were attached as inputs or gener",
+      "descriptionHtml": "&lt;p&gt;AWS Deadline Cloud now supports browsing job attachment files directly within the Deadline Cloud monitor. AWS Deadline Cloud is a fully managed service that simplifies render management for teams creating computer-generated graphics and visual effects, for films, television, broadcasting, web content, and design.&lt;br&gt; &lt;br&gt; The Deadline Cloud job attachments feature simplifies managing input and output files for render jobs by handling uploads and downloads through Amazon S3. Previously, you could download all outputs for a job but couldn't easily see which specific files were attached as inputs or generated as outputs. With this new browsing capability, you can now view all attached files for a given job directly from the monitor in the browser or desktop application, clearly organized by inputs and outputs. You can also download individual files as needed, making it easy to retrieve specific assets without downloading everything.&lt;br&gt; &lt;br&gt; For more information, please visit the &lt;a href=\"https://aws.amazon.com/deadline-cloud\"&gt;Deadline Cloud product page&lt;/a&gt; and our &lt;a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/userguide/\"&gt;AWS Deadline Cloud documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-deadline-cloud/",
+      "publishedAt": "2026-05-20T20:28:00.000Z",
+      "updatedAt": "2026-05-20T20:28:00.000Z",
+      "categories": [
+        "AWS Deadline Cloud",
+        "Media Services"
+      ],
+      "services": [],
+      "tags": [
+        "aws deadline cloud",
+        "media services"
+      ],
+      "isNew": true
+    },
+    {
       "id": "553bab6b06c6f130",
       "title": "AWS Security Hub now uncovers identity risks from unused access",
       "description": "Today, AWS Security Hub brings identity risk into the same unified console where central security teams already manage threats, exposures, and posture findings. Security Hub now detects unused IAM permissions, roles, and credentials across your AWS organization, helping central security teams identify and reduce identity risk at scale. Until now, managing identity risk across hundreds of accounts required toggling between multiple tools, with no unified view connecting unused permissions to actual resource exposure. Security Hub now surfaces these identity risks alongside threats, exposures, a",
@@ -526,7 +699,7 @@
         "artificial intelligence",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1a92a7ece4654894",
@@ -543,7 +716,7 @@
       "tags": [
         "mwaa"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0f54f79166802c8d",
@@ -560,7 +733,7 @@
       "tags": [
         "inspector"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f5080e20cc4c2983",
@@ -592,7 +765,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d5be2dc756ccc9fb",
@@ -611,7 +784,7 @@
         "management and governance",
         "amazon managed service for grafana"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e267c7bec31f330a",
@@ -10740,174 +10913,6 @@
         "security and compliance",
         "aws firewall manager",
         "security identity and compliance"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b86991888f1f2752",
-      "title": "Accelerate AI-assisted development with Agent Plugin for AWS Serverless",
-      "description": "AWS announces the Agent Plugin for AWS Serverless, enabling developers to easily build, deploy, troubleshoot, and manage serverless applications using AI coding assistants like Kiro, Claude Code, and Cursor. Agent plugins extend AI coding assistants with structured, reusable capabilities by packaging skills, sub-agents, hooks, and Model Context Protocol (MCP) servers into a single modular unit. The Agent Plugin for AWS Serverless dynamically loads relevant guidance and expertise required throughout the development lifecycle for building production-ready serverless applications on AWS. You can ",
-      "descriptionHtml": "&lt;p&gt;AWS announces the Agent Plugin for&amp;nbsp;AWS&amp;nbsp;Serverless, enabling developers to easily build, deploy, troubleshoot, and manage serverless applications using AI coding assistants like Kiro, Claude Code, and Cursor.&lt;/p&gt; \n&lt;p&gt;Agent plugins extend AI coding assistants with structured, reusable capabilities by packaging skills, sub-agents, hooks, and Model Context Protocol (MCP)&amp;nbsp;servers into a single modular unit. The&amp;nbsp;Agent Plugin for&amp;nbsp;AWS&amp;nbsp;Serverless&amp;nbsp;dynamically loads relevant guidance and&amp;nbsp;expertise&amp;nbsp;required&amp;nbsp;throughout the development lifecycle for building production-ready serverless applications on AWS. You can create&amp;nbsp;AWS&amp;nbsp;Lambda&amp;nbsp;functions that integrate with popular event sources like Amazon&amp;nbsp;EventBridge, Amazon Kinesis, and AWS Step Functions, while following&amp;nbsp;built-in&amp;nbsp;best practices for observability, performance optimization, and troubleshooting. As you adopt Infrastructure as Code&amp;nbsp;(IaC),&amp;nbsp;you can streamline project setup with AWS Serverless Application Model (SAM) and AWS Cloud Development Kit (CDK),&amp;nbsp;with reusable constructs, proven architectural patterns, automated CI/CD pipelines, and local testing workflows. For long-running, stateful workflows, you can build with confidence using&amp;nbsp;Lambda durable functions, which provides&amp;nbsp;checkpoint-replay model, advanced&amp;nbsp;orchestration&amp;nbsp;patterns, and error handling&amp;nbsp;capabilities. Lastly, you can design and manage APIs as part of your application using Amazon API Gateway, with guidance across REST&amp;nbsp;APIs, HTTP&amp;nbsp;APIs, and WebSocket APIs. These capabilities are packaged as agent skills in the open&amp;nbsp;&lt;a href=\"https://agentskills.io/home\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"background-color: rgb(255, 255, 255);\"&gt;Agent Skills&lt;/a&gt;&amp;nbsp;format, making them usable across compatible AI tools such as Kiro, Claude Code, and Cursor.&lt;/p&gt; \n&lt;p&gt;The Agent Plugin for&amp;nbsp;AWS&amp;nbsp;Serverless is available&amp;nbsp;in any AI&amp;nbsp;coding assistant&amp;nbsp;tools&amp;nbsp;that&amp;nbsp;support&amp;nbsp;agent plugins&amp;nbsp;such as Claude Code and Cursor. In Claude Code, you can install it from the&amp;nbsp;official&amp;nbsp;&lt;a href=\"https://claude.com/plugins/aws-serverless\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Claude Marketplace&lt;/a&gt;&amp;nbsp;using&amp;nbsp;a simple command&amp;nbsp;‘/plugin&amp;nbsp;install&amp;nbsp;aws-serverless@claude-plugins-official’.&amp;nbsp;You can also install agent skills from the plugin individually in any AI coding assistant&amp;nbsp;tools&amp;nbsp;that&amp;nbsp;support agent skills. To learn more about the plugin and its capabilities, visit&amp;nbsp;&lt;a href=\"https://github.com/awslabs/agent-plugins\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;GitHub.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/agent-plugin-aws-serverless/",
-      "publishedAt": "2026-03-25T21:00:00.000Z",
-      "updatedAt": "2026-03-25T21:00:00.000Z",
-      "categories": [
-        "Compute",
-        "Developer Tools",
-        "Serverless"
-      ],
-      "services": [],
-      "tags": [
-        "compute",
-        "developer tools",
-        "serverless"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b8f3fa4157b246a6",
-      "title": "AWS Batch now provides AMI status and supports AWS Health Planned Lifecycle Events",
-      "description": "AWS Batch now provides enhanced visibility into your compute environments with two new capabilities that help you maintain operational best practices. When you describe a compute environment, you can now see the status of your Batch-provided default Amazon Machine Images (AMIs), indicating when updates are available. Additionally, AWS Batch now publishes AWS Health Planned Lifecycle Events to help you prepare for and track changes affecting your batch computing resources. The AMI status indicator shows whether you're using the latest AMI (LATEST) or if an update is available (UPDATE_AVAILABLE)",
-      "descriptionHtml": "&lt;p&gt;AWS Batch now provides enhanced visibility into your compute environments with two new capabilities that help you maintain operational best practices. When you describe a compute environment, you can now see the status of your Batch-provided default Amazon Machine Images (AMIs), indicating when updates are available. Additionally, AWS Batch now publishes AWS Health Planned Lifecycle Events to help you prepare for and track changes affecting your batch computing resources.&lt;br&gt; &lt;br&gt; The AMI status indicator shows whether you're using the latest AMI (LATEST) or if an update is available (UPDATE_AVAILABLE), helping you identify compute environments that may be running outdated AMIs. AWS Health Planned Lifecycle Events provide advance notification of upcoming changes, such as AMI deprecations, help you monitor migration status of your affected compute environments, and automate responses using Amazon EventBridge.&lt;br&gt; &lt;br&gt; AMI status indicator and AWS Health Planned Lifecycle Events are available today in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where AWS Batch is available. For more information, see &lt;a href=\"https://docs.aws.amazon.com/batch/latest/userguide/managing-ami-versions.html\"&gt;Managing AMI versions&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/batch/latest/userguide/batch-planned-lifecycle-events.html\"&gt;AWS Health Planned Lifecycle Events&lt;/a&gt; pages in the AWS Batch User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-batch-ami-status-aws-health/",
-      "publishedAt": "2026-03-25T20:32:00.000Z",
-      "updatedAt": "2026-03-25T20:32:00.000Z",
-      "categories": [],
-      "services": [
-        "Batch",
-        "Health"
-      ],
-      "tags": [
-        "batch",
-        "health"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "95fbbe0d807185f0",
-      "title": "Amazon SageMaker Unified Studio launches support for remote connection from Cursor IDE",
-      "description": "Today, AWS announces remote connection from Cursor IDE to Amazon SageMaker Unified Studio via the AWS Toolkit extension. This new capability allows data scientists, ML engineers, and developers to leverage their Cursor setup - including its AI-powered code completion, natural language editing, and multi-file editing capabilities - while accessing the scalable compute resources of Amazon SageMaker. By connecting Cursor to SageMaker Unified Studio using the AWS Toolkit extension, you can eliminate context switching between your local IDE and cloud infrastructure, maintaining your existing AI-ass",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces remote connection from Cursor IDE to Amazon SageMaker Unified Studio via the AWS Toolkit extension. This new capability allows data scientists, ML engineers, and developers to leverage their Cursor setup - including its AI-powered code completion, natural language editing, and multi-file editing capabilities - while accessing the scalable compute resources of Amazon SageMaker. By connecting Cursor to SageMaker Unified Studio using the AWS Toolkit extension, you can eliminate context switching between your local IDE and cloud infrastructure, maintaining your existing AI-assisted development workflows within a single environment for all your AWS analytics and AI/ML services.&lt;/p&gt; \n&lt;p&gt;SageMaker Unified Studio, part of the next generation of Amazon SageMaker, offers a broad set of fully managed cloud interactive development environments (IDE), including JupyterLab and Code Editor based on Code-OSS (Open-Source Software). Starting today, you can also use your customized local Cursor setup - complete with custom rules, extensions, and AI model preferences - while accessing your compute resources and data on Amazon SageMaker. Since Cursor is built on Code-OSS, authentication is secure via IAM through the AWS Toolkit extension, giving you access to all your SageMaker Unified Studio domains and projects. This integration provides a convenient path from your local AI-powered development environment to scalable infrastructure for running workloads across data processing, SQL analytics services like Amazon EMR, AWS Glue, and Amazon Athena, and ML workflows - all with enterprise-grade security including customer-managed encryption keys and AWS IAM integration.&lt;/p&gt; \n&lt;p&gt;This feature is available in &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;all AWS Regions where Amazon SageMaker Unified Studio is available&lt;/a&gt;. To learn more, visit&amp;nbsp;the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/local-ide-support.html\"&gt;local IDE support documentation&lt;/a&gt;..&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/sagemaker-unified-studio-cursor-ide/",
-      "publishedAt": "2026-03-25T20:21:00.000Z",
-      "updatedAt": "2026-03-25T20:21:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Analytics"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "analytics",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "67031450eb5358e0",
-      "title": "Amazon Bedrock AgentCore adds support for Chrome policies and custom root CA",
-      "description": "Amazon Bedrock AgentCore now enables customers to configure Chrome Enterprise policies for AgentCore Browser and specify custom root Certificate Authority (CA) certificates for both AgentCore Browser and Code Interpreter. These enhancements help ensure enterprise requirements are met when allowing AI agents to operate within organizations that have strict security policies and internal infrastructure using custom certificates. With Chrome policies, you can leverage over 100+ configurable policies for managing browser behavior across security, URL filtering, content settings, and more to enforc",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore now enables customers to configure Chrome Enterprise policies for AgentCore Browser and specify custom root Certificate Authority (CA) certificates for both AgentCore Browser and Code Interpreter. These enhancements help ensure enterprise requirements are met when allowing AI agents to operate within organizations that have strict security policies and internal infrastructure using custom certificates.&lt;br&gt; &lt;br&gt; With Chrome policies, you can leverage over 100+ configurable policies for managing browser behavior across security, URL filtering, content settings, and more to enforce organizational compliance requirements. For example, restrict agents to specific URLs for kiosk-mode operations, disable password managers and downloads for data-entry tasks, or implement URL blocklists for regulatory compliance. Custom root CA support enables agents to seamlessly connect to internal services like Artifactory, Jira, and finance portals that use SSL certificates signed by your organization's internal Certificate Authority, and work with corporate proxies performing TLS interception.&lt;br&gt; &lt;br&gt; These features are available in all 14 &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html\"&gt;AWS Regions&lt;/a&gt; where Amazon Bedrock AgentCore Browser and Code Interpreter are available: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Asia Pacific (Seoul), and Canada (Central).&lt;br&gt; &lt;br&gt; To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/browser-tool.html\"&gt;AgentCore Browser documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/agentcore-browser-policies-root-ca/",
-      "publishedAt": "2026-03-25T20:10:00.000Z",
-      "updatedAt": "2026-03-25T20:10:00.000Z",
-      "categories": [
-        "Amazon Bedrock",
-        "Artificial Intelligence",
-        "Developer Tools"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "amazon bedrock",
-        "artificial intelligence",
-        "developer tools",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "23b9a3ccdddde3c0",
-      "title": "AWS Batch now supports quota management and preemption for SageMaker Training jobs",
-      "description": "AWS Batch now supports quota management with job preemption for SageMaker Training jobs, enabling you to efficiently allocate and share compute resources across your teams and projects. If you're using GPU capacity in SageMaker Training jobs, you can now intelligently allocate compute resources, prioritize your business-critical training jobs, and automatically preempt lower-priority workloads when your urgent experiments arrive. With quota management, you can create up to 20 quota shares per job queue that function as virtual queues with dedicated capacity limits and configurable resource sha",
-      "descriptionHtml": "&lt;p&gt;AWS Batch now supports quota management with job preemption for SageMaker Training jobs, enabling you to efficiently allocate and share compute resources across your teams and projects. If you're using GPU capacity in SageMaker Training jobs, you can now intelligently allocate compute resources, prioritize your business-critical training jobs, and automatically preempt lower-priority workloads when your urgent experiments arrive.&lt;br&gt; &lt;br&gt; With quota management, you can create up to 20 quota shares per job queue that function as virtual queues with dedicated capacity limits and configurable resource sharing strategies. The service automatically uses cross-share preemption to restore borrowed capacity when the original owner submits jobs, and supports in-share preemption to allow high-priority jobs to preempt lower-priority jobs within the same quota share. You can monitor capacity utilization at the queue, quota share, and job-level granularity, update job priorities after submission to influence preemption decisions, and configure preemption retry limits to control behavior. The feature integrates directly with the SageMaker Python SDK via the &lt;a href=\"https://github.com/aws/sagemaker-python-sdk/tree/master/sagemaker-train/src/sagemaker/train/aws_batch\"&gt;&lt;i&gt;&lt;/i&gt;aws_batch&lt;/a&gt;&lt;i&gt; &lt;/i&gt;module.&lt;br&gt; &lt;br&gt; Quota management with job preemption for SageMaker Training jobs is available today in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where AWS Batch is available. For more information, see our &lt;a href=\"https://github.com/aws/sagemaker-python-sdk/blob/master/v3-examples/training-examples/aws_batch/sm-training-queues_quota-management.ipynb\"&gt;Quota Management example notebook&lt;/a&gt; on GitHub and the &lt;a href=\"https://docs.aws.amazon.com/batch/latest/userguide/quota-management.html\"&gt;AWS Batch User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-batch-quota-management-preemption-sagemaker/",
-      "publishedAt": "2026-03-25T18:40:00.000Z",
-      "updatedAt": "2026-03-25T18:40:00.000Z",
-      "categories": [],
-      "services": [
-        "Batch",
-        "SageMaker"
-      ],
-      "tags": [
-        "batch",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "15dabedfc93f0482",
-      "title": "Amazon Route 53 Profiles now supports granular IAM permissions for resource and VPC associations",
-      "description": "Amazon Route 53 Profiles now supports granular AWS Identity and Access Management (IAM) permissions, allowing you to control which users can manage specific resource types and VPC associations within your Profiles. With this launch, you can create IAM policies that restrict users to specific operations (associate, disassociate, or update) on individual resource types such as private hosted zones, Resolver rules, or DNS Firewall rule groups. You can also define permissions based on resource ARNs, hosted zone names, Resolver rule domain names, DNS Firewall rule group priority ranges, or specific",
-      "descriptionHtml": "&lt;p&gt;Amazon Route 53 Profiles now supports granular AWS Identity and Access Management (IAM) permissions, allowing you to control which users can manage specific resource types and VPC associations within your Profiles. With this launch, you can create IAM policies that restrict users to specific operations (associate, disassociate, or update) on individual resource types such as private hosted zones, Resolver rules, or DNS Firewall rule groups. You can also define permissions based on resource ARNs, hosted zone names, Resolver rule domain names, DNS Firewall rule group priority ranges, or specific VPC associations.&lt;br&gt; &lt;br&gt; Route 53 Profiles enable you to define a standard DNS configuration that includes private hosted zone associations, Resolver rules, and DNS Firewall rule groups, and apply this configuration to multiple VPCs in your account or share with AWS accounts using AWS Resource Access Manager (RAM). This new capability provides administrators with fine-grained control over Profile management, enabling you to delegate specific responsibilities while maintaining security and governance standards across your organization.&lt;br&gt; &lt;br&gt; This feature is available at no additional charge in all AWS Regions where Route 53 Profiles is available, except in Middle East (Bahrain) and Middle East (UAE). To learn more, see the Amazon Route 53 Profiles &lt;a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/specifying-conditions-route53.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;&amp;nbsp;and &lt;a href=\"https://aws.amazon.com/route53/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-route-53-profiles-granular-iam/",
-      "publishedAt": "2026-03-25T18:34:00.000Z",
-      "updatedAt": "2026-03-25T18:34:00.000Z",
-      "categories": [
-        "Amazon Route 53",
-        "Networking And Content Delivery",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "VPC",
-        "Route 53",
-        "IAM"
-      ],
-      "tags": [
-        "amazon route 53",
-        "networking and content delivery",
-        "aws govcloud us",
-        "vpc",
-        "route 53",
-        "iam"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "365530bf3ec04f54",
-      "title": "Amazon Quick Now Available in the AWS Tokyo Region",
-      "description": "Amazon Quick is now available in the AWS Asia Pacific (Tokyo) region (ap-northeast-1). This launch allows customers in Japan to access the full power of Amazon Quick while meeting local and regional requirements for data sovereignty. Amazon Quick provides business users an agentic teammate that quickly answers questions at work and turns those answers into actions. With Amazon Quick, every user is empowered to make better decisions, faster and take actions without switching applications using AI they can trust. Today’s launch allows customers to take advantage of Amazon Quick’s capabilities in",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick is now available in the AWS Asia Pacific (Tokyo) region (ap-northeast-1). This launch allows customers in Japan to access the full power of Amazon Quick while meeting local and regional requirements for data sovereignty.&lt;/p&gt; \n&lt;p&gt;Amazon Quick provides business users an agentic teammate that quickly answers questions at work and turns those answers into actions. With Amazon Quick, every user is empowered to make better decisions, faster and take actions without switching applications using AI they can trust. Today’s launch allows customers to take advantage of Amazon Quick’s capabilities including AI-powered chat, Research, Spaces, Flows, and QuickSight dashboards — with their data stored and processed locally within the AWS Tokyo region. This expansion also supports in-region inference through JP-CRIS (Japan Cross-Region Inference), ensuring that inference requests from Tokyo instances are routed exclusively within the AWS Tokyo region. Customers in regulated industries such as financial services, healthcare, and the public sector can meet strict data sovereignty requirements of Japan's data protection frameworks, including the Act on the Protection of Personal Information (APPI).&lt;/p&gt; \n&lt;p&gt;For a full list of AWS regions where Amazon Quick is available, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html\"&gt;Quick regional availability page.&lt;/a&gt;&amp;nbsp;To learn more, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/quick/\"&gt;Amazon Quick documentation&lt;/a&gt;&amp;nbsp;or&amp;nbsp;&lt;a href=\"/quick/\"&gt;product detail page&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-quick-now-available-in-the-aws-tokyo-region/",
-      "publishedAt": "2026-03-25T17:02:00.000Z",
-      "updatedAt": "2026-03-25T17:02:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "76299fc598735b94",
-      "title": "Amazon Aurora PostgreSQL now available with the AWS Free Tier",
-      "description": "Amazon Aurora PostgreSQL is now available on the AWS Free Tier, which offers new customers $100 in AWS credits upon sign-up and the ability to earn an additional $100 in credits by using services including Amazon RDS. With a Free Plan account, you can create an Aurora PostgreSQL serverless cluster from the Amazon RDS Console , AWS CLI, or AWS SDKs using express configuration, which enables you to create and query an Aurora PostgreSQL database in seconds. To get started, select the Free Plan during new AWS account sign-up. AWS Free Tier is available in all AWS Regions where Aurora PostgreSQL se",
-      "descriptionHtml": "&lt;p&gt;Amazon Aurora PostgreSQL is now available on the AWS Free Tier, which offers new customers $100 in AWS credits upon sign-up and the ability to earn an additional $100 in credits by using services including Amazon RDS.&lt;br&gt; &lt;br&gt; With a Free Plan account, you can create an Aurora PostgreSQL serverless cluster from the &lt;a href=\"https://console.aws.amazon.com/rds/home\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Console&lt;/a&gt;, AWS CLI, or AWS SDKs using express configuration, which enables you to create and query an Aurora PostgreSQL database in seconds. To get started, select the Free Plan during new AWS account sign-up.&lt;/p&gt; \n&lt;p&gt;AWS Free Tier is available in all AWS Regions where Aurora PostgreSQL serverless is &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.Aurora_Fea_Regions_DB-eng.Feature.ServerlessV2.html#Concepts.Aurora_Fea_Regions_DB-eng.Feature.ServerlessV2.apg\" target=\"_blank\"&gt;supported.&lt;/a&gt; For more details, see the &lt;a href=\"https://aws.amazon.com/rds/free/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Aurora &amp;amp; RDS Free Tier&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/free/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Free Tier&lt;/a&gt; pages.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-aurora-postgresql-aws-free-tier/",
-      "publishedAt": "2026-03-25T17:00:00.000Z",
-      "updatedAt": "2026-03-25T17:00:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Aurora"
-      ],
-      "services": [
-        "Aurora"
-      ],
-      "tags": [
-        "databases",
-        "amazon aurora",
-        "aurora"
       ],
       "isNew": false
     }
