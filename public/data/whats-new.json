@@ -1,7 +1,178 @@
 {
-  "lastUpdated": "2026-06-02T09:33:28.322Z",
+  "lastUpdated": "2026-06-03T09:43:20.911Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "1e7052e80b9ed22b",
+      "title": "Amazon EKS and Amazon EKS Distro now supports Kubernetes version 1.36",
+      "description": "Kubernetes version 1.36 introduced several new features and bug fixes, and AWS is excited to announce that you can now use Amazon Elastic Kubernetes Service (EKS) and Amazon EKS Distro to run Kubernetes version 1.36. Starting today, you can create new EKS clusters using version 1.36 and upgrade existing clusters to version 1.36 using the EKS console, the eksctl command line interface, or through an infrastructure-as-code tool. Kubernetes version 1.36 introduces several key improvements, promoting User Namespaces to general availability for mapping container root to an unprivileged host user so",
+      "descriptionHtml": "&lt;p&gt;Kubernetes version 1.36 introduced several new features and bug fixes, and AWS is excited to announce that you can now use &lt;a href=\"https://aws.amazon.com/eks/\" target=\"_blank\"&gt;Amazon Elastic Kubernetes Service&lt;/a&gt; (EKS) and &lt;a href=\"https://aws.amazon.com/eks/eks-distro/\" target=\"_blank\"&gt;Amazon EKS Distro&lt;/a&gt; to run Kubernetes version 1.36. Starting today, you can create new EKS clusters using version 1.36 and upgrade existing clusters to version 1.36 using the EKS console, the eksctl command line interface, or through an infrastructure-as-code tool.&lt;br&gt; &lt;br&gt; Kubernetes version 1.36 introduces several key improvements, promoting User Namespaces to general availability for mapping container root to an unprivileged host user so that a breakout grants no node-level privileges, alongside Mutating Admission Policies for CEL-based resource mutations in the API server without webhook infrastructure. The release also brings In-Place Pod-Level Resources Vertical Scaling allowing Pods to resize their shared CPU and memory budget without restart, and Resource Health Status reporting device health in Pod status to help identify hardware-caused crash loops. To learn more about the changes in Kubernetes version 1.36, see our &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions-standard.html\" target=\"_blank\"&gt;documentation&lt;/a&gt; and the Kubernetes project &lt;a href=\"https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.36.md\" target=\"_blank\"&gt;release notes.&lt;/a&gt;&lt;br&gt; &lt;br&gt; EKS now supports Kubernetes version 1.36 in all the AWS Regions where EKS is available, including the AWS GovCloud (US) Regions.&lt;br&gt; &lt;br&gt; You can learn more about the Kubernetes versions available on EKS and instructions to update your cluster to version 1.36 by visiting EKS documentation. You can use &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/cluster-insights.html\" target=\"_blank\"&gt;EKS cluster insights&lt;/a&gt; to check if there are any issues that can impact your Kubernetes cluster upgrades. EKS Distro builds of Kubernetes version 1.36 are available through ECR Public Gallery and GitHub. Learn more about the EKS version lifecycle policies in the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html\" target=\"_blank\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-eks-distro-kubernetes-version-1-36",
+      "publishedAt": "2026-06-02T21:48:00.000Z",
+      "updatedAt": "2026-06-02T21:48:00.000Z",
+      "categories": [
+        "Amazon Eks",
+        "Containers"
+      ],
+      "services": [
+        "EKS"
+      ],
+      "tags": [
+        "amazon eks",
+        "containers",
+        "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ccdefa18f52dfceb",
+      "title": "AWS Config now supports internal service linked rules",
+      "description": "AWS Config now supports internal service linked rules, enabling AWS services to evaluate AWS resource configurations using AWS Config managed rules. Internal service linked rules extend the existing service linked recorder capability by allowing AWS services such as AWS Security Hub CSPM to deploy and manage rule evaluations for service specific functionality. With internal service linked rules, AWS services can use AWS Config managed rules to provide integrated security and compliance capabilities. Evaluation results are delivered directly to the AWS service that deployed the rule at no charg",
+      "descriptionHtml": "&lt;p&gt;AWS Config now supports internal service linked rules, enabling AWS services to evaluate AWS resource configurations using AWS Config managed rules. Internal service linked rules extend the existing service linked recorder capability by allowing AWS services such as AWS Security Hub CSPM to deploy and manage rule evaluations for service specific functionality.&lt;br&gt; &lt;br&gt; With internal service linked rules, AWS services can use AWS Config managed rules to provide integrated security and compliance capabilities. Evaluation results are delivered directly to the AWS service that deployed the rule at no charge from AWS Config to customers. Internal service linked rules operate independently of existing customer managed AWS Config recorders and rules. This allows customers to continue using AWS Config for inventory, governance, compliance, and auditing use cases while AWS services independently manage service specific evaluations.&lt;br&gt; &lt;br&gt; AWS Security Hub CSPM internal service-linked rules are now available in all commercial, GovCloud, and China Regions. To learn more, see the AWS Config &lt;a href=\"https://docs.aws.amazon.com/config/latest/developerguide/service-linked-awsconfig-rules.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-config-supports-internal-service-linked-rules",
+      "publishedAt": "2026-06-02T18:00:00.000Z",
+      "updatedAt": "2026-06-02T18:00:00.000Z",
+      "categories": [
+        "AWS Config"
+      ],
+      "services": [
+        "Config"
+      ],
+      "tags": [
+        "aws config",
+        "config"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f4a21adb04c1b46c",
+      "title": "AWS Deadline Cloud now supports persistent storage for Service Managed Fleets",
+      "description": "AWS Deadline Cloud now supports persistent storage for Service-Managed Fleets (SMF), allowing you to maintain data across worker lifecycle events. AWS Deadline Cloud is a fully managed service that makes it easy for teams to run compute-intensive workloads in the cloud for visual effects, animation, product design, simulation, and gaming. Previously, Deadline Cloud SMF workers relied only on ephemeral storage, requiring software and assets to be reinstalled each time a worker was recycled or replaced. Now, Deadline Cloud attaches persistent Amazon Elastic Block Store (Amazon EBS) volumes to SM",
+      "descriptionHtml": "&lt;p&gt;AWS Deadline Cloud now supports persistent storage for Service-Managed Fleets (SMF), allowing you to maintain data across worker lifecycle events.&amp;nbsp;AWS Deadline Cloud is a fully managed service that makes it easy for teams to run compute-intensive workloads in the cloud for visual effects, animation, product design, simulation, and gaming.&lt;br&gt; &lt;br&gt; Previously, Deadline Cloud SMF workers relied only on ephemeral storage, requiring software and assets to be reinstalled each time a worker was recycled or replaced. Now, Deadline Cloud attaches persistent Amazon Elastic Block Store (Amazon EBS) volumes to SMF workers, preserving Conda environments, Perforce workspaces, shader caches, and asset collections across worker lifecycle events. This reduces worker startup time and helps you complete jobs faster.&amp;nbsp;You can configure the number of persistent volumes per worker and set a time-to-live (TTL) to control how long volumes are retained, giving you flexibility to balance storage costs with startup performance.&amp;nbsp;&lt;br&gt; &lt;br&gt; Persistent storage for SMF is available in all AWS Regions where Deadline Cloud is offered. Persistent volumes are priced the same as existing Service-Managed Fleets EBS pricing. See the &lt;a href=\"https://aws.amazon.com/deadline-cloud/pricing/\"&gt;Deadline Cloud pricing page&lt;/a&gt;&amp;nbsp;for details. To learn more, visit the &lt;a href=\"https://aws.amazon.com/deadline-cloud/\"&gt;AWS Deadline Cloud product page&lt;/a&gt; or our &lt;a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/userguide/volumes.html\"&gt;user guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/deadline-cloud/persistent-storage",
+      "publishedAt": "2026-06-02T17:00:00.000Z",
+      "updatedAt": "2026-06-02T17:00:00.000Z",
+      "categories": [
+        "Media Services",
+        "AWS Deadline Cloud"
+      ],
+      "services": [],
+      "tags": [
+        "media services",
+        "aws deadline cloud"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0734edc3fc9f6db9",
+      "title": "Amazon SageMaker Studio now sets up in seconds with model customization ready from the start",
+      "description": "Amazon SageMaker Studio quick setup now completes in under twenty seconds, reduced from over two minutes. Whether you are building ML pipelines, exploring data, developing with notebooks, or fine-tuning foundation models, you can go from sign-in to a fully configured Studio environment almost instantly. As part of this streamlined setup, newly created Studio environments now come with serverless model customization permissions automatically configured. A new managed policy, AmazonSageMakerModelCustomizationCoreAccess, is created and attached for you, providing permissions for serverless model ",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Studio quick setup now completes in under twenty seconds, reduced from over two minutes. Whether you are building ML pipelines, exploring data, developing with notebooks, or fine-tuning foundation models, you can go from sign-in to a fully configured Studio environment almost instantly.&lt;br&gt; &lt;br&gt; As part of this streamlined setup, newly created Studio environments now come with serverless model customization permissions automatically configured. A new managed policy, AmazonSageMakerModelCustomizationCoreAccess, is created and attached for you, providing permissions for serverless model customization jobs including fine-tuning with custom reward functions for reinforcement learning, model evaluation, and deployment to SageMaker or Bedrock endpoints. This eliminates the need to manually create and configure IAM roles and policies before you can start experimenting. For existing Studio environments, actionable messages with direct links to documentation guide you through adding these permissions.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Commercial Regions where Amazon SageMaker Studio is supported. To get started, create a new Studio environment using quick setup in the SageMaker AI Console. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-quick-start.html\"&gt;Quick setup&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-open-weight-prereq.html\"&gt;Model Customization permissions setup&lt;/a&gt; in the Amazon SageMaker documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/quick-setup-model-customization-sagemaker-studio/",
+      "publishedAt": "2026-06-02T16:23:00.000Z",
+      "updatedAt": "2026-06-02T16:23:00.000Z",
+      "categories": [
+        "Amazon Sagemaker Deploy",
+        "Amazon Sagemaker Studio",
+        "Artificial Intelligence",
+        "Aiml",
+        "Amazon Sagemaker Training",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "amazon sagemaker deploy",
+        "amazon sagemaker studio",
+        "artificial intelligence",
+        "aiml",
+        "amazon sagemaker training",
+        "amazon sagemaker",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "73b39d5f01bf04e2",
+      "title": "Amazon ElastiCache for Valkey now supports durability",
+      "description": "Today, AWS announces durability support for Amazon ElastiCache. Durability enables you to use ElastiCache for workloads that require microsecond read latency but cannot tolerate data loss. With durability support, ElastiCache now stores data durably across multiple Availability Zones (AZs) using a Multi-AZ transactional log to enable fast failover, database recovery, and node restarts to prevent data loss in the unlikely event of a failure. You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before respondi",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces durability support for Amazon ElastiCache. Durability enables you to use ElastiCache for workloads that require microsecond read latency but cannot tolerate data loss. With durability support, ElastiCache now stores data durably across multiple Availability Zones (AZs) using a Multi-AZ transactional log to enable fast failover, database recovery, and node restarts to prevent data loss in the unlikely event of a failure.&lt;/p&gt; \n&lt;p&gt;You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before responding to the client, designed for zero data loss at single-digit millisecond write latency. Asynchronous writes persist data after responding to the client, maintaining microsecond write latency at no additional cost. However, up to 10 seconds of uncommitted data could be lost in the rare event of a failure. Both options maintain microsecond read latency. You can now use ElastiCache for a broader set of use cases beyond caching where data loss is unacceptable such as AI agent long-term memory, AI agent workflow state, knowledge bases for RAG applications, payment tokenization, and real-time inventory management.&lt;/p&gt; \n&lt;p&gt;Durability for ElastiCache is available in all AWS commercial Regions, AWS China Regions, and AWS GovCloud (US) Regions starting with Valkey 9.0. To get started, create a new ElastiCache cluster and select your preferred durability option using the AWS Management Console, AWS Software Development Kit (SDK), or AWS Command Line Interface (CLI). For pricing details, visit the &lt;a href=\"https://aws.amazon.com/elasticache/pricing/\"&gt;Amazon ElastiCache pricing page&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/durability.html\"&gt;ElastiCache documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/blogs/database/announcing-durability-for-amazon-elasticache/\"&gt;blog&lt;/a&gt;.&amp;nbsp;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/durability-amazon-elasticache",
+      "publishedAt": "2026-06-02T15:00:00.000Z",
+      "updatedAt": "2026-06-02T15:00:00.000Z",
+      "categories": [],
+      "services": [
+        "ElastiCache"
+      ],
+      "tags": [
+        "elasticache"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7c1dc8634405b874",
+      "title": "Amazon Location Service announces public transit and intermodal routing",
+      "description": "Amazon Location Service today announced support for public transit and intermodal routing in the Routes API. Developers can now use the CalculateRoutes operation with two new travel modes, Transit and Intermodal, to plan journeys that combine public transportation with walking, driving, taxi, and rental segments. With public transit routing, applications can calculate point-to-point routes using buses, subways, trains, ferries, and other transit types, including walking directions to and from stops, departure and arrival times, and transit line details. Intermodal routing extends this by combi",
+      "descriptionHtml": "&lt;p&gt;Amazon Location Service today announced support for public transit and intermodal routing in the Routes API. Developers can now use the CalculateRoutes operation with two new travel modes, Transit and Intermodal, to plan journeys that combine public transportation with walking, driving, taxi, and rental segments.&lt;br&gt; &lt;br&gt; With public transit routing, applications can calculate point-to-point routes using buses, subways, trains, ferries, and other transit types, including walking directions to and from stops, departure and arrival times, and transit line details. Intermodal routing extends this by combining multiple transport types in a single route, supporting common patterns such as park-and-ride (vehicle plus transit), taxi-and-ride (taxi plus transit), and last-mile completion using a taxi or rental. These capabilities help builders deliver applications across mobility, logistics, employee commute, and urban planning use cases that depend on accurate multi-modal route calculation.&lt;br&gt; &lt;br&gt; Public transit and intermodal routing are available in the following AWS Regions: US East (Ohio), US East (N. Virginia), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Stockholm), Europe (Spain), and South America (São Paulo).&lt;br&gt; &lt;br&gt; To get started, visit the Amazon Location Service Routes &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/what-is.html\"&gt;Developer Guide&lt;/a&gt;, the &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/transit-routing.html\"&gt;Transit Routing&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/intermodal-routing.html\"&gt;Intermodal Routing&lt;/a&gt; documentation pages, or the &lt;a href=\"https://docs.aws.amazon.com/location/latest/APIReference/API_CalculateRoutes.html\"&gt;CalculateRoutes API Reference.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-location-service/amazon-location-new-public-transit-intermodal-routing",
+      "publishedAt": "2026-06-02T14:51:00.000Z",
+      "updatedAt": "2026-06-02T14:51:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
+    {
+      "id": "de373083ee90115d",
+      "title": "AWS Cost and Usage Report 2.0 now supports Athena and Redshift integration",
+      "description": "AWS today announced that AWS Cost and Usage Report 2.0 (CUR 2.0) provides new integration options with AWS Athena and AWS Redshift. This capability allows customers to analyze the data from their AWS CUR 2.0 in Amazon Simple Storage Service (Amazon S3) using standard SQL without building custom data warehouse solutions, bringing feature parity with CUR 1.0 integration options. With this launch, when customers select Athena or Redshift integration, CUR 2.0 exports are automatically delivered in the optimal format (Parquet, GZIP) for the chosen query engine. Each export includes the supporting m",
+      "descriptionHtml": "&lt;p&gt;AWS today announced that AWS Cost and Usage Report 2.0 (CUR 2.0) provides new integration options with AWS Athena and AWS Redshift. This capability allows customers to analyze the data from their AWS CUR 2.0 in Amazon Simple Storage Service (Amazon S3) using standard SQL without building custom data warehouse solutions, bringing feature parity with CUR 1.0 integration options. &lt;br&gt; &lt;br&gt; With this launch, when customers select Athena or Redshift integration, CUR 2.0 exports are automatically delivered in the optimal format (Parquet, GZIP) for the chosen query engine. Each export includes the supporting metadata and automation resources needed to get started quickly, such as infrastructure templates, table definitions, and data loading instructions, so customers can begin querying their cost data without manual configuration. As CUR 2.0 data refreshes periodically, updates are automatically reflected in the Athena or Redshift tables with no additional ETL required.&lt;br&gt; &lt;br&gt; This feature is available in all commercial AWS Regions, except the AWS GovCloud (US) Regions and the China Regions.&lt;br&gt; &lt;br&gt; To learn more about this feature, see AWS Data Exports and &lt;a href=\"https://docs.aws.amazon.com/cur/latest/userguide/what-is-data-exports.html\"&gt;AWS Billing and Cost Management&lt;/a&gt; in the &lt;i&gt;AWS Cost Management User Guide&lt;/i&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-cur2.0-athena-redshift/",
+      "publishedAt": "2026-06-02T13:40:00.000Z",
+      "updatedAt": "2026-06-02T13:40:00.000Z",
+      "categories": [
+        "General:Products",
+        "Marketing:Marchitecture"
+      ],
+      "services": [
+        "Redshift",
+        "Athena",
+        "Cost and Usage Report"
+      ],
+      "tags": [
+        "general:products",
+        "marketing:marchitecture",
+        "redshift",
+        "athena",
+        "cost and usage report"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "afa0671c03e71637",
+      "title": "Amazon RDS for SQL Server supports Bring Your Own Media",
+      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server launches Bring Your Own Media (BYOM) for Microsoft SQL Server. With BYOM, customers who migrate SQL Server applications from on-premises environments can adopt a managed database service on AWS and reuse their existing Microsoft SQL Server licenses, including Software Assurance, through Microsoft's License Mobility program. Amazon RDS provides a managed SQL Server database service that lowers operating costs with features such as high availability, automated backups and monitoring. BYOM helps customers who currently run Microsoft S",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server&lt;/a&gt; launches Bring Your Own Media (BYOM) for Microsoft SQL Server. With BYOM, customers who migrate SQL Server applications from on-premises environments can adopt a managed database service on AWS and reuse their existing Microsoft SQL Server licenses, including Software Assurance, through Microsoft's License Mobility program.&lt;br&gt; &lt;br&gt; Amazon RDS provides a managed SQL Server database service that lowers operating costs with features such as high availability, automated backups and monitoring. BYOM helps customers who currently run Microsoft SQL Server on-premises, on other clouds, or as self-managed SQL Server on Amazon EC2, and want to adopt Amazon RDS and reuse their existing Microsoft SQL Server licenses. They no longer have to incur the cost of additional Microsoft SQL Server licenses, or wait for existing license agreements to expire to adopt RDS. Amazon RDS for SQL Server BYOM is integrated with AWS License Manager so customers can track their Microsoft SQL Server license usage across their AWS environment for licensing compliance.&lt;br&gt; &lt;br&gt; To learn more about how to set up RDS SQL Server database instances with BYOM, visit the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-byom.html\" target=\"_blank\"&gt;Amazon RDS SQL Server User Guide&lt;/a&gt;. For BYOM pricing and regional availability, visit the &lt;a href=\"https://aws.amazon.com/rds/sqlserver/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for SQL Server pricing page&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/rds-sqlserver-supports-bring-your-own-media/",
+      "publishedAt": "2026-06-02T07:00:00.000Z",
+      "updatedAt": "2026-06-02T07:00:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds For Sql Server",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds for sql server",
+        "aws govcloud us",
+        "rds"
+      ],
+      "isNew": true
+    },
     {
       "id": "64f1b09062176855",
       "title": "AWS HealthOmics now supports Nextflow version pinning at run time",
@@ -90,6 +261,23 @@
         "amazon sagemaker",
         "analytics",
         "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b2507bbb1e092623",
+      "title": "AWS PCS now provides a production-ready Deep Learning AMI",
+      "description": "Today, AWS Parallel Computing Service (AWS PCS) launches PCS-ready DLAMI, an AWS-maintained Amazon Machine Image built on the Deep Learning Base GPU AMI (Ubuntu 24.04). It provides a production-quality foundation for AI/ML training and high performance computing (HPC), with core infrastructure components pre-installed and tested for compatibility. AWS PCS is a managed service that makes it easier for you to run and scale your HPC workloads and build scientific and engineering models on AWS using Slurm. You can use AWS PCS to build complete, elastic environments that integrate compute, storage,",
+      "descriptionHtml": "&lt;p&gt;Today, AWS Parallel Computing Service (AWS PCS) launches PCS-ready DLAMI, an AWS-maintained Amazon Machine Image built on the Deep Learning Base GPU AMI (Ubuntu 24.04). It provides a production-quality foundation for AI/ML training and high performance computing (HPC), with core infrastructure components pre-installed and tested for compatibility.&lt;/p&gt; \n&lt;p&gt;AWS PCS is a managed service that makes it easier for you to run and scale your HPC workloads and build scientific and engineering models on AWS using Slurm. You can use AWS PCS to build complete, elastic environments that integrate compute, storage, networking, and visualization tools. AWS PCS simplifies cluster operations with managed updates and built-in observability features, helping to remove the burden of maintenance. You can work in a familiar environment, focusing on your research and innovation instead of worrying about infrastructure.&lt;/p&gt; \n&lt;p&gt;The AMI inherits the operating system, NVIDIA GPU drivers, CUDA toolkit, EFA drivers, and Lustre client from the source Deep Learning Base GPU AMI, and adds PCS Agent, Slurm for PCS, and EFS utilities. Multiple supported Slurm versions are included, and the correct version activates automatically based on your cluster configuration. You can add frameworks, libraries, and application software on top to complete your environment. AWS releases updated AMIs regularly when the source DLAMI or PCS components are updated, providing ongoing security patches and driver updates.&lt;/p&gt; \n&lt;p&gt;AWS PCS-ready DLAMI is available for x86_64 and arm64 architectures at no additional cost in all AWS Regions where AWS PCS is available. To get started, specify a PCS-ready AMI when configuring your compute node groups. For more information, see &lt;a href=\"https://docs.aws.amazon.com/pcs/latest/userguide/working-with_ami_pcs-ready-dlami.html\"&gt;Using PCS-ready DLAMI&lt;/a&gt; in the &lt;i&gt;AWS PCS User Guide&lt;/i&gt;. For a reference cluster architecture that builds on PCS-ready DLAMI, see the &lt;a href=\"https://github.com/awslabs/awsome-distributed-ai\"&gt;awsome-distributed-ai&lt;/a&gt; repository on GitHub.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-pcs-deep-learning-ami/",
+      "publishedAt": "2026-06-01T16:07:00.000Z",
+      "updatedAt": "2026-06-01T16:07:00.000Z",
+      "categories": [
+        "Compute"
+      ],
+      "services": [],
+      "tags": [
+        "compute"
       ],
       "isNew": true
     },
@@ -369,6 +557,26 @@
         "business productivity",
         "applications",
         "front end web mobile"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f11a078df7485fe8",
+      "title": "AWS HealthLake now supports CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F) requirements",
+      "description": "AWS HealthLake now provides native support for healthcare payers to comply with the CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F). This rule requires Medicare Advantage organizations, Medicaid managed care plans, CHIP managed care entities, and Qualified Health Plan (QHP) issuers to implement four standardized FHIR-based APIs by January 1, 2027. New capabilities Patient Access API CARIN IG for Blue Button® 2.1.0 — enables patients to access their claims, encounter data, and prior authorization information through third-party applications SMART App Launch 2.0.0 — provides",
+      "descriptionHtml": "&lt;p&gt;AWS HealthLake now provides native support for healthcare payers to comply with the CMS Interoperability and Prior Authorization Final Rule (CMS-0057-F). This rule requires Medicare Advantage organizations, Medicaid managed care plans, CHIP managed care entities, and Qualified Health Plan (QHP) issuers to implement four standardized FHIR-based APIs by January 1, 2027.&lt;/p&gt; \n&lt;h3&gt;New capabilities&lt;/h3&gt; \n&lt;p&gt;&lt;b&gt;Patient Access API&lt;/b&gt;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CARIN IG for Blue Button® 2.1.0 — enables patients to access their claims, encounter data, and prior authorization information through third-party applications&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SMART App Launch 2.0.0 — provides secure, standards-based authorization for patient-facing applications&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DaVinci PDex Drug Formulary 2.1.0 — allows patients to query drug coverage information&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;API use metrics collection — supports the annual reporting requirement for aggregated, de-identified Patient Access API usage data&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;&lt;b&gt;Provider Access API&amp;nbsp;&lt;/b&gt;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CARIN IG for Blue Button® 2.1.0 — enables sharing of patient claims and encounter data with in-network providers&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DaVinci PDex 2.1.0 — supports payer-to-provider clinical data exchange&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DaVinci PDex Drug Formulary 2.1.0 — provides drug formulary information to treating providers&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Consent management integration — supports patient opt-out workflows and provider attribution through integration with AWS services&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;&lt;b&gt;Payer-to-Payer API&lt;/b&gt;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CARIN IG for Blue Button® 2.1.0 — facilitates claims and encounter data exchange between payers&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DaVinci PDex 2.1.0 — supports clinical data exchange across payer boundaries&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;$bulk-member-match operation — enables payers to identify shared members at scale for data exchange, supporting the requirement to request patient data from previous payers within one week of coverage start&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;$bulk-member-match status tracking — provides asynchronous status polling for large-scale member matching operations&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DaVinci Data Export — supports bulk FHIR data export aligned with the DaVinci implementation guide for efficient payer-to-payer data transfer&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Group Discovery APIs — enables auto-discovery of resource types available for export, streamlining payer-to-payer integration&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Consent management integration — supports patient opt-in workflows required for payer-to-payer data exchange&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;&lt;b&gt;Prior Authorization API&lt;/b&gt;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DaVinci Coverage Requirements Discovery (CRD) 2.1.0 — allows providers to query whether prior authorization is required and discover documentation requirements for items and services&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DaVinci Documentation Templates and Rules (DTR) 2.1.0 — supports compilation of necessary documentation to accompany prior authorization requests&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DaVinci Prior Authorization Support (PAS) 2.1.0 — enables end-to-end electronic prior authorization including submission, status tracking, and decision communication via FHIR APIs&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SMART App Launch 2.0.0 — provides secure authorization for prior authorization workflow applications&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Prior authorization metrics support — enables payers to collect and expose required metrics including approval rates, denial rates, appeal outcomes, and average decision timeframes&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;AWS HealthLake is a HIPAA-eligible service. Customers are responsible for determining their own compliance obligations under CMS-0057-F and should consult with legal and compliance counsel regarding their specific requirements.&lt;/p&gt; \n&lt;p&gt;AWS HealthLake is available in the US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Mumbai), Europe West (London), Europe (Ireland), and Asia Pacific SouthEast (Sydney) Regions. Visit the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Region Table&lt;/a&gt; to see all the regions.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, see the &lt;a href=\"https://aws.amazon.com/healthlake/\"&gt;AWS HealthLake product page&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/healthlake/latest/devguide/\"&gt;AWS HealthLake Developer Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-healthlake-cms-cms-0057-f/",
+      "publishedAt": "2026-05-29T20:00:00.000Z",
+      "updatedAt": "2026-05-29T20:00:00.000Z",
+      "categories": [
+        "Amazon Healthlake"
+      ],
+      "services": [
+        "HealthLake"
+      ],
+      "tags": [
+        "amazon healthlake",
+        "healthlake"
       ],
       "isNew": true
     },
@@ -1139,7 +1347,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c871730957940e0c",
@@ -1165,7 +1373,7 @@
         "aws govcloud us",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b0e2b6dcc7d82a98",
@@ -1184,7 +1392,7 @@
         "artificial intelligence",
         "developer tools"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3d68d46bbce32437",
@@ -1206,7 +1414,7 @@
         "databases",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "863620836515248d",
@@ -1230,7 +1438,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "830ffbbe121a2290",
@@ -1254,7 +1462,7 @@
         "aws govcloud us",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "bf7c553b282b5c18",
@@ -1276,7 +1484,7 @@
         "networking and content delivery",
         "vpc"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "481a1f3d5ddd5871",
@@ -1306,7 +1514,7 @@
         "backup",
         "guardduty"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0bc081b209309cde",
@@ -10776,221 +10984,6 @@
       "services": [],
       "tags": [
         "management tools"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "1a330b96a3f6c74f",
-      "title": "Amazon OpenSearch Service introduces agentic AI for log analytics",
-      "description": "Amazon OpenSearch Service now offers agentic AI capabilities that enable engineering and support teams to analyze log data through an agentic conversational interface. These agentic AI features help simplify log querying and accelerate incident investigations by allowing teams to interact with data using natural language, plan and initiate autonomous root cause analysis, and persist conversation as they navigate through their Observability workspace in OpenSearch UI. This launch introduces three key capabilities available at no additional cost (token-based usage limits apply). Agentic chat ena",
-      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now offers agentic AI capabilities that enable engineering and support teams to analyze log data through an agentic conversational interface. These agentic AI features help simplify log querying and accelerate incident investigations by allowing teams to interact with data using natural language, plan and initiate autonomous root cause analysis, and persist conversation as they navigate through their Observability workspace in OpenSearch UI.&lt;br&gt; &lt;br&gt; This launch introduces three key capabilities available at no additional cost (token-based usage limits apply). Agentic chat enables you to ask questions in natural language to analyze data, generate and iterate Piped Processing Language (PPL) queries in Discover, and analyze visualizations for insights. When deeper root cause analysis is needed, you can trigger the investigation agent to autonomously and iteratively plan for the investigation, execute queries, reflect on results, and then deliver structured root cause hypotheses ranked by likelihood with full transparency into its reasoning. With agent memory, you can seamlessly continue your conversation across different feature pages or in a new web session.&lt;br&gt; &lt;br&gt; You can use the agentic AI features in the following AWS Regions: Asia Pacific (Tokyo), Asia Pacific (Sydney), Europe (Frankfurt), Europe (Stockholm), Europe (Spain), Europe (Ireland), US East (N. Virginia), US East (Ohio), and US West (Oregon).&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/application-ai-assistant.html\"&gt;Agentic AI in Amazon OpenSearch Service&lt;/a&gt;. For more information about Amazon OpenSearch Service, see the &lt;a href=\"https://aws.amazon.com/opensearch-service/\"&gt;Amazon OpenSearch Service product page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/opensearch-agentic-ai-log-analytics-observability/",
-      "publishedAt": "2026-03-31T21:17:00.000Z",
-      "updatedAt": "2026-03-31T21:17:00.000Z",
-      "categories": [
-        "Analytics",
-        "Artificial Intelligence",
-        "Amazon Opensearch Service"
-      ],
-      "services": [
-        "OpenSearch"
-      ],
-      "tags": [
-        "analytics",
-        "artificial intelligence",
-        "amazon opensearch service",
-        "opensearch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "102db46dcc47f38f",
-      "title": "AWS IAM Identity Center is now available in AWS European Sovereign Cloud (Germany) Region",
-      "description": "You can now deploy AWS IAM Identity Center in the AWS European Sovereign Cloud (Germany) Region. The AWS European Sovereign Cloud is a new independent cloud for Europe entirely located within the European Union (EU), designed to help customers meet their evolving sovereignty requirements. IAM Identity Center is the recommended service for managing workforce access to AWS applications. It enables you to connect your existing source of workforce identities once and to offer your users a single sign-on experience across the AWS European Sovereign Cloud. It powers the personalized experiences prov",
-      "descriptionHtml": "&lt;p&gt;You can now deploy AWS IAM Identity Center in the AWS European Sovereign Cloud (Germany) Region. The AWS European Sovereign Cloud is a new independent cloud for Europe entirely located within the European Union (EU), designed to help customers meet their evolving sovereignty requirements.&lt;/p&gt; \n&lt;p&gt;IAM Identity Center is the recommended service for managing workforce access to AWS applications. It enables you to connect your existing source of workforce identities once and to offer your users a single sign-on experience across the AWS European Sovereign Cloud. It powers the personalized experiences provided by AWS applications, and the ability to define and audit user-aware access to data in AWS services. It can also help you manage access to multiple AWS accounts from a central place. IAM Identity Center is available at no additional cost.&lt;/p&gt; \n&lt;p&gt;To learn more about IAM Identity Center, &lt;a href=\"https://aws.amazon.com/iam/identity-center/\"&gt;visit the product detail page&lt;/a&gt;. To get started, see the &lt;a href=\"https://docs.aws.eu/singlesignon/latest/userguide/what-is.html\"&gt;IAM Identity Center user guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-iam-identity-center-european-sovereign-cloud-germany-region/",
-      "publishedAt": "2026-03-31T21:00:00.000Z",
-      "updatedAt": "2026-03-31T21:00:00.000Z",
-      "categories": [
-        "AWS Iam Identity Center",
-        "Security Identity And Compliance"
-      ],
-      "services": [
-        "IAM",
-        "IAM Identity Center"
-      ],
-      "tags": [
-        "aws iam identity center",
-        "security identity and compliance",
-        "iam",
-        "iam identity center"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "395f88f0cbf12703",
-      "title": "Amazon Managed Service for Apache Flink now supports Apache Flink 2.2",
-      "description": "Amazon Managed Service for Apache Flink now supports Apache Flink version 2.2. This is a major upgrade that brings runtime improvements such as Java 17 support, RocksDB 8.10.0 for better I/O performance, and serialization enhancements. Additionally, Dataset API and Scala APIs are now deprecated. You can create a new application on Apache Flink 2.2 or use in-place version upgrades to adopt the Flink 2.2 runtime for a simpler and faster upgrade to compatible applications. Amazon Managed Service for Apache Flink makes it easier to transform and analyze streaming data in real time across various u",
-      "descriptionHtml": "&lt;p&gt;Amazon Managed Service for Apache Flink now supports Apache Flink version 2.2. This is a major upgrade that brings runtime improvements such as Java 17 support, RocksDB 8.10.0 for better I/O performance, and serialization enhancements. Additionally, Dataset API and Scala APIs are now deprecated.&amp;nbsp;You can &lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/how-creating-apps.html\"&gt;create a new application&lt;/a&gt; on Apache Flink 2.2 or use&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/flink-2-2-upgrade-guide.html\"&gt;in-place version upgrades&lt;/a&gt;&amp;nbsp;to adopt the Flink 2.2 runtime for a simpler and faster upgrade to compatible applications.&lt;br&gt; &lt;br&gt; Amazon Managed Service for Apache Flink makes it easier to transform and analyze streaming data in real time across various use cases, including real-time analytics, anomaly detection, and complex event processing. Amazon Managed Service for Apache Flink simplifies the setup, operation, and scaling of Apache Flink applications, allowing developers and data engineers to focus on building and running their streaming applications without managing the underlying infrastructure.&lt;br&gt; &lt;br&gt; Apache Flink 2.2 is available across &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS regions&lt;/a&gt; where Amazon Managed Service for Apache Flink is offered. You can learn more about Apache Flink 2.2 in Amazon Managed Service for Apache Flink in our &lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/flink-2-2.html\"&gt;documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-managed-service-flink-2-2/",
-      "publishedAt": "2026-03-31T20:00:00.000Z",
-      "updatedAt": "2026-03-31T20:00:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Managed Service For Apache Flink"
-      ],
-      "services": [],
-      "tags": [
-        "analytics",
-        "amazon managed service for apache flink"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f41343db775c51fd",
-      "title": "Amazon SageMaker Unified Studio adds Observability for AWS Glue jobs via CloudWatch metrics",
-      "description": "Amazon SageMaker Unified Studio adds Observability for jobs, it now displays Amazon CloudWatch metrics for AWS Glue jobs directly alongside job logs in a single, unified interface. This enhancement adds observability to SageMaker Unified Studio, enabling data engineers and ETL developers to streamline their troubleshooting processes. With this feature, teams can diagnose performance issues faster by correlating resource utilization patterns—including DPU utilization, memory consumption, CPU load, and data movement size—directly with job log output. Specific use cases include identifying comput",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio adds Observability for jobs, it now displays Amazon CloudWatch metrics for AWS Glue jobs directly alongside job logs in a single, unified interface. This enhancement adds observability to SageMaker Unified Studio, enabling data engineers and ETL developers to streamline their troubleshooting processes.&lt;/p&gt; \n&lt;p&gt;With this feature, teams can diagnose performance issues faster by correlating resource utilization patterns—including DPU utilization, memory consumption, CPU load, and data movement size—directly with job log output. Specific use cases include identifying compute bottlenecks, detecting memory pressure or out-of-memory conditions, optimizing resource allocation, and monitoring data pipeline performance at scale. By consolidating metrics and logs into one workspace, organizations can significantly reduce mean time to resolution (MTTR) for ETL pipeline issues and improve overall operational efficiency.&lt;/p&gt; \n&lt;p&gt;This feature is available in &lt;a href=\"https://www.google.com/url?sa=t&amp;amp;source=web&amp;amp;rct=j&amp;amp;opi=89978449&amp;amp;url=https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html&amp;amp;ved=2ahUKEwibs5W0zsiTAxXkyOYEHQmvPTEQFnoECBgQAQ&amp;amp;usg=AOvVaw3H9HTpx1fPYLIDdE0yougk\"&gt;all AWS Regions where Amazon SageMaker Unified Studio is generally available&lt;/a&gt;. To access CloudWatch metrics, navigate to any Glue job in SageMaker Unified Studio, open a previous job run, and select the Metrics tab to view comprehensive performance data.&lt;/p&gt; \n&lt;p&gt;To learn more about Amazon SageMaker Unified Studio and this new capability, visit the &lt;a href=\"https://aws.amazon.com/sagemaker/unified-studio/\"&gt;SageMaker Unified Studio page&lt;/a&gt; and see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/smus-monitoring-jobs.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/sagemaker-unified-studio-metrics/",
-      "publishedAt": "2026-03-31T19:30:00.000Z",
-      "updatedAt": "2026-03-31T19:30:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker",
-        "CloudWatch",
-        "Glue"
-      ],
-      "tags": [
-        "analytics",
-        "amazon sagemaker",
-        "sagemaker",
-        "cloudwatch",
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "645c8a2471f9f890",
-      "title": "AWS Organizations now provides organization paths in API responses",
-      "description": "AWS Organizations now returns the complete organizational path for accounts and organizational units (OUs) directly in API responses, eliminating the need for multiple API calls to traverse organizational hierarchies. Previously, understanding where accounts and organizational units (OUs) are positioned within your organization structure required multiple API calls. This enhancement is particularly valuable for enterprise customers managing large, complex AWS Organizations with deeply nested OU structures. With this launch, APIs including DescribeAccount, ListAccounts, DescribeOrganizationalUn",
-      "descriptionHtml": "&lt;p&gt;AWS Organizations now&amp;nbsp;returns&amp;nbsp;the complete organizational path for accounts and organizational units (OUs) directly in API responses,&amp;nbsp;eliminating&amp;nbsp;the need for multiple API calls to traverse organizational hierarchies.&amp;nbsp;Previously, understanding where accounts and organizational&amp;nbsp;units (OUs) are positioned within your organization structure required multiple&amp;nbsp;API calls. This enhancement is particularly valuable for enterprise customers managing large, complex AWS Organizations with deeply nested OU structures.&lt;/p&gt; \n&lt;p&gt;With this launch,&amp;nbsp;APIs including&amp;nbsp;DescribeAccount,&amp;nbsp;ListAccounts,&amp;nbsp;DescribeOrganizationalUnit, and others now include the full path from organization to root to the target entity (e.g.,&amp;nbsp;o-{orgId}/r-{rootId}/ou-{ouId}/{accountId}) in a single call. This&amp;nbsp;eliminates&amp;nbsp;time-consuming&amp;nbsp;multiple API calls for&amp;nbsp;org&amp;nbsp;path determination&amp;nbsp;and reduces operational overhead when analyzing service control policy impacts, assessing permissions boundaries, or evaluating account movements across&amp;nbsp;complex organizational hierarchies. Cloud architects, security teams, and operations teams can now troubleshoot faster and build more effective automation, including&amp;nbsp;large language model&amp;nbsp;(LLM)&amp;nbsp;powered tools that require complete organizational context for&amp;nbsp;accurate&amp;nbsp;guidance.&lt;/p&gt; \n&lt;p&gt;The organization path is&amp;nbsp;now&amp;nbsp;available in&amp;nbsp;all&amp;nbsp;commercial AWS Regions&amp;nbsp;and the AWS GovCloud (US) Regions.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the&amp;nbsp;To learn more, visit the&amp;nbsp;AWS Organizations&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListAccounts.html\"&gt;API documentation.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-organizations-paths-api-responses/",
-      "publishedAt": "2026-03-31T18:59:00.000Z",
-      "updatedAt": "2026-03-31T18:59:00.000Z",
-      "categories": [],
-      "services": [
-        "Organizations"
-      ],
-      "tags": [
-        "organizations"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a68580f02399499e",
-      "title": "AWS Deadline Cloud now supports new fleet scaling configurations for render farms",
-      "description": "Today, AWS Deadline Cloud introduces three powerful new fleet scaling options that give you greater flexibility in managing your render farm capacity and performance: worker idle duration, standby worker count, and scale out rate. AWS Deadline Cloud is a fully managed service that helps creative teams efficiently manage and scale their rendering workloads in the cloud. These new options give you direct control over balancing rendering speed and efficiency. Configurable worker idle duration allows you to specify how long workers remain available after completing a job, eliminating wait times be",
-      "descriptionHtml": "&lt;p&gt;Today, AWS Deadline Cloud introduces three powerful new fleet scaling options that give you greater flexibility in managing your render farm capacity and performance: worker idle duration, standby worker count, and scale out rate. AWS Deadline Cloud is a fully managed service that helps creative teams efficiently manage and scale their rendering workloads in the cloud.&lt;br&gt; &lt;br&gt; These new options give you direct control over balancing rendering speed and efficiency. Configurable worker idle duration allows you to specify how long workers remain available after completing a job, eliminating wait times between job submissions and speeding up artist’s iteration workflow. Standby worker count maintains a pool of pre-warmed, idle workers that are immediately available at job submission so your renders start right away. Scale out rate lets you configure how quickly your fleet scales, up to 500 workers per minute, giving you the control you need to match your infrastructure needs.&lt;/p&gt; \n&lt;p&gt;These flexible scaling controls are now available in AWS Deadline Cloud. To learn more, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/userguide/auto-scaling-configuration.html\"&gt;AWS Deadline Cloud documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/deadline-cloud-fleet-scaling/",
-      "publishedAt": "2026-03-31T18:29:00.000Z",
-      "updatedAt": "2026-03-31T18:29:00.000Z",
-      "categories": [
-        "AWS Deadline Cloud",
-        "Media Services"
-      ],
-      "services": [],
-      "tags": [
-        "aws deadline cloud",
-        "media services"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "17a7683053aa27bb",
-      "title": "AWS Marketplace sellers can now self-serve refunds and agreement cancellations",
-      "description": "AWS Marketplace now offers sellers a streamlined self-service process for refunds and agreement cancellations, reducing the time and effort required to process these requests. This new capability eliminates the need to file support tickets, and gives both sellers and buyers full visibility into the latest status of each request. Buyers can now review and approve cancellation requests directly from the AWS Marketplace console, and see refunds reflected on their charge summary for easier reconciliation. Additionally, Know Your Customer (KYC) verification is now only triggered for invoices that r",
-      "descriptionHtml": "&lt;p&gt;AWS Marketplace now offers sellers a streamlined self-service process for refunds and agreement cancellations, reducing the time and effort required to process these requests. This new capability eliminates the need to file support tickets, and gives both sellers and buyers full visibility into the latest status of each request. Buyers can now review and approve cancellation requests directly from the AWS Marketplace console, and see refunds reflected on their charge summary for easier reconciliation. Additionally, Know Your Customer (KYC) verification is now only triggered for invoices that require compliance validation, so sellers can process refunds for KYC-exempt invoices without unnecessary verification delays.&lt;br&gt; &lt;br&gt; With this launch, sellers can request refunds or cancellations from the Agreements page in the seller portal or programmatically through the AWS Marketplace Agreement APIs. These requests are pre-populated with agreement and invoice data and processed automatically. Sellers can then track every request from submission through completion. Billing adjustments are processed automatically without requiring buyer approval, allowing sellers to refund charges on paid invoices or reduce outstanding balances on unpaid invoices. For agreement cancellations, sellers submit a request and share an approval link directly with the buyer, who has seven days to respond before the cancellation proceeds automatically. All parties receive email and Amazon EventBridge notifications for every status change, enabling integration with their operational workflows. For Channel Partner Private Offer agreements, the channel partner initiates the refund or cancellation request, and the Independent Software Vendor (ISV) receives notifications for visibility.&lt;br&gt; &lt;br&gt; Seller self-service refunds and agreement cancellations are available in all &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/buyerguide/supported-regions.html\"&gt;commercial AWS Regions&lt;/a&gt; where AWS Marketplace is supported.&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/refunds.html\"&gt;Refunds and cancellations &lt;/a&gt;in the AWS Marketplace Seller Guide. For information about responding to seller-initiated cancellation requests and tracking refunds, see &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-refunds.html\"&gt;Refunds and cancellations&lt;/a&gt; in the AWS Marketplace Buyer Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-marketplace-seller-self-service-refund-cancel/",
-      "publishedAt": "2026-03-31T18:28:00.000Z",
-      "updatedAt": "2026-03-31T18:28:00.000Z",
-      "categories": [
-        "AWS Marketplace",
-        "Partner Network"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace",
-        "partner network"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9e418a75cb90e5c1",
-      "title": "Aurora DSQL launches new connectors that simplify building .NET and Rust applications",
-      "description": "Today we are announcing the release of Aurora DSQL connectors for .NET (Npgsql) and Rust (SQLx) that make it easy to build .NET and Rust applications on Aurora DSQL. The connectors streamline authentication and eliminate security risks associated with traditional user-generated passwords by automatically generating tokens for each connection, ensuring valid tokens are always used while maintaining full compatibility with existing Npgsql and SQLx features. The connectors handle IAM token generation, SSL configuration, and connection pooling, enabling customers to scale from simple scripts to pr",
-      "descriptionHtml": "&lt;p&gt;Today we are announcing the release of Aurora DSQL connectors for .NET (Npgsql) and Rust (SQLx) that make it easy to build .NET and Rust applications on Aurora DSQL. The connectors streamline authentication and eliminate security risks associated with traditional user-generated passwords by automatically generating tokens for each connection, ensuring valid tokens are always used while maintaining full compatibility with existing Npgsql and SQLx features.&lt;br&gt; &lt;br&gt; The connectors handle IAM token generation, SSL configuration, and connection pooling, enabling customers to scale from simple scripts to production workloads without changing their authentication approach. They also provide opt-in optimistic concurrency control (OCC) retry with exponential backoff, custom IAM credential providers, and AWS profile support, making it easier to develop client retry logic and manage AWS credentials.&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/aurora-dsql/latest/userguide/SECTION_connectors.html\"&gt;Connectors for Aurora DSQL documentation&lt;/a&gt; page. For code examples, visit our GitHub pages for the &lt;a href=\"https://github.com/awslabs/aurora-dsql-connectors/blob/main/dotnet/npgsql/README.md\"&gt;.NET connector&lt;/a&gt; and &lt;a href=\"https://github.com/awslabs/aurora-dsql-connectors/blob/main/rust/sqlx/README.md\"&gt;Rust connector&lt;/a&gt;. Get started with Aurora DSQL for free with the &lt;a href=\"https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank\\&amp;amp;all-free-tier.sort-order=asc\\&amp;amp;awsf.Free%20Tier%20Types=*all\\&amp;amp;awsf.Free%20Tier%20Categories=categories%23databases\"&gt;AWS Free Tier&lt;/a&gt;. To learn more about Aurora DSQL, visit the &lt;a href=\"https://aws.amazon.com/rds/aurora/dsql/\"&gt;webpage&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aurora-dsql-rust-npgsql-connectors/",
-      "publishedAt": "2026-03-31T17:34:00.000Z",
-      "updatedAt": "2026-03-31T17:34:00.000Z",
-      "categories": [
-        "Databases"
-      ],
-      "services": [
-        "Aurora"
-      ],
-      "tags": [
-        "databases",
-        "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "64fd0211a8cdbe66",
-      "title": "Amazon S3 Vectors expands to 17 additional AWS Regions",
-      "description": "Amazon S3 Vectors is now available in 17 additional AWS Regions: Africa (Cape Town), Asia Pacific (Hong Kong), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Malaysia), Asia Pacific (Melbourne), Asia Pacific (New Zealand), Asia Pacific (Osaka), Asia Pacific (Taipei), Asia Pacific (Thailand), Canada West (Calgary), Europe (Milan), Europe (Spain), Europe (Zurich), Mexico (Central), South America (Sao Paulo), and US West (N. California). Amazon S3 Vectors is the first cloud object storage with native support for storing and querying vectors. It delivers purpose-built, cost-optimi",
-      "descriptionHtml": "&lt;p&gt;Amazon S3 Vectors is now available in 17 additional AWS Regions: Africa (Cape Town), Asia Pacific (Hong Kong), Asia Pacific (Hyderabad), Asia Pacific (Jakarta), Asia Pacific (Malaysia), Asia Pacific (Melbourne), Asia Pacific (New Zealand), Asia Pacific (Osaka), Asia Pacific (Taipei), Asia Pacific (Thailand), Canada West (Calgary), Europe (Milan), Europe (Spain), Europe (Zurich), Mexico (Central), South America (Sao Paulo), and US West (N. California).&lt;/p&gt; \n&lt;p&gt;Amazon S3 Vectors is the first cloud object storage with native support for storing and querying vectors. It delivers purpose-built, cost-optimized vector storage for AI agents, inference, Retrieval Augmented Generation (RAG), and semantic search at billion-vector scale. S3 Vectors is designed to provide the same elasticity, durability, and availability as Amazon S3. With a dedicated set of APIs, you can store and query up to two billion vectors per vector index and elastically scale to 10,000 vector indexes per vector bucket without provisioning any infrastructure. Infrequent queries return results in under one second, with frequent queries resulting in latencies as low as 100 milliseconds. S3 Vectors is natively integrated with Amazon Bedrock Knowledge Bases so you can reduce the cost of using large vector datasets for RAG.&lt;/p&gt; \n&lt;p&gt;With this expansion, S3 Vectors is now available in 31 &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-regions-quotas.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions&lt;/a&gt;. For pricing details, visit the &lt;a href=\"https://aws.amazon.com/s3/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;S3 pricing page&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/s3/features/vectors/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;product page&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/s3-vectors-expands-17-regions/",
-      "publishedAt": "2026-03-31T17:28:00.000Z",
-      "updatedAt": "2026-03-31T17:28:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Storage",
-        "Amazon S3"
-      ],
-      "services": [
-        "S3"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "storage",
-        "amazon s3",
-        "s3"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "2a56a909d47af8a2",
-      "title": "AWS announces End User Messaging Notify",
-      "description": "Businesses want to send one-time passcodes (OTPs) because they are often the easiest and fastest way for customers to verify who they are. However, businesses are often surprised when it takes weeks or months to get phone numbers, complete carrier registrations, and set up sender IDs. Today, AWS announces AWS End User Messaging Notify to change all of this. Within minutes, a developer can use phone numbers and sender IDs owned by AWS to power their OTP use case and start sending right away. With Notify, you set up a configuration with your brand name, turn on SMS, voice, or both, and begin sen",
-      "descriptionHtml": "&lt;p&gt;Businesses want to send one-time passcodes (OTPs) because they are often the easiest and fastest way for customers to verify who they are. However, businesses are often surprised when it takes weeks or months to get phone numbers, complete carrier registrations, and set up sender IDs. Today, AWS announces AWS End User Messaging Notify to change all of this. Within minutes, a developer can use phone numbers and sender IDs owned by AWS to power their OTP use case and start sending right away.&lt;/p&gt; \n&lt;p&gt;With Notify, you set up a configuration with your brand name, turn on SMS, voice, or both, and begin sending OTP messages to over 200 countries using ready-to-use templates. You can customize your brand name, code format, and how long a code stays valid. Every API call includes built-in SMS fraud protection through AWS End User Messaging SMS Protect at no extra cost, catching and blocking suspicious traffic before messages incur costs. Spend limits give you another layer of protection by pausing delivery if your account hits its set threshold.&lt;/p&gt; \n&lt;p&gt;AWS End User Messaging Notify is available in all AWS Regions where AWS End User Messaging is available.&lt;/p&gt; \n&lt;p&gt;To get started, visit the &lt;a title=\"End User Messaging Notify User Guide\" href=\"https://docs.aws.amazon.com/sms-voice/latest/userguide/notify.html\" target=\"_blank\"&gt;AWS End User Notify user guide&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/aws-end-user-messaging-notify/",
-      "publishedAt": "2026-03-31T17:24:00.000Z",
-      "updatedAt": "2026-03-31T17:24:00.000Z",
-      "categories": [
-        "Front End Web Mobile",
-        "Business Productivity",
-        "Messaging",
-        "Applications"
-      ],
-      "services": [],
-      "tags": [
-        "front end web mobile",
-        "business productivity",
-        "messaging",
-        "applications"
       ],
       "isNew": false
     }
