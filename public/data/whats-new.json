@@ -1,7 +1,145 @@
 {
-  "lastUpdated": "2026-06-04T09:25:20.018Z",
+  "lastUpdated": "2026-06-05T09:15:09.299Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "d90330e1c0ceb1ab",
+      "title": "Amazon SageMaker Data Agent integrates business context into conversations",
+      "description": "Amazon SageMaker Data Agent now integrates with SageMaker Catalog business context and metadata, enabling data practitioners to discover datasets and generate more accurate SQL and Python code using business terminology instead of cryptic technical table names. This integration allows the Data Agent to leverage the business context that companies have invested months curating in their SageMaker Catalog, including those synced from Collibra, Atlan, and Alation, to deliver more accurate data discovery and code generation. With this capability, data practitioners can ask questions like \"Calculate",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Data Agent now integrates with SageMaker Catalog business context and metadata, enabling data practitioners to discover datasets and generate more accurate SQL and Python code using business terminology instead of cryptic technical table names. This integration allows the Data Agent to leverage the business context that companies have invested months curating in their SageMaker Catalog, including those synced from Collibra, Atlan, and Alation, to deliver more accurate data discovery and code generation.&lt;/p&gt; \n&lt;p&gt;With this capability, data practitioners can ask questions like \"Calculate customer retention rate\" or \"What data do I have on customer churn?\" and the Data Agent will search glossary terms, custom metadata forms, asset summaries, and README content to identify the correct tables and columns. The agent generates more accurate code on first attempt by understanding business context, plans multi-step workflows with the correct sequence of tables and transformations, and respects data governance by checking subscription status and providing access request links when needed. Organizations maximize their existing catalog investment without changing the current data workflows, reducing time-to-insight, and enabling data teams to work in business language rather than deciphering technical table names.&lt;/p&gt; \n&lt;p&gt;This integration is available in SageMaker Unified Studio notebooks and Query Editor&amp;nbsp;in &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;all AWS Regions where Amazon SageMaker Unified Studio is available&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/sagemaker/unified-studio/\"&gt;Amazon SageMaker Unified Studio&lt;/a&gt; page and &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/data-agent-business-catalog.html\"&gt;Amazon SageMaker Data Agent documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-sagemaker-data-agent-bdc/",
+      "publishedAt": "2026-06-04T21:51:00.000Z",
+      "updatedAt": "2026-06-04T21:51:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "analytics",
+        "amazon sagemaker",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a2b0b5dc9933d1e9",
+      "title": "Amazon Cognito now supports multi-Region replication",
+      "description": "Amazon Cognito now supports multi-Region replication, enabling you to synchronize user and machine identity data — including credentials, user pool configurations, and federation setups — to a secondary user pool in a standby Region you designate in near real-time. This capability helps you improve the resilience of your authentication system by providing a standby replica that can accept traffic in case there is a regional service disruption. In the event of a disruption in the primary Region, you can redirect traffic to the secondary user pool. Signed-in users continue accessing their applic",
+      "descriptionHtml": "&lt;p&gt;Amazon Cognito now supports multi-Region replication, enabling you to synchronize user and machine identity data — including credentials, user pool configurations, and federation setups — to a secondary user pool in a standby Region you designate in near real-time. This capability helps you improve the resilience of your authentication system by providing a standby replica that can accept traffic in case there is a regional service disruption.&lt;br&gt; In the event of a disruption in the primary Region, you can redirect traffic to the secondary user pool. Signed-in users continue accessing their applications without re-authenticating, and registered users can sign in with their existing credentials. Authentication methods continue to work in the secondary Region, including username/password, federation with social identity and SAML/OIDC providers, and machine-to-machine authorization flows.&lt;br&gt; Multi-Region replication is available as an add-on for user pools in Essentials or Plus feature tiers. You can start using this feature in the following AWS Regions: US East (Ohio, N. Virginia), US West (N. California, Oregon), Asia Pacific (Mumbai, Seoul, Singapore, Sydney, Tokyo), Canada (Central), Europe (Frankfurt, Ireland, London, Paris, Stockholm), and South America (São Paulo). To get started, configure multi-Region replication using the AWS Management Console, AWS Command Line Interface (CLI), or AWS Software Development Kits (SDKs) by adding a replica user pool. Visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/cognito/pricing/\"&gt;pricing page&lt;/a&gt;&amp;nbsp;for pricing details and the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-multi-region.html\"&gt;developer guide&lt;/a&gt;&amp;nbsp;for instructions.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-cognito-multi-region/",
+      "publishedAt": "2026-06-04T17:00:00.000Z",
+      "updatedAt": "2026-06-04T17:00:00.000Z",
+      "categories": [
+        "Amazon Cognito",
+        "Security Identity And Compliance"
+      ],
+      "services": [
+        "Cognito"
+      ],
+      "tags": [
+        "amazon cognito",
+        "security identity and compliance",
+        "cognito"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "59e20d06195be815",
+      "title": "AWS Databases on Vercel now available in additional AWS Regions",
+      "description": "Amazon Aurora PostgreSQL , Amazon Aurora DSQL , and Amazon DynamoDB serverless databases are now available on Vercel Marketplace and v0 by Vercel in additional AWS Regions, offering you more flexibility to build applications with Vercel and AWS databases from the Regions of your choice. To get started, you can describe your idea in v0 using natural language. The tool automatically generates a spec-driven design, deploys code and infrastructure, and stores your application data in the AWS database that best fits your needs with no hands-on coding or provisioning required. Vercel provides an end",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\"&gt;Amazon Aurora PostgreSQL&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/rds/aurora/dsql/\" target=\"_blank\"&gt;Amazon Aurora DSQL&lt;/a&gt;, and &lt;a href=\"https://aws.amazon.com/dynamodb/?nc2=type_a\" target=\"_blank\"&gt;Amazon DynamoDB&lt;/a&gt; serverless databases are now available on Vercel Marketplace and v0 by Vercel in additional AWS Regions, offering you more flexibility to build applications with Vercel and AWS databases from the Regions of your choice.&lt;br&gt; &lt;br&gt; To get started, you can describe your idea in v0 using natural language. The tool automatically generates a spec-driven design, deploys code and infrastructure, and stores your application data in the AWS database that best fits your needs with no hands-on coding or provisioning required. Vercel provides an end-to-end setup experience where you can create database resources in seconds under a new AWS account or link to an existing one, all without leaving Vercel. New AWS accounts created from Vercel include access to all three databases and $100 USD in credits, usable across any of these database options for up to six months. You can manage your plan, add payment information, and view usage details anytime from the AWS settings portal in the Vercel dashboard. To learn more, visit &lt;a href=\"http://v0.app\" target=\"_blank\"&gt;v0&lt;/a&gt; or the &lt;a href=\"https://vercel.com/marketplace/aws\" target=\"_blank\"&gt;AWS landing page&lt;/a&gt; on the Vercel Marketplace.&lt;br&gt; &lt;br&gt; You can now create an Aurora PostgreSQL database or Amazon DynamoDB table through Vercel from 17 &lt;a href=\"https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html#regions-opt-in-status\" target=\"_blank\"&gt;AWS Regions enabled by default&lt;/a&gt;, and Aurora DSQL from 16 AWS Regions including: US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm), and South America (São Paulo).&lt;br&gt; &lt;br&gt; AWS Databases deliver security, reliability, and price performance without the operational overhead, whether you're prototyping your next big idea or running production AI and data driven applications. For more information, visit the &lt;a href=\"https://aws.amazon.com/products/databases/\" target=\"_blank\"&gt;AWS Databases webpage.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-databases-vercel-aws-regions/",
+      "publishedAt": "2026-06-04T17:00:00.000Z",
+      "updatedAt": "2026-06-04T17:00:00.000Z",
+      "categories": [
+        "Amazon Aurora",
+        "Databases"
+      ],
+      "services": [
+        "Aurora"
+      ],
+      "tags": [
+        "amazon aurora",
+        "databases",
+        "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "073e412736a8c847",
+      "title": "Amazon EKS Capabilities now supports Amazon CloudWatch Vended Logs",
+      "description": "Amazon Elastic Kubernetes Service (Amazon EKS) Capabilities can now be configured as log delivery sources using Amazon CloudWatch Vended Logs. This enables customers to monitor and troubleshoot their EKS Capabilities for Argo CD, AWS Controllers for Kubernetes (ACK), and kro (Kubernetes Resource Orchestrator) by monitoring logs collected from the managed controllers that run in AWS-managed infrastructure. Customers can enable log delivery for each capability using CloudWatch APIs or the AWS Console. Logs are configured as a CloudWatch Vended Logs delivery source, enabling reliable, secure log ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/eks/\"&gt;Amazon Elastic Kubernetes Service&lt;/a&gt; (Amazon EKS) Capabilities can now be configured as log delivery sources using Amazon CloudWatch Vended Logs. This enables customers to monitor and troubleshoot their EKS Capabilities for Argo CD, AWS Controllers for Kubernetes (ACK), and kro (Kubernetes Resource Orchestrator) by monitoring logs collected from the managed controllers that run in AWS-managed infrastructure.&lt;br&gt; &lt;br&gt; Customers can enable log delivery for each capability using CloudWatch APIs or the AWS Console. Logs are configured as a CloudWatch Vended Logs delivery source, enabling reliable, secure log delivery to CloudWatch Logs, Amazon S3, or Amazon Kinesis Data Firehose destinations.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where the EKS Capabilities feature is supported. Standard CloudWatch Vended Logs pricing applies based on the chosen destination. There is no additional EKS charge.&lt;br&gt; &lt;br&gt; To learn more about EKS Capabilities, visit the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/capabilities.html\"&gt;Amazon EKS documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-eks-capabilities-logging",
+      "publishedAt": "2026-06-04T17:00:00.000Z",
+      "updatedAt": "2026-06-04T17:00:00.000Z",
+      "categories": [
+        "Containers",
+        "Amazon Eks"
+      ],
+      "services": [
+        "EKS",
+        "CloudWatch"
+      ],
+      "tags": [
+        "containers",
+        "amazon eks",
+        "eks",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7d65a58b21da831c",
+      "title": "Amazon MQ is now available in the AWS European Sovereign Cloud (Germany) Region",
+      "description": "You can now deploy Amazon MQ for RabbitMQ in the AWS European Sovereign Cloud (Germany) Region. This new independent cloud for Europe is located entirely within the EU, designed to help customers in regulated industries and public sector organizations meet their sovereignty requirements. Amazon MQ is a managed message broker service that makes it easy to set up and operate message brokers in the cloud. Amazon MQ for RabbitMQ manages the provisioning, patching, and maintenance of RabbitMQ brokers, letting you focus on building applications without managing messaging infrastructure. You can migr",
+      "descriptionHtml": "&lt;p&gt;You can now deploy Amazon MQ for RabbitMQ in the AWS European Sovereign Cloud (Germany) Region. This new independent cloud for Europe is located entirely within the EU, designed to help customers in regulated industries and public sector organizations meet their sovereignty requirements.&lt;br&gt; &lt;br&gt; Amazon MQ is a managed message broker service that makes it easy to set up and operate message brokers in the cloud. Amazon MQ for RabbitMQ manages the provisioning, patching, and maintenance of RabbitMQ brokers, letting you focus on building applications without managing messaging infrastructure. You can migrate existing RabbitMQ workloads without rewriting application code and benefit from the same familiar APIs and protocols. Amazon MQ for RabbitMQ in the AWS European Sovereign Cloud supports RabbitMQ engine version 4.2 and Graviton3-based m7g instance types for high-performance messaging ranging from m7g.medium to m7g.16xlarge.&lt;br&gt; &lt;br&gt; To get started, see the &lt;a href=\"https://aws.amazon.com/amazon-mq/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon MQ product page&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/welcome.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon MQ Developer Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-mq-eur-sov-cloud",
+      "publishedAt": "2026-06-04T08:05:00.000Z",
+      "updatedAt": "2026-06-04T08:05:00.000Z",
+      "categories": [
+        "Developer Tools",
+        "Analytics",
+        "Messaging",
+        "Amazon Mq"
+      ],
+      "services": [
+        "MQ"
+      ],
+      "tags": [
+        "developer tools",
+        "analytics",
+        "messaging",
+        "amazon mq",
+        "mq"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "dece3b5ba2a1010d",
+      "title": "Amazon Bedrock launches a redesigned console optimized for OpenAI- and Anthropic-compatible APIs",
+      "description": "Amazon Bedrock is a fully managed service that provides secure, enterprise-grade access to high-performing foundation models from leading AI companies, enabling you to build and scale generative AI applications. Today, Amazon Bedrock introduces a console experience designed for how customers actually build with foundation models: experiment, iterate, and scale. This is the same Amazon Bedrock service customers already use, with a refreshed workflow optimized for the bedrock-mantle endpoint , which supports the OpenAI Responses API, OpenAI Chat Completions API, and the Anthropic Messages API. T",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock is a fully managed service that provides secure, enterprise-grade access to high-performing foundation models from leading AI companies, enabling you to build and scale generative AI applications. Today, Amazon Bedrock introduces a console experience designed for how customers actually build with foundation models: experiment, iterate, and scale. This is the same Amazon Bedrock service customers already use, with a refreshed workflow optimized for the &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/endpoints.html\"&gt;bedrock-mantle endpoint&lt;/a&gt;, which supports the OpenAI Responses API, OpenAI Chat Completions API, and the Anthropic Messages API.&lt;br&gt; &lt;br&gt; The new experience makes it simple to find the right model and move quickly from evaluation to production. Customers can browse the full Amazon Bedrock model catalog, including the latest Claude, GPT, and open-weight models, and compare them side by side on capabilities, modality support, context window, and applicable service quotas in a single view, removing the need to stitch together documentation, and limit calculators. Work is organized into projects, where customers can run evaluations and review usage insights in one streamlined workflow that mirrors the lifecycle of building a generative AI application. Each project also includes project-aware documentation: code samples, SDK snippets, and API references are automatically prefilled with the project's selected model ID, region, bedrock-mantle endpoint URL, and API key reference, and they update in place as customers change models or settings. Developers can copy a snippet straight from the console into their application and run it without modification.&lt;br&gt; &lt;br&gt; To get started, sign in to the AWS Management Console, open Amazon Bedrock, and choose the new experience from the navigation. Create a project, pick a model, and begin sending requests through the bedrock-mantle endpoint using your existing OpenAI or Anthropic client libraries with an Amazon Bedrock API key. The new console experience is available in all AWS Regions where the bedrock-mantle endpoint is offered: US East (N. Virginia, Ohio), US West (Oregon), Asia Pacific (Jakarta, Mumbai, Sydney, Tokyo), Europe (Frankfurt, Ireland, London, Milan, Stockholm), and South America (São Paulo). To try the new experience, &lt;a href=\"https://console.aws.amazon.com/bedrock-mantle/\"&gt;visit the Amazon Bedrock console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-redesigned-console-optimized-openai-anthropic-compatible-apis/",
+      "publishedAt": "2026-06-04T07:00:00.000Z",
+      "updatedAt": "2026-06-04T07:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
     {
       "id": "b9e4d85154ba1023",
       "title": "AWS IoT Device Management adds MQTT session data to connectivity status API",
@@ -96,21 +234,21 @@
     {
       "id": "650ba973591c552a",
       "title": "OpenAI GPT-5.4 generally available on Amazon Bedrock in AWS GovCloud (US-West)",
-      "description": "Amazon Bedrock now supports GPT‑5.4 from OpenAI in AWS GovCloud (US-West) — giving government and regulated industry customers access to OpenAI's most capable frontier model for professional work, backed by the enterprise-grade security and goverment compliance scope of AWS GovCloud (US). GPT‑5.4 supports native computer-use capabilities, and deep reasoning across coding, documents, and multi-step agentic tasks — all running on Bedrock's high-performance inference engine with isolated queues and durable state for fault-tolerant workloads. Your data stays in-partition and is never used to train",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock now supports GPT‑5.4 from OpenAI in AWS GovCloud (US-West) — giving government and regulated industry customers access to OpenAI's most capable frontier model for professional work, backed by the enterprise-grade security and goverment compliance scope of AWS GovCloud (US).&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;GPT‑5.4 supports native computer-use capabilities, and deep reasoning across coding, documents, and multi-step agentic tasks — all running on Bedrock's high-performance inference engine with isolated queues and durable state for fault-tolerant workloads. Your data stays in-partition and is never used to train models.&lt;/p&gt; \n&lt;p&gt;For Regional availability of&amp;nbsp; GPT-5.4 see the &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\"&gt;AWS Regions page&lt;/a&gt;. Read &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available\"&gt;the launch blog&lt;/a&gt; to learn more, for documentation and a step-by-step walkthrough, see the &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html\"&gt;Amazon Bedrock docs&lt;/a&gt; and the&lt;a href=\"https://aws.amazon.com/blogs/aws/get-started-with-openai-gpt-5-5-gpt-5-4-models-and-codex-on-amazon-bedrock\"&gt; getting started blog&lt;/a&gt;.&lt;/p&gt;",
+      "description": "Amazon Bedrock now supports GPT-5.4 from OpenAI in AWS GovCloud (US-West). Government and regulated industry customers can use GPT-5.4 for complex reasoning, coding, document analysis, and multi-step workflows while benefiting from the security, governance, and operational controls of Amazon Bedrock. GPT-5.4 runs on Amazon Bedrock’s next-generation inference engine, built for high performance, reliability, and security, with isolated queues and durable execution for resilient workloads. Prompts and responses remain in your AWS environment and are not used to train models. For Regional availabi",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock now supports GPT-5.4 from OpenAI in AWS GovCloud (US-West). Government and regulated industry customers can use GPT-5.4 for complex reasoning, coding, document analysis, and multi-step workflows while benefiting from the security, governance, and operational controls of Amazon Bedrock. GPT-5.4 runs on Amazon Bedrock’s next-generation inference engine, built for high performance, reliability, and security, with isolated queues and durable execution for resilient workloads. Prompts and responses remain in your AWS environment and are not used to train models.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;For Regional availability of&amp;nbsp; GPT-5.4 see the &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\"&gt;AWS Regions page&lt;/a&gt;. Read &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available\"&gt;the launch blog&lt;/a&gt; to learn more, for documentation and a step-by-step walkthrough, see the &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html\"&gt;Amazon Bedrock docs&lt;/a&gt; and the&lt;a href=\"https://aws.amazon.com/blogs/aws/get-started-with-openai-gpt-5-5-gpt-5-4-models-and-codex-on-amazon-bedrock\"&gt; getting started blog&lt;/a&gt;.&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/GPT54-available-in-aws-govcloud-us-west/",
       "publishedAt": "2026-06-03T19:58:00.000Z",
       "updatedAt": "2026-06-03T19:58:00.000Z",
       "categories": [
-        "AWS Govcloud Us",
-        "Amazon Bedrock"
+        "Amazon Bedrock",
+        "AWS Govcloud Us"
       ],
       "services": [
         "Bedrock"
       ],
       "tags": [
-        "aws govcloud us",
         "amazon bedrock",
+        "aws govcloud us",
         "bedrock"
       ],
       "isNew": true
@@ -1087,7 +1225,7 @@
         "amazon rds for oracle",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "07172e9eddf78be6",
@@ -1104,7 +1242,7 @@
       "tags": [
         "databases"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0f8fcd6f60c35169",
@@ -1128,7 +1266,7 @@
         "storage",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "28eede3213c95dff",
@@ -1150,7 +1288,7 @@
         "amazon cloudwatch",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "557f4bf31b935a72",
@@ -1176,7 +1314,7 @@
         "cloud financial management",
         "budgets"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e853dc9ead2913ca",
@@ -1202,7 +1340,7 @@
         "aws iot device management",
         "iot core"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "238b66a9dc406682",
@@ -1226,7 +1364,7 @@
         "cloudtrail",
         "organizations"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5cbd04aed15000a1",
@@ -1248,7 +1386,7 @@
         "management and governance",
         "resilience hub"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "26164efc89348752",
@@ -1270,7 +1408,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fdc4603c1b60b24b",
@@ -1294,7 +1432,7 @@
         "bedrock",
         "claude"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5f2661e08194b0ef",
@@ -1322,7 +1460,7 @@
         "dynamodb",
         "privatelink"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b1e1cfedf9075822",
@@ -1348,7 +1486,7 @@
         "workspaces",
         "appstream"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8236851fd7f5b980",
@@ -1370,7 +1508,7 @@
         "amazon opensearch service",
         "opensearch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c8d106968bd6e59d",
@@ -1398,7 +1536,7 @@
         "messaging",
         "iot core"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6c718b0df3cdd2ed",
@@ -1417,7 +1555,7 @@
         "aws marketplace and partners",
         "partner network"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "4545d05902541d77",
@@ -1437,7 +1575,7 @@
         "amazon connect",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1c367b6c39c4f54b",
@@ -10904,128 +11042,6 @@
         "amazon bedrock",
         "artificial intelligence",
         "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "3da43e485c274fa2",
-      "title": "Partner Revenue Measurement now supports User Agent string for certain AWS services",
-      "description": "Today, AWS announces the general availability of Partner Revenue Measurement User Agent string — a new capability that enables AWS Partners to measure AWS service consumption driven by their solutions using AWS APIs and SDKs. Partner Revenue Measurement allows Partners to better understand their AWS revenue impact and product consumption patterns. The User Agent string capability allows Partners to embed a unique product code from their AWS Marketplace listing as a user agent to quantify and measure the AWS revenue impact of that solution across certain services. Partners can now add a user ag",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of Partner Revenue Measurement User Agent string — a new capability that enables AWS Partners to measure AWS service consumption driven by their solutions using AWS APIs and SDKs. Partner Revenue Measurement allows Partners to better understand their AWS revenue impact and product consumption patterns. The User Agent string capability allows Partners to embed a unique product code from their AWS Marketplace listing as a user agent to quantify and measure the AWS revenue impact of that solution across certain services. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Partners can now add a user agent (format APN_1.1/pc_&amp;lt;AWS Marketplace product-code&amp;gt;$) in their application to enable AWS service consumption measurement by solution across partner-managed and customer-managed accounts. Partners can also set an environment variable in their SDKs or configure a setting in their AWS shared configuration file to automatically apply the User Agent string to all AWS service calls. This method supports automated deployments across Python, Node.js, Java, Kotlin, and other AWS SDKs, by capturing attribution for API-driven workloads and complements Partner Revenue Measurement’s &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/01/new-partner-revenue-measurement/\"&gt;Resource Tagging&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/marketplace-metering.html\"&gt;AWS Marketplace Metering&lt;/a&gt; integration capabilities.&lt;/p&gt; \n&lt;p&gt;Partner Revenue Measurement is generally available in all commercial regions. To learn more about User Agent string implementation, visit the &lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/user-agent-string.html\"&gt;User Agent implementation guide&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/user-agent-included-services.html\"&gt;services supported&lt;/a&gt;. To learn more about Partner Revenue Measurement capabilities, review the &lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/what-is-service.html\"&gt;onboarding guide&lt;/a&gt; for more information.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/partner-revenue-measurement-user-agent-support/",
-      "publishedAt": "2026-04-03T18:55:00.000Z",
-      "updatedAt": "2026-04-03T18:55:00.000Z",
-      "categories": [
-        "AWS Marketplace And Partners",
-        "AWS Marketplace"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace and partners",
-        "aws marketplace"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "59d8507ce8e7d99e",
-      "title": "Partner Revenue Measurement now supports AWS Marketplace Metering for certain AWS Marketplace products",
-      "description": "Today, AWS announces the launch of Partner Revenue Measurement integration with AWS Marketplace Metering for Amazon Machine Image (AMI) and Machine Learning (ML) products listed in AWS Marketplace. Partner Revenue Measurement allows Partners to better understand their AWS revenue impact and product consumption patterns. The AWS Marketplace Metering capability automatically measures AWS service consumption when customers purchase and use AMI and ML products via AWS Marketplace. Partners can now gain visibility into how their solutions impact Amazon Elastic Compute Cloud (Amazon EC2) and Amazon ",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the launch of Partner Revenue Measurement integration with AWS Marketplace Metering for Amazon Machine Image (AMI) and Machine Learning (ML) products listed in AWS Marketplace. Partner Revenue Measurement allows Partners to better understand their AWS revenue impact and product consumption patterns. The AWS Marketplace Metering capability automatically measures AWS service consumption when customers purchase and use AMI and ML products via AWS Marketplace.&lt;/p&gt; \n&lt;p&gt;Partners can now gain visibility into how their solutions impact Amazon Elastic Compute Cloud (Amazon EC2) and Amazon SageMaker AI service consumption across partner-managed and customer-managed accounts. This method complements Partner Revenue Measurement’s &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/01/new-partner-revenue-measurement/\"&gt;Resource Tagging&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/user-agent-string.html\"&gt;User Agent string&lt;/a&gt; capabilities by capturing attribution without requiring additional Partner implementation.&lt;/p&gt; \n&lt;p&gt;Partner Revenue Measurement is generally available in all commercial regions. To learn more about AWS Marketplace Metering, review the &lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/marketplace-metering-implementation.html\"&gt;AWS Marketplace metering guide&lt;/a&gt;. To learn more about Partner Revenue Measurement capabilities, review the &lt;a href=\"https://docs.aws.amazon.com/PRM/latest/aws-prm-onboarding-guide/what-is-service.html\"&gt;onboarding guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/partner-revenue-supports-mp-metering/",
-      "publishedAt": "2026-04-03T18:55:00.000Z",
-      "updatedAt": "2026-04-03T18:55:00.000Z",
-      "categories": [
-        "AWS Marketplace And Partners"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace and partners"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5178ae5ce4d7cd2b",
-      "title": "AWS Secrets Manager console now supports custom input for AWS KMS keys",
-      "description": "AWS Secrets Manager console now allows you to specify a custom customer managed AWS Key Management Service (KMS) key when creating secrets. You can now provide a KMS key Amazon Resource Name (ARN) directly in the console, in addition to selecting from the pre-populated list of KMS keys in your current account. Previously, when creating a secret through the AWS Secrets Manager console, you could only select customer managed KMS keys from a dropdown list that displayed keys within the same AWS account. With this enhancement, you can now enter a KMS key ARN to use a key from a different account, ",
-      "descriptionHtml": "&lt;p&gt;AWS Secrets Manager console now allows you to specify a custom customer managed AWS Key Management Service (KMS) key when creating secrets. You can now provide a KMS key Amazon Resource Name (ARN) directly in the console, in addition to selecting from the pre-populated list of KMS keys in your current account.&lt;/p&gt; \n&lt;p&gt;Previously, when creating a secret through the AWS Secrets Manager console, you could only select customer managed KMS keys from a dropdown list that displayed keys within the same AWS account. With this enhancement, you can now enter a KMS key ARN to use a key from a different account, aligning the console experience with the existing API capabilities. This simplifies cross-account encryption workflows and provides greater flexibility in managing your encryption keys across multiple accounts.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where AWS Secrets Manager is available. To learn more about using customer managed KMS keys with AWS Secrets Manager, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/secretsmanager/\"&gt;AWS Secrets Manager documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-secrets-manager-console-custom-kms-key-input/",
-      "publishedAt": "2026-04-03T18:00:00.000Z",
-      "updatedAt": "2026-04-03T18:00:00.000Z",
-      "categories": [
-        "AWS Secrets Manager"
-      ],
-      "services": [
-        "Secrets Manager",
-        "KMS"
-      ],
-      "tags": [
-        "aws secrets manager",
-        "secrets manager",
-        "kms"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ab4997a52ea864da",
-      "title": "Amazon Quick Enables Sparklines for Inline Trend Visualization in Tables",
-      "description": "Quick Sight in Amazon Quick now supports sparklines, enabling authors to embed compact, inline trend visualizations directly within table cells. Sparklines allow users to display line or area charts inside individual table columns, providing at-a-glance trend context alongside their data without requiring separate chart visuals. Authors can add sparklines to tables by configuring a metric with a date dimension, and Quick automatically renders a miniature trend line within each row. This enhancement helps organizations quickly identify patterns, anomalies, and directional trends within tabular ",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/quick/quicksight/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Quick Sight in Amazon Quick&lt;/a&gt; now supports sparklines, enabling authors to embed compact, inline trend visualizations directly within table cells. Sparklines allow users to display line or area charts inside individual table columns, providing at-a-glance trend context alongside their data without requiring separate chart visuals. Authors can add sparklines to tables by configuring a metric with a date dimension, and Quick automatically renders a miniature trend line within each row.&lt;/p&gt; \n&lt;p&gt;This enhancement helps organizations quickly identify patterns, anomalies, and directional trends within tabular data — such as revenue over time by product, weekly ticket volumes by team, or monthly utilization by region — without navigating away from the table view. Sparklines support customization options including visual type (line or area), line color, line interpolation (linear, smooth, or stepped), and Y-axis behavior (shared or independent scaling across rows), giving authors flexibility to tailor the visualization to their dashboard's needs.&lt;/p&gt; \n&lt;p&gt;This feature is now available in all Amazon Quick &lt;a href=\"https://docs.aws.amazon.com/quicksuite/latest/userguide/regions.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;regions where Quick Sight is supported.&lt;/a&gt; Learn more about how to &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/format-sparklines.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;add sparklines to your tables&lt;/a&gt; in Amazon Quick.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/quick-sparklines-tables/",
-      "publishedAt": "2026-04-03T15:00:00.000Z",
-      "updatedAt": "2026-04-03T15:00:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Quicksight"
-      ],
-      "services": [
-        "QuickSight"
-      ],
-      "tags": [
-        "analytics",
-        "amazon quicksight",
-        "quicksight"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9b3236062b620278",
-      "title": "Amazon CloudWatch introduces PromQL querying with Query Studio Preview",
-      "description": "Amazon CloudWatch announces Query Studio in public preview, a unified query and visualization experience that brings native PromQL querying to CloudWatch for the first time. Query Studio combines PromQL and CloudWatch Metric Insights in a single interface, enabling you to query AWS vended metrics and OpenTelemetry metrics using the language you prefer without switching between consoles. Query Studio provides a visual form builder with autocomplete and a code editor with syntax highlighting, making it accessible to both new and experienced users. For example, a team running applications on Amaz",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch announces Query Studio in public preview, a unified query and visualization experience that brings native PromQL querying to CloudWatch for the first time. Query Studio combines PromQL and CloudWatch Metric Insights in a single interface, enabling you to query AWS vended metrics and OpenTelemetry metrics using the language you prefer without switching between consoles.&lt;br&gt; &lt;br&gt; Query Studio provides a visual form builder with autocomplete and a code editor with syntax highlighting, making it accessible to both new and experienced users. For example, a team running applications on Amazon EC2 can correlate their custom OpenTelemetry application metrics with EC2 vended metrics side by side, quickly spot issues across their stack, and create alarms or add charts to dashboards directly from their query results.&lt;br&gt; &lt;br&gt; Amazon CloudWatch Query Studio is available in public preview in US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Singapore), and Europe (Ireland). Standard CloudWatch dashboard pricing applies, see &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\" target=\"_blank\"&gt;pricing page&lt;/a&gt; for details.&lt;br&gt; &lt;br&gt; To get started, open Query Studio from the Metrics console or dashboard edit mode in the &lt;a href=\"https://console.aws.amazon.com/cloudwatch/\"&gt;Amazon CloudWatch console&lt;/a&gt;. Learn more on the Amazon CloudWatch &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-OpenTelemetry-Sections.html\" target=\"_blank\"&gt;documentation page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-cloudwatch-query-studio-preview/",
-      "publishedAt": "2026-04-03T07:00:00.000Z",
-      "updatedAt": "2026-04-03T07:00:00.000Z",
-      "categories": [
-        "Amazon Cloudwatch",
-        "Management And Governance"
-      ],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "amazon cloudwatch",
-        "management and governance",
-        "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "486f56a1c2196cbb",
-      "title": "Amazon ElastiCache Serverless now supports IPv6 and dual stack connectivity",
-      "description": "Amazon ElastiCache Serverless now supports IPv6 and dual stack connectivity, expanding beyond the IPv4 connectivity that was previously available. This gives you greater flexibility in how your applications connect to your Serverless caches. When creating an ElastiCache Serverless cache, you can now choose from three network type options — IPv4, IPv6, or dual stack. With dual stack connectivity, your cache accepts connections over both IPv4 and IPv6 simultaneously, making it ideal for migrating to IPv6 gradually while maintaining backward compatibility with applications connecting over IPv4. I",
-      "descriptionHtml": "&lt;p&gt;Amazon&amp;nbsp;ElastiCache&amp;nbsp;Serverless&amp;nbsp;now supports IPv6 and dual stack&amp;nbsp;connectivity, expanding beyond the IPv4 connectivity that was previously available. This gives you greater flexibility in how your applications connect to your&amp;nbsp;Serverless&amp;nbsp;caches.&lt;/p&gt; \n&lt;p&gt;When creating an&amp;nbsp;ElastiCache&amp;nbsp;Serverless&amp;nbsp;cache, you can now choose from three network type options — IPv4, IPv6, or dual stack. With dual stack connectivity, your cache accepts connections over both IPv4 and IPv6 simultaneously, making it ideal for migrating to IPv6 gradually while&amp;nbsp;maintaining&amp;nbsp;backward compatibility with applications connecting over IPv4. IPv6 connectivity enables you to use IPv6-only subnets with your&amp;nbsp;Serverless&amp;nbsp;caches,&amp;nbsp;eliminating&amp;nbsp;the need for IPv4 addresses and helping you meet compliance requirements for IPv6 adoption.&lt;/p&gt; \n&lt;p&gt;IPv6 and dual stack connectivity for&amp;nbsp;ElastiCache&amp;nbsp;Serverless&amp;nbsp;is available in all AWS Regions, including the AWS GovCloud (US) Regions and the China Regions, at no&amp;nbsp;additional&amp;nbsp;charge.&amp;nbsp;To learn more, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/elasticache/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon ElastiCache product page&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/serverless-network-type.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Choosing&amp;nbsp;a network type for serverless caches&lt;/a&gt;&amp;nbsp;in the Amazon&amp;nbsp;ElastiCache&amp;nbsp;documentation.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-elasticache-serverless-ipv6-dual-stack/",
-      "publishedAt": "2026-04-02T21:00:00.000Z",
-      "updatedAt": "2026-04-02T21:00:00.000Z",
-      "categories": [
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "ElastiCache"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "elasticache"
       ],
       "isNew": false
     }
