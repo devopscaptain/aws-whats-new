@@ -1,7 +1,158 @@
 {
-  "lastUpdated": "2026-06-10T09:20:37.953Z",
+  "lastUpdated": "2026-06-11T09:36:09.859Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "fe1a30ddd453d918",
+      "title": "OpenAI GPT-5.4 and GPT-5.5 models now available in US East (N. Virginia) on Amazon Bedrock",
+      "description": "Today, AWS announces the expanded availability of OpenAI's GPT-5.4 and GPT-5.5 models, which are now available in the US East (N. Virginia) Region on Amazon Bedrock. With GPT-5.4 and GPT-5.5, you can build generative AI applications across reasoning, coding, computer use, document workflows, and long-running agentic tasks. GPT-5.5 is OpenAI's most capable model, designed for advanced coding, research, analysis, software operation, document workflows, and long-running agentic tasks. It can understand open-ended goals, use tools, reason across longer workflows, navigate ambiguity, and carry comp",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the expanded availability of OpenAI's GPT-5.4 and GPT-5.5 models, which are now available in the US East (N. Virginia) Region on Amazon Bedrock. With GPT-5.4 and GPT-5.5, you can build generative AI applications across reasoning, coding, computer use, document workflows, and long-running agentic tasks.&lt;br&gt; &lt;br&gt; GPT-5.5 is OpenAI's most capable model, designed for advanced coding, research, analysis, software operation, document workflows, and long-running agentic tasks. It can understand open-ended goals, use tools, reason across longer workflows, navigate ambiguity, and carry complex tasks through to completion with less orchestration. GPT-5.4 brings frontier reasoning, coding, computer use, long-context workflows, and tool use to production applications that interpret context, interact with tools, operate software environments, and verify outputs across multiple steps. Both models support a 272K-token context window, accept text and image input, and are available through the Responses API with support for server-side and client-side tool calling, projects, and response streaming.&lt;br&gt; &lt;br&gt; With this launch, GPT-5.4 and GPT-5.5 are now available in additional AWS Regions. To get started, visit the GPT-5.5 and GPT-5.4 model cards in our &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/openai-gpt-us-east-virginia-amazon/",
+      "publishedAt": "2026-06-11T00:12:00.000Z",
+      "updatedAt": "2026-06-11T00:12:00.000Z",
+      "categories": [],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "aab766b1c988f319",
+      "title": "Amazon OpenSearch Service launches MCP Apps for agentic observability",
+      "description": "Amazon OpenSearch Service now supports MCP Apps, bringing observability workflows directly into compatible agentic IDEs such as Claude Desktop and VS Code. With this capability, your AI agent in local environment can investigate incidents using logs, traces, metrics, and alerts stored in OpenSearch domains, collections and Amazon Managed Service for Prometheus. You can easily review and verify the results in interactive MCP App visualizations without leaving your local environment. Each MCP App tool call returns a dual response, a concise text summary for your agent to reason over and an inter",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now supports MCP Apps, bringing observability workflows directly into compatible agentic IDEs such as Claude Desktop and VS Code. With this capability, your AI agent in local environment can investigate incidents using logs, traces, metrics, and alerts stored in OpenSearch domains, collections and Amazon Managed Service for Prometheus. You can easily review and verify the results in interactive MCP App visualizations without leaving your local environment.&lt;br&gt; &lt;br&gt; Each MCP App tool call returns a dual response, a concise text summary for your agent to reason over and an interactive visualization rendered in the same conversation thread for you to review. You can work alongside your observability agent from firing an alert, perform root cause analysis, exploring distributed traces, service maps, PromQL metric charts, and cross-signal correlations all within a single conversation. Available MCP App tools cover log, metrics and trace investigation, service performance, topology, dynamic visualizations, agent health, cluster health, and instrumentation scoring.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; The OpenSearch MCP app experience is available is available in all AWS Regions where &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/application.html\"&gt;Amazon OpenSearch UI&lt;/a&gt; is offered. To get started, follow the instructions in &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/opensearch-observability-mcp-app.html\"&gt;OpenSearch Agentic observability with MCP Apps&lt;/a&gt;. To learn more about OpenSearch, visit &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html\"&gt;Amazon OpenSearch Service Developer Guid&lt;/a&gt;&lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html\"&gt;e&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/opensearch-agentic-observability-mcp-app",
+      "publishedAt": "2026-06-10T22:58:00.000Z",
+      "updatedAt": "2026-06-10T22:58:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Opensearch Service"
+      ],
+      "services": [
+        "OpenSearch"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon opensearch service",
+        "opensearch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "087b3af89f6e3efb",
+      "title": "Amazon ECS Managed Daemons now support inter-task visibility and communication",
+      "description": "Amazon ECS Managed Daemons now support inter-task visibility and communication, enabling customers to deploy tracing, profiling, and security agents that require access to application processes and shared IPC resources on ECS Managed Instances . With this launch, you can configure two new settings in ECS daemon definitions: pidMode controls whether the daemon can see all processes on the instance, and ipcMode controls whether the daemon shares an IPC namespace with other containers on the instance. Setting either to \"shared\" grants the daemon access to the respective namespace; the default of ",
+      "descriptionHtml": "&lt;p&gt;Amazon ECS Managed Daemons now support inter-task visibility and communication, enabling customers to deploy tracing, profiling, and security agents that require access to application processes and shared IPC resources on &lt;a href=\"https://aws.amazon.com/ecs/managed-instances/\"&gt;ECS Managed Instances&lt;/a&gt;.&lt;br&gt; &lt;br&gt; With this launch, you can configure two new settings in ECS daemon definitions: pidMode controls whether the daemon can see all processes on the instance, and ipcMode controls whether the daemon shares an IPC namespace with other containers on the instance. Setting either to \"shared\" grants the daemon access to the respective namespace; the default of \"none\" keeps daemons isolated from application containers and other tasks. These settings let you run process-aware and IPC-dependent agents as ECS daemons instead of embedding them as sidecars in application task definitions. ECS places exactly one daemon task per managed instance and starts daemons before application tasks, so platform teams can deploy and update agents independently with consistent coverage across all workloads.&lt;br&gt; &lt;br&gt; To get started, register a daemon task definition specifying pidMode or ipcMode set to \"shared\" using the AWS Console, CLI, CloudFormation, or AWS SDKs, then create or update a daemon with associated ECS Managed Instances capacity providers in your clusters. This feature is now available in all AWS Regions at no additional cost. For more details, refer to our &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons-task-definitions.html#managed-daemons-taskdef-parameters\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/ecs-managed-daemons-pid-ipc-modes/",
+      "publishedAt": "2026-06-10T20:00:00.000Z",
+      "updatedAt": "2026-06-10T20:00:00.000Z",
+      "categories": [
+        "Containers",
+        "Amazon Ecs"
+      ],
+      "services": [
+        "ECS"
+      ],
+      "tags": [
+        "containers",
+        "amazon ecs",
+        "ecs"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5e43752d102b0a07",
+      "title": "Amazon EC2 M9g and M9gd general purpose instances are now available",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9g and M9gd instances , powered by AWS Graviton5 processors, are generally available. AWS Graviton5 processors are the fifth generation of custom-designed AWS processors, delivering the best price performance for general purpose workloads running on Amazon EC2 . ​​M9g instances serve a broad range of general-purpose workloads including application servers, microservices, gaming, caching, and containers, while also delivering the performance needed for agentic AI use cases like real-time reasoning, code generation, and multi-step orches",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) &lt;a href=\"https://aws.amazon.com/ec2/instance-types/m9g/\"&gt;M9g and M9gd instances&lt;/a&gt;, powered by AWS Graviton5 processors, are generally available. AWS Graviton5 processors are the fifth generation of custom-designed AWS processors, delivering the best price performance for general purpose workloads running on &lt;a href=\"https://aws.amazon.com/ec2/\"&gt;Amazon EC2&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;​​M9g instances serve a broad range of general-purpose workloads including application servers, microservices, gaming, caching, and containers, while also delivering the performance needed for agentic AI use cases like real-time reasoning, code generation, and multi-step orchestration. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;​​M9gd instances offer local NVMe-based SSD block-level storage for customers that require high-speed, low-latency local storage, such as media processing, batch and log processing, and applications that need access to temporary storage including caches and scratch files.​&lt;/p&gt; \n&lt;p&gt;​​​M9g and M9gd instances deliver up to 25% better compute performance compared to AWS Graviton4-based M8g and M8gd instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation &lt;a href=\"https://aws.amazon.com/ec2/nitro/\"&gt;AWS Nitro System&lt;/a&gt; and are the first to feature the Nitro Isolation Engine, harnessing formal verification to provide mathematical assurance that customer workloads are isolated from each other and AWS operators, pioneering a new standard for mathematically proven cloud security​​.&lt;/p&gt; \n&lt;p&gt;M9g and M9gd instances are available in US East (N. Virginia, Ohio), US West (Oregon), and EU (Frankfurt) regions. M9g and M9gd instances are available for purchase via Savings Plans, On-Demand, Spot instances, Dedicated instances, or Dedicated hosts.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\"&gt;Level up your compute with AWS Graviton&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/ec2/instance-types/m9g/\"&gt;get started today.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/ec2-m9g-m9gd-instances-graviton5-processors-available",
+      "publishedAt": "2026-06-10T15:00:00.000Z",
+      "updatedAt": "2026-06-10T15:00:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3af073161c9869ff",
+      "title": "Amazon EC2 P6-B200 instances are now available in the AWS GovCloud (US-East) Region",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) P6-B200 instances accelerated by NVIDIA Blackwell GPUs are available in AWS GovCloud (US-East) Region. These instances offer up to 2x performance compared to P5en instances for AI training and inference. P6-B200 instances feature 8 Blackwell GPUs with 1440 GB of high-bandwidth GPU memory and a 60% increase in GPU memory bandwidth compared to P5en, 5th Generation Intel Xeon processors (Emerald Rapids), and up to 3.2 terabits per second of Elastic Fabric Adapter (EFAv4) networking. P6-B200 instances are powered by the AWS Nitro System, so",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) P6-B200 instances accelerated by NVIDIA Blackwell GPUs are available in AWS GovCloud (US-East) Region. These instances offer up to 2x performance compared to P5en instances for AI training and inference.&lt;br&gt; &lt;br&gt; P6-B200 instances feature 8 Blackwell GPUs with 1440 GB of high-bandwidth GPU memory and a 60% increase in GPU memory bandwidth compared to P5en, 5th Generation Intel Xeon processors (Emerald Rapids), and up to 3.2 terabits per second of Elastic Fabric Adapter (EFAv4) networking. P6-B200 instances are powered by the AWS Nitro System, so you can reliably and securely scale AI workloads within Amazon EC2 UltraClusters to tens of thousands of GPUs.&lt;br&gt; &lt;br&gt; P6-B200 instances are now available in p6-b200.48xlarge size in the following AWS Regions: US West (Oregon), US East (N. Virginia, Ohio), AWS GovCloud (US-West) and AWS GovCloud (US-East) Region. To learn more about P6-B200 instances, visit &lt;a href=\"https://aws.amazon.com/ec2/instance-types/p6/\"&gt;Amazon EC2 P6 instances.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-ec2-p6-b200-aws-govcloud/",
+      "publishedAt": "2026-06-10T14:32:00.000Z",
+      "updatedAt": "2026-06-10T14:32:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Compute",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "compute",
+        "artificial intelligence",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "91275e7b59a6db76",
+      "title": "AWS Cost and Usage Report 2.0 now supports table configurations update",
+      "description": "AWS today announces that AWS Cost and Usage Report 2.0 (CUR 2.0) now supports updates to data table configurations via the AWS Management Console and SDK/CLI. This capability allows customers to modify their existing exports to take advantage of new CUR 2.0 features without having to delete and recreate their exports. Previously, customers configured CUR 2.0 exports with specific table settings — including export content, time granularity, column selection, export format, and destination settings. When AWS introduces new features, such as additional columns and finer row-level granularity, exi",
+      "descriptionHtml": "&lt;p&gt;AWS today announces that AWS Cost and Usage Report 2.0 (CUR 2.0) now supports updates to data table configurations via the AWS Management Console and SDK/CLI. This capability allows customers to modify their existing exports to take advantage of new CUR 2.0 features without having to delete and recreate their exports.&lt;br&gt; &lt;br&gt; Previously, customers configured CUR 2.0 exports with specific table settings — including export content, time granularity, column selection, export format, and destination settings. When AWS introduces new features, such as additional columns and finer row-level granularity, existing export settings intentionally remained unchanged to protect ETL jobs that depended on a stable schema. However, customers who wanted to adopt these new capabilities and were ready for the new schema couldn't simply update their preference in existing export. They had to delete their existing export and create a new one with the new preference. With this launch, customers can update their table configuration directly through the AWS Management Console or SDK/CLI and begin receiving exports with their updated preferences starting from the next scheduled export delivery.&lt;br&gt; &lt;br&gt; To learn more about this feature, see AWS Data Exports and &lt;a href=\"https://docs.aws.amazon.com/cur/latest/userguide/what-is-data-exports.html\"&gt;&lt;u&gt;AWS Billing and Cost Management&lt;/u&gt;&lt;/a&gt; in the &lt;i&gt;AWS Cost Management User Guide&lt;/i&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-cost-usage-report/",
+      "publishedAt": "2026-06-10T13:33:00.000Z",
+      "updatedAt": "2026-06-10T13:33:00.000Z",
+      "categories": [
+        "Cost Management",
+        "AWS Account Billing"
+      ],
+      "services": [
+        "Cost and Usage Report"
+      ],
+      "tags": [
+        "cost management",
+        "aws account billing",
+        "cost and usage report"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "208de4462399e630",
+      "title": "Amazon FSx for OpenZFS Intelligent-Tiering storage class is now available in 8 additional AWS Regions",
+      "description": "You can now create Amazon FSx for OpenZFS file systems with the Intelligent-Tiering storage class in 8 additional AWS Regions across the US, Europe, Asia Pacific, and South America. FSx Intelligent-Tiering is built for general-purpose file workloads such as file shares, archives, media libraries, and migrations from on-premises HDD storage. It automatically moves your data across three storage tiers (Frequent Access, Infrequent Access, and Archive) based on access patterns, and an optional SSD read cache keeps your active data fast. You get high performance for active workloads and low-cost st",
+      "descriptionHtml": "&lt;p&gt;You can now create Amazon FSx for OpenZFS file systems with the Intelligent-Tiering storage class in 8 additional AWS Regions across the US, Europe, Asia Pacific, and South America.&lt;/p&gt; \n&lt;p&gt;FSx Intelligent-Tiering is built for general-purpose file workloads such as file shares, archives, media libraries, and migrations from on-premises HDD storage. It automatically moves your data across three storage tiers (Frequent Access, Infrequent Access, and Archive) based on access patterns, and an optional SSD read cache keeps your active data fast. You get high performance for active workloads and low-cost storage for everything else, paying only for what you store with no capacity to manage. With FSx Intelligent-Tiering, you can save up to 85% compared to the FSx SSD storage class and up to 20% compared to on-premises HDD-based NAS.&lt;/p&gt; \n&lt;p&gt;With this expansion, the FSx Intelligent-Tiering storage class is now available for FSx for OpenZFS file systems in the following additional AWS Regions: US West (N. California), Europe (London, Stockholm, Spain, Zurich), Asia Pacific (Hyderabad, Seoul), and South America (São Paulo). To learn more, visit the &lt;a href=\"https://aws.amazon.com/fsx/intelligent-tiering/\"&gt;FSx Intelligent-Tiering page&lt;/a&gt; and the &lt;a href=\"https://aws.amazon.com/fsx/openzfs/\"&gt;Amazon FSx for OpenZFS product page&lt;/a&gt;, and see the FSx for OpenZFS &lt;a href=\"https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/available-aws-regions.html\"&gt;Region Table&lt;/a&gt; for complete regional availability information.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-fsx-openzfs/",
+      "publishedAt": "2026-06-09T20:52:00.000Z",
+      "updatedAt": "2026-06-09T20:52:00.000Z",
+      "categories": [
+        "Amazon Fsx For Openzfs",
+        "Storage"
+      ],
+      "services": [
+        "FSx"
+      ],
+      "tags": [
+        "amazon fsx for openzfs",
+        "storage",
+        "fsx"
+      ],
+      "isNew": true
+    },
     {
       "id": "cc0cceeb6fc1599e",
       "title": "Amazon SageMaker Unified Studio Notebooks now support EMR Serverless",
@@ -64,6 +215,30 @@
       "tags": [
         "cost management",
         "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "083cca143e84be73",
+      "title": "Announcing metal-48xl and metal-96xl for Amazon EC2 network/EBS instances",
+      "description": "AWS is announcing the general availability of metal-48xl and metal-96xl sizes for Amazon Elastic Compute Cloud (Amazon EC2) M8in, M8ib, M8idn, M8idb, R8in, R8ib, R8idn, and R8idb instances. These instances are powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS and feature the latest sixth generation AWS Nitro cards. These instances deliver up to 43% better compute performance per vCPU compared to previous generation M6in, M6idn, R6in, and R6idn instances. M8in, M8idn, R8in, R8idn instances deliver 600 Gbps network bandwidth, the highest network bandwidth a",
+      "descriptionHtml": "&lt;p&gt;AWS is announcing the general availability of metal-48xl and metal-96xl sizes for Amazon Elastic Compute Cloud (Amazon EC2) M8in, M8ib, M8idn, M8idb, R8in, R8ib, R8idn, and R8idb instances. These instances are powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS and feature the latest sixth generation AWS Nitro cards. These instances deliver up to 43% better compute performance per vCPU compared to previous generation M6in, M6idn, R6in, and R6idn instances.&lt;br&gt; &lt;br&gt; M8in, M8idn, R8in, R8idn instances deliver 600 Gbps network bandwidth, the highest network bandwidth among enhanced networking EC2 instances. M8in and R8in instances are ideal for workloads such as real-time big data analytics, distributed web scale in-memory caches, caching fleets for AI/ML clusters, and Telco applications such as 5G User Plane Function (UPF). M8idn and R8idn instances are ideal for network-intensive general purpose workloads requiring local storage, such as distributed compute, data analytics, and high-performance file systems.&lt;br&gt; &lt;br&gt; M8ib, M8idb, R8ib, R8idb instances deliver up to 300Gbps EBS bandwidth, the highest among non-accelerated compute EC2 instances. M8ib and R8ib instances are best suited for workloads that benefit from high block storage performance, such as high-performance file systems and NoSQL databases. M8idb and R8idb instances are ideal for storage-intensive general purpose workloads such as large commercial databases, data lakes, and NoSQL databases that benefit from both high EBS throughput and low-latency local NVMe storage.&lt;br&gt; &lt;br&gt; M8in, M8ib, M8idn, M8idb, R8in, R8ib, R8idn, and R8idb instances support Elastic Fabric Adapter (EFA) networking on 48xlarge, 96xlarge, metal-48xl, and metal-96xl sizes. EFA networking enables lower latency and improved cluster performance for workloads deployed on tightly coupled clusters.&lt;br&gt; &lt;br&gt; The new metal-48xl and metal-96xl sizes are available in the AWS US East (N. Virginia) region. To get started, see &lt;a href=\"https://console.aws.amazon.com/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;AWS Management Console&lt;/u&gt;&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;AWS Command Line Interface (AWS CLI)&lt;/u&gt;&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;AWS SDKs&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-ec2-metal-sizes-network-EBS/",
+      "publishedAt": "2026-06-09T15:00:00.000Z",
+      "updatedAt": "2026-06-09T15:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2",
+        "EBS"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2",
+        "ebs"
       ],
       "isNew": true
     },
@@ -739,7 +914,7 @@
         "amazon mq",
         "mq"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "dece3b5ba2a1010d",
@@ -761,7 +936,7 @@
         "amazon bedrock",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b9e4d85154ba1023",
@@ -784,7 +959,7 @@
         "internet of things",
         "aws iot"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1364a00959cd99f5",
@@ -806,7 +981,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f73bfc6a170a8c84",
@@ -828,7 +1003,7 @@
         "analytics",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0da7b61ac8ffac00",
@@ -852,7 +1027,7 @@
         "serverless",
         "step functions"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "650ba973591c552a",
@@ -874,7 +1049,7 @@
         "aws govcloud us",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ed43ed8d6ec86cdd",
@@ -898,7 +1073,7 @@
         "ecs",
         "ebs"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "55fd0aac86a34ade",
@@ -917,7 +1092,7 @@
         "aurora",
         "neptune"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d776454eaed1a04b",
@@ -939,7 +1114,7 @@
         "amazon keyspaces",
         "keyspaces"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2d291e9fd0c37196",
@@ -961,7 +1136,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3f75f8fa90a5704b",
@@ -989,7 +1164,7 @@
         "amazon sagemaker training",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c1c3c22e88f8beb0",
@@ -1011,7 +1186,7 @@
         "containers",
         "ecs"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d24ea272eff21008",
@@ -1033,7 +1208,7 @@
         "aws config",
         "config"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7fd6f84f0151cd23",
@@ -10884,177 +11059,6 @@
       "tags": [
         "aws marketplace and partners",
         "aws marketplace"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "1b11be94619eff63",
-      "title": "AWS Agent Registry for centralized agent discovery and governance is now available in Preview",
-      "description": "AWS Agent Registry, available through Amazon Bedrock AgentCore, is now in preview — a private, governed catalog and discovery layer for agents, tools, skills, MCP servers, and custom resources within the organization. It gives teams complete visibility into their AI landscape, enabling them to discover existing agents and tools instead of rebuilding capabilities that already exist. The registry can be accessed via the AgentCore Console UI, APIs (AWS CLI, AWS SDK), or as an MCP server that builders can query and invoke directly from their IDEs. Registry supports both IAM and OAuth (Custom JWT) ",
-      "descriptionHtml": "&lt;p&gt;AWS Agent Registry, available through Amazon Bedrock AgentCore, is now in preview — a private, governed catalog and discovery layer for agents, tools, skills, MCP servers, and custom resources within the organization. It gives teams complete visibility into their AI landscape, enabling them to discover existing agents and tools instead of rebuilding capabilities that already exist. The registry can be accessed via the AgentCore Console UI, APIs (AWS CLI, AWS SDK), or as an MCP server that builders can query and invoke directly from their IDEs. Registry supports both IAM and OAuth (Custom JWT) based access.&lt;/p&gt; \n&lt;p&gt;Teams can register resources manually through the console or API, or use URL-based discovery, which automatically retrieves metadata such as tool schemas and capability descriptions from a live MCP server or agent endpoint. Records go through an approval workflow where administrators can approve records before they become discoverable, and they can plug the registry into their existing approval workflows to enforce governance policies. AWS CloudTrail provides complete audit trails of all registry access and administrative actions, ensuring compliance and security oversight. For discovery, the registry offers both semantic and keyword search, so developers can quickly find agents by describing their use case in natural language.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;AWS Agent Registry (preview) is available in five AWS Regions where AgentCore is available: US West (Oregon), Asia Pacific (Tokyo), Asia Pacific (Sydney), Europe (Ireland), and US East (N. Virginia). Learn more about the registry through the &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/the-future-of-managing-agents-at-scale-aws-agent-registry-now-in-preview/\"&gt;blog&lt;/a&gt;, and deep dive using the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-agent-registry-in-agentcore-preview/",
-      "publishedAt": "2026-04-09T16:00:00.000Z",
-      "updatedAt": "2026-04-09T16:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7b76b097dac40b33",
-      "title": "Amazon OpenSearch Serverless now supports Zstandard (zstd) codec for index compression",
-      "description": "Amazon OpenSearch Serverless now supports Zstandard codecs for index storage, giving customers greater control over the trade-off between storage costs and query performance. With this launch, customers can configure Zstandard compression to achieve up to 32% reduction in index size compared to the default LZ4 codec, helping lower managed storage costs for data-intensive workloads. Customers running large-scale log analytics, observability pipelines, and time-series workloads on Amazon OpenSearch Serverless can benefit most from Zstandard compression where high data volumes make storage effici",
-      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Serverless now supports Zstandard codecs for index storage, giving customers greater control over the trade-off between storage costs and query performance. With this launch, customers can configure&amp;nbsp;Zstandard compression to achieve up to 32% reduction in index size compared to the default LZ4 codec, helping lower managed storage costs for data-intensive workloads.&lt;/p&gt; \n&lt;p&gt;Customers running large-scale log analytics, observability pipelines, and time-series workloads on Amazon OpenSearch Serverless can benefit most from&amp;nbsp;Zstandard compression where high data volumes make storage efficiency a significant cost driver. The Zstandard compression algorithm is available in two different modes in Amazon OpenSearch Serverless:&amp;nbsp;zstd&amp;nbsp;and&amp;nbsp;zstd_no_dict. Customers can tune the compression level to balance their specific needs: lower levels (e.g., level 1) deliver meaningful storage savings with minimal impact on indexing throughput and query latency, while higher levels (e.g., level 6) maximize compression ratios at the cost of slower indexing speeds.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Zstandard codec support is available today in all AWS Regions where Amazon OpenSearch Serverless is &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/opensearch-service.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;supported&lt;/a&gt;. To get started, you can specify these codecs in your index settings at creation time. For more information, see the Amazon OpenSearch Serverless &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-zstd-compression.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-opensearch-serverless-supports-zstandard-index-compression/",
-      "publishedAt": "2026-04-09T15:00:00.000Z",
-      "updatedAt": "2026-04-09T15:00:00.000Z",
-      "categories": [
-        "Amazon Opensearch Service",
-        "Analytics"
-      ],
-      "services": [
-        "OpenSearch"
-      ],
-      "tags": [
-        "amazon opensearch service",
-        "analytics",
-        "opensearch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "82aba2923d8c1e9f",
-      "title": "AWS Private CA now supports customer managed permissions for cross-account sharing",
-      "description": "AWS Private Certificate Authority (AWS Private CA) now supports customer managed permissions in AWS Resource Access Manager (AWS RAM). AWS Private CA lets you share certificate authorities (CAs) across accounts using AWS RAM so you can centralize your PKI instead of creating separate CAs in every account. With customer managed permissions, you can now select exactly which AWS Private CA API operations to allow when sharing a CA, granting only the specific operations each consuming account needs. Previously, you could only use AWS managed permissions, which provide predefined sets of actions an",
-      "descriptionHtml": "&lt;p&gt;AWS Private Certificate Authority (AWS Private CA) now supports customer managed permissions in AWS Resource Access Manager (AWS RAM). AWS Private CA lets you share certificate authorities (CAs) across accounts using AWS RAM so you can centralize your PKI instead of creating separate CAs in every account. With customer managed permissions, you can now select exactly which AWS Private CA API operations to allow when sharing a CA, granting only the specific operations each consuming account needs.&lt;br&gt; &lt;br&gt; Previously, you could only use AWS managed permissions, which provide predefined sets of actions and restrict cross-account issuers to specific certificate templates. Now you can select from read operations (e.g., DescribeCertificateAuthority, GetCertificate, and GetCertificateAuthorityCertificate) and write operations (e.g., IssueCertificate and RevokeCertificate) to tailor access for each consuming account or organizational unit. With customer managed permissions, cross-account issuers are not restricted to a specific certificate template.&lt;br&gt; &lt;br&gt; Customer managed permissions for AWS Private CA are available in all AWS Regions where AWS Private CA and AWS RAM are available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/privateca/latest/userguide/pca-cmp.html\"&gt;Customer managed permissions in RAM&lt;/a&gt; in the AWS Private CA User Guide and &lt;a href=\"https://docs.aws.amazon.com/ram/latest/userguide/create-customer-managed-permissions.html\"&gt;Creating and using customer managed permissions&lt;/a&gt; in the AWS RAM User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-private-ca-customer-managed-permissions/",
-      "publishedAt": "2026-04-09T13:00:00.000Z",
-      "updatedAt": "2026-04-09T13:00:00.000Z",
-      "categories": [
-        "AWS Private Certificate Authority",
-        "Security Identity And Compliance"
-      ],
-      "services": [],
-      "tags": [
-        "aws private certificate authority",
-        "security identity and compliance"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "e4ed48317e55f636",
-      "title": "Amazon EC2 Capacity Manager now supports tag-based dimensions",
-      "description": "Starting today, Amazon EC2 Capacity Manager supports tag-based dimensions, enabling you to use tags from your EC2 resources to group and filter capacity metrics. EC2 Capacity Manager helps you monitor and optimize capacity usage across On-Demand Instances, Spot Instances, and Capacity Reservations. This launch also introduces Account Name as a new built-in dimension. You can activate up to five custom tag keys — such as environment, team, or cost-center — and use them alongside built-in dimensions like Region, Instance Type, and Availability Zone to group and filter capacity metrics by tag val",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon EC2 Capacity Manager supports tag-based dimensions, enabling you to use tags from your EC2 resources to group and filter capacity metrics. EC2 Capacity Manager helps you monitor and optimize capacity usage across On-Demand Instances, Spot Instances, and Capacity Reservations. This launch also introduces Account Name as a new built-in dimension.&lt;/p&gt; \n&lt;p&gt;You can activate up to five custom tag keys — such as environment, team, or cost-center — and use them alongside built-in dimensions like Region, Instance Type, and Availability Zone to group and filter capacity metrics by tag values in the console and APIs, and include tag data as additional columns in newly created S3 data exports. Capacity Manager also includes four Capacity Manager-provided tags by default: EC2 Auto Scaling group name, EKS cluster name, EKS Kubernetes node pool, and Karpenter node pool. The new Account Name dimension makes it easier to identify accounts when analyzing cross-account capacity data across your organization.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where EC2 Capacity Manager is available. To get started, navigate to the Settings tab in Capacity Manager and choose Manage tag keys, or use the AWS CLI. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-monitored-tag-keys.html\"&gt;Managing monitored tag keys&lt;/a&gt; in the &lt;i&gt;Amazon EC2 User Guide&lt;/i&gt;. For more information about Amazon EC2 Capacity Manager, visit the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-manager.html\"&gt;EC2 Capacity Manager documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/ec2-capacity-manager-tag-based-dimensions/",
-      "publishedAt": "2026-04-09T07:00:00.000Z",
-      "updatedAt": "2026-04-09T07:00:00.000Z",
-      "categories": [],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b7ed1731a414c51d",
-      "title": "Amazon Route 53 Resolver endpoints now support DNS delegation for private hosted zones in AWS GovCloud (US) Regions",
-      "description": "Starting today, domain name system (DNS) delegation for private hosted zone subdomains can be used with Route 53 inbound and outbound Resolver endpoints in AWS GovCloud (US) Regions. This allows you to delegate the authority for a subdomain from your on-premises infrastructure to the Route 53 Resolver cloud service and vice versa, enabling a simplified cloud experience across namespaces in AWS and on your own local infrastructure. Many AWS customers delegate subdomain management to individual teams while maintaining central control of apex domains. Previously, we launched Route 53 Resolver del",
-      "descriptionHtml": "&lt;p&gt;Starting today, domain name system (DNS) delegation for private hosted zone subdomains can be used with Route 53 inbound and outbound Resolver endpoints in AWS GovCloud (US) Regions. This allows you to delegate the authority for a subdomain from your on-premises infrastructure to the Route 53 Resolver cloud service and vice versa, enabling a simplified cloud experience across namespaces in AWS and on your own local infrastructure.&lt;br&gt; &lt;br&gt; Many AWS customers delegate subdomain management to individual teams while maintaining central control of apex domains. Previously, we launched Route 53 Resolver delegation support for private hosted zones in commercial AWS Regions, enabling customers to use standard name server records to delegate subdomain authority between Route 53 and on-premises DNS — eliminating the need for conditional forwarding rules across their organization. With today's release, this delegation capability is now available for Route 53 Resolver endpoints in AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions as well.&lt;br&gt; &lt;br&gt; Inbound and outbound delegation is provided at no additional cost to Resolver endpoints usage. For more details on pricing, visit the Route 53 &lt;a href=\"https://aws.amazon.com/route53/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;pricing page&lt;/a&gt;, and to learn more about this feature, visit the &lt;a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/outbound-delegation-tutorial.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;developer guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/route-53-resolver-endpoints/",
-      "publishedAt": "2026-04-08T22:39:00.000Z",
-      "updatedAt": "2026-04-08T22:39:00.000Z",
-      "categories": [
-        "Networking And Content Delivery",
-        "Amazon Route 53",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "Route 53"
-      ],
-      "tags": [
-        "networking and content delivery",
-        "amazon route 53",
-        "aws govcloud us",
-        "route 53"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "3dcf17a26af240c7",
-      "title": "SageMaker HyperPod now supports gang scheduling for distributed training workloads",
-      "description": "Amazon SageMaker HyperPod task governance now supports gang scheduling, which ensures all pods required for a distributed training job are ready before training begins. Administrators can configure gang scheduling to prevent wasted compute from partial job runs and avoid deadlocks from jobs waiting for resources. Data scientists running distributed AI/ML training jobs on Amazon SageMaker HyperPod clusters using the EKS orchestrator require multiple pods to work together across nodes with pod-to-pod communication. When some pods start but others do not, jobs can hold onto resources without maki",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod task governance now supports gang scheduling, which ensures all pods required for a distributed training job are ready before training begins. Administrators can configure gang scheduling to prevent wasted compute from partial job runs and avoid deadlocks from jobs waiting for resources.&lt;br&gt; &lt;br&gt; Data scientists running distributed AI/ML training jobs on Amazon SageMaker HyperPod clusters using the EKS orchestrator require multiple pods to work together across nodes with pod-to-pod communication. When some pods start but others do not, jobs can hold onto resources without making progress, block other workloads, and increase costs. Gang scheduling resolves this by monitoring all pods in a workload and pulling the workload back if not all pods are ready within a set time. Pulled-back workloads are automatically requeued to prevent stalling. Administrators can adjust settings on the HyperPod Console, such as how long to wait for pods to be ready, how to handle node failures, whether to admit workloads one at a time to avoid deadlocks on busy clusters, and how retries are scheduled.&lt;br&gt; &lt;br&gt; This capability is currently available for Amazon SageMaker HyperPod clusters using the EKS orchestrator across the following &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt;: US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), and Asia Pacific (Tokyo), Asia Pacific (Jakarta), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Stockholm), Europe (Spain), and South America (São Paulo).&lt;br&gt; &lt;br&gt; To learn more, visit &lt;a href=\"https://aws.amazon.com/sagemaker-ai/hyperpod/\"&gt;SageMaker HyperPod webpage&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-eks-operate-console-ui-governance-tasks-gang-scheduling.html\"&gt;HyperPod task governance documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-hyperpod-gang-scheduling/",
-      "publishedAt": "2026-04-08T19:26:00.000Z",
-      "updatedAt": "2026-04-08T19:26:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9dd92323717d034e",
-      "title": "Amazon IVS Real-Time Streaming now supports redundant ingest",
-      "description": "Amazon Interactive Video Service (Amazon IVS) Real-Time Streaming now supports redundant ingest, helping protect your live streams against source encoder failures and first-mile network issues. With redundant ingest, you can stream from two encoders simultaneously to a single stage with automated failover, ensuring uninterrupted delivery to your viewers. Redundant ingest is ideal for live events, 24/7 live streams, or any scenario where uninterrupted delivery is essential. This capability helps you maintain viewer engagement during unexpected disruptions and enables continuous 24/7 streaming. ",
-      "descriptionHtml": "&lt;p&gt;Amazon Interactive Video Service (Amazon IVS) Real-Time Streaming now supports redundant ingest, helping protect your live streams against source encoder failures and first-mile network issues. With redundant ingest, you can stream from two encoders simultaneously to a single stage with automated failover, ensuring uninterrupted delivery to your viewers.&lt;/p&gt; \n&lt;p&gt;Redundant ingest is ideal for live events, 24/7 live streams, or any scenario where uninterrupted delivery is essential. This capability helps you maintain viewer engagement during unexpected disruptions and enables continuous 24/7 streaming.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ivs/\"&gt;Amazon IVS&lt;/a&gt; is a managed live streaming solution designed to make low-latency or real-time video available to viewers around the world. Visit the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS region table&lt;/a&gt; for a full list of AWS Regions where the Amazon IVS console and APIs for control and creation of video streams are available.&lt;/p&gt; \n&lt;p&gt;To learn more, please visit the &lt;a href=\"https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/rt-rtmp-publishing.html\"&gt;Amazon IVS Real-Time Streaming RTMP ingest documentation&lt;/a&gt; page.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ivs-real-time-streaming-redundant-ingest/",
-      "publishedAt": "2026-04-08T19:25:00.000Z",
-      "updatedAt": "2026-04-08T19:25:00.000Z",
-      "categories": [],
-      "services": [
-        "IVS"
-      ],
-      "tags": [
-        "ivs"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d17a963ef2ccadf6",
-      "title": "Amazon EKS managed node groups now support EC2 Auto Scaling warm pools",
-      "description": "Amazon Elastic Kubernetes Service (Amazon EKS) managed node groups now support Auto Scaling warm pools , enabling you to maintain pre-initialized EC2 instances ready for rapid scale-out. This reduces node provisioning latency for applications with burst traffic patterns, time-sensitive workloads, or long instance boot times due to complex initialization scripts and software dependencies. With warm pools enabled, your EKS managed node group maintains a pool of instances that have already completed OS initialization, user data execution, and software configuration. When demand increases and the ",
-      "descriptionHtml": "&lt;p&gt;Amazon Elastic Kubernetes Service (Amazon EKS) &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html\"&gt;managed node groups&lt;/a&gt; now support &lt;a href=\"https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-warm-pools.html\"&gt;Auto Scaling warm pools&lt;/a&gt;, enabling you to maintain pre-initialized EC2 instances ready for rapid scale-out. This reduces node provisioning latency for applications with burst traffic patterns, time-sensitive workloads, or long instance boot times due to complex initialization scripts and software dependencies.&lt;br&gt; &lt;br&gt; With warm pools enabled, your EKS managed node group maintains a pool of instances that have already completed OS initialization, user data execution, and software configuration. When demand increases and the Auto Scaling group scales out, instances transition from the warm pool to active service without repeating the full cold-start sequence. You can configure instances in the warm pool as Stopped (lower cost, longer transition) or Running (higher cost, faster transition). You can also enable reuse on scale-in, which returns instances to the warm pool during scale-down instead of terminating them. Warm pools work with Cluster Autoscaler without requiring any additional configuration.&lt;br&gt; &lt;br&gt; You can enable warm pools through the EKS API, AWS CLI, AWS Management Console, or AWS CloudFormation by adding a warmPoolConfig to your CreateNodegroup or UpdateNodegroupConfig requests. Existing managed node groups that do not enable warm pools are unaffected.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon EKS is available, except for the China (Beijing) Region, operated by Sinnet and the China (Ningxia) Region, operated by NWCD. To get started, see the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/managed-node-groups.html\"&gt;Amazon EKS managed node groups documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-eks-managed-node-groups-ec2-warm-pools/",
-      "publishedAt": "2026-04-08T19:00:00.000Z",
-      "updatedAt": "2026-04-08T19:00:00.000Z",
-      "categories": [
-        "Amazon Eks",
-        "AWS Govcloud Us",
-        "Compute",
-        "Containers"
-      ],
-      "services": [
-        "EC2",
-        "EKS"
-      ],
-      "tags": [
-        "amazon eks",
-        "aws govcloud us",
-        "compute",
-        "containers",
-        "ec2",
-        "eks"
       ],
       "isNew": false
     }
