@@ -1,7 +1,156 @@
 {
-  "lastUpdated": "2026-06-11T09:36:09.859Z",
+  "lastUpdated": "2026-06-12T09:30:54.950Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "47979e3433294ccc",
+      "title": "Amazon CloudWatch Application Signals now supports infrastructure, logs, and traces context for faster troubleshooting",
+      "description": "Amazon CloudWatch Application Signals introduces service health ranking on the application map and new infrastructure, logs, and traces tabs on the service overview page. These capabilities let operators triage unhealthy services and inspect the underlying compute environment, log snippets, and trace details in one place, making it easier to find root causes without switching tools. Customers use Application Signals to monitor the health of distributed applications, but identifying why a service was unhealthy often required leaving CloudWatch to correlate infrastructure data across separate to",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch Application Signals introduces service health ranking on the application map and new infrastructure, logs, and traces tabs on the service overview page. These capabilities let operators triage unhealthy services and inspect the underlying compute environment, log snippets, and trace details in one place, making it easier to find root causes without switching tools.&lt;br&gt; Customers use Application Signals to monitor the health of distributed applications, but identifying why a service was unhealthy often required leaving CloudWatch to correlate infrastructure data across separate tools. The application map now ranks services by health and shows runtime indicators on service nodes for Amazon EKS, Amazon ECS, AWS Lambda, and Amazon EC2, along with a new infrastructure tab that surfaces the compute and runtime environment, its components, and curated default metrics with deep links to the relevant monitoring tools. In addition, the service overview page provides the infrastructure, logs, and traces tab, helping operators spot issues in context of their application. With health-ranked services on the application map and new infrastructure, logs, and traces tabs, operators can instantly identify their most degraded services and drill into the compute environment, error-producing log snippets, and slow or failing transactions — all without leaving Application Signals. These capabilities span workloads running on Amazon EKS, Amazon ECS, AWS Lambda, and Amazon EC2, giving teams a single pane to move from symptom to root cause in minutes instead of hours.&lt;br&gt; &lt;br&gt; These capabilities are available in all AWS Regions where Amazon CloudWatch Application Signals is supported. To learn more about this feature, see the &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html\"&gt;Amazon CloudWatch Application Signals documentation&lt;/a&gt; . For pricing details, see the &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;Amazon CloudWatch pricing page&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/cloudwatch-application-signals-supports infrastructure-logs-traces-context-for-faster troubleshooting/",
+      "publishedAt": "2026-06-11T20:10:00.000Z",
+      "updatedAt": "2026-06-11T20:10:00.000Z",
+      "categories": [
+        "Amazon Cloudwatch",
+        "Management And Governance"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "amazon cloudwatch",
+        "management and governance",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6fcf3f8b489204e0",
+      "title": "Amazon Aurora now supports PostgreSQL major version 18",
+      "description": "Amazon Aurora PostgreSQL-Compatible Edition now supports PostgreSQL major version 18, starting with version 18.3. This release brings community improvements to query performance and database management, and introduces support for pg_roaringbitmap, a new extension that performs fast, memory-efficient set operations on large collections of integers. This enables use cases such as audience segmentation, tag-based filtering, and permission checks directly in the database without application-layer processing. PostgreSQL 18 introduces B-tree skip scans, which improve query performance, and reduce in",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/aurora/\"&gt;Amazon Aurora PostgreSQL-Compatible Edition&lt;/a&gt; now supports PostgreSQL major version 18, starting with version 18.3. This release brings community improvements to query performance and database management, and introduces support for pg_roaringbitmap, a new extension that performs fast, memory-efficient set operations on large collections of integers. This enables use cases such as audience segmentation, tag-based filtering, and permission checks directly in the database without application-layer processing.&lt;br&gt; &lt;br&gt; PostgreSQL 18 introduces B-tree skip scans, which improve query performance, and reduce index storage and maintenance overhead. Major version upgrades now retain optimizer statistics, ensuring consistent query performance immediately after upgrading without waiting for statistics to be regenerated. Logical replication can now stream large transactions in parallel, reducing replication lag and keeping downstream systems more current. Please refer to the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraPostgreSQLReleaseNotes/AuroraPostgreSQL.Updates.html\"&gt;Amazon Aurora PostgreSQL release notes&lt;/a&gt; for details.&lt;br&gt; &lt;br&gt; You can upgrade your database using several options including &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments-overview.html\"&gt;RDS Blue/Green deployments&lt;/a&gt;, upgrade in-place, or restoring a snapshot. Learn more about upgrading your database instances in the &lt;a href=\"http://add%20link/\"&gt;Amazon Aurora User Guide&lt;/a&gt;. Aurora PostgreSQL 18.3 is available in all commercial AWS Regions and AWS GovCloud (US) Regions.&lt;br&gt; &lt;br&gt; Amazon Aurora is designed for unparalleled high performance and availability at global scale with full PostgreSQL and MySQL compatibility. It provides built-in security, continuous backups, serverless compute, up to 15 read replicas, automated multi-Region replication, and integrations with other AWS services. To get started with Amazon Aurora, take a look at our &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_GettingStartedAurora.html\"&gt;getting started page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-aurora-postgresql-major-version-18/",
+      "publishedAt": "2026-06-11T18:59:00.000Z",
+      "updatedAt": "2026-06-11T18:59:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Databases",
+        "Amazon Aurora"
+      ],
+      "services": [
+        "Aurora"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "databases",
+        "amazon aurora",
+        "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b1b4a5aa413f76f5",
+      "title": "AWS Elastic Beanstalk console now integrates CloudWatch Logs in the Logs tab",
+      "description": "AWS Elastic Beanstalk now provides a CloudWatch Logs integration directly in the environment Logs tab of the Elastic Beanstalk console. Previously, customers had to navigate to the CloudWatch console to find the relevant log groups and log streams for their environments. With this launch, customers can view CloudWatch log events without leaving the Elastic Beanstalk console. The Logs tab displays log groups that an environment streams logs to, as well as log groups matching the aws/elasticbeanstalk/ /* prefix. Customers can select a log group to view its log streams, with the most recently act",
+      "descriptionHtml": "&lt;p&gt;AWS Elastic Beanstalk now provides a CloudWatch Logs integration directly in the environment Logs tab of the Elastic Beanstalk console. Previously, customers had to navigate to the CloudWatch console to find the relevant log groups and log streams for their environments. With this launch, customers can view CloudWatch log events without leaving the Elastic Beanstalk console.&amp;nbsp;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;The Logs tab displays log groups that an environment streams logs to, as well as log groups matching the &lt;i&gt;aws/elasticbeanstalk/&amp;lt;env-name&amp;gt;/*&lt;/i&gt; prefix. Customers can select a log group to view its log streams, with the most recently active stream selected by default. A log stream dropdown allows switching between streams and filtering results. For deeper analysis, a View in CloudWatch dropdown provides direct links to the log group, log stream, or CloudWatch Logs Insights in the CloudWatch console.&lt;/p&gt; \n&lt;p&gt;This feature is available across all Elastic Beanstalk platform branches in all AWS Commercial Regions and AWS GovCloud (US) Regions where Elastic Beanstalk is available. For a complete list of supported Regions, see &lt;a title=\"AWS Regions where Elastic Beanstalk is generally available\" href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;For more information about using Elastic Beanstalk with Amazon CloudWatch, see the &lt;a title=\"Guide on setting up CloudWatch with Elastic Beanstalk\" href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.cloudwatchlogs.html\"&gt;AWS Elastic Beanstalk developer guide&lt;/a&gt;. To learn more, visit the &lt;a title=\"AWS Elastic Beanstalk Product Page\" href=\"https://aws.amazon.com/elasticbeanstalk/\"&gt;AWS Elastic Beanstalk product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/elastic-beanstalk-cloudwatch-logs/",
+      "publishedAt": "2026-06-11T17:00:00.000Z",
+      "updatedAt": "2026-06-11T17:00:00.000Z",
+      "categories": [
+        "Management Tools",
+        "AWS Elastic Beanstalk"
+      ],
+      "services": [
+        "Elastic Beanstalk",
+        "CloudWatch"
+      ],
+      "tags": [
+        "management tools",
+        "aws elastic beanstalk",
+        "elastic beanstalk",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ec330b622c7d3a0b",
+      "title": "Amazon MWAA Serverless now supports Amazon EventBridge notifications",
+      "description": "Amazon Managed Workflows for Apache Airflow (MWAA) Serverless now supports workflow and task state change events to Amazon EventBridge , enabling data engineering and platform teams to build event-driven automation for their Apache Airflow workflows. Previously, monitoring workflow execution required custom polling logic or manual observation. With this launch, MWAA Serverless can emit events when workflows transition between states, including started, running, succeeded, or failed, and when individual tasks change state, such as scheduled, succeeded, failed, or up for retry. With this feature",
+      "descriptionHtml": "&lt;p&gt;Amazon Managed Workflows for Apache Airflow (MWAA) Serverless now supports workflow and task state change events to &lt;a href=\"https://aws.amazon.com/eventbridge/\"&gt;Amazon EventBridge&lt;/a&gt;, enabling data engineering and platform teams to build event-driven automation for their Apache Airflow workflows.&lt;/p&gt; \n&lt;p&gt;Previously, monitoring workflow execution required custom polling logic or manual observation. With this launch, MWAA Serverless can emit events when workflows transition between states, including started, running, succeeded, or failed, and when individual tasks change state, such as scheduled, succeeded, failed, or up for retry. With this feature, you can further automate your existing workflows - for example, using EventBridge notifications to trigger alerts when a production workflow fails, automatically restart dependent pipelines when an upstream workflow succeeds, or log state transitions to Amazon S3 for compliance and auditing.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where &lt;a href=\"https://aws.amazon.com/managed-workflows-for-apache-airflow/\"&gt;Amazon MWAA Serverless&lt;/a&gt; is available. For the complete list of supported Regions, see &lt;a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/what-is-mwaa-serverless.html#mwaa-serverless-regions\"&gt;Regions&lt;/a&gt; in the Amazon MWAA Serverless User Guide. For pricing details, see &lt;a href=\"https://aws.amazon.com/eventbridge/pricing/\"&gt;Amazon EventBridge pricing&lt;/a&gt;. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/monitoring.html\"&gt;Monitoring Amazon MWAA Serverless&lt;/a&gt; in the Amazon MWAA Serverless User Guide and &lt;a href=\"https://docs.aws.amazon.com/eventbridge/latest/ref/events-ref-airflow-serverless.html\"&gt;Amazon MWAA Serverless events&lt;/a&gt; in the Amazon EventBridge Events Reference.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-mwaa-serverless-eventbridge/",
+      "publishedAt": "2026-06-11T17:00:00.000Z",
+      "updatedAt": "2026-06-11T17:00:00.000Z",
+      "categories": [
+        "Serverless",
+        "Amazon Mwaa",
+        "Analytics"
+      ],
+      "services": [
+        "EventBridge",
+        "MWAA"
+      ],
+      "tags": [
+        "serverless",
+        "amazon mwaa",
+        "analytics",
+        "eventbridge",
+        "mwaa"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e3536e2f1a65b568",
+      "title": "Amazon Managed Service for Prometheus now supports Native Histograms",
+      "description": "Amazon Managed Service for Prometheus now supports ingestion, storage, and querying of Prometheus native histograms, enabling customers to capture high-resolution metric distributions with greater precision and lower cardinality than classic histograms. DevOps engineers, site reliability engineers, and platform teams monitoring latency, request durations, and other distributions can now get more accurate percentile calculations without pre-defining bucket boundaries or managing high-cardinality time series. Native histograms use exponential bucketing to automatically adapt resolution to your d",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/prometheus/\"&gt;Amazon Managed Service for Prometheus&lt;/a&gt; now supports ingestion, storage, and querying of Prometheus native histograms, enabling customers to capture high-resolution metric distributions with greater precision and lower cardinality than classic histograms. DevOps engineers, site reliability engineers, and platform teams monitoring latency, request durations, and other distributions can now get more accurate percentile calculations without pre-defining bucket boundaries or managing high-cardinality time series.&lt;/p&gt; \n&lt;p&gt;Native histograms use exponential bucketing to automatically adapt resolution to your data, storing an entire distribution in a single time series rather than requiring one series per bucket boundary. This reduces active series count, as a classic histogram with 20 buckets that previously required 22 time series now requires only one, while delivering more precise tail-latency insights from functions like histogram_quantile(). You can adopt native histograms incrementally alongside existing classic histograms, migrating workloads at your own pace without disrupting current monitoring. Amazon Managed Service for Prometheus meters and charges native histograms based only on populated buckets that contain actual observations, so you don't pay for empty buckets in sparse distributions.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This capability is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where Amazon Managed Service for Prometheus is offered. To get started, see Amazon Managed Service for Prometheus &lt;a href=\"https://docs.aws.amazon.com/prometheus/latest/userguide/what-is-Amazon-Managed-Service-Prometheus.html\"&gt;documentation&lt;/a&gt;.&amp;nbsp;To learn about Native Histograms pricing, visit the Amazon Managed Service for Prometheus &lt;a href=\"https://aws.amazon.com/prometheus/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-managed-service-prometheus-native-histograms/",
+      "publishedAt": "2026-06-11T13:00:00.000Z",
+      "updatedAt": "2026-06-11T13:00:00.000Z",
+      "categories": [
+        "Management And Governance"
+      ],
+      "services": [],
+      "tags": [
+        "management and governance"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a70bf19ed11a8bd2",
+      "title": "Amazon Managed Service for Prometheus now supports out of order sample ingestion",
+      "description": "Amazon Managed Service for Prometheus now supports out-of-order sample ingestion and a workspace-level rule query offset. All workspaces have a default out-of-order time window of 1 minute, allowing the workspace to accept metric samples arriving outside strict chronological order. You can adjust this window to match your ingestion patterns or set it to 0 to disable the feature and discard out-of-order samples. You can also configure a global rule query offset that introduces a delay before rule evaluation queries run, giving late-arriving samples time to be ingested before rules execute. Toge",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/prometheus/\"&gt;Amazon Managed Service for Prometheus&lt;/a&gt; now supports out-of-order sample ingestion and a workspace-level rule query offset. All workspaces have a default out-of-order time window of 1 minute, allowing the workspace to accept metric samples arriving outside strict chronological order. You can adjust this window to match your ingestion patterns or set it to 0 to disable the feature and discard out-of-order samples. You can also configure a global rule query offset that introduces a delay before rule evaluation queries run, giving late-arriving samples time to be ingested before rules execute.&lt;/p&gt; \n&lt;p&gt;Together, these features reduce data loss and improve alerting accuracy for workloads with distributed collectors, batched exports, or variable network latency. Out-of-order sample support ensures late-arriving data points are ingested rather than discarded, preserving metric completeness. The rule query offset compensates for the expected ingestion delay. Without it, rules evaluate instantly and may miss samples that haven't landed yet, producing results that differ from the same expression evaluated after all metrics arrive. Two new CloudWatch vended metrics, OutOfOrderIngestionRate and OutOfOrderSampleAge give you visibility into ingestion patterns, helping you tune both settings for your workload.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Out-of-order sample ingestion and rule query offset are available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS regions&lt;/a&gt; where Amazon Managed Service for Prometheus is generally available. To get started, configure the out-of-order time window and ruler query offset in your workspace settings via AWS console, API or CLI. For more information, see Amazon Managed Service for Prometheus &lt;a href=\"https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-workspace-configuration.html\"&gt;user documentation.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-managed-service-prometheus-outoforder-ingestion/",
+      "publishedAt": "2026-06-11T13:00:00.000Z",
+      "updatedAt": "2026-06-11T13:00:00.000Z",
+      "categories": [
+        "Management And Governance"
+      ],
+      "services": [],
+      "tags": [
+        "management and governance"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "dae704b571f268f6",
+      "title": "AWS announces AWS Workload Credentials Provider",
+      "description": "AWS announces AWS Workload Credentials Provider, a lightweight client-side provider that automates deployment of exported certificates from AWS Certificate Manager (ACM) and local caching of secrets from AWS Secrets Manager across AWS and non-AWS workloads. Previously, customers exporting public or private certificates from ACM had to build custom automation using Amazon EventBridge to detect renewals and deploy the updated certificates. With public certificate lifetimes decreasing per the the Certification Authority Browser Forum (CA/B) mandate, this custom automation can become difficult to ",
+      "descriptionHtml": "&lt;p&gt;AWS announces AWS Workload Credentials Provider, a lightweight client-side provider that automates deployment of exported certificates from AWS Certificate Manager (ACM) and local caching of secrets from AWS Secrets Manager across AWS and non-AWS workloads.&lt;br&gt; &lt;br&gt; Previously, customers exporting public or private certificates from ACM had to build custom automation using Amazon EventBridge to detect renewals and deploy the updated certificates. With public certificate lifetimes decreasing per the the Certification Authority Browser Forum (CA/B) mandate, this custom automation can become difficult to maintain at scale. AWS Workload Credentials Provider eliminates this complexity by providing a single provider that helps distribute and automate both secrets and certificates to your workloads. You configure it with your certificate ARN and specify options such as file paths and server reload behavior — the provider then handles certificate export and deployment automatically to prevent expiry related failures. It runs on Windows and Linux and supports Apache and NGINX web servers.&lt;br&gt; &lt;br&gt; For secrets caching, the provider maintains full backwards compatibility with the AWS Secrets Manager Agent, enabling you to securely cache application secrets locally across AWS and non-AWS workloads through the same unified provider.&lt;br&gt; &lt;br&gt; AWS Workload Credentials Provider is open source and available on &lt;a href=\"https://github.com/aws/aws-workload-credentials-provider\"&gt;GitHub&lt;/a&gt;. You can use it with exportable ACM certificates and Secrets Manager in all AWS Regions. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate-automation.html\"&gt;AWS Certificate Manager documentation&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/secretsmanager/\"&gt;AWS Secrets Manager documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-workload-credentials-provider/",
+      "publishedAt": "2026-06-11T07:00:00.000Z",
+      "updatedAt": "2026-06-11T07:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "Compute"
+      ],
+      "services": [],
+      "tags": [
+        "security identity and compliance",
+        "compute"
+      ],
+      "isNew": true
+    },
     {
       "id": "fe1a30ddd453d918",
       "title": "OpenAI GPT-5.4 and GPT-5.5 models now available in US East (N. Virginia) on Amazon Bedrock",
@@ -60,6 +209,45 @@
         "containers",
         "amazon ecs",
         "ecs"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9fe27764fe8a3bf6",
+      "title": "Gemma 4 models now available on Amazon Bedrock",
+      "description": "Today, AWS announces the availability of the Gemma 4 family of open-weight models from Google DeepMind on Amazon Bedrock . With Gemma 4, you can build generative AI applications across reasoning, multimodal understanding, agentic, and software engineering workflows. The Gemma 4 family on Amazon Bedrock includes three variants—Gemma 4 31B, Gemma 4 26B-A4B, and Gemma 4 E2B—spanning dense and mixture-of-experts (MoE) architectures with built-in reasoning, native function calling, support for 35+ languages and multimodal input across text, image, video and audio. Gemma 4 31B is suited for reasonin",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the availability of the Gemma 4 family of open-weight models from Google DeepMind on &lt;a href=\"https://aws.amazon.com/bedrock/\"&gt;Amazon Bedrock&lt;/a&gt;. With Gemma 4, you can build generative AI applications across reasoning, multimodal understanding, agentic, and software engineering workflows.&lt;/p&gt; \n&lt;p&gt;The Gemma 4 family on Amazon Bedrock includes three variants—Gemma 4 31B, Gemma 4 26B-A4B, and Gemma 4 E2B—spanning dense and mixture-of-experts (MoE) architectures with built-in reasoning, native function calling, support for 35+ languages and multimodal input across text, image, video and audio. Gemma 4 31B is suited for reasoning- and coding-heavy workloads with a 256K-token context window, Gemma 4 26B-A4B targets cost- and latency-sensitive workloads, and Gemma 4 E2B is the smallest variant, designed for low-latency interactive use cases. Gemma 4 runs on a new innovation in Bedrock designed for price performance, with improved support for tool calling, structured output, reasoning, and response streaming, so customers can build reliable generative AI applications with open-source models.&lt;/p&gt; \n&lt;p&gt;Gemma 4 models are available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), and Europe (Frankfurt). To get started, visit Gemma 4 model detail pages in our &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-google.html\"&gt;documentation.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/gemma-4-amazon-bedrock/",
+      "publishedAt": "2026-06-10T19:17:00.000Z",
+      "updatedAt": "2026-06-10T19:17:00.000Z",
+      "categories": [],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a157b7ab10771aa2",
+      "title": "Amazon Virtual Private Cloud (VPC) Flow Logs introduces additional metadata",
+      "description": "Amazon Virtual Private Cloud (VPC) Flow Logs now supports EC2 resource tags and next-hop interface metadata, simplifying network monitoring and troubleshooting by eliminating the need to manually correlate flow log data with resource metadata. VPC Flow Logs enable you to capture and log information about your VPC network traffic to monitor and troubleshoot network traffic issues. With EC2 resource tag support, you can embed tag values from your network interfaces, EC2 instances, and auto scaling groups. This eliminates the need for you to join flow log data with separate tag metadata to correl",
+      "descriptionHtml": "&lt;p&gt;Amazon Virtual Private Cloud (VPC) Flow Logs now supports EC2 resource tags and next-hop interface metadata, simplifying network monitoring and troubleshooting by eliminating the need to manually correlate flow log data with resource metadata.&lt;/p&gt; \n&lt;p&gt;VPC Flow Logs enable you to capture and log information about your VPC network traffic to monitor and troubleshoot network traffic issues. With EC2 resource tag support, you can embed tag values from your network interfaces, EC2 instances, and auto scaling groups. This eliminates the need for you to join flow log data with separate tag metadata to correlate records with specific workloads. With next-hop metadata support, you can capture details about the next-hop network interface for each flow, including its interface ID, subnet, Availability Zone, VPC, and interface type. These fields help you understand how traffic traverses through network resources such as NAT Gateways, Network Load Balancers, and Transit Gateways without requiring manual correlation of multiple data sources.&lt;br&gt; &lt;br&gt; VPC Flow Logs EC2 resource tag and next-hop metadata support is available in the following AWS Regions: US East (Ohio, N. Virginia), US West (Northern California, Oregon), Africa (Cape Town), Asia Pacific (Hong Kong, Hyderabad, Jakarta, Melbourne, Mumbai, Osaka, Seoul, Singapore, Sydney, Tokyo, Auckland, Taipei, Bangkok, Malaysia), Canada (Central), Canada West (Calgary), Europe (Frankfurt, Ireland, London, Milan, Paris, Spain, Stockholm, Zurich), Israel (Tel Aviv), South America (Sao Paulo), Mexico (Central), European Sovereign Cloud (Germany), and AWS GovCloud (US-East, US-West) Regions. To get started, see the VPC Flow Logs &lt;a href=\"https://docs.aws.amazon.com/vpc/latest/userguide/flow-log-records.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-flow-logs-metadata",
+      "publishedAt": "2026-06-10T16:58:00.000Z",
+      "updatedAt": "2026-06-10T16:58:00.000Z",
+      "categories": [
+        "Amazon Vpc",
+        "Networking And Content Delivery"
+      ],
+      "services": [
+        "VPC"
+      ],
+      "tags": [
+        "amazon vpc",
+        "networking and content delivery",
+        "vpc"
       ],
       "isNew": true
     },
@@ -760,7 +948,7 @@
         "aws developer tools",
         "developer tools"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6ece7f767e42b9e5",
@@ -779,7 +967,7 @@
         "aws developer tools",
         "developer tools"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d90330e1c0ceb1ab",
@@ -801,7 +989,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a2b0b5dc9933d1e9",
@@ -823,7 +1011,7 @@
         "security identity and compliance",
         "cognito"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "59e20d06195be815",
@@ -845,7 +1033,7 @@
         "databases",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "073e412736a8c847",
@@ -869,7 +1057,7 @@
         "eks",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "21b8b200f0f29ad9",
@@ -888,7 +1076,7 @@
         "media services",
         "aws deadline cloud"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7d65a58b21da831c",
@@ -10850,215 +11038,6 @@
         "business productivity",
         "cost management",
         "cloud financial management"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d420a1cc8e6752e3",
-      "title": "AWS RTB Fabric supports health checks for real-time bidding workloads",
-      "description": "AWS RTB Fabric now supports health checks for real-time bidding workloads that use EC2 Auto Scaling groups (AGS). Health checks in AWS RTB Fabric continuously monitors and automatically routes traffic to healthy instances with configurable settings in RTB responder gateways . This helps eliminate failed real-time bidding transactions from bootstrapping, draining, or failed instances. With this launch, AWS RTB Fabric helps advertising technology (AdTech) companies improve uptime, reduce error rates, and prevent revenue loss from failed auctions. AWS RTB Fabric helps you connect with your AdTech",
-      "descriptionHtml": "&lt;p&gt;AWS RTB Fabric now supports health checks for real-time bidding workloads that use &lt;a href=\"https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html\"&gt;EC2 Auto Scaling groups&lt;/a&gt; (AGS). Health checks in AWS RTB Fabric continuously monitors and automatically routes traffic to healthy instances with &lt;a href=\"https://docs.aws.amazon.com/rtb-fabric/latest/userguide/health-checks-for-managed-endpoints.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;configurable settings in RTB responder gateways&lt;/a&gt;.&amp;nbsp;This helps eliminate failed real-time bidding transactions from bootstrapping, draining, or failed instances. With this launch, AWS RTB Fabric helps advertising technology (AdTech) companies improve uptime, reduce error rates, and prevent revenue loss from failed auctions.&lt;/p&gt; \n&lt;p&gt;AWS RTB Fabric helps you connect with your AdTech partners such as Amazon Ads, GumGum, Kargo, MobileFuse, Sovrn, TripleLift, Viant, Yieldmo, and more in three steps while delivering single-digit millisecond latency through a private, high-performance network environment. RTB Fabric reduces standard cloud networking costs by up to 80% and does not require upfront commitments. AWS RTB Fabric is generally available in the following &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt;: US East (N. Virginia), US West (Oregon), Asia Pacific (Singapore), Asia Pacific (Tokyo), Europe (Frankfurt), and Europe (Ireland). To learn more, visit the AWS RTB Fabric &lt;a href=\"https://docs.aws.amazon.com/rtb-fabric/latest/userguide/health-checks-for-managed-endpoints.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt; or &lt;a href=\"https://aws.amazon.com/rtb-fabric/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;product&lt;/a&gt; page.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-rtb-fabric-health-checks/",
-      "publishedAt": "2026-04-10T12:00:00.000Z",
-      "updatedAt": "2026-04-10T12:00:00.000Z",
-      "categories": [
-        "Networking"
-      ],
-      "services": [
-        "Health"
-      ],
-      "tags": [
-        "networking",
-        "health"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7c3a275869f709f0",
-      "title": "AWS Backup extends Amazon FSx support to 5 additional AWS Regions and expands cross-Region and cross-account copy to 14 AWS Regions",
-      "description": "AWS Backup is expanding support for Amazon FSx for Windows File Server, Amazon FSx for OpenZFS, and Amazon FSx for Lustre with two regional enhancements. First, AWS Backup now supports backup and restore of these FSx file systems in 5 additional AWS Regions: Asia Pacific (Malaysia, Taipei, Thailand), Canada West (Calgary), and Mexico (Central). You can now centrally manage FSx backup policies, automate backup schedules, and monitor backup activity through AWS Backup in these Regions. Second, AWS Backup now supports cross-Region and cross-account copy of FSx backups in 14 Regions: Africa (Cape ",
-      "descriptionHtml": "&lt;p&gt;AWS Backup is expanding support for Amazon FSx for Windows File Server, Amazon FSx for OpenZFS, and Amazon FSx for Lustre with two regional enhancements.&lt;/p&gt; \n&lt;p&gt;First, AWS Backup now supports backup and restore of these FSx file systems in 5 additional AWS Regions: Asia Pacific (Malaysia, Taipei, Thailand), Canada West (Calgary), and Mexico (Central). You can now centrally manage FSx backup policies, automate backup schedules, and monitor backup activity through AWS Backup in these Regions.&lt;/p&gt; \n&lt;p&gt;Second, AWS Backup now supports cross-Region and cross-account copy of FSx backups in 14 Regions: Africa (Cape Town), Asia Pacific (Hong Kong, Hyderabad, Jakarta, Malaysia, Melbourne, Taipei, Thailand), Canada West (Calgary), Europe (Milan, Spain, Zurich), Israel (Tel Aviv), and Mexico (Central). This capability is available for both on-demand copies and scheduled backup plans with copy rules. With support in opt-in Regions, you can also store FSx backups in AWS Backup logically air-gapped vaults, providing additional defense against inadvertent or malicious deletions and helping you recover from ransomware events.&lt;/p&gt; \n&lt;p&gt;You can now configure cross-Region and cross-account copy rules to meet your compliance and business continuity requirements. To learn more, visit the AWS Backup &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html\"&gt;feature availability page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/backup-extends-fsx-support/",
-      "publishedAt": "2026-04-10T10:00:00.000Z",
-      "updatedAt": "2026-04-10T10:00:00.000Z",
-      "categories": [
-        "AWS Backup",
-        "Amazon Fsx For Lustre",
-        "Amazon Fsx For Openzfs",
-        "Amazon Fsx For Windows File Server"
-      ],
-      "services": [
-        "FSx",
-        "Backup"
-      ],
-      "tags": [
-        "aws backup",
-        "amazon fsx for lustre",
-        "amazon fsx for openzfs",
-        "amazon fsx for windows file server",
-        "fsx",
-        "backup"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "50e7bca64d992a61",
-      "title": "Amazon RDS now supports the latest CU and GDR updates for Microsoft SQL Server",
-      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2016 SP3+GDR KB5077474 (RDS version 13.00.6480.4.v1), SQL Server 2017 CU31+GDR KB5077471 (RDS version 14.00.3520.4.v1), SQL Server 2019 CU32+GDR KB5077469 (RDS version 15.00.4460.4.v1) and SQL Server 2022 CU24 KB5080999 (RDS version 16.00.4245.2.v1). The GDR updates address vulnerabilities described in CVE-2026-21262 and CVE-2026-26115. For additional informa",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server &lt;/a&gt;now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2016 SP3+GDR &lt;a href=\"https://support.microsoft.com/en-us/topic/kb5077474-description-of-the-security-update-for-sql-server-2016-sp3-gdr-march-10-2026-3f455bec-1221-4962-b068-0b11bf96b66a\" target=\"_blank\"&gt;KB5077474&lt;/a&gt; (RDS version 13.00.6480.4.v1), SQL Server 2017 CU31+GDR &lt;a href=\"https://support.microsoft.com/en-us/topic/kb5077471-description-of-the-security-update-for-sql-server-2017-cu31-march-10-2026-f020d5eb-e356-42e8-a9ba-0ef061430b15\" target=\"_blank\"&gt;KB5077471&lt;/a&gt; (RDS version 14.00.3520.4.v1), SQL Server 2019 CU32+GDR &lt;a href=\"https://support.microsoft.com/en-us/topic/kb5077469-description-of-the-security-update-for-sql-server-2019-cu32-march-10-2026-5ec2c609-35cb-483d-aa80-5e66821e5c97\" target=\"_blank\"&gt;KB5077469&lt;/a&gt; (RDS version 15.00.4460.4.v1) and SQL Server 2022 CU24 &lt;a href=\"https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate24\" target=\"_blank\"&gt;KB5080999&lt;/a&gt; (RDS version 16.00.4245.2.v1).&lt;br&gt; &lt;br&gt; The GDR updates address vulnerabilities described in CVE-2026-21262 and CVE-2026-26115. For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5077474, KB5077471, KB5077469, KB5080999. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.SQLServer.html\" target=\"_blank\"&gt;Amazon RDS SQL Server User Guide for upgrading your RDS Microsoft SQL Server DB engine&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-rds-supports-latest-cu-gdr-updates-microsoft-sq-server/",
-      "publishedAt": "2026-04-10T07:34:00.000Z",
-      "updatedAt": "2026-04-10T07:34:00.000Z",
-      "categories": [
-        "Amazon Rds For Sql Server",
-        "Databases",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "amazon rds for sql server",
-        "databases",
-        "aws govcloud us",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6d5356b133e279f6",
-      "title": "Amazon Timestream for InfluxDB Now Supports Customer-Defined Maintenance Windows",
-      "description": "Amazon Timestream for InfluxDB now supports customer-defined maintenance windows, giving you control over when routine maintenance is performed on your InfluxDB databases. This feature is available for both InfluxDB 2 instances and InfluxDB 3 clusters across all supported editions. With this launch, you can specify a weekly maintenance window using a day-and-time format in your preferred timezone. Timestream for InfluxDB supports IANA timezone identifiers such as America/New_York, Europe/London, and Asia/Tokyo, and automatically handles Daylight Saving Time transitions so you don't need to man",
-      "descriptionHtml": "&lt;p&gt;Amazon Timestream for InfluxDB now supports customer-defined maintenance windows, giving you control over when routine maintenance is performed on your InfluxDB databases. This feature is available for both InfluxDB 2 instances and InfluxDB 3 clusters across all supported editions.&lt;br&gt; &lt;br&gt; With this launch, you can specify a weekly maintenance window using a day-and-time format in your preferred timezone. Timestream for InfluxDB supports IANA timezone identifiers such as America/New_York, Europe/London, and Asia/Tokyo, and automatically handles Daylight Saving Time transitions so you don't need to manually adjust your schedule. If you don't specify a maintenance window, the service continues to manage maintenance timing automatically.&lt;br&gt; &lt;br&gt; You can set or update your preferred maintenance window when creating or modifying a resource using the Amazon Timestream for InfluxDB console, AWS CLI, or AWS SDKs.&amp;nbsp;You can use Amazon Timestream for InfluxDB Customer-Defined Maintenance Windows in all &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/timestream.html\"&gt;Regions&lt;/a&gt; where Timestream for InfluxDB is offered.&lt;br&gt; &lt;br&gt; To get started with Amazon Timestream for InfluxDB, visit the &lt;a href=\"https://console.aws.amazon.com/timestream\"&gt;Amazon Timestream for InfluxDB console&lt;/a&gt;. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/timestream/\"&gt;Amazon Timestream for InfluxDB documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/timestream/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/timestream-influxdb-maintenance-windows/",
-      "publishedAt": "2026-04-09T21:57:00.000Z",
-      "updatedAt": "2026-04-09T21:57:00.000Z",
-      "categories": [
-        "Databases",
-        "Internet Of Things",
-        "Amazon Timestream"
-      ],
-      "services": [
-        "Timestream"
-      ],
-      "tags": [
-        "databases",
-        "internet of things",
-        "amazon timestream",
-        "timestream"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "96cf5435afaae01f",
-      "title": "Amazon Bedrock now supports cost allocation by IAM user and role",
-      "description": "Amazon Bedrock now supports cost allocation by IAM principal, such as IAM users and IAM roles, in AWS Cost and Usage Report 2.0 (CUR 2.0) and Cost Explorer. This enables customers to understand and attribute Bedrock model inference costs across users, teams, projects, and applications. With this launch, customers can tag their IAM users and roles with attributes like team, project, or cost center, activate them as cost allocation tags, and analyze Bedrock model inference costs by the tags in Cost Explorer or at the line-item level in CUR 2.0. To get started, tag your IAM users and roles and ac",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock now supports cost allocation by IAM principal, such as IAM users and IAM roles, in AWS Cost and Usage Report 2.0 (CUR 2.0) and Cost Explorer. This enables customers to understand and attribute Bedrock model inference costs across users, teams, projects, and applications.&lt;br&gt; &lt;br&gt; With this launch, customers can tag their IAM users and roles with attributes like team, project, or cost center, activate them as cost allocation tags, and analyze Bedrock model inference costs by the tags in Cost Explorer or at the line-item level in CUR 2.0. To get started, tag your IAM users and roles and activate them as cost allocation tags in the Billing and Cost Management console. Then create a CUR 2.0 data export and select \"Include caller identity (IAM principal) allocation data\" or filter by tags in Cost Explorer.&lt;br&gt; &lt;br&gt; This feature is available in all AWS commercial Regions where Amazon Bedrock is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/iam-principal-cost-allocation.html\"&gt;Using IAM principal for Cost Allocation documentation&lt;/a&gt;. To get started with Amazon Bedrock, visit &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html\"&gt;Amazon Bedrock documentation.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/bedrock-iam-cost-allocation/",
-      "publishedAt": "2026-04-09T21:50:00.000Z",
-      "updatedAt": "2026-04-09T21:50:00.000Z",
-      "categories": [
-        "Amazon Bedrock",
-        "Artificial Intelligence",
-        "Cost Management"
-      ],
-      "services": [
-        "IAM",
-        "Bedrock"
-      ],
-      "tags": [
-        "amazon bedrock",
-        "artificial intelligence",
-        "cost management",
-        "iam",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d27c2af2d7bcde12",
-      "title": "Amazon OpenSearch Service supports Managed Prometheus and agent tracing",
-      "description": "Amazon OpenSearch Service now provides a unified observability experience that brings together metrics, logs, traces, and AI agent tracing in a single interface. This release introduces native integration with Amazon Managed Service for Prometheus and comprehensive agent tracing capabilities, addressing the dual challenges of prohibitive costs from premium observability platforms and operational complexity from fragmented tooling. Site Reliability Engineers, DevOps Engineers, and Platform Engineering teams can now consolidate their observability stack without costly data duplication or constan",
-      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now provides a unified observability experience that brings together metrics, logs, traces, and AI agent tracing in a single interface. This release introduces native integration with Amazon Managed Service for Prometheus and comprehensive agent tracing capabilities, addressing the dual challenges of prohibitive costs from premium observability platforms and operational complexity from fragmented tooling. Site Reliability Engineers, DevOps Engineers, and Platform Engineering teams can now consolidate their observability stack without costly data duplication or constant context switching between multiple tools.&lt;/p&gt; \n&lt;p&gt;You can now query Prometheus metrics directly using native PromQL syntax alongside logs and traces in OpenSearch UI's observability workspace—without duplicating data. Combined with new application monitoring workflows powered by RED metrics (Rate, Errors, Duration) and AI agent tracing using OpenTelemetry GenAI semantic conventions, operations teams can correlate slow traces to application logs, overlay Prometheus metrics on service dashboards, and trace LLM agent execution—all without switching tools. This live query architecture delivers significant cost reduction compared to premium platforms while maintaining operational excellence.&lt;/p&gt; \n&lt;p&gt;The new unified observability experience is available on OpenSearch UI in 20 AWS regions: US East (N. Virginia, Ohio), US West (N. California, Oregon), Asia Pacific (Hong Kong, Mumbai, Osaka, Seoul, Singapore, Sydney, Tokyo), Europe (Frankfurt, Ireland, London, Milan, Paris, Spain, Stockholm), Canada (Central), and South America (São Paulo).&lt;/p&gt; \n&lt;p&gt;To learn more, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/observability.html\"&gt;OpenSearch Service observability documentation&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/direct-query-prometheus-overview.html\"&gt;direct query documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/opensearch-managed-prometheus-agent-tracing/",
-      "publishedAt": "2026-04-09T20:00:00.000Z",
-      "updatedAt": "2026-04-09T20:00:00.000Z",
-      "categories": [
-        "Amazon Opensearch Service",
-        "Analytics"
-      ],
-      "services": [
-        "OpenSearch"
-      ],
-      "tags": [
-        "amazon opensearch service",
-        "analytics",
-        "opensearch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "244377f6330d6d62",
-      "title": "Amazon S3 Lifecycle pauses actions on objects that are unable to replicate",
-      "description": "Amazon S3 Lifecycle now prevents expiration and transition actions on objects that failed replication, helping you to coordinate replication configuration or permissions changes with actions defined in your lifecycle rules. Incorrect permissions or replication configuration can prevent objects from being replicated. With this change, S3 Lifecycle no longer expires or transitions objects that have failed replication, even if they match one of the lifecycle rules that you have defined. Once you have corrected your replication configuration or permissions, you can use S3 Batch Replication to repl",
-      "descriptionHtml": "&lt;p&gt;Amazon S3 Lifecycle now prevents expiration and transition actions on objects that failed replication, helping you to coordinate replication configuration or permissions changes with actions defined in your lifecycle rules.&lt;/p&gt; \n&lt;p&gt;Incorrect permissions or replication configuration can prevent objects from being replicated. With this change, S3 Lifecycle no longer expires or transitions objects that have failed replication, even if they match one of the lifecycle rules that you have defined. Once you have corrected your replication configuration or permissions, you can use S3 Batch Replication to replicate objects that previously failed. After successful replication, S3 Lifecycle will automatically process these objects according to your configured rules.&lt;/p&gt; \n&lt;p&gt;This change applies automatically to all existing and new S3 Lifecycle configurations, across 37 AWS Regions, including the AWS China and AWS GovCloud (US) Regions. We are in the process of deploying this change and plan to complete the deployment in the coming days. To learn more, visit &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;S3 Lifecycle documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-troubleshoot.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;S3 Replication troubleshooting documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/s3-lifecycle-pauses-actions-on-objects/",
-      "publishedAt": "2026-04-09T17:33:00.000Z",
-      "updatedAt": "2026-04-09T17:33:00.000Z",
-      "categories": [
-        "Storage",
-        "Amazon S3"
-      ],
-      "services": [
-        "S3"
-      ],
-      "tags": [
-        "storage",
-        "amazon s3",
-        "s3"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "79bddb956407d5a9",
-      "title": "Amazon RDS Blue/Green Deployments now supports Amazon RDS Proxy",
-      "description": "Amazon RDS Blue/Green Deployments now supports Amazon RDS Proxy, enabling faster application recovery during switchover by eliminating DNS propagation delays. Blue/Green Deployments create a fully managed staging environment (Green) that allows you to deploy and test production changes, keeping your current production database (Blue) safe. When ready, you can switchover to the new production environment and your applications begin accessing it immediately without any configuration changes. During a Blue/Green Deployment switchover for single-Region configurations, RDS Proxy actively monitors d",
-      "descriptionHtml": "&lt;p&gt;Amazon RDS Blue/Green Deployments now supports Amazon RDS Proxy, enabling faster application recovery during switchover by eliminating DNS propagation delays. Blue/Green Deployments create a fully managed staging environment (Green) that allows you to deploy and test production changes, keeping your current production database (Blue) safe. When ready, you can switchover to the new production environment and your applications begin accessing it immediately without any configuration changes.&lt;br&gt; &lt;br&gt; During a Blue/Green Deployment switchover for single-Region configurations, RDS Proxy actively monitors database instances and detects when the Green environment becomes the new production environment. This allows RDS Proxy to quickly redirect connections to the Green environment, enabling faster application recovery. You don't need to modify your drivers or change your existing application setup.&lt;br&gt; &lt;br&gt; Amazon RDS Blue/Green Deployments with Amazon RDS Proxy is available for Amazon Aurora with MySQL compatibility, Amazon Aurora with PostgreSQL compatibility, Amazon RDS for MySQL, Amazon RDS for PostgreSQL, and Amazon RDS for MariaDB in all commercial AWS Regions where &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RDS_Fea_Regions_DB-eng.Feature.RDSProxy.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;RDS Proxy is available&lt;/a&gt;.&lt;br&gt; &lt;br&gt; In a few clicks, update your databases using RDS Blue/Green Deployments via the Amazon RDS Console or Amazon CLI. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/blue-green-deployments-overview.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Blue/Green Deployments overview&lt;/a&gt; in the Amazon RDS documentation.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/rds-proxy-blue-green/",
-      "publishedAt": "2026-04-09T17:00:00.000Z",
-      "updatedAt": "2026-04-09T17:00:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Aurora"
-      ],
-      "services": [
-        "RDS",
-        "Aurora"
-      ],
-      "tags": [
-        "databases",
-        "amazon aurora",
-        "rds",
-        "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "620f1b84ecf3b886",
-      "title": "AWS Marketplace announces the Discovery API for programmatic access to catalog data",
-      "description": "Today, AWS Marketplace announces the Discovery API, giving you programmatic access to product and pricing information across the AWS Marketplace catalog — including SaaS, AI agents and tools, AMI, containers, and machine learning models. With the Discovery API, buyers can embed catalog data into internal portals, enrich procurement tools with current pricing and offer terms, and streamline vendor evaluation workflows. Sellers and channel partners can surface product listings, public pricing, and private offer details directly within their own websites and storefronts — helping customers browse",
-      "descriptionHtml": "&lt;p&gt;Today, AWS Marketplace announces the Discovery API, giving you programmatic access to product and pricing information across the AWS Marketplace catalog — including SaaS, AI agents and tools, AMI, containers, and machine learning models.&lt;br&gt; &lt;br&gt; With the Discovery API, buyers can embed catalog data into internal portals, enrich procurement tools with current pricing and offer terms, and streamline vendor evaluation workflows. Sellers and channel partners can surface product listings, public pricing, and private offer details directly within their own websites and storefronts — helping customers browse, compare, and move to purchase without leaving the partner experience.&lt;br&gt; &lt;br&gt; The API provides access to product descriptions, categories, pricing across public and private offers, and offer terms, so you can build experiences tailored to how your organization discovers and procures software through AWS Marketplace.&lt;br&gt; &lt;br&gt; The AWS Marketplace Discovery API is available in US East (N. Virginia), US West (Oregon), and Europe (Ireland).&lt;br&gt; &lt;br&gt; You can get started by configuring IAM permissions for your AWS account and calling the API through the AWS SDK. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/APIReference/discovery-apis.html\"&gt;AWS Marketplace Discovery API Reference&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-marketplace-discovery-api/",
-      "publishedAt": "2026-04-09T16:00:00.000Z",
-      "updatedAt": "2026-04-09T16:00:00.000Z",
-      "categories": [
-        "AWS Marketplace And Partners",
-        "AWS Marketplace"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace and partners",
-        "aws marketplace"
       ],
       "isNew": false
     }
