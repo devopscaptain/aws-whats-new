@@ -1,7 +1,142 @@
 {
-  "lastUpdated": "2026-06-22T10:06:57.283Z",
+  "lastUpdated": "2026-06-23T04:13:03.004Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "c49cfee00f48016f",
+      "title": "AWS HealthOmics now supports Nextflow profiles",
+      "description": "AWS HealthOmics now supports Nextflow profiles, enabling customers to activate predefined execution settings at run time. Nextflow profiles allow customers to define reusable settings and select them at the point of execution, making it easy to switch between execution settings without modifying workflow source code. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows. With Nextflow profiles, you can cleanly separate platform-specific settings such as resource limi",
+      "descriptionHtml": "&lt;p&gt;AWS HealthOmics now supports Nextflow profiles, enabling customers to activate predefined execution settings at run time. Nextflow profiles allow customers to define reusable settings and select them at the point of execution, making it easy to switch between execution settings without modifying workflow source code. &lt;a href=\"https://aws.amazon.com/healthomics/\"&gt;AWS HealthOmics&lt;/a&gt; is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows.&lt;/p&gt; \n&lt;p&gt;With Nextflow profiles, you can cleanly separate platform-specific settings such as resource limits or execution options from core workflow logic. You can switch between development and production settings without creating separate workflow definitions. This reduces errors from manual edits, accelerates workflow portability, and saves time when scaling from development to production. If you use nf-core workflows, you can now activate the built-in and institutional profiles those pipelines already ship with.&lt;/p&gt; \n&lt;p&gt;You can now specify one or more Nextflow profiles in your workflow runs in all AWS HealthOmics Regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Singapore, Seoul). To learn more, visit the Nextflow Profiles section on HealthOmics &lt;a href=\"https://docs.aws.amazon.com/omics/latest/dev/starting-a-run.html#start-run-api-engine-settings\"&gt;Nextflow engine settings&lt;/a&gt; documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-healthomics-nextflow-profiles/",
+      "publishedAt": "2026-06-22T22:00:00.000Z",
+      "updatedAt": "2026-06-22T22:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1b82d3df2057d2f4",
+      "title": "AWS introduces Lambda MicroVMs for isolated execution of user and AI-generated code",
+      "description": "AWS introduces Lambda MicroVMs, a new serverless compute primitive that provides VM-level isolation, near-instant launch and resume speeds, and state preservation for executing user or AI-generated code. You can now give each user or job their own compute environment to securely run code without managing virtualization infrastructure or choosing between isolation, speed, and state retention. Developers are increasingly building multi-tenant applications that execute code supplied by end users or AI for use cases such as interactive coding environments, data analytics platforms, coding assistan",
+      "descriptionHtml": "&lt;p&gt;AWS introduces Lambda MicroVMs, a new serverless compute primitive that provides VM-level isolation, near-instant launch and resume speeds, and state preservation for executing user or AI-generated code. You can now give each user or job their own compute environment to securely run code without managing virtualization infrastructure or choosing between isolation, speed, and state retention.&lt;/p&gt; \n&lt;p&gt;Developers are increasingly building multi-tenant applications that execute code supplied by end users or AI for use cases such as interactive coding environments, data analytics platforms, coding assistants, and vulnerability scanning platforms. For these applications, developers need to allocate a separate, isolated execution environment per user or session to limit the impact of incorrect or malicious code on other concurrently running users or jobs. Previously, developers needed to choose between strong isolation, fast launch times, and state retention when building these applications. Starting today, Lambda MicroVMs provides you these capabilities without any trade-offs. You get VM-level isolation, near-instant launch speeds, and the ability to suspend and resume execution for up to 8 hours. Lambda MicroVMs is built on Firecracker virtualization, the technology powering more than 15 trillion monthly Lambda Function invocations.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To get started, create a MicroVM image from your Dockerfile, then launch MicroVMs from that image. Give each user or job their own MicroVM with a dedicated HTTPS URL that supports popular connectivity protocols such as HTTP/2, gRPC, and WebSockets.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Lambda MicroVMs is available today in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Tokyo), and Europe (Ireland). To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-microvms-guide.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Lambda MicroVMs developer guide&lt;/a&gt;&amp;nbsp;and the &lt;a href=\"https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;launch blog post&lt;/a&gt;. Get started with MicroVMs through the AWS Lambda console, AWS CloudFormation, AWS Cloud Development Kit, or use the &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/aws-lambda-microvms\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Agent Toolkit for AWS&lt;/a&gt;&amp;nbsp;with your preferred Agentic development tools. You pay for baseline compute resources while your MicroVM is running, and only for the active duration of additional resources consumed when your workload exceeds the baseline. To learn more about pricing, see &lt;a href=\"https://aws.amazon.com/lambda/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Lambda MicroVMs pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-lambda-microvms/",
+      "publishedAt": "2026-06-22T20:37:00.000Z",
+      "updatedAt": "2026-06-22T20:37:00.000Z",
+      "categories": [
+        "Serverless",
+        "Compute"
+      ],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "serverless",
+        "compute",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e72fb7415b15afc8",
+      "title": "AWS Network Firewall updates default drop action for improved connection reliability",
+      "description": "AWS Network Firewall now uses \"Application drop established (server-directed only)\" as the default stateful action for all newly created firewall policies, replacing the previous default of \"Application drop established (bidirectional)\" (formerly named \"Application layer drop established\"). No action is required to benefit from this change when creating new policies. AWS Network Firewall is a managed service that lets you deploy network protections across your Amazon VPCs. Previously, the “Application drop established (bidirectional)” default could silently drop legitimate server-to-client TCP",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/network-firewall/\"&gt;AWS Network Firewall&lt;/a&gt; now uses \"Application drop established (server-directed only)\" as the default stateful action for all newly created firewall policies, replacing the previous default of \"Application drop established (bidirectional)\" (formerly named \"Application layer drop established\"). No action is required to benefit from this change when creating new policies.&lt;br&gt; &lt;br&gt; AWS Network Firewall is a managed service that lets you deploy network protections across your Amazon VPCs. Previously, the “Application drop established (bidirectional)” default could silently drop legitimate server-to-client TCP packets, such as window updates, keep-alives, and resets — causing intermittent connection failures that were difficult to diagnose. With the safer default now in place, new policies avoid this issue.&lt;br&gt; &lt;br&gt; If your existing environment requires “Application drop established (bidirectional)” to support post-quantum cryptography (PQC) fragmented TLS handshakes, refer to our documentation for guidance on on switching to \"Application drop established (server-directed only)\" or adding the “to_server” flag to your TCP drop rules so legitimate flow control packets are not blocked.&lt;br&gt; &lt;br&gt; This update is available in all AWS Regions where AWS Network Firewall is offered. To get started, see &lt;a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/suricata-rule-evaluation-order.html\"&gt;Managing evaluation order for Suricata compatible rules&lt;/a&gt; in the AWS Network Firewall service documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-network-firewall-updates-default-drop-action",
+      "publishedAt": "2026-06-22T17:00:00.000Z",
+      "updatedAt": "2026-06-22T17:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "AWS Network Firewall"
+      ],
+      "services": [
+        "AWS Network Firewall"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "aws network firewall"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "cf32a0dc229cd9c2",
+      "title": "AWS Batch now supports customer-ordered instance allocation strategies",
+      "description": "AWS Batch now offers the Best Fit Progressive Ordered (BFPO) and Spot Capacity Optimized Prioritized (SCOP) allocation strategies, giving you more control over instance type prioritization in your compute environments. BFPO and SCOP enable you to manually define instance type ordering based on your workload-specific performance characteristics. To use these features in AWS Batch, specify BEST_FIT_PROGRESSIVE_ORDERED allocation strategy for your on-demand compute environments or SPOT_CAPACITY_OPTIMIZED_PRIORITIZED for your Amazon EC2 Spot compute environments and provide an ordered list of inst",
+      "descriptionHtml": "&lt;p&gt;AWS Batch now offers the Best Fit Progressive Ordered (BFPO) and Spot Capacity Optimized Prioritized (SCOP) allocation strategies, giving you more control over instance type prioritization in your compute environments. BFPO and SCOP enable you to manually define instance type ordering based on your workload-specific performance characteristics.&lt;br&gt; &lt;br&gt; To use these features in AWS Batch, specify BEST_FIT_PROGRESSIVE_ORDERED allocation strategy for your on-demand compute environments or SPOT_CAPACITY_OPTIMIZED_PRIORITIZED for your Amazon EC2 Spot compute environments and provide an ordered list of instance types or families. These features are available via the AWS Batch API (&lt;i&gt;CreateComputeEnvironment &lt;/i&gt;or &lt;i&gt;UpdateComputeEnvironment&lt;/i&gt;) or the AWS Batch Management Console.&lt;br&gt; &lt;br&gt; BFPO and SCOP allocation strategies are supported today in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where AWS Batch is available. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/batch/latest/userguide/allocation-strategies.html\"&gt;AWS Batch User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/batch-ordered-allocation-strategies/",
+      "publishedAt": "2026-06-22T16:30:00.000Z",
+      "updatedAt": "2026-06-22T16:30:00.000Z",
+      "categories": [],
+      "services": [
+        "Batch"
+      ],
+      "tags": [
+        "batch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5bf52c771a338354",
+      "title": "AWS IAM Identity Center now supports separate quotas for AWS accounts and applications",
+      "description": "AWS IAM Identity Center now supports separate quotas for the number of AWS accounts and applications that can be configured in an IAM Identity Center instance. By default, you can configure up to 7,000 AWS accounts and up to 7,000 applications independently, so that using more of one does not consume capacity from the other. Quotas can be further increased by submitting a quota increase request through AWS Service Quotas console. Customers with existing higher limits are automatically granted the same limit for both accounts and applications, with no action required. Organizations managing tho",
+      "descriptionHtml": "&lt;p&gt;AWS IAM Identity Center now supports separate quotas for the number of AWS accounts and applications that can be configured in an IAM Identity Center instance. By default, you can configure up to 7,000 AWS accounts and up to 7,000 applications independently, so that using more of one does not consume capacity from the other. Quotas can be further increased by submitting a quota increase request through AWS Service Quotas console.&lt;/p&gt; \n&lt;p&gt;Customers with existing higher limits are automatically granted the same limit for both accounts and applications, with no action required. Organizations managing thousands of AWS accounts can now onboard applications without consuming account quota capacity.&lt;/p&gt; \n&lt;p&gt;This update is available in all AWS Regions where IAM Identity Center is available.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/limits.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Quotas for IAM Identity Center&lt;/a&gt;. Visit the &lt;a href=\"https://aws.amazon.com/iam/identity-center/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;IAM Identity Center product page&lt;/a&gt; to get started.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-identity-center-separate-quotas/",
+      "publishedAt": "2026-06-22T16:07:00.000Z",
+      "updatedAt": "2026-06-22T16:07:00.000Z",
+      "categories": [],
+      "services": [
+        "IAM",
+        "IAM Identity Center"
+      ],
+      "tags": [
+        "iam",
+        "iam identity center"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "571bf7c44caa74f1",
+      "title": "Amazon MSK now offers AI Agent Skills to help developers operate MSK efficiently and accelerate migrations to MSK",
+      "description": "Amazon MSK now offers AI Agent Skills that give AI coding assistants expert, up-to-date guidance for operating Amazon MSK. The skills provide expert guidance for common operational tasks such as troubleshooting, sizing, configuring, monitoring, and migration from external Kafka clusters. Teams can leverage these skills to keep their clusters healthy and performant, and to migrate their external Kafka workloads to MSK Express to take advantage of up to 3 times more throughput per broker, scale up to 20 times faster, and reduced recovery time by 90 percent as compared to Standard brokers running",
+      "descriptionHtml": "&lt;p&gt;Amazon MSK now offers AI Agent Skills that give AI coding assistants expert, up-to-date guidance for operating Amazon MSK. The skills provide expert guidance for common operational tasks such as troubleshooting, sizing, configuring, monitoring, and migration from external Kafka clusters.&lt;br&gt; &lt;br&gt; Teams can leverage these skills to keep their clusters healthy and performant, and to migrate their external Kafka workloads to MSK Express to take advantage of up to 3 times more throughput per broker, scale up to 20 times faster, and reduced recovery time by 90 percent as compared to Standard brokers running Apache Kafka. The skills turn tasks that once required specialized knowledge into a guided experience developers can complete quickly, on their own.&lt;br&gt; &lt;br&gt; You can use the MSK skills with your existing AI coding agent - Kiro, Claude Code, or Cursor. To get started, configure the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/what-is-agent-toolkit.html\"&gt;Agent Toolkit for AWS&lt;/a&gt; using the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html\"&gt;AWS CLI&lt;/a&gt;, then ask your coding agent a question, such as &lt;i&gt;\"What broker type and size should I use for my MSK cluster?\" or &lt;/i&gt;\"Is my Kafka cluster compatible with MSK Express?\"&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-msk-ai-agent-skills",
+      "publishedAt": "2026-06-22T15:00:00.000Z",
+      "updatedAt": "2026-06-22T15:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Msk"
+      ],
+      "services": [
+        "MSK"
+      ],
+      "tags": [
+        "analytics",
+        "amazon msk",
+        "msk"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "48d17a2f449e6b8a",
+      "title": "Introducing self-service lifecycle management capabilities for AWS Outposts",
+      "description": "AWS Outposts now provides self-service capabilities for configuration, quoting, ordering, subscription management, renewal, and decommissioning directly from the AWS Management Console, CLI, and API. Previously, customers relied on AWS teams for managing their Outposts lifecycle, from evaluation through end of term. A new configuration and quoting tool generates real-time cost estimates across payment options and term lengths, and proactively surfaces account and regional constraints before order submission. Quotes are generated in seconds and can be converted to orders directly in the console",
+      "descriptionHtml": "&lt;p&gt;AWS Outposts now provides self-service capabilities for configuration, quoting, ordering, subscription management, renewal, and decommissioning directly from the AWS Management Console, CLI, and API. Previously, customers relied on AWS teams for managing their Outposts lifecycle, from evaluation through end of term.&lt;br&gt; &lt;br&gt; A new configuration and quoting tool generates real-time cost estimates across payment options and term lengths, and proactively surfaces account and regional constraints before order submission. Quotes are generated in seconds and can be converted to orders directly in the console, for both new deployments and capacity additions. Subscription details, including term dates and billing, are now available in the console and programmatically, eliminating the need to contact AWS for contract information. When your term approaches its end date, self-service workflows let you renew with a new term and payment option, or decommission your Outpost through a guided workflow that handles resource cleanup.&lt;br&gt; &lt;br&gt; These features are available in all commercial AWS Regions that support AWS Outposts. To learn more, refer to the &lt;a href=\"https://aws.amazon.com/blogs/compute/simplify-aws-outposts-lifecycle-management/\"&gt;Launch Blog&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-outposts-self-service-lifecycle-management",
+      "publishedAt": "2026-06-22T10:00:00.000Z",
+      "updatedAt": "2026-06-22T10:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Outposts"
+      ],
+      "tags": [
+        "outposts"
+      ],
+      "isNew": true
+    },
     {
       "id": "ca12148e0d8990d5",
       "title": "Announcing the general availability of a new AWS Local Zone in Hanoi, Vietnam",
@@ -148,6 +283,23 @@
         "amazon mq",
         "developer tools",
         "mq"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0632944b8850dda2",
+      "title": "AWS Parallel Computing Service supports P6e-GB200 and P6e-GB300 UltraServers",
+      "description": "AWS Parallel Computing Service (PCS) now supports Amazon EC2 P6e-GB200 and P6e-GB300 UltraServer instances, enabling customers to run large-scale GPU workloads using the NVIDIA Blackwell architecture within Slurm-managed clusters. You can reserve UltraServers through EC2 Capacity Blocks for ML, associate them with a PCS compute node group via an EC2 launch template, and PCS automatically configures Slurm with the correct topology plugin. With P6e-GB200 UltraServers, you can access up to 72 NVIDIA Blackwell GPUs within one NVLink domain to use 360 petaflops of FP8 compute (without sparsity) and",
+      "descriptionHtml": "&lt;p&gt;AWS Parallel Computing Service (PCS) now supports Amazon EC2 P6e-GB200 and P6e-GB300 UltraServer instances, enabling customers to run large-scale GPU workloads using the NVIDIA Blackwell architecture within Slurm-managed clusters. You can reserve UltraServers through EC2 Capacity Blocks for ML, associate them with a PCS compute node group via an EC2 launch template, and PCS automatically configures Slurm with the correct topology plugin.&lt;br&gt; &lt;br&gt; With P6e-GB200 UltraServers, you can access up to 72 NVIDIA Blackwell GPUs within one NVLink domain to use 360 petaflops of FP8 compute (without sparsity) and 13.4 TB of total high bandwidth memory (HBM3e). P6e-GB300 UltraServers provide 1.5x GPU memory and 1.5x FP4 compute (without sparsity) compared to P6e-GB200.&lt;br&gt; &lt;br&gt; AWS PCS is a managed service that simplifies running and scaling HPC workloads on AWS using Slurm. You can build complete, elastic environments that integrate compute, storage, networking, and visualization tools, while the service handles cluster operations with managed updates and built-in observability features.&lt;br&gt; &lt;br&gt; You can use P6e UltraServers with PCS in all AWS Regions where both PCS and EC2 Capacity Blocks for UltraServers are available. To learn more about P6e UltraServers, visit &lt;a href=\"https://aws.amazon.com/ec2/instance-types/p6/\"&gt;Amazon EC2 P6 instances&lt;/a&gt;. To reserve P6e UltraServers, contact your AWS sales representative. Read more about PCS support for P6e UltraServers in the &lt;a href=\"https://docs.aws.amazon.com/pcs/latest/userguide\"&gt;PCS User Guide&lt;/a&gt; and make sure to set the right &lt;a href=\"https://docs.aws.amazon.com/pcs/latest/userguide/security-min-permissions.html#security-min-permissions_capacity-blocks\"&gt;Permissions&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-parallel-computing-service/",
+      "publishedAt": "2026-06-18T19:00:00.000Z",
+      "updatedAt": "2026-06-18T19:00:00.000Z",
+      "categories": [
+        "Compute"
+      ],
+      "services": [],
+      "tags": [
+        "compute"
       ],
       "isNew": true
     },
@@ -1186,7 +1338,7 @@
         "migration",
         "fsx"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f534079d1a41337c",
@@ -1206,7 +1358,7 @@
         "amazon connect",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2e3190b712460db6",
@@ -1223,7 +1375,7 @@
       "tags": [
         "aws marketplace"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0efe419bdbb61d7b",
@@ -1246,7 +1398,7 @@
         "aws marketplace and partners",
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "830d885ef1d6559c",
@@ -1268,7 +1420,7 @@
         "amazon s3",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ab54fbf238e54936",
@@ -1292,7 +1444,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c411e49ea53ec8de",
@@ -1313,7 +1465,7 @@
         "management and governance",
         "security identity and compliance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7a5a3ce0e801c87d",
@@ -1334,7 +1486,7 @@
         "developer tools",
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "05c070a686899e5c",
@@ -1351,7 +1503,7 @@
       "tags": [
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "bed311a8fd102097",
@@ -1373,7 +1525,7 @@
         "amazon bedrock",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "829da0875ad8a003",
@@ -1395,7 +1547,7 @@
         "amazon fsx for openzfs",
         "fsx"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9aaf5ec7a6975b3f",
@@ -1419,7 +1571,7 @@
         "management and governance",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5f07004952bb1b9b",
@@ -1436,7 +1588,7 @@
       "tags": [
         "route 53"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f5b70c81b706910e",
@@ -1464,7 +1616,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0f01b34fbb1b7913",
@@ -1486,7 +1638,7 @@
         "amazon fsx for lustre",
         "fsx"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "620e7d8dcd3d407f",
@@ -1508,7 +1660,7 @@
         "aws cost explorer",
         "cost explorer"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f1e0997272818ebc",
@@ -1525,7 +1677,7 @@
       "tags": [
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "bd584746d81f93c1",
@@ -1542,7 +1694,7 @@
       "tags": [
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5bed970163c8887a",
@@ -1561,7 +1713,7 @@
         "partner network",
         "aws marketplace and partners"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a9042418286f0156",
@@ -1583,7 +1735,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1df333f870e5d040",
@@ -1605,7 +1757,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "cf4a3ee4c372f1aa",
@@ -1631,7 +1783,7 @@
         "cloudfront",
         "waf"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "80a687f7eaf7396c",
@@ -10843,195 +10995,6 @@
         "aws backup",
         "backup",
         "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "695a67b4f832a67c",
-      "title": "Amazon SageMaker Unified Studio now supports VPC for notebook kernels",
-      "description": "Amazon SageMaker Unified Studio now supports Amazon Virtual Private Cloud (Amazon VPC) for notebook kernels. With this launch, notebook kernels execute within the VPC configured at the domain level, giving enterprises network isolation for interactive data and machine learning (ML) workloads. This helps customers meet security and compliance requirements by keeping applicable notebook compute traffic within their VPC boundaries. With VPC support for notebook kernels, data engineers, analysts, and data scientists can connect to private resources from their notebooks. The notebook kernel inherit",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now supports Amazon Virtual Private Cloud (Amazon VPC) for notebook kernels. With this launch, notebook kernels execute within the VPC configured at the domain level, giving enterprises network isolation for interactive data and machine learning (ML) workloads. This helps customers meet security and compliance requirements by keeping applicable notebook compute traffic within their VPC boundaries.&lt;/p&gt; \n&lt;p&gt;With VPC support for notebook kernels, data engineers, analysts, and data scientists can connect to private resources from their notebooks. The notebook kernel inherits the VPC settings, subnets, and security groups defined at the SageMaker Unified Studio domain level, so administrators can manage network policies centrally. This means you can query private databases, access internal APIs, and work with data sources that are not publicly accessible, all from the same notebook environment that supports SQL, Python, and natural language through the built-in data agent. This VPC configuration only applies to the notebook's interactive compute, where your Python code and dataframes execute. For VPC configurations with other compute engines, refer to the documentation for each individual engine.&lt;/p&gt; \n&lt;p&gt;You can use VPC-enabled notebook kernels in &lt;a href=\"https://www.google.com/url?sa=t&amp;amp;source=web&amp;amp;rct=j&amp;amp;opi=89978449&amp;amp;url=https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html&amp;amp;ved=2ahUKEwjo8d7u8vyTAxXNHjQIHRT0KKIQFnoECBgQAQ&amp;amp;usg=AOvVaw3H9HTpx1fPYLIDdE0yougk\"&gt;all AWS Regions where Amazon SageMaker Unified Studio is supported&lt;/a&gt;. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/notebooks.html\"&gt;SageMaker Unified Studio user guide&lt;/a&gt; and the Amazon SageMaker product page.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-unified-studio-vpc/",
-      "publishedAt": "2026-04-23T00:57:00.000Z",
-      "updatedAt": "2026-04-23T00:57:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Analytics"
-      ],
-      "services": [
-        "VPC",
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "analytics",
-        "vpc",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a7a72308d7bbe7c2",
-      "title": "Amazon SageMaker Unified Studio now supports multiple code spaces within projects for IAM domains",
-      "description": "Amazon SageMaker Unified Studio now lets data workers create and manage multiple code spaces (individually configured development environments) within a single project for IAM domains. Previously, projects were limited to one JupyterLab space and one Code Editor space embedded in the project. With this launch, you can now parallelly work on different workstreams or experiments with different compute and storage configuration needs, giving developers the flexibility they need as their workloads scale. For instance, data scientists can now work in parallel on any long running data transformation",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now&amp;nbsp;lets&amp;nbsp;data workers create and manage multiple code spaces (individually configured development environments) within a single project for IAM domains.&amp;nbsp;Previously, projects were limited to one&amp;nbsp;JupyterLab&amp;nbsp;space and one Code Editor space embedded in the project.&amp;nbsp;With this launch, you can now&amp;nbsp;parallelly&amp;nbsp;work on different workstreams or experiments&amp;nbsp;with&amp;nbsp;different&amp;nbsp;compute and storage configuration&amp;nbsp;needs,&amp;nbsp;giving&amp;nbsp;developers&amp;nbsp;the flexibility they need as their&amp;nbsp;workloads scale.&amp;nbsp;For instance, data scientists can now&amp;nbsp;work&amp;nbsp;in parallel&amp;nbsp;on any long running data transformation and model training workloads within the same project using separate spaces.&lt;/p&gt; \n&lt;p&gt;With multiple spaces, each one&amp;nbsp;maintains&amp;nbsp;its own persistent Amazon EBS volume, ensuring that your files, data, and session state are preserved independently. You can scale compute and storage up or down per space, pause and resume them at any time, and customize the runtime environment for each specific task. Spaces can either be opened in dedicated browser tabs or connected to a local IDE if you prefer your own development environment, with full functionality including Amazon Q paid tier support.&amp;nbsp;This is particularly beneficial for builders who need isolated environments for parallel&amp;nbsp;workstreams&amp;nbsp;while still working within a single collaborative project.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available. To learn more about code spaces in SageMaker Unified Studio projects, see&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/ide-spaces.html\"&gt;Managing Code Spaces&lt;/a&gt;&amp;nbsp;in the Amazon SageMaker User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-code-spaces/",
-      "publishedAt": "2026-04-22T20:31:00.000Z",
-      "updatedAt": "2026-04-22T20:31:00.000Z",
-      "categories": [
-        "Developer Tools",
-        "Analytics",
-        "Artificial Intelligence",
-        "Developers"
-      ],
-      "services": [
-        "IAM",
-        "SageMaker"
-      ],
-      "tags": [
-        "developer tools",
-        "analytics",
-        "artificial intelligence",
-        "developers",
-        "iam",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "884082ffcb6d3e0a",
-      "title": "Amazon EC2 C8i-flex instances are now available in Europe (Ireland, London), and Asia Pacific (New Zealand) regions",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i-flex instances are available in the Europe (Ireland, London), and Asia Pacific (New Zealand) regions. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. C8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up to 20% higher performance than C7i-flex instances, with even higher gains f",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i-flex instances are available in the Europe (Ireland, London), and Asia Pacific (New Zealand) regions. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. C8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up to 20% higher performance than C7i-flex instances, with even higher gains for specific workloads. The C8i-flex are up to 60% faster for NGINX web applications, up to 40% faster for AI deep learning recommendation models, and 35% faster for Memcached stores compared to C7i-flex.&lt;br&gt; &lt;br&gt; C8i-flex are the easiest way to get price performance benefits for a majority of compute intensive workloads like web and application servers, databases, caches, Apache Kafka, Elasticsearch, and enterprise applications. They offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources.&lt;br&gt; &lt;br&gt; To get started, sign in to the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\"&gt;AWS Management Console&lt;/a&gt;. Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information about the new &lt;a href=\"https://aws.amazon.com/ec2/instance-types/c8i/\" target=\"_blank\"&gt;C8i-flex&lt;/a&gt; instances visit the &lt;a href=\"https://aws.amazon.com/blogs/aws/introducing-new-compute-optimized-amazon-ec2-c8i-and-c8i-flex-instances/\" target=\"_blank\"&gt;AWS News blog&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-c8i-flex-instances-europe-ireland-europe-london-asia-pacific-new-zealand-regions/",
-      "publishedAt": "2026-04-22T19:46:00.000Z",
-      "updatedAt": "2026-04-22T19:46:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "8d322f1dd92dabb0",
-      "title": "Amazon EC2 C8i instances are now available in Europe (Ireland) and Asia Pacific (New Zealand) regions",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i instances are available in the Europe (Ireland) and Asia Pacific (New Zealand) regions. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. C8i instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up to 20% higher performance than C7i instances, with even higher gains for specific workloads. T",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8i instances are available in the Europe (Ireland) and Asia Pacific (New Zealand) regions. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. C8i instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up to 20% higher performance than C7i instances, with even higher gains for specific workloads. The C8i instances deliver up to 60% faster for NGINX web applications, up to 40% faster for AI deep learning recommendation models, and 35% faster for Memcached stores compared to C7i.&lt;br&gt; &lt;br&gt; C8i instances are a great choice for all memory-intensive workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. C8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications.&lt;br&gt; &lt;br&gt; To get started, sign in to the &lt;a href=\"https://aws.amazon.com/console/\"&gt;AWS Management Console&lt;/a&gt;. Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information about the new &lt;a href=\"https://aws.amazon.com/ec2/instance-types/c8i/\"&gt;C8i&lt;/a&gt; instances visit the &lt;a href=\"https://aws.amazon.com/blogs/aws/introducing-new-compute-optimized-amazon-ec2-c8i-and-c8i-flex-instances/\"&gt;AWS News blog&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-c8i-instances-europe-ireland-asia-pacific-new-zealand-regions/",
-      "publishedAt": "2026-04-22T19:31:00.000Z",
-      "updatedAt": "2026-04-22T19:31:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a9da36754ab98699",
-      "title": "Enhancements to AWS Network Firewall Managed Rules from AWS Marketplace Partners",
-      "description": "AWS Network Firewall now supports expanded Managed Rules from AWS Marketplace partners, with new rule group optimizations through partners to include up to 10 million domain name indicators and up to 1 million IP addresses in their managed rule groups. Infoblox is expanding domain name indicators to protect your workloads from critical and high-risk domains. Lumen is introducing new rule groups to stop command and control attacks. ThreatSTOP is adding managed rules for Office of Foreign Assets Control (OFAC) sanctions and expanding global compliance protections with new European Union, Japan, ",
-      "descriptionHtml": "&lt;p&gt;AWS Network Firewall now supports expanded Managed Rules from AWS Marketplace partners, with new rule group optimizations through partners to include up to 10 million domain name indicators and up to 1 million IP addresses in their managed rule groups. Infoblox is expanding domain name indicators to protect your workloads from critical and high-risk domains. Lumen is introducing new rule groups to stop command and control attacks. ThreatSTOP is adding managed rules for Office of Foreign Assets Control (OFAC) sanctions and expanding global compliance protections with new European Union, Japan, and United Nations sanction coverage.&lt;br&gt; &lt;br&gt; These enhancements give you access to richer, more comprehensive threat intelligence directly within AWS Network Firewall, reducing the operational burden of managing threat feeds and enabling faster, more accurate protection against emerging threats. Whether you need to block malicious domains at scale, defend against command and control infrastructure, or enforce sanctions-based compliance policies, managed rules from AWS Marketplace partners provide ready-to-deploy, continuously updated protections for your cloud workloads.&lt;br&gt; &lt;br&gt; Managed rules for AWS Network Firewall are available from AWS Marketplace sellers of Check Point, Fortinet, Infoblox, Lumen, Rapid7, ThreatSTOP, and Trend Micro. AWS Marketplace rule groups are now available in 9 additional AWS Regions: Asia Pacific (Jakarta), Asia Pacific (Hyderabad), Asia Pacific (Melbourne), Asia Pacific (Malaysia), Canada West (Calgary), Europe (Zurich), Europe (Spain), Israel (Tel Aviv), and Mexico (Central). For a full list of supported regions, visit the AWS Regional Services page.&lt;br&gt; &lt;br&gt; To get started, visit the AWS Network Firewall console or browse available managed rules in &lt;a href=\"https://aws.amazon.com/marketplace\" target=\"_blank\"&gt;AWS Marketplace&lt;/a&gt;. For more information, see the AWS Network Firewall &lt;a href=\"https://aws.amazon.com/network-firewall/\" target=\"_blank\"&gt;product page&lt;/a&gt; and the service &lt;a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/\" target=\"_blank\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/marketplace-managed-rules-enhancements/",
-      "publishedAt": "2026-04-22T18:00:00.000Z",
-      "updatedAt": "2026-04-22T18:00:00.000Z",
-      "categories": [
-        "AWS Network Firewall",
-        "Networking And Content Delivery",
-        "Security Identity And Compliance"
-      ],
-      "services": [
-        "AWS Network Firewall"
-      ],
-      "tags": [
-        "aws network firewall",
-        "networking and content delivery",
-        "security identity and compliance"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b42efdf9ba708999",
-      "title": "Amazon SageMaker AI now supports serverless model customization for Qwen3.5 models",
-      "description": "Amazon SageMaker AI now supports serverless model customization for Qwen3.5, enabling you to fine-tune Qwen3.5 4B, 9B, and 27B parameter models using supervised fine-tuning (SFT) and reinforcement fine-tuning (RFT). Qwen3.5 is a popular open-weight model family from Alibaba Cloud. Before this launch, you could deploy these base models on SageMaker AI and now, you can also adapt them to your specific domains and workflows. Model customization enables you to tailor foundation models with your proprietary data so they more accurately reflect your domain knowledge, terminology, and quality standar",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker AI now supports serverless model customization for Qwen3.5, enabling you to fine-tune Qwen3.5 4B, 9B, and 27B parameter models using supervised fine-tuning (SFT) and reinforcement fine-tuning (RFT). Qwen3.5 is a popular open-weight model family from Alibaba Cloud.&amp;nbsp;Before this launch, you could deploy these base models on SageMaker AI and now, you can also adapt them to your specific domains and workflows.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Model customization enables you to tailor foundation models with your proprietary data so they more accurately reflect your domain knowledge, terminology, and quality standards. Rather than building models from scratch, fine-tuning lets you start from a capable base model and specialize it for your use cases, whether that's improving accuracy on domain-specific tasks, aligning outputs with your organization's tone, or improving performance on new tasks using your labeled data. With serverless customization, SageMaker AI handles all infrastructure provisioning and training orchestration, so you can focus on your data and evaluation rather than cluster management, and only pay for what you use.&lt;/p&gt; \n&lt;p&gt;Serverless model customization for Qwen3.5 on SageMaker AI is available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and EU (Ireland). To get started, navigate to the Models page in Amazon SageMaker Studio to launch a customization job, or use the&amp;nbsp;&lt;a href=\"https://sagemaker.readthedocs.io/en/stable/model_customization/index.html\"&gt;SageMaker Python SDK&lt;/a&gt;&amp;nbsp;for programmatic access. To learn more, see the Amazon SageMaker AI&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/customize-model.html\"&gt;model customization documentation.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-ft-qwen3-5/",
-      "publishedAt": "2026-04-22T17:53:00.000Z",
-      "updatedAt": "2026-04-22T17:53:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon sagemaker",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9254e63fe4e7bec2",
-      "title": "Amazon EC2 announces Managed resource visibility settings",
-      "description": "Amazon EC2 now lets you control whether resources provisioned by managed instance offerings appear in your Amazon EC2 console views and API list operations. Amazon EC2 Managed Instances are instances provisioned and managed by a designated service provider, such as Amazon EKS, Amazon ECS, AWS Lambda or Amazon Workspaces. AWS is responsible for the configuration, patching, and health of managed EC2 instances as well as other associated resources like EBS volumes, snapshots and Network Interfaces. Until today, by default these managed resources appeared alongside self-managed ones in API respons",
-      "descriptionHtml": "&lt;p&gt;Amazon EC2 now lets you control whether resources provisioned by managed instance offerings appear in your Amazon EC2 console views and API list operations.&lt;/p&gt; \n&lt;p&gt;Amazon EC2 Managed Instances are instances provisioned and managed by a designated service provider, such as Amazon EKS, Amazon ECS, AWS Lambda or Amazon Workspaces. AWS is responsible for the configuration, patching, and health of managed EC2 instances as well as other associated resources like EBS volumes, snapshots and Network Interfaces. Until today, by default these managed resources appeared alongside self-managed ones in API responses and respective resource consoles even though AWS is responsible for managing these resources. Now, with Managed resource visibility settings, any new managed resources are hidden by default from your resource console views and describe API responses such as EC2 console and describe-instances API responses, to align better with the shared responsibility model of these resources. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;You can configure managed resource visibility through the Amazon EC2 console or by using the AWS CLI.&amp;nbsp;To learn more, see Managed resource visibility settings the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-managed-instances.html#managed-resource-visibility-settings\"&gt;Amazon EC2 User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/ec2-managed-resource-visibility/",
-      "publishedAt": "2026-04-22T17:53:00.000Z",
-      "updatedAt": "2026-04-22T17:53:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b279a63c8da8cec5",
-      "title": "Introducing GPU Health Monitoring and Auto Repair for Amazon ECS Managed Instances",
-      "description": "Amazon Elastic Container Service (Amazon ECS) now offers NVIDIA GPU health monitoring and auto repair functionality for Amazon ECS Managed Instances. The new capability automatically detects critical NVIDIA GPU hardware failures and replaces impaired instances, helping customers improve the availability and reliability of their GPU-accelerated containerized workloads. Running GPU-accelerated workloads, such as GenAI inference, requires specialized hardware management to mitigate failures and minimize disruption. Amazon ECS Managed Instances now continuously monitor GPU health using NVIDIA Data",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Elastic Container Service (Amazon ECS)&lt;/a&gt; now offers NVIDIA GPU health monitoring and auto repair functionality for Amazon ECS Managed Instances. The new capability automatically detects critical NVIDIA GPU hardware failures and replaces impaired instances, helping customers improve the availability and reliability of their GPU-accelerated containerized workloads.&lt;br&gt; &lt;br&gt; Running GPU-accelerated workloads, such as GenAI inference, requires specialized hardware management to mitigate failures and minimize disruption. Amazon ECS Managed Instances now continuously monitor GPU health using NVIDIA Data Center GPU Manager (DCGM) and proactively replace impaired capacity when critical failures occur. You can monitor GPU health through the DescribeContainerInstances API and receive notifications through Amazon EventBridge when instances become impaired. For workloads where you prefer to manage instance lifecycle manually, you can opt out of auto repair at the capacity provider level and handle GPU error events with your own remediation logic.&lt;br&gt; &lt;br&gt; GPU health auto repair is enabled by default on all Amazon ECS Managed Instances running on supported NVIDIA GPU instance types at no additional cost. The capability is available in all AWS Commercial Regions. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-gpu-auto-repair.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon ECS Developer Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ecs-gpu-auto-repair/",
-      "publishedAt": "2026-04-22T17:00:00.000Z",
-      "updatedAt": "2026-04-22T17:00:00.000Z",
-      "categories": [
-        "Containers",
-        "Amazon Ecs",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "ECS",
-        "Health"
-      ],
-      "tags": [
-        "containers",
-        "amazon ecs",
-        "aws govcloud us",
-        "ecs",
-        "health"
       ],
       "isNew": false
     }
