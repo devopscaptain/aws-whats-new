@@ -1,7 +1,142 @@
 {
-  "lastUpdated": "2026-06-24T09:12:53.638Z",
+  "lastUpdated": "2026-06-25T09:12:01.288Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "e911c87e77ef0ca9",
+      "title": "Amazon EC2 announces AMI Watermarks for improved AMI governance",
+      "description": "Amazon EC2 introduces AMI watermarks, letting you embed custom identifiers in your private AMIs. Once applied, a watermark automatically carries forward to every AMI derived from the original, whether you copy it across regions or create a new AMI from a running instance. Watermarks also remain visible when you share an AMI with other accounts. This helps you identify trusted AMIs, track provenance, and enforce governance policies across your organization. Each watermark includes metadata such as the AMI ID, owner ID, region, and creation timestamps, providing reliable provenance that persists",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 introduces AMI watermarks, letting you embed custom identifiers in your private AMIs. Once applied, a watermark automatically carries forward to every AMI derived from the original, whether you copy it across regions or create a new AMI from a running instance. Watermarks also remain visible when you share an AMI with other accounts. This helps you identify trusted AMIs, track provenance, and enforce governance policies across your organization.&lt;br&gt; &lt;br&gt; Each watermark includes metadata such as the AMI ID, owner ID, region, and creation timestamps, providing reliable provenance that persists regardless of how many times an AMI is copied or new AMIs are created from it. AMI Watermarks improve AMI tracking by enabling you to filter and find related AMIs across your accounts. For governance, you can combine watermarks with &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-allowed-amis.html\"&gt;Allowed AMIs&lt;/a&gt;&amp;nbsp;to restrict instance launches to only AMIs carrying approved watermarks and enforce the setting at scale across your organization through Declarative Policies.&lt;br&gt; &lt;br&gt; You can start adding AMI watermarks to your private AMIs by using the AWS Management Console, AWS CLI, or SDKs. To learn more, please visit the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-watermark.html\"&gt;documentation&lt;/a&gt;.&amp;nbsp;You can also attach watermarks through &lt;a href=\"https://docs.aws.amazon.com/imagebuilder/latest/userguide/what-is-image-builder.html\"&gt;EC2 Image Builder,&lt;/a&gt; a service used to create and manage AMIs, as part of your AMI build pipeline.&lt;br&gt; &lt;br&gt; AMI watermarks are available to all customers at no additional cost in all AWS regions including AWS China (Beijing) Region, operated by Sinnet, and AWS China (Ningxia) Region, operated by NWCD, and AWS GovCloud (US) Regions.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/ec2-image-watermarks-allowed-images",
+      "publishedAt": "2026-06-24T20:00:00.000Z",
+      "updatedAt": "2026-06-24T20:00:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "567204cb9ec8c510",
+      "title": "Amazon EMR Serverless now supports live configuration updates without application restarts",
+      "description": "Amazon EMR Serverless now supports updates to key application configurations such as maximum capacity, and custom image settings — without stopping and restarting the application. New workloads submitted after the update automatically use the new settings, while existing workloads continue uninterrupted with their original configuration. Previously, modifying these settings required stopping your EMR Serverless application, making the change, and restarting it — forcing you to coordinate maintenance windows and temporarily block job submissions. Now you can adjust scaling boundaries or deploy ",
+      "descriptionHtml": "&lt;p&gt;Amazon EMR Serverless now supports updates to key application configurations such as maximum capacity, and custom image settings — without stopping and restarting the application. New workloads submitted after the update automatically use the new settings, while existing workloads continue uninterrupted with their original configuration.&lt;/p&gt; \n&lt;p&gt;Previously, modifying these settings required stopping your EMR Serverless application, making the change, and restarting it — forcing you to coordinate maintenance windows and temporarily block job submissions. Now you can adjust scaling boundaries or deploy updated custom images at any time without disrupting running jobs. This reduces operational overhead and lets you respond to changing workload demands or deploy image updates immediately.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This feature is available on all Amazon EMR releases and in all AWS Regions where Amazon EMR Serverless is available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/updating-running-applications.html\"&gt;EMR Serverless User Guide.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-emr-serverless/",
+      "publishedAt": "2026-06-24T19:21:00.000Z",
+      "updatedAt": "2026-06-24T19:21:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Emr"
+      ],
+      "services": [
+        "EMR"
+      ],
+      "tags": [
+        "analytics",
+        "amazon emr",
+        "emr"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c993b66805605578",
+      "title": "AWS IoT Device SDK for Swift is now generally available",
+      "description": "The AWS IoT Device SDK for Swift is now generally available, enabling Swift developers to build secure, scalable IoT applications natively on Apple platforms including macOS, iOS, and tvOS, as well as Linux. This SDK addresses the previous lack of native Swift support for AWS IoT services, providing stable, production-ready APIs specifically designed for teams managing IoT device fleets and building cross-platform IoT solutions across the Apple ecosystem. The SDK delivers comprehensive capabilities for real-time device management and secure communication. With integrated service clients for AW",
+      "descriptionHtml": "&lt;p&gt;The AWS IoT Device SDK for Swift is now generally available, enabling Swift developers to build secure, scalable IoT applications natively on Apple platforms including macOS, iOS, and tvOS, as well as Linux. This SDK addresses the previous lack of native Swift support for AWS IoT services, providing stable, production-ready APIs specifically designed for teams managing IoT device fleets and building cross-platform IoT solutions across the Apple ecosystem.&lt;/p&gt; \n&lt;p&gt;The SDK delivers comprehensive capabilities for real-time device management and secure communication. With integrated service clients for AWS IoT Device Shadow, Jobs, and Fleet Provisioning, developers can synchronize device states between applications and AWS IoT Core, manage remote operations on connected devices at scale, and automate certificate and policy creation for secure device onboarding. The SDK also provides built-in TLS 1.3 support on Apple iOS and tvOS platforms, ensuring IoT applications use the latest industry-standard security practices for protecting data in transit.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/iot/latest/developerguide/iot-sdks.html\"&gt;AWS IoT Device SDK documentation&amp;nbsp;&lt;/a&gt; and explore &amp;nbsp;&lt;a href=\"https://github.com/aws/aws-iot-device-sdk-swift/tree/main/Samples/ServiceClientSamples\"&gt;code samples on GitHub&amp;nbsp;&lt;/a&gt;. Get started by installing the SDK via Swift Package Manager.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-iot-device-sdk-swift/",
+      "publishedAt": "2026-06-24T18:48:00.000Z",
+      "updatedAt": "2026-06-24T18:48:00.000Z",
+      "categories": [
+        "AWS Iot",
+        "AWS Sdk For Swift",
+        "Developer Tools"
+      ],
+      "services": [],
+      "tags": [
+        "aws iot",
+        "aws sdk for swift",
+        "developer tools"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d0a599a65cdcda4b",
+      "title": "Amazon Neptune now supports AWS CloudFormation for global databases",
+      "description": "Amazon Neptune now supports AWS CloudFormation for provisioning and managing Neptune global databases. Using the new AWS::Neptune::GlobalCluster resource type, you can define your multi-region graph database topology as code — automating deployment, storing configurations in source control, and integrating with CI/CD pipelines. Neptune global databases provide a primary cluster with read-write capability and up to five read-only secondary clusters in different AWS Regions, connected through low-latency replication via the Neptune storage subsystem. Common use cases include low-latency read acc",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/neptune/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Neptune&lt;/a&gt;&amp;nbsp;now supports AWS CloudFormation for provisioning and managing Neptune global databases. Using the new AWS::Neptune::GlobalCluster resource type, you can define your multi-region graph database topology as code — automating deployment, storing configurations in source control, and&amp;nbsp;integrating with CI/CD pipelines.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/neptune/latest/userguide/neptune-global-database.html\" target=\"_blank\"&gt;Neptune global databases&lt;/a&gt; provide a primary cluster with read-write capability and up to five read-only secondary clusters in different AWS Regions, connected through low-latency replication via the Neptune storage subsystem. Common use cases include low-latency read access across regions, disaster recovery, data residency compliance, and high-availability graph deployments&amp;nbsp;with centralized writes and distributed reads.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where Neptune global databases are supported.&amp;nbsp; To get started, see the Neptune global databases &lt;a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-neptune-globalcluster.html\" target=\"_blank\"&gt;CloudFormation documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-neptune-aws-cloudformation/",
+      "publishedAt": "2026-06-24T13:00:00.000Z",
+      "updatedAt": "2026-06-24T13:00:00.000Z",
+      "categories": [
+        "Database And Data Warehouse"
+      ],
+      "services": [
+        "Neptune",
+        "CloudFormation"
+      ],
+      "tags": [
+        "database and data warehouse",
+        "neptune",
+        "cloudformation"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "bfed057cd810dee1",
+      "title": "Amazon CloudWatch now supports tags on dashboards",
+      "description": "A mazon CloudWatch now supports tagging for CloudWatch dashboards, enabling you to organize, categorize, and control access to your dashboards using tags. Tags are key-value pairs that help you identify and manage AWS resources across your environment. With this launch, the PutDashboard API now accepts an optional Tags parameter, allowing you to assign up to 50 tags when creating a new dashboard. The TagResource, UntagResource, and ListTagsForResource APIs now support dashboard ARNs, enabling you to add, remove, and list tags on existing dashboards. You can also manage dashboard tags using AWS",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/cloudwatch\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;A&lt;i&gt;&lt;b&gt;&lt;/b&gt;&lt;/i&gt;mazon CloudWatch&lt;/a&gt; now supports tagging for CloudWatch dashboards, enabling you to organize, categorize, and control access to your dashboards using tags. Tags are key-value pairs that help you identify and manage AWS resources across your environment.&lt;br&gt; &lt;br&gt; With this launch, the &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_PutDashboard.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;PutDashboard&lt;/a&gt; API now accepts an optional Tags parameter, allowing you to assign up to 50 tags when creating a new dashboard. The TagResource, UntagResource, and ListTagsForResource APIs now support dashboard ARNs, enabling you to add, remove, and list tags on existing dashboards. You can also manage dashboard tags using AWS CloudFormation. This new capability allows you to group dashboards by team by team, project, or environment, implement attribute-based access control by scoping IAM permissions to dashboards with specific tag values, and filter dashboards by tag in AWS Resource Explorer.&lt;br&gt; &lt;br&gt; CloudWatch Dashboard tagging support is available at no additional cost in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\"&gt;AWS Regions&lt;/a&gt; where Amazon CloudWatch is available.&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_TagResource.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;TagResource&lt;/a&gt; in the Amazon CloudWatch API Reference. To get started with CloudWatch dashboards, see &lt;a href=\"https://aws.amazon.com/cloudwatch/features/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon CloudWatch features&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-cloudwatch-tags-on-dashboards",
+      "publishedAt": "2026-06-24T08:00:00.000Z",
+      "updatedAt": "2026-06-24T08:00:00.000Z",
+      "categories": [
+        "Amazon Cloudwatch",
+        "Management And Governance",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "amazon cloudwatch",
+        "management and governance",
+        "aws govcloud us",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7108650d7444bbab",
+      "title": "Amazon EC2 High Memory U7in-24TB instances now available in AWS Asia Pacific (Seoul) region",
+      "description": "Amazon EC2 High Memory U7in-24TB instances (u7in-24tb.224xlarge) are now available in AWS Asia Pacific (Seoul) region. U7i instances are part of the AWS 7th generation and are powered by custom fourth-generation Intel Xeon Scalable processors (Sapphire Rapids). U7in-24TB instances offer 24 TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment. U7i instances offer up to 45% better price performance over existing U-1 instances. U7in-24TB instances deliver 896 vCPUs and support up to 100 Gbps of Amazon EBS bandwidth for faster data lo",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 High Memory U7in-24TB instances (u7in-24tb.224xlarge) are now available in AWS Asia Pacific (Seoul) region. U7i instances are part of the AWS 7th generation and are powered by custom fourth-generation Intel Xeon Scalable processors (Sapphire Rapids). U7in-24TB instances offer 24 TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment. U7i instances offer up to 45% better price performance over existing U-1 instances.&lt;/p&gt; \n&lt;p&gt;U7in-24TB instances deliver 896 vCPUs and support up to 100 Gbps of Amazon EBS bandwidth for faster data loading and backups, 200 Gbps of network bandwidth, and ENA Express. U7i instances are ideal for customers running mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.&lt;/p&gt; \n&lt;p&gt;To learn more about U7i instances, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/u7i/\"&gt;High Memory instances page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-ec2-u7in-24tb-aws-seoul/",
+      "publishedAt": "2026-06-24T01:00:00.000Z",
+      "updatedAt": "2026-06-24T01:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
     {
       "id": "0967bae1d6cd5621",
       "title": "Amazon CloudWatch Logs supports managed syslog ingestion",
@@ -16,6 +151,26 @@
       ],
       "tags": [
         "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7c792e71b6fba86f",
+      "title": "Amazon GuardDuty AI-powered investigations accelerate threat response (Preview)",
+      "description": "AWS announces the preview of AI-powered investigations in Amazon GuardDuty, a new capability that automatically analyzes GuardDuty findings and accounts to help you quickly distinguish true threats from benign findings. This feature addresses the time-intensive manual investigation process that contributes to alert fatigue and slows incident response for security operations centers and cloud security analysts. AI-powered investigations examine finding context, related activity from the last 90 days, affected resources, and threat indicators using knowledge graphs and threat intelligence, in mi",
+      "descriptionHtml": "&lt;p&gt;AWS announces the preview of AI-powered investigations in Amazon GuardDuty, a new capability that automatically analyzes GuardDuty findings and accounts to help you quickly distinguish true threats from benign findings. This feature addresses the time-intensive manual investigation process that contributes to alert fatigue and slows incident response for security operations centers and cloud security analysts.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;AI-powered investigations examine finding context, related activity from the last 90 days, affected resources, and threat indicators using knowledge graphs and threat intelligence, in minutes. Each investigation provides a disposition assessment with confidence scoring, MITRE ATT&amp;amp;CK® technique classification, supporting evidence, and actionable recommendations for suppression, containment, or remediation. This automation enables security teams to focus on genuine threats across individual AWS accounts or entire AWS Organizations and accelerate mean time to resolution.&lt;/p&gt; \n&lt;p&gt;This feature is available in preview in 10 AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Europe (Ireland), Europe (London), Europe (Frankfurt), Europe (Paris), Europe (Stockholm), Asia Pacific (Tokyo). To get started, access AI-powered investigations through the Amazon GuardDuty console, CLI, API, or AWS' MCP Server.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/guardduty/\"&gt;Amazon GuardDuty User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-guardduty/",
+      "publishedAt": "2026-06-23T19:49:00.000Z",
+      "updatedAt": "2026-06-23T19:49:00.000Z",
+      "categories": [
+        "Amazon Guardduty"
+      ],
+      "services": [
+        "GuardDuty"
+      ],
+      "tags": [
+        "amazon guardduty",
+        "guardduty"
       ],
       "isNew": true
     },
@@ -155,7 +310,7 @@
       "id": "3035df161bf693b4",
       "title": "Claude Tag is now available in beta via Claude Enterprise in AWS Marketplace",
       "description": "Anthropic is launching Claude Tag — bringing Claude directly into the channels where your team already works, starting with Slack. Claude Tag is available today in beta to AWS customers who access Claude Enterprise through AWS Marketplace. Claude Tag is a new way for teams to work with Claude. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose.. It's multiplayer, so anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the chan",
-      "descriptionHtml": "&lt;p&gt;Anthropic is launching Claude Tag — bringing Claude directly into the channels where your team already works, starting with Slack. Claude Tag is available today in beta to AWS customers who access Claude Enterprise through AWS Marketplace.&lt;/p&gt; \n&lt;p&gt;Claude Tag is a new way for teams to work with Claude. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose.. It's multiplayer, so anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future. And, for security and governance teams, Claude Tag operates under its own identity, scoped per channel, with spend controls and ambient mode off by default.&lt;/p&gt; \n&lt;p&gt;Getting started with Claude Enterprise on AWS Marketplace&lt;/p&gt; \n&lt;p&gt;The experience for Claude Enterprise in AWS Marketplace customers is identical to first-party Claude Enterprise: same setup, same capabilities, same controls. Consumption-based pricing tracks usage rather than headcount, with org-wide budget visibility and per-channel limits. Customers use their existing Claude Enterprise on AWS entitlement — an admin provisions the agent identity in the Claude admin console (approximately one hour) and scopes it per channel.&lt;/p&gt; \n&lt;p&gt;To learn more, see the &lt;a href=\"https://aws.amazon.com/marketplace/pp/prodview-nnvi6wff6ef6m\"&gt;Claude Enterprise&lt;/a&gt; in AWS Marketplace&lt;/p&gt;",
+      "descriptionHtml": "&lt;p&gt;Anthropic is launching Claude Tag — bringing Claude directly into the channels where your team already works, starting with Slack. Claude Tag is available today in beta to AWS customers who access Claude Enterprise through AWS Marketplace.&lt;/p&gt; \n&lt;p&gt;Claude Tag is a new way for teams to work with Claude. Grant Claude access to selected channels, and connect it to whichever tools, data—and even codebases—you choose.. It's multiplayer, so anyone in the channel can tag @Claude in, and delegate tasks to it while they focus on other work. Claude builds context by remembering relevant information from the channels it’s in, and can plan out tasks to complete in the future. And, for security and governance teams, Claude Tag operates under its own identity, scoped per channel, with spend controls and ambient mode off by default.&lt;/p&gt; \n&lt;p&gt;Getting started with Claude Enterprise in AWS Marketplace&lt;/p&gt; \n&lt;p&gt;The experience for Claude Enterprise in AWS Marketplace customers is identical to first-party Claude Enterprise: same setup, same capabilities, same controls. Consumption-based pricing tracks usage rather than headcount, with org-wide budget visibility and per-channel limits. Customers use their existing Claude Enterprise on AWS entitlement — an admin provisions the agent identity in the Claude admin console (approximately one hour) and scopes it per channel.&lt;/p&gt; \n&lt;p&gt;To learn more, see the &lt;a href=\"https://aws.amazon.com/marketplace/pp/prodview-nnvi6wff6ef6m\"&gt;Claude Enterprise&lt;/a&gt; in AWS Marketplace&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/claude-tag-aws-marketplace/",
       "publishedAt": "2026-06-23T05:00:00.000Z",
       "updatedAt": "2026-06-23T05:00:00.000Z",
@@ -563,22 +718,24 @@
     },
     {
       "id": "666e3ec78965748b",
-      "title": "Nested virtualization is now available on additional Intel platforms and US Gov Cloud regions",
-      "description": "Starting today, Nested virtualization is now available on additional Intel platforms and additional Regions. Nested virtualization is now available on C7i,R7i, M7i, C8id,R8id, M8id, C7i-flex, M7i-flex, I7i, C8i-flex,R8i-flex, M8i-flex,and X8i, in addition to already available support on C8i, M8i and R8i instances. This capability is also now available in US GovCloud (US-East) and US GovCloud (US-West), in addition to existing support in all commercial regions. With nested virtualization capabilities, customers can create nested environments by running KVM or Hyper-V on virtual EC2 instances. C",
-      "descriptionHtml": "&lt;p&gt;Starting today, Nested virtualization is now available on additional Intel platforms and additional Regions. Nested virtualization is now available on C7i,R7i, M7i, C8id,R8id, M8id, C7i-flex, M7i-flex, I7i, C8i-flex,R8i-flex, M8i-flex,and X8i, in addition to already available support on C8i, M8i and R8i instances. This capability is also now available in US GovCloud (US-East) and US GovCloud (US-West), in addition to existing support in all commercial regions.&lt;br&gt; With nested virtualization capabilities, customers can create nested environments by running KVM or Hyper-V on virtual EC2 instances. Customers can leverage this capability for use cases such as running emulators for mobile applications, simulating in-vehicle hardware for automobiles, and running Windows Subsystem for Linux on Windows workstations. To learn more see &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nested-virtualization.html\"&gt;documentation&lt;/a&gt; .&lt;/p&gt;",
+      "title": "Nested virtualization is now available on additional Intel platforms and AWS GovCloud (US) regions",
+      "description": "Starting today, Nested virtualization is now available on additional Intel platforms and additional Regions. Nested virtualization is now available on C7i,R7i, M7i, C8id,R8id, M8id, C7i-flex, M7i-flex, I7i, C8i-flex,R8i-flex, M8i-flex,and X8i, in addition to already available support on C8i, M8i and R8i instances. This capability is also now available in AWSGovCloud (US-East) and AWS GovCloud (US-West), in addition to existing support in all commercial regions. With nested virtualization capabilities, customers can create nested environments by running KVM or Hyper-V on virtual EC2 instances. ",
+      "descriptionHtml": "&lt;p&gt;Starting today, Nested virtualization is now available on additional Intel platforms and additional Regions. Nested virtualization is now available on C7i,R7i, M7i, C8id,R8id, M8id, C7i-flex, M7i-flex, I7i, C8i-flex,R8i-flex, M8i-flex,and X8i, in addition to already available support on C8i, M8i and R8i instances. This capability is also now available in AWSGovCloud (US-East) and AWS GovCloud (US-West), in addition to existing support in all commercial regions.&lt;br&gt; With nested virtualization capabilities, customers can create nested environments by running KVM or Hyper-V on virtual EC2 instances. Customers can leverage this capability for use cases such as running emulators for mobile applications, simulating in-vehicle hardware for automobiles, and running Windows Subsystem for Linux on Windows workstations. To learn more see &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-nested-virtualization.html\"&gt;documentation&lt;/a&gt; .&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/nested-virtualization-intel-us-gov-cloud/",
       "publishedAt": "2026-06-18T18:47:00.000Z",
       "updatedAt": "2026-06-18T18:47:00.000Z",
       "categories": [
+        "Amazon Ec2",
         "Compute",
-        "Amazon Ec2"
+        "AWS Govcloud Us"
       ],
       "services": [
         "EC2"
       ],
       "tags": [
-        "compute",
         "amazon ec2",
+        "compute",
+        "aws govcloud us",
         "ec2"
       ],
       "isNew": true
@@ -766,7 +923,7 @@
         "amazon gamelift",
         "game development"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e3bb6026f8d3b263",
@@ -790,7 +947,7 @@
         "databases",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "33ddac31dbd662d1",
@@ -812,7 +969,7 @@
         "business productivity",
         "workspaces"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f1b432d3466fcabb",
@@ -840,7 +997,7 @@
         "glue",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1566da8b57077f15",
@@ -860,7 +1017,7 @@
         "artificial intelligence",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "141f2d5817137efb",
@@ -877,7 +1034,7 @@
       "tags": [
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e83999daa4f6056d",
@@ -899,7 +1056,7 @@
         "amazon rds",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c48201040dafe886",
@@ -923,7 +1080,7 @@
         "rds",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "95f78d6adec2a9dc",
@@ -947,7 +1104,7 @@
         "ec2",
         "outposts"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "56986eb8f56a7f43",
@@ -966,7 +1123,7 @@
         "business productivity",
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "11fb91e94a168a28",
@@ -988,7 +1145,7 @@
         "artificial intelligence",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c427f9193dc4f913",
@@ -1010,7 +1167,7 @@
         "amazon bedrock",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0aa53ee51c8a6646",
@@ -1032,7 +1189,7 @@
         "amazon bedrock",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d1ac40117322950b",
@@ -1052,7 +1209,7 @@
         "analytics",
         "glue"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "edd5d83f4054b15a",
@@ -1706,22 +1863,25 @@
     },
     {
       "id": "c411e49ea53ec8de",
-      "title": "AWS Management Console Private Access now works without internet connectivity",
-      "description": "AWS Management Console Private Access now enables customers to access the AWS Console from VPCs without internet connectivity, allowing enterprises to manage their AWS infrastructure through the console while maintaining strict network security controls in air-gapped environments. Previously, AWS Management Console Private Access allowed customers to restrict console access to authorized AWS accounts and corporate networks but still required internet connectivity. With this launch, AWS Console traffic can flow through VPC endpoints for the supported service consoles, eliminating the need for a",
-      "descriptionHtml": "&lt;p&gt;AWS Management Console Private Access now enables customers to access the AWS Console from VPCs without internet connectivity, allowing enterprises to manage their AWS infrastructure through the console while maintaining strict network security controls in air-gapped environments.&lt;br&gt; &lt;br&gt; Previously, AWS Management Console Private Access allowed customers to restrict console access to authorized AWS accounts and corporate networks but still required internet connectivity. With this launch, AWS Console traffic can flow through VPC endpoints for the supported service consoles, eliminating the need for any internet access.&amp;nbsp;This capability is particularly valuable for customers in regulated industries such as financial services, government and defense, and healthcare, and for enterprises with strict security requirements who need to access sensitive data only from controlled environments and use the console in classified or networks without internet connectivity.&lt;br&gt; &lt;br&gt; AWS Management Console Private Access uses AWS PrivateLink to establish secure network paths between customer VPCs and the console. Customers can apply VPC endpoint policies to restrict access to specific AWS accounts and organizations, and use IAM, Service Control, and Resource Control policies to require that employees access resources only from authorized networks.&lt;/p&gt; \n&lt;p&gt;This capability is available in all AWS commercial regions. You pay only for the underlying AWS PrivateLink VPC endpoint usage and data processing. To get started and learn about the supported services, visit the &lt;a href=\"https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/console-private-access.html\"&gt;Management Console Private Access documentation&lt;/a&gt;.&lt;/p&gt;",
+      "title": "AWS Management Console Private Access now ensures all console traffic flows through VPC endpoints",
+      "description": "AWS Management Console Private Access now enables customers to access the AWS Console from VPCs, allowing enterprises to manage their AWS infrastructure through the console while maintaining strict network security controls. Previously, AWS Management Console Private Access allowed customers to restrict console access to authorized AWS accounts and corporate networks but still required internet connectivity. With this launch, AWS Console traffic can flow through VPC endpoints for the supported service consoles, eliminating the need for any internet access. This capability is particularly valua",
+      "descriptionHtml": "&lt;p&gt;AWS Management Console Private Access now enables customers to access the AWS Console from VPCs, allowing enterprises to manage their AWS infrastructure through the console while maintaining strict network security controls.&lt;br&gt; &lt;br&gt; Previously, AWS Management Console Private Access allowed customers to restrict console access to authorized AWS accounts and corporate networks but still required internet connectivity. With this launch, AWS Console traffic can flow through VPC endpoints for the supported service consoles, eliminating the need for any internet access. This capability is particularly valuable for customers in regulated industries—financial services, government and defense, healthcare—and enterprises with strict security requirements who need to access sensitive data only from controlled environments and use the console in classified or isolated networks.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; AWS Management Console Private Access uses AWS PrivateLink to establish secure network paths between customer VPCs and the console. Customers can apply VPC endpoint policies to restrict access to specific AWS accounts and organizations, and use IAM, Service Control, and Resource Control policies to require that employees access resources only from authorized networks.&lt;/p&gt; \n&lt;p&gt;This capability is available in all AWS commercial regions. You pay only for the underlying AWS PrivateLink VPC endpoint usage and data processing. To get started and learn about the supported services, visit the &lt;a href=\"https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/console-private-access.html\"&gt;Management Console Private Access documentation&lt;/a&gt;.&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-management-console-private/",
       "publishedAt": "2026-06-15T23:00:00.000Z",
       "updatedAt": "2026-06-15T23:00:00.000Z",
       "categories": [
-        "AWS Management Console",
+        "Security Identity And Compliance",
         "Management And Governance",
-        "Security Identity And Compliance"
+        "AWS Management Console"
       ],
-      "services": [],
+      "services": [
+        "VPC"
+      ],
       "tags": [
-        "aws management console",
+        "security identity and compliance",
         "management and governance",
-        "security identity and compliance"
+        "aws management console",
+        "vpc"
       ],
       "isNew": false
     },
@@ -10859,151 +11019,6 @@
         "contact center",
         "amazon connect",
         "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "1ca4cca8852b44de",
-      "title": "AWS Marketplace Management Portal now supports bank account deletion",
-      "description": "AWS Marketplace sellers can now delete bank accounts directly from the Payment Settings page in the AWS Marketplace Management Portal (AMMP). This new self-service capability addresses a long-standing gap in payment account management, allowing sellers to remove ACH-type and SWIFT-type bank accounts without contacting customer service. This enhancement is particularly valuable for global enterprises and ISVs managing multiple currencies and banking relationships. With this update, sellers gain complete control over their payment account management. Key benefits include the ability to clean up ",
-      "descriptionHtml": "&lt;p&gt;AWS Marketplace sellers can now delete bank accounts directly from the Payment Settings page in the AWS Marketplace Management Portal (AMMP). This new self-service capability addresses a long-standing gap in payment account management, allowing sellers to remove ACH-type and SWIFT-type bank accounts without contacting customer service. This enhancement is particularly valuable for global enterprises and ISVs managing multiple currencies and banking relationships.&lt;/p&gt; \n&lt;p&gt;With this update, sellers gain complete control over their payment account management. Key benefits include the ability to clean up unused accounts, remove failed or outdated banking relationships, and reduce payment routing risks. The feature also includes Last Updated timestamps to help differentiate between modified bank accounts.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/provide-bank-information.html\"&gt;AWS Marketplace Seller Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-marketplace-management-portal/",
-      "publishedAt": "2026-04-24T16:37:00.000Z",
-      "updatedAt": "2026-04-24T16:37:00.000Z",
-      "categories": [
-        "AWS Marketplace"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ef164900a1ef5a6d",
-      "title": "AWS Deadline Cloud now supports custom scripting for job submission workflows",
-      "description": "AWS Deadline Cloud now supports running custom scripts before and after job submission, giving studios the ability to integrate their pipeline directly into the submission workflow. AWS Deadline Cloud is a fully managed service that simplifies render management for teams creating computer-generated graphics and visual effects for films, television, web content, and design. With the new submission scripting capability, you can configure scripts that run automatically as part of every job submission. Pre-submission scripts run before job attachments are uploaded, allowing you to validate job con",
-      "descriptionHtml": "&lt;p&gt;AWS Deadline Cloud now supports running custom scripts before and after job submission, giving studios the ability to integrate their pipeline directly into the submission workflow. AWS Deadline Cloud is a fully managed service that simplifies render management for teams creating computer-generated graphics and visual effects for films, television, web content, and design.&lt;br&gt; &lt;br&gt; With the new submission scripting capability, you can configure scripts that run automatically as part of every job submission. Pre-submission scripts run before job attachments are uploaded, allowing you to validate job configurations, discover and add additional input files such as textures or caches, modify submission parameters, or enforce studio policies. Post-submission scripts run after the job is created, enabling you to send notifications, update tracking systems, or log submission details. Scripts are defined in a simple YAML or JSON configuration file placed in your job bundle directory or in a shared studio-wide directory using an environment variable, making it easy for pipeline teams to enforce standards across all artists. Each script receives job metadata automatically and supports configurable timeouts.&amp;nbsp;&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://github.com/aws-deadline/deadline-cloud/blob/mainline/README.md#submission-hooks\"&gt;Deadline Cloud Client documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-deadline-cloud/",
-      "publishedAt": "2026-04-24T15:42:00.000Z",
-      "updatedAt": "2026-04-24T15:42:00.000Z",
-      "categories": [
-        "AWS Deadline Cloud",
-        "Media Services"
-      ],
-      "services": [],
-      "tags": [
-        "aws deadline cloud",
-        "media services"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5f586865803f3c34",
-      "title": "Amazon Athena simplifies federated queries with managed connectors",
-      "description": "Amazon Athena now offers managed connectors for 12 data sources, including Amazon DynamoDB, PostgreSQL, MySQL, and Snowflake. Managed connectors are AWS Glue Data Catalog federated connectors that Athena creates and manages on your behalf, so you can query data outside Amazon S3 without deploying or maintaining connector resources in your AWS account. With Athena, you can interactively query relational, non-relational, object, and custom data sources without moving or duplicating data. To get started with managed connectors, you create a connection for your data source in Athena. Athena automa",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/athena\"&gt;Amazon Athena&lt;/a&gt; now offers managed connectors for 12 data sources, including Amazon DynamoDB, PostgreSQL, MySQL, and Snowflake. Managed connectors are AWS Glue Data Catalog federated connectors that Athena creates and manages on your behalf, so you can query data outside Amazon S3 without deploying or maintaining connector resources in your AWS account.&lt;br&gt; &lt;br&gt; With Athena, you can interactively query relational, non-relational, object, and custom data sources without moving or duplicating data. To get started with managed connectors, you create a connection for your data source in Athena. Athena automatically sets up and manages connector resources on your behalf, registering the data source as a federated catalog in AWS Glue Data Catalog. You can then query the data source alongside your Amazon S3 data and optionally set up fine-grained access controls through AWS Lake Formation.&lt;br&gt; &lt;br&gt; Federated queries with managed connectors are available in all AWS Regions where Athena is available, except the AWS GovCloud (US) Regions and the China Regions.&lt;br&gt; &lt;br&gt; To learn more, visit&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/athena/latest/ug/federated-queries.html\"&gt;Use Amazon Athena Federated Query&lt;/a&gt; in the Athena User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-athena/",
-      "publishedAt": "2026-04-23T21:15:00.000Z",
-      "updatedAt": "2026-04-23T21:15:00.000Z",
-      "categories": [
-        "Amazon Athena",
-        "Analytics"
-      ],
-      "services": [
-        "Athena"
-      ],
-      "tags": [
-        "amazon athena",
-        "analytics",
-        "athena"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a7602bb71630dc99",
-      "title": "AWS Client VPN now supports native AWS Transit Gateway integration",
-      "description": "AWS Client VPN now supports native integration with AWS Transit Gateway, simplifying centralized remote access for your end users across multiple VPCs and on-premises, and providing end-to-end source IP visibility. AWS Transit Gateway interconnects your Amazon Virtual Private Clouds (VPCs) and on-premises networks, while AWS Client VPN enables secure remote access to AWS and on-premises resources connected through your AWS network. Previously, connecting Client VPN to multiple VPCs required provisioning and managing an intermediate VPC, adding operational complexity as you needed to manage add",
-      "descriptionHtml": "&lt;p&gt;AWS Client VPN now supports native integration with AWS Transit Gateway, simplifying centralized remote access for your end users across multiple VPCs and on-premises, and providing end-to-end source IP visibility.&lt;br&gt; &lt;br&gt; AWS Transit Gateway interconnects your Amazon Virtual Private Clouds (VPCs) and on-premises networks, while AWS Client VPN enables secure remote access to AWS and on-premises resources connected through your AWS network. Previously, connecting Client VPN to multiple VPCs required provisioning and managing an intermediate VPC, adding operational complexity as you needed to manage additional resources. Moreover, client source IPs were translated through Source Network Address Translation (SNAT), making it difficult to identify which remote user generated specific traffic and complicating security audits. Native Transit Gateway attachment eliminates the need for an intermediate VPC, letting you provide centralized remote access to multiple VPCs and on-premises networks directly from your Client VPN endpoint. Additionally, the end-user source IP is now preserved end-to-end, so you can create authorization rules based on actual client IPs and trace traffic back to specific users, simplifying security, compliance, and troubleshooting workflows. Furthermore, Transit Gateway flow logs capture connection-level details tied to preserved source IPs for improved troubleshooting and compliance audits.&lt;br&gt; &lt;br&gt; This integration is available in all AWS Regions where AWS Client VPN is available. There are no additional charges for this native integration beyond standard &lt;a href=\"https://aws.amazon.com/vpn/pricing/\"&gt;pricing &lt;/a&gt;of AWS Client VPN and AWS Transit Gateway.&lt;/p&gt; \n&lt;p&gt;To learn more about Client VPN:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;Visit the AWS Client VPN &lt;a href=\"https://aws.amazon.com/vpn/\"&gt;product page&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;Read the AWS Client VPN &lt;a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-tgw.html\"&gt;documentation&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-client-vpn-transit-gateway/",
-      "publishedAt": "2026-04-23T21:11:00.000Z",
-      "updatedAt": "2026-04-23T21:11:00.000Z",
-      "categories": [
-        "AWS Client Vpn",
-        "Networking And Content Delivery",
-        "AWS Transit Gateway"
-      ],
-      "services": [
-        "Transit Gateway"
-      ],
-      "tags": [
-        "aws client vpn",
-        "networking and content delivery",
-        "aws transit gateway",
-        "transit gateway"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "370c6405b3bc600a",
-      "title": "Amazon SageMaker HyperPod now supports automatic Slurm topology management",
-      "description": "Amazon SageMaker HyperPod now automatically selects and continuously maintains the optimal network topology configuration for Slurm clusters based on the GPU instance types in the cluster. Network topology directly impacts distributed training performance — when jobs are placed on nodes that are topologically close, GPU-to-GPU communication is faster, NCCL collective operations are more efficient, and training throughput improves. HyperPod dynamically adapts the topology as the cluster evolves through scaling operations and node replacements, so job placement remains optimized throughout the c",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now automatically selects and continuously maintains the optimal network topology configuration for Slurm clusters based on the GPU instance types in the cluster. Network topology directly impacts distributed training performance — when jobs are placed on nodes that are topologically close, GPU-to-GPU communication is faster, NCCL collective operations are more efficient, and training throughput improves. HyperPod dynamically adapts the topology as the cluster evolves through scaling operations and node replacements, so job placement remains optimized throughout the cluster lifecycle without requiring manual updates to topology files or Slurm reconfiguration.&lt;br&gt; &lt;br&gt; HyperPod inspects the instance types across all instance groups at cluster creation, identifies the networking and interconnect characteristics of each instance type, and automatically selects the best-fit topology model. HyperPod supports tree topology for instance types with hierarchical interconnects such as ml.p5.48xlarge, ml.p5e.48xlarge, and ml.p5en.48xlarge, and block topology for instance types with uniform high-bandwidth connectivity such as ml.p6e-gb200.NVL72. For clusters with mixed instance types, HyperPod selects a compatible topology that works across all nodes. As the cluster changes through scale-up, scale-down, or node replacement events, HyperPod automatically updates the topology configuration without manual intervention, so the topology always reflects the actual state of the cluster.&lt;/p&gt; \n&lt;p&gt;To get started, create a SageMaker HyperPod Slurm cluster with supported GPU instance types. Topology-aware scheduling is enabled by default and requires no configuration.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where Amazon SageMaker HyperPod is supported. To learn more about topology-aware scheduling, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-topology.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon SageMaker HyperPod documentation&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-hyperpod-automatic-slurm-topology/",
-      "publishedAt": "2026-04-23T20:00:00.000Z",
-      "updatedAt": "2026-04-23T20:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Compute"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "compute",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "2346bff85ae39cad",
-      "title": "AWS Parallel Computing Service now supports Slurm 25.11",
-      "description": "AWS Parallel Computing Service (AWS PCS) now supports Slurm version 25.11, with support for a Prometheus-compatible OpenMetrics endpoint, and introduces new log types including scheduler audit logs. This release of Slurm 25.11 introduces expedited re-queue, which can automatically reschedule jobs affected by node issues at the highest priority to help your workloads recover faster. You can enable a new OpenMetrics endpoint for real-time visibility into jobs, nodes, and scheduling using your existing monitoring tools. AWS PCS can now also send Slurm database daemon (slurmdbd) and REST API daemo",
-      "descriptionHtml": "&lt;p&gt;AWS Parallel Computing Service (AWS PCS) now supports Slurm version 25.11, with support for a Prometheus-compatible OpenMetrics endpoint, and introduces new log types including scheduler audit logs.&lt;br&gt; &lt;br&gt; This release of Slurm 25.11 introduces expedited re-queue, which can automatically reschedule jobs affected by node issues at the highest priority to help your workloads recover faster. You can enable a new OpenMetrics endpoint for real-time visibility into jobs, nodes, and scheduling using your existing monitoring tools. AWS PCS can now also send Slurm database daemon (slurmdbd) and REST API daemon (slurmrestd) logs to Amazon CloudWatch Logs, Amazon S3, or Amazon Data Firehose, helping diagnose accounting issues and debug API integrations. Scheduler audit logs, previously included in operational logs, are now delivered as a dedicated log type, providing independent control over ingestion and storage costs.&lt;br&gt; &lt;br&gt; AWS PCS is a managed service that makes it easier for you to run and scale your high performance computing (HPC) workloads and build scientific and engineering models on AWS using Slurm. You can use AWS PCS to build complete, elastic environments that integrate compute, storage, networking, and visualization tools. AWS PCS simplifies cluster operations with managed updates and built-in observability features, helping to remove the burden of maintenance. You can work in a familiar environment, focusing on your research and innovation instead of worrying about infrastructure.&lt;br&gt; &lt;br&gt; These features are available in all AWS Regions where AWS PCS is available. Standard charges apply for log delivery destinations. To learn more about AWS PCS, refer to the &lt;a href=\"https://docs.aws.amazon.com/pcs/latest/userguide/what-is-service.html\"&gt;service documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-pcs-slurm-25-11/",
-      "publishedAt": "2026-04-23T20:00:00.000Z",
-      "updatedAt": "2026-04-23T20:00:00.000Z",
-      "categories": [
-        "Compute"
-      ],
-      "services": [],
-      "tags": [
-        "compute"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ba61ad042513052d",
-      "title": "Amazon SageMaker supports notebooks and data agent for IdC domains",
-      "description": "Amazon SageMaker Unified Studio now supports serverless notebooks with a built-in data agent for AWS IAM Identity Center (IdC) domains. Previously, the notebook experience and data agent were available only in IAM domains. With this launch, customers who use IdC for authentication and access management can access the high-performance, serverless notebook environment for analytics and machine learning (ML) workloads. The serverless notebook gives data engineers, analysts, and data scientists one place to perform SQL queries, execute Python code, process large-scale data jobs, run ML workloads, ",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now supports serverless notebooks with a built-in data agent for AWS IAM Identity Center (IdC) domains. Previously, the notebook experience and data agent were available only in IAM domains. With this launch, customers who use IdC for authentication and access management can access the high-performance, serverless notebook environment for analytics and machine learning (ML) workloads.&lt;/p&gt; \n&lt;p&gt;The serverless notebook gives data engineers, analysts, and data scientists one place to perform SQL queries, execute Python code, process large-scale data jobs, run ML workloads, and create visualizations. A built-in AI data agent accelerates development by generating code and SQL statements from natural language prompts and guides users through their tasks. Customers can flexibly combine SQL, Python, and natural language within a single interactive workspace, removing the need to switch between different tools based on the workload. For example, you can start with SQL queries to explore your data, use Python for advanced analytics or to build ML models, or use natural language prompts to generate code automatically. The notebook is backed by Amazon Athena for Apache Spark, scaling from interactive SQL queries to petabyte-scale data processing.&lt;/p&gt; \n&lt;p&gt;You can use the SageMaker notebook and data agent features in &lt;a href=\"https://www.google.com/url?sa=t&amp;amp;source=web&amp;amp;rct=j&amp;amp;opi=89978449&amp;amp;url=https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html&amp;amp;ved=2ahUKEwjo8d7u8vyTAxXNHjQIHRT0KKIQFnoECBgQAQ&amp;amp;usg=AOvVaw3H9HTpx1fPYLIDdE0yougk\"&gt;all AWS Regions where Amazon SageMaker Unified Studio is supported&lt;/a&gt;. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/notebooks.html\"&gt;SageMaker notebooks user guide&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/sagemaker-data-agent.html\"&gt;SageMaker data agent user guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-sagemaker-idc/",
-      "publishedAt": "2026-04-23T19:13:00.000Z",
-      "updatedAt": "2026-04-23T19:13:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Analytics",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "analytics",
-        "amazon sagemaker",
-        "sagemaker"
       ],
       "isNew": false
     }
