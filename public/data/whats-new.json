@@ -1,7 +1,79 @@
 {
-  "lastUpdated": "2026-06-29T09:41:59.765Z",
+  "lastUpdated": "2026-06-30T03:06:13.819Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "9e8d542f0d8e4588",
+      "title": "AWS WAF adds support for Amazon Bedrock AgentCore Gateway",
+      "description": "Today, AWS announces general availability of AWS Web Application Firewall (AWS WAF) protection for Amazon Bedrock AgentCore Gateway, enabling you to protect your agentic AI workloads from common web exploits and abuse. As enterprises move agentic applications from prototype to production, this launch gives security and platform teams ability to apply consistent, customizable web protections at the Gateway layer. You can now associate an AWS WAF protection pack with your AgentCore Gateway to enforce IP-based access controls, rate-based rules that throttle abusive traffic, and AWS Managed Rule G",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces general availability of AWS Web Application Firewall (AWS WAF) protection for Amazon Bedrock AgentCore Gateway, enabling you to protect your agentic AI workloads from common web exploits and abuse. As enterprises move agentic applications from prototype to production, this launch gives security and platform teams ability to apply consistent, customizable web protections at the Gateway layer.&lt;/p&gt; \n&lt;p&gt;You can now associate an AWS WAF protection pack with your AgentCore Gateway to enforce IP-based access controls, rate-based rules that throttle abusive traffic, and AWS Managed Rule Groups including common rule sets, known bad inputs, and Bot Control. You configure the protection pack once at the Gateway level and AWS WAF applies it consistently to every target behind that Gateway, so a single configuration protects all downstream tools, agents, and integrations.&lt;/p&gt; \n&lt;p&gt;Support for AWS WAF on AgentCore Gateway is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where both AWS WAF and Amazon Bedrock AgentCore Gateway are available.&lt;/p&gt; \n&lt;p&gt;To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/waf/latest/developerguide/how-aws-waf-works-resources.html\"&gt;AWS WAF Developer Guide&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html\"&gt;Amazon Bedrock AgentCore documentation.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-waf-amazon-bedrock-agentcore/",
+      "publishedAt": "2026-06-29T22:00:00.000Z",
+      "updatedAt": "2026-06-29T22:00:00.000Z",
+      "categories": [
+        "AWS Waf",
+        "Security Identity And Compliance"
+      ],
+      "services": [
+        "WAF",
+        "Bedrock"
+      ],
+      "tags": [
+        "aws waf",
+        "security identity and compliance",
+        "waf",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c2bc4d26ec4c1c81",
+      "title": "Amazon MWAA Serverless now supports shared VPC configurations",
+      "description": "Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Serverless now supports shared VPC subnets. Previously, customers using subnets shared via AWS Resource Access Manager (AWS RAM) received a validation error when creating MWAA Serverless workflows. With this update, MWAA Serverless correctly validates subnet ownership in shared VPC configurations, consistent with MWAA Provisioned environments. Sharing VPC subnets across accounts using AWS RAM is a common pattern in multi-account landing zone architectures. Organizations that centrally manage networking can now launch MWAA Serverless wor",
+      "descriptionHtml": "&lt;p&gt;Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Serverless now supports shared VPC subnets. Previously, customers using subnets shared via AWS Resource Access Manager (AWS RAM) received a validation error when creating MWAA Serverless workflows. With this update, MWAA Serverless correctly validates subnet ownership in shared VPC configurations, consistent with MWAA Provisioned environments.&lt;br&gt; Sharing VPC subnets across accounts using AWS RAM is a common pattern in multi-account landing zone architectures. Organizations that centrally manage networking can now launch MWAA Serverless workflows in member accounts using shared subnets — no workarounds required. Customers using Amazon SageMaker Unified Studio Workflows also benefit from this update when their projects are configured with shared VPC networking.&lt;br&gt; This update is available in all AWS Regions where &lt;a href=\"https://aws.amazon.com/managed-workflows-for-apache-airflow/\"&gt;Amazon MWAA Serverless&lt;/a&gt; is supported. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/networking.html#networking-support\"&gt;Networking&lt;/a&gt; section of the Amazon MWAA Serverless User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-mwaa-serverless-vpc/",
+      "publishedAt": "2026-06-29T17:19:00.000Z",
+      "updatedAt": "2026-06-29T17:19:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Mwaa"
+      ],
+      "services": [
+        "VPC",
+        "MWAA"
+      ],
+      "tags": [
+        "analytics",
+        "amazon mwaa",
+        "vpc",
+        "mwaa"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e09d8711e11bff09",
+      "title": "Amazon S3 server access logs now deliver to Amazon CloudWatch Logs and Amazon S3 Tables",
+      "description": "Amazon S3 now supports delivering server access logs to Amazon CloudWatch Logs, giving you instant querying, alarms, cross-account and cross-Region aggregation, and AWS Key Management Service (KMS) encryption for your access log data. You can also mirror your logs to Amazon S3 Tables in Apache Iceberg format at no additional storage cost. These new delivery paths complement the existing free delivery of server access logs to S3 general purpose buckets, giving you more flexibility in how you monitor and analyze access to your data. With delivery to CloudWatch Logs, you can set alarms on error r",
+      "descriptionHtml": "&lt;p&gt;Amazon S3 now supports delivering server access logs to Amazon CloudWatch Logs, giving you instant querying, alarms, cross-account and cross-Region aggregation, and AWS Key Management Service (KMS) encryption for your access log data. You can also mirror your logs to Amazon S3 Tables in Apache Iceberg format at no additional storage cost. These new delivery paths complement the existing free delivery of server access logs to S3 general purpose buckets, giving you more flexibility in how you monitor and analyze access to your data.&lt;br&gt; &lt;br&gt; With delivery to CloudWatch Logs, you can set alarms on error rates, monitor traffic patterns, investigate access incidents across accounts and Regions, and correlate S3 access activity with the rest of your operational data. Logs mirrored to S3 Tables are immediately queryable with standard SQL in Amazon Athena, Amazon Redshift, and other Iceberg-compatible query engines, so you can audit access patterns, analyze usage trends, and identify cost drivers across buckets over time.&lt;br&gt; &lt;br&gt; S3 server access logs delivery to CloudWatch Logs is available today in all AWS Regions, except for AWS China Regions and AWS GovCloud (US) Regions. To learn more, see the &lt;a href=\"https://aws.amazon.com/s3\" target=\"_blank\"&gt;Amazon S3 webpage&lt;/a&gt;,&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;server access logging&lt;/a&gt; in the Amazon S3 User Guide, and the &lt;a href=\"https://aws.amazon.com/blogs/storage/query-amazon-s3-access-logs-instantly-with-cloudwatch-and-s3-tables/\" target=\"_blank\"&gt;AWS Storage Blog post&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-s3-cloudwatch-logs-tables/",
+      "publishedAt": "2026-06-29T04:00:00.000Z",
+      "updatedAt": "2026-06-29T04:00:00.000Z",
+      "categories": [
+        "Storage",
+        "Amazon Simple Storage Service"
+      ],
+      "services": [
+        "S3",
+        "CloudWatch"
+      ],
+      "tags": [
+        "storage",
+        "amazon simple storage service",
+        "s3",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
     {
       "id": "ebcd574eb831833b",
       "title": "Amazon EC2 R8g instances now available in additional regions",
@@ -510,6 +582,32 @@
       "isNew": true
     },
     {
+      "id": "ca41924089ed60e1",
+      "title": "Amazon ElastiCache now supports Valkey 9.1",
+      "description": "Amazon ElastiCache now supports Valkey 9.1 for node-based clusters, delivering higher throughput, improved memory efficiency, and stronger access control for multi-tenant workloads. This release helps customers get more performance from existing infrastructure while simplifying common application patterns with new commands. Valkey 9.1 includes a redesigned I/O threading model that improves throughput by up to 17%, reduces memory usage for strings under 128 bytes by up to 20%, and introduces database-level access control lists that let administrators scope user permissions to specific numbered ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/elasticache\"&gt;Amazon ElastiCache&lt;/a&gt; now supports Valkey 9.1 for node-based clusters, delivering higher throughput, improved memory efficiency, and stronger access control for multi-tenant workloads. This release helps customers get more performance from existing infrastructure while simplifying common application patterns with new commands.&lt;/p&gt; \n&lt;p&gt;Valkey 9.1 includes a redesigned I/O threading model that improves throughput by up to 17%, reduces memory usage for strings under 128 bytes by up to 20%, and introduces database-level access control lists that let administrators scope user permissions to specific numbered databases. New commands like HGETDEL for atomic hash field retrieval and deletion, MSETEX for setting multiple keys with a shared expiration, and CLUSTERSCAN for cluster-wide key iteration simplify workflows that previously required multi-step client logic. The release also adds new main-thread and I/O-thread usage metrics for better operational visibility.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To get started, see &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/GettingStarted.html\"&gt;Creating an ElastiCache cluster&lt;/a&gt; or &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VersionManagement.HowTo.html\"&gt;upgrade an existing cluster&lt;/a&gt;. For more information about Valkey 9.1 features, see the &lt;a href=\"https://aws.amazon.com/blogs/database/announcing-valkey-9-1-for-amazon-elasticache/\"&gt;Valkey 9.1 for ElastiCache launch blog&lt;/a&gt;. To learn more about the open source release, see the &lt;a href=\"https://valkey.io/blog/valkey-9-1-delivers-improvements-in-security-performance-and-more/\"&gt;Valkey 9.1 community announcement.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-elasticache-valkey-9-1/",
+      "publishedAt": "2026-06-23T17:38:00.000Z",
+      "updatedAt": "2026-06-23T17:38:00.000Z",
+      "categories": [
+        "Applications",
+        "Amazon Elasticache",
+        "Databases",
+        "Management Tools"
+      ],
+      "services": [
+        "ElastiCache"
+      ],
+      "tags": [
+        "applications",
+        "amazon elasticache",
+        "databases",
+        "management tools",
+        "elasticache"
+      ],
+      "isNew": true
+    },
+    {
       "id": "3f973b508777f4cc",
       "title": "Amazon Bedrock AgentCore Memory now supports cross-account access",
       "description": "Amazon Bedrock AgentCore Memory now enables cross-account access, allowing you to build multi-account architectures where memory resources and consuming agents span multiple AWS accounts. You can grant principals in one account permission to call memory data plane APIs against resources in another account using resource-based policies, and configure memory delivery destinations (Amazon S3, Amazon SNS, Amazon Kinesis Data Streams) that reside in a separate account. Cross-account access is configured by attaching a resource-based policy to your memory resource. Once configured, principals in the",
@@ -687,7 +785,7 @@
         "aiml",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c49cfee00f48016f",
@@ -704,7 +802,7 @@
       "tags": [
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1b82d3df2057d2f4",
@@ -726,7 +824,7 @@
         "compute",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ad895de674aa003e",
@@ -743,7 +841,7 @@
       "tags": [
         "migration"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e72fb7415b15afc8",
@@ -766,7 +864,7 @@
         "security identity and compliance",
         "aws network firewall"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9d2945e6a1aabf42",
@@ -788,7 +886,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "cf32a0dc229cd9c2",
@@ -808,7 +906,7 @@
         "aws govcloud us",
         "batch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5bf52c771a338354",
@@ -827,7 +925,7 @@
         "iam",
         "iam identity center"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "571bf7c44caa74f1",
@@ -849,7 +947,7 @@
         "amazon msk",
         "msk"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "50b1687259117cf4",
@@ -875,7 +973,7 @@
         "msk",
         "kafka"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "48d17a2f449e6b8a",
@@ -892,7 +990,7 @@
       "tags": [
         "outposts"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ca12148e0d8990d5",
@@ -10954,100 +11052,6 @@
         "amazon redshift",
         "analytics",
         "redshift"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "748a507893c04c79",
-      "title": "Amazon CloudWatch RUM now supports an improved App Monitors overview with health, SLO, and tracing status",
-      "description": "Amazon CloudWatch RUM, which provides real user monitoring for web, iOS, and Android applications, now supports an improved App Monitors overview that surfaces fleet-wide health, SLO breaches, and distributed tracing coverage on a single page. DevOps and SRE teams can now triage critical and degraded monitors, spot worsening trends, and identify gaps in observability setup across their entire fleet without clicking into each monitor individually. The overview groups monitors into four summary cards: Needs attention by health status, Trending worse, Setup and coverage, and SLOs and Alarms. This",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch RUM, which provides real user monitoring for web, iOS, and Android applications, now supports an improved App Monitors overview that surfaces fleet-wide health, SLO breaches, and distributed tracing coverage on a single page. DevOps and SRE teams can now triage critical and degraded monitors, spot worsening trends, and identify gaps in observability setup across their entire fleet without clicking into each monitor individually.&lt;/p&gt; \n&lt;p&gt;The overview groups monitors into four summary cards: Needs attention by health status, Trending worse, Setup and coverage, and SLOs and Alarms. This helps customers see at a glance how many app monitors are critical or degraded, how many are worsening, and how many are missing SLOs or tracing. Quick filters helps narrow the list so customers can focus on specific app monitors by platform, health, SLI status, and tracing state.&amp;nbsp;Each row in the App Monitors table shows session volume, SLI status, health status primary issue type (such as JavaScript errors on a web monitor or performance regressions on an iOS monitor), trend direction, a direct link to traces in AWS X-Ray, linked-service health from CloudWatch Application Signals, and last event received. A selectable side panel shows additional details like correlated sessions, app monitor health and SLO and alarm details which is particularly useful when troubleshooting a given app monitor on the overview page itself, while also allowing to navigate to per-app monitor page for further deep-dive.&lt;/p&gt; \n&lt;p&gt;The CloudWatch RUM App Monitors overview is available in all AWS commercial Regions where CloudWatch RUM is available, at no additional cost. To learn more, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html\"&gt;CloudWatch RUM documentation&lt;/a&gt;&amp;nbsp;and the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;pricing page&lt;/a&gt;. To get started, open the&amp;nbsp;CloudWatch in AWS Management&amp;nbsp;and select RUM in the left-navigation panel under APM.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-cloudwatch-rum-app-monitors/",
-      "publishedAt": "2026-04-27T19:32:00.000Z",
-      "updatedAt": "2026-04-27T19:32:00.000Z",
-      "categories": [
-        "Amazon Cloudwatch"
-      ],
-      "services": [
-        "CloudWatch",
-        "Health"
-      ],
-      "tags": [
-        "amazon cloudwatch",
-        "cloudwatch",
-        "health"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "2f0585c1899972c6",
-      "title": "AWS KMS now tracks last usage of all KMS keys",
-      "description": "AWS Key Management Service (KMS) now provides visibility into the last cryptographic operation performed with your KMS keys, eliminating the need to manually query and analyze logs. This feature helps security administrators and compliance teams quickly determine when their KMS keys were last used for cryptographic operations. You can view the timestamp, the type of operation performed, and the associated AWS CloudTrail event ID from the AWS KMS management console, or via API. You can use this feature to help identify unused keys for cleanup, verify that keys are actively used, and track down ",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/kms/\"&gt;AWS Key Management Service (KMS)&lt;/a&gt; now provides visibility into the last cryptographic operation performed with your KMS keys, eliminating the need to manually query and analyze logs. This feature helps security administrators and compliance teams quickly determine when&amp;nbsp;their KMS keys were last used for cryptographic operations. You can view the timestamp,&amp;nbsp;the type of operation performed, and the associated AWS CloudTrail event ID from the AWS KMS management console, or via API.&lt;/p&gt; \n&lt;p&gt;You can use this feature to help identify unused keys for cleanup, verify that keys are actively used, and track down how your keys are used in AWS CloudTrail. In addition, you can use the &lt;a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/conditions-kms.html\"&gt;new condition key&lt;/a&gt; (kms:TrailingDaysWithoutKeyUsage) that enables policy-based protection against accidental deletion of recently used keys.&lt;/p&gt; \n&lt;p&gt;The feature is available in all AWS Regions where AWS KMS is available, including all commercial AWS Regions, AWS GovCloud (US) Regions, and AWS China Regions.&amp;nbsp;For more information, see &lt;a href=\"https://docs.aws.amazon.com/kms/latest/developerguide/monitoring-keys-determining-usage.html\"&gt;Determine past usage of a KMS key&lt;/a&gt; in the AWS KMS Developer Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-kms-tracks-last-usage-kms-keys/",
-      "publishedAt": "2026-04-27T19:00:00.000Z",
-      "updatedAt": "2026-04-27T19:00:00.000Z",
-      "categories": [
-        "Security Identity And Compliance",
-        "AWS Govcloud Us",
-        "P&Gt;",
-        "AWS Kms"
-      ],
-      "services": [
-        "KMS"
-      ],
-      "tags": [
-        "security identity and compliance",
-        "aws govcloud us",
-        "p&gt;",
-        "aws kms",
-        "kms"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "981571a64b13410d",
-      "title": "Amazon Redshift Serverless is now available in the AWS Asia Pacific (Melbourne) and Canada West (Calgary) regions",
-      "description": "Amazon Redshift Serverless , which allows you to run and scale analytics without having to provision and manage data warehouse clusters, is now generally available in the AWS Asia Pacific (Melbourne) and Canada West (Calgary) regions. With Amazon Redshift Serverless, all users, including data analysts, developers, and data scientists, can use Amazon Redshift to get insights from data in seconds. Amazon Redshift Serverless automatically provisions and intelligently scales data warehouse capacity to deliver high performance for all your analytics. You only pay for the compute used for the durati",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/redshift/redshift-serverless/\"&gt;Amazon Redshift Serverless&lt;/a&gt;, which allows you to run and scale analytics without having to provision and manage data warehouse clusters, is now generally available in the AWS&amp;nbsp;Asia Pacific (Melbourne) and Canada West (Calgary) regions. With Amazon Redshift Serverless, all users, including data analysts, developers, and data scientists, can use Amazon Redshift to get insights from data in seconds. Amazon Redshift Serverless automatically provisions and intelligently scales data warehouse capacity to deliver high performance for all your analytics. You only pay for the compute used for the duration of the workloads on a per-second basis. You can benefit from this simplicity without making any changes to your existing analytics and business intelligence applications.&lt;br&gt; &lt;br&gt; With a few clicks in the AWS Management Console, you can get started with querying data using the Query Editor V2 or your tool of choice with Amazon Redshift Serverless. There is no need to choose node types, node count, workload management, scaling, and other manual configurations. You can create databases, schemas, and tables, and load your own data from Amazon S3, access data using Amazon Redshift data shares, or restore an existing Amazon Redshift provisioned cluster snapshot. With Amazon Redshift Serverless, you can directly query data in open formats, such as Apache Parquet, Apache Iceberg in Amazon S3 data lakes. Amazon Redshift Serverless provides unified billing for queries on any of these data sources, helping you efficiently monitor and manage costs.&lt;br&gt; &lt;br&gt; To get started, see the Amazon Redshift Serverless &lt;a href=\"https://aws.amazon.com/redshift/redshift-serverless/\"&gt;feature page&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-serverless.html\"&gt;user documentation&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/Welcome.html\"&gt;API Reference&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-redshift-serverless-melbourne-calgary-regions/",
-      "publishedAt": "2026-04-27T19:00:00.000Z",
-      "updatedAt": "2026-04-27T19:00:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Redshift",
-        "Serverless"
-      ],
-      "services": [
-        "Redshift"
-      ],
-      "tags": [
-        "analytics",
-        "amazon redshift",
-        "serverless",
-        "redshift"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "37d78564da8373c7",
-      "title": "Amazon EVS now supports i7i.metal-24xl Amazon EC2 instance type",
-      "description": "Today, we're announcing that Amazon Elastic VMware Service (Amazon EVS) now supports the i7i.metal-24xl Amazon Elastic Cloud Compute (Amazon EC2) bare-metal instance type, offering a lower-core-count option with a newer generation processor to help you realize cost-performance benefits for your VMware-based workloads on AWS. With this release, you now have more options for running your virtual machines (VMs) on Amazon EVS environments and growing your cloud presence at your own pace, as your business demands. Powered by 5th generation Intel Xeon Scalable processors, i7i instances offer the bes",
-      "descriptionHtml": "&lt;p&gt;Today, we're announcing that Amazon Elastic VMware Service (Amazon EVS) now supports the i7i.metal-24xl Amazon Elastic Cloud Compute (Amazon EC2) bare-metal instance type, offering a lower-core-count option with a newer generation processor to help you realize cost-performance benefits for your VMware-based workloads on AWS.&lt;/p&gt; \n&lt;p&gt;With this release, you now have more options for running your virtual machines (VMs) on Amazon EVS environments and growing your cloud presence at your own pace, as your business demands. Powered by 5th generation Intel Xeon Scalable processors, i7i instances offer the best compute and storage performance for x86-based storage optimized instances in Amazon EC2, delivering up to 23% better compute performance and more than 10% better price performance over i4i instances.&lt;/p&gt; \n&lt;p&gt;This latest release is available in AWS Regions where Amazon EVS and Amazon EC2 i7i are both available. See &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Amazon EVS regional availability&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/ec2/latest/instancetypes/ec2-instance-regions.html\"&gt;Amazon EC2 i7i regional availability&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Learn more about Amazon EVS by visiting the &lt;a href=\"https://aws.amazon.com/evs/\"&gt;product detail page&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/evs/latest/userguide/what-is-evs.html\"&gt;user guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-evs-i7i-instance-type/",
-      "publishedAt": "2026-04-27T19:00:00.000Z",
-      "updatedAt": "2026-04-27T19:00:00.000Z",
-      "categories": [
-        "Compute",
-        "Migration"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "migration",
-        "ec2"
       ],
       "isNew": false
     }
