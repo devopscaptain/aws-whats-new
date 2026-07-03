@@ -1,7 +1,119 @@
 {
-  "lastUpdated": "2026-07-02T09:09:11.757Z",
+  "lastUpdated": "2026-07-03T09:07:59.352Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "f4ddd69e75052de4",
+      "title": "Amazon SageMaker Unified Studio now supports Terraform for provisioning",
+      "description": "Amazon SageMaker Unified Studio now supports Terraform for provisioning. Customers can use the open-source terraform-aws-sagemaker-unified-studio module to deploy a SageMaker Unified Studio domain through version-controlled templates. With this launch, platform teams can bring SageMaker Unified Studio into their existing infrastructure-as-code pipelines, maintaining consistency across development, staging, and production accounts. Amazon SageMaker Unified Studio is a unified development environment where data teams can build end-to-end data and AI workflows using familiar tools—from data integ",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now supports Terraform for provisioning. Customers can use the open-source &lt;a href=\"https://github.com/aws-ia/terraform-aws-sagemaker-unified-studio\"&gt;terraform-aws-sagemaker-unified-studio&lt;/a&gt; module to deploy a SageMaker Unified Studio domain through version-controlled templates. With this launch, platform teams can bring SageMaker Unified Studio into their existing infrastructure-as-code pipelines, maintaining consistency across development, staging, and production accounts.&lt;/p&gt; \n&lt;p&gt;Amazon SageMaker Unified Studio is a unified development environment where data teams can build end-to-end data and AI workflows using familiar tools—from data integration and analytics to machine learning and generative AI—all governed by a shared catalog. Administrators provision domains to give their organization a single, managed workspace with built-in access control, data governance, and cross-service connectivity. With this launch, the Terraform module handles the infrastructure of SageMaker Unified Studio domain with&amp;nbsp;provisioned IAM roles. Sub-modules let teams enable blueprints, compose blueprints into project profiles, and create projects independently. Customers can also&amp;nbsp;create projects with existing IAM roles.&amp;nbsp;This integration is enabled through the &lt;a href=\"https://aws.amazon.com/blogs/devops/quickly-adopt-new-aws-features-with-the-terraform-aws-cloud-control-provider/\"&gt;Terraform AWS Cloud Control Provider&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;This feature is available in &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;all AWS Regions where Amazon SageMaker Unified Studio is available&lt;/a&gt;. To get started, see examples provided in &lt;a href=\"https://github.com/aws-ia/terraform-aws-sagemaker-unified-studio\"&gt;terraform-aws-sagemaker-unified-studio module&lt;/a&gt; on GitHub and the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/\"&gt;Amazon SageMaker Unified Studio documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-unified-studio-terraform/",
+      "publishedAt": "2026-07-02T21:49:00.000Z",
+      "updatedAt": "2026-07-02T21:49:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Analytics",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "SageMaker",
+        "Terraform"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "analytics",
+        "amazon sagemaker",
+        "sagemaker",
+        "terraform"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c3e9283f4f00c131",
+      "title": "Amazon EC2 X8i instances are now available in additional regions",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Asia Pacific (Seoul), Asia Pacific (Malaysia) and Asia Pacific (Tokyo) regions. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances. X8i instances are designed for memory",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Asia Pacific (Seoul), Asia Pacific (Malaysia) and Asia Pacific (Tokyo) regions. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances.&lt;br&gt; &lt;br&gt; X8i instances are designed for memory-intensive workloads like SAP HANA, large databases, data analytics, and Electronic Design Automation (EDA). Compared to X2i instances, X8i instances offer up to 50% higher SAPS performance, up to 47% faster PostgreSQL performance, 88% faster Memcached performance, and 46% faster AI inference performance. X8i instances come in 14 sizes, from large to 96xlarge, including two bare metal options.&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\"&gt;AWS Management Console&lt;/a&gt;. X8i instances can be purchased via Savings Plans, On-Demand instances, and Spot instances. For more information visit &lt;a href=\"https://aws.amazon.com/ec2/instance-types/x8i/\" target=\"_blank\"&gt;X8i instances page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-x8i-instances-ICN-KUL-NRT-region/",
+      "publishedAt": "2026-07-02T20:48:00.000Z",
+      "updatedAt": "2026-07-02T20:48:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ce9ed6b581ad0e7c",
+      "title": "Amazon EC2 Dedicated Hosts now support AMD SEV-SNP",
+      "description": "Amazon EC2 is announcing support for AMD Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) on Dedicated Hosts, enabling customers to run their confidential computing workloads on physical servers fully dedicated to their use. Customers can allocate a Dedicated Host with SEV-SNP enabled and launch SEV-SNP instances on it. This gives customers the benefits of Dedicated Hosts for confidential computing workloads, including control over instance placement, and host affinity that allows customers to deploy instances to the same physical server over time. The physical host is provisione",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 is announcing support for AMD Secure Encrypted Virtualization-Secure Nested Paging (SEV-SNP) on Dedicated Hosts, enabling customers to run their confidential computing workloads on physical servers fully dedicated to their use.&lt;br&gt; &lt;br&gt; Customers can allocate a Dedicated Host with SEV-SNP enabled and launch SEV-SNP instances on it. This gives customers the benefits of Dedicated Hosts for confidential computing workloads, including control over instance placement, and host affinity that allows customers to deploy instances to the same physical server over time. The physical host is provisioned with AMD security firmware during allocation, ensuring a customer’s confidential computing environment is up to date.&lt;br&gt; &lt;br&gt; Dedicated Host SEV-SNP is available in all AWS commercial Regions with AMD instances. To learn more, visit our &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/sev-snp.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/ec2-amd-sev-snp-dedicated-hosts",
+      "publishedAt": "2026-07-02T17:00:00.000Z",
+      "updatedAt": "2026-07-02T17:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "317666ecee1d2c0c",
+      "title": "Amazon SageMaker HyperPod now supports AMI versioning and auto-patching",
+      "description": "Amazon SageMaker HyperPod now gives you visibility into the Amazon Machine Image (AMI) versions running across your clusters and automatically applies security patches without disrupting your workloads. SageMaker HyperPod is purpose-built infrastructure for training and deploying foundation models at scale. Cluster administrators previously had limited insight into which AMI versions were running, making drift hard to detect and security patching a manual, reactive process that was difficult to run on long multi-day training jobs and that risked changing bundled software in the AMI such as NVI",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now gives you visibility into the Amazon Machine Image (AMI) versions running across your clusters and automatically applies security patches without disrupting your workloads. SageMaker HyperPod is purpose-built infrastructure for training and deploying foundation models at scale. Cluster administrators previously had limited insight into which AMI versions were running, making drift hard to detect and security patching a manual, reactive process that was difficult to run on long multi-day training jobs and that risked changing bundled software in the AMI such as NVIDIA drivers or CUDA. These new capabilities on HyperPod help you keep clusters secure and consistent while removing the operational burden of manual patching.&lt;/p&gt; \n&lt;p&gt;With AMI versioning, you can see the exact AMI version on every instance group and node in the semantic versioning (major.minor.patch) format, quickly detect version drift, and roll back to a previous version—including the prior NVIDIA driver, CUDA, and other software stack—using the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateClusterSoftware.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;UpdateClusterSoftware&lt;/a&gt; API. Auto-patching is an opt-in, per-instance-group capability that applies only backward-compatible security patches as nodes become idle, so your running workloads stay undisrupted and critical AI/ML packages such as NVIDIA driver, CUDA version, and operating system kernels are never upgraded to a different major or minor version; you can enable it through the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateCluster.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;CreateCluster&lt;/a&gt; or &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_UpdateCluster.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;UpdateCluster&lt;/a&gt; API. A new AMI support policy also publishes support timelines for different AMI versions after which HyperPod stops publishing security patches.&lt;/p&gt; \n&lt;p&gt;Both AMI versioning and auto-patching are available for HyperPod clusters orchestrated by Amazon EKS, in all AWS Regions where SageMaker HyperPod is supported. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-release-ami.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;HyperPod AMI management documentation&lt;/a&gt; and the new &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-ami-support-policy.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;HyperPod AMI support policy.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-hyperpod-ami-version-auto-patch",
+      "publishedAt": "2026-07-02T16:00:00.000Z",
+      "updatedAt": "2026-07-02T16:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b14fe1d23da71ad5",
+      "title": "AWS Config now supports 8 new resource types",
+      "description": "AWS Config now supports 8 additional AWS resource types across key services including Amazon API Gateway, Amazon EC2, and Amazon S3 Vectors. This expansion provides greater coverage over your AWS environment, enabling you to more effectively discover, assess, audit, and remediate an even broader range of resources. With this launch, if you have enabled recording for all resource types, then AWS Config will automatically track these new additions. The newly supported resource types are also available in Config rules and Config aggregators. You can now use AWS Config to monitor the following new",
+      "descriptionHtml": "&lt;p&gt;AWS Config now supports 8 additional AWS resource types across key services including Amazon API Gateway, Amazon EC2, and Amazon S3 Vectors. This expansion provides greater coverage over your AWS environment, enabling you to more effectively discover, assess, audit, and remediate an even broader range of resources.&lt;/p&gt; \n&lt;p&gt;With this launch, if you have enabled recording for all resource types, then AWS Config will automatically track these new additions. The newly supported resource types are also available in Config rules and Config aggregators.&lt;/p&gt; \n&lt;p&gt;You can now use AWS Config to monitor the following newly supported resource types in all &lt;a href=\"https://docs.aws.amazon.com/config/latest/developerguide/what-is-resource-config-coverage.html\" target=\"_blank\"&gt;AWS Regions&lt;/a&gt; where the resources are available:&lt;/p&gt; \n&lt;p&gt;Resource Types:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;AWS::ApiGateway::DomainNameV2&lt;/li&gt; \n &lt;li&gt;AWS::ApiGatewayV2::VpcLink&lt;/li&gt; \n &lt;li&gt;AWS::EC2::VPCEncryptionControl&lt;/li&gt; \n &lt;li&gt;AWS::NetworkFirewall::ContainerAssociation&lt;/li&gt; \n &lt;li&gt;AWS::OpenSearchServerless::SecurityPolicy&lt;/li&gt; \n &lt;li&gt;AWS::OSIS::Pipeline&lt;/li&gt; \n &lt;li&gt;AWS::S3Vectors::VectorBucket&lt;/li&gt; \n &lt;li&gt;AWS::S3Vectors::VectorBucketPolicy&lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-config-new-resource-types",
+      "publishedAt": "2026-07-02T15:00:00.000Z",
+      "updatedAt": "2026-07-02T15:00:00.000Z",
+      "categories": [
+        "AWS Config",
+        "Management And Governance"
+      ],
+      "services": [
+        "Config"
+      ],
+      "tags": [
+        "aws config",
+        "management and governance",
+        "config"
+      ],
+      "isNew": true
+    },
     {
       "id": "041eff7290596a9d",
       "title": "Amazon Bedrock AgentCore increases default runtime quota limits",
@@ -396,6 +508,28 @@
       "isNew": true
     },
     {
+      "id": "49c0727fdc5d5c08",
+      "title": "Amazon Connect Customer now supports rule based redaction for agent screen recording",
+      "description": "Amazon Connect Customer now lets you protect sensitive information in agent screen recordings by defining rules to redact specific applications or URLs. Agent screen recording helps supervisors identify coaching opportunities, such as non-compliance with business processes by allowing them to record agents' on-screen actions during voice calls, chats, and tasks. With this feature, you can create rules specifying which URLs or applications should be redacted from recorded content. When any rule condition is met, the system automatically redacts the matching content in the post-contact screen re",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now lets you protect sensitive information in agent screen recordings by defining rules to redact specific applications or URLs. Agent screen recording helps supervisors identify coaching opportunities, such as non-compliance with business processes by allowing them to record agents' on-screen actions during voice calls, chats, and tasks.&lt;br&gt; &lt;br&gt; With this feature, you can create rules specifying which URLs or applications should be redacted from recorded content. When any rule condition is met, the system automatically redacts the matching content in the post-contact screen recording.&lt;br&gt; &lt;br&gt; Rule-based redaction is available in all AWS Regions where Amazon Connect is currently offered and is supported on Windows operating systems. To learn more about, please visit the &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/agent-screen-recording.html\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/connect/contact-lens/\"&gt;webpage&lt;/a&gt;. For information about pricing, visit the &lt;a href=\"https://aws.amazon.com/connect/pricing/\"&gt;Amazon Connect pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/screen-recording-rule-based/",
+      "publishedAt": "2026-06-30T22:53:00.000Z",
+      "updatedAt": "2026-06-30T22:53:00.000Z",
+      "categories": [
+        "Applications",
+        "Amazon Connect"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "applications",
+        "amazon connect",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
       "id": "18c6f3f769527e54",
       "title": "Amazon CloudWatch Logs enriches log events with AWS resource tags",
       "description": "Amazon CloudWatch Logs now enriches log events with resource tags, making it easier to filter, search, and analyze logs by the metadata that matters most to your organization, such as team ownership, environment, cost center, or application name, without requiring changes to your logging instrumentation. With tag enrichment, Amazon CloudWatch Logs adds resource tags directly to your log events at ingestion time. You can immediately use tags in log queries, to scope your analysis without building custom pipelines or manually adding context to your application logs. For example, you can quickly ",
@@ -527,6 +661,32 @@
         "databases",
         "amazon neptune",
         "neptune"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b142d15398fdb657",
+      "title": "Amazon Connect Customer now supports assigning up to 7 security profiles with granular access controls per user",
+      "description": "Amazon Connect Customer now supports assigning up to 7 security profiles with granular access controls per user, increased from the previous limit of 2. This means an agent who serves multiple lines of business can now have a distinct, scoped permission set for each one, enforced through tag-based or heirarchy-based access controls. The increased limit gives you greater flexibility to match your security model directly to your organizational structure. For example, a financial services company with separate lines for credit cards, mortgages, auto loans, personal banking, investments, insurance",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now supports assigning up to 7 security profiles with granular access controls per user, increased from the previous limit of 2. This means an agent who serves multiple lines of business can now have a distinct, scoped permission set for each one, enforced through tag-based or heirarchy-based access controls. The increased limit gives you greater flexibility to match your security model directly to your organizational structure. For example, a financial services company with separate lines for credit cards, mortgages, auto loans, personal banking, investments, insurance, and fraud can now assign an agent seven security profiles, one per line of business, each granting access only to the resources tagged for that specific division. This ensures least privilege access without requiring a single overly broad profile.&lt;br&gt; &lt;br&gt; This feature is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS regions&lt;/a&gt; where Amazon Connect is offered. To learn more about estimated wait time see the &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/tag-based-access-control.html#tag-based-access-control-config-limitations\"&gt;Amazon Connect Administrator Guide&lt;/a&gt;. To learn more about Amazon Connect, the AWS cloud-based contact center, please visit the &lt;a href=\"https://aws.amazon.com/connect/\"&gt;Amazon Connect website&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/connect-7-security-profiles-user/",
+      "publishedAt": "2026-06-30T18:44:00.000Z",
+      "updatedAt": "2026-06-30T18:44:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Business Productivity",
+        "Contact Center",
+        "Amazon Connect"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "business productivity",
+        "contact center",
+        "amazon connect",
+        "connect"
       ],
       "isNew": true
     },
@@ -1079,7 +1239,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0d2e8dde11478881",
@@ -1101,7 +1261,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d4a3042f5e2912be",
@@ -1123,7 +1283,7 @@
         "amazon bedrock",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1f0357ec51b3b1e7",
@@ -1146,7 +1306,7 @@
         "aws network firewall",
         "security identity and compliance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "611a71b20c0b2e73",
@@ -1167,7 +1327,7 @@
         "artificial intelligence",
         "aws govcloud us"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b322f37428da78e5",
@@ -1189,7 +1349,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "989d195ce08e4c0e",
@@ -1211,7 +1371,7 @@
         "analytics",
         "redshift"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5f6753de9674aa79",
@@ -1230,7 +1390,7 @@
         "aws support",
         "aws govcloud us"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f1ca6f9091ad3d96",
@@ -1254,7 +1414,7 @@
         "s3",
         "backup"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "796f875c97246637",
@@ -1711,17 +1871,17 @@
       "publishedAt": "2026-06-23T03:30:00.000Z",
       "updatedAt": "2026-06-23T03:30:00.000Z",
       "categories": [
+        "AWS Govcloud Us",
         "Amazon Opensearch Service",
-        "Analytics",
-        "AWS Govcloud Us"
+        "Analytics"
       ],
       "services": [
         "OpenSearch"
       ],
       "tags": [
+        "aws govcloud us",
         "amazon opensearch service",
         "analytics",
-        "aws govcloud us",
         "opensearch"
       ],
       "isNew": false
@@ -10914,167 +11074,6 @@
         "amazon cloudwatch",
         "management and governance",
         "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6e8d0d875c2addff",
-      "title": "OpenSearch UI supports cross-region data access to OpenSearch domains",
-      "description": "Amazon OpenSearch Service now supports cross-region data access for OpenSearch UI, enabling users to access OpenSearch domains hosted in different AWS Regions from within a single OpenSearch UI application. Combined with the cross-account data access launch earlier this year, you can now query or build dashboards on OpenSearch domains in flexible combinations of accounts and Regions - without switching endpoints or replicating data. Cross-region data access is available for OpenSearch domains hosted in both public and Virtual Private Cloud (VPC) configurations. With cross-region data access, t",
-      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now supports cross-region data access for OpenSearch UI, enabling users to access OpenSearch domains hosted in different AWS Regions from within a single OpenSearch UI application. Combined with the &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/application-cross-account-data-access-domains.html\"&gt;cross-account data access&lt;/a&gt; launch earlier this year, you can now query or build dashboards on OpenSearch domains in flexible combinations of accounts and Regions - without switching endpoints or replicating data. Cross-region data access is available for OpenSearch domains hosted in both public and Virtual Private Cloud (VPC) configurations.&lt;br&gt; &lt;br&gt; With cross-region data access, teams can build centralized analytics, search, and observability workflows across globally distributed deployments while keeping data in place - meeting data residency requirements, minimizing inter-region egress, and preserving each Region’s latency and availability characteristics. If you are using cross-cluster replication, you can now query both your primary and replica domains directly from a single OpenSearch UI application. Cross-region data access can be combined with cross-account data access, so a single OpenSearch UI application can connect to domains in different accounts, different Regions, or both. Cross-region data access supports both IAM and IAM Identity Center for end-user authentication.&lt;br&gt; &lt;br&gt; Cross-region data access to OpenSearch domains is available in all AWS Regions where OpenSearch UI is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/application-cross-region-data-access-domains.html\"&gt;Cross-region data access to OpenSearch domains&lt;/a&gt; in the Amazon OpenSearch Service Developer Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/opensearch-ui-cross-region-data-access-domains/",
-      "publishedAt": "2026-05-01T20:54:00.000Z",
-      "updatedAt": "2026-05-01T20:54:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Opensearch Service"
-      ],
-      "services": [
-        "OpenSearch"
-      ],
-      "tags": [
-        "analytics",
-        "amazon opensearch service",
-        "opensearch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9d5f021ab086bb1d",
-      "title": "Amazon CloudFront Announces WebSocket Support for VPC Origins",
-      "description": "Amazon CloudFront now supports WebSockets traffic through Virtual Private Cloud (VPC) origins, enabling you to use CloudFront as the single entry point for real-time applications hosted entirely in private subnets. WebSockets support extends VPC origins to applications that require persistent, bidirectional connections between clients and servers, such as chat platforms, collaborative editing tools, live dashboards, and IoT device management systems. Previously, customers running real-time applications over WebSockets had to keep their origins in public subnets and use Access Control Lists and",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudFront now supports WebSockets traffic through Virtual Private Cloud (VPC) origins, enabling you to use CloudFront as the single entry point for real-time applications hosted entirely in private subnets. WebSockets support extends VPC origins to applications that require persistent, bidirectional connections between clients and servers, such as chat platforms, collaborative editing tools, live dashboards, and IoT device management systems.&lt;br&gt; &lt;br&gt; Previously, customers running real-time applications over WebSockets had to keep their origins in public subnets and use Access Control Lists and other mechanisms to restrict access to their WebSockets-enabled servers. Customers had to spend ongoing effort to implement and maintain these solutions. Now, customers can place their Application Load Balancers (ALB), Network Load Balancers (NLB), and EC2 instances serving WebSockets traffic in private subnets accessible only through their CloudFront distributions. CloudFront serves as the single front door for both traditional HTTP traffic and real-time WebSockets connections, reducing attack surface, simplifying security management, and providing built-in DDoS protection.&lt;br&gt; &lt;br&gt; WebSockets support for VPC origins is available in all AWS Commercial Regions where VPC origins is supported. There is no additional cost for WebSockets traffic through VPC origins. To learn more, visit&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-vpc-origins.html\"&gt;CloudFront VPC origins&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-cloudfront-websockets-vpc-origins/",
-      "publishedAt": "2026-05-01T19:30:00.000Z",
-      "updatedAt": "2026-05-01T19:30:00.000Z",
-      "categories": [
-        "Networking And Content Delivery",
-        "Amazon Cloudfront"
-      ],
-      "services": [
-        "VPC",
-        "CloudFront"
-      ],
-      "tags": [
-        "networking and content delivery",
-        "amazon cloudfront",
-        "vpc",
-        "cloudfront"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "34b91828b6791260",
-      "title": "General availability of AWS for SAP MCP Server in Amazon Bedrock AgentCore",
-      "description": "Today, we're announcing the General Availability of the AWS for SAP MCP Server on Amazon Bedrock AgentCore, purpose-built to connect AI agents directly to SAP ERP systems, securely and at scale. Built on the Model Context Protocol (MCP) and SAP's Open Data Protocol (OData) standards, this solution addresses the challenge of making SAP business data and processes accessible to AI agents while maintaining enterprise-grade security and comprehensive Observability. Organizations running SAP systems can now empower their AI agents to interact with various SAP processes including finance, procuremen",
-      "descriptionHtml": "&lt;p&gt;Today, we're announcing the General Availability of the &lt;b&gt;AWS for SAP MCP Server on Amazon Bedrock AgentCore, &lt;/b&gt;purpose-built to connect AI agents directly to SAP ERP systems, securely and at scale. Built on the Model Context Protocol (MCP) and SAP's Open Data Protocol (OData) standards, this solution addresses the challenge of making SAP business data and processes accessible to AI agents while maintaining enterprise-grade security and comprehensive Observability. Organizations running SAP systems can now empower their AI agents to interact with various SAP processes including finance, procurement, logistics, and supply chain operations.&lt;br&gt; &lt;br&gt; By leveraging SAP ERP business data, the AWS for SAP MCP Server enables AI agents to create, read, update, and delete SAP business objects such as sales orders, purchase orders, materials, and finance documents. Deployed on the fully managed Amazon Bedrock AgentCore Runtime, the server handles session isolation, private connectivity, and dual-layer authentication through AgentCore Identity with support for OAuth 2.0. Key capabilities include dynamic service catalog discovery, telemetry through CloudWatch for complete visibility into agent actions, and flexible connectivity options for SAP S/4 HANA and SAP ECC.&lt;br&gt; &lt;br&gt; Organizations can deploy the AWS for SAP MCP Server in minutes using CloudFormation templates with no infrastructure management required. The AWS for SAP MCP server works seamlessly with MCP clients like Amazon Quick, Strands SDK based custom agents, and SAP Joule, and ships as a container image at no cost.&lt;br&gt; &lt;br&gt; Early adopters including customers like Fortescue, Harman International, and PLDT are already demonstrating the transformative potential of the AWS for SAP MCP Server, by using it to orchestrate enterprise-scale AI integration, modernize test management, automate Procure-to-Pay workflows at scale and more. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/mcp-sap/latest/awsforsapmcp/introduction.html\"&gt;AWS for SAP MCP Server documentation page&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-sap-mcp-amazon-bedrock/",
-      "publishedAt": "2026-05-01T16:44:00.000Z",
-      "updatedAt": "2026-05-01T16:44:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d2824a160adb406b",
-      "title": "IAM Roles Anywhere now enforces VPC endpoint policies for the CreateSession API",
-      "description": "AWS Identity and Access Management (IAM) Roles Anywhere now provides the capability to configure Virtual Private Cloud (VPC) endpoint policies for the IAM Roles Anywhere CreateSession API. You can update your VPC endpoint policies to allow or deny the CreateSession operation. If CreateSession is not explicitly included in the Allow statement of your VPC endpoint policy or if you don’t allow all operations (for example, by specifying “rolesanywhere:*“ as the action), IAM Roles Anywhere will not return temporary AWS credentials for requests made through your VPC endpoint. The CreateSession API e",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/iam/roles-anywhere/\"&gt;AWS Identity and Access Management (IAM) Roles Anywhere&lt;/a&gt; now provides the capability to configure Virtual Private Cloud (VPC) endpoint policies for the IAM Roles Anywhere CreateSession API. You can update your VPC endpoint policies to allow or deny the CreateSession operation. If CreateSession is not explicitly included in the Allow statement of your VPC endpoint policy or if you don’t allow all operations (for example, by specifying “rolesanywhere:*“ as the action), IAM Roles Anywhere will not return temporary AWS credentials for requests made through your VPC endpoint.&lt;br&gt; &lt;br&gt; The CreateSession API enables workloads running outside of AWS to obtain temporary AWS credentials using X.509 certificates to access AWS resources. Previously, VPC endpoint policies applied to all IAM Roles Anywhere API operations except CreateSession. This launch closes that gap, giving you consistent, fine-grained access control across all IAM Roles Anywhere API operations.&lt;br&gt; &lt;br&gt; This feature is available in all &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/rolesanywhere.html\"&gt;AWS Regions&lt;/a&gt; where IAM Roles Anywhere is available, including the AWS GovCloud (US) Regions, AWS European Sovereign Cloud (Germany) Region, and China Regions. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/rolesanywhere/latest/userguide/vpc-interface-endpoints.html\"&gt;IAM Roles Anywhere User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/iam-roles-anywhere-vpc/",
-      "publishedAt": "2026-05-01T16:00:00.000Z",
-      "updatedAt": "2026-05-01T16:00:00.000Z",
-      "categories": [
-        "AWS Iam",
-        "Security Identity And Compliance"
-      ],
-      "services": [
-        "VPC",
-        "IAM"
-      ],
-      "tags": [
-        "aws iam",
-        "security identity and compliance",
-        "vpc",
-        "iam"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "bb8781c5f31f6d49",
-      "title": "Amazon Redshift Introduces Concurrency Scaling Support for auto-copy and zero-ETL",
-      "description": "Amazon Redshift announces the general availability of Amazon Redshift concurrency scaling support for Amazon Redshift auto-copy and zero-ETL , enhancing the performance of data ingestion. This new feature combines the power of auto-copy's seamless data ingestion from Amazon S3 and zero-ETL's near real-time data replication from operational database, transactional database, and applications with the elasticity of concurrency scaling. The enhancement delivers benefits for high-volume, time-sensitive data operations. Auto-copy monitors S3 buckets and loads new data files automatically, while zero",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/redshift/\"&gt;Amazon Redshift &lt;/a&gt;announces the general availability of Amazon Redshift &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/dg/concurrency-scaling.html\"&gt;concurrency scaling&lt;/a&gt; support for Amazon Redshift &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/dg/r_COPY-JOB.html\"&gt;auto-copy&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/zero-etl-using.html\"&gt;zero-ETL&lt;/a&gt;, enhancing the performance of data ingestion. This new feature combines the power of auto-copy's seamless data ingestion from Amazon S3 and zero-ETL's near real-time data replication from operational database, transactional database, and applications with the elasticity of concurrency scaling.&lt;br&gt; &lt;br&gt; The enhancement delivers benefits for high-volume, time-sensitive data operations. Auto-copy monitors S3 buckets and loads new data files automatically, while zero-ETL replicates data from operational and transactional databases in near real-time. When enabled, concurrency scaling adds compute capacity automatically to handle increased read and write queries, ensuring faster data ingestion without compromising performance during peak periods.&lt;br&gt; &lt;br&gt; This new enhancement is available in all AWS commercial regions and AWS GovCloud (US) regions where Amazon Redshift is available for Amazon Redshift Serverless and RA3 Provisioned data warehouses. You can implement this feature immediately to optimize their data ingestion workflows.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/concurrency-scaling-auto-copy-zero-ETL/",
-      "publishedAt": "2026-05-01T15:00:00.000Z",
-      "updatedAt": "2026-05-01T15:00:00.000Z",
-      "categories": [
-        "Database And Data Warehouse",
-        "Marketing:Marchitecture",
-        "Amazon Redshift",
-        "Analytics"
-      ],
-      "services": [
-        "Redshift"
-      ],
-      "tags": [
-        "database and data warehouse",
-        "marketing:marchitecture",
-        "amazon redshift",
-        "analytics",
-        "redshift"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "dc153e30b37f8f2a",
-      "title": "AWS Transform now offers BI migration agents for Power BI and Tableau to Amazon Quick",
-      "description": "AWS Transform customers can now use BI migration agents to convert Tableau and Power BI dashboards to Amazon Quick Sight (BI capability of Amazon Quick) assets, helping reduce migration effort from months to days. These agents are built by Wavicle Data Solutions , an AWS Advanced Consulting Partner, leveraging the AWS Transform initiative to create differentiated transformation solutions by integrating specialized agents, tools, knowledge bases, and workflow with AWS Transform’s agentic AI capabilities. Four agents are available for purchase through AWS Marketplace: one Analyzer agent and one ",
-      "descriptionHtml": "&lt;p&gt;AWS Transform&amp;nbsp;customers can&amp;nbsp;now&amp;nbsp;use&amp;nbsp;BI migration agents to&amp;nbsp;convert Tableau and Power BI dashboards to Amazon Quick Sight&amp;nbsp;(BI capability of Amazon Quick)&amp;nbsp;assets,&amp;nbsp;helping&amp;nbsp;reduce&amp;nbsp;migration effort from months to days.&amp;nbsp;These agents are&amp;nbsp;built&amp;nbsp;by&amp;nbsp;&lt;a href=\"https://wavicledata.com/bi-migration-aws-transform/?utm_campaign=42551559-2026%20Q2%20AWS%20Transform&amp;amp;utm_source=AWS%20What%27s%20New%20Post\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Wavicle Data Solutions&lt;/a&gt;, an AWS Advanced Consulting Partner,&amp;nbsp;leveraging&amp;nbsp;the&amp;nbsp;AWS Transform&amp;nbsp;initiative to create differentiated transformation solutions by integrating specialized agents, tools, knowledge bases, and workflow with AWS Transform’s agentic AI capabilities.&amp;nbsp;Four agents&amp;nbsp;are available&amp;nbsp;for purchase through AWS Marketplace:&amp;nbsp;one&amp;nbsp;Analyzer&amp;nbsp;agent&amp;nbsp;and&amp;nbsp;one&amp;nbsp;Converter&amp;nbsp;agent for&amp;nbsp;each BI migration source (Power BI&amp;nbsp;and&amp;nbsp;Tableau).&lt;/p&gt; \n&lt;p&gt;AWS Transform is a collaborative enterprise IT transformation workbench powered by expert agents, agentic AI systems, and continuous learning that accelerates cloud migration, legacy app modernization, and tech debt reduction.&amp;nbsp;These&amp;nbsp;new BI migration agents are embedded into the AWS Transform workflow and use a chat-based interface to assess your source dashboards for migration readiness, then convert them – rebuilding datasets, calculated fields, visualizations,&amp;nbsp;and&amp;nbsp;filters in&amp;nbsp;Amazon Quick Sight.&amp;nbsp;All processing runs within your AWS account; no data leaves your environment. After conversion, your Amazon Quick administrators assign dashboard ownership to BI authors for validation and publishing. Once migrated, your teams can take advantage of Amazon Quick's AI-powered workflows, including natural-language business questions, automated research, and data-driven actions.&lt;/p&gt; \n&lt;p&gt;The BI migration agents are available through AWS Marketplace in&amp;nbsp;US&amp;nbsp;East&amp;nbsp;(N. Virginia). They support Quick Sight asset creation in all&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/quicksight.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;commercial regions where Amazon Quick Sight is available&lt;/a&gt;.&amp;nbsp;To get started, subscribe&amp;nbsp;through&amp;nbsp;AWS Marketplace (&lt;a href=\"https://aws.amazon.com/marketplace/pp/prodview-p7sor3iihijpg?sr=0-5&amp;amp;ref_=beagle&amp;amp;applicationId=AWSMPContessa&amp;amp;utm_campaign=42551559-2026%20Q2%20AWS%20Transform&amp;amp;utm_source=AWS%20Transform%20-%20EZConvertBI%20-%20Power%20BI%20to%20Quick%20Sight&amp;amp;utm_medium=AWS%20Marketplace%20Page\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Power BI&lt;/a&gt; or &lt;a href=\"https://aws.amazon.com/marketplace/pp/prodview-dkpskx3mnmk6m?sr=0-4&amp;amp;ref_=beagle&amp;amp;applicationId=AWSMPContessa&amp;amp;utm_campaign=42551559-2026%20Q2%20AWS%20Transform&amp;amp;utm_source=AWS%20Transform%20-%20EZConvertBI%20-%20Tableau%20to%20Quick%20Sight&amp;amp;utm_medium=AWS%20Marketplace%20Page\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Tableau&lt;/a&gt;) or&amp;nbsp;contact your AWS account team&amp;nbsp;to explore available programs for free&amp;nbsp;or discounted&amp;nbsp;Amazon Quick migrations. Read more in this&amp;nbsp;&lt;a href=\"https://aws.amazon.com/blogs/machine-learning/aws-transform-now-automates-bi-migration-to-amazon-quick-in-days/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;blog post&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/quick-bi-migration/",
-      "publishedAt": "2026-05-01T15:00:00.000Z",
-      "updatedAt": "2026-05-01T15:00:00.000Z",
-      "categories": [
-        "Amazon Quicksight",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "QuickSight"
-      ],
-      "tags": [
-        "amazon quicksight",
-        "artificial intelligence",
-        "quicksight"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "dd64fc9fb83cdb97",
-      "title": "Spatial Data Management on AWS adds custom transformations",
-      "description": "Spatial Data Management on AWS (SDMA) now supports custom transformation connectors and a unified desktop client installer. Custom transformation connectors let you run compute-intensive processing — such as format conversion, 3D rendering, image tiling, or metadata extraction — by submitting jobs to AWS Deadline Cloud using Open Job Description templates. You can extend SDMA's built-in content analysis with custom logic to verify formats, extract attributes, or run transformations that require dedicated compute resources. Connectors run in isolated compute environments and automatically inges",
-      "descriptionHtml": "&lt;p&gt;Spatial Data Management on AWS (SDMA) now supports custom transformation connectors and a unified desktop client installer. Custom transformation connectors let you run compute-intensive processing — such as format conversion, 3D rendering, image tiling, or metadata extraction — by submitting jobs to AWS Deadline Cloud using Open Job Description templates. You can extend SDMA's built-in content analysis with custom logic to verify formats, extract attributes, or run transformations that require dedicated compute resources.&lt;/p&gt; \n&lt;p&gt;Connectors run in isolated compute environments and automatically ingest declared outputs back into SDMA's governed asset repository, enabling you to automate and chain processing workloads across your spatial data pipeline. The SDMA desktop application now includes a standalone installer that bundles all required dependencies, removing the need to separately install the CLI or other components.&lt;/p&gt; \n&lt;p&gt;These features are available in the following AWS Regions: Asia Pacific (Tokyo, Singapore, Sydney), Europe (Frankfurt, Ireland, London), US East (N. Virginia, Ohio), and US West (Oregon). To learn more, visit the SDMA &lt;a href=\"https://aws.amazon.com/solutions/implementations/spatial-data-management-on-aws/\"&gt;solutions library&amp;nbsp;product&amp;nbsp;page&lt;/a&gt;. For technical details, see the &lt;a href=\"https://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/connectors-overview.html\"&gt;SDMA documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/spatial-data-management-aws/",
-      "publishedAt": "2026-05-01T14:35:00.000Z",
-      "updatedAt": "2026-05-01T14:35:00.000Z",
-      "categories": [
-        "AWS Solution",
-        "Storage",
-        "Compute"
-      ],
-      "services": [],
-      "tags": [
-        "aws solution",
-        "storage",
-        "compute"
       ],
       "isNew": false
     }
