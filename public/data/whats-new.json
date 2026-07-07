@@ -1,7 +1,185 @@
 {
-  "lastUpdated": "2026-07-06T09:26:47.988Z",
+  "lastUpdated": "2026-07-07T09:11:51.107Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "9fab7112307359b6",
+      "title": "Amazon SageMaker HyperPod now supports disaggregated prefill and decode",
+      "description": "Amazon SageMaker HyperPod now supports Disaggregated Prefill and Decode (DPD), an inference optimization that separates the two phases of large language model (LLM) inference — prefill and decode — onto dedicated GPU pools and transfers the key-value (KV) cache between them over Elastic Fabric Adapter (EFA) using GPU-Direct RDMA. Customers running LLMs in production for chat assistants, agentic pipelines, retrieval-augmented generation, and long-document analysis need consistent per-token latency and predictable throughput under mixed traffic, but when prefill and decode share the same GPU, a ",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports Disaggregated Prefill and Decode (DPD), an inference optimization that separates the two phases of large language model (LLM) inference — prefill and decode — onto dedicated GPU pools and transfers the key-value (KV) cache between them over Elastic Fabric Adapter (EFA) using GPU-Direct RDMA. Customers running LLMs in production for chat assistants, agentic pipelines, retrieval-augmented generation, and long-document analysis need consistent per-token latency and predictable throughput under mixed traffic, but when prefill and decode share the same GPU, a single long-context request can stall token generation for every concurrent request and force customers to over-provision one phase to protect the other.&lt;br&gt; &lt;br&gt; With DPD, customers run compute-bound prefill on one set of GPUs and memory-bandwidth-bound decode on another, so the two phases no longer contend for the same resources. This delivers more consistent per-token latency under sustained concurrency, higher goodput at strict latency SLOs, and the ability to scale prefill and decode capacity independently to match the input and output distribution of the workload. An intelligent router automatically directs long-context requests through the disaggregated path and sends shorter prompts directly to the decoder, so customers get the benefit on the traffic that needs it without paying transfer overhead on short prompts. Customers enable DPD by adding a `pdSpec` section to the same `InferenceEndpointConfig` custom resource they already use for inference endpoints on the HyperPod Inference Operator, and DPD is composable with the existing KV cache offloading and intelligent routing features on HyperPod.&lt;br&gt; &lt;br&gt; DPD is available for SageMaker HyperPod clusters using the EKS orchestrator on EFA-capable instance types in all AWS Regions where Amazon SageMaker HyperPod is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-model-deployment-dpd.html\"&gt;Disaggregated Prefill and Decode for HyperPod inference&lt;/a&gt;&amp;nbsp;in the Amazon SageMaker AI Developer Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/7/amazon-sagemaker-hyperpod-dpd/",
+      "publishedAt": "2026-07-06T21:29:00.000Z",
+      "updatedAt": "2026-07-06T21:29:00.000Z",
+      "categories": [
+        "Compute",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "compute",
+        "artificial intelligence",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1ed683afa1f4a341",
+      "title": "Amazon Cognito now supports self-service provisioned API rate limits",
+      "description": "Amazon Cognito now allows you to increase or decrease your provisioned API rate limits on demand. Cognito has default rate limits for the maximum number of operations per second that you can perform in your user pools in each AWS Region, and you can purchase additional limits on adjustable API categories. With the new on-demand model, you can adjust your rate limits up or down more quickly to match your application’s traffic patterns. Previously, to adjust your Cognito API rate limits, you would request an increase through Service Quotas, where requests are manually reviewed. This meant you ha",
+      "descriptionHtml": "&lt;p&gt;Amazon Cognito now allows you to increase or decrease your provisioned API rate limits on demand. Cognito has default rate limits for the maximum number of operations per second that you can perform in your user pools in each AWS Region, and you can purchase additional limits on adjustable API categories. With the new on-demand model, you can adjust your rate limits up or down more quickly to match your application’s traffic patterns.&lt;br&gt; &lt;br&gt; Previously, to adjust your Cognito API rate limits, you would request an increase through Service Quotas, where requests are manually reviewed. This meant you had to plan rate limits in advance ahead of anticipated traffic spikes. Now, you have a new self-service experience to set your desired Cognito rate limit up to the account-level max limit using the Amazon Cognito console or the new limit provisioning API operations. Rate limit changes take effect immediately.&lt;br&gt; &lt;br&gt; Self-service provisioned limits are available for &lt;a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/quotas.html#category_operations\"&gt;adjustable API categories&lt;/a&gt; in all AWS Regions where Amazon Cognito is available. For pricing details of this add-on feature, see Amazon Cognito &lt;a href=\"https://aws.amazon.com/cognito/pricing/\"&gt;pricing page&lt;/a&gt;. To get started, see &lt;a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/quotas.html\"&gt;developer guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/cognito-provisioned-limits",
+      "publishedAt": "2026-07-06T21:00:00.000Z",
+      "updatedAt": "2026-07-06T21:00:00.000Z",
+      "categories": [
+        "Amazon Cognito",
+        "Security Identity And Compliance"
+      ],
+      "services": [
+        "Cognito"
+      ],
+      "tags": [
+        "amazon cognito",
+        "security identity and compliance",
+        "cognito"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6bbe2b5f138e86f7",
+      "title": "Amazon SageMaker Studio now integrates with Hugging Face for one-click model deployment and customization",
+      "description": "Amazon SageMaker Studio now supports direct integration from Hugging Face, letting you go from discovering a model to working with it inside a fully configured Studio environment in a single click. Select any supported model on Hugging Face and choose \"Customize on SageMaker AI\" or \"Deploy on SageMaker AI\" to land directly on the corresponding workflow page with the model pre-loaded and ready to use. Previously, getting from model discovery to a working environment required navigating the AWS Console to find SageMaker AI, configuring an environment, setting up IAM permissions for serverless mo",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Studio now supports direct integration from Hugging Face, letting you go from discovering a model to working with it inside a fully configured Studio environment in a single click. Select any supported model on Hugging Face and choose \"Customize on SageMaker AI\" or \"Deploy on SageMaker AI\" to land directly on the corresponding workflow page with the model pre-loaded and ready to use.&lt;/p&gt; \n&lt;p&gt;Previously, getting from model discovery to a working environment required navigating the AWS Console to find SageMaker AI, configuring an environment, setting up IAM permissions for serverless model customization, and in many cases requesting GPU quota increases through Service Quotas before running a first job. Now, new customers complete a standard AWS sign-up and receive a SageMaker Studio environment created in seconds with pre-configured permissions for serverless model customization jobs including fine-tuning with custom reward functions for reinforcement learning, model evaluation, and deployment to SageMaker or Bedrock endpoints. Verified customers receive default GPU access to G5, G6, and G4dn instances across endpoint deployments, training jobs, and notebooks without requesting quota increases, and quota limit and utilization information is visible for each instance type directly inside the Studio environment. Returning customers signing in from Hugging Face or SageMaker product pages select their environment and land directly inside SageMaker Studio with the model ready to use.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Commercial Regions where Amazon SageMaker Studio is supported. To get started, visit any supported model on &lt;a href=\"https://huggingface.co/models\"&gt;Hugging Face&lt;/a&gt; and select \"Customize on SageMaker AI\" or \"Deploy on SageMaker AI,\" or click Get Started from the &lt;a href=\"https://aws.amazon.com/sagemaker/ai/studio/\"&gt;SageMaker Studio&lt;/a&gt; page. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-launch.html\"&gt;Service quotas for Studio&lt;/a&gt;&amp;nbsp;in the Amazon SageMaker documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/sagemaker-studio-hugging-face-integration/",
+      "publishedAt": "2026-07-06T20:30:00.000Z",
+      "updatedAt": "2026-07-06T20:30:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Sagemaker",
+        "Amazon Sagemaker Training",
+        "Amazon Sagemaker Studio",
+        "Amazon Sagemaker Deploy",
+        "Aiml",
+        "Amazon Sagemaker Jumpstart"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon sagemaker",
+        "amazon sagemaker training",
+        "amazon sagemaker studio",
+        "amazon sagemaker deploy",
+        "aiml",
+        "amazon sagemaker jumpstart",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "10319541e5353ea3",
+      "title": "Amazon EVS VCF 9.0 and 9.1 support",
+      "description": "Today, we are announcing that Amazon Elastic VMware Service (EVS) now supports VMware Cloud Foundation (VCF) 9.0 and 9.1. Amazon EVS lets you run the latest VCF software directly within your Amazon Virtual Private Cloud (VPC) on EC2 bare-metal instances. With this latest announcement, you now have complete control of the installation, operations, and management of the VMware virtualization solution running the VCF 9.0 and recently released VCF 9.1 versions. You can continue to use the same tools, processes, and skills on Amazon EVS that you use in your data center today, managing your VCF envi",
+      "descriptionHtml": "&lt;p&gt;Today, we are announcing that Amazon Elastic VMware Service (EVS) now supports VMware Cloud Foundation (VCF) 9.0 and 9.1.&lt;/p&gt; \n&lt;p&gt;Amazon EVS lets you run the latest VCF software directly within your Amazon Virtual Private Cloud (VPC) on EC2 bare-metal instances. With this latest announcement, you now have complete control of the installation, operations, and management of the VMware virtualization solution running the VCF 9.0 and recently released VCF 9.1 versions. You can continue to use the same tools, processes, and skills on Amazon EVS that you use in your data center today, managing your VCF environment yourself or with an experienced AWS partner. With this, we’re also launching the &lt;a href=\"https://github.com/aws/solutions-for-amazon-evs\"&gt;Solutions for EVS GitHub repository&lt;/a&gt; with examples, templates, and infrastructure as code artifacts to help you get started.&lt;/p&gt; \n&lt;p&gt;This release is available in all regions where Amazon EVS is offered.&lt;/p&gt; \n&lt;p&gt;For more details, visit the &lt;a href=\"https://aws.amazon.com/blogs/migration-and-modernization/vmware-cloud-foundation-vcf-9-0-and-9-1-on-amazon-evs/\"&gt;launch blog&lt;/a&gt;, the Amazon EVS &lt;a href=\"https://aws.amazon.com/evs/\"&gt;product detail page&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/evs/latest/userguide/what-is-evs.html\"&gt;user guide.&lt;/a&gt;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-evs-vcf9",
+      "publishedAt": "2026-07-06T17:29:00.000Z",
+      "updatedAt": "2026-07-06T17:29:00.000Z",
+      "categories": [
+        "Compute",
+        "Migration"
+      ],
+      "services": [],
+      "tags": [
+        "compute",
+        "migration"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "47724cee9b9e6431",
+      "title": "AWS Certificate Manager now supports the ACME protocol for public certificates",
+      "description": "AWS Certificate Manager (ACM) now allows you to provision a fully managed ACME server endpoint that issues public TLS certificates with a 45 day validity from Amazon Trust Services using any ACMEv2-compatible client, including Certbot, cert-manager for Kubernetes, and acme.sh. With the CA/Browser Forum mandating 47-day certificate lifetimes by 2029, manual management of public certificates becomes untenable. ACME support in ACM gives developers a standards-based path to fully automate certificate issuance and renewal. PKI administrators can create managed ACME endpoints with centralized govern",
+      "descriptionHtml": "&lt;p&gt;AWS Certificate Manager (ACM) now allows you to provision a fully managed ACME server endpoint that issues public TLS certificates with a 45 day validity from &lt;a href=\"https://www.amazontrust.com/repository\"&gt;Amazon Trust Services&lt;/a&gt; using any ACMEv2-compatible client, including Certbot, cert-manager for Kubernetes, and acme.sh. With the CA/Browser Forum mandating 47-day certificate lifetimes by 2029, manual management of public certificates becomes untenable. ACME support in ACM gives developers a standards-based path to fully automate certificate issuance and renewal.&lt;br&gt; &lt;br&gt; PKI administrators can create managed ACME endpoints with centralized governance controls: define domain scopes to restrict which certificates each client can issue, enforce policies on wildcard usage, and delegate certificate requests to application teams without distributing DNS credentials. Domain validation is performed once at the endpoint level, while application owners use standard ACME clients to request certificates. All activity is visible in the ACM console with AWS CloudTrail logging and Amazon CloudWatch metrics for auditability.&lt;br&gt; &lt;br&gt; ACME support in ACM is available in all commercial AWS Regions. For pricing details, see the &lt;a href=\"https://aws.amazon.com/certificate-manager/pricing/\"&gt;ACM pricing page&lt;/a&gt;. To get started, visit the &lt;a href=\"https://aws.amazon.com/blogs/aws/automate-public-tls-certificate-issuance-with-acme-support-in-aws-certificate-manager/\"&gt;AWS News blog post&lt;/a&gt; or read the &lt;a href=\"https://docs.aws.amazon.com/acm/latest/userguide/acm-acme.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-certificate-manager-acme/",
+      "publishedAt": "2026-07-06T15:00:00.000Z",
+      "updatedAt": "2026-07-06T15:00:00.000Z",
+      "categories": [
+        "AWS Certificate Manager",
+        "Security Identity And Compliance",
+        "Networking And Content Delivery"
+      ],
+      "services": [
+        "Certificate Manager"
+      ],
+      "tags": [
+        "aws certificate manager",
+        "security identity and compliance",
+        "networking and content delivery",
+        "certificate manager"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3f339f3070b360d6",
+      "title": "CloudWatch Application Signals now automatically captures errors, performance anomalies, and deployment events",
+      "description": "Today, AWS announces Service Events for Amazon CloudWatch Application Signals, which automatically captures exception and latency event snapshots, function-level performance data, and deployment events from instrumented services without additional code changes. Customers can now quickly identify whether a deployment has introduced new exceptions by navigating to CloudWatch > Application Signals > [Service] > Errors in the CloudWatch console. Service Events is available to any application with CloudWatch Application Signals enabled. Customers instrument their applications with the ADOT SDKs or ",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces Service Events for Amazon CloudWatch Application Signals, which automatically captures exception and latency event snapshots, function-level performance data, and deployment events from instrumented services without additional code changes. Customers can now quickly identify whether a deployment has introduced new exceptions by navigating to CloudWatch &amp;gt; Application Signals &amp;gt; [Service] &amp;gt; Errors in the CloudWatch console.&lt;/p&gt; \n&lt;p&gt;Service Events is available to any application with CloudWatch Application Signals enabled. Customers instrument their applications with the ADOT SDKs or the Amazon CloudWatch Observability EKS add-on. Once Application Signals is active, Service Events begins capturing exception and latency event snapshots and deployment events automatically. Optionally, customers can gain deeper performance visibility by turning on function-call metrics.&lt;/p&gt; \n&lt;p&gt;Service Events is available in all commercial AWS Regions. Supported languages are Java, Python, and JavaScript.&lt;/p&gt; \n&lt;p&gt;To get started, see &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Signals-ServiceEvents.html\"&gt;Monitor service events&lt;/a&gt; in the &lt;i&gt;Amazon CloudWatch User Guide&lt;/i&gt;. Service Events data is captured as logs. Function call metrics are captured as OpenTelemetry metrics. Standard CloudWatch pricing applies. For details, see &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;CloudWatch pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/cloudwatch-service-events/",
+      "publishedAt": "2026-07-06T15:00:00.000Z",
+      "updatedAt": "2026-07-06T15:00:00.000Z",
+      "categories": [
+        "Management And Governance"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "management and governance",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8aeff2f70e850bf3",
+      "title": "AWS CodePipeline now available in Asia Pacific (New Zealand) region",
+      "description": "Starting today, AWS CodePipeline is now available in Asia Pacific (New Zealand) Region (ap-southeast-6). AWS CodePipeline is a continuous delivery service that enables you to model, visualize, and automate the steps required to release your software. With CodePipeline, you model the full release process for building your code, deploying to pre-production environments, testing your application and releasing it to production. CodePipeline then builds, tests, and deploys your application according to the defined workflow every time there is a code change. You can integrate partner tools and your ",
+      "descriptionHtml": "&lt;p data-region-mapper-last-set=\"1783339767742\" style=\"pointer-events: auto !important;\"&gt;Starting today, AWS CodePipeline is now available in Asia Pacific (New Zealand) Region (ap-southeast-6). AWS CodePipeline is a continuous delivery service that enables you to model, visualize, and automate the steps required to release your software. With CodePipeline, you model the full release process for building your code, deploying to pre-production environments, testing your application and releasing it to production. CodePipeline then builds, tests, and deploys your application according to the defined workflow every time there is a code change. You can integrate partner tools and your own custom tools into any stage of the release process to form an end-to-end continuous delivery solution.&lt;/p&gt; \n&lt;p&gt;CodePipeline integrates natively with other AWS services (such as CodeBuild, CodeDeploy, and CloudFormation) and supports third-party integrations, such as GitHub or with your own custom plugin, offering a comprehensive solution for orchestrating end-to-end CI/CD pipelines. By integrating manual approval gates, IAM-based access controls, and encryption of artifacts at rest and in transit, CodePipeline helps teams enforce governance policies and maintain a robust security posture throughout the software delivery lifecycle. CodePipeline enables organizations to automate security scans and compliance checks directly within their CI/CD workflows, ensuring consistent and reliable validation against industry frameworks.&lt;/p&gt; \n&lt;p&gt;To get started, you can sign in to the &lt;a href=\"https://console.aws.amazon.com/codepipeline/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Management Console&lt;/a&gt; and create a pipeline to start using the service. If you want an introduction to CodePipeline, see &lt;a href=\"https://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Getting Started&lt;/a&gt;, which includes step-by-step tutorials. &amp;nbsp;With CodePipeline, you only pay for what you use. There are no upfront fees or long-term commitments. See the &lt;a href=\"https://aws.amazon.com/codepipeline/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;pricing page&lt;/a&gt; for additional details on CodePipeline.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-codepipeline-new-zealand/",
+      "publishedAt": "2026-07-06T09:00:00.000Z",
+      "updatedAt": "2026-07-06T09:00:00.000Z",
+      "categories": [],
+      "services": [
+        "CodePipeline"
+      ],
+      "tags": [
+        "codepipeline"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9b268c7cabef699c",
+      "title": "AWS Secrets Manager adds managed external secrets support for Paddle and GitLab",
+      "description": "AWS Secrets Manager now extends its managed external secrets capability to include Paddle API Keys and GitLab Access Tokens. Managed external secrets enable customers to automatically rotate third-party credentials directly from AWS Secrets Manager by offering first-class integration with supported third-party services. With this launch, you can manage rotation for Paddle API keys using Paddle's native rotation API, which provides a configurable grace period that allows applications to seamlessly transition to new keys without interruption. For GitLab, you can now rotate three types of access ",
+      "descriptionHtml": "&lt;p&gt;AWS Secrets Manager now extends its managed external secrets capability to include Paddle API Keys and GitLab Access Tokens. Managed external secrets enable customers to automatically rotate third-party credentials directly from AWS Secrets Manager by offering first-class integration with supported third-party services.&lt;br&gt; &lt;br&gt; With this launch, you can manage rotation for Paddle API keys using Paddle's native rotation API, which provides a configurable grace period that allows applications to seamlessly transition to new keys without interruption. For GitLab, you can now rotate three types of access tokens — Personal Access Tokens, Group Access Tokens, and Project Access Tokens — using GitLab's atomic rotation mechanism.&lt;br&gt; &lt;br&gt; These new integrations join existing managed external secrets integrations with BigID, Confluent Cloud, Datadog, MongoDB Atlas, Salesforce, and Snowflake, enabling customers to manage third-party software vended secrets.&lt;br&gt; Paddle and GitLab managed external secrets are available in all AWS Regions where AWS Secrets Manager managed external secrets is supported. To learn more, visit the &lt;a&gt;&lt;/a&gt;&lt;a href=\"https://docs.aws.amazon.com/secretsmanager/latest/userguide/managed-external-secrets.html\"&gt;AWS Secrets Manager managed external secrets documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/secrets-manager-managed-external-secrets-paddle-gitlab/",
+      "publishedAt": "2026-07-06T07:00:00.000Z",
+      "updatedAt": "2026-07-06T07:00:00.000Z",
+      "categories": [
+        "AWS Secrets Manager",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "Secrets Manager"
+      ],
+      "tags": [
+        "aws secrets manager",
+        "aws govcloud us",
+        "secrets manager"
+      ],
+      "isNew": true
+    },
     {
       "id": "f4ddd69e75052de4",
       "title": "Amazon SageMaker Unified Studio now supports Terraform for provisioning",
@@ -939,6 +1117,26 @@
       "isNew": true
     },
     {
+      "id": "9a07bdcce4274374",
+      "title": "CloudWatch Application Signals now supports Dynamic Instrumentation",
+      "description": "Today, AWS announces Dynamic Instrumentation for Amazon CloudWatch Application Signals, a capability that captures runtime state from live applications without requiring restarts or redeployments. Developers debugging production issues can now inspect variable values, method arguments, return values, and stack traces at specific code locations. Dynamic Instrumentation eliminates the need to add logging statements, redeploy, and wait to reproduce a problem, making it practical to investigate issues that are difficult to replicate locally. Customers start by instrumenting their application with ",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces Dynamic Instrumentation for Amazon CloudWatch Application Signals, a capability that captures runtime state from live applications without requiring restarts or redeployments. Developers debugging production issues can now inspect variable values, method arguments, return values, and stack traces at specific code locations. Dynamic Instrumentation eliminates the need to add logging statements, redeploy, and wait to reproduce a problem, making it practical to investigate issues that are difficult to replicate locally.&lt;/p&gt; \n&lt;p&gt;Customers start by instrumenting their application with the AWS Distro for OpenTelemetry (ADOT) SDKs. Customers then configure which code locations to monitor using the CloudWatch Application Signals MCP server or manually via the AWS CLI and SDK. When execution reaches an instrumented location, the agent captures a snapshot containing the runtime context and delivers it to CloudWatch Logs, correlated with the active trace. Customers can tune how much data to capture, including which arguments and local variables to collect.&lt;/p&gt; \n&lt;p&gt;Dynamic Instrumentation is available in all commercial AWS regions. Supported languages are Java, Python, and JavaScript/TypeScript. The feature is disabled by default in the ADOT SDKs and must be enabled via a flag, see documentation for more.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Signals-DynamicInstrumentation.html\"&gt;Debug applications with Dynamic Instrumentation&lt;/a&gt; in the &lt;i&gt;Amazon CloudWatch User Guide&lt;/i&gt;. Dynamic instrumentation data is captured as logs. Standard CloudWatch Logs ingestion and storage rates apply. For details, see &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;CloudWatch pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/cloudwatch-dynamic-instrumentation/",
+      "publishedAt": "2026-06-30T16:00:00.000Z",
+      "updatedAt": "2026-06-30T16:00:00.000Z",
+      "categories": [
+        "Management And Governance"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "management and governance",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
       "id": "8b3f1c4d89acd224",
       "title": "Amazon SageMaker AI now supports serverless model customization for Gemma 4 models",
       "description": "Amazon SageMaker AI now supports serverless model customization for Gemma 4 E4B and 31B models using supervised fine-tuning (SFT), direct preference optimization (DPO), and reinforcement fine-tuning (RFT). Gemma is a family of open models built by Google DeepMind. In addition to deploying these models on SageMaker AI, you can now adapt them to your specific domains and workflows. This launch also extends the variety of models available for serverless customization on SageMaker AI, including models from the Nova, Nemotron 3, Qwen, Llama, gpt-oss, and DeepSeek families. Model customization enabl",
@@ -1047,7 +1245,7 @@
         "aws govcloud us",
         "developer tools"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "bbfc4ef85030822f",
@@ -1066,7 +1264,7 @@
         "amazon gamelift",
         "game development"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5b073567718b9706",
@@ -1088,7 +1286,7 @@
         "amazon cloudwatch",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d698a2a1cecfd339",
@@ -1101,7 +1299,7 @@
       "categories": [],
       "services": [],
       "tags": [],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9e42d451755578ad",
@@ -1123,7 +1321,7 @@
         "aws clean rooms",
         "clean rooms"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9e8d542f0d8e4588",
@@ -1147,7 +1345,7 @@
         "waf",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c2bc4d26ec4c1c81",
@@ -1171,7 +1369,7 @@
         "vpc",
         "mwaa"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e09d8711e11bff09",
@@ -10897,185 +11095,6 @@
         "eventbridge"
       ],
       "isNew": true
-    },
-    {
-      "id": "b086fc8a0d50ccbf",
-      "title": "Amazon Quick now supports S3 tables bucket as a data source",
-      "description": "Amazon Quick now supports Amazon S3 table buckets as a data source — enabling users to build dashboards, run conversational analytics, and explore Apache Iceberg tables stored in S3 table buckets. With no intermediate data warehouse or OLAP layers required, users can now interoperate with their lakehouse data in Amazon Quick for both agentic AI and BI workloads — all through a simplified data architecture. Paired with Zero-ETL from sources like Salesforce, SAP, and Amazon Kinesis Data Firehose directly into S3 table buckets, users get near real-time insights with minimal pipeline dependencies.",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick now supports Amazon S3 table buckets as a data source — enabling users to build dashboards, run conversational analytics, and explore Apache Iceberg tables stored in S3 table buckets. With no intermediate data warehouse or OLAP layers required, users can now interoperate with their lakehouse data in Amazon Quick for both agentic AI and BI workloads — all through a simplified data architecture.&lt;/p&gt; \n&lt;p&gt;Paired with Zero-ETL from sources like Salesforce, SAP, and Amazon Kinesis Data Firehose directly into S3 table buckets, users get near real-time insights with minimal pipeline dependencies.&amp;nbsp;Getting started is straightforward: admins configure S3 table bucket permissions once, and authors can immediately create datasets and start building. S3 table bucket datasets are fully accessible through Amazon Quick's Dataset Q&amp;amp;A — ask a natural language question and get answers grounded in your data lake as the source of truth.&lt;/p&gt; \n&lt;p&gt;Amazon S3 table buckets as a data source in Amazon Quick is now available in all AWS Regions &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html#regions-qs\"&gt;where Amazon Quick is available&lt;/a&gt;. To get started, see this &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/from-data-lake-to-ai-ready-analytics-introducing-direct-query-with-s3-tables-in-amazon-quick/\"&gt;blog post&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/quick-direct-query-s3-tables/",
-      "publishedAt": "2026-05-04T16:00:00.000Z",
-      "updatedAt": "2026-05-04T16:00:00.000Z",
-      "categories": [],
-      "services": [
-        "S3"
-      ],
-      "tags": [
-        "s3"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "2729e745f47385e2",
-      "title": "Amazon Quick upgrades the extension for Microsoft Outlook (Preview)",
-      "description": "Today, AWS announces the preview of the Amazon Quick extension for Microsoft Outlook, which brings generative AI-powered productivity directly into your email and calendar workflows. With the extension, you can use natural language to summarize unread messages, organize your inbox, schedule meetings, and draft in-line responses all without leaving Outlook. The Quick extension for Outlook helps you focus on what matters most by prioritizing emails, searching for specific discussions, and organizing messages into folders or flagging them for follow-up. Using conversational instructions, you can ",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the preview of the Amazon Quick extension for Microsoft Outlook, which brings generative AI-powered productivity directly into your email and calendar workflows. With the extension, you can use natural language to summarize unread messages, organize your inbox, schedule meetings, and draft in-line responses all without leaving Outlook.&lt;/p&gt; \n&lt;p&gt;The Quick extension for Outlook helps you focus on what matters most by prioritizing emails, searching for specific discussions, and organizing messages into folders or flagging them for follow-up. Using conversational instructions, you can find optimal meeting times with coworkers and schedule meetings. For email threads, you can generate summaries, extract action items, and draft contextual replies that pull in relevant information from your Amazon Quick spaces and knowledge bases. You can also trigger actions in external applications using your configured integrations directly from Outlook.&lt;/p&gt; \n&lt;p&gt;The Amazon Quick extension for Microsoft Outlook is available in preview in US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Europe (Ireland), Asia Pacific (Tokyo), Europe (Frankfurt), and Europe (London).&lt;/p&gt; \n&lt;p&gt;To get started with Amazon Quick, visit the &lt;a href=\"https://aws.amazon.com/quick/\" target=\"_blank\"&gt;Quick website&lt;/a&gt;, and &lt;a href=\"https://portal.aws.amazon.com/billing/signup/service?app=AmazonQuickSuite&amp;amp;tier=free&amp;amp;funnel=boost#/validation\" target=\"_blank\"&gt;sign up for an account&lt;/a&gt; in minutes. Read the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/outlook-extension-preview-guide.html\" target=\"_blank\"&gt;documentation&lt;/a&gt; to learn more, and install the Quick extension for Outlook from the &lt;a href=\"https://aws.amazon.com/quick/download/\" target=\"_blank\"&gt;Quick download page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-quick-microsoft-outlook/",
-      "publishedAt": "2026-05-04T15:27:00.000Z",
-      "updatedAt": "2026-05-04T15:27:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Business Productivity"
-      ],
-      "services": [],
-      "tags": [
-        "artificial intelligence",
-        "business productivity"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "7df3c5f2b01e35bc",
-      "title": "Amazon SageMaker AI launches AI agent experience for model customization",
-      "description": "Amazon SageMaker AI now features an agentic experience that transforms model customization from a months-long process into a workflow completed in days or hours. Customers building an AI solution need to carefully frame their use case goals and success criteria, prepare data, choose the right models, configure, run, and analyze multiple experiments with various models and fine tuning techniques. Once a suitable model candidate that meets the success criteria is identified, they need to figure out the most cost performant way to deploy the model. Throughout this workflow customers need to manag",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker AI now features an agentic experience that transforms model customization from a months-long process into a workflow completed in days or hours. Customers building an AI solution need to carefully frame their use case goals and success criteria, prepare data, choose the right models, configure, run, and analyze multiple experiments with various models and fine tuning techniques. Once a suitable model candidate that meets the success criteria is identified, they need to figure out the most cost performant way to deploy the model. Throughout this workflow customers need to manage the undifferentiated heavy lifting of setting up the infrastructure to train and deploy the models. The new capability now enables developers to use natural language interactions with coding agents to streamline the entire journey from use case definition to production deployment of a high quality model.&lt;br&gt; &lt;br&gt; The agentic experience, based on SageMaker AI model customization agent skills, delivers expertise on fine-tuning applied to a builder’s specific use case, transformation to the required data formats, comprehensive quality evaluation using LLM-as-a-judge metrics, and flexible deployment options to Amazon Bedrock or SageMaker AI endpoints. Customers can &lt;a href=\"https://github.com/awslabs/agent-plugins/tree/main/plugins/sagemaker-ai\"&gt;install these skills&lt;/a&gt; in any IDE of their choice, such as Visual Studio and Cursor. Developers can work with multiple coding agents including Kiro, Claude Code, and CoPilot, in order to optimize popular model families like Amazon Nova, Llama, Qwen, and GPT-OSS. The experience generates reusable, editable code artifacts for transparency, reproducibility, and automation through integration into AIOps pipelines&lt;br&gt; &lt;br&gt; Install SageMaker AI skills in your favorite IDE using the &lt;a href=\"https://github.com/awslabs/agent-plugins/tree/main/plugins/sagemaker-ai\"&gt;sagemaker-ai agent plugin&lt;/a&gt;. SageMaker AI model customization skills are also available and pre-installed in SageMaker Studio Notebooks, along with the Kiro coding agent. All you need to do is just sign up for Kiro subscription, open the chat window in Studio Notebooks and start chatting with the agent to build the workflow. The experience supports advanced customization techniques including supervised fine-tuning for instruction tuning, direct Preference Optimization for adjusting tone and preference selections, and Reinforcement Learning for use cases with verifiable correctness.&lt;br&gt; &lt;br&gt; To learn more about model customization with the AI agent experience in Amazon SageMaker AI, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/customize-model.html\"&gt;SageMaker model customization documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-sagemaker-ai-ai/",
-      "publishedAt": "2026-05-04T15:00:00.000Z",
-      "updatedAt": "2026-05-04T15:00:00.000Z",
-      "categories": [],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "sagemaker"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "29d96a2928d21d64",
-      "title": "AWS Payment Cryptography announces support for cross account key sharing",
-      "description": "AWS Payment Cryptography now supports cross account sharing of keys using resource-based policies (RBP). With this new feature, customers can more easily manage cryptographic keys across multiple accounts both internal and external to their company, providing more flexibility to manage keys at scale. With AWS Payment Cryptography, you can simplify cryptography operations in your cloud-hosted payment applications with a service that grows elastically with your business and has been assessed as compliant with PCI PIN Security and Point-to-Point Encryption (P2PE) requirements. Many customers util",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/payment-cryptography/\"&gt;AWS Payment Cryptography&lt;/a&gt;&amp;nbsp;now supports cross account sharing of keys using resource-based policies (RBP).&amp;nbsp; With this new feature, customers can more easily manage cryptographic keys across multiple accounts both internal and external to their company, providing more flexibility to manage keys at scale.&amp;nbsp; With AWS Payment Cryptography, you can simplify cryptography operations in your cloud-hosted payment applications with a service that grows elastically with your business and has been assessed as compliant with PCI PIN Security and Point-to-Point Encryption (P2PE) requirements.&lt;/p&gt; \n&lt;p&gt;Many customers utilize multiple AWS accounts to delineate different workloads, applications or use cases for payment processing following &lt;a href=\"https://aws.amazon.com/blogs/security/pci-dss-v4-0-on-aws-compliance-guide-now-available/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS PCI DSS Guidance&lt;/a&gt;.&amp;nbsp; While this pattern is also common with traditional infrastructure, this often leads to duplicating cryptographic material, making lineage and access controls more difficult overall.&amp;nbsp; With the launch of Payment Cryptography integration with RBP, customers can keep a single copy of key material and leverage concise, per-resource access control to enable cross account access without relying on import/export flows.&lt;/p&gt; \n&lt;p&gt;This feature is available across all&amp;nbsp;&lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt;&amp;nbsp;where AWS Payment Cryptography is available.&amp;nbsp; To learn more about this feature or to get started with the service, consult the AWS Payment Cryptography &lt;a href=\"https://docs.aws.amazon.com/payment-cryptography/latest/userguide/security_iam_resource-based-policies.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;user guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/payment-cryptography-resource/",
-      "publishedAt": "2026-05-04T14:58:00.000Z",
-      "updatedAt": "2026-05-04T14:58:00.000Z",
-      "categories": [
-        "Security Identity And Compliance"
-      ],
-      "services": [],
-      "tags": [
-        "security identity and compliance"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "360373868ad95aa2",
-      "title": "Amazon RDS for SQL Server supports read replica with additional storage volumes",
-      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports read replicas for database instances with additional storage volumes. Additional storage volumes allow customers to scale database storage up to 256 TiB by adding up to three storage volumes, each with up to 64 TiB, in addition to the primary storage volume. With this launch, for database instances configured with additional storage volumes, customers can create same-region and cross-region read replica database instances. When a read replica is created for a database instance with additional storage volumes, the repli",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server&lt;/a&gt; now supports read replicas for database instances with additional storage volumes. Additional storage volumes allow customers to scale database storage up to 256 TiB by adding up to three storage volumes, each with up to 64 TiB, in addition to the primary storage volume. With this launch, for database instances configured with additional storage volumes, customers can create same-region and cross-region read replica database instances.&lt;br&gt; &lt;br&gt; When a read replica is created for a database instance with additional storage volumes, the replica preserves the storage layout of the source instance, including the configuration of any additional storage volumes. After the initial creation, you can independently manage additional storage volume configurations on the source and read replica instances.&lt;br&gt; &lt;br&gt; Read replicas with additional storage volumes are available in all AWS commercial Regions&amp;nbsp;and the AWS GovCloud (US) Regions. Customers can start using this feature today through the AWS Management Console, AWS CLI, or AWS SDKs. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.ReadReplicas.html\"&gt;Working with read replicas for Amazon RDS for SQL Server&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.CommonDBATasks.DatabaseStorage.html\"&gt;Working with storage in RDS for SQL Server&lt;/a&gt; in the Amazon RDS User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/rds-sqlserver-supports-read-replica-for-asv/",
-      "publishedAt": "2026-05-04T07:00:00.000Z",
-      "updatedAt": "2026-05-04T07:00:00.000Z",
-      "categories": [
-        "Amazon Rds For Sql Server",
-        "Databases",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "amazon rds for sql server",
-        "databases",
-        "aws govcloud us",
-        "rds"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "e536aa9c908ec3e5",
-      "title": "Amazon RDS for SQL Server now supports M8i and R8i instances",
-      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports M8i and R8i instances. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and R8i instances offer up to 15% better price-performance and 2.5x more memory bandwidth compared to equivalent 7th generation Intel-based instances. To use the new M8i and R8i instances, you can modify your existing RDS database instance or create a new RDS database instance from the RDS Mana",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server&lt;/a&gt; now supports M8i and R8i instances. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and R8i instances offer up to 15% better price-performance and 2.5x more memory bandwidth compared to equivalent 7th generation Intel-based instances.&lt;br&gt; &lt;br&gt; To use the new M8i and R8i instances, you can modify your existing RDS database instance or create a new RDS database instance from the RDS Management Console, or using the AWS SDK or CLI.&lt;br&gt; &lt;br&gt; See &lt;a href=\"https://aws.amazon.com/rds/sqlserver/pricing/\"&gt;Amazon RDS for SQL Server Pricing&lt;/a&gt; for up-to-date pricing and regional availability.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/rds-sqlserver-supports-m8i-r8i-instances/",
-      "publishedAt": "2026-05-04T07:00:00.000Z",
-      "updatedAt": "2026-05-04T07:00:00.000Z",
-      "categories": [
-        "Amazon Rds For Sql Server",
-        "Databases"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "amazon rds for sql server",
-        "databases",
-        "rds"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "1bbacd6aae6a325f",
-      "title": "Amazon Bedrock AgentCore is now available in the South America (São Paulo) Region",
-      "description": "Amazon Bedrock AgentCore is now available in the AWS South America (São Paulo) Region. Amazon Bedrock AgentCore is the platform to build, connect, and optimize agents. It helps engineers ship agents fast with any framework and any model, connect them to enterprise systems and tools, and optimize them continuously, with security enforced at the infrastructure layer that agents can't bypass. With this expansion, customers in South America can deploy and operate agents closer to their end users, reducing latency and helping meet data residency requirements. AgentCore capabilities including agent ",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore is now available in the AWS South America (São Paulo) Region. Amazon Bedrock AgentCore is the platform to build, connect, and optimize agents. It helps engineers ship agents fast with any framework and any model, connect them to enterprise systems and tools, and optimize them continuously, with security enforced at the infrastructure layer that agents can't bypass.&lt;br&gt; &lt;br&gt; With this expansion, customers in South America can deploy and operate agents closer to their end users, reducing latency and helping meet data residency requirements. AgentCore capabilities including agent runtime, identity, gateway, policy, observability, code interpreter, and browser tools are available in the São Paulo Region at launch.&lt;br&gt; &lt;br&gt; For more information on AgentCore, visit the &lt;a href=\"https://aws.amazon.com/bedrock/agentcore/\"&gt;AgentCore product page&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html\"&gt;AgentCore Developer Guide&lt;/a&gt;. To learn about pricing, visit &lt;a href=\"https://aws.amazon.com/bedrock/agentcore/pricing/\"&gt;AgentCore pricing&lt;/a&gt;. For region availability, visit &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html\"&gt;Supported AWS Regions&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/agentcore-sao-paulo-region/",
-      "publishedAt": "2026-05-01T22:00:00.000Z",
-      "updatedAt": "2026-05-01T22:00:00.000Z",
-      "categories": [
-        "Amazon Bedrock",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "amazon bedrock",
-        "artificial intelligence",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "051102a1929b5abc",
-      "title": "FreeRTOS 202604 LTS now available with enhanced security and MQTT v5.0",
-      "description": "FreeRTOS 202604 LTS, a new Long Term Support release of the open-source real-time operating system for embedded devices, is now available. This release provides embedded systems developers and Internet of Things (IoT) device manufacturers with feature stability, security updates, and critical bug fixes for two years. It addresses key challenges in embedded systems, including memory safety, code quality, and protocol support. FreeRTOS kernel v11.3.0 introduces new hardware ports, security hardening, and expanded Memory Protection Unit (MPU) support, reducing the number of MPU regions claimed by",
-      "descriptionHtml": "&lt;p&gt;FreeRTOS 202604 LTS, a new Long Term Support release of the open-source real-time operating system for embedded devices, is now available. This release provides embedded systems developers and Internet of Things (IoT) device manufacturers with feature stability, security updates, and critical bug fixes for two years. It addresses key challenges in embedded systems, including memory safety, code quality, and protocol support.&lt;br&gt; &lt;br&gt; FreeRTOS kernel v11.3.0 introduces new hardware ports, security hardening, and expanded Memory Protection Unit (MPU) support, reducing the number of MPU regions claimed by FreeRTOS and allowing developers to reserve hardware regions for application-specific memory protection. Additionally, coreMQTT v5.0.2 adds MQTT v5.0 protocol support, enabling features like topic aliases for bandwidth-constrained devices and request/response patterns for interactive IoT applications. coreSNTP v2.0.0 brings year 2038 readiness, so devices deployed today can validate TLS certificates and timestamp data correctly throughout their operational lifetime.&lt;br&gt; &lt;br&gt; This release offers libraries verified for memory safety and MISRA-C compliance. The libraries improve robustness, portability, and reliability in embedded systems.&lt;br&gt; &lt;br&gt; Migration guides for &lt;a href=\"https://github.com/FreeRTOS/coreMQTT/blob/main/MQTTv5Guide.md\"&gt;coreMQTT&lt;/a&gt; and &lt;a href=\"https://github.com/FreeRTOS/coreSNTP/blob/main/MigrationGuide.md\"&gt;coreSNTP&lt;/a&gt; provide detailed guidance for updating to FreeRTOS 202604 LTS. For projects requiring critical fixes on the previous LTS version beyond its expiry, the &lt;a href=\"https://aws.amazon.com/freertos/features/#freertos-extended-maintenance-plan--oxjb3r\"&gt;FreeRTOS Extended Maintenance Plan&lt;/a&gt; is available. To learn more, visit the &lt;a href=\"https://freertos.org/Documentation/03-Libraries/01-Library-overview/03-LTS-libraries/01-LTS-libraries\"&gt;FreeRTOS LTS page&lt;/a&gt; and &lt;a href=\"https://github.com/FreeRTOS/FreeRTOS-LTS\"&gt;FreeRTOS LTS GitHub repository&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/freertos-lts/",
-      "publishedAt": "2026-05-01T21:42:00.000Z",
-      "updatedAt": "2026-05-01T21:42:00.000Z",
-      "categories": [
-        "AWS Iot",
-        "Internet Of Things"
-      ],
-      "services": [],
-      "tags": [
-        "aws iot",
-        "internet of things"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f3c9acd1a63fc5ea",
-      "title": "Amazon CloudWatch RUM now supports Session Replay for Web Applications",
-      "description": "Amazon CloudWatch RUM (Real User Monitoring) Session Replay gives developers a video-like playback of user experiences on their web applications — capturing clicks, scrolls, page changes, and errors — so they can see exactly what a user encountered in their browser without needing to reproduce the issue. CloudWatch RUM collects client-side performance metrics and error data from both web and mobile applications; Session Replay extends this visibility for web applications by letting developers visually diagnose issues like broken navigation flows or unresponsive UI elements that don't surface i",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch RUM (Real User Monitoring) Session Replay gives developers a video-like playback of user experiences on their web applications — capturing clicks, scrolls, page changes, and errors — so they can see exactly what a user encountered in their browser without needing to reproduce the issue. CloudWatch RUM collects client-side performance metrics and error data from both web and mobile applications; Session Replay extends this visibility for web applications by letting developers visually diagnose issues like broken navigation flows or unresponsive UI elements that don't surface in server-side logs. This capability is built for front-end developers and application owners who need to move quickly from a user-reported problem to its root cause.&lt;br&gt; &lt;br&gt; Session Replay helps developers identify user experience issues — such as forms that fail to render or navigation flows that break — that can silently impact conversion and engagement, even when no one reports them. Developers can also replay sessions to study navigation patterns and identify drop-off points. To get started, enable Session Replay in your app monitor and view recorded sessions from the Session Replay tab in the CloudWatch RUM console — the feature is opt-in, supports sensitive field masking, and is included at no additional cost.&lt;/p&gt; \n&lt;p&gt;Session Replay for Amazon CloudWatch RUM is available in all AWS Regions where CloudWatch RUM is supported. To learn more about Session Replay for Amazon CloudWatch RUM, see the &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM.html\"&gt;Amazon CloudWatch RUM documentation&amp;nbsp;&lt;/a&gt;. For pricing details, see the &amp;nbsp;&lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;Amazon CloudWatch pricing page&amp;nbsp;&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-cloudwatch-rum-session/",
-      "publishedAt": "2026-05-01T21:07:00.000Z",
-      "updatedAt": "2026-05-01T21:07:00.000Z",
-      "categories": [
-        "Amazon Cloudwatch",
-        "Management And Governance"
-      ],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "amazon cloudwatch",
-        "management and governance",
-        "cloudwatch"
-      ],
-      "isNew": false
     }
   ]
 }
