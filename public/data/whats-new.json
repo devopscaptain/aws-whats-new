@@ -1,7 +1,136 @@
 {
-  "lastUpdated": "2026-07-08T08:55:49.785Z",
+  "lastUpdated": "2026-07-09T09:10:32.616Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "db42fc732ee6c8d6",
+      "title": "AWS Builder Center Now Offers Free Sandbox Environments",
+      "description": "AWS Builder Center now lets builders request free, time-limited sandbox environments directly from eligible workshops, eliminating the need for a personal AWS account, credit card, or concerns about unexpected charges. Previously, workshops could only be completed using a builder's own AWS account. With sandbox environments, builders of all skill levels can safely deploy resources, write code, and experiment in a pre-provisioned AWS account. Free sandbox environments are ideal for builders who want to gain practical AWS experience without setting up an account. Each sandbox provides 8 hours of",
+      "descriptionHtml": "&lt;p&gt;AWS Builder Center now lets builders request free, time-limited sandbox environments directly from eligible workshops, eliminating the need for a personal AWS account, credit card, or concerns about unexpected charges. Previously, workshops could only be completed using a builder's own AWS account. With sandbox environments, builders of all skill levels can safely deploy resources, write code, and experiment in a pre-provisioned AWS account.&lt;/p&gt; \n&lt;p&gt;Free sandbox environments are ideal for builders who want to gain practical AWS experience without setting up an account. Each sandbox provides 8 hours of access from activation, with automatic cleanup afterward. Builders can request one sandbox per week (resetting every Sunday), and most environments are ready within 15 minutes. Sandboxes are available for select workshops at launch, with more being enabled over time.&lt;/p&gt; \n&lt;p&gt;To get started, visit &lt;a href=\"https://builder.aws.com/workshops\"&gt;Workshops on AWS Builder Center&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-builder-center-sandbox/",
+      "publishedAt": "2026-07-08T22:45:00.000Z",
+      "updatedAt": "2026-07-08T22:45:00.000Z",
+      "categories": [
+        "Developer"
+      ],
+      "services": [],
+      "tags": [
+        "developer"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f62ed8bc7178662e",
+      "title": "AWS Security Hub now offers Network Scanning to identify publicly reachable resources",
+      "description": "Today, AWS Security Hub introduces Network Scanning, a capability that identifies resources in your environment that are reachable from the public internet. Network Scanning probes your resources from the internet to detect actual reachability, not just what could be reachable based on security group rules and route tables. It discovers public IP addresses, virtual machines, and load balancers across your AWS and Azure environments, identifies reachable ports, and determines what services are running behind them. This complements Security Hub’s existing network reachability findings, which ide",
+      "descriptionHtml": "&lt;p&gt;Today, AWS Security Hub introduces Network Scanning, a capability that identifies resources in your environment that are reachable from the public internet.&amp;nbsp; Network Scanning probes your resources from the internet to detect actual reachability, not just what could be reachable based on security group rules and route tables. It discovers public IP addresses, virtual machines, and load balancers across your AWS and Azure environments, identifies reachable ports, and determines what services are running behind them. This complements Security Hub’s existing network reachability findings, which identify configurations that could make a resource reachable from the internet.&amp;nbsp;&amp;nbsp;Network Scanning confirms actual reachability from the internet. Each reachable port generates a Security Hub finding with evidence of the port and service discovered. Security Hub Exposures then automatically correlates these findings with other findings and resource configurations to determine broader risk.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-security-hub-network-scanning/",
+      "publishedAt": "2026-07-08T21:00:00.000Z",
+      "updatedAt": "2026-07-08T21:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "AWS Security Hub"
+      ],
+      "services": [
+        "Security Hub"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "aws security hub",
+        "security hub"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "eec1c7951b251e00",
+      "title": "Amazon Redshift RG instances now available on the trailing track",
+      "description": "Amazon Redshift now supports Graviton-based RG instances on the trailing track . Starting July 7, 2026, rg.4xlarge and rg.xlarge instance types are available for customers running workloads on the trailing track (P201). The trailing track is designed for customers who prioritize stability for production workloads, running on a version already validated through the leading track. With RG instances now available on both tracks, customers can take advantage of AWS Graviton-powered performance - delivering up to 2.4x faster query performance than RA3 instances at 30% lower price per vCPU. To get s",
+      "descriptionHtml": "&lt;p&gt;Amazon Redshift now supports Graviton-based RG instances on the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/tracks.html\"&gt;trailing track&lt;/a&gt;. Starting July 7, 2026, rg.4xlarge and rg.xlarge instance types are available for customers running workloads on the trailing track (P201).&lt;/p&gt; \n&lt;p&gt;The trailing track is designed for customers who prioritize stability for production workloads, running on a version already validated through the leading track. With RG instances now available on both tracks, customers can take advantage of AWS Graviton-powered performance - delivering up to 2.4x faster query performance than RA3 instances at 30% lower price per vCPU.&lt;br&gt; &lt;br&gt; To get started, customers can provision a new cluster or resize an existing cluster to an rg.4xlarge or rg.xlarge instance type on the trailing track (P201) in the AWS Management Console, AWS CLI, or AWS SDKs.&lt;br&gt; &lt;br&gt; For more information, see &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/cluster-versions.html\"&gt;Amazon Redshift cluster versions&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-redshift-graviton-rg-instances-trailing-track",
+      "publishedAt": "2026-07-08T18:12:00.000Z",
+      "updatedAt": "2026-07-08T18:12:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Redshift"
+      ],
+      "services": [
+        "Redshift"
+      ],
+      "tags": [
+        "analytics",
+        "amazon redshift",
+        "redshift"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a2238c9567d733d0",
+      "title": "Amazon Aurora DSQL change data capture (CDC) Is now generally available",
+      "description": "Amazon Aurora DSQL change data capture (CDC) is now generally available, enabling you to stream real-time database changes to Amazon Kinesis Data Streams for event-driven architectures and data integration workflows. Aurora DSQL CDC automatically captures the results of insert, update, and delete operations as change events and delivers them to Kinesis Data Streams with no infrastructure to manage. You can use CDC to synchronize data across microservices, trigger AWS Lambda functions, or deliver changes to Amazon S3, Amazon Redshift, and Amazon OpenSearch Service via Amazon Data Firehose. CDC ",
+      "descriptionHtml": "&lt;p&gt;Amazon Aurora DSQL change data capture (CDC) is now generally available, enabling you to stream real-time database changes to Amazon Kinesis Data Streams for event-driven architectures and data integration workflows.&lt;br&gt; &lt;br&gt; Aurora DSQL CDC automatically captures the results of insert, update, and delete operations as change events and delivers them to Kinesis Data Streams with no infrastructure to manage. You can use CDC to synchronize data across microservices, trigger AWS Lambda functions, or deliver changes to Amazon S3, Amazon Redshift, and Amazon OpenSearch Service via Amazon Data Firehose. CDC streaming is designed to have zero impact on your database workload performance.&lt;br&gt; &lt;br&gt; CDC streaming is available in all AWS Regions where &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Aurora DSQL is available.&lt;/a&gt; Get started with Aurora DSQL for free with the &lt;a href=\"https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank\\&amp;amp;all-free-tier.sort-order=asc\\&amp;amp;awsf.Free%20Tier%20Types=*all\\&amp;amp;awsf.Free%20Tier%20Categories=categories%23databases\"&gt;AWS Free Tier&lt;/a&gt;. To learn more about CDC in Aurora DSQL, visit the &lt;a href=\"https://docs.aws.amazon.com/aurora-dsql/latest/userguide/cdc-setup.html\"&gt;documentation page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-aurora-dsql-cdc-ga/",
+      "publishedAt": "2026-07-08T18:00:00.000Z",
+      "updatedAt": "2026-07-08T18:00:00.000Z",
+      "categories": [
+        "Databases"
+      ],
+      "services": [
+        "Aurora"
+      ],
+      "tags": [
+        "databases",
+        "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f14e7286aabe59cd",
+      "title": "Amazon Connect Customer now supports forecasting, planning, and scheduling for Tasks and Emails",
+      "description": "Amazon Connect Customer now supports forecasting, capacity planning, and scheduling for Tasks and Emails, enabling you to plan and optimize your workforce across all workloads (Voice, Chat, Tasks, Emails). Connect Customer accounts for the unique characteristics of each channel, including concurrent work handling, duration of work from minutes to months, and distinct service level requirements, so your forecasts and schedules reflect how your operation actually runs. For example, if your agents handle email inquiries or tasks such as case processing alongside voice calls, you can now generate ",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now supports forecasting, capacity planning, and scheduling for Tasks and Emails, enabling you to plan and optimize your workforce across all workloads (Voice, Chat, Tasks, Emails). Connect Customer accounts for the unique characteristics of each channel, including concurrent work handling, duration of work from minutes to months, and distinct service level requirements, so your forecasts and schedules reflect how your operation actually runs. For example, if your agents handle email inquiries or tasks such as case processing alongside voice calls, you can now generate a unified forecast that accounts for all of these workloads and create schedules that efficiently allocate agents across channels. Thus enabling end-to-end workforce optimization within a single solution and ensuring consistent service levels across all customer interaction channels.&lt;br&gt; &lt;br&gt; This feature is available in all &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#optimization_region\"&gt;AWS Regions&lt;/a&gt; where Amazon Connect Customer agent scheduling is available. To learn more about Amazon Connect Customer agent scheduling, click &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html\"&gt;here&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-connect-customer-agent-scheduling-tasks/",
+      "publishedAt": "2026-07-08T17:00:00.000Z",
+      "updatedAt": "2026-07-08T17:00:00.000Z",
+      "categories": [
+        "Contact Center",
+        "AWS Govcloud Us",
+        "Amazon Connect",
+        "Business Productivity"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "aws govcloud us",
+        "amazon connect",
+        "business productivity",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "344ae7d544dce339",
+      "title": "Amazon EC2 High Memory U7i instances now available in AWS Europe (Zurich) region",
+      "description": "Amazon EC2 High Memory U7i instances with 12TB of memory (u7i-12tb.224xlarge) are now available in the AWS Europe (Zurich) region. U7i instances are part of AWS 7th generation and are powered by custom fourth generation Intel Xeon Scalable Processors (Sapphire Rapids). U7i-12tb instances offer 12TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment. U7i-12tb instances offer 896 vCPUs, support up to 100Gbps Elastic Block Storage (EBS) for faster data loading and backups, deliver up to 100Gbps of network bandwidth, and support ENA Ex",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 High Memory U7i instances with 12TB of memory (u7i-12tb.224xlarge) are now available in the AWS&amp;nbsp;Europe (Zurich) region. U7i instances are part of AWS 7th generation and are powered by custom fourth generation Intel Xeon Scalable Processors (Sapphire Rapids). U7i-12tb instances offer 12TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment.&lt;/p&gt; \n&lt;p&gt;U7i-12tb instances offer 896 vCPUs, support up to 100Gbps Elastic Block Storage (EBS) for faster data loading and backups, deliver up to 100Gbps of network bandwidth, and support ENA Express. U7i instances are ideal for customers using mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.&lt;br&gt; &lt;br&gt; To learn more about U7i instances, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/u7i/\"&gt;High Memory instances page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-u7i-aws-europe-zurich/",
+      "publishedAt": "2026-07-07T23:30:00.000Z",
+      "updatedAt": "2026-07-07T23:30:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
     {
       "id": "58858b088ae49688",
       "title": "Amazon GameLift Streams introduces secure terminal access for stream sessions",
@@ -250,6 +379,30 @@
         "pricing",
         "amazon eks",
         "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6ef4913cf3ae4f91",
+      "title": "AWS Systems Manager simplifies Azure VM management and hybrid node pricing",
+      "description": "You can now connect and manage Azure Virtual Machines in AWS Systems Manager without manual agent installation or per-instance tier fees. Create a Cloud Connector and automatically deploy the SSM Agent to your Azure VMs at scale. Once connected, Azure VMs appear alongside EC2 instances in a unified view, and you can connect to them using Session Manager, run Automation runbooks, Run Command, State Manager, Patch Manager, and Inventory across both AWS and Azure from a single workflow. This release also eliminates the Advanced Instances Tier entirely. This means that you can now connect any numb",
+      "descriptionHtml": "&lt;p&gt;You can now connect and manage Azure Virtual Machines in AWS Systems Manager without manual agent installation or per-instance tier fees. Create a Cloud Connector and automatically deploy the SSM Agent to your Azure VMs at scale. Once connected, Azure VMs appear alongside EC2 instances in a unified view, and you can connect to them using Session Manager, run Automation runbooks, Run Command, State Manager, Patch Manager, and Inventory across both AWS and Azure from a single workflow.&lt;br&gt; &lt;br&gt; This release also eliminates the Advanced Instances Tier entirely. This means that you can now connect any number of hybrid and multicloud nodes to Systems Manager with no upfront per-node fees. Beginning September 30, 2026, pay-as-you-go pricing takes effect for Session Manager sessions and Run Command invocations on non-EC2 nodes. This pricing model removes cost barriers for organizations managing multicloud environments at scale.&lt;br&gt; &lt;br&gt; AWS Systems Manager multicloud management is available starting today. To learn more and get started, visit &lt;a href=\"https://aws.amazon.com/systems-manager/\"&gt;AWS Systems Manager&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-systems-manager-multicloud-vm/",
+      "publishedAt": "2026-07-07T08:00:00.000Z",
+      "updatedAt": "2026-07-07T08:00:00.000Z",
+      "categories": [
+        "AWS Systems Manager",
+        "Management And Governance",
+        "Management Tools"
+      ],
+      "services": [
+        "Systems Manager"
+      ],
+      "tags": [
+        "aws systems manager",
+        "management and governance",
+        "management tools",
+        "systems manager"
       ],
       "isNew": true
     },
@@ -504,6 +657,28 @@
       "isNew": true
     },
     {
+      "id": "f376dba0667c61a3",
+      "title": "AWS CodeBuild now supports Amazon Linux 2023 for on-demand build hosts",
+      "description": "AWS CodeBuild now supports Amazon Linux 2023 for on-demand build hosts through a new host kernel selection setting. AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. With this launch you can choose whether your build host uses Amazon Linux 2 (Linux kernel 4) or Amazon Linux 2023 (Linux kernel 6). Amazon Linux 2023 offers several improvements over Amazon Linux 2, including an updated Linux kernel and glibc, along with package additions, upgrades, and removals. For a full comparison, see",
+      "descriptionHtml": "&lt;p&gt;AWS CodeBuild now supports Amazon Linux 2023 for on-demand build hosts through a new host kernel selection setting. AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. With this launch you can choose whether your build host uses Amazon Linux 2 (Linux kernel 4) or Amazon Linux 2023 (Linux kernel 6).&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Amazon Linux 2023 offers several improvements over Amazon Linux 2, including an updated Linux kernel and glibc, along with package additions, upgrades, and removals. For a full comparison, see &lt;a href=\"https://docs.aws.amazon.com/linux/al2023/ug/compare-with-al2.html\"&gt;Comparing AL2 and Amazon Linux 2023&lt;/a&gt;.&amp;nbsp; You can validate Amazon Linux 2023 at your own pace by setting the host kernel on a new or non-production project and running your builds there, while your production projects keep running unchanged on their current kernel.&lt;/p&gt; \n&lt;p&gt;Host kernel selection is available in all AWS Regions where CodeBuild is offered except the AWS GovCloud (US) and China Regions, which only support Amazon Linux 2023.&lt;/p&gt; \n&lt;p&gt;To get started, see the following resources:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;a href=\"https://aws.amazon.com/codebuild/\"&gt;AWS CodeBuild product page&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://docs.aws.amazon.com/cli/latest/reference/codebuild/create-project.html\"&gt;create-project command reference&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-codebuild-amazon-linux-2023/",
+      "publishedAt": "2026-07-03T12:27:00.000Z",
+      "updatedAt": "2026-07-03T12:27:00.000Z",
+      "categories": [
+        "Developer Tools",
+        "AWS Codebuild"
+      ],
+      "services": [
+        "CodeBuild"
+      ],
+      "tags": [
+        "developer tools",
+        "aws codebuild",
+        "codebuild"
+      ],
+      "isNew": true
+    },
+    {
       "id": "f4ddd69e75052de4",
       "title": "Amazon SageMaker Unified Studio now supports Terraform for provisioning",
       "description": "Amazon SageMaker Unified Studio now supports Terraform for provisioning. Customers can use the open-source terraform-aws-sagemaker-unified-studio module to deploy a SageMaker Unified Studio domain through version-controlled templates. With this launch, platform teams can bring SageMaker Unified Studio into their existing infrastructure-as-code pipelines, maintaining consistency across development, staging, and production accounts. Amazon SageMaker Unified Studio is a unified development environment where data teams can build end-to-end data and AI workflows using familiar tools—from data integ",
@@ -635,7 +810,7 @@
         "amazon bedrock",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3a2529f10a8b2196",
@@ -652,7 +827,7 @@
       "tags": [
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "cfdaf7b1fbfcb3be",
@@ -710,7 +885,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "dd3fa2517ca74966",
@@ -732,7 +907,7 @@
         "security identity and compliance",
         "artifact"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ebfde673d355e345",
@@ -751,7 +926,7 @@
         "aws marketplace",
         "aws marketplace and partners"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d41821146390310b",
@@ -773,7 +948,7 @@
         "databases",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0c34615af8a8f2d4",
@@ -795,7 +970,7 @@
         "artificial intelligence",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "04113e10e173cd2c",
@@ -823,7 +998,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0e64ac8af876e100",
@@ -857,7 +1032,7 @@
         "eks",
         "guardduty"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "4437c7dfd2e3cd13",
@@ -874,7 +1049,7 @@
       "tags": [
         "developer tools"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2c536160edb93ef1",
@@ -902,7 +1077,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b80a8cd198a86759",
@@ -924,7 +1099,7 @@
         "amazon eks",
         "eks"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ca9d9c0d129d445a",
@@ -941,7 +1116,7 @@
       "tags": [
         "management and governance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b99f48baac250d6a",
@@ -960,7 +1135,7 @@
         "security and compliance",
         "security identity and compliance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "eccd5ab93ce2b15e",
@@ -10900,206 +11075,6 @@
         "databases",
         "elasticache",
         "cloudwatch"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "b2f282acb138ff51",
-      "title": "Amazon WorkSpaces now lets AI agents operate desktop applications (Preview)",
-      "description": "Amazon WorkSpaces, AWS's fully managed cloud desktop service, now enables AI agents to securely access and operate desktop applications through managed WorkSpaces environments. Many enterprises run critical business processes on desktop applications—mainframes, ERP systems, and proprietary tools—that lack modern APIs, creating a \"last-mile challenge\" for AI agents. WorkSpaces now allows organizations to automate everyday workflows at scale while maintaining full enterprise-grade governance and compliance. AI agents built on any framework and running anywhere—cloud-hosted, on-premises, or hybri",
-      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces, AWS's fully managed cloud desktop service, now enables AI agents to securely access and operate desktop applications through managed WorkSpaces environments. Many enterprises run critical business processes on desktop applications—mainframes, ERP systems, and proprietary tools—that lack modern APIs, creating a \"last-mile challenge\" for AI agents. WorkSpaces now allows organizations to automate everyday workflows at scale while maintaining full enterprise-grade governance and compliance.&lt;/p&gt; \n&lt;p&gt;AI agents built on any framework and running anywhere—cloud-hosted, on-premises, or hybrid—can now connect to business applications with minimal code using industry-standard Model Context Protocol (MCP) integration. Builders gain fast time-to-value without standing up new infrastructure, while IT administrators maintain centralized permissions, logging, and auditing controls identical to human WorkSpaces environments. Enterprise observability features including screenshots and metrics provide full visibility into agent activities. Organizations can automate workflows spanning claims processing, trade settlement, candidate screening, and back-office operations across financial services, healthcare, and other regulated industries—all without requiring application modernization.&lt;/p&gt; \n&lt;p&gt;WorkSpaces delivers secure environments where agents can point, click, and navigate on desktop applications just like humans. With pay-as-you-go pricing and elastic scale built on AWS's global infrastructure, enterprises reduce IT overhead while expanding what's possible when people and AI work together. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/agent-access.html\"&gt;WorkSpaces documentation.&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/workspaces-ai-agents/",
-      "publishedAt": "2026-05-05T17:25:00.000Z",
-      "updatedAt": "2026-05-05T17:25:00.000Z",
-      "categories": [
-        "Amazon Workspaces",
-        "Flexibility",
-        "Desktop And App Streaming"
-      ],
-      "services": [
-        "WorkSpaces"
-      ],
-      "tags": [
-        "amazon workspaces",
-        "flexibility",
-        "desktop and app streaming",
-        "workspaces"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "1155fd685130b110",
-      "title": "AWS IoT Core for Device Location adds Confidence Level Configuration and Measurement Type support",
-      "description": "AWS IoT Core for Device Location now supports two enhancements that give developers greater control over location resolution and richer metadata for resolved device locations. Customers using the Cell ID, Wi-Fi, or Cell+Wi-Fi solvers can now specify a desired confidence level between 50% and 99% when resolving device locations. The confidence level represents the statistical probability that the actual device location falls within the reported accuracy radius. A higher confidence level (for example, 95%) increases certainty that the device falls within the reported radius but produces a larger",
-      "descriptionHtml": "&lt;p&gt;AWS IoT Core for Device Location now supports two enhancements that give developers greater control over location resolution and richer metadata for resolved device locations.&lt;br&gt; &lt;br&gt; Customers using the Cell ID, Wi-Fi, or Cell+Wi-Fi solvers can now specify a desired confidence level between 50% and 99% when resolving device locations. The confidence level represents the statistical probability that the actual device location falls within the reported accuracy radius. A higher confidence level (for example, 95%) increases certainty that the device falls within the reported radius but produces a larger accuracy radius. A lower confidence level (for example, 50%) yields a smaller radius with less certainty. Customers can now configure this value to balance accuracy and confidence based on their specific requirements. This feature is currently supported for HTTP-based location resolution.&lt;br&gt; &lt;br&gt; This update also introduces a measurement type field in resolved location metadata, giving developers greater visibility into how each device location was determined — whether through GNSS, Wi-Fi or BLE location resolvers. This make it easier to assess location data quality, debug positioning issues, and make more informed decisions based on how each location was determined.&lt;br&gt; &lt;br&gt; These updates are available in all AWS IoT Core for Device Location supported regions. For detailed guidance and implementation instructions, visit the &lt;a href=\"https://docs.aws.amazon.com/iot/latest/developerguide/device-location.html\"&gt;AWS IoT Core Device Location&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/iot-wireless/latest/developerguide/what-is-iot-wireless.html\"&gt;IoT Wireless Developer Guide&lt;/a&gt; .&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-iot-core-device-location/",
-      "publishedAt": "2026-05-05T16:59:00.000Z",
-      "updatedAt": "2026-05-05T16:59:00.000Z",
-      "categories": [],
-      "services": [
-        "IoT Core"
-      ],
-      "tags": [
-        "iot core"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "d0299c50c823cdc5",
-      "title": "Amazon MQ now supports in-place major version upgrades for RabbitMQ 4",
-      "description": "Amazon MQ now supports in-place version upgrades for RabbitMQ brokers, enabling you to upgrade your brokers to RabbitMQ 4 without creating a new broker or migrating your data. You can now upgrade from RabbitMQ 3.13 to 4.2, directly from the Amazon MQ console, AWS CLI, or API. In-place upgrades preserve your broker configuration, queues, exchanges, bindings, users, and policies. RabbitMQ 4.2 introduces breaking changes including the removal of classic mirrored queues and migration from Mnesia to the Khepri metadata store. Brokers must be running on M7G (Graviton) instance types and must not hav",
-      "descriptionHtml": "&lt;p&gt;Amazon MQ now supports in-place version upgrades for RabbitMQ brokers, enabling you to upgrade your brokers to RabbitMQ 4 without creating a new broker or migrating your data. You can now upgrade from RabbitMQ 3.13 to 4.2, directly from the Amazon MQ console, AWS CLI, or API.&lt;br&gt; &lt;br&gt; In-place upgrades preserve your broker configuration, queues, exchanges, bindings, users, and policies. RabbitMQ 4.2 introduces breaking changes including the removal of classic mirrored queues and migration from Mnesia to the Khepri metadata store. Brokers must be running on M7G (Graviton) instance types and must not have classic mirrored queues to be eligible for the upgrade. A queue migration tool is available to convert classic mirrored queues to quorum queues before upgrading. During a major version upgrade, your broker will be unavailable while Amazon MQ performs the upgrade.&lt;br&gt; &lt;br&gt; To upgrade your broker, simply select RabbitMQ 4.2 as your version through the AWS Management console, AWS CLI, or AWS SDKs. Amazon MQ automatically manages patch version upgrades for your RabbitMQ 4.2 brokers, so you need to only specify the major.minor version. To learn more about RabbitMQ 4.2 and the upgrade process, see the &lt;a href=\"https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-release-notes.html\" target=\"_blank\"&gt;Amazon MQ release notes&lt;/a&gt; and the Amazon MQ &lt;a href=\"https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/working-with-rabbitmq.html\" target=\"_blank\"&gt;developer guide&lt;/a&gt;. This capability is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\"&gt;regions&lt;/a&gt; where RabbitMQ 4 instances are available today.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-mq-inplace-upgrades-rabbitmq4/",
-      "publishedAt": "2026-05-05T16:50:00.000Z",
-      "updatedAt": "2026-05-05T16:50:00.000Z",
-      "categories": [
-        "Messaging",
-        "Developer Tools",
-        "AWS Govcloud Us",
-        "Migration",
-        "Analytics",
-        "Amazon Mq"
-      ],
-      "services": [
-        "MQ"
-      ],
-      "tags": [
-        "messaging",
-        "developer tools",
-        "aws govcloud us",
-        "migration",
-        "analytics",
-        "amazon mq",
-        "mq"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "a782edcdc6f488dc",
-      "title": "Amazon Quick now integrates with New Relic for observability-driven AI agents",
-      "description": "Amazon Quick, your AI assistant for work, now integrates with New Relic's AI agents, enabling on-call engineers, SREs, and engineering leaders to investigate incidents, generate root cause analysis briefs, and create tracked tasks without leaving their Amazon Quick workspace. After connecting to New Relic's remote model context protocol (MCP) server, you can invoke New Relic's AI agents directly from a conversational prompt in Quick – including alert insights, user impact analysis, log analysis, transaction diagnostics, and natural language NRQL queries. In a single chat exchange, you can inve",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick, your AI assistant for work,&amp;nbsp;now integrates with New Relic's AI agents, enabling&amp;nbsp;on-call engineers, SREs, and engineering leaders&amp;nbsp;to&amp;nbsp;investigate incidents, generate root cause analysis briefs, and create tracked tasks without leaving their Amazon Quick workspace.&lt;/p&gt; \n&lt;p&gt;After connecting to New Relic's remote model context protocol (MCP) server, you can invoke New Relic's AI&amp;nbsp;agents&amp;nbsp;directly from a conversational prompt in Quick&amp;nbsp;–&amp;nbsp;including alert insights, user impact analysis, log analysis, transaction diagnostics, and natural language NRQL queries. In a single chat exchange, you can investigate an incident across your observability data, generate a root cause analysis (RCA) document with evidence links, and send it as an email attachment. Quick Flows can also invoke New Relic AI agents to automate recurring triage runbooks or escalation workflows. Because Quick surfaces responses alongside enterprise knowledge stored in Spaces&amp;nbsp;-&amp;nbsp;such as runbooks, architecture docs, and on-call policies—every answer reflects both live telemetry and organizational context.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;The New Relic integration with Amazon Quick is available in all&amp;nbsp;&lt;a href=\"https://aws.amazon.com//about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\"&gt;AWS Regions&lt;/a&gt;&amp;nbsp;where Amazon Quick is available.&lt;/p&gt; \n&lt;p&gt;To get started with Amazon Quick,&amp;nbsp;&lt;a href=\"https://aws.amazon.com/quick/\" target=\"_blank\"&gt;visit the website&lt;/a&gt;&amp;nbsp;and sign up in minutes. To learn more about the&amp;nbsp;New Relic integration, read the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/newrelic-integration.html\" target=\"_blank\"&gt;New Relic integration guide&lt;/a&gt;, and explore more&amp;nbsp;Quick&amp;nbsp;integrations on the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/quick/integrations/\" target=\"_blank\"&gt;integrations page&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-quick-new-relic/",
-      "publishedAt": "2026-05-05T16:35:00.000Z",
-      "updatedAt": "2026-05-05T16:35:00.000Z",
-      "categories": [
-        "Business Productivity",
-        "Artificial Intelligence"
-      ],
-      "services": [],
-      "tags": [
-        "business productivity",
-        "artificial intelligence"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "bd68fa30245b32e4",
-      "title": "EC2 Instance Store CSI driver now generally available in EKS add-ons",
-      "description": "Amazon Elastic Kubernetes Service (Amazon EKS) now supports using the Amazon EKS console, and AWS Command Line Interface (CLI) to install and manage the Amazon Elastic Cloud Compute (EC2) Container Storage Interface (CSI) driver. This launch enables a simple experience for attaching a EC2 local instance store to an EKS cluster. The Amazon EC2 Instance Store CSI driver is a plugin that enables Kubernetes to use EC2 instance store volumes. Instance store volumes provide ephemeral block-level storage that is physically attached to the host computer. The driver manages the lifecycle of these NVMe ",
-      "descriptionHtml": "&lt;p&gt;Amazon Elastic Kubernetes Service (Amazon EKS) now supports using the Amazon EKS console, and AWS Command Line Interface (CLI) to install and manage the Amazon&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/lis-csi.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Elastic Cloud Compute (EC2)&lt;/a&gt;&amp;nbsp;Container Storage Interface (CSI) driver. This launch enables a simple experience for attaching a EC2 local instance store to an EKS cluster.&lt;/p&gt; \n&lt;p&gt;The Amazon EC2 Instance Store CSI driver is a plugin that enables Kubernetes to use EC2 instance store volumes. Instance store volumes provide ephemeral block-level storage that is physically attached to the host computer. The driver manages the lifecycle of these NVMe storage volumes and makes them available as Kubernetes&amp;nbsp;&lt;a href=\"https://kubernetes.io/docs/concepts/storage/persistent-volumes/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;persistent volumes&lt;/a&gt;.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This feature is available in all commercial regions. To get started and learn more visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon EKS documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/ec2-csi-eks/",
-      "publishedAt": "2026-05-05T16:22:00.000Z",
-      "updatedAt": "2026-05-05T16:22:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Containers",
-        "Amazon Eks",
-        "Storage"
-      ],
-      "services": [
-        "EC2",
-        "EKS"
-      ],
-      "tags": [
-        "amazon ec2",
-        "containers",
-        "amazon eks",
-        "storage",
-        "ec2",
-        "eks"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "7d4546bebf09e54b",
-      "title": "Amazon Connect Cases now supports customer profile identity resolution",
-      "description": "Amazon Connect Cases now automatically reassociates cases when duplicate customer profiles are merged, so agents always see a complete case history for each customer. When the same customer has multiple profiles, such as when they reach out through different channels or provide different contact details, Identity Resolution in Amazon Connect Customer Profiles detects and merges those duplicates, and Cases now brings all associated cases together under the unified profile. Agents no longer have to search across profiles or piece together a customer's history manually. Amazon Connect Cases is av",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Cases now automatically reassociates cases when duplicate customer profiles are merged, so agents always see a complete case history for each customer. When the same customer has multiple profiles, such as when they reach out through different channels or provide different contact details, Identity Resolution in Amazon Connect Customer Profiles detects and merges those duplicates, and Cases now brings all associated cases together under the unified profile. Agents no longer have to search across profiles or piece together a customer's history manually.&lt;br&gt; &lt;br&gt; Amazon Connect Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town). To learn more and get started, visit the Amazon Connect Cases &lt;a href=\"https://aws.amazon.com/connect/cases/\" target=\"_blank\"&gt;webpage&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/cases.html\" target=\"_blank\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-connect-cases-customer-profiles-id-res/",
-      "publishedAt": "2026-05-05T15:25:00.000Z",
-      "updatedAt": "2026-05-05T15:25:00.000Z",
-      "categories": [
-        "Contact Center",
-        "Amazon Connect",
-        "Messaging",
-        "Business Productivity"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "contact center",
-        "amazon connect",
-        "messaging",
-        "business productivity",
-        "connect"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "934a11d361814289",
-      "title": "Amazon Bedrock AgentCore is now available in AWS GovCloud (US-West)",
-      "description": "Amazon Bedrock AgentCore brings enterprise-grade agentic AI capabilities to workloads with elevated compliance needs in the AWS GovCloud (US-West) Region. AgentCore is a platform for building, deploying, and operating AI agents securely at scale—without managing infrastructure. With AgentCore, organizations can accelerate agents from prototype to production using any framework and any model, while maintaining the security and compliance controls required for government and regulated workloads. AgentCore provides composable services that work together or independently. AgentCore Runtime deploys",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore brings enterprise-grade agentic AI capabilities to workloads with elevated compliance needs in the AWS GovCloud (US-West) Region. AgentCore is a platform for building, deploying, and operating AI agents securely at scale—without managing infrastructure. With AgentCore, organizations can accelerate agents from prototype to production using any framework and any model, while maintaining the security and compliance controls required for government and regulated workloads.&lt;br&gt; &lt;br&gt; AgentCore provides composable services that work together or independently. AgentCore Runtime deploys agents with complete session isolation and support for long-running workloads. AgentCore Gateway converts existing Application Programming Interfaces (APIs) and Lambda functions into agent-ready tools through the Model Context Protocol (MCP), giving agents secure access to enterprise data and services. AgentCore Identity integrates with existing identity providers for automated authentication and permission delegation, while AgentCore Observability and Evaluations provide real-time monitoring and continuous quality assessment of agent performance in production.&lt;br&gt; &lt;br&gt; To learn more about Amazon Bedrock AgentCore, visit the &lt;a href=\"https://aws.amazon.com/bedrock/agentcore/\"&gt;AgentCore product page&lt;/a&gt;. For details about AgentCore in AWS GovCloud (US), visit the &lt;a href=\"https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-bedrock-agentcore.html\"&gt;GovCloud documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/bedrock-agentcore-launch-aws-govcloud-us/",
-      "publishedAt": "2026-05-05T12:00:00.000Z",
-      "updatedAt": "2026-05-05T12:00:00.000Z",
-      "categories": [
-        "Amazon Bedrock",
-        "Security Identity And Compliance",
-        "AWS Govcloud Us",
-        "Artificial Intelligence",
-        "Developer Tools"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "amazon bedrock",
-        "security identity and compliance",
-        "aws govcloud us",
-        "artificial intelligence",
-        "developer tools",
-        "bedrock"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "db4c7293476b665d",
-      "title": "AWS Backup improves performance for Amazon EKS cluster backups",
-      "description": "AWS Backup for Amazon EKS now completes cluster state backups up to 10x faster. This performance improvement enables you to back up Amazon EKS clusters with a large numbers of namespaces and Kubernetes resources significantly faster, reducing backup windows from days to hours for the largest clusters. AWS Backup is a policy-based, fully managed, and cost-effective solution that enables you to centralize and automate data protection of Amazon EKS along with other AWS services that span compute, storage, and databases. The performance improvement is automatically enabled at no additional cost in",
-      "descriptionHtml": "&lt;p&gt;AWS Backup for Amazon EKS now completes cluster state backups up to 10x faster. This performance improvement enables you to back up Amazon EKS clusters with a large numbers of namespaces and Kubernetes resources significantly faster, reducing backup windows from days to hours for the largest clusters. AWS Backup is a policy-based, fully managed, and cost-effective solution that enables you to centralize and automate data protection of Amazon EKS along with other AWS services that span compute, storage, and databases. The performance improvement is automatically enabled at no additional cost in all AWS Regions where AWS Backup support for Amazon EKS is available.&lt;/p&gt; \n&lt;p&gt;AWS Backup support for Amazon EKS is available in all AWS commercial Regions and AWS GovCloud (US) Regions. For more information on regional availability and pricing, see the &lt;a href=\"https://aws.amazon.com/backup/pricing/\"&gt;AWS Backup pricing page&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;To learn more about AWS Backup for Amazon EKS, visit the &lt;a href=\"https://aws.amazon.com/backup/\"&gt;product page&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/eks-backups.html\"&gt;technical documentation&lt;/a&gt;. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/backup\"&gt;AWS Backup console&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-backup-amazon-eks-performance-improvement/",
-      "publishedAt": "2026-05-05T10:00:00.000Z",
-      "updatedAt": "2026-05-05T10:00:00.000Z",
-      "categories": [
-        "Containers",
-        "Amazon Eks",
-        "Storage",
-        "AWS Backup"
-      ],
-      "services": [
-        "EKS",
-        "Backup"
-      ],
-      "tags": [
-        "containers",
-        "amazon eks",
-        "storage",
-        "aws backup",
-        "eks",
-        "backup"
       ],
       "isNew": true
     }
