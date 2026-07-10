@@ -1,7 +1,190 @@
 {
-  "lastUpdated": "2026-07-09T09:10:32.616Z",
+  "lastUpdated": "2026-07-10T09:10:03.063Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "9265e2ef7783016d",
+      "title": "OAuth support for the AWS MCP Server",
+      "description": "You can now connect AI agents directly to the AWS MCP Server using AWS Sign-In. Agents connect using industry-standard OAuth without requiring additional authentication software. Existing AWS identities, sign-in methods, IAM permissions, and governance controls you have already set up continue to apply. Developers can authorize agents interactively through a browser or programmatically using non-interactive (headless) authorization. Administrators can govern OAuth access using familiar IAM policies together with new OAuth capabilities, including global condition keys, token introspection and r",
+      "descriptionHtml": "&lt;p&gt;You can now connect AI agents directly to the AWS MCP Server using AWS Sign-In. Agents connect using industry-standard OAuth without requiring additional authentication software. Existing AWS identities, sign-in methods, IAM permissions, and governance controls you have already set up continue to apply.&lt;/p&gt; \n&lt;p&gt;Developers can authorize agents interactively through a browser or programmatically using non-interactive (headless) authorization. Administrators can govern OAuth access using familiar IAM policies together with new OAuth capabilities, including global condition keys, token introspection and revocation APIs, dynamic client registration, and CloudTrail audit events.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; To learn more, see the &lt;a href=\"https://aws.amazon.com/blogs/security/introducing-oauth-support-for-aws-mcp-server/\"&gt;OAuth Support for the AWS MCP Server blogpost&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/signin/latest/userguide/oauth-sign-in-overview.html\"&gt;Sign-In with OAuth 2.0&lt;/a&gt; in the AWS Sign-In User Guide, and &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/getting-started-aws-mcp-server.html\"&gt;Setting up the AWS MCP Server&lt;/a&gt; in the Agent Toolkit for AWS User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/oauth-aws-mcp-server/",
+      "publishedAt": "2026-07-09T23:03:00.000Z",
+      "updatedAt": "2026-07-09T23:03:00.000Z",
+      "categories": [
+        "AWS Iam",
+        "AWS Identity And Access Management"
+      ],
+      "services": [
+        "IAM"
+      ],
+      "tags": [
+        "aws iam",
+        "aws identity and access management",
+        "iam"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0d2ad577c59f678e",
+      "title": "Amazon Timestream for InfluxDB now publishes database state change events to Amazon EventBridge",
+      "description": "Amazon Timestream for InfluxDB now publishes events to Amazon EventBridge when your database instances or clusters undergo state changes. Events are emitted for lifecycle operations including creation, deletion, compute and storage scaling, parameter group updates, maintenance windows, and reboot — covering both successful completions and failures. With this capability, customers can use Amazon EventBridge rules to programmatically react to database operations without polling the API for status. DevOps teams can build automation workflows that trigger when a scaling operation completes, operat",
+      "descriptionHtml": "&lt;p&gt;Amazon Timestream for InfluxDB now publishes events to Amazon EventBridge when your database instances or clusters undergo state changes. Events are emitted for lifecycle operations including creation, deletion, compute and storage scaling, parameter group updates, maintenance windows, and reboot — covering both successful completions and failures.&lt;br&gt; &lt;br&gt; With this capability, customers can use Amazon EventBridge rules to programmatically react to database operations without polling the API for status. DevOps teams can build automation workflows that trigger when a scaling operation completes, operations teams can route failure events for immediate alerting, and compliance teams can persist all events to Amazon CloudWatch Logs or Amazon S3 for audit trails. Events are published to the default Amazon EventBridge event bus in your account with source aws.timestream-influxdb, supporting content-based filtering and routing to any EventBridge target including AWS Lambda functions, AWS Step Functions, Amazon SQS queues, Amazon SNS topics, and cross-account event buses.&lt;br&gt; &lt;br&gt; This capability is available in all AWS &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/timestream.html\"&gt;Regions&lt;/a&gt; where Amazon Timestream for InfluxDB is available. Standard Amazon EventBridge pricing applies for rule evaluation and target delivery. To get started, open the Amazon EventBridge console and create a rule with source aws.timestream-influxdb. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/timestream/latest/developerguide/timestream-for-influxdb.html\"&gt;Amazon Timestream for InfluxDB documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/timestream/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/timestream-influxdb-eventbridge/",
+      "publishedAt": "2026-07-09T17:24:00.000Z",
+      "updatedAt": "2026-07-09T17:24:00.000Z",
+      "categories": [
+        "Amazon Timestream",
+        "Databases"
+      ],
+      "services": [
+        "Timestream",
+        "EventBridge"
+      ],
+      "tags": [
+        "amazon timestream",
+        "databases",
+        "timestream",
+        "eventbridge"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ecc738484f7e195f",
+      "title": "AWS Client VPN extends availability to four additional AWS Regions",
+      "description": "AWS Client VPN is now available in four new regions: Canada West (Calgary), Mexico (Central) and two in Asia Pacific - New Zealand and Taipei. This fully managed service enables customers to securely connect their remote workforce to resources in AWS or on-premises networks. AWS Client VPN eliminates the need for hardware VPN appliances and complex operational management through its pay-as-you-go model. Organizations can easily manage and monitor VPN connections through a single console. To learn more about Client VPN: Visit the AWS Client VPN product page . Read the AWS Client VPN documentati",
+      "descriptionHtml": "&lt;p&gt;AWS Client VPN is now available in four new regions: Canada West (Calgary), Mexico (Central) and two in Asia Pacific - New Zealand and Taipei. This fully managed service enables customers to securely connect their remote workforce to resources in AWS or on-premises networks.&lt;/p&gt; \n&lt;p&gt;AWS Client VPN eliminates the need for hardware VPN appliances and complex operational management through its pay-as-you-go model. Organizations can easily manage and monitor VPN connections through a single console.&lt;br&gt; To learn more about Client VPN:&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;Visit the AWS Client VPN &lt;a href=\"https://aws.amazon.com/vpn/\"&gt;product page&lt;/a&gt;.&lt;/li&gt; \n &lt;li&gt;Read the AWS Client VPN &lt;a href=\"https://docs.aws.amazon.com/vpn/\"&gt;documentation&lt;/a&gt;.&lt;/li&gt; \n &lt;li&gt;AWS Client VPN &lt;a href=\"https://aws.amazon.com/vpn/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-client-vpn-four-additional-regions/",
+      "publishedAt": "2026-07-09T17:08:00.000Z",
+      "updatedAt": "2026-07-09T17:08:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "AWS Client Vpn"
+      ],
+      "services": [],
+      "tags": [
+        "networking and content delivery",
+        "aws client vpn"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5b585ebfdb9c7b43",
+      "title": "Amazon SageMaker Unified Studio adds custom asset types to the catalog in IAM-based domains",
+      "description": "Amazon SageMaker Unified Studio now supports custom asset types for IAM-based domains. With custom asset types, domain administrators can catalog any format of asset within the SageMaker Unified Studio, such as medical imaging files in Amazon S3, revenue dashboards built in PowerBI, or PDF research reports generated by a third-party platform. Custom asset types bring all assets, regardless of their underlying format, into the SageMaker catalog so teams can search, discover, and subscribe to them without needing separate tools or processes. To get started, an administrator can create a custom a",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now supports custom asset types for IAM-based domains. With custom asset types, domain administrators can catalog any format of asset within the SageMaker Unified Studio, such as medical imaging files in Amazon S3, revenue dashboards built in PowerBI, or PDF research reports generated by a third-party platform. Custom asset types bring all assets, regardless of their underlying format, into the SageMaker catalog so teams can search, discover, and subscribe to them without needing separate tools or processes.&lt;/p&gt; \n&lt;p&gt;To get started, an administrator can create a custom asset type with a name, description, and optional metadata forms that define the fields each asset should carry. Individual assets can then be created from that type, enriched with glossary terms and README documentation to add business context for humans and AI agents, and published for discovery. Once published, anyone in the domain can find the asset by name, type, or glossary term and request a subscription through the same governed workflow used for all other catalog assets.&lt;/p&gt; \n&lt;p&gt;Custom asset types for IAM-based domains are available in all AWS Regions where Amazon SageMaker Unified Studio is available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/catalog-iam-custom-asset-types.html\"&gt;SageMaker Unified Studio user guide.&amp;nbsp;&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/smus-custom-asset-types-iam/",
+      "publishedAt": "2026-07-09T16:04:00.000Z",
+      "updatedAt": "2026-07-09T16:04:00.000Z",
+      "categories": [
+        "Amazon Sagemaker",
+        "Analytics"
+      ],
+      "services": [
+        "IAM",
+        "SageMaker"
+      ],
+      "tags": [
+        "amazon sagemaker",
+        "analytics",
+        "iam",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "34e4cb2c9cbb70d8",
+      "title": "Amazon SageMaker HyperPod now supports deep health checks for Slurm clusters with continuous provisioning",
+      "description": "Amazon SageMaker HyperPod now supports deep health checks for Slurm-orchestrated clusters created with continuous provisioning, enabling you to proactively verify GPU accelerator health on running instances at any time. Continuous provisioning lets you start training quickly and scale instance groups asynchronously without all-or-nothing failures, and you can now pair that flexibility with comprehensive hardware validation as instances come online. This capability addresses a critical challenge where even a single unhealthy node can waste hours of compute time and delay critical workloads. Wit",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports deep health checks for Slurm-orchestrated clusters created with continuous provisioning, enabling you to proactively verify GPU accelerator health on running instances at any time. Continuous provisioning lets you start training quickly and scale instance groups asynchronously without all-or-nothing failures, and you can now pair that flexibility with comprehensive hardware validation as instances come online. This capability addresses a critical challenge where even a single unhealthy node can waste hours of compute time and delay critical workloads.&lt;br&gt; &lt;br&gt; With deep health checks, you can target entire instance groups or specific instances to run comprehensive hardware stress tests and connectivity tests before committing compute resources to a job. Because continuous provisioning adds worker nodes to your Slurm cluster asynchronously as capacity becomes available, you can run deep health checks on each new node as it comes online, validating hardware before scheduling jobs on it and without interrupting workloads already running on healthy nodes. Progress and results are visible at both the instance group and instance level through the SageMaker console and APIs, providing complete visibility into GPU health, network connectivity, and multi-node communication performance. Instances undergoing checks are automatically isolated from workload scheduling and returned to service upon passing. When paired with HyperPod's automatic node recovery capability, instances that fail are automatically rebooted or replaced, ensuring cluster health.&lt;br&gt; &lt;br&gt; This capability is available in all regions where Amazon SageMaker HyperPod is available. To learn more about on-demand deep health checks and continuous provisioning, see the Amazon SageMaker HyperPod &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-resiliency-slurm-deep-health-checks.html\" target=\"_blank\"&gt;User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/deep-health-check-continuous-slurm/",
+      "publishedAt": "2026-07-09T16:00:00.000Z",
+      "updatedAt": "2026-07-09T16:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Compute"
+      ],
+      "services": [
+        "SageMaker",
+        "Health"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "compute",
+        "sagemaker",
+        "health"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5e170ca2962a8c5a",
+      "title": "Amazon SageMaker Feature Store now supports batch feature writes and record listing",
+      "description": "Amazon SageMaker Feature Store is a fully managed capability that makes it easy to compute, store, and retrieve features for training and deploying AI models. SageMaker Feature Store now supports new capabilities for high-throughput feature ingestion, record discovery, and offline store cataloging. Data scientists can now write multiple records across multiple feature groups in a single request with BatchWriteRecord, list the records stored in a feature group without knowing each record identifier in advance with ListRecords, and create tables and databases with custom names in the offline sto",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Feature Store is a fully managed capability that makes it easy to compute, store, and retrieve features for training and deploying AI models. SageMaker Feature Store now supports new capabilities for high-throughput feature ingestion, record discovery, and offline store cataloging. Data scientists can now write multiple records across multiple feature groups in a single request with BatchWriteRecord, list the records stored in a feature group without knowing each record identifier in advance with ListRecords, and create tables and databases with custom names in the offline store.&lt;br&gt; &lt;br&gt; Data scientists can use BatchWriteRecord to ingest feature data at scale with fewer API calls and lower latency than writing one record at a time. BatchWriteRecord targets the online store, the offline store, or both, returns individual record failures without failing the entire request, and supports time-to-live settings at the record, request, and feature group level. With ListRecords, data scientists can retrieve the record identifiers in a feature group, one page at a time, to browse and audit feature group contents, recover record identifiers, and manage the record lifecycle. When configuring an offline store, data scientists can also create Glue and Iceberg tables with custom names. These capabilities enable data scientists to ingest features at scale and manage the records stored in SageMaker Feature Store without building custom tooling.&lt;/p&gt; \n&lt;p&gt;These capabilities are available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where&lt;a href=\"https://aws.amazon.com/sagemaker/ai/feature-store/\"&gt; Amazon SageMaker Feature Store&lt;/a&gt; is available. For more information, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Operations_Amazon_SageMaker_Feature_Store_Runtime.html\"&gt;Amazon Feature Store Runtime&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_OfflineStoreConfig.html#sagemaker-Type-OfflineStoreConfig-DisableGlueTableCreation\"&gt;Offline Store Configuration&lt;/a&gt; documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amzn-sgm-feature-store-batch-write-list/",
+      "publishedAt": "2026-07-09T15:35:00.000Z",
+      "updatedAt": "2026-07-09T15:35:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "Batch",
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon sagemaker",
+        "batch",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7157141186f25226",
+      "title": "Amazon MSK Replicator now supports replication from external Apache Kafka clusters to MSK Standard brokers",
+      "description": "Amazon MSK Replicator now supports data replication from external Apache Kafka clusters - including on-premises, self-managed on AWS, or other cloud providers to Amazon MSK Standard brokers. This capability extends replication support to MSK Standard brokers, in addition to the existing support for MSK Express brokers. With this launch, you can migrate workloads to MSK Standard brokers, support disaster recovery by using MSK clusters as a failover or backup target, and enable data distribution across hybrid and multi-cloud environments. MSK Replicator is a feature of Amazon MSK that automates ",
+      "descriptionHtml": "&lt;p&gt;Amazon MSK Replicator now supports data replication from external Apache Kafka clusters - including on-premises, self-managed on AWS, or other cloud providers to Amazon MSK Standard brokers. This capability extends replication support to MSK Standard brokers, in addition to the existing support for MSK Express brokers. With this launch, you can migrate workloads to MSK Standard brokers, support disaster recovery by using MSK clusters as a failover or backup target, and enable data distribution across hybrid and multi-cloud environments.&lt;br&gt; &lt;br&gt; MSK Replicator is a feature of Amazon MSK that automates data replication between Kafka clusters, eliminating the need to manage custom replication infrastructure or configure open-source tools. Previously, MSK Replicator supported replication from external Apache Kafka clusters to MSK Express brokers only. With this launch, you can now also replicate data from external Kafka clusters to MSK Standard brokers, using either SASL/SCRAM or mutual TLS (mTLS) authentication to connect to your external clusters. You can also use MSK Replicator to replicate data from Amazon MSK Standard to external Kafka clusters for reliable failback or multi-cloud data distribution. Unlike self-managed replication tools, MSK Replicator lets you retain your original Kafka topic names during replication while automatically avoiding infinite replication loops. It also synchronizes consumer group offsets bidirectionally, enabling you to move producers and consumers across clusters independently, in any order, without coordination constraints or the risk of data loss.&lt;br&gt; &lt;br&gt; This new capability is supported in all AWS Regions where Amazon MSK Replicator is available. Visit the MSK Replicator &lt;a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/msk-replicator.html\"&gt;documentation&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/msk/features/msk-replicator/\"&gt;product page&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/msk/pricing/\"&gt;pricing page&lt;/a&gt;, and this &lt;a href=\"https://aws.amazon.com/blogs/big-data/migrate-third-party-and-self-managed-apache-kafka-clusters-to-amazon-msk-express-brokers-with-amazon-msk-replicator/\"&gt;AWS blog post&lt;/a&gt; to learn more.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-msk-replicator-external-kafka-standard-broker-support",
+      "publishedAt": "2026-07-09T15:00:00.000Z",
+      "updatedAt": "2026-07-09T15:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Msk"
+      ],
+      "services": [
+        "MSK",
+        "Kafka"
+      ],
+      "tags": [
+        "analytics",
+        "amazon msk",
+        "msk",
+        "kafka"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ee14f2934f1dc4b0",
+      "title": "AWS Config now supports 191 additional managed rules",
+      "description": "AWS Config now supports 191 additional managed rules across key services including Amazon Bedrock, Amazon SageMaker, Amazon ECS, Amazon EKS, Amazon RDS, Amazon Redshift, Amazon S3, and Amazon CloudTrail. This expansion increases built-in governance coverage across AI workloads and core cloud infrastructure. Examples of the new managed rules include evaluating resource configurations for encryption, logging, public access, network security, data protection, and other operational best practices across AWS services. With this launch, you can deploy these new managed rules individually or as part ",
+      "descriptionHtml": "&lt;p&gt;AWS Config now supports 191 additional managed rules across key services including Amazon Bedrock, Amazon SageMaker, Amazon ECS, Amazon EKS, Amazon RDS, Amazon Redshift, Amazon S3, and Amazon CloudTrail. This expansion increases built-in governance coverage across AI workloads and core cloud infrastructure. Examples of the new managed rules include evaluating resource configurations for encryption, logging, public access, network security, data protection, and other operational best practices across AWS services.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;With this launch, you can deploy these new managed rules individually or as part of a conformance pack in the &lt;a href=\"https://docs.aws.amazon.com/config/latest/developerguide/what-is-resource-config-coverage.html\"&gt;AWS Regions&lt;/a&gt; where the corresponding AWS services are available.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;AWS Certificate Manager&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ACM_CERTIFICATE_RSA_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon API Gateway&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;API_GWV2_ACCESS_LOGS_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS AppSync&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;APPSYNC_AUTHORIZATION_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;APPSYNC_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon Athena&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ATHENA_WORKGROUP_ENCRYPTED_AT_REST&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ATHENA_WORKGROUP_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon Aurora&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;AURORA_MYSQL_CLUSTER_AUDIT_LOGGING&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon Bedrock&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;BEDROCKAGENTCORE_BROWSERCUSTOM_NETWORK_MODE_NOT_PUBLIC&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;BEDROCKAGENTCORE_BROWSERCUSTOM_RECORDING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;BEDROCKAGENTCORE_CODEINTERPRETER_NETWORKMODE_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;BEDROCKAGENTCORE_GATEWAY_AUTHORIZER_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;BEDROCKAGENTCORE_GATEWAY_ENCRYPTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;BEDROCKAGENTCORE_RUNTIME_PRIVATE_NETWORK_REQUIRED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;BEDROCK_AGENTCORE_MEMORY_ENCRYPTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;BEDROCK_AGENTCORE_MEMORY_EVENT_EXPIRY_DURATION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;BEDROCK_DATA_SOURCE_ENCRYPTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS CloudFormation&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CLOUDFORMATION_STACK_SERVICE_ROLE_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CLOUDFORMATION_TERMINATION_PROTECTION_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS CloudTrail&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CLOUDTRAIL_ALL_READ_S3_DATA_EVENT_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CLOUDTRAIL_ALL_WRITE_S3_DATA_EVENT_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CLOUDTRAIL_S3_BUCKET_ACCESS_LOGGING&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CLOUDTRAIL_S3_BUCKET_PUBLIC_ACCESS_PROHIBITED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EVENT_DATA_STORE_CMK_ENCRYPTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon CloudWatch&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CLOUDWATCH_ALARM_ACTION_ENABLED_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon Cognito&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;COGNITO_IDENTITY_POOL_UNAUTH_ACCESS_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;COGNITO_USERPOOL_CUST_AUTH_THREAT_FULL_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;COGNITO_USER_POOL_ADVANCED_SECURITY_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;COGNITO_USER_POOL_MFA_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;COGNITO_USER_POOL_PASSWORD_POLICY_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS CodeBuild&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CODEBUILD_PROJECT_ARTIFACT_ENCRYPTION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CODEBUILD_PROJECT_ENVIRONMENT_PRIVILEGED_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CODEBUILD_PROJECT_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CODEBUILD_PROJECT_S3_LOGS_ENCRYPTED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS DataSync&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DATASYNC_TASK_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Database Migration Service (DMS)&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DMS_REPLICATION_TASK_SOURCEDB_LOGGING&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DMS_REPLICATION_TASK_TARGETDB_LOGGING&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon DocumentDB&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DOCDB_CLUSTER_AUDIT_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DOCDB_CLUSTER_DELETION_PROTECTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DOCDB_CLUSTER_ENCRYPTED_IN_TRANSIT&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DOCDB_CLUSTER_SNAPSHOT_PUBLIC_PROHIBITED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon DynamoDB&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;DYNAMODB_TABLE_DELETION_PROTECTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon EC2&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_ENIS_SOURCE_DESTINATION_CHECK_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_INSTANCE_LAUNCHED_WITH_ALLOWED_AMI&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_LAUNCH_TEMPLATES_EBS_VOLUME_ENCRYPTED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_LAUNCH_TEMPLATE_IMDSV2_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_LAUNCH_TEMPLATE_PUBLIC_IP_DISABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_SECURITY_GROUP_ATTACHED_TO_ENI&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_SPOT_FLEET_REQUEST_CT_ENCRYPTION_AT_REST&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_STOPPED_INSTANCE_DAYS_CHECK_PVT&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_TRANSIT_GATEWAY_AUTO_VPC_ATTACH_DISABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_VPN_CONNECTION_IKE_VERSION_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EC2_VPN_CONNECTION_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;INSTANCES_IN_VPC&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon EC2 Auto Scaling&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;AUTOSCALING_LAUNCH_TEMPLATE&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;AUTOSCALING_MULTIPLE_AZ&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;AUTOSCALING_MULTIPLE_INSTANCE_TYPES&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon ECR&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECR_PRIVATE_IMAGE_SCANNING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECR_PRIVATE_LIFECYCLE_POLICY_CONFIGURED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECR_PRIVATE_TAG_IMMUTABILITY_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECR_REPOSITORY_CMK_ENCRYPTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon ECS&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_CONTAINERS_NONPRIVILEGED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_CONTAINERS_READONLY_ACCESS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_CONTAINER_INSIGHTS_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_FARGATE_LATEST_PLATFORM_VERSION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_NO_ENVIRONMENT_SECRETS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_TASK_DEFINITION_EFS_ENCRYPTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_TASK_DEFINITION_LINUX_USER_NON_ROOT&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_TASK_DEFINITION_LOG_CONFIGURATION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_TASK_DEFINITION_NETWORK_MODE_NOT_HOST&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_TASK_DEFINITION_PID_MODE_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_TASK_DEFINITION_USER_FOR_HOST_MODE_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ECS_TASK_DEFINITION_WINDOWS_USER_NON_ADMIN&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon EFS&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EFS_ACCESS_POINT_ENFORCE_ROOT_DIRECTORY&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EFS_ACCESS_POINT_ENFORCE_USER_IDENTITY&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EFS_AUTOMATIC_BACKUPS_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EFS_FILESYSTEM_CT_ENCRYPTED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EFS_MOUNT_TARGET_PUBLIC_ACCESSIBLE&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon EKS&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EKS_NODEGROUP_SUPPORTED_VERSION_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Elastic Beanstalk&amp;nbsp;&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;BEANSTALK_ENHANCED_HEALTH_REPORTING_ENABLED&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon ElastiCache&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ELASTICACHE_AUTOMATIC_BACKUP_CHECK_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ELASTICACHE_AUTO_MINOR_VERSION_UPGRADE_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ELASTICACHE_REPL_GRP_AUTO_FAILOVER_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ELASTICACHE_REPL_GRP_ENCRYPTED_AT_REST&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ELASTICACHE_SUBNET_GROUP_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ELASTICACHE_SUPPORTED_ENGINE_VERSION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Elastic Load Balancing&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ALB_DESYNC_MODE_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CLB_DESYNC_MODE_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CLB_MULTIPLE_AZ&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ELBV2_LISTENER_ENCRYPTION_IN_TRANSIT&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ELBV2_MULTIPLE_AZ&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;ELBV2_PREDEFINED_SECURITY_POLICY_SSL_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NLB_CROSS_ZONE_LOAD_BALANCING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon EMR&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;EMR_BLOCK_PUBLIC_ACCESS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon EventBridge&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;CUSTOM_EVENTBUS_POLICY_ATTACHED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon FSx&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;FSX_LUSTRE_COPY_TAGS_TO_BACKUPS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;FSX_OPENZFS_COPY_TAGS_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;FSX_OPENZFS_DEPLOYMENT_TYPE_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;FSX_WINDOWS_AUDIT_LOG_CONFIGURED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;FSX_WINDOWS_DEPLOYMENT_TYPE_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Glue&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;GLUE_ML_TRANSFORM_ENCRYPTED_AT_REST&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon GuardDuty&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;GUARDDUTY_ECS_PROTECTION_RUNTIME_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;GUARDDUTY_EKS_PROTECTION_AUDIT_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;GUARDDUTY_LAMBDA_PROTECTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;GUARDDUTY_MALWARE_PROTECTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;GUARDDUTY_RUNTIME_MONITORING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;GUARDDUTY_S3_PROTECTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;IAM&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;IAM_EXTERNAL_ACCESS_ANALYZER_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;IAM_SERVER_CERTIFICATE_EXPIRATION_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon Kendra&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;KENDRA_INDEX_TAGGED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon Kinesis&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;KINESIS_FIREHOSE_DELIVERY_STREAM_ENCRYPTED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;KINESIS_STREAM_BACKUP_RETENTION_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;KINESIS_STREAM_ENCRYPTED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS KMS&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;KMS_KEY_POLICY_NO_PUBLIC_ACCESS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Lambda&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;LAMBDA_FUNCTION_XRAY_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;LAMBDA_VPC_MULTI_AZ_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon Neptune&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NEPTUNE_CLUSTER_BACKUP_RETENTION_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NEPTUNE_CLUSTER_COPY_TAGS_TO_SNAPSHOT_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NEPTUNE_CLUSTER_DELETION_PROTECTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NEPTUNE_CLUSTER_ENCRYPTED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NEPTUNE_CLUSTER_IAM_DATABASE_AUTHENTICATION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NEPTUNE_CLUSTER_MULTI_AZ_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NEPTUNE_CLUSTER_SNAPSHOT_ENCRYPTED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NEPTUNE_CLUSTER_SNAPSHOT_PUBLIC_PROHIBITED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Network Firewall&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NETFW_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NETFW_SUBNET_CHANGE_PROTECTION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon OpenSearch Service&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;OPENSEARCH_ENCRYPTED_AT_REST&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;OPENSEARCH_HTTPS_REQUIRED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;OPENSEARCH_NODE_TO_NODE_ENCRYPTION_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon RDS&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;MARIADB_PUBLISH_LOGS_TO_CLOUDWATCH_LOGS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_AURORA_MYSQL_AUDIT_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_AURORA_POSTGRESQL_LOGS_TO_CLOUDWATCH&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_CLUSTER_DEFAULT_ADMIN_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_CLUSTER_ENCRYPTED_AT_REST&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_GLOBAL_CLUSTER_AURORA_POSTGRESQL_SUPPORTED_VERSION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_INSTANCE_DEFAULT_ADMIN_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_INSTANCE_SUBNET_IGW_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_MARIADB_INSTANCE_ENCRYPTED_IN_TRANSIT&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_MYSQL_INSTANCE_ENCRYPTED_IN_TRANSIT&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_PGSQL_CLUSTER_COPY_TAGS_TO_SNAPSHOT_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_POSTGRESQL_LOGS_TO_CLOUDWATCH&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_POSTGRES_INSTANCE_ENCRYPTED_IN_TRANSIT&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_PROXY_TLS_ENCRYPTION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_SNAPSHOT_ENCRYPTED&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_SQLSERVER_ENCRYPTED_IN_TRANSIT&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;RDS_SQL_SERVER_LOGS_TO_CLOUDWATCH&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon Redshift&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;REDSHIFT_CLUSTER_MULTI_AZ_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;REDSHIFT_CLUSTER_SUBNET_GROUP_MULTI_AZ&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;REDSHIFT_DEFAULT_ADMIN_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;REDSHIFT_SERVERLESS_DEFAULT_ADMIN_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;REDSHIFT_SERVERLESS_NAMESPACE_CMK_ENCRYPTION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;REDSHIFT_SERVERLESS_PUBLISH_LOGS_TO_CLOUDWATCH&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;REDSHIFT_SERVERLESS_WORKGROUP_ENCRYPTED_IN_TRANSIT&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;REDSHIFT_SERVERLESS_WORKGROUP_NO_PUBLIC_ACCESS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;REDSHIFT_SERVERLESS_WORKGROUP_ROUTES_WITHIN_VPC&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;REDSHIFT_UNRESTRICTED_PORT_ACCESS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon S3&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;S3_ACCESS_POINT_IN_VPC_ONLY&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;S3_ACCESS_POINT_PUBLIC_ACCESS_BLOCKS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;S3_BUCKET_ACL_PROHIBITED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;S3_BUCKET_CROSS_REGION_REPLICATION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;S3_BUCKET_MFA_DELETE_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;S3_EVENT_NOTIFICATIONS_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;S3_LIFECYCLE_POLICY_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;S3_VERSION_LIFECYCLE_POLICY_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon SageMaker&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_ENDPOINT_CONFIG_KMS_KEY_REQUIRED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_FEATUREGROUP_ENCRYPTION_AT_REST&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_FEATUREGROUP_ONLINE_STORE_ENCRYPTION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_INF_EXPERIMENT_DATA_STORAGE_KMS_ENCRYPTED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_INF_EXPERIMENT_INSTANCE_STORAGE_KMS_ENCRYPTED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_MODEL_EXPLAINABILITY_JOB_NETWORK_ISOLATION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_MODEL_MULTICONTAINER_PRIVATE_REGISTRY&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_MODEL_PRIVATE_REGISTRY_REQUIRED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_MODEL_QUALITY_JOB_DEFINITION_ISOLATION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_MONITORING_SCHEDULE_TRAFFIC_ENCRYPTION&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_NOTEBOOK_INSTANCE_INSIDE_VPC&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_NOTEBOOK_INSTANCE_ROOT_ACCESS_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SAGEMAKER_NOTEBOOK_INSTANCE_STORAGE_VOL_KMS_ENCRYPTED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Account Management&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SECURITY_ACCOUNT_INFORMATION_PROVIDED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon SNS&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SNS_TOPIC_MESSAGE_DELIVERY_NOTIFICATION_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SNS_TOPIC_NO_PUBLIC_ACCESS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon SQS&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SQS_QUEUE_DLQ_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SQS_QUEUE_NO_PUBLIC_ACCESS&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SQS_QUEUE_POLICY_FULL_ACCESS_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Systems Manager&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SSM_AUTOMATION_BLOCK_PUBLIC_SHARING&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;SSM_AUTOMATION_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Transfer Family&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;TRANSFER_CONNECTOR_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon VPC&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;NACL_NO_UNRESTRICTED_SSH_RDP&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;VPC_ENDPOINT_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;VPC_PEERING_DNS_RESOLUTION_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;VPC_SG_PORT_RESTRICTION_CHECK&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS WAF&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;WAFV2_RULEGROUP_LOGGING_ENABLED&amp;nbsp;&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;WAFV2_WEBACL_NOT_EMPTY&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-config-additional-managed-rules",
+      "publishedAt": "2026-07-09T12:00:00.000Z",
+      "updatedAt": "2026-07-09T12:00:00.000Z",
+      "categories": [
+        "Management And Governance",
+        "AWS Config"
+      ],
+      "services": [
+        "Config"
+      ],
+      "tags": [
+        "management and governance",
+        "aws config",
+        "config"
+      ],
+      "isNew": true
+    },
     {
       "id": "db42fc732ee6c8d6",
       "title": "AWS Builder Center Now Offers Free Sandbox Environments",
@@ -16,6 +199,40 @@
       "services": [],
       "tags": [
         "developer"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6f9aca3a30511f0e",
+      "title": "Amazon SageMaker Unified Studio Workflows now supports operators for Amazon Bedrock, S3 Tables, S3 Vectors, and Glue Catalog",
+      "description": "Amazon SageMaker Unified Studio Workflows now supports 19 new operators for Amazon Bedrock, Amazon S3 Tables, Amazon S3 Vectors, AWS Glue Data Catalog, and Amazon MWAA Serverless. With these operators, customers can add new tasks using the visual workflow creator to orchestrate these services without writing custom integration code. With this launch, data workers and builders can create workflows that manage Bedrock guardrails, provision and delete S3 Tables and S3 Vectors resources, manage Glue Data Catalog tables and databases, and trigger MWAA Serverless workflow runs. This expands the brea",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio Workflows now supports 19 new operators for Amazon Bedrock, Amazon S3 Tables, Amazon S3 Vectors, AWS Glue Data Catalog, and Amazon MWAA Serverless. With these operators, customers can add new tasks using the visual workflow creator to orchestrate these services without writing custom integration code.&lt;br&gt; With this launch, data workers and builders can create workflows that manage Bedrock guardrails, provision and delete S3 Tables and S3 Vectors resources, manage Glue Data Catalog tables and databases, and trigger MWAA Serverless workflow runs. This expands the breadth of AWS services you can orchestrate from SageMaker Unified Studio Workflows, reducing the need to switch between consoles or write custom DAG code.&lt;br&gt; This feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available. For more information, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Region table&lt;/a&gt;.&lt;br&gt; To learn more, see &lt;a href=\"https://docs.aws.amazon.com/mwaa/latest/mwaa-serverless-userguide/operators.html\"&gt;Supported operators for Amazon MWAA Serverless workflows&lt;/a&gt;. To get started, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/serverless-visual-workflows.html\"&gt;Serverless visual workflows&lt;/a&gt; in the Amazon SageMaker Unified Studio User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/apache-airflow-operators-amazon-sagemaker-unified-studio-workflows/",
+      "publishedAt": "2026-07-08T22:00:00.000Z",
+      "updatedAt": "2026-07-08T22:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Sagemaker Studio",
+        "Artificial Intelligence",
+        "Amazon Mwaa"
+      ],
+      "services": [
+        "S3",
+        "SageMaker",
+        "Bedrock",
+        "Glue",
+        "MWAA"
+      ],
+      "tags": [
+        "analytics",
+        "amazon sagemaker studio",
+        "artificial intelligence",
+        "amazon mwaa",
+        "s3",
+        "sagemaker",
+        "bedrock",
+        "glue",
+        "mwaa"
       ],
       "isNew": true
     },
@@ -106,6 +323,25 @@
         "amazon connect",
         "business productivity",
         "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a63640e7ed111486",
+      "title": "AWS Neuron 2.31.0 now available with NKI 0.5.0 and UltraServer Operator",
+      "description": "AWS Neuron 2.31.0 is now available, introducing NKI 0.5.0 with new MX FP8 scale dtype support, tensor indirection on compute operations for fewer instructions in indexed access patterns, and new NkiTensor view APIs for zero-cost tensor layout transformations. This release also introduces the Neuron UltraServer Operator for Amazon EKS in public beta, automating UltraServer discovery, workload allocation, and resource claim generation for Trainium UltraServer workloads on Amazon EKS. The Neuron Compiler includes a redesigned code generation backend now enabled by default on Trn2 and Trn3, delive",
+      "descriptionHtml": "&lt;p&gt;AWS Neuron 2.31.0 is now available, introducing NKI 0.5.0 with new MX FP8 scale dtype support, tensor indirection on compute operations for fewer instructions in indexed access patterns, and new NkiTensor view APIs for zero-cost tensor layout transformations. This release also introduces the Neuron UltraServer Operator for Amazon EKS in public beta, automating UltraServer discovery, workload allocation, and resource claim generation for Trainium UltraServer workloads on Amazon EKS.&lt;/p&gt; \n&lt;p&gt;The Neuron Compiler includes a redesigned code generation backend now enabled by default on Trn2 and Trn3, delivering improved performance. The Neuron Runtime adds contiguous shared scratchpad support, simplifying device configuration by eliminating the need to manually set scratchpad page sizes. The NKI Library adds 14 new experimental kernels covering MoE training collectives, deformable attention, DeepSeek MLA projection, and ring attention, alongside PyTorch reference implementations. Neuron Explorer adds System Trace Viewer source code linking and updated default grouping for improved workload debugging.&lt;/p&gt; \n&lt;p&gt;To get started, see the following resources:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/about-neuron/whats-new.html\"&gt;AWS Neuron 2.31.0 What's New&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/release-notes/index.html\"&gt;AWS Neuron 2.31.0 Release Notes&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/nki/index.html\"&gt;Neuron Kernel Interface (NKI) Documentation&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/tools/neuron-agentic-development/index.html\"&gt;Neuron Agentic Development&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ai/machine-learning/neuron/\"&gt;AWS Neuron Developer Guide&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-announce-neuron-2-31-0",
+      "publishedAt": "2026-07-08T15:58:00.000Z",
+      "updatedAt": "2026-07-08T15:58:00.000Z",
+      "categories": [
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "developer tools",
+        "artificial intelligence"
       ],
       "isNew": true
     },
@@ -702,7 +938,7 @@
         "sagemaker",
         "terraform"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c3e9283f4f00c131",
@@ -724,7 +960,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ce9ed6b581ad0e7c",
@@ -746,7 +982,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "317666ecee1d2c0c",
@@ -766,7 +1002,7 @@
         "artificial intelligence",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b14fe1d23da71ad5",
@@ -788,7 +1024,7 @@
         "management and governance",
         "config"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "041eff7290596a9d",
@@ -10846,237 +11082,6 @@
         "elastic beanstalk"
       ],
       "isNew": false
-    },
-    {
-      "id": "cae3739b1b4d2dd5",
-      "title": "AWS Elemental MediaTailor now supports ad trickplay personalization and compact DASH manifest optimization via dynamic transcoding",
-      "description": "AWS Elemental MediaTailor now enhances streaming ad personalization with support for trickplay features in HLS and DASH formats. This update also introduces compact DASH manifests for more efficient manifest delivery. Previously, these capabilities required a custom transcode profile. They are now supported natively through dynamic transcoding, eliminating that requirement. MediaTailor provides server-side ad insertion (SSAI) to personalize ads in video streams. As streaming platforms increasingly support trickplay navigation, ensuring that advertisements are properly transcoded with trickplay",
-      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaTailor now enhances streaming ad personalization with support for trickplay features in HLS and DASH formats. This update also introduces compact DASH manifests for more efficient manifest delivery. Previously, these capabilities required a custom transcode profile. They are now supported natively through dynamic transcoding, eliminating that requirement.&lt;/p&gt; \n&lt;p&gt;MediaTailor provides server-side ad insertion (SSAI) to personalize ads in video streams. As streaming platforms increasingly support trickplay navigation, ensuring that advertisements are properly transcoded with trickplay variants and associated image streams is critical for a seamless viewer experience. These variants must match the specifications of the origin content. With this update:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Ad Trickplay Personalization: Trickplay personalization matching is now fully supported for both HLS and DASH workflows via dynamic transcoding. MediaTailor ensures that advertisements include trickplay variants and associated image streams that align with origin content specifications. This delivers a consistent experience when viewers fast-forward or rewind through content. A custom transcode profile is no longer required to enable this capability.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Compact DASH Manifest Support: MediaTailor now supports compact DASH manifests via dynamic transcoding. This optimization elevates the SegmentTemplate element from individual Representation elements to the AdaptationSet level, reducing overall manifest size. Thise results ins more efficient manifest delivery and improved compatibility with players and workflows that rely on compact manifest structures. A custom transcode profile is no longer required to enable this capability.&amp;nbsp;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Elemental MediaTailor’s ad trickplay personalization and compact DASH manifest optimization are available in all AWS Regions where MediaTailor is available, including US East (Ohio), US East (N. Virginia), US West (Oregon); Africa (Cape Town); Asia Pacific (Hyderabad, Malaysia, Melbourne, Mumbai, Osaka, Seoul, Singapore, Sydney, Tokyo); Canada (Central); Europe (Frankfurt, Ireland, London, Paris, Stockholm); Middle East (UAE); and South America (São Paulo). There is no additional cost for this feature. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/mediatailor/latest/ug/what-is.html\"&gt;AWS Elemental MediaTailor User Guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/mediatail-ad-trickplay-and-compact-dash-manifest-optimization",
-      "publishedAt": "2026-05-06T14:24:00.000Z",
-      "updatedAt": "2026-05-06T14:24:00.000Z",
-      "categories": [
-        "AWS Elemental Mediatailor",
-        "Media Services"
-      ],
-      "services": [
-        "Elemental",
-        "MediaTailor"
-      ],
-      "tags": [
-        "aws elemental mediatailor",
-        "media services",
-        "elemental",
-        "mediatailor"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "bacc1bcb412bc554",
-      "title": "Announcing Agent Toolkit for AWS — help AI coding agents build effectively on AWS",
-      "description": "Today, AWS is launching the Agent Toolkit for AWS, a production-ready suite of tools and guidance that helps AI coding agents build on AWS with fewer errors, lower token costs, and enterprise-grade security controls. The Agent Toolkit for AWS is the successor to the MCP servers, plugins, and skills available on AWS Labs . Developers using coding agents to build on AWS often find that their agents struggle with complex multi-service workflows, rely on outdated knowledge of AWS services, and are difficult to govern — leading to wasted time, wasted tokens, and a reluctance to deploy agents in pro",
-      "descriptionHtml": "&lt;p&gt;Today, AWS is launching the Agent Toolkit for AWS, a production-ready suite of tools and guidance that helps AI coding agents build on AWS with fewer errors, lower token costs, and enterprise-grade security controls. The Agent Toolkit for AWS is the successor to the MCP servers, plugins, and skills available on &lt;a href=\"https://github.com/awslabs\"&gt;AWS Labs&lt;/a&gt;.&lt;br&gt; &lt;br&gt; Developers using coding agents to build on AWS often find that their agents struggle with complex multi-service workflows, rely on outdated knowledge of AWS services, and are difficult to govern — leading to wasted time, wasted tokens, and a reluctance to deploy agents in production. The Agent Toolkit for AWS addresses these challenges through agent skills, a fully-managed MCP server, and easy-to-install plugins. Agent skills give agents validated, up-to-date procedures for tasks like authoring CloudFormation templates, configuring data pipelines, and building serverless applications — so agents follow best practices rather than improvising from general knowledge. Today, we are launching more than 40 skills across infrastructure-as-code, storage, analytics, serverless, containers, and AI services, and we plan to release more in the coming weeks: including for databases, networking, and IAM. Each skill has been rigorously evaluated to ensure that it helps agents complete tasks more accurately and reliably. The AWS MCP Server, now generally available, is a fully-managed MCP server that allows coding agents to interact with any AWS service. It offers IAM-based guardrails on which actions agents can perform, Amazon CloudWatch and AWS CloudTrail observability, and sandboxed code execution for multi-step operations. The AWS MCP server also equips agents with tools to efficiently search and retrieve documentation, so they always have the latest knowledge and guidance. Agent plugins bundle the AWS MCP server and curated sets of skills into a single install. Today, we are releasing three agent plugins: AWS Core, to help application developers build and manage full-stack applications on AWS, AWS Data Analytics, which helps data analysts and business intelligence engineers create data pipelines and load and query data, and AWS Agents, which helps AI engineers build production-ready agents using Amazon Bedrock AgentCore.&lt;br&gt; &lt;br&gt; The MCP servers, skills, and plugins available on AWS Labs will continue to be available, and over time the best of AWS Labs will be transitioned to the Agent Toolkit for AWS to ensure that customers can access the broadest array of tooling and guidance for their agents. The Agent Toolkit for AWS is available at no additional charge; you pay only for the AWS resources your agents use. To learn more, see &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\"&gt;Agent Toolkit for AWS&lt;/a&gt;. To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/quick-start.html\"&gt;Quick Start guide&lt;/a&gt; or browse the available skills and plugins on &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws\"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/",
-      "publishedAt": "2026-05-06T12:00:00.000Z",
-      "updatedAt": "2026-05-06T12:00:00.000Z",
-      "categories": [
-        "AWS Developer Tools",
-        "Developer Tools"
-      ],
-      "services": [],
-      "tags": [
-        "aws developer tools",
-        "developer tools"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "484f6806f11473b7",
-      "title": "The AWS MCP Server is now generally available",
-      "description": "Today, AWS announces the general availability of the AWS MCP Server, a managed server that gives AI coding agents secure, auditable access to AWS services through the Model Context Protocol (MCP). The AWS MCP Server is a core component of the Agent Toolkit for AWS , which helps coding agents build on AWS more effectively. With the AWS MCP Server, organizations can let coding agents interact with AWS while maintaining visibility and control through IAM-based guardrails, Amazon CloudWatch metrics, and AWS CloudTrail logging. Since the preview launch at re:Invent 2025, the AWS MCP Server has adde",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of the AWS MCP Server, a managed server that gives AI coding agents secure, auditable access to AWS services through the Model Context Protocol (MCP). The AWS MCP Server is a core component of the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\"&gt;Agent Toolkit for AWS&lt;/a&gt;, which helps coding agents build on AWS more effectively. With the AWS MCP Server, organizations can let coding agents interact with AWS while maintaining visibility and control through IAM-based guardrails, Amazon CloudWatch metrics, and AWS CloudTrail logging.&lt;/p&gt; \n&lt;p&gt;Since the preview launch at re:Invent 2025, the AWS MCP Server has added several capabilities. Agents can now call any AWS API through a single tool, including operations that require file uploads or long-running execution. Sandboxed script execution lets agents run Python code against AWS services for multi-step operations, without access to your local filesystem or shell tools. Agent skills replace agent SOPs with a more flexible format: agents discover and load curated guidance on demand, keeping context window usage low while providing tested procedures for complex tasks. Additionally, documentation search and skill discovery no longer require AWS credentials, removing a common barrier to getting started.&lt;/p&gt; \n&lt;p&gt;The AWS MCP Server is available at no additional charge; you pay only for the AWS resources your agents use. To learn more, see &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\"&gt;Agent Toolkit for AWS&lt;/a&gt;. To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/quick-start.html\"&gt;Agent Toolkit for AWS Quick Start guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-mcp-server/",
-      "publishedAt": "2026-05-06T12:00:00.000Z",
-      "updatedAt": "2026-05-06T12:00:00.000Z",
-      "categories": [
-        "Developer Tools",
-        "AWS Developer Tools"
-      ],
-      "services": [],
-      "tags": [
-        "developer tools",
-        "aws developer tools"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5a781cf9e0ad0ab1",
-      "title": "AWS Transfer Family web apps are now available in the AWS Asia Pacific (New Zealand) Region",
-      "description": "Customers in the Asia Pacific (New Zealand) Region can now use AWS Transfer Family web apps to provide their workforce with a fully managed, branded portal for browsing, uploading, and downloading data in Amazon S3 through a web browser. AWS Transfer Family web apps provide a simple interface for accessing your data in Amazon S3 through a web browser. With Transfer Family web apps, you can provide your workforce with a fully managed, branded, and secure portal for your end users to browse, upload, and download data in S3. To learn more about AWS Transfer Family web apps, visit the Transfer Fam",
-      "descriptionHtml": "&lt;p&gt;Customers in the Asia Pacific (New Zealand) Region can now use AWS Transfer Family web apps to provide their workforce with a fully managed, branded portal for browsing, uploading, and downloading data in Amazon S3 through a web browser.&lt;/p&gt; \n&lt;p&gt;AWS Transfer Family web apps provide a simple interface for accessing your data&amp;nbsp;in&amp;nbsp;Amazon S3 through a web browser. With Transfer Family web apps, you can provide your workforce with a fully managed, branded, and secure portal for your end users to browse, upload, and download data in S3.&lt;/p&gt; \n&lt;p&gt;To learn more about AWS Transfer Family web apps, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/transfer/latest/userguide/web-app.html\"&gt;Transfer Family User Guide&lt;/a&gt;. For the full list of supported regions, visit the&amp;nbsp;&lt;a href=\"https://builder.aws.com/build/capabilities\"&gt;AWS Capabilities tool&lt;/a&gt;&amp;nbsp;in Builder&amp;nbsp;Center.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-transfer-family-asia-pacific/",
-      "publishedAt": "2026-05-06T10:00:00.000Z",
-      "updatedAt": "2026-05-06T10:00:00.000Z",
-      "categories": [
-        "Migration",
-        "AWS Transfer Family",
-        "Storage"
-      ],
-      "services": [
-        "Transfer Family"
-      ],
-      "tags": [
-        "migration",
-        "aws transfer family",
-        "storage",
-        "transfer family"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7d27880c8f0caf9c",
-      "title": "AWS Directory Service expands directory security settings with STIG-aligned controls for Managed AD",
-      "description": "AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) now has expanded its security settings to include STIG-aligned configurations for high-impact security areas. These new security settings help customers meet their organizations requirements for directory-level security and compliance configurations. For regulated or security-focused customers, these settings align with the Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIG) for Windows Server and Active Directory . These expanded STIG-aligned security settings are available to",
-      "descriptionHtml": "&lt;p&gt;&lt;br&gt; AWS Directory Service for Microsoft Active Directory (AWS Managed Microsoft AD) now has expanded its security settings to include STIG-aligned configurations for high-impact security areas. These new security settings help customers meet their organizations requirements for directory-level security and compliance configurations. For regulated or security-focused customers, these settings align with the Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIG) for &lt;a href=\"https://stigviewer.com/stigs/microsoft_windows_server_2019\"&gt;Windows Server&lt;/a&gt; and &lt;a href=\"https://stigviewer.com/stigs/active_directory_domain\"&gt;Active Directory&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;These expanded STIG-aligned security settings are available today through a self-service interface, both programmatically and via the AWS Management Console. Security and Identity Management professionals can now ensure consistent configuration across multiple managed directories by declaring their desired configuration and letting AWS implement and persist these configurations. When expanding to additional regions or scaling out with additional domain controllers, AWS Managed Microsoft AD automatically applies these settings to all new instances.&lt;br&gt; &lt;br&gt; For information about AWS Regions where AWS Directory Service is available, see the &lt;a href=\"https://docs.aws.amazon.com/directoryservice/latest/admin-guide/regions.html\"&gt;AWS Region table&lt;/a&gt;. To learn more about configuring these security settings, see the &lt;a href=\"https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_directory_settings.html\"&gt;AWS Directory Service Administration Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/add-security-settings-stig-aws-microsoft-ad/",
-      "publishedAt": "2026-05-06T07:00:00.000Z",
-      "updatedAt": "2026-05-06T07:00:00.000Z",
-      "categories": [
-        "Security Identity And Compliance",
-        "AWS Directory Service"
-      ],
-      "services": [],
-      "tags": [
-        "security identity and compliance",
-        "aws directory service"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "8c03840b5801b43e",
-      "title": "Announcing Valkey 9.0 for Amazon ElastiCache",
-      "description": "Amazon ElastiCache now supports Valkey 9.0, bringing new capabilities to customers building real-time, AI-driven, and high-throughput applications on AWS. As applications grow more data-intensive and latency-sensitive, teams often face the overhead of managing separate search infrastructure, throughput ceilings that force over-provisioning, and complex workarounds for data lifecycle management and multi-tenant architectures. Valkey 9.0 addresses these challenges directly with built-in search, engine-level performance improvements, and new operational flexibility. Valkey 9.0 for Amazon ElastiCa",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/elasticache/\"&gt;Amazon ElastiCache&lt;/a&gt; now supports Valkey 9.0, bringing new capabilities to customers building real-time, AI-driven, and high-throughput applications on AWS. As applications grow more data-intensive and latency-sensitive, teams often face the overhead of managing separate search infrastructure, throughput ceilings that force over-provisioning, and complex workarounds for data lifecycle management and multi-tenant architectures. Valkey 9.0 addresses these challenges directly with built-in search, engine-level performance improvements, and new operational flexibility.&lt;br&gt; &lt;br&gt; Valkey 9.0 for Amazon ElastiCache introduces &lt;a href=\"https://valkey.io/blog/valkey-search-1_2/\"&gt;full-text and hybrid search&lt;/a&gt; that expands on existing vector similarity functionality to provide real-time full-text search, semantic retrieval, filtering, and aggregations over terabytes of data with microsecond latency and throughput up to millions of requests per second. Valkey 9.0 also delivers up to &lt;a href=\"https://valkey.io/blog/introducing-valkey-9/#:~:text=Pipeline%20Memory%20Prefetch%3A%20Memory%20prefetching%20when%20pipelining%2C%20yielding%20up%20to%2040%25%20higher%20throughput%2C\"&gt;40% higher throughput for pipelined w&lt;/a&gt;&lt;a href=\"https://valkey.io/blog/introducing-valkey-9/#:~:text=Memory%20Prefetch%3A-,Memory,-prefetching%20when%20pipelining\"&gt;orkloads&lt;/a&gt; through engine-level optimizations including faster command parsing and improved memory prefetching. Valkey 9.0 also introduces &lt;a href=\"https://valkey.io/blog/hash-fields-expiration/\"&gt;hash field expiration&lt;/a&gt; that allow TTLs to be applied to individual fields within a hash for fine-grained data lifecycle management and &lt;a href=\"https://valkey.io/blog/numbered-databases/\"&gt;multi-database support&lt;/a&gt; in cluster mode enabled deployments, providing lightweight logical namespaces to simplify multi-tenant architectures and migrations from standalone environments. These and more than &lt;a href=\"https://github.com/valkey-io/valkey/releases?q=valkey+9&amp;amp;expanded=true\"&gt;100 additional enhancements&lt;/a&gt; together bring the performance, functionality, and operational flexibility needed to power increasingly demanding real-time and AI-driven workloads.&lt;br&gt; &lt;br&gt; Valkey 9.0 is available for ElastiCache node-based clusters and serverlesss caches at no additional cost in all commercial AWS Regions, AWS GovCloud (US) Regions, and China Regions. Valkey is the most permissive open source and vendor-neutral alternative to Redis and the recommended engine on ElastiCache. To get started, create a new Valkey 9.0 cluster or upgrade an existing cluster using the AWS Management Console, AWS SDK, or AWS CLI. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/VersionManagement.HowTo.html\"&gt;Amazon ElastiCache documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/valkey-amazon-elasticache/",
-      "publishedAt": "2026-05-05T22:33:00.000Z",
-      "updatedAt": "2026-05-05T22:33:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Elasticache"
-      ],
-      "services": [
-        "ElastiCache"
-      ],
-      "tags": [
-        "databases",
-        "amazon elasticache",
-        "elasticache"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "629048b2531fa9ee",
-      "title": "AWS Elemental MediaTailor now provides automatic secure server-to-server integration with Google's ad platforms",
-      "description": "AWS Elemental MediaTailor now automatically authenticates server-to-server connections with Google Ad Manager (GAM), Google Campaign Manager (GCM), and Google Display &amp; Video 360 (DV360). This delivers a seamless integration experience for customers using Google's ad platforms. MediaTailor provides server-side ad insertion (SSAI) to personalize ads in video streams. Google requires SSAI providers to establish a secure, authenticated connection when making ad requests and firing ad tracking events. Previously, MediaTailor customers needed to request activation of this integration through an",
-      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaTailor now automatically authenticates server-to-server connections with Google Ad Manager (GAM), Google Campaign Manager (GCM), and Google Display &amp;amp; Video 360 (DV360). This delivers a seamless integration experience for customers using Google's ad platforms.&lt;br&gt; &lt;br&gt; MediaTailor provides server-side ad insertion (SSAI) to personalize ads in video streams. Google requires SSAI providers to establish a secure, authenticated connection when making ad requests and firing ad tracking events. Previously, MediaTailor customers needed to request activation of this integration through an AWS support case and be added to an allow list. With this update, MediaTailor automatically detects requests destined for Google's ad servers and establishes the required secure connection — no customer action required. Specifically:&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;b&gt;Google Ad Manager (GAM):&lt;/b&gt; Server-side ad requests to Google's ad server for publishers are automatically secured, which is required for access to Authorized Buyers — Google's real-time ad sales marketplace and ad exchange.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Google Campaign Manager (GCM) and DV360:&lt;/b&gt; Server-side impression tracking requests are automatically routed through Google's authenticated endpoint and secured, supporting advertisers who run campaigns on these platforms with more accurate reporting and fewer rejected impressions.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;All other ad requests:&lt;/b&gt; continue to operate without modification.&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;AWS Elemental MediaTailor’s automatic server-to-server Google integration is available in all AWS Regions where MediaTailor is available, including US East (Ohio), US East (N. Virginia), US West (Oregon); Africa (Cape Town); Asia Pacific (Hyderabad, Malaysia, Melbourne, Mumbai, Osaka, Seoul, Singapore, Sydney, Tokyo); Canada (Central); Europe (Frankfurt, Ireland, London, Paris, Stockholm); Middle East (UAE); and South America (São Paulo). There is no additional cost for this feature. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/mediatailor/\"&gt;AWS Elemental MediaTailor documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/mediatailor-automatic-google-ad-platform-integration",
-      "publishedAt": "2026-05-05T21:44:00.000Z",
-      "updatedAt": "2026-05-05T21:44:00.000Z",
-      "categories": [
-        "Media Services",
-        "AWS Elemental Mediatailor"
-      ],
-      "services": [
-        "Elemental",
-        "MediaTailor"
-      ],
-      "tags": [
-        "media services",
-        "aws elemental mediatailor",
-        "elemental",
-        "mediatailor"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "4dbc271844de03aa",
-      "title": "AWS SAM CLI adds BuildKit support for AWS Lambda functions packaged as container images",
-      "description": "AWS Serverless Application Model Command Line Interface (SAM CLI) now supports BuildKit for building container images from Dockerfiles, enabling faster, more efficient container image builds for Lambda functions packaged as container images. SAM CLI is a command-line tool for building, testing, debugging, and packaging serverless applications locally before deploying to AWS Cloud. Developers packaging Lambda functions as container images often need advanced build features provided by BuildKit to optimize their images for production. However, SAM CLI previously did not support BuildKit features",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/using-sam-cli.html\" target=\"_blank\"&gt;AWS Serverless Application Model Command Line Interface (SAM CLI)&lt;/a&gt; now supports BuildKit for building container images from Dockerfiles, enabling faster, more efficient container image builds for Lambda functions packaged as container images.&lt;/p&gt; \n&lt;p&gt;SAM CLI is a command-line tool for building, testing, debugging, and packaging serverless applications locally before deploying to AWS Cloud. Developers packaging Lambda functions as container images often need advanced build features provided by BuildKit to optimize their images for production. However, SAM CLI previously did not support BuildKit features. Now, with BuildKit support in SAM CLI, you can utilize multi-stage builds to create smaller final images without development dependencies, improved caching to reduce rebuild times, and better parallelization of build steps. BuildKit also enables cross-architecture builds, allowing you to build container images targeting both x86_64 and arm64 (AWS Graviton2) instruction set architectures from the same development machine. You can also use Docker secrets during builds, keeping sensitive data such as credentials and API keys out of your final image layers.&lt;/p&gt; \n&lt;p&gt;To get started, download or update SAM CLI to version 1.159.0 or later and use the --use-buildkit flag with sam build. This feature works regardless of whether you are using Docker or Finch with SAM CLI, unlocking the full set of BuildKit capabilities.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-cli-command-reference-sam-build.html\" target=\"_blank\"&gt;SAM CLI developer guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-sam-cli-buildkit-aws-lambda/",
-      "publishedAt": "2026-05-05T18:50:00.000Z",
-      "updatedAt": "2026-05-05T18:50:00.000Z",
-      "categories": [
-        "AWS Serverless Application Model Sam",
-        "Developer Tools",
-        "Serverless",
-        "AWS Lambda"
-      ],
-      "services": [
-        "Lambda",
-        "SAM"
-      ],
-      "tags": [
-        "aws serverless application model sam",
-        "developer tools",
-        "serverless",
-        "aws lambda",
-        "lambda",
-        "sam"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "1b90f62318f29b16",
-      "title": "AWS SAM now supports WebSocket APIs for Amazon API Gateway",
-      "description": "AWS Serverless Application Model (AWS SAM) now supports WebSocket APIs for Amazon API Gateway, enabling you to define complete WebSocket APIs with minimal configuration in your SAM template. AWS SAM is a collection of open-source tools that make it easy for you to build and manage serverless applications. WebSocket APIs are critical for real-time applications such as chat, live dashboards, AI/LLM streaming, and IoT. However, SAM previously did not support WebSocket APIs, requiring you to manually configure all of the underlying resources in AWS CloudFormation. This made it difficult to debug c",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html\" target=\"_blank\"&gt;AWS Serverless Application Model (AWS SAM)&lt;/a&gt; now supports WebSocket APIs for Amazon API Gateway, enabling you to define complete WebSocket APIs with minimal configuration in your SAM template.&lt;/p&gt; \n&lt;p&gt;AWS SAM is a collection of open-source tools that make it easy for you to build and manage serverless applications. WebSocket APIs are critical for real-time applications such as chat, live dashboards, AI/LLM streaming, and IoT. However, SAM previously did not support WebSocket APIs, requiring you to manually configure all of the underlying resources in AWS CloudFormation. This made it difficult to debug common issues such as missing IAM permissions for Lambda functions. Now, SAM handles all of this automatically, generating the required resources and permissions from your template. The new resource provides feature parity with &lt;a href=\"https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-overview.html\" target=\"_blank\"&gt;API Gateway WebSocket APIs&lt;/a&gt;, including IAM and Lambda authorization, custom domains, RouteSettings, Models, and StageVariables. Globals support lets you share common configuration across multiple WebSocket APIs.&lt;/p&gt; \n&lt;p&gt;To get started, add the AWS::Serverless::WebSocketApi resource type to your SAM template. Define your routes by specifying Lambda function handlers for $connect, $disconnect, and $default routes, along with any custom routes your application requires. SAM automatically wires up the integrations and permissions for each route. You can also configure authorization, stage settings, and custom domains directly within the resource definition.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-resource-websocketapi.html\" target=\"_blank\"&gt;SAM developer guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-sam-websocket-apis-api-gateway/",
-      "publishedAt": "2026-05-05T18:31:00.000Z",
-      "updatedAt": "2026-05-05T18:31:00.000Z",
-      "categories": [
-        "Developer Tools",
-        "Amazon Api Gateway",
-        "Serverless",
-        "AWS Serverless Application Model Sam"
-      ],
-      "services": [
-        "API Gateway",
-        "SAM"
-      ],
-      "tags": [
-        "developer tools",
-        "amazon api gateway",
-        "serverless",
-        "aws serverless application model sam",
-        "api gateway",
-        "sam"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "0a9b95b23061ae24",
-      "title": "Amazon ElastiCache adds thirteen new Amazon CloudWatch metrics for network capacity planning and engine diagnostics",
-      "description": "Amazon ElastiCache customers can now detect network throttling, memory fragmentation, and connection exhaustion, using thirteen new Amazon CloudWatch metrics for node-based clusters. You can monitor these host-level and engine-level diagnostics directly from CloudWatch without running INFO commands on individual nodes or calculating baselines from raw byte counters. Network capacity: NetworkBaselineUsageInPercentage, NetworkBaselineUsageOutPercentage, NetworkBaselineMaxUsageInPercentage, and NetworkBaselineMaxUsageOutPercentage report network utilization relative to instance baseline, enabling",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/elasticache/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon ElastiCache&lt;/a&gt; customers can now detect network throttling, memory fragmentation, and connection exhaustion, using thirteen new Amazon CloudWatch metrics for node-based clusters. You can monitor these host-level and engine-level diagnostics directly from CloudWatch without running INFO commands on individual nodes or calculating baselines from raw byte counters.&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;b&gt;Network capacity:&lt;/b&gt; NetworkBaselineUsageInPercentage, NetworkBaselineUsageOutPercentage, NetworkBaselineMaxUsageInPercentage, and NetworkBaselineMaxUsageOutPercentage report network utilization relative to instance baseline, enabling portable alarms that remain valid across instance type changes. Values above 100 percent signal that a host is consuming burst credits, a leading indicator that a sustained workload will eventually lead to credit exhaustion and throttling. The variants capturing max report per-second bursts that averaged metrics can hide.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Memory health:&lt;/b&gt; UsedMemoryDataset shows memory consumed by actual stored data excluding engine overhead. AllocatorFragmentationBytes and AllocatorFragmentationRatio isolate fragmentation that the &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/ParameterGroups.Engine.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;activedefrag parameter&lt;/a&gt; can address. MajorPageFaults captures OS-level page faults that indicate memory pressure beyond what the engine can surface.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Connectivity health:&lt;/b&gt; BlockedConnections and RejectedConnections surface connections waiting on blocking commands and connections turned away when the maxclients limit is reached. When RejectedConnections is non-zero, raise maxclients or diagnose client-side connection pool leaks.&lt;i&gt; &lt;/i&gt;&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Pub/sub workloads:&lt;/b&gt; PubSubChannels and PubSubShardChannels expose active classic and sharded channels on each node. When classic channel counts are growing with utilization, consider switching to sharded pub/sub to scale horizontally.&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Command throughput:&lt;/b&gt; ProcessedCommands provides total command throughput across all command types.&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;These metrics are available for node-based clusters in all commercial AWS Regions and the AWS China and AWS GovCloud (US) Regions where ElastiCache is supported, at no additional cost.&lt;br&gt; &lt;br&gt; To get started, view the new metrics in the &lt;a href=\"https://console.aws.amazon.com/elasticache/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;ElastiCache console&lt;/a&gt; monitoring tab or in the AWS/ElastiCache namespace in the CloudWatch console. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics.HostLevel.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Host-Level Metrics &lt;/a&gt;and &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/CacheMetrics.Redis.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Metrics for Valkey and Redis OSS&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-elasticache-cloudwatch-metrics-network-engine-diagnostics/",
-      "publishedAt": "2026-05-05T18:00:00.000Z",
-      "updatedAt": "2026-05-05T18:00:00.000Z",
-      "categories": [
-        "Amazon Elasticache",
-        "Databases"
-      ],
-      "services": [
-        "ElastiCache",
-        "CloudWatch"
-      ],
-      "tags": [
-        "amazon elasticache",
-        "databases",
-        "elasticache",
-        "cloudwatch"
-      ],
-      "isNew": true
     }
   ]
 }
