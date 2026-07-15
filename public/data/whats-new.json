@@ -1,7 +1,232 @@
 {
-  "lastUpdated": "2026-07-14T08:47:26.378Z",
+  "lastUpdated": "2026-07-15T08:50:19.404Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "c173fe59aec9442c",
+      "title": "AWS Elastic Disaster Recovery now supports Amazon EBS volume initialization rate",
+      "description": "AWS Elastic Disaster Recovery (AWS DRS) now supports the Amazon EBS volume initialization rate, helping recovered volumes reach full performance faster during drills and recoveries. When DRS restores EBS volumes from snapshots, the data loads from Amazon S3 in the background, and I/O to blocks that haven't loaded yet can be slower until initialization finishes. With this launch, you can set a volume initialization rate on your DRS-managed EC2 launch template, and DRS applies it automatically when it creates volumes during recovery — bringing your applications to full storage performance on a p",
+      "descriptionHtml": "&lt;p&gt;AWS Elastic Disaster Recovery (AWS DRS) now supports the Amazon EBS volume initialization rate, helping recovered volumes reach full performance faster during drills and recoveries. When DRS restores EBS volumes from snapshots, the data loads from Amazon S3 in the background, and I/O to blocks that haven't loaded yet can be slower until initialization finishes. With this launch, you can set a volume initialization rate on your DRS-managed EC2 launch template, and DRS applies it automatically when it creates volumes during recovery — bringing your applications to full storage performance on a predictable timeline.&lt;/p&gt; \n&lt;p&gt;This is especially valuable for I/O-intensive workloads such as databases, where fast, consistent storage performance is critical to meeting your recovery time objectives. You set the rate once on the launch template, and DRS preserves it across the updates it makes for rightsizing or disk changes. If the rate cannot be applied for a given recovery, DRS completes recovery without it, so your recovery is never blocked.&lt;/p&gt; \n&lt;p&gt;AWS DRS support for the EBS volume initialization rate is available in all AWS Regions and environments where the EBS volume initialization rate is offered. You are charged per GB based on the full snapshot size and the rate you specify; for details, see &lt;a href=\"https://aws.amazon.com/ebs/pricing/\"&gt;Amazon EBS pricing&lt;/a&gt;. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/drs/\"&gt;AWS Elastic Disaster Recovery User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-drs-fast-hydration/",
+      "publishedAt": "2026-07-14T22:00:56.000Z",
+      "updatedAt": "2026-07-14T22:00:56.000Z",
+      "categories": [
+        "Storage",
+        "AWS Elastic Disaster Recovery"
+      ],
+      "services": [
+        "EBS"
+      ],
+      "tags": [
+        "storage",
+        "aws elastic disaster recovery",
+        "ebs"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2a4b90e653a33867",
+      "title": "AWS Lambda console provides a one-click setup prompt for coding agents",
+      "description": "AWS Lambda console now provides a one-click setup prompt for coding agents that configures your agent with AWS Serverless skills and the Serverless Model Context Protocol (MCP) server, embedding serverless best practices from the start. This setup is available on the Lambda console wherever the developers start their Lambda journey: whether they are getting started with Lambda, exploring its capabilities, or have created their first function. Developers use coding agents to build, test, and deploy Lambda functions, but setting up an agent for serverless development previously required navigati",
+      "descriptionHtml": "&lt;p&gt;AWS Lambda console now provides a one-click setup prompt for coding agents that configures your agent with AWS Serverless skills and the Serverless Model Context Protocol (MCP) server, embedding serverless best practices from the start. This setup is available on the Lambda console wherever the developers start their Lambda journey: whether they are getting started with Lambda, exploring its capabilities, or have created their first function.&lt;/p&gt; \n&lt;p&gt;Developers use coding agents to build, test, and deploy Lambda functions, but setting up an agent for serverless development previously required navigating across multiple documentation pages to find the right configuration. The one-click setup prompt eliminates this friction as it provides a prompt that instructs the agent to install AWS Serverless skills (hosted in &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Agent Toolkit for AWS&lt;/a&gt;) and the Serverless MCP server directly in the developer's preferred coding agent. The prompt references the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/samples/aws-lambda-agent-setup.md\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Lambda agent setup guide&lt;/a&gt;, which includes installation commands for Claude Code, Kiro, Cursor, GitHub Copilot, Codex, Devin Desktop, and OpenCode, for the AWS Serverless skills, three specialized Lambda skills (MicroVM, Managed Instances, durable functions), and Serverless MCP server configuration. If a developer does not have local AWS authentication configured, the prompt guides them to connect using the signing-in-to-aws skill.&lt;/p&gt; \n&lt;p&gt;This capability is available in all commercial &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/?refid=2abe6167-e3db-40c4-a9fa-b283e7b4d7c8\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions&lt;/a&gt;&amp;nbsp;(except Middle East (Bahrain) and Middle East (UAE)) and AWS GovCloud (US) Regions where Lambda is available. Get started by visiting the &lt;a href=\"https://console.aws.amazon.com/lambda\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Lambda console&lt;/a&gt; or learn more in the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/samples/aws-lambda-agent-setup.md\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Lambda agent setup guide&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-lambda-prompt-coding-agents/",
+      "publishedAt": "2026-07-14T20:00:00.000Z",
+      "updatedAt": "2026-07-14T20:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Serverless",
+        "Developer Tools"
+      ],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "compute",
+        "serverless",
+        "developer tools",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "831bb50ac0ce9a65",
+      "title": "AWS IAM Identity Center achieves FedRAMP Class C Certification",
+      "description": "AWS IAM Identity Center is now in scope for FedRAMP Class C in the US East (Ohio), US East (N. Virginia), US West (N. California), and US West (Oregon) Regions. You can now use IAM Identity Center to enable workforce access to AWS accounts and applications that are subject to FedRAMP Class C compliance. The Federal Risk and Authorization Management Program (FedRAMP) is a US government-wide program that delivers a standard approach to the security assessment, certification, and continuous monitoring for cloud products and services. AWS IAM Identity Center is the recommended service for managing",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/iam/identity-center/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS IAM Identity Center&lt;/a&gt; is now in scope for FedRAMP Class C in the US East (Ohio), US East (N. Virginia), US West (N. California), and US West (Oregon) Regions. You can now use IAM Identity Center to enable workforce access to AWS accounts and applications that are subject to FedRAMP Class C compliance.&lt;/p&gt; \n&lt;p&gt;The Federal Risk and Authorization Management Program (FedRAMP) is a US government-wide program that delivers a standard approach to the security assessment, certification, and continuous monitoring for cloud products and services. AWS IAM Identity Center is the recommended service for managing your workforce access to AWS accounts and applications.&lt;/p&gt; \n&lt;p&gt;To learn more about &lt;a href=\"https://aws.amazon.com/compliance/fedramp/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;FedRAMP&lt;/a&gt;, visit the &lt;a href=\"https://aws.amazon.com/compliance/services-in-scope/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS services compliance page&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/compliance/resources/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS compliance resources&lt;/a&gt; page. To learn more about IAM Identity Center, visit the &lt;a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-identity-center-fedramp/",
+      "publishedAt": "2026-07-14T19:10:00.000Z",
+      "updatedAt": "2026-07-14T19:10:00.000Z",
+      "categories": [
+        "Government And Public Sector",
+        "Security And Compliance",
+        "AWS Iam Identity Center"
+      ],
+      "services": [
+        "IAM",
+        "IAM Identity Center"
+      ],
+      "tags": [
+        "government and public sector",
+        "security and compliance",
+        "aws iam identity center",
+        "iam",
+        "iam identity center"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8b58fa62068382bb",
+      "title": "Introducing Amazon GuardDuty AI Protection for AWS AI workloads",
+      "description": "Amazon GuardDuty now offers AI Protection, expanding threat detection to AWS AI services including Amazon Bedrock and Amazon SageMaker. As organizations rapidly adopt AI, security teams may lack visibility into threats specifically targeting AI workloads, such as anomalous model invocations, cost harvesting attacks, and prompt injection attempts. GuardDuty AI Protection continuously monitors these workloads so security teams can detect and respond to AI-specific threats without manual configuration or custom tooling. GuardDuty AI Protection analyzes both CloudTrail management and data events f",
+      "descriptionHtml": "&lt;p&gt;Amazon GuardDuty now offers AI Protection, expanding threat detection to AWS AI services including Amazon Bedrock and Amazon SageMaker. As organizations rapidly adopt AI, security teams may lack visibility into threats specifically targeting AI workloads, such as anomalous model invocations, cost harvesting attacks, and prompt injection attempts. GuardDuty AI Protection continuously monitors these workloads so security teams can detect and respond to AI-specific threats without manual configuration or custom tooling.&lt;/p&gt; \n&lt;p&gt;GuardDuty AI Protection analyzes both CloudTrail management and data events from AWS AI services to identify suspicious activity, including unusual invocation patterns, cost harvesting attacks where threat actors force AI resources to consume excessive GPU time and tokens, and prompt injection attempts through integration with Amazon Bedrock Guardrails. Threat findings flow directly into AWS Security Hub, giving teams a single view of AI assets and threats for prioritized response. GuardDuty AI Protection can be enabled with a few steps in the GuardDuty or Security Hub console, and using AWS Organizations, can be centrally enabled for all accounts in an organization.&lt;/p&gt; \n&lt;p&gt;GuardDuty AI Protection is available to GuardDuty customers with a 30-day free trial. For pricing details, visit the &lt;a href=\"https://aws.amazon.com/guardduty/pricing/\"&gt;Amazon GuardDuty pricing page&lt;/a&gt;. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html\"&gt;Amazon GuardDuty User Guide&lt;/a&gt; and the &lt;a href=\"https://aws.amazon.com/guardduty/\"&gt;Amazon GuardDuty product page&lt;/a&gt;. For the full list of supported Regions, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regional Services List&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-guardduty-ai-protection-aws/",
+      "publishedAt": "2026-07-14T19:00:00.000Z",
+      "updatedAt": "2026-07-14T19:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance"
+      ],
+      "services": [
+        "GuardDuty"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "guardduty"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "97395927be5ae3d1",
+      "title": "Amazon Managed Service for Apache Flink now offers AI Agent Skills to simplify building and operating Flink applications",
+      "description": "Amazon Managed Service for Apache Flink now offers AI Agent Skills that give AI coding assistants expert, up-to-date guidance for building and operating Flink applications. The skills provide expert guidance for common tasks such as creating applications, troubleshooting, scaling, monitoring, networking configuration, and cost optimization. Customers can leverage these skills to keep Flink applications healthy and performant, accelerate development of new streaming applications, and easily upgrade to latest versions of Apache Flink like Flink 2.2. The skills turn tasks that once required speci",
+      "descriptionHtml": "&lt;p&gt;Amazon Managed Service for Apache Flink now offers AI Agent Skills that give AI coding assistants expert, up-to-date guidance for building and operating Flink applications. The skills provide expert guidance for common tasks such as creating applications, troubleshooting, scaling, monitoring, networking configuration, and cost optimization.&lt;/p&gt; \n&lt;p&gt;Customers can leverage these skills to keep Flink applications healthy and performant, accelerate development of new streaming applications, and easily upgrade to latest versions of Apache Flink like Flink 2.2. The skills turn tasks that once required specialized Apache Flink knowledge into a guided experience developers can complete on their own.&lt;/p&gt; \n&lt;p&gt;You can use the Managed Service for Apache Flink skills with your existing AI coding agent, including Kiro, Claude Code, or Cursor. To get started, configure the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/what-is-agent-toolkit.html?refid=ee1fe04d-2569-460e-88fb-d67e6d0ef979\"&gt;Agent Toolkit for AWS&lt;/a&gt; using the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html?refid=ee1fe04d-2569-460e-88fb-d67e6d0ef979\"&gt;AWS CLI&lt;/a&gt;, then ask your coding agent a question, such as &lt;i&gt;\"How do I create a new Flink application on MSF?\"&lt;/i&gt; or &lt;i&gt;\"My Flink application is unhealthy — what's wrong?\"&lt;/i&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-managed-service-flink-agent-skills/",
+      "publishedAt": "2026-07-14T18:20:00.000Z",
+      "updatedAt": "2026-07-14T18:20:00.000Z",
+      "categories": [
+        "Analytics"
+      ],
+      "services": [],
+      "tags": [
+        "analytics"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f1dde012168edcc4",
+      "title": "Amazon WorkSpaces Personal simplifies bulk PCoIP to DCV protocol migration",
+      "description": "Amazon WorkSpaces Personal now provides automated rollback and support for PCoIP to DCV protocol migration of stopped WorkSpaces, building on the recently launched console-based migration workflow and checkpoint snapshot support. These new capabilities enable administrators to migrate WorkSpaces at scale with minimal manual intervention. Amazon DCV is a high-performance streaming protocol built by AWS that powers Amazon WorkSpaces services. By migrating to DCV, customers gain access to broader operating system support including Windows 11 and Windows Server 2025, enhanced security features suc",
+      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces Personal now provides automated rollback and support for PCoIP to DCV protocol migration of stopped WorkSpaces, building on the recently launched console-based migration workflow and checkpoint snapshot support. These new capabilities enable administrators to migrate WorkSpaces at scale with minimal manual intervention.&lt;br&gt; &lt;br&gt; Amazon DCV is a high-performance streaming protocol built by AWS that powers Amazon WorkSpaces services. By migrating to DCV, customers gain access to broader operating system support including Windows 11 and Windows Server 2025, enhanced security features such as certificate-based authentication and WebAuthN redirection, and improved streaming performance. With this launch, if a protocol modification fails, the WorkSpace automatically rolls back to the pre-migration snapshot, ensuring it returns to a known healthy state without manual intervention. Additionally, administrators can now initiate migration for WorkSpaces in a stopped state, removing the need to manually start each stopped WorkSpace before modifying its protocol. This helps customers significantly speed up large scale migrations.&lt;br&gt; &lt;br&gt; These enhancements are available in all AWS commercial and AWS GovCloud (US) &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Regions&lt;/a&gt; where Amazon WorkSpaces Personal is supported.&lt;br&gt; &lt;br&gt; To get started, sign in to the &lt;a href=\"https://us-east-1.console.aws.amazon.com/workspaces/v2/home\"&gt;Amazon WorkSpaces console&lt;/a&gt;. For more information, see &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/modify-workspaces.html#modify_protocols\"&gt;Modify protocols section&lt;/a&gt; in the &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html\"&gt;Amazon WorkSpaces Administration Guide&lt;/a&gt;. To learn more about Amazon WorkSpaces, visit the &lt;a href=\"https://aws.amazon.com/workspaces/\"&gt;Amazon WorkSpaces product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-workspaces-personal-pcoip/",
+      "publishedAt": "2026-07-14T17:00:00.000Z",
+      "updatedAt": "2026-07-14T17:00:00.000Z",
+      "categories": [
+        "Desktop And App Streaming",
+        "Security Identity And Compliance",
+        "Amazon Workspaces",
+        "Business Productivity"
+      ],
+      "services": [
+        "WorkSpaces"
+      ],
+      "tags": [
+        "desktop and app streaming",
+        "security identity and compliance",
+        "amazon workspaces",
+        "business productivity",
+        "workspaces"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "65b5b9147b6b3198",
+      "title": "Amazon Aurora DSQL is now available in Europe (Spain)",
+      "description": "Starting today, Amazon Aurora DSQL is available for single-Region clusters in the Europe (Spain) Region. Aurora DSQL is the fastest serverless, distributed SQL database, with active-active high availability and multi-Region strong consistency. It enables you to build always-available applications with virtually unlimited scalability, the highest availability, and zero infrastructure management, making scaling and resilience effortless for your applications. With this launch, Aurora DSQL is available in the following AWS Regions : US East (N. Virginia), US East (Ohio), US West (Oregon), Canada ",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Aurora DSQL is available for single-Region clusters in the Europe (Spain) Region. Aurora DSQL is the fastest serverless, distributed SQL database, with active-active high availability and multi-Region strong consistency. It enables you to build always-available applications with virtually unlimited scalability, the highest availability, and zero infrastructure management, making scaling and resilience effortless for your applications.&lt;br&gt; &lt;/p&gt; \n&lt;p&gt;With this launch, Aurora DSQL is available in the following &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt;:&amp;nbsp;US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Canada West (Calgary), South America (São Paulo), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Spain), Europe (Stockholm), Asia Pacific (Hong Kong), Asia Pacific (Melbourne), Asia Pacific (Mumbai), Asia Pacific (Osaka), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), and Asia Pacific (Tokyo).&lt;br&gt; &lt;br&gt; Get started with Aurora DSQL for free with the &lt;a href=\"https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&amp;amp;all-free-tier.sort-order=asc&amp;amp;awsf.Free%20Tier%20Types=*all&amp;amp;awsf.Free%20Tier%20Categories=categories%23databases\"&gt;AWS Free Tier&lt;/a&gt;. To learn more, visit the Aurora DSQL &lt;a href=\"https://aws.amazon.com/rds/aurora/dsql/\"&gt;webpage &lt;/a&gt;and &lt;a href=\"https://docs.aws.amazon.com/aurora-dsql/latest/userguide/what-is-aurora-dsql.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-aurora-dsql-available-in-spain/",
+      "publishedAt": "2026-07-14T17:00:00.000Z",
+      "updatedAt": "2026-07-14T17:00:00.000Z",
+      "categories": [
+        "Databases"
+      ],
+      "services": [
+        "Aurora"
+      ],
+      "tags": [
+        "databases",
+        "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "cc65afd249505fb4",
+      "title": "AWS Security Hub now provides AI inventory for organization-wide visibility of AI assets",
+      "description": "Today, AWS announces that AWS Security Hub now provides an AI inventory, giving central security teams a continuously updated, organization-wide view of AI assets and their security posture. As organizations rapidly deploy AI agents, models, and pipelines, security teams may lack visibility into what AI assets exist across their organization. Without centralized visibility connecting AI assets to active threats and misconfigurations, organizations cannot secure what they don't know exists. Security Hub AI inventory automatically discovers and catalogs AI workloads across your AWS environment t",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces that AWS Security Hub now provides an AI inventory, giving central security teams a continuously updated, organization-wide view of AI assets and their security posture. As organizations rapidly deploy AI agents, models, and pipelines, security teams may lack visibility into what AI assets exist across their organization. Without centralized visibility connecting AI assets to active threats and misconfigurations, organizations cannot secure what they don't know exists.&lt;/p&gt; \n&lt;p&gt;Security Hub AI inventory automatically discovers and catalogs AI workloads across your AWS environment through three discovery methods. For managed AI services, Security Hub inventories AWS Config resources from Amazon Bedrock, Bedrock AgentCore and Amazon SageMaker, with no additional configuration. For self-hosted AI workloads, Security Hub leverages the software bill of materials (SBOM) analysis from Amazon Inspector, which has been enhanced to identify inference endpoints, models and AI agents installed on Amazon EC2 instances and Amazon ECR container images, including frameworks such as Ollama, vLLM, Hugging Face TGI, and others. Security Hub also leverages Amazon GuardDuty DNS telemetry to discover external AI API endpoints (such as calls to third-party model providers) being accessed from your EC2 instances, revealing third-party AI dependencies that may not have been previously identified.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;Each discovered AI asset is mapped to its underlying infrastructure and correlated with security findings from across the AWS security stack, including threat findings from Amazon GuardDuty. Teams can filter, group, and query their AI inventory by account, resource type, discovery method, and specific model identity, enabling them to prioritize remediation based on which AI workloads are actively under threat and carry the highest organizational risk.&lt;/p&gt; \n&lt;p&gt;AI Inventory is included with Security Hub Essentials at no additional cost and requires no new enablement. It is available in all AWS commercial Regions where Security Hub is offered. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub-v2.html\"&gt;AWS Security Hub User Guide&lt;/a&gt; and the &lt;a href=\"https://aws.amazon.com/security-hub/\"&gt;AWS Security Hub product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-security-hub-ai/",
+      "publishedAt": "2026-07-14T17:00:00.000Z",
+      "updatedAt": "2026-07-14T17:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Security Identity And Compliance",
+        "AWS Security Hub"
+      ],
+      "services": [
+        "Security Hub"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "security identity and compliance",
+        "aws security hub",
+        "security hub"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "37e54c4ad48810ea",
+      "title": "AWS Storage Gateway adds console support for copying file shares across gateways",
+      "description": "AWS Storage Gateway now allows you to copy file shares across gateways directly from the Storage Gateway console. When you initiate a copy, the console reads the configuration of your source share and creates a new file share on the destination gateway with compatible settings preserved. Previously, you had to manually recreate each file share on the destination gateway and re-enter configuration details one by one. Now you can copy a file share and have its configuration automatically applied to a destination gateway, significantly reducing the time and effort required for migrations such as ",
+      "descriptionHtml": "&lt;p&gt;AWS Storage Gateway now allows you to copy file shares across gateways directly from the Storage Gateway console. When you initiate a copy, the console reads the configuration of your source share and creates a new file share on the destination gateway with compatible settings preserved.&lt;/p&gt; \n&lt;p&gt;Previously, you had to manually recreate each file share on the destination gateway and re-enter configuration details one by one. Now you can copy a file share and have its configuration automatically applied to a destination gateway, significantly reducing the time and effort required for migrations such as upgrading to AL2023.&amp;nbsp;A guided experience surfaces any configurations that require your attention before the new share is created, helping ensure a smooth transition without missing critical settings.&lt;/p&gt; \n&lt;p&gt;To get started, navigate to your file shares in the &lt;a href=\"https://console.aws.amazon.com/storagegateway/\"&gt;Storage Gateway console&lt;/a&gt;, select a share, and choose Copy to gateway. This capability is available in commercial AWS Regions. To check regional availability, see &lt;a href=\"https://builder.aws.com/build/capabilities\"&gt;AWS Capabilities&lt;/a&gt;. For more information, visit the AWS &lt;a href=\"https://docs.aws.amazon.com/storagegateway/\"&gt;Storage Gateway User Guide&lt;/a&gt;. &amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-storage-gateway-console-copy-file-shares/",
+      "publishedAt": "2026-07-14T10:00:00.000Z",
+      "updatedAt": "2026-07-14T10:00:00.000Z",
+      "categories": [
+        "AWS Storage Gateway",
+        "Migration",
+        "Storage"
+      ],
+      "services": [
+        "Storage Gateway"
+      ],
+      "tags": [
+        "aws storage gateway",
+        "migration",
+        "storage",
+        "storage gateway"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "859cb2d2bbadcb0e",
+      "title": "Amazon CloudFront Functions now supports logging to CloudFront access logs",
+      "description": "You can now write custom data directly into CloudFront access logs using a new helper method available from within CloudFront Functions. CloudFront Functions run lightweight JavaScript at the edge for tasks like URL rewrites, header manipulation, and request routing. Previously, you could only emit log data to Amazon CloudWatch Logs as a separate log file from your CloudFront access logs. With this launch, you no longer need to correlate function decisions with CloudFront access log data across separate logging systems. You can call cf.logCustomData() from viewer request or viewer response fun",
+      "descriptionHtml": "&lt;p&gt;You can now write custom data directly into CloudFront access logs using a new helper method available from within CloudFront Functions. CloudFront Functions run lightweight JavaScript at the edge for tasks like URL rewrites, header manipulation, and request routing. Previously, you could only emit log data to Amazon CloudWatch Logs as a separate log file from your CloudFront access logs. With this launch, you no longer need to correlate function decisions with CloudFront access log data across separate logging systems.&lt;/p&gt; \n&lt;p&gt;You can call &lt;i&gt;cf.logCustomData() &lt;/i&gt;from viewer request or viewer response functions to log values such as A/B test variant assignments, authentication outcomes, or routing decisions directly into the CloudFront access log record for that request. This works with both CloudFront real time log configurations and standard logging (v2), so you can analyze function behavior and request outcomes in a single query. The existing &lt;i&gt;console.log()&lt;/i&gt; functionality remains available and the two methods can be used together in the same function.&lt;/p&gt; \n&lt;p&gt;Amazon CloudFront Functions custom log data is available today in all CloudFront edge locations. There is no additional charge for using &lt;i&gt;cf.logCustomData().&lt;/i&gt; Standard CloudFront Functions invocation pricing and access log delivery charges apply. To get started, visit &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/general-helper-methods.html#log-custom-data-method\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;CloudFront Functions helper methods&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudfront-functions-access-logs/",
+      "publishedAt": "2026-07-14T08:00:00.000Z",
+      "updatedAt": "2026-07-14T08:00:00.000Z",
+      "categories": [
+        "Amazon Cloudfront",
+        "Networking And Content Delivery"
+      ],
+      "services": [
+        "CloudFront"
+      ],
+      "tags": [
+        "amazon cloudfront",
+        "networking and content delivery",
+        "cloudfront"
+      ],
+      "isNew": true
+    },
     {
       "id": "2a1fe5452ef5fd6a",
       "title": "OpenAI GPT-5.6 Sol, Terra, and Luna now generally available on Amazon Bedrock",
@@ -181,6 +406,34 @@
         "amazon sagemaker jumpstart",
         "artificial intelligence",
         "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b10ad2c48805ef5e",
+      "title": "Amazon Redshift Serverless now preserves zero-ETL and Amazon S3 event integrations during snapshot restores",
+      "description": "Amazon Redshift Serverless now automatically preserves zero-ETL and Amazon S3 event integrations when restoring a namespace from a snapshot or recovery point to the same serverless namespace. Previously, restoring a snapshot marked associated integrations as failed, requiring you to manually recreate them after the restore completed. This meant additional time reconfiguring data pipelines and potential data ingestion gaps during the rebuild process. With this enhancement, integrations are automatically maintained and resume operating after the restore completes, simplifying data ingestion work",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/redshift/\"&gt;Amazon Redshift&lt;/a&gt; Serverless now automatically preserves zero-ETL and Amazon S3 event integrations when restoring a namespace from a snapshot or recovery point to the same serverless namespace. Previously, restoring a snapshot marked associated integrations as failed, requiring you to manually recreate them after the restore completed. This meant additional time reconfiguring data pipelines and potential data ingestion gaps during the rebuild process.&lt;br&gt; &lt;br&gt; With this enhancement, integrations are automatically maintained and resume operating after the restore completes, simplifying data ingestion workflows and reducing administrative overhead. This streamlines disaster recovery and testing workflows by reducing manual configuration steps and potential errors. This applies to restores within the same serverless namespace only. Restoring to a different namespace or restoring provisioned clusters does not maintain integrations.&lt;br&gt; &lt;br&gt; This feature is available in all AWS regions where Amazon Redshift Serverless is available. To learn more about restoring Amazon Redshift Serverless namespaces, please visit our &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-snapshot-restore.html\"&gt;documentation&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/behavior-changes.html#serverless-restore-integrations-patch202\"&gt;Redshift behaviour change page.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/redshift-serverless-zetl-autocopy-restore/",
+      "publishedAt": "2026-07-13T15:00:00.000Z",
+      "updatedAt": "2026-07-13T15:00:00.000Z",
+      "categories": [
+        "Serverless",
+        "Analytics",
+        "Disaster Recovery",
+        "Amazon Redshift"
+      ],
+      "services": [
+        "S3",
+        "Redshift"
+      ],
+      "tags": [
+        "serverless",
+        "analytics",
+        "disaster recovery",
+        "amazon redshift",
+        "s3",
+        "redshift"
       ],
       "isNew": true
     },
@@ -491,6 +744,52 @@
       "isNew": true
     },
     {
+      "id": "e08474f5e6269e82",
+      "title": "Amazon EC2 C8id, M8id, and R8id instances are now available in additional regions",
+      "description": "Amazon EC2 C8id, M8id, and R8id instances are now available in additional regions. Amazon EC2 C8id instances are now available in Asia Pacific (Mumbai) and Europe (Stockholm), M8id instances are available in Europe (London, Stockholm), and R8id instances are available in Europe (London) Regions. There instances are powered by custom Intel Xeon 6 processors and deliver up to 43% higher performance and 3.3x more memory bandwidth compared to previous generation C6id, M6id, and R6id instances. C8id, M8id, and R8id instances offer up to 384 vCPUs, 3TiB of memory, and 22.8TB of NVMe SSD storage, 3x ",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 C8id, M8id, and R8id instances are now available in additional regions. Amazon EC2 C8id instances are now available in Asia Pacific (Mumbai) and Europe (Stockholm), M8id instances are available in Europe (London, Stockholm), and R8id instances are available in Europe (London) Regions. There instances are powered by custom Intel Xeon 6 processors and deliver up to 43% higher performance and 3.3x more memory bandwidth compared to previous generation C6id, M6id, and R6id instances.&lt;br&gt; &lt;br&gt; C8id, M8id, and R8id instances offer up to 384 vCPUs, 3TiB of memory, and 22.8TB of NVMe SSD storage, 3x more than previous generation instances. These instances deliver up to 46% higher performance for I/O intensive database workloads, and up to 30% faster query results for I/O intensive real-time data analytics than previous sixth-generation instances&lt;b&gt;.&lt;/b&gt; Additionally, these instances support Instance Bandwidth Configuration, allowing 25% flexible allocation between network and EBS bandwidth, allocating resources optimally for each workload.&lt;br&gt; &lt;br&gt; C8id instances are ideal for compute-intensive workloads such as high-performance web servers, batch processing, distributed analytics, ad serving, video encoding, and gaming servers. M8id instances are well-suited for balanced workloads including application servers, microservices, enterprise applications, and small to medium databases. R8id instances are ideal for memory-intensive workloads such as in-memory databases, real-time big data analytics, large in-memory caches, and scientific computing applications.&lt;br&gt; &lt;br&gt; Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/\"&gt;Amazon EC2 instance type page.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-c8id-m8id-r8id/",
+      "publishedAt": "2026-07-09T19:33:00.000Z",
+      "updatedAt": "2026-07-09T19:33:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "06041bd9bd4d5a4b",
+      "title": "Amazon EC2 M8gd and R8gd instances are now available in AWS GovCloud (US)",
+      "description": "Amazon Elastic Compute Cloud (Amazon EC2) M8gd and R8gd instances are available in AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions. These instances feature up to 11.4 TB of local NVMe-based SSD block-level storage and are powered by AWS Graviton4 processors, delivering up to 30% better performance over Graviton3-based instances. These instances are built on the AWS Nitro System and are a great fit for applications that need access to high-speed, low latency local storage. Each instance is available in 12 different sizes. They provide up to 50 Gbps of network bandwidth and up to 40 Gb",
+      "descriptionHtml": "&lt;p&gt;Amazon Elastic Compute Cloud (Amazon EC2) M8gd and R8gd instances are available in AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions. These instances feature up to 11.4 TB of local NVMe-based SSD block-level storage and are powered by AWS Graviton4 processors, delivering up to 30% better performance over Graviton3-based instances. These instances are built on the AWS Nitro System and are a great fit for applications that need access to high-speed, low latency local storage.&lt;br&gt; &lt;br&gt; Each instance is available in 12 different sizes. They provide up to 50 Gbps of network bandwidth and up to 40 Gbps of bandwidth to the Amazon Elastic Block Store (Amazon EBS). Additionally, customers can now adjust the network and&lt;br&gt; Amazon EBS bandwidth on these instances by 25% using EC2 instance bandwidth weighting conﬁguration, providing greater ﬂexibility with the allocation of bandwidth resources to better optimize workloads. These instances offer Elastic Fabric Adapter (EFA) networking on 24xlarge, 48xlarge, metal-24xl, and metal-48xl sizes.&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8g/\"&gt;M8gd instances&lt;/a&gt; or &lt;a href=\"https://aws.amazon.com/ec2/instance-types/r8g/\"&gt;R8gd instances&lt;/a&gt;. To explore how to migrate your workloads to Graviton-based instances, see &lt;a href=\"https://aws.amazon.com/ec2/graviton/fast-start/\"&gt;AWS Graviton Fast Start program&lt;/a&gt;. To get started, see the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-m8gd-r8gd-us-govcloud/",
+      "publishedAt": "2026-07-09T19:24:00.000Z",
+      "updatedAt": "2026-07-09T19:24:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "AWS Govcloud Us",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "aws govcloud us",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
       "id": "0705d963adcf689d",
       "title": "Amazon EC2 I8g instances now available in AWS GovCloud (US) regions",
       "description": "AWS is announcing the general availability of Amazon EC2 Storage Optimized I8g instances in AWS GovCloud (US East, US West) regions. I8g instances offer the best performance in Amazon EC2 for storage-intensive workloads. I8g instances are powered by AWS Graviton4 processors that deliver up to 60% better compute performance compared to previous generation I4g instances. I8g instances use the latest third generation AWS Nitro SSDs, local NVMe storage that deliver up to 65% better real-time storage performance per TB while offering up to 50% lower storage I/O latency and up to 60% lower storage I",
@@ -580,6 +879,23 @@
       "tags": [
         "networking and content delivery",
         "aws client vpn"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0e4ac820dacd64ae",
+      "title": "AWS Partner Central introduces Partner Lead Prospecting",
+      "description": "AWS Partner Central now offers Partner Lead Prospecting, an AI-powered capability that helps APN Customer Engagements (ACE)-eligible AWS Partners act on and convert their leads faster. Building on the lead enrichment capabilities launched earlier this year — which provide propensity insights and eligibility for select AWS programs, funding benefits, and sales motions — Partner Lead Prospecting generates personalized sales plays, call scripts, and email outreach tailored to the customer's industry context and each partner's unique solutions and offerings. By incorporating a partner's own portfo",
+      "descriptionHtml": "&lt;p&gt;AWS Partner Central now offers Partner Lead Prospecting, an AI-powered capability that helps APN Customer Engagements (ACE)-eligible AWS Partners act on and convert their leads faster. Building on the lead enrichment capabilities launched earlier this year — which provide propensity insights and eligibility for select AWS programs, funding benefits, and sales motions — Partner Lead Prospecting generates personalized sales plays, call scripts, and email outreach tailored to the customer's industry context and each partner's unique solutions and offerings.&lt;/p&gt; \n&lt;p&gt;By incorporating a partner's own portfolio directly into prospecting content, the feature reduces the manual effort of researching leads and drafting outreach, helping partners engage prospective customers with more relevant, ready-to-use messaging.&lt;/p&gt; \n&lt;p&gt;Partner Lead Prospecting is available to all ACE-eligible AWS Partners globally. Partners can access it through the Leads page in the AWS Partner Central console or via the AWS Partner Central MCP server.&lt;/p&gt; \n&lt;p&gt;To get started, visit the Leads page in &lt;a href=\"https://aws.amazon.com/partners/partner-central/\"&gt;AWS Partner Central&lt;/a&gt;, or see the &lt;a href=\"https://docs.aws.amazon.com/partner-central/latest/APIReference/partner-central-mcp-server.html\"&gt;Partner Central agents MCP server guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-partner-central-prospecting/",
+      "publishedAt": "2026-07-09T16:30:00.000Z",
+      "updatedAt": "2026-07-09T16:30:00.000Z",
+      "categories": [
+        "AWS Marketplace"
+      ],
+      "services": [],
+      "tags": [
+        "aws marketplace"
       ],
       "isNew": true
     },
@@ -775,6 +1091,28 @@
       "isNew": true
     },
     {
+      "id": "6cad7d97f30d759f",
+      "title": "Amazon EC2 M8gd and R8gd instances are now available in additional AWS Regions",
+      "description": "Amazon Elastic Compute Cloud (Amazon EC2) M8gd and R8gd instances are available in additional AWS regions. EC2 M8gd and R8gd instances are available in Europe (Paris) and Asia Pacific (Mumbai). Additionally, EC2 R8gd instances are available in Europe (Stockholm, Milan) and Asia Pacific (Osaka, Melbourne, Singapore, Taipei) Regions. These instances feature up to 11.4 TB of local NVMe-based SSD block-level storage and are powered by AWS Graviton4 processors, delivering up to 30% better performance over Graviton3-based instances. These instances are built on the AWS Nitro System and are a great f",
+      "descriptionHtml": "&lt;p&gt;Amazon Elastic Compute Cloud (Amazon EC2) M8gd and R8gd instances are available in additional AWS regions. EC2 M8gd and R8gd instances are available in Europe (Paris) and Asia Pacific (Mumbai). Additionally, EC2 R8gd instances are available in Europe (Stockholm, Milan) and Asia Pacific (Osaka, Melbourne, Singapore, Taipei) Regions.&lt;br&gt; &lt;br&gt; These instances feature up to 11.4 TB of local NVMe-based SSD block-level storage and are powered by AWS Graviton4 processors, delivering up to 30% better performance over Graviton3-based instances. These instances are built on the AWS Nitro System and are a great fit for applications that need access to high-speed, low latency local storage.&lt;br&gt; &lt;br&gt; Each instance is available in 12 different sizes. They provide up to 50 Gbps of network bandwidth and up to 40 Gbps of bandwidth to the Amazon Elastic Block Store (Amazon EBS). Additionally, customers can now adjust the network and&lt;br&gt; Amazon EBS bandwidth on these instances by 25% using EC2 instance bandwidth weighting conﬁguration, providing greater ﬂexibility with the allocation of bandwidth resources to better optimize workloads. These instances offer Elastic Fabric Adapter (EFA) networking on 24xlarge, 48xlarge, metal-24xl, and metal-48xl sizes.&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8g/\"&gt;M8gd instances&lt;/a&gt; or &lt;a href=\"https://aws.amazon.com/ec2/instance-types/r8g/\"&gt;R8gd instances&lt;/a&gt;. To explore how to migrate your workloads to Graviton-based instances, see &lt;a href=\"https://aws.amazon.com/ec2/graviton/fast-start/\"&gt;AWS Graviton Fast Start program&lt;/a&gt;. To get started, see the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-m8gd-r8gd-aws-regions/",
+      "publishedAt": "2026-07-08T19:29:00.000Z",
+      "updatedAt": "2026-07-08T19:29:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
       "id": "eec1c7951b251e00",
       "title": "Amazon Redshift RG instances now available on the trailing track",
       "description": "Amazon Redshift now supports Graviton-based RG instances on the trailing track . Starting July 7, 2026, rg.4xlarge and rg.xlarge instance types are available for customers running workloads on the trailing track (P201). The trailing track is designed for customers who prioritize stability for production workloads, running on a version already validated through the leading track. With RG instances now available on both tracks, customers can take advantage of AWS Graviton-powered performance - delivering up to 2.4x faster query performance than RA3 instances at 30% lower price per vCPU. To get s",
@@ -881,7 +1219,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "58858b088ae49688",
@@ -900,7 +1238,7 @@
         "amazon gamelift",
         "gaming"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b38f6c16bc68c074",
@@ -924,7 +1262,7 @@
         "storage",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0b38432dc99bd1b9",
@@ -950,7 +1288,7 @@
         "inspector",
         "security hub"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f6a73cdffd7c71d3",
@@ -974,7 +1312,7 @@
         "amazon ecs",
         "ecs"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7689d98c88f78e68",
@@ -996,7 +1334,7 @@
         "analytics",
         "emr"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f2f485da75958a53",
@@ -1018,7 +1356,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "07ff4253a3ccc9e5",
@@ -1042,7 +1380,7 @@
         "iam",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "63d6679dd9109d42",
@@ -1064,7 +1402,7 @@
         "analytics",
         "redshift"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "01603f4094bf6456",
@@ -1086,7 +1424,7 @@
         "databases",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a0deeeb8f500d4a0",
@@ -1108,7 +1446,7 @@
         "storage",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c88f2ffceddae648",
@@ -1132,7 +1470,7 @@
         "amazon eks",
         "eks"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6ef4913cf3ae4f91",
@@ -10783,333 +11121,6 @@
       "tags": [
         "aws client vpn",
         "networking and content delivery"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "3a1ebccd3b1ea404",
-      "title": "Amazon Connect adds default Step-by-Step Guides for After Contact Work",
-      "description": "Amazon Connect now supports Default Guides for After Contact Work (ACW), enabling contact center administrators to automatically launch a Step-by-Step Guide when an agent enters the ACW state without any manual work. This capability helps contact centers standardize post-contact workflows and reduce handle time by ensuring agents are automatically guided through required wrap-up tasks, such as logging disposition codes, updating cases, or completing follow-up actions. By eliminating the need for agents to manually navigate to the correct application during ACW, organizations can improve consis",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect now supports Default Guides for After Contact Work (ACW), enabling contact center administrators to automatically launch a Step-by-Step Guide when an agent enters the ACW state without any manual work.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This capability helps contact centers standardize post-contact workflows and reduce handle time by ensuring agents are automatically guided through required wrap-up tasks, such as logging disposition codes, updating cases, or completing follow-up actions. By&amp;nbsp;eliminating&amp;nbsp;the need for agents to manually&amp;nbsp;navigate to&amp;nbsp;the correct&amp;nbsp;application&amp;nbsp;during ACW, organizations can improve consistency, reduce errors, and accelerate agent productivity across their contact center operations.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;To learn more and get started, visit the Amazon Connect&amp;nbsp;&lt;a href=\"https://aws.amazon.com/connect/agent-workspace/\"&gt;webpage&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/agent-workspace.html\"&gt;documentation.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-connect-adds-default-step-by-step-guides-for-after-contact-work",
-      "publishedAt": "2026-05-08T20:12:00.000Z",
-      "updatedAt": "2026-05-08T20:12:00.000Z",
-      "categories": [
-        "Amazon Connect"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "amazon connect",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "1d84cd1c4be8259d",
-      "title": "Amazon Route 53 Global Resolver now lets you add and remove AWS Regions for anycast DNS resolution",
-      "description": "Amazon Route 53 Global Resolver now lets you add and remove AWS Regions for anycast DNS resolution, giving you flexible control over where your DNS queries are resolved. This allows you to easily expand Global Resolver coverage as your organization grows or adjust regional deployment to meet compliance requirements. Global Resolver provides anycast DNS resolution for public internet domains and private Route 53 hosted zones from any location, along with DNS query filtering and centralized logging. With this update, you can dynamically adjust which AWS Regions participate in anycast resolution ",
-      "descriptionHtml": "&lt;p&gt;Amazon Route 53 Global Resolver now lets you add and remove AWS Regions for anycast DNS resolution, giving you flexible control over where your DNS queries are resolved. This allows you to easily expand Global Resolver coverage as your organization grows or adjust regional deployment to meet compliance requirements.&lt;br&gt; &lt;br&gt; Global Resolver provides anycast DNS resolution for public internet domains and private Route 53 hosted zones from any location, along with DNS query filtering and centralized logging. With this update, you can dynamically adjust which AWS Regions participate in anycast resolution without recreating your Global Resolver configuration.&lt;br&gt; &lt;br&gt; This capability is available at no additional cost in all AWS Regions where Route 53 Global Resolver is supported. To get started, see the Route 53 Global Resolver &lt;a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-what-is-global-resolver.html\" target=\"_blank\"&gt;documentation&lt;/a&gt;. For regional availability, see the Route 53 Global Resolver Region &lt;a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/gr-what-is-global-resolver.html#regions\" target=\"_blank\"&gt;list&lt;/a&gt;. For pricing, see Amazon Route 53 &lt;a href=\"https://aws.amazon.com/route53/pricing/\" target=\"_blank\"&gt;pricing&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-route-global-resolver-aws/",
-      "publishedAt": "2026-05-08T17:43:00.000Z",
-      "updatedAt": "2026-05-08T17:43:00.000Z",
-      "categories": [
-        "Networking And Content Delivery",
-        "Amazon Route 53",
-        "Security Identity And Compliance"
-      ],
-      "services": [
-        "Route 53"
-      ],
-      "tags": [
-        "networking and content delivery",
-        "amazon route 53",
-        "security identity and compliance",
-        "route 53"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b699916cac1abd64",
-      "title": "AWS Service Catalog is now available in the AWS Asia Pacific (New Zealand) and Canada West (Calgary) regions",
-      "description": "AWS Service Catalog is now available to customers in two additional AWS Regions: Asia Pacific (New Zealand) and Canada West (Calgary). AWS Service Catalog enables customers to create, govern, and distribute a catalog of approved Infrastructure as Code (IaC) products for deployment on AWS. Administrators define products using AWS CloudFormation or other IaC tools such as Terraform. A product is a set of AWS resources that can range from a single compute instance to a fully configured multi-tier application. Customers can share portfolios of approved products across AWS accounts and organization",
-      "descriptionHtml": "&lt;p&gt;AWS Service Catalog is now available to customers in two additional AWS Regions: Asia Pacific (New Zealand) and Canada West (Calgary).&lt;br&gt; &lt;br&gt; AWS Service Catalog enables customers to create, govern, and distribute a catalog of approved Infrastructure as Code (IaC) products for deployment on AWS. Administrators define products using AWS CloudFormation or other IaC tools such as Terraform. A product is a set of AWS resources that can range from a single compute instance to a fully configured multi-tier application. Customers can share portfolios of approved products across AWS accounts and organizational units through AWS Organizations, giving engineers, database administrators, data scientists, and other end-users consistent self-service access to governed AWS resources across their organization.&lt;br&gt; &lt;br&gt; With AWS Service Catalog, organizations can apply launch and template constraints to govern how products are provisioned, manage product versions as they evolve, and control access by individual, group, or cost center using AWS Identity and Access Management (IAM). AWS Service Catalog is used by enterprises, system integrators, and managed service providers to organize, govern, and provision resources on AWS at scale.&lt;br&gt; &lt;br&gt; For more information, please visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/servicecatalog/\"&gt;AWS Service Catalog product page&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/servicecatalog/\"&gt;documentation&lt;/a&gt;. See the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Region Table&lt;/a&gt;&amp;nbsp;for complete regional availability.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-service-catalog-calgary-new-zealand-regions/",
-      "publishedAt": "2026-05-08T16:43:00.000Z",
-      "updatedAt": "2026-05-08T16:43:00.000Z",
-      "categories": [],
-      "services": [
-        "Service Catalog"
-      ],
-      "tags": [
-        "service catalog"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "4ad5f7a030a32a63",
-      "title": "Amazon Quick now supports cross-account access for Amazon Athena data sources",
-      "description": "Today, Amazon Quick is announcing cross-account access for Amazon Athena data sources. This launch enables you to query Athena data residing in a different AWS account(s) from your Quick deployment using IAM role chaining, with Athena query costs billed to the account where the data lives. With this feature, administrators can create an Athena data source in Quick by specifying a RunAsRole in the Quick account and a ConsumerAccountRoleArn in the target account where Athena resources reside. Quick uses a role chaining mechanism first assuming the RunAsRole, then chaining into the consumer accou",
-      "descriptionHtml": "&lt;p&gt;Today, Amazon Quick is announcing cross-account access for Amazon Athena data sources. This launch enables you to query Athena data&amp;nbsp;residing&amp;nbsp;in a different AWS account(s)&amp;nbsp;from your Quick deployment using IAM role chaining, with Athena query costs billed to the account where the data lives.&lt;/p&gt; \n&lt;p&gt;With this feature, administrators can create an Athena data source in Quick by specifying a&amp;nbsp;RunAsRole&amp;nbsp;in the Quick account and a&amp;nbsp;ConsumerAccountRoleArn&amp;nbsp;in the target account where Athena resources&amp;nbsp;reside. Quick uses a role chaining mechanism first assuming the&amp;nbsp;RunAsRole, then chaining into the consumer account role to execute queries. This&amp;nbsp;launch&amp;nbsp;supports multiple roles per consumer account(s), enabling fine-grained access segregation across teams within a single account.&amp;nbsp;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This feature is now available in all supported Amazon Quick&amp;nbsp;Sight regions&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html\" target=\"_blank\"&gt;here&lt;/a&gt;. For more details, read our &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/from-siloed-data-to-unified-insights-cross-account-athena-access-for-amazon-quick/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;blog post&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-quick-athena/",
-      "publishedAt": "2026-05-08T16:00:00.000Z",
-      "updatedAt": "2026-05-08T16:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Quicksight"
-      ],
-      "services": [
-        "Athena",
-        "QuickSight"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon quicksight",
-        "athena",
-        "quicksight"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "44216d0a476384c7",
-      "title": "Amazon RDS for MySQL now supports new minor versions 8.0.46 and 8.4.9",
-      "description": "Amazon Relational Database Service (Amazon RDS) for MySQL now supports MySQL minor versions 8.0.46 and 8.4.9, the latest minors released by the MySQL community. We recommend upgrading to the newer minor versions to fix known security vulnerabilities in prior versions of MySQL and to benefit from bug fixes, performance improvements, and new functionality added by the MySQL community. Learn more about the enhancements in RDS for MySQL 8.0.46 and 8.4.9 in the Amazon RDS user guide . You can leverage automatic minor version upgrades to automatically upgrade your databases to more recent minor vers",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/mysql/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) for MySQL&lt;/a&gt;&amp;nbsp;now supports MySQL minor versions 8.0.46 and 8.4.9, the latest minors released by the MySQL community. We recommend upgrading to the newer minor versions to fix known security vulnerabilities in prior versions of MySQL and to benefit from bug fixes, performance improvements, and new functionality added by the MySQL community. Learn more about the enhancements in RDS for MySQL 8.0.46 and 8.4.9 in the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Concepts.VersionMgmt.html\" target=\"_blank\"&gt;Amazon RDS user guide&lt;/a&gt;.&lt;br&gt; &lt;br&gt; You can leverage automatic minor version upgrades to automatically upgrade your databases to more recent minor versions during scheduled maintenance windows. You can also use&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html\" target=\"_blank\"&gt;Amazon RDS Managed Blue/Green deployments&lt;/a&gt;&amp;nbsp;for safer, simpler, and faster updates to your MySQL instances. Learn more about upgrading your database instances, including automatic minor version upgrades and Blue/Green Deployments, in the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.MySQL.html\" target=\"_blank\"&gt;Amazon RDS User Guide.&lt;/a&gt;&lt;br&gt; &lt;br&gt; Amazon RDS for MySQL makes it simple to set up, operate, and scale MySQL deployments in the cloud. Learn more about pricing details and regional availability at&amp;nbsp;&lt;a href=\"https://aws.amazon.com/rds/mysql/pricing/\" target=\"_blank\"&gt;Amazon RDS for MySQL&lt;/a&gt;. Create or update a fully managed Amazon RDS for MySQL database in the&amp;nbsp;&lt;a href=\"https://console.aws.amazon.com/rds/home\" target=\"_blank\"&gt;Amazon RDS Management Console&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-rds-mysql-minor-versions/",
-      "publishedAt": "2026-05-08T07:00:00.000Z",
-      "updatedAt": "2026-05-08T07:00:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Rds For Mysql"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "databases",
-        "amazon rds for mysql",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d01ee4d78edb128d",
-      "title": "IAM Policy Autopilot adds Java support and Terraform-aware policy generation",
-      "description": "IAM Policy Autopilot now supports Java applications and Terraform-aware policy generation, expanding its language coverage and its ability to generate less permissive IAM policies from code. IAM Policy Autopilot is an open-source tool launched at re:Invent 2025 that helps builders quickly and deterministically create baseline IAM policies on AWS that you can refine as your application evolves, reducing the time you spend writing IAM policies and troubleshooting access issues. Java has been one of the most requested languages from IAM Policy Autopilot users. With this release, Java developers c",
-      "descriptionHtml": "&lt;p&gt;IAM Policy Autopilot now supports Java applications and Terraform-aware policy generation, expanding its language coverage and its ability to generate less permissive IAM policies from code. IAM Policy Autopilot is an open-source tool launched at re:Invent 2025 that helps builders quickly and deterministically create baseline IAM policies on AWS that you can refine as your application evolves, reducing the time you spend writing IAM policies and troubleshooting access issues.&lt;/p&gt; \n&lt;p&gt;Java has been one of the most requested languages from IAM Policy Autopilot users. With this release, Java developers can now analyze their application source code to generate AWS IAM policies, joining Python, TypeScript, and Go as supported languages. In addition, IAM Policy Autopilot can now cross-reference Terraform resource definitions with SDK calls in your application code to resolve actual resource ARNs for each IAM action. For example, a policy generated for an application that calls S3 GetObject will now reference the specific bucket defined in Terraform rather than defaulting to wildcard (*) resources.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;IAM Policy Autopilot is available at no additional cost and can be used from your own machine. To get started, visit the IAM Policy Autopilot&amp;nbsp;&lt;a href=\"https://github.com/awslabs/iam-policy-autopilot\"&gt;GitHub repository&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/iam-policy-autopilot/",
-      "publishedAt": "2026-05-08T04:00:00.000Z",
-      "updatedAt": "2026-05-08T04:00:00.000Z",
-      "categories": [
-        "Developers"
-      ],
-      "services": [
-        "IAM",
-        "Terraform"
-      ],
-      "tags": [
-        "developers",
-        "iam",
-        "terraform"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "fcc00c517080246c",
-      "title": "Amazon Route 53 Resolver endpoints now support additional capabilities for IPv6 query traffic",
-      "description": "Amazon Route 53 Resolver endpoints now support DNS64 on inbound endpoints and IPv6 forwarding through the internet gateway (IGW) on outbound endpoints, making it easier to manage hybrid DNS across IPv4 and IPv6 networks. With DNS64 enabled on inbound endpoints, you can synthesize AAAA (IPv6) responses for domains that only have A (IPv4) records, allowing IPv6-only clients on-premises to reach IPv4 services on AWS without changes to those services. You can also configure outbound endpoints to forward DNS queries to public IPv6 name servers through the IGW. Amazon Route 53 Resolver endpoints sim",
-      "descriptionHtml": "&lt;p&gt;Amazon Route 53 Resolver endpoints now support DNS64 on inbound endpoints and IPv6 forwarding through the internet gateway (IGW) on outbound endpoints, making it easier to manage hybrid DNS across IPv4 and IPv6 networks. With DNS64 enabled on inbound endpoints, you can synthesize AAAA (IPv6) responses for domains that only have A (IPv4) records, allowing IPv6-only clients on-premises to reach IPv4 services on AWS without changes to those services. You can also configure outbound endpoints to forward DNS queries to public IPv6 name servers through the IGW.&lt;br&gt; &lt;br&gt; Amazon Route 53 Resolver endpoints simplify hybrid cloud DNS by enabling seamless query resolution between on-premises networks and Amazon Virtual Private Cloud (Amazon VPC). As you transition workloads to IPv6, these capabilities help your IPv6 resources on VPCs and on-premises networks communicate with both IPv4 and IPv6 destinations without additional workarounds.&lt;br&gt; &lt;br&gt; These capabilities are available at no additional cost in all AWS Regions where Route 53 Resolver endpoints are supported. To get started, see the Route 53 VPC Resolver &lt;a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;. For regional availability, see the Route 53 Region &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/r53.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;list&lt;/a&gt;. For Route 53 Resolver endpoint pricing, see &lt;a href=\"https://aws.amazon.com/route53/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;here&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-route-53-resolver-ipv6/",
-      "publishedAt": "2026-05-07T23:08:00.000Z",
-      "updatedAt": "2026-05-07T23:08:00.000Z",
-      "categories": [
-        "Amazon Route 53",
-        "AWS Govcloud Us",
-        "Networking And Content Delivery"
-      ],
-      "services": [
-        "Route 53"
-      ],
-      "tags": [
-        "amazon route 53",
-        "aws govcloud us",
-        "networking and content delivery",
-        "route 53"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a9fa25010597d77c",
-      "title": "AWS Marketplace introduces Tax management portal for sellers",
-      "description": "AWS Marketplace launches a new Tax management portal that provides sellers a streamlined self-service process to view and download invoices, eliminating the need to request invoices through support channels. Tax management portal integrates the invoice management directly into the AWS Partner Central console, providing centralized access to both seller listing fee invoices and invoices issued to buyers in applicable regions. The portal streamlines invoice retrieval and record-keeping for sellers and partner finance teams managing AWS Marketplace operations. Sellers can now access the new exper",
-      "descriptionHtml": "&lt;p&gt;AWS Marketplace launches a new Tax management portal that provides sellers a streamlined self-service process to view and download invoices, eliminating the need to request invoices through support channels. Tax management portal integrates the invoice management directly into the AWS Partner Central console, providing centralized access to both seller listing fee invoices and invoices issued to buyers in applicable regions. The portal streamlines invoice retrieval and record-keeping for sellers and partner finance teams managing AWS Marketplace operations.&lt;br&gt; &lt;br&gt; Sellers can now access the new experience through AWS Partner Central or AWS Marketplace Management portal, enabling advanced search and filtering capabilities, allowing you to search listing fee invoices by invoice ID, date range, or invoicing entity. Sellers can also access these invoices programmatically through the &lt;a href=\"https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_invoicing_ListInvoiceSummaries.html\"&gt;ListInvoiceSummaries&lt;/a&gt; API. Sellers can download multiple invoices simultaneously, making it efficient to prepare for audits, reconcile financial records, or retrieve tax-related information. This self-service approach provides transparency into listing fees across different AWS Marketplace invoicing entities, supporting multi-region operations and revenue tracking needs.&lt;br&gt; &lt;br&gt; Beyond listing fee invoices, India-based sellers can view and download tax invoices generated on their behalf to the buyer through the portal, with filtering by invoice ID, buyer name, date range, buyer account ID, or invoicing entity.&lt;br&gt; &lt;br&gt; Seller listing fee invoices are supported for all AWS Marketplace entities. To learn more about accessing and managing the invoices, visit &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/managing-invoices.html\"&gt;AWS Marketplace Seller Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-marketplace-tax/",
-      "publishedAt": "2026-05-07T21:36:00.000Z",
-      "updatedAt": "2026-05-07T21:36:00.000Z",
-      "categories": [
-        "AWS Marketplace And Partners",
-        "Partner Network"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace and partners",
-        "partner network"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d53a00f66b7156ae",
-      "title": "Amazon EC2 G6 instances now available in AWS European Sovereign Cloud (Germany)",
-      "description": "Starting today, the Amazon Elastic Compute Cloud (Amazon EC2) G6 instances powered by NVIDIA L4 GPUs are available in AWS European Sovereign Cloud (Germany). G6 instances can be used for a wide range of graphics-intensive and machine learning (ML) use cases. Customers can use G6 instances for deploying ML models for natural language processing, language translation, video and image analysis, speech recognition, and personalization. G6 instances are also well-suited for graphics workloads, such as creating and rendering real-time, cinematic-quality graphics and game streaming. G6 instances feat",
-      "descriptionHtml": "&lt;p&gt;Starting today, the Amazon Elastic Compute Cloud (Amazon EC2) G6 instances powered by NVIDIA L4 GPUs are available in AWS European Sovereign Cloud (Germany). G6 instances can be used for a wide range of graphics-intensive and machine learning (ML) use cases.&lt;br&gt; &lt;br&gt; Customers can use G6 instances for deploying ML models for natural language processing, language translation, video and image analysis, speech recognition, and personalization. G6 instances are also well-suited for graphics workloads, such as creating and rendering real-time, cinematic-quality graphics and game streaming. G6 instances feature up to 8 NVIDIA L4 Tensor Core GPUs with 24 GB of memory per GPU and third generation AMD EPYC processors. They also support up to 192 vCPUs, up to 100 Gbps of network bandwidth, and up to 7.52 TB of local NVMe SSD storage.&lt;br&gt; &lt;br&gt; In addition to AWS European Sovereign Cloud (Germany), Amazon EC2 G6 instances are available today in the AWS US East (N. Virginia and Ohio), US West (Oregon), Europe (Frankfurt, London, Paris, Spain, Stockholm and Zurich), Asia Pacific (Mumbai, Tokyo, Malaysia, Seoul and Sydney), South America (Sao Paulo), Middle East (UAE) and Canada (Central) Regions. Customers can purchase G6 instances as On-Demand Instances, Spot Instances, or as part of Savings Plans.&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://console.aws.amazon.com/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Command Line Interface&lt;/a&gt; (CLI), and AWS SDKs. To learn more, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g6/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;G6 instance page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-g6-aws-european-sovereign-cloud/",
-      "publishedAt": "2026-05-07T21:07:00.000Z",
-      "updatedAt": "2026-05-07T21:07:00.000Z",
-      "categories": [
-        "Compute",
-        "Artificial Intelligence",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "artificial intelligence",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "4a88ae9352bb1425",
-      "title": "Amazon EC2 X8i instances are now available in additional regions",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Europe (Ireland) and Asia Pacific (Mumbai) regions. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances. X8i instances are designed for memory-intensive workloads like SA",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Europe (Ireland) and Asia Pacific (Mumbai) regions. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances.&lt;br&gt; &lt;br&gt; X8i instances are designed for memory-intensive workloads like SAP HANA, large databases, data analytics, and Electronic Design Automation (EDA). Compared to X2i instances, X8i instances offer up to 50% higher SAPS performance, up to 47% faster PostgreSQL performance, 88% faster Memcached performance, and 46% faster AI inference performance. X8i instances come in 14 sizes, from large to 96xlarge, including two bare metal options.&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\"&gt;AWS Management Console&lt;/a&gt;. X8i instances can be purchased via Savings Plans, On-Demand instances, and Spot instances. For more information visit &lt;a href=\"https://aws.amazon.com/ec2/instance-types/x8i/\" target=\"_blank\"&gt;X8i instances page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-x8i-instances-BOM-DUB-region/",
-      "publishedAt": "2026-05-07T20:45:00.000Z",
-      "updatedAt": "2026-05-07T20:45:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "amazon ec2",
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "c39fea8ed6345ec7",
-      "title": "Amazon SageMaker Unified Studio adds identity and user management features",
-      "description": "Amazon SageMaker Unified Studio announces new administration features that give administrators more control over identity configuration and user management for both IAM and Identity Center domain types. In SageMaker IAM domains, administrators can now onboard users through single sign-on by configuring AWS IAM Identity Center. After configuration, administrators can add IAM roles, IAM users, IAM Identity Center users, and IAM Identity Center groups as project members. Teams can collaborate on project data and resources regardless of how individual members authenticate. Administrators can set u",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio announces new administration features that give administrators more control over identity configuration and user management for both IAM and Identity Center domain types.&lt;br&gt; &lt;br&gt; In SageMaker IAM domains, administrators can now onboard users through single sign-on by configuring AWS IAM Identity Center. After configuration, administrators can add IAM roles, IAM users, IAM Identity Center users, and IAM Identity Center groups as project members. Teams can collaborate on project data and resources regardless of how individual members authenticate. Administrators can set up IAM Identity Center integration in the SageMaker Unified Studio admin portal. A new domain user management page for SageMaker IAM domains gives administrators a consolidated view of all users active in the domain, where they can manage access and update permissions from a single screen.&lt;br&gt; &lt;br&gt; In SageMaker Identity Center domains, users can now access the SageMaker Unified Studio portal by federating through an IAM role. SageMaker Unified Studio creates a unique user session for each federated user, so users sharing the same role don't overwrite each other's work. Administrators can audit individual actions even when multiple users share a single IAM role.&lt;br&gt; &lt;br&gt; With these features, customers can use IAM identity or IAM Identity Center corporate identity across both domain types, giving teams flexibility to collaborate in SageMaker Unified Studio regardless of their authentication method.&lt;br&gt; &lt;br&gt; These features are available in the following &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt;: Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm), South America (São Paulo), US East (N. Virginia), US East (Ohio), and US West (Oregon).&lt;br&gt; &lt;br&gt; To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/working-with-domains.html\"&gt;SageMaker Unified Studio documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/smus-identity-user-management/",
-      "publishedAt": "2026-05-07T19:00:00.000Z",
-      "updatedAt": "2026-05-07T19:00:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "analytics",
-        "amazon sagemaker",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "80c28b198e3fd522",
-      "title": "Amazon EC2 G7e instances now available in Europe (London) region",
-      "description": "Starting today, Amazon EC2 G7e instances accelerated by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs are now available in Europe (London) region. G7e instances offer up to 2.3x inference performance compared to G6e. Customers can use G7e instances to deploy large language models (LLMs), agentic AI models, multimodal generative AI models, and physical AI models. G7e instances offer the highest performance for spatial computing workloads as well as workloads that require both graphics and AI processing capabilities. G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition ",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon EC2 G7e instances accelerated by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs are now available in Europe (London) region. G7e instances offer up to 2.3x inference performance compared to G6e.&lt;/p&gt; \n&lt;p&gt;Customers can use G7e instances to deploy large language models (LLMs), agentic AI models, multimodal generative AI models, and physical AI models. G7e instances offer the highest performance for spatial computing workloads as well as workloads that require both graphics and AI processing capabilities. G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, with 96 GB of memory per GPU, and 5th Generation Intel Xeon processors. They support up to 192 virtual CPUs (vCPUs) and up to 1600 Gbps of networking bandwidth. G7e instances support NVIDIA GPUDirect Peer to Peer (P2P) that boosts performance for multi-GPU workloads. Multi-GPU G7e instances also support NVIDIA GPUDirect Remote Direct Memory Access (RDMA) with EFA in EC2 UltraClusters, reducing latency for small-scale multi-node workloads.&lt;/p&gt; \n&lt;p&gt;You can use G7e instances for Amazon EC2 in the following AWS Regions: US West (Oregon), US East (N. Virginia, Ohio), Europe (Spain, London) and Asia Pacific (Tokyo, Seoul). You can purchase G7e instances as On-Demand Instances, Spot Instances, or as part of Savings Plans.&lt;/p&gt; \n&lt;p&gt;To get started, visit the&amp;nbsp;&lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;,&amp;nbsp;&lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface&lt;/a&gt;&amp;nbsp;(CLI), and AWS SDKs. To learn more, visit&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/g7e/\"&gt;G7e instances&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-g7e-london-region/",
-      "publishedAt": "2026-05-07T18:04:00.000Z",
-      "updatedAt": "2026-05-07T18:04:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "amazon ec2",
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "30cecb94158ac93d",
-      "title": "AWS Capabilities by Region now supports availability notifications",
-      "description": "Today, AWS announces availability notifications for AWS Capabilities by Region in AWS Builder Center, a new subscription-based system that automatically alerts builders when an AWS service(s) and/or features(s) become available in their target Regions. Availability notifications make it easy for builders to track availability of 1,500+ services and features across 37 AWS Regions, accelerating infrastructure planning and deployment decisions. With availability notifications, builders can subscribe at the service level through AWS Builder Center UI, and the subscription automatically covers all ",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces availability notifications for AWS Capabilities by Region in AWS Builder Center, a new subscription-based system that automatically alerts builders when&amp;nbsp;an&amp;nbsp;AWS service(s)&amp;nbsp;and/or&amp;nbsp;features(s)&amp;nbsp;become available in their target Regions.&amp;nbsp;Availability notifications&amp;nbsp;make&amp;nbsp;it easy for builders to&amp;nbsp;track availability&amp;nbsp;of&amp;nbsp;1,500+&amp;nbsp;services and features across&amp;nbsp;37&amp;nbsp;AWS&amp;nbsp;Regions,&amp;nbsp;accelerating&amp;nbsp;infrastructure planning and deployment decisions.&lt;/p&gt; \n&lt;p&gt;With availability notifications,&amp;nbsp;builders can subscribe&amp;nbsp;at&amp;nbsp;the service level through&amp;nbsp;AWS Builder Center UI, and the subscription automatically covers all underlying features across selected Regions, so&amp;nbsp;there's&amp;nbsp;no need to track each feature individually. Notifications are delivered through two channels: instantaneous in-app alerts within AWS Builder Center, and a&amp;nbsp;consolidated&amp;nbsp;weekly email digest.&amp;nbsp;Subscriptions and notification preferences can be managed through&amp;nbsp;Settings &amp;gt; Notifications&amp;nbsp;in AWS Builder Center. Common use cases include tracking a specific capability launch, monitoring service parity across&amp;nbsp;AWS&amp;nbsp;Regions, and preparing for upcoming migrations or&amp;nbsp;Regional&amp;nbsp;expansions. For example, a solutions architect expanding a generative AI application into new Regions can subscribe to Amazon Bedrock and receive automatic&amp;nbsp;updates&amp;nbsp;as Knowledge Bases, Guardrails, and other features become available.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-regional-planning-tool-notification",
-      "publishedAt": "2026-05-07T17:48:00.000Z",
-      "updatedAt": "2026-05-07T17:48:00.000Z",
-      "categories": [
-        "Migration",
-        "Developer Tools"
-      ],
-      "services": [],
-      "tags": [
-        "migration",
-        "developer tools"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7a967b8ec4725c9a",
-      "title": "AWS Elemental MediaTailor launches Monetization Functions",
-      "description": "AWS Elemental MediaTailor now supports monetization functions, a new capability that lets customers customize how MediaTailor builds ad decision server (ADS) requests and manages session data during ad-personalized playback. With monetization functions, customers can call external APIs and run inline data transformations at defined points in the playback session — eliminating the need to build and operate middleware between the player and the ADS. Common use cases include resolving hashed email addresses into privacy-compliant identity envelopes through providers such as LiveRamp, appending co",
-      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaTailor now supports&amp;nbsp;monetization&amp;nbsp;functions,&amp;nbsp;a new capability that lets customers customize how MediaTailor builds ad decision server (ADS) requests and manages session data during ad-personalized playback.&amp;nbsp;With&amp;nbsp;monetization&amp;nbsp;functions, customers can call external APIs and run inline data transformations at defined points in the playback session —&amp;nbsp;eliminating&amp;nbsp;the need to build and&amp;nbsp;operate&amp;nbsp;middleware between the player and the ADS.&lt;/p&gt; \n&lt;p&gt;Common use cases include resolving hashed email addresses into&amp;nbsp;privacy-compliant identity envelopes through providers&amp;nbsp;such as&amp;nbsp;LiveRamp,&amp;nbsp;appending contextual metadata from a content management system to every ad request&amp;nbsp;through providers like&amp;nbsp;GraceNote,&amp;nbsp;activate header bidding workflows through providers like The Trade Desk&amp;nbsp;and running A/B tests across multiple ad decision servers. Monetization&amp;nbsp;functions&amp;nbsp;are fail-open&amp;nbsp;by design: if a function&amp;nbsp;encounters&amp;nbsp;an error, exceeds its timeout, or hits a resource limit, MediaTailor discards the output and&amp;nbsp;proceeds&amp;nbsp;with default ad-insertion behavior, so viewers' playback is never interrupted.&lt;/p&gt; \n&lt;p&gt;Monetization&amp;nbsp;functions&amp;nbsp;is&amp;nbsp;available at general availability in all AWS regions where AWS Elemental MediaTailor operates.&amp;nbsp;You are billed per&amp;nbsp;lifecycle&amp;nbsp;hook invocation at a flat rate that does not depend on&amp;nbsp;the number,&amp;nbsp;type,&amp;nbsp;or complexity&amp;nbsp;of functions.&amp;nbsp;For full details, see the&amp;nbsp;&lt;a title=\"MediaTailor pricing page\" href=\"https://aws.amazon.com/mediatailor/pricing/\"&gt;MediaTailor pricing page&lt;/a&gt;, the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/mediatailor/pricing/\" title=\"MediaTailor User Guide\"&gt;Monetization Functions section of the MediaTailor User Guide&lt;/a&gt;, and the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-functions.html\" title=\"MediaTailor product page\"&gt;MediaTailor product page&lt;/a&gt;.&lt;a title=\"MediaTailor pricing page\" href=\"https://aws.amazon.com/mediatailor/pricing/\"&gt;&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-elemental-mediatailor-monetization-functions",
-      "publishedAt": "2026-05-07T17:20:00.000Z",
-      "updatedAt": "2026-05-07T17:20:00.000Z",
-      "categories": [
-        "Media Services",
-        "AWS Elemental Mediatailor"
-      ],
-      "services": [
-        "Elemental",
-        "MediaTailor"
-      ],
-      "tags": [
-        "media services",
-        "aws elemental mediatailor",
-        "elemental",
-        "mediatailor"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "de6cea1135fcf5aa",
-      "title": "AWS Advanced JDBC Wrapper now provides client-side encryption",
-      "description": "The AWS Advanced JDBC Wrapper now provides column-level client-side encryption through its KMS Encryption plugin. The wrapper provides advanced capabilities such as failover handling, AWS authentication integration, and enhanced monitoring for Amazon Aurora and Amazon RDS open source databases. It enables Java applications to encrypt sensitive data before it reaches the database without changing application code. Database encryption at rest and TLS in transit are foundational security controls. However, with these controls decrypt the data within the database engine. A compromised credential, ",
-      "descriptionHtml": "&lt;p&gt;The AWS Advanced JDBC Wrapper now provides column-level client-side encryption through its KMS Encryption plugin. The wrapper provides advanced capabilities such as failover handling, AWS authentication integration, and enhanced monitoring for Amazon Aurora and Amazon RDS open source databases. It enables Java applications to encrypt sensitive data before it reaches the database without changing application code.&lt;br&gt; &lt;br&gt; Database encryption at rest and TLS in transit are foundational security controls. However, with these controls decrypt the data within the database engine. A compromised credential, overprivileged administrator, or SQL injection attack can expose sensitive data in plaintext, creating compliance risk under PCI DSS, HIPAA, and GDPR. The KMS Encryption plugin closes this gap by working at the JDBC driver level. When your application writes to an encrypted column, the plugin encrypts the value before it reaches the database. When reading, it decrypts the value before returning it. Plaintext remains visible only to your application, while the database sees encrypted values. The database can verify data integrity through HMAC validation without needing the encryption key. The plugin integrates seamlessly with your existing SQL, Spring, Hibernate, and connection pool setup without requiring code changes.&lt;br&gt; &lt;br&gt; The KMS Encryption plugin works with &lt;a href=\"https://aws.amazon.com/rds/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Aurora&lt;/a&gt; PostgreSQL and MySQL-compatible databases.&lt;br&gt; &lt;br&gt; The plugin is available as an open-source project under the Apache 2.0 license. To learn more, see &lt;a href=\"https://github.com/aws/aws-advanced-jdbc-wrapper/blob/main/README.md\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Advanced JDBC Wrapper documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-advanced-jdbc-wrapper-encryption/",
-      "publishedAt": "2026-05-07T17:00:00.000Z",
-      "updatedAt": "2026-05-07T17:00:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Rds"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "databases",
-        "amazon rds",
-        "rds"
       ],
       "isNew": false
     }
