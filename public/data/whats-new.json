@@ -1,7 +1,297 @@
 {
-  "lastUpdated": "2026-07-15T08:50:19.404Z",
+  "lastUpdated": "2026-07-16T08:50:20.674Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "918c1e12bb9666e3",
+      "title": "Amazon CloudWatch Logs announces intelligent tiering for storage",
+      "description": "Amazon CloudWatch Logs now supports intelligent storage tiering, which automatically classifies your log data across three storage tiers - Standard (existing), Infrequent Access, and Archive Instant Access based on access patterns. This allows you to store logs in Amazon CloudWatch for extended periods at lower-cost tiers without any operational overhead. With today's launch, customers can now retain high-volume verbose logs needed to be stored for longer periods at a lower cost in Amazon CloudWatch. Instead of filtering these logs or exporting them, you can now keep them natively in Amazon Cl",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch Logs now supports intelligent storage tiering, which automatically classifies your log data across three storage tiers - Standard (existing), Infrequent Access, and Archive Instant Access based on access patterns. This allows you to store logs in Amazon CloudWatch for extended periods at lower-cost tiers without any operational overhead.&lt;/p&gt; \n&lt;p&gt;With today's launch, customers can now retain high-volume verbose logs needed to be stored for longer periods at a lower cost in Amazon CloudWatch. Instead of filtering these logs or exporting them, you can now keep them natively in Amazon CloudWatch and benefit from the same query experience regardless of which tier your data resides in. Amazon CloudWatch monitors access patterns and automatically reclassifies data not accessed for 30 days to the Infrequent Access tier, and data not accessed for 90 days to the Archive Instant Access tier. When you access older data, it is automatically promoted back to the Standard tier for 30 days. By consolidating all your logs in CloudWatch, you get full visibility in one tool, thereby eliminating the operational overhead of managing multiple storage solutions and reducing your Mean Time to Resolution (MTTR) by analyzing, and alerting on all your logs in a single place.&lt;/p&gt; \n&lt;p&gt;Amazon CloudWatch Logs Intelligent-Tiering is available in all AWS commercial regions except Middle East (Bahrain) and Middle East (UAE). You can enable intelligent tiering at the account level in the AWS Management Console, AWS SDKs or through AWS CLI. Learn more about CloudWatch Logs intelligent tiering &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;pricing&lt;/a&gt;&amp;nbsp;and &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cwl_intelligent_tier.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-cloudwatch-intelligent-tiering/",
+      "publishedAt": "2026-07-15T20:00:00.000Z",
+      "updatedAt": "2026-07-15T20:00:00.000Z",
+      "categories": [],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b2617d03f91d20b1",
+      "title": "Amazon MQ now supports configurable storage for RabbitMQ brokers",
+      "description": "Amazon MQ now allows you to configure the EBS Disk storage size for RabbitMQ brokers independently of instance type. When creating or updating a broker, you can define a custom storage size, allowing you to right-size storage independently of your instance size to match your specific messaging workload requirements. Configurable storage is available for RabbitMQ M7g brokers on version 4.2 or later using cluster deployments only. With configurable storage, you can choose a storage size from the default value on M7g to the maximum allowed value depending on your instance size in increments of 5 ",
+      "descriptionHtml": "&lt;p&gt;Amazon MQ now allows you to configure the EBS Disk storage size for RabbitMQ brokers independently of instance type. When creating or updating a broker, you can define a custom storage size, allowing you to right-size storage independently of your instance size to match your specific messaging workload requirements. Configurable storage is available for RabbitMQ M7g brokers on version 4.2 or later using cluster deployments only.&lt;/p&gt; \n&lt;p&gt;With configurable storage, you can choose a storage size from the default value on M7g to the maximum allowed value depending on your instance size in increments of 5 GB. You can specify the Storage Size using the using the AWS Console, AWS CloudFormation, AWS Command Line Interface (CLI), or the AWS Cloud Development Kit (CDK). Storage changes are applied during the next broker reboot.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Standard Amazon MQ storage pricing applies based on the disk size as per &lt;a href=\"https://aws.amazon.com/amazon-mq/pricing/\" target=\"_blank\"&gt;Amazon MQ pricing&lt;/a&gt;. Configurable storage is available in all commercial AWS Regions where Amazon MQ for RabbitMQ is offered. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/welcome.html\" target=\"_blank\"&gt;Amazon MQ Developer Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-mq-rabbitmq-configurable-storage/",
+      "publishedAt": "2026-07-15T18:18:00.000Z",
+      "updatedAt": "2026-07-15T18:18:00.000Z",
+      "categories": [
+        "Messaging",
+        "Developers",
+        "Amazon Mq",
+        "Analytics",
+        "Migration"
+      ],
+      "services": [
+        "MQ"
+      ],
+      "tags": [
+        "messaging",
+        "developers",
+        "amazon mq",
+        "analytics",
+        "migration",
+        "mq"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5b0f5672498bcd4b",
+      "title": "Amazon EC2 G7e instances now available in additional regions",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) G7e instances accelerated by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs are now available in the AWS Europe (Frankfurt, Stockholm) and Asia Pacific (Mumbai) Regions. G7e instances offer up to 2.3x inference performance compared to G6e. Customers can use G7e instances to deploy large language models (LLMs), agentic AI models, multimodal generative AI models, and physical AI models. G7e instances offer the highest performance for spatial computing workloads as well as workloads that require both graphics and AI processing capabilit",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon&amp;nbsp;Elastic Compute Cloud (Amazon EC2) G7e instances accelerated by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs are now available in the AWS Europe (Frankfurt, Stockholm) and Asia Pacific (Mumbai) Regions. G7e instances offer up to 2.3x inference performance compared to G6e.&lt;/p&gt; \n&lt;p&gt;Customers can use G7e instances to deploy large language models (LLMs), agentic AI models, multimodal generative AI models, and physical AI models. G7e instances offer the highest performance for spatial computing workloads as well as workloads that require both graphics and AI processing capabilities. G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, with 96 GB of memory per GPU, and 5th Generation Intel Xeon processors. They support up to 192 virtual CPUs (vCPUs) and up to 1600 Gbps of networking bandwidth. G7e instances support NVIDIA GPUDirect Peer to Peer (P2P) that boosts performance for multi-GPU workloads. Multi-GPU G7e instances also support NVIDIA GPUDirect Remote Direct Memory Access (RDMA) with EFA in EC2 UltraClusters, reducing latency for small-scale multi-node workloads.&lt;/p&gt; \n&lt;p&gt;You can use G7e instances for Amazon EC2 in the following AWS Regions: US West (Oregon), US East (N. Virginia, Ohio), Europe (Spain, London, Frankfurt, Stockholm) and Asia Pacific (Tokyo, Seoul, Mumbai). You can purchase G7e instances as On-Demand Instances, Spot Instances, or as part of Savings Plans.&lt;/p&gt; \n&lt;p&gt;To get started, visit the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface&lt;/a&gt; (CLI), and AWS SDKs. To learn more, visit &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g7e/\"&gt;G7e instances&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-g7e-additional-regions/",
+      "publishedAt": "2026-07-15T18:04:00.000Z",
+      "updatedAt": "2026-07-15T18:04:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a7f58252249e8933",
+      "title": "Amazon Cognito now supports importing users with password hashes",
+      "description": "Amazon Cognito now supports importing users with password hashes in CSV user imports. Previously, users imported from a CSV file had to reset their passwords on first sign-in. Now, you can include password hashes in your CSV file so that imported users can sign in immediately with their existing credentials. When creating a CSV import, you specify the password hashing algorithm used by your source system. Amazon Cognito imports these users and verifies their password against the imported hash on first sign-in. Supported algorithms include bcrypt, scrypt, Argon2id, and PBKDF2 with SHA-256. All ",
+      "descriptionHtml": "&lt;p&gt;Amazon Cognito now supports importing users with password hashes in CSV user imports. Previously, users imported from a CSV file had to reset their passwords on first sign-in. Now, you can include password hashes in your CSV file so that imported users can sign in immediately with their existing credentials.&lt;br&gt; &lt;br&gt; When creating a CSV import, you specify the password hashing algorithm used by your source system. Amazon Cognito imports these users and verifies their password against the imported hash on first sign-in. Supported algorithms include bcrypt, scrypt, Argon2id, and PBKDF2 with SHA-256. All imported hashes receive an additional layer of cryptographic protection before storage.&lt;br&gt; &lt;br&gt; Password hash import is available in all AWS Regions where Amazon Cognito is available. To get started, create a user import using the &lt;a href=\"https://console.aws.amazon.com/cognito/home\"&gt;AWS Management Console&lt;/a&gt;, AWS Command Line Interface (CLI), or AWS Software Development Kits (SDKs). See the &lt;a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-using-import-tool.html\"&gt;developer guide&lt;/a&gt; for instructions.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-cognito-password-hash-import/",
+      "publishedAt": "2026-07-15T17:00:00.000Z",
+      "updatedAt": "2026-07-15T17:00:00.000Z",
+      "categories": [
+        "Amazon Cognito",
+        "Security Identity And Compliance"
+      ],
+      "services": [
+        "Cognito"
+      ],
+      "tags": [
+        "amazon cognito",
+        "security identity and compliance",
+        "cognito"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e51950829b28e035",
+      "title": "Amazon RDS and Aurora now support R8g and M8g database instances in additional AWS Regions",
+      "description": "AWS Graviton4-based R8g database instances are now generally available for Amazon Aurora (MySQL and PostgreSQL compatibility) and Amazon RDS for PostgreSQL, MySQL, and MariaDB in Asia Pacific (Hyderabad, Melbourne, Malaysia), Europe (London, Paris, Zurich), AWS GovCloud (US-East), South America (Sao Paulo), and Mexico (Central) regions. Additionally, M8g instances are now supported for Amazon RDS for PostgreSQL, MySQL, and MariaDB in US West (N. California), Asia Pacific (Mumbai, Sydney, Hong Kong, Seoul, Malaysia, Singapore), Canada West (Calgary), Europe (Zurich, Milan, Paris), South America",
+      "descriptionHtml": "&lt;p&gt;AWS Graviton4-based R8g database instances are now generally available for Amazon Aurora (MySQL and PostgreSQL compatibility) and Amazon RDS for PostgreSQL, MySQL, and MariaDB in Asia Pacific (Hyderabad, Melbourne, Malaysia), Europe (London, Paris, Zurich), AWS GovCloud (US-East), South America (Sao Paulo), and Mexico (Central) regions. Additionally, M8g instances are now supported for Amazon RDS for PostgreSQL, MySQL, and MariaDB in US West (N. California), Asia Pacific (Mumbai, Sydney, Hong Kong, Seoul, Malaysia, Singapore), Canada West (Calgary), Europe (Zurich, Milan, Paris), South America (Sao Paulo) and Africa (Cape Town) regions.&amp;nbsp;&lt;br&gt; &lt;br&gt; AWS Graviton4-based instances provide up to 40% performance improvement and up to 29% price/performance improvement for on-demand pricing over Graviton3-based instances of equivalent sizes on Amazon Aurora and Amazon RDS databases, depending on database engine, version, and workload. Built on the AWS Nitro System, the new R8g database instances introduce 24xlarge and 48xlarge sizes, delivering up to 192 vCPUs, an 8:1 ratio of memory to vCPU with the latest DDR5 memory, up to 50Gbps enhanced networking bandwidth, and up to 40Gbps of bandwidth to Amazon Elastic Block Store (Amazon EBS).&lt;br&gt; &lt;br&gt; You can easily launch R8g or M8g database instances through the &lt;a href=\"https://console.aws.amazon.com/rds/home?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Management Console&lt;/a&gt; or by using the&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\"&gt; &lt;/a&gt;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Command Line Interface&lt;/a&gt; (CLI). For detailed information about specific engine versions that support these database instance types, please refer to the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.SupportAurora.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Aurora &lt;/a&gt;and &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.Support.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;RDS&lt;/a&gt; documentation. For complete information on pricing and regional availability, please refer to the Amazon RDS &lt;a href=\"https://aws.amazon.com/rds/pricing/?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;pricing page&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/7/amazon-rds-aurora-r8g-m8g-regions/",
+      "publishedAt": "2026-07-15T17:00:00.000Z",
+      "updatedAt": "2026-07-15T17:00:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds"
+      ],
+      "services": [
+        "RDS",
+        "Aurora"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds",
+        "rds",
+        "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "187296da0d1331a4",
+      "title": "Amazon RDS and Aurora expand R8gd and M8gd to additional Regions",
+      "description": "Amazon Relational Database Service (RDS) now supports R8gd database instances in 12 additional regions and and M8gd database instances in 6 additional Regions with Optimized Reads for Amazon Aurora PostgreSQL, RDS for PostgreSQL, RDS for MySQL, and RDS for MariaDB. R8gd and M8gd instances deliver up to 165% better throughput and up to 120% better price-performance over R6g instances for Aurora PostgreSQL. Optimized Reads uses local NVMe-based SSD block storage to store ephemeral data such as temporary tables, reducing network storage access and improving query latency. The result is improved q",
+      "descriptionHtml": "&lt;p&gt;Amazon Relational Database Service (RDS) now supports R8gd database instances in 12 additional regions and and M8gd database instances in 6 additional Regions with Optimized Reads for Amazon Aurora PostgreSQL, RDS for PostgreSQL, RDS for MySQL, and RDS for MariaDB.&lt;br&gt; &lt;br&gt; R8gd and M8gd instances deliver up to 165% better throughput and up to 120% better price-performance over R6g instances for Aurora PostgreSQL. Optimized Reads uses local NVMe-based SSD block storage to store ephemeral data such as temporary tables, reducing network storage access and improving query latency. The result is improved query performance for complex queries and faster index rebuild operations. Aurora PostgreSQL Optimized Reads instances using the I/O-Optimized configuration also use the local storage to extend their caching capacity. Database pages that are evicted from the in-memory buffer cache are cached in local storage to speed subsequent retrieval of that data.&lt;br&gt; &lt;br&gt; Customers can get started with Optimized Reads through the AWS Management Console, CLI, and SDK by modifying their existing Aurora and RDS databases or creating a new database using R8gd or M8gd instances. R8gd instances are available in the following additional regions: Europe (Ireland), Asia Pacific (Seoul), Asia Pacific (Malaysia), Europe (London), US West (N. California), Asia Pacific (Sydney), Canada (Central), Asia Pacific (Jakarta), Africa (Cape Town), Canada West (Calgary),&amp;nbsp;South America (Sao Paulo) and Asia Pacific (Hong Kong). M8gd instances are available in the following additional regions: Europe (Ireland), Asia Pacific (Malaysia), Europe (London), Asia Pacific (Sydney),&amp;nbsp;South America (Sao Paulo) and Canada (Central). For complete information on pricing and regional availability, please refer to the &lt;a href=\"https://aws.amazon.com/rds/pricing/\"&gt;pricing page&lt;/a&gt;. For information on specific engine versions that support these DB instance types, please see the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.SupportAurora.html\"&gt;Aurora&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.Support.html\"&gt;RDS&lt;/a&gt; documentation.&lt;b&gt;&lt;/b&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-aurora-r8gd-m8gd-regions/",
+      "publishedAt": "2026-07-15T17:00:00.000Z",
+      "updatedAt": "2026-07-15T17:00:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Aurora"
+      ],
+      "services": [
+        "RDS",
+        "Aurora"
+      ],
+      "tags": [
+        "databases",
+        "amazon aurora",
+        "rds",
+        "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "74bf9a8ab68f0d2c",
+      "title": "Amazon MSK Express Brokers adds support for Apache Kafka version 4.2",
+      "description": "Amazon Managed Streaming for Apache Kafka (Amazon MSK) Express Brokers now supports Apache Kafka version 4.2. This release includes Eligible Leader Replicas (ELR) enhancements that strengthen availability with improved leader election correctness. It also introduces a new consumer rebalance protocol that helps ensure smoother and faster group rebalances, and a new Streams Rebalance Protocol that extends broker coordination capabilities to Kafka Streams for optimized task assignments. For a complete list of improvements and bug fixes, please refer to the Apache Kafka release notes for version 4",
+      "descriptionHtml": "&lt;p&gt;Amazon Managed Streaming for Apache Kafka (Amazon MSK) Express Brokers now supports Apache Kafka version 4.2. This release includes Eligible Leader Replicas (ELR) enhancements that strengthen availability with improved leader election correctness. It also introduces a new consumer rebalance protocol that helps ensure smoother and faster group rebalances, and a new Streams Rebalance Protocol that extends broker coordination capabilities to Kafka Streams for optimized task assignments. For a complete list of improvements and bug fixes, please refer to the &lt;a href=\"https://archive.apache.org/dist/kafka/4.2.0/RELEASE_NOTES.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Apache Kafka release notes for version 4.2&lt;/a&gt;.&lt;br&gt; &lt;br&gt; MSK Express Brokers are designed to deliver up to three times more throughput per broker, scale up to 20 times faster, and reduce recovery time by 90 percent. This launch brings the latest open-source reliability and performance improvements to MSK Express.&lt;br&gt; &lt;br&gt; To get started, simply select version 4.2.x when creating a new cluster with Express Brokers via the AWS Management Console, AWS CLI, or AWS SDKs. You can also upgrade existing MSK Express Brokers with an in-place rolling update. Amazon MSK orchestrates broker restarts to maintain availability and protect your data during the upgrade. Kafka version 4.2 support is available today across all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS regions&lt;/a&gt; where Amazon MSK Express Brokers is offered. To learn how to get started, see the &lt;a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/getting-started.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon MSK Developer Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-msk-express-version-42/",
+      "publishedAt": "2026-07-15T17:00:00.000Z",
+      "updatedAt": "2026-07-15T17:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Msk"
+      ],
+      "services": [
+        "MSK",
+        "Kafka"
+      ],
+      "tags": [
+        "analytics",
+        "amazon msk",
+        "msk",
+        "kafka"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "da694db48a321dcb",
+      "title": "Amazon RDS now supports up to four storage modifications in 24 hours",
+      "description": "Amazon RDS now allows up to four storage modifications per database instance within a rolling 24-hour window. These modifications let you increase the size, change the type, and adjust the performance of your RDS storage volumes. You can start a new modification right after storage optimization for the previous modification is complete without having to wait for the six-hour cool-off period to complete. This enhancement improves operational agility for scaling storage capacity or adjusting performance during sudden data growth or unexpected workload spikes. With RDS storage modifications, you ",
+      "descriptionHtml": "&lt;p&gt;Amazon RDS now allows up to four storage modifications per database instance within a rolling 24-hour window. These modifications let you increase the size, change the type, and adjust the performance of your RDS storage volumes. You can start a new modification right after storage optimization for the previous modification is complete without having to wait for the six-hour cool-off period to complete.&lt;/p&gt; \n&lt;p&gt;This enhancement improves operational agility for scaling storage capacity or adjusting performance during sudden data growth or unexpected workload spikes. With RDS storage modifications, you can modify your volumes without downtime, keeping applications running with minimal performance impact.&lt;/p&gt; \n&lt;p&gt;The feature is automatically enabled on all Amazon RDS for PostgreSQL, Amazon RDS for MariaDB, Amazon RDS for MySQL, Amazon RDS for Db2, Amazon RDS for Oracle, and Amazon RDS for Microsoft SQL Server instances in all commercial AWS Regions and the AWS GovCloud (US) Regions. To learn more, refer the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html\" target=\"_blank\"&gt;Amazon RDS User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-upto-four-storage-modifications-24-hours",
+      "publishedAt": "2026-07-15T16:15:00.000Z",
+      "updatedAt": "2026-07-15T16:15:00.000Z",
+      "categories": [
+        "Amazon Rds",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "amazon rds",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3e5b8390689dd025",
+      "title": "AWS Glue SAP OData connector and zero-ETL integrations are now available in AWS GovCloud (US) regions",
+      "description": "AWS Glue SAP OData connector and zero-ETL integrations are now available in AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions, with support for Amazon DynamoDB, Salesforce, and SAP OData as sources. Customers operating in regulated environments can now replicate data from these sources into Amazon Redshift, Amazon S3, or other supported destinations without building or maintaining custom data pipelines. The SAP OData connector allows you to extract data from SAP systems exposing OData services, eliminating the need for custom extraction logic or third-party middleware. The zero-ETL int",
+      "descriptionHtml": "&lt;p&gt;AWS Glue SAP OData connector and zero-ETL integrations are now available in AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions, with support for Amazon DynamoDB, Salesforce, and SAP OData as sources. Customers operating in regulated environments can now replicate data from these sources into Amazon Redshift, Amazon S3, or other supported destinations without building or maintaining custom data pipelines.&lt;br&gt; &lt;br&gt; The SAP OData connector allows you to extract data from SAP systems exposing OData services, eliminating the need for custom extraction logic or third-party middleware. The zero-ETL integrations are fully managed by AWS and minimize the need to build ETL data pipelines. With this new zero-ETL integration, you can efficiently extract and load valuable data from your Amazon DynamoDB databases or Salesforce and SAP applications into your data lake and data warehouse for analysis. Zero-ETL integration reduces your operational burden and saves the weeks of engineering effort needed to design, build, and test data pipelines. By selecting a few settings in the no-code interface, you can quickly set up your zero-ETL integration to automatically ingest and continually maintain an up-to-date replica of your data in the data lake and data warehouse. Zero-ETL integrations help you focus on deriving insights from your application data, breaking down data silos in your organization and improving operational efficiency.&lt;br&gt; &lt;br&gt; To get started, navigate to the AWS Glue console and create a new zero-ETL integration. For more information, visit the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/zero-etl-using.html\"&gt;AWS Glue zero-ETL integrations documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-glue-sap-zero-etl-govcloud",
+      "publishedAt": "2026-07-15T15:51:00.000Z",
+      "updatedAt": "2026-07-15T15:51:00.000Z",
+      "categories": [
+        "Analytics",
+        "AWS Glue"
+      ],
+      "services": [
+        "Glue"
+      ],
+      "tags": [
+        "analytics",
+        "aws glue",
+        "glue"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "09deffb8c3a90255",
+      "title": "Amazon OpenSearch Service now supports the Agent Toolkit for AWS with a curated skill",
+      "description": "Amazon OpenSearch Service now integrates with the Agent Toolkit for AWS , enabling you to build, manage, and query OpenSearch Service domains and OpenSearch Serverless collections directly from AI coding agents such as Claude Code, Kiro, and Cursor. The integration is powered by the AWS MCP (Model Context Protocol) server, which executes AWS API calls on your behalf, paired with the curated amazon-opensearch-service skill that automatically routes natural-language requests to the right capability. With this skill, you can describe a goal in plain language and the agent handles the rest across ",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now integrates with the &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\"&gt;Agent Toolkit for AWS&lt;/a&gt;, enabling you to build, manage, and query OpenSearch Service domains and OpenSearch Serverless collections directly from AI coding agents such as Claude Code, Kiro, and Cursor. The integration is powered by the AWS MCP (Model Context Protocol) server, which executes AWS API calls on your behalf, paired with the curated &lt;i&gt;amazon-opensearch-service&lt;/i&gt; skill that automatically routes natural-language requests to the right capability.&lt;br&gt; &lt;br&gt; With this skill, you can describe a goal in plain language and the agent handles the rest across five areas. &lt;b&gt;Migration&lt;/b&gt; moves you from self-managed OpenSearch into OpenSearch Service or OpenSearch Serverless. &lt;b&gt;Operations&lt;/b&gt; provisions and manages domains and collections. &lt;b&gt;Search&lt;/b&gt; builds vector, semantic, hybrid, and RAG search. &lt;b&gt;Log analytics&lt;/b&gt; analyzes logs with PPL and OpenSearch Ingestion. &lt;b&gt;Trace analytics&lt;/b&gt; investigates distributed traces with OpenTelemetry. The integration works with both managed domains and collections across all versions, requires no changes to your existing infrastructure, and is available at no additional charge. To learn more about these capabilities, see our &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/amazon-opensearch-service-skill.html\"&gt;documentation&lt;/a&gt;.&lt;br&gt; &lt;br&gt; Support is available in all AWS Regions where Amazon OpenSearch Service and OpenSearch Serverless are offered. To get started, install the aws-data-analytics plugin in your agent — it bundles the AWS MCP Server configuration and the OpenSearch skill in a single step. For setup instructions, see &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/aws-mcp-server.html\"&gt;MCP Server and Agent Skills&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-opensearch-service-agent/",
+      "publishedAt": "2026-07-15T14:44:00.000Z",
+      "updatedAt": "2026-07-15T14:44:00.000Z",
+      "categories": [
+        "Databases",
+        "Analytics",
+        "Amazon Opensearch Service"
+      ],
+      "services": [
+        "OpenSearch"
+      ],
+      "tags": [
+        "databases",
+        "analytics",
+        "amazon opensearch service",
+        "opensearch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6b7b0ef77faf6432",
+      "title": "Amazon RDS for Db2 is now available in additional AWS Commercial regions",
+      "description": "Amazon Relational Database Service (Amazon RDS) for Db2 is now available in the Asia Pacific (Thailand), Asia Pacific (Malaysia), Asia Pacific (Taipei), Mexico (Central), and Canada West (Calgary) Regions. Amazon RDS for Db2 makes it easy to set up, operate, and scale Db2 databases in the cloud. Customers can deploy a Db2 database in minutes with automatically configured parameters for optimal performance. For databases setup with Multi-AZ configuration, Amazon RDS performs synchronous replication to a standby instance in a different Availability Zone to provide high availability. To use Amazo",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/db2/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) for Db2&lt;/a&gt; is now available in the Asia Pacific (Thailand), Asia Pacific (Malaysia), Asia Pacific (Taipei), Mexico (Central), and Canada West (Calgary) Regions. Amazon RDS for Db2 makes it easy to set up, operate, and scale Db2 databases in the cloud. Customers can deploy a Db2 database in minutes with automatically configured parameters for optimal performance. For databases setup with Multi-AZ configuration, Amazon RDS performs synchronous replication to a standby instance in a different Availability Zone to provide high availability. &lt;br&gt; &lt;br&gt; To use Amazon RDS for Db2, customers can purchase a Db2 license from the AWS Marketplace for hourly, pay-as-you-go pricing, or use Bring Your Own License (BYOL). Both hourly and BYOL licensing are available in Standard and Advanced Editions. You can also choose to use the latest Db2 Community Edition that provides all the features available in Standard and Advanced Editions, with no commercial software licensing charges for development and test applications. This allows you to easily start developing and testing Db2 applications with a managed database service without worrying about software licensing. &lt;br&gt; &lt;br&gt; To learn more about Amazon RDS for Db2, refer to &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Db2.html\" target=\"_blank\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/rds/db2/pricing/\" target=\"_blank\"&gt;pricing&lt;/a&gt; pages.&lt;br&gt; &lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-db2-available-additional-aws-commercial-regions",
+      "publishedAt": "2026-07-15T07:39:00.000Z",
+      "updatedAt": "2026-07-15T07:39:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "95f2697aaa44c2bb",
+      "title": "AWS Lambda announces self-managed code storage",
+      "description": "AWS Lambda now supports self-managed Amazon S3 buckets for code storage, enabling you to reference source code directly from your own S3 buckets without Lambda creating intermediate copies. This eliminates code storage limits and reduces function activation time after function creates and updates by removing the copy step. AWS Lambda is a serverless compute service that runs your code without requiring you to manage servers. Customers who deploy many functions and additional code as Lambda layers often need more than 75GB of code storage per Region, requiring support tickets to increase this q",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/lambda/\"&gt;AWS Lambda&lt;/a&gt; now supports self-managed Amazon S3 buckets for code storage,&amp;nbsp;enabling you to reference source code directly from your own S3 buckets without Lambda creating intermediate copies. This eliminates code storage limits and reduces function activation time after function creates and updates by removing the copy step.&lt;/p&gt; \n&lt;p&gt;AWS Lambda is a serverless compute service that runs your code without requiring you to manage servers. Customers who deploy many functions and additional code as Lambda layers often need more than 75GB of code storage per Region, requiring support tickets to increase this quota. Previously, Lambda always copied your deployment package to Lambda-managed storage during function and layer creation, counting against this limit. Now, with self-managed code storage, Lambda references your code directly in your Amazon S3 bucket without creating a copy, so you can store as much function and layer code as your bucket allows. You maintain a single source of truth for your deployment packages in your own account. No additional Lambda charges apply for self-managed storage; you only pay for standard Amazon S3 storage and, where applicable, cross-Region data transfer rates. In addition,&amp;nbsp;Lambda has increased the default limit for Lambda-managed code storage from 75GB to 300GB per Region per account.&lt;/p&gt; \n&lt;p&gt;Self-managed Amazon S3 code storage is available in all commercial AWS Regions.&lt;/p&gt; \n&lt;p&gt;To get started, set the `S3ObjectStorageMode` parameter to `REFERENCE` when creating or updating functions and layers through the AWS CLI, AWS CloudFormation, AWS SAM, or AWS SDKs. You must grant the Lambda service principal `s3:GetObject` and `s3:GetObjectVersion` permissions on your S3 bucket. You can also update a function to use self-managed code storage via the Lambda Console. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/configuration-self-managed-storage.html\"&gt;AWS Lambda Developer Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/lambda-self-managed-code-storage/",
+      "publishedAt": "2026-07-15T07:00:00.000Z",
+      "updatedAt": "2026-07-15T07:00:00.000Z",
+      "categories": [
+        "AWS Lambda",
+        "Serverless"
+      ],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "aws lambda",
+        "serverless",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "281889e3e931ac11",
+      "title": "AWS Elastic Disaster Recovery reduces recovery time for AWS-to-AWS workloads",
+      "description": "AWS Elastic Disaster Recovery (AWS DRS) now recovers your AWS-based workloads faster. For source servers running on Amazon EC2, DRS can now skip preparation steps that these workloads no longer need, reducing recovery time by up to 65% for Windows and up to 40% for Linux. During a disaster or a drill, every minute matters. Because workloads already running on AWS come with AWS-compatible drivers and configuration, DRS can launch them with fewer steps — helping you bring applications back online sooner and with greater confidence. Networking, drivers, and licensing are still applied automatical",
+      "descriptionHtml": "&lt;p&gt;AWS Elastic Disaster Recovery (AWS DRS) now recovers your AWS-based workloads faster. For source servers running on Amazon EC2, DRS can now skip preparation steps that these workloads no longer need, reducing recovery time by up to 65% for Windows and up to 40% for Linux.&lt;/p&gt; \n&lt;p&gt;During a disaster or a drill, every minute matters. Because workloads already running on AWS come with AWS-compatible drivers and configuration, DRS can launch them with fewer steps — helping you bring applications back online sooner and with greater confidence. Networking, drivers, and licensing are still applied automatically, so recovery stays simple and hands-off. You remain in control: turn on faster recovery across your whole account or for individual servers and change the setting whenever your needs change.&lt;/p&gt; \n&lt;p&gt;This capability is available in all AWS Regions where AWS DRS is offered, at no additional cost. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/drs/\"&gt;AWS Elastic Disaster Recovery User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-drs-fast-recovery/",
+      "publishedAt": "2026-07-14T22:05:00.000Z",
+      "updatedAt": "2026-07-14T22:05:00.000Z",
+      "categories": [
+        "Storage"
+      ],
+      "services": [],
+      "tags": [
+        "storage"
+      ],
+      "isNew": true
+    },
     {
       "id": "c173fe59aec9442c",
       "title": "AWS Elastic Disaster Recovery now supports Amazon EBS volume initialization rate",
@@ -21,6 +311,23 @@
         "storage",
         "aws elastic disaster recovery",
         "ebs"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8f8466e24d8ef4bf",
+      "title": "Amazon CloudWatch announces lookup processor for log enrichment",
+      "description": "Amazon CloudWatch now supports lookup processor, enabling you to enrich log events with additional context by matching fields in your logs against a lookup table directly within your CloudWatch Pipeline. With the lookup processor, you can upload CSV files containing reference data and configure your pipeline to match incoming log fields against this data to add enriched metadata. For example, you can upload a CSV mapping IP addresses to application teams and automatically tag VPC Flow Logs with team ownership information as logs are ingested. The lookup processor matches fields in your log eve",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch now supports lookup processor, enabling you to enrich log events with additional context by matching fields in your logs against a lookup table directly within your&amp;nbsp;CloudWatch Pipeline.&lt;/p&gt; \n&lt;p&gt;With the lookup processor, you can upload CSV files containing reference data and configure your pipeline to match incoming log fields against this data to add enriched metadata. For example, you can upload a CSV mapping IP addresses to application teams and automatically tag VPC Flow Logs with team ownership information as logs are ingested. The lookup processor matches fields in your log events against fields in a lookup table and adds specified fields from matching rows to your log events. This enables data enrichment scenarios such as mapping user IDs to user details, product codes to product information, or error codes to human-readable error descriptions, thereby eliminating the need to build and maintain custom enrichment logic outside of CloudWatch. By enriching logs at ingestion time, your queries, dashboards, and alarms immediately benefit from the added context without any post-processing.&lt;/p&gt; \n&lt;p&gt;The lookup table processor is available in all AWS commercial regions that support Amazon CloudWatch pipelines. You can add a lookup processor to your pipeline using the AWS Management Console, AWS CLI, or AWS SDKs. To get started, see the Amazon CloudWatch Logs &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/transformation-processors.html#lookup-processor\"&gt;documentation.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-cloudwatch-lookup-processor/",
+      "publishedAt": "2026-07-14T22:00:00.000Z",
+      "updatedAt": "2026-07-14T22:00:00.000Z",
+      "categories": [],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "cloudwatch"
       ],
       "isNew": true
     },
@@ -45,6 +352,26 @@
         "serverless",
         "developer tools",
         "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5a14f6077a961d0c",
+      "title": "Amazon EC2 M8in, M8idn, M8ib, M8idb instances are now available in additional regions",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M8in, M8idn network optimized, and M8ib, M8idb EBS optimized instances are available in the AWS US East (Ohio), Europe (Ireland), and Asia Pacific (Tokyo) regions. The new instances are powered by custom sixth generation Intel Xeon Scalable processors available only on AWS and deliver up to 43% higher performance compared to previous generation instances. These instances also feature the latest sixth generation AWS Nitro cards. M8in, M8idn instances deliver 600 Gbps network bandwidth, the highest network bandwidth among enhanced network",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M8in, M8idn network optimized, and M8ib, M8idb EBS optimized instances are available in the AWS US East (Ohio), Europe (Ireland), and Asia Pacific (Tokyo) regions. The new instances are powered by custom sixth generation Intel Xeon Scalable processors available only on AWS and deliver up to 43% higher performance compared to previous generation instances. These instances also feature the latest sixth generation AWS Nitro cards.&lt;/p&gt; \n&lt;p&gt;M8in, M8idn instances deliver 600 Gbps network bandwidth, the highest network bandwidth among enhanced networking EC2 instances, and are ideal for workloads such as real-time big data analytics, distributed web scale in-memory caches, caching fleets for AI/ML clusters, and Telco applications such as 5G User Plane Function (UPF).&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; M8ib, M8idb instances deliver up to 300Gbps EBS bandwidth, the highest among non-accelerated compute EC2 instances, and are best suited for workloads that benefit from high block storage performance, such as high-performance file systems and NoSQL databases.&lt;/p&gt; \n&lt;p&gt;M8idn instances are ideal for network-intensive workloads that benefit from low-latency local storage, such as distributed compute, data analytics, and high-performance file systems. M8idb instances are ideal for storage-intensive workloads such as large commercial databases, data lakes, and NoSQL databases that benefit from both high EBS throughput and low-latency local NVMe storage.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;M8in, M8idn, M8ib, M8idb instances are available in US East (N. Virginia, Ohio), US West (Oregon), Europe (Ireland), Asia Pacific (Tokyo), and Europe (Spain) regions, via Savings Plans, On-Demand, and Spot instances. For more information, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8i/\"&gt;Amazon EC2 M8i instance&lt;/a&gt; page.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/m8in-m8idn-m8ib-m8idb-new-regions",
+      "publishedAt": "2026-07-14T20:00:00.000Z",
+      "updatedAt": "2026-07-14T20:00:00.000Z",
+      "categories": [
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "ec2"
       ],
       "isNew": true
     },
@@ -1032,7 +1359,7 @@
       "tags": [
         "developer"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6f9aca3a30511f0e",
@@ -1066,7 +1393,7 @@
         "glue",
         "mwaa"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f62ed8bc7178662e",
@@ -1088,7 +1415,7 @@
         "aws security hub",
         "security hub"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6cad7d97f30d759f",
@@ -1110,7 +1437,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "eec1c7951b251e00",
@@ -1132,7 +1459,7 @@
         "amazon redshift",
         "redshift"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a2238c9567d733d0",
@@ -1152,7 +1479,7 @@
         "databases",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f14e7286aabe59cd",
@@ -1178,7 +1505,7 @@
         "business productivity",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a63640e7ed111486",
@@ -1197,7 +1524,7 @@
         "developer tools",
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "344ae7d544dce339",
@@ -10777,350 +11104,6 @@
         "aiml",
         "amazon sagemaker studio",
         "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "aff86fecb2a0780d",
-      "title": "Announcing Region Expansion of G6 instances on SageMaker Notebook Instances",
-      "description": "We are pleased to announce general availability of Amazon EC2 G6 instances in Asia Pacific (Tokyo, Mumbai, Sydney) and Europe (London, Paris, Frankfurt, Stockholm, Zurich) on SageMaker notebook instances. Amazon EC2 G6 instances are powered by up to 8 NVIDIA L4 Tensor Core GPUs with 24 GB of memory per GPU and third generation AMD EPYC processors. G6 instances offer 2x better performance for deep learning inference compared to EC2 G4dn instances. Customers can use G6 instances to interactively test model deployment and for interactive model training for use cases such as generative AI fine-tun",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce general availability of Amazon EC2 G6 instances in Asia Pacific (Tokyo, Mumbai, Sydney) and Europe (London, Paris, Frankfurt, Stockholm, Zurich) on SageMaker notebook instances.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/g6/\"&gt;Amazon EC2 G6 instances&lt;/a&gt;&amp;nbsp;are powered by up to 8 NVIDIA L4 Tensor Core GPUs with 24 GB of memory per GPU and third generation AMD EPYC processors. G6 instances offer 2x better performance for deep learning inference compared to EC2 G4dn instances. Customers can use G6 instances to interactively test model deployment and for interactive model training for use cases such as generative AI fine-tuning and inference workloads, natural language processing, language translation, computer vision, and recommender engines.&lt;/p&gt; \n&lt;p&gt;Visit developer guides for instructions on setting up and using&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl.html\"&gt;JupyterLab&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor.html\"&gt;CodeEditor&lt;/a&gt;&amp;nbsp;applications on&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html\"&gt;SageMaker Studio&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/nbi.html\"&gt;SageMaker notebook instances&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/g6-region-expansion-sagemaker-notebook-instances/",
-      "publishedAt": "2026-05-12T03:40:00.000Z",
-      "updatedAt": "2026-05-12T03:40:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Aiml",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "aiml",
-        "amazon sagemaker",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a5e6782289f5bf2f",
-      "title": "Announcing Region Expansion of P6-B200 instances on SageMaker Studio notebooks",
-      "description": "We are pleased to announce general availability of Amazon EC2 P6-B200 instances in AWS US East (N. Virginia) on SageMaker Studio notebooks. Amazon EC2 P6-B200 instances are powered by 8 NVIDIA Blackwell GPUs with 1440 GB of high-bandwidth GPU memory and 5th Generation Intel Xeon processors (Emerald Rapids). These instances deliver up to 2x better performance compared to P5en instances for AI training. Customers can use P6-B200 instances to interactively develop and fine-tune large foundation models, including LLMs, mixture of experts models, and multi-modal reasoning models. These instances en",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce general availability of Amazon EC2 P6-B200 instances in AWS US East (N. Virginia) on SageMaker Studio notebooks.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/p6/\"&gt;Amazon EC2 P6-B200 instances&lt;/a&gt;&amp;nbsp;are powered by 8 NVIDIA Blackwell GPUs with 1440 GB of high-bandwidth GPU memory and 5th Generation Intel Xeon processors (Emerald Rapids). These instances deliver up to 2x better performance compared to P5en instances for AI training. Customers can use P6-B200 instances to interactively develop and fine-tune large foundation models, including LLMs, mixture of experts models, and multi-modal reasoning models. These instances enable efficient experimentation with larger models directly in JupyterLab or CodeEditor environments for generative AI applications such as enterprise copilots and content generation across text, images, and video.&lt;/p&gt; \n&lt;p&gt;Visit developer guides for instructions on setting up and using&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl.html\"&gt;JupyterLab&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor.html\"&gt;CodeEditor&lt;/a&gt;&amp;nbsp;applications on&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html\"&gt;SageMaker Studio&lt;/a&gt;.&amp;nbsp;For pricing information on these instances, please visit our&amp;nbsp;&lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/p6-b200-region-expansion-sagemaker-studio-notebooks/",
-      "publishedAt": "2026-05-11T23:34:00.000Z",
-      "updatedAt": "2026-05-11T23:34:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Aiml",
-        "Artificial Intelligence",
-        "Amazon Sagemaker Studio"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "aiml",
-        "artificial intelligence",
-        "amazon sagemaker studio",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "04589c79cbb940f0",
-      "title": "ENA Express for Amazon EC2 instances now supports traffic between Availability Zones",
-      "description": "Elastic Network Adapter (ENA) Express now supports traffic between Amazon EC2 instances in different Availability Zones within a Region, delivering up to 25 Gbps single-flow bandwidth. ENA Express is a networking feature that uses the AWS Scalable Reliable Datagram (SRD) protocol to improve network performance. SRD is a reliable network protocol that delivers performance improvements through advanced congestion control and multi-pathing. Amazon Elastic Block Store (EBS) io2 Block Express and Elastic Fabric Adapter (EFA) for high performance computing and machine learning workloads also leverag",
-      "descriptionHtml": "&lt;p&gt;Elastic Network Adapter (ENA) Express now supports traffic between Amazon EC2 instances in different Availability Zones within a Region, delivering up to 25 Gbps single-flow bandwidth. ENA Express is a networking feature that uses the AWS Scalable Reliable Datagram (SRD) protocol to improve network performance. SRD is a reliable network protocol that delivers performance improvements through advanced congestion control and multi-pathing. Amazon Elastic Block Store (EBS) io2 Block Express and Elastic Fabric Adapter (EFA) for high performance computing and machine learning workloads also leverage SRD.&lt;/p&gt; \n&lt;p&gt;Workloads such as distributed storage, databases, and file systems require deployments spanning multiple Availability Zones for resilience, yet single flows between zones support up to 5 Gbps with ENA. ENA Express delivers up to 25 Gbps single-flow bandwidth for traffic between Availability Zones.&amp;nbsp;To achieve this, ENA Express detects compatibility between your EC2 instances and establishes an SRD connection when both communicating instances have ENA Express enabled. Once established, SRD uses multi-pathing to route your traffic across the network and avoids head-of-line blocking as it does not need packets to arrive in order.&amp;nbsp;Using these capabilities, ENA Express delivers the performance benefits transparently to your application with TCP and UDP protocols.&lt;/p&gt; \n&lt;p&gt;ENA Express for connections between Availability Zones within a Region is available for all supported instance types and sizes in Africa (Cape Town), Asia Pacific (Hong Kong, Hyderabad, Jakarta, Malaysia, Melbourne, Mumbai, New Zealand, Osaka, Seoul, Singapore, Sydney, Taipei, Thailand, Tokyo), Canada (Central), Canada West (Calgary), Europe (Frankfurt, Ireland, London, Milan, Paris, Spain, Stockholm, Zurich), Israel (Tel Aviv), Mexico (Central), US East (N. Virginia, Ohio), US West (N. California, Oregon), and AWS GovCloud (US) Regions. ENA Express comes at no additional cost. For a list of supported instances and configuration guidance, please review the latest&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ena-express.html\" style=\"background-color: rgb(255, 255, 255);\"&gt;EC2 documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/ena-express-availability-zones/",
-      "publishedAt": "2026-05-11T20:00:00.000Z",
-      "updatedAt": "2026-05-11T20:00:00.000Z",
-      "categories": [
-        "Storage",
-        "Networking",
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "storage",
-        "networking",
-        "amazon ec2",
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6753c26989b51b8e",
-      "title": "Announcing Region Expansion of G6e instances on SageMaker Studio notebooks",
-      "description": "We are pleased to announce general availability of Amazon EC2 G6e instances in the Middle East (Dubai), Asia Pacific (Tokyo, Seoul) and Europe (Frankfurt, Stockholm, Spain) on SageMaker Studio notebooks. Amazon EC2 G6e instances are powered by up to 8 NVIDIA L40s Tensor Core GPUs with 48 GB of memory per GPU and third generation AMD EPYC processors. G6e instances deliver up to 2.5x better performance compared to EC2 G5 instances. Customers can use G6e instances to interactively test model deployment and for interactive model training use cases such as generative AI fine-tuning. You can use G6e",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce general availability of Amazon EC2 G6e instances in the Middle East (Dubai), Asia Pacific (Tokyo, Seoul) and Europe (Frankfurt, Stockholm, Spain) on SageMaker Studio notebooks.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/g6e/\"&gt;Amazon EC2 G6e instances&lt;/a&gt;&amp;nbsp;are powered by up to 8 NVIDIA L40s Tensor Core GPUs with 48 GB of memory per GPU and third generation AMD EPYC processors. G6e instances deliver up to 2.5x better performance compared to EC2 G5 instances. Customers can use G6e instances to interactively test model deployment and for interactive model training use cases such as generative AI fine-tuning. You can use G6e instances to deploy large language models (LLMs) with up to 13B parameters and diffusion models for generating images, video, and audio.&lt;/p&gt; \n&lt;p&gt;Visit developer guides for instructions on setting up and using&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl.html\"&gt;JupyterLab&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor.html\"&gt;CodeEditor&lt;/a&gt;&amp;nbsp;applications on&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html\"&gt;SageMaker Studio&lt;/a&gt;.&amp;nbsp;For pricing information on these instances, please visit our&amp;nbsp;&lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/g6e-region-expansion-sagemaker-studio-notebooks/",
-      "publishedAt": "2026-05-11T20:00:00.000Z",
-      "updatedAt": "2026-05-11T20:00:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Artificial Intelligence",
-        "Aiml",
-        "Amazon Sagemaker Studio"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "artificial intelligence",
-        "aiml",
-        "amazon sagemaker studio",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d2de2b858df9b79f",
-      "title": "Announcing Region Expansion of G6 instances on SageMaker Studio notebooks",
-      "description": "We are pleased to announce general availability of Amazon EC2 G6 instances in the Middle East (Dubai) and Asia Pacific (Malaysia) on SageMaker Studio notebooks. Amazon EC2 G6 instances are powered by up to 8 NVIDIA L4 Tensor Core GPUs with 24 GB of memory per GPU and third generation AMD EPYC processors. G6 instances offer 2x better performance for deep learning inference compared to EC2 G4dn instances. Customers can use G6 instances to interactively test model deployment and for interactive model training for use cases such as generative AI fine-tuning and inference workloads, natural languag",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce general availability of Amazon EC2 G6 instances in the Middle East (Dubai) and Asia Pacific (Malaysia) on SageMaker Studio notebooks.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/g6/\"&gt;Amazon EC2 G6 instances&lt;/a&gt;&amp;nbsp;are powered by up to 8 NVIDIA L4 Tensor Core GPUs with 24 GB of memory per GPU and third generation AMD EPYC processors. G6 instances offer 2x better performance for deep learning inference compared to EC2 G4dn instances. Customers can use G6 instances to interactively test model deployment and for interactive model training for use cases such as generative AI fine-tuning and inference workloads, natural language processing, language translation, computer vision, and recommender engines.&lt;/p&gt; \n&lt;p&gt;Visit developer guides for instructions on setting up and using&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl.html\"&gt;JupyterLab&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor.html\"&gt;CodeEditor&lt;/a&gt;&amp;nbsp;applications on&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html\"&gt;SageMaker Studio&lt;/a&gt;.&amp;nbsp;For pricing information on these instances, please visit our&amp;nbsp;&lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/g6-region-expansion-sagemaker-studio-notebooks/",
-      "publishedAt": "2026-05-11T20:00:00.000Z",
-      "updatedAt": "2026-05-11T20:00:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Amazon Sagemaker Studio",
-        "Aiml",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "amazon sagemaker studio",
-        "aiml",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f00e4049b0fdfdeb",
-      "title": "Announcing Region Expansion of P4de instances on SageMaker Studio notebooks",
-      "description": "We are pleased to announce general availability of Amazon EC2 P4de instances in Asia Pacific (Tokyo, Singapore) and Europe (Frankfurt) on SageMaker Studio notebooks. Amazon EC2 P4de instances are powered by 8 NVIDIA A100 GPUs with 80GB high-performance HBM2e GPU memory, 2X higher than the GPUs in our current P4d instances. The new P4de instances provide a total of 640GB of GPU memory, which provide up to 60% better ML training performance along with 20% lower cost to train when compared to P4d instances. The improved performance will allow customers to reduce model training times and accelerat",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce general availability of Amazon EC2 P4de instances in Asia Pacific (Tokyo, Singapore) and Europe (Frankfurt) on SageMaker Studio notebooks.&lt;br&gt; &lt;br&gt; &lt;a href=\"https://aws.amazon.com/ec2/instance-types/p4/\"&gt;Amazon EC2 P4de instances&lt;/a&gt;&amp;nbsp;are powered by 8 NVIDIA A100 GPUs with 80GB high-performance HBM2e GPU memory, 2X higher than the GPUs in our current P4d instances. The new P4de instances provide a total of 640GB of GPU memory, which provide up to 60% better ML training performance along with 20% lower cost to train when compared to P4d instances. The improved performance will allow customers to reduce model training times and accelerate time to market. Increased GPU memory on P4de will also benefit workloads that need to train on large datasets of high-resolution data.&lt;br&gt; &lt;br&gt; Visit developer guides for instructions on setting up and using&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl.html\"&gt;JupyterLab&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor.html\"&gt;CodeEditor&lt;/a&gt;&amp;nbsp;applications on&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html\"&gt;SageMaker Studio&lt;/a&gt;.&amp;nbsp;For pricing information on these instances, please visit our&amp;nbsp;&lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/p4de-region-expansion-sagemaker-studio-notebooks/",
-      "publishedAt": "2026-05-11T20:00:00.000Z",
-      "updatedAt": "2026-05-11T20:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Sagemaker Studio",
-        "Amazon Sagemaker",
-        "Aiml"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon sagemaker studio",
-        "amazon sagemaker",
-        "aiml",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "dd7cbc0675b6ea57",
-      "title": "Amazon Aurora DSQL is now available in five additional AWS Regions",
-      "description": "Amazon Aurora DSQL single-Region clusters are now available in Asia Pacific (Hong Kong), Asia Pacific (Mumbai), Asia Pacific (Singapore), Europe (Stockholm), and South America (Sao Paulo). Aurora DSQL is the fastest serverless, distributed SQL database that enables you to build always available applications with virtually unlimited scalability, the highest availability, and zero infrastructure management. It is designed to make scaling and resilience effortless for your applications and offers the fastest distributed SQL reads and writes. With this launch, Aurora DSQL is available in the follo",
-      "descriptionHtml": "&lt;p&gt;Amazon Aurora DSQL single-Region clusters are now available in Asia Pacific (Hong Kong), Asia Pacific (Mumbai), Asia Pacific (Singapore), Europe (Stockholm), and South America (Sao Paulo). Aurora DSQL is the fastest serverless, distributed SQL database that enables you to build always available applications with virtually unlimited scalability, the highest availability, and zero infrastructure management. It is designed to make scaling and resilience effortless for your applications and offers the fastest distributed SQL reads and writes.&lt;br&gt; &lt;br&gt; With this launch, Aurora DSQL is available in the following &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt;: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Canada West (Calgary), Asia Pacific (Hong Kong), Asia Pacific (Melbourne), Asia Pacific (Mumbai), Asia Pacific (Osaka), Asia Pacific (Singapore), Asia Pacific (Sydney), , Asia Pacific (Tokyo), Asia Pacific (Seoul), Europe (Ireland), Europe (London), Europe (Frankfurt), Europe (Paris), Europe (Stockholm), and South America (Sao Paulo).&lt;br&gt; &lt;br&gt; Get started with Aurora DSQL for free with the &lt;a href=\"https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&amp;amp;all-free-tier.sort-order=asc&amp;amp;awsf.Free%20Tier%20Types=*all&amp;amp;awsf.Free%20Tier%20Categories=categories%23databases\"&gt;AWS Free Tier&lt;/a&gt;. To learn more, visit the Aurora DSQL &lt;a href=\"https://aws.amazon.com/rds/aurora/dsql/\"&gt;webpage&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/aurora-dsql/latest/userguide/what-is-aurora-dsql.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-aurora-dsql-five-additional-aws-regions/",
-      "publishedAt": "2026-05-11T19:59:00.000Z",
-      "updatedAt": "2026-05-11T19:59:00.000Z",
-      "categories": [
-        "Databases"
-      ],
-      "services": [
-        "Aurora"
-      ],
-      "tags": [
-        "databases",
-        "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "47f155e1f953b713",
-      "title": "AWS HealthOmics now supports caching of cancelled workflow runs",
-      "description": "AWS HealthOmics now supports caching completed task outputs of cancelled runs, enabling customers to reuse outputs and avoid recomputing previously completed tasks. When caching is enabled and a run is cancelled, HealthOmics automatically stores completed task outputs in the customer’s S3 bucket, allowing customers to restart runs from the point of cancellation. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows. Caching of cancelled runs helps researchers, bioinf",
-      "descriptionHtml": "&lt;p&gt;AWS HealthOmics now supports caching completed task outputs of cancelled runs, enabling customers to reuse outputs and avoid recomputing previously completed tasks. When caching is enabled and a run is cancelled, HealthOmics automatically stores completed task outputs in the customer’s S3 bucket, allowing customers to restart runs from the point of cancellation. &lt;a href=\"https://aws.amazon.com/healthomics/\"&gt;AWS HealthOmics&lt;/a&gt; is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows.&lt;/p&gt; \n&lt;p&gt;Caching of cancelled runs helps researchers, bioinformaticians, and workflow developers debug and iteratively develop workflows efficiently by storing intermediate files and completed task outputs for inspection. This saves customers the cost of recomputing completed tasks that may have taken hours and accelerates subsequent runs by executing only the remaining incomplete tasks.&lt;/p&gt; \n&lt;p&gt;Caching cancelled runs is now available for Nextflow, WDL, and CWL runs in all AWS HealthOmics regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Singapore, Seoul). To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/omics/latest/dev/workflow-cache-startrun.html#workflow-cache-cancel\"&gt;workflow cache documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-healthomics-caching-cancelled-runs/",
-      "publishedAt": "2026-05-11T19:00:00.000Z",
-      "updatedAt": "2026-05-11T19:00:00.000Z",
-      "categories": [
-        "Amazon Genomics",
-        "Amazon Omics"
-      ],
-      "services": [],
-      "tags": [
-        "amazon genomics",
-        "amazon omics"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "e5e49e61fe7d87cf",
-      "title": "AWS WAF introduces dynamic label interpolation for custom request and response handling",
-      "description": "AWS WAF now supports dynamic label interpolation, enabling you to forward WAF classification signals to your origin and embed context in responses with a single rule. Security engineers who previously maintained a separate rule for every signal value can now use ${namespace:} syntax in custom request headers, response headers, and response bodies to forward an entire label namespace at once. For example, one rule with a dynamic variable can forward all IP reputation signals to your application, which can then respond adaptively, such as by enforcing multi-factor authentication (MFA). Interpola",
-      "descriptionHtml": "&lt;p&gt;AWS WAF now supports dynamic label interpolation, enabling you to forward WAF classification signals to your origin and embed context in responses with a single rule. Security engineers who previously maintained a separate rule for every signal value can now use ${namespace:} syntax in custom request headers, response headers, and response bodies to forward an entire label namespace at once. For example, one rule with a dynamic variable can forward all IP reputation signals to your application, which can then respond adaptively, such as by enforcing multi-factor authentication (MFA).&lt;/p&gt; \n&lt;p&gt;Interpolation also introduces synthetic labels: built-in values resolved from request context, including client IP address, WAF request ID, and JA3 and JA4 fingerprints. You can embed these in custom block pages and challenge pages so users reporting false positives have a reference ID to cite, or forward TLS fingerprints to your application for adaptive auth decisions. Interpolation works with any label namespace, including AWS Managed Rules, AWS Marketplace rule groups, and your own custom labels. Headers automatically adapt as new labels are added to the namespace, and when multiple labels match, values resolve to a comma-separated list.&lt;/p&gt; \n&lt;p&gt;Dynamic label interpolation is available in all AWS Regions where AWS WAF is available at no additional cost. There are no new API fields or configuration steps. To get started, see &lt;a href=\"https://docs.aws.amazon.com/waf/latest/developerguide/waf-custom-request-response.html#waf-dynamic-label-interpolation\"&gt;Dynamic label interpolation&lt;/a&gt; in the AWS WAF Developer Guide, or explore the &lt;a href=\"https://github.com/aws-samples/sample-aws-waf-dynamic-labels\"&gt;sample on GitHub&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-waf-dynamic-label-interpolation/",
-      "publishedAt": "2026-05-11T18:00:00.000Z",
-      "updatedAt": "2026-05-11T18:00:00.000Z",
-      "categories": [],
-      "services": [
-        "WAF"
-      ],
-      "tags": [
-        "waf"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "52e819f344975175",
-      "title": "Amazon SageMaker Studio notebooks now support P5.4xl instance types",
-      "description": "We are pleased to announce general availability of Amazon EC2 P5.4xl instances on SageMaker Studio notebooks. Amazon EC2 P5.4xl instances are powered by NVIDIA H100 Tensor Core GPUs and deliver high performance in Amazon EC2 for deep learning (DL) and high performance computing (HPC) applications. They help you accelerate your time to solution by up to 4x compared to previous-generation GPU-based EC2 instances, and reduce cost to train ML models by up to 40%. Customers can use P5 instances for training and deploying complex large language models (LLMs) and diffusion models powering generative ",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce general availability of Amazon EC2 P5.4xl instances on SageMaker Studio notebooks.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/p5/\"&gt;Amazon EC2 P5.4xl instances&lt;/a&gt;&amp;nbsp;are powered by NVIDIA H100 Tensor Core GPUs and deliver high performance in Amazon EC2 for deep learning (DL) and high performance computing (HPC) applications. They help you accelerate your time to solution by up to 4x compared to previous-generation GPU-based EC2 instances, and reduce cost to train ML models by up to 40%. Customers can use P5&amp;nbsp;instances for training and deploying complex large language models (LLMs) and diffusion models powering generative AI applications. These applications include question answering, code generation, video and image generation, and speech recognition.&lt;/p&gt; \n&lt;p&gt;Amazon EC2 P5.4xl instances are available for SageMaker Studio notebooks in the AWS US East (N. Virginia and Ohio), US West (Oregon), Asia Pacific (Mumbai, Tokyo, Jakarta) and South America (São Paulo) regions.&lt;/p&gt; \n&lt;p&gt;Visit developer guides for instructions on setting up and using&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl.html\"&gt;JupyterLab&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor.html\"&gt;CodeEditor&lt;/a&gt;&amp;nbsp;applications on&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html\"&gt;SageMaker Studio&lt;/a&gt;.&amp;nbsp;For pricing information on these instances, please visit our&amp;nbsp;&lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/p5.4xl-new-launch-sagemaker-studio-notebooks/",
-      "publishedAt": "2026-05-11T18:00:00.000Z",
-      "updatedAt": "2026-05-11T18:00:00.000Z",
-      "categories": [
-        "Amazon Sagemaker Studio",
-        "Amazon Sagemaker",
-        "Artificial Intelligence",
-        "Aiml"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker studio",
-        "amazon sagemaker",
-        "artificial intelligence",
-        "aiml",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7a05b1efc346d4d4",
-      "title": "Amazon SageMaker Unified Studio adds getting started tutorials and in-product release notes",
-      "description": "Amazon SageMaker Unified Studio now helps you get productive faster with getting started tutorials and a development environment appearance that automatically adapts to your system preference, and adds in-product release notes to help you discover new capabilities. On the homepage, a new getting started section helps you get productive in minutes by walking through core workflows such as running your first SQL query, analyzing data from a notebook, building a data pipeline with Visual ETL, and training an ML model. Each tutorial uses pre-loaded sample data and can be completed in under 10 minu",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now helps you get productive faster with getting started tutorials and a development environment appearance that automatically adapts to your system preference, and adds in-product release notes to help you discover new capabilities.&lt;br&gt; &lt;br&gt; On the homepage, a new getting started section helps you get productive in minutes by walking through core workflows such as running your first SQL query, analyzing data from a notebook, building a data pipeline with Visual ETL, and training an ML model. Each tutorial uses pre-loaded sample data and can be completed in under 10 minutes. The development environment now also defaults to match your operating system’s light or dark mode setting, so the interface matches your preference from your first sign-in. A new “What’s New” section surfaces recent feature announcements and release notes directly in the product, so you can stay informed about new capabilities as they launch. In 2026 alone, SageMaker Unified Studio has added over 20 new features, which you can also find in the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/release-notes.html\"&gt;release notes.&lt;/a&gt;&lt;br&gt; &lt;br&gt; These enhancements are available in all AWS Regions where Amazon SageMaker Unified Studio is supported in IAM-based domains. Sign in to &lt;a href=\"https://aws.amazon.com/sagemaker/unified-studio/\"&gt;SageMaker Unified Studio &lt;/a&gt;to explore what’s new, or start with the getting started tutorials in the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/gs-sql.html\"&gt;Amazon SageMaker Unified Studio User Guide.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/smus-getting-started",
-      "publishedAt": "2026-05-11T17:12:00.000Z",
-      "updatedAt": "2026-05-11T17:12:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Analytics"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "analytics",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "c0dd48d81d93f516",
-      "title": "Amazon Route 53 Domains adds support for 34 new Top Level Domains including .app, .dev, and .health.",
-      "description": "Amazon Route 53 Domains now supports registration and management of 34 new top-level domains (TLDs), including .app, .dev, .art, .forum, .health, and .realty. This expansion enhances Route 53's domain registration and DNS management capabilities by offering customers industry-specific, technology-focused, and purpose-driven domain name options directly through AWS, enabling businesses and individuals to better establish their online presence. The new TLDs cater to diverse use cases across multiple sectors. The .app domain is perfect for anyone building digital products — from mobile apps and S",
-      "descriptionHtml": "&lt;p&gt;Amazon Route 53 Domains now supports registration and management of 34 new top-level domains (TLDs), including .app, .dev, .art, .forum, .health, and .realty. This expansion enhances Route 53's domain registration and DNS management capabilities by offering customers&amp;nbsp;industry-specific, technology-focused, and purpose-driven domain name options directly through AWS, enabling businesses and individuals to better establish their online presence.&amp;nbsp;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;The new TLDs cater to diverse use cases across multiple sectors. The .app domain is perfect for anyone building digital products — from mobile apps and SaaS platforms to browser extensions and developer tools. Developers can utilize .dev for development projects and technical portfolios, while .art serves creative professionals and galleries. The .forum domain suits community platforms and discussion boards. Healthcare organizations can leverage .health for medical services and wellness platforms. Real estate professionals can establish their presence with .realty domains. Additional domains like .food, .lifestyle, .living, and .love provide opportunities for specialized content and services.&lt;/p&gt; \n&lt;p&gt;Users can register these domains through the Route 53 console, AWS CLI, or SDKs, enjoying integrated DNS management and automatic renewal features. This seamless integration allows for efficient domain administration alongside existing Route 53 hosted zones and DNS records, providing a unified experience for managing both domain registration and DNS services.&amp;nbsp;Additionally, developers building AI-powered workflows can leverage the &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/05/agent-toolkit/\"&gt;AWS Agent Toolkit&lt;/a&gt; to register and manage these domains programmatically through a fully managed MCP server.&lt;br&gt; &lt;br&gt; &lt;b&gt;Complete list of new TLDs:&lt;/b&gt; .app, .art, .bar, .boo, .build, .dad, .day, .dev, .diy, .earth, .esq, .fit, .foo, .food, .forum, .health, .how, .lifestyle, .living, .love, .menu, .mov, .my, .nexus, .one, .page, .phd, .prof, .realty, .rest, .rsvp, .soy, .win, .zip&lt;br&gt; &lt;br&gt; To learn more about Amazon Route 53 Domains and start registering new domains, visit the &lt;a href=\"https://aws.amazon.com/route53/domains/\"&gt;Amazon Route 53 Domains page.&lt;/a&gt; Domain registration pricing varies by TLD. Visit the &lt;a href=\"https://aws.amazon.com/route53/pricing/\"&gt;pricing page&lt;/a&gt; for detailed pricing information.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-route-53-domains/",
-      "publishedAt": "2026-05-11T15:21:00.000Z",
-      "updatedAt": "2026-05-11T15:21:00.000Z",
-      "categories": [
-        "Game Development",
-        "Developers",
-        "Networking And Content Delivery",
-        "Amazon Route 53"
-      ],
-      "services": [
-        "Route 53",
-        "Health"
-      ],
-      "tags": [
-        "game development",
-        "developers",
-        "networking and content delivery",
-        "amazon route 53",
-        "route 53",
-        "health"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d7a944c66035bd9d",
-      "title": "Claude Platform on AWS is now generally available",
-      "description": "Today, AWS announced the general availability of Claude Platform on AWS, a new service that gives customers direct access to Anthropic's native Claude Platform experience through their existing AWS account. AWS is the first cloud provider to offer access to the native Claude Platform experience. Developers and organizations now have the choice to access Anthropic's native Claude Platform experience, including APIs, console, and early-access beta features, directly through their existing AWS account, without managing separate accounts, billing, or tracking. Claude Platform on AWS is operated by",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announced the general availability of Claude Platform on AWS, a new service that gives customers direct access to&amp;nbsp;Anthropic's&amp;nbsp;native Claude Platform experience through their existing AWS account.&amp;nbsp;AWS is the first cloud provider to offer access to the native Claude Platform experience. Developers and organizations now have the choice to access&amp;nbsp;Anthropic's&amp;nbsp;native&amp;nbsp;Claude&amp;nbsp;Platform experience, including APIs, console, and early-access beta features, directly through their existing AWS account, without managing separate accounts, billing, or tracking.&lt;/p&gt; \n&lt;p&gt;Claude Platform on AWS is&amp;nbsp;operated&amp;nbsp;by Anthropic, and customer data is processed outside the AWS security boundary.&amp;nbsp;Claude Platform on AWS is designed for development teams and enterprises that want access to&amp;nbsp;Anthropic's&amp;nbsp;native Claude Platform development experience and do not have specific regional data residency requirements.&amp;nbsp;Customers still use existing IAM credentials and access controls,&amp;nbsp;consolidated&amp;nbsp;AWS billing, and CloudTrail audit logging for full security visibility. Features available through Claude Platform on AWS include Claude Managed Agents (beta), advisor strategy (beta), web search, web fetch, code execution, files API (beta), Skills (beta), MCP connector (beta), prompt caching, citations, batch processing, and the Claude Console for prompt development and evaluation.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Claude Platform on AWS is available in US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), South America (São Paulo), Europe (Dublin), Europe (London), Europe (Frankfurt), Europe (Milan), Europe (Zurich), Europe (Paris), Europe (Stockholm), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Jakarta), Asia Pacific (Sydney), and Asia Pacific (Melbourne). To learn more, visit the &lt;a href=\"https://aws.amazon.com/claude-platform/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Claude Platform on&amp;nbsp;AWS&amp;nbsp;product page.&lt;/a&gt; To get started, see the Claude Platform on AWS &lt;a href=\"https://docs.aws.amazon.com/claude-platform/latest/userguide/welcome.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/claude-platform-aws/",
-      "publishedAt": "2026-05-11T14:00:00.000Z",
-      "updatedAt": "2026-05-11T14:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "Claude"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "claude"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "364a7404ff478642",
-      "title": "AWS Transform adds containerization capability during migrations",
-      "description": "AWS Transform now supports replatforming applications to containers during migration to AWS. This release extends AWS Transform's agentic AI capabilities to automate the containerization of your source code, enabling you to migrate and modernize in parallel, reducing the time and complexity of moving from on-premises to cloud-native architectures. Migration teams can containerize source code from GitHub, Bitbucket, GitLab, or .zip files, generate Docker images, publish to Amazon Elastic Container Registry (Amazon ECR) , and deploy to Amazon Elastic Container Service (Amazon ECS ) or Amazon Ela",
-      "descriptionHtml": "&lt;p&gt;AWS Transform now supports replatforming applications to containers during migration to AWS. This release extends AWS Transform's agentic AI capabilities to automate the containerization of your source code, enabling you to migrate and modernize in parallel, reducing the time and complexity of moving from on-premises to cloud-native architectures. Migration teams can containerize source code from GitHub, Bitbucket, GitLab, or .zip files, generate Docker images, publish to &lt;a href=\"https://aws.amazon.com/ecr/\"&gt;Amazon Elastic Container Registry (Amazon ECR)&lt;/a&gt;, and deploy to &lt;a href=\"https://aws.amazon.com/ecs/\"&gt;Amazon Elastic Container Service (Amazon ECS&lt;/a&gt;) or &lt;a href=\"https://aws.amazon.com/eks/\"&gt;Amazon Elastic Kubernetes Service (Amazon EKS)&lt;/a&gt;. This brings containerization into the same workflow your team uses to plan and execute rehost migrations.&lt;br&gt; &lt;br&gt; AWS Transform analyzes your source code repositories, generates Dockerfiles, and builds container images with integrated security scanning for common vulnerabilities and exposures (CVEs). It produces deployment-ready Terraform infrastructure-as-code and Helm charts for your target environment. The service supports monolithic repositories (monorepos) and multi-repo structures, private dependency resolution through AWS CodeArtifact, and containerization of thousands of applications at scale. During migration wave planning, you can assign applications to either a rehost or replatform-to-containers path, so you can move and realize the benefits of AWS faster.&lt;br&gt; &lt;br&gt; This new capability is available in all AWS Regions where &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/regions.html\"&gt;AWS Transform is offered&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;To learn more, please visit the &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-containers.html\"&gt;AWS Transform User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-transform-containerization/",
-      "publishedAt": "2026-05-11T08:22:00.000Z",
-      "updatedAt": "2026-05-11T08:22:00.000Z",
-      "categories": [
-        "Containers",
-        "Migration"
-      ],
-      "services": [],
-      "tags": [
-        "containers",
-        "migration"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b23affe8e3f78bdc",
-      "title": "AWS Client VPN now supports Ubuntu OS version 26.04 LTS",
-      "description": "AWS Client VPN now supports Linux desktop client with Ubuntu versions 26.04 LTS. You can now run the AWS supplied VPN client on the latest Ubuntu OS versions. AWS Client VPN desktop clients are available free of charge, and can be downloaded here. AWS Client VPN is a managed service that securely connects your remote workforce to AWS or on-premises networks. It supports desktop clients for MacOS, Windows, and Ubuntu-Linux. With this release, CVPN now supports the latest version of Ubuntu client - 26.04 LTS, along with 22.04 and 24.04. It already support Mac OS version Sonoma 14.0,, Sequoia 15.",
-      "descriptionHtml": "&lt;p&gt;AWS Client VPN now supports Linux desktop client with Ubuntu versions 26.04 LTS. You can now run the AWS supplied VPN client on the latest Ubuntu OS versions. AWS Client VPN desktop clients are available free of charge, and can be downloaded&lt;a href=\"https://aws.amazon.com/vpn/client-vpn-download/\"&gt; here.&lt;/a&gt;&lt;br&gt; &lt;br&gt; AWS Client VPN is a managed service that securely connects your remote workforce to AWS or on-premises networks. It supports desktop clients for MacOS, Windows, and Ubuntu-Linux. With this release, CVPN now supports the latest version of Ubuntu client - 26.04 LTS, along with 22.04 and 24.04. It already support Mac OS version Sonoma 14.0,, Sequoia 15.0, and Tahoe 26.0, and Windows 11. Client also supports ARM64 for MacOS and Windows.&lt;/p&gt; \n&lt;p&gt;This client version is available in all regions where AWS Client VPN is generally available with no additional cost.&lt;br&gt; &lt;br&gt; To learn more about Client VPN:&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;Visit the AWS Client VPN &lt;a href=\"https://aws.amazon.com/vpn/\"&gt;product page&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;Read the AWS Client VPN &lt;a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html\"&gt;documentation&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-client-vpn-ubuntu-26/",
-      "publishedAt": "2026-05-08T22:39:00.000Z",
-      "updatedAt": "2026-05-08T22:39:00.000Z",
-      "categories": [
-        "AWS Client Vpn",
-        "Networking And Content Delivery"
-      ],
-      "services": [],
-      "tags": [
-        "aws client vpn",
-        "networking and content delivery"
       ],
       "isNew": false
     }
