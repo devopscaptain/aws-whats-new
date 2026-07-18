@@ -1,7 +1,68 @@
 {
-  "lastUpdated": "2026-07-17T08:47:35.663Z",
+  "lastUpdated": "2026-07-18T08:37:17.013Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "a48a59efd1a555b5",
+      "title": "Amazon GameLift Streams now supports IAM role credentials for stream sessions",
+      "description": "Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables. With this launch, you can pass a RoleArn parameter when starting a stream session, and your application automatically receives short-lived, auto-refreshing AWS credentials through the standard AWS SDK credential resolution chain — no application code changes required. Previously, customers who needed their streamed applications to access AWS services had to embed long-lived access keys in appli",
+      "descriptionHtml": "&lt;p&gt;Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables. With this launch, you can pass a RoleArn parameter when starting a stream session, and your application automatically receives short-lived, auto-refreshing AWS credentials through the standard AWS SDK credential resolution chain — no application code changes required.&lt;/p&gt; \n&lt;p&gt;Previously, customers who needed their streamed applications to access AWS services had to embed long-lived access keys in application bundles or pass them as environment variables, creating security and operational challenges. Now, Amazon GameLift Streams handles credential vending and automatic refresh using the same container credential provider mechanism trusted by Amazon ECS task roles and Amazon EKS Pod Identity. Role misconfigurations are validated at session start, surfacing clear errors immediately rather than during runtime.&lt;/p&gt; \n&lt;p&gt;You can also configure IAM roles directly in the Amazon GameLift Streams console, which provides a pre-filled trust policy template to simplify role setup.&lt;/p&gt; \n&lt;p&gt;IAM role support for stream sessions is available in all AWS Regions where Amazon GameLift Streams is available.&lt;/p&gt; \n&lt;p&gt;To learn more, see Session Credentials Setup in the Amazon GameLift Streams Developer Guide:&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/session-credentials-setup.html\"&gt;https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/session-credentials-setup.html&lt;/a&gt;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-gamelift-streams-iam/",
+      "publishedAt": "2026-07-17T17:29:00.000Z",
+      "updatedAt": "2026-07-17T17:29:00.000Z",
+      "categories": [],
+      "services": [
+        "IAM"
+      ],
+      "tags": [
+        "iam"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2d03802ecbc54d46",
+      "title": "Amazon OpenSearch UI now supports one-click dashboard migration",
+      "description": "Amazon OpenSearch Service now supports one-click migration from legacy OpenSearch Dashboards to OpenSearch UI, for both OpenSearch domains and serverless collections. OpenSearch UI is the new, zero-downtime, serverless interface for search and unified observability across multiple data sources. With this launch, the multiple tenants and thousands of saved objects you created in legacy OpenSearch Dashboards become reusable in your OpenSearch UI applications, reducing the operational complexity of moving between interfaces. With one-click migration, you can move your existing tenants and saved o",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now supports one-click migration from legacy OpenSearch Dashboards to OpenSearch UI, for both OpenSearch domains and serverless collections. OpenSearch UI is the new, zero-downtime, serverless interface for search and unified observability across multiple data sources. With this launch, the multiple tenants and thousands of saved objects you created in legacy OpenSearch Dashboards become reusable in your OpenSearch UI applications, reducing the operational complexity of moving between interfaces.&lt;/p&gt; \n&lt;p&gt;With one-click migration, you can move your existing tenants and saved objects into OpenSearch UI workspaces without recreating them manually. The mechanism works for OpenSearch Dashboards created under Amazon OpenSearch Service domains and serverless collections. You can migrate everything into a new workspace or into an existing one. If you have created multiple tenants in your OpenSearch Dashboard, you have the option to either convert them into a single workspace or keep them separate for different teams. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where OpenSearch UI is available. To get started, see &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/opensearch-ui.html\"&gt;Using OpenSearch UI&lt;/a&gt; in the Amazon OpenSearch Service Developer Guide. Visit the &lt;a href=\"https://help.os.aws.dev/getting-started/in-app-migration/\"&gt;OpenSearch UI Help&lt;/a&gt; page for detailed feature tutorials. To learn more about the service, see the &lt;a href=\"https://aws.amazon.com/opensearch-service/\"&gt;Amazon OpenSearch Service product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-opensearch-ui-one-click-dashboard-migration",
+      "publishedAt": "2026-07-17T17:23:00.000Z",
+      "updatedAt": "2026-07-17T17:23:00.000Z",
+      "categories": [
+        "Amazon Opensearch Service",
+        "Analytics"
+      ],
+      "services": [
+        "OpenSearch"
+      ],
+      "tags": [
+        "amazon opensearch service",
+        "analytics",
+        "opensearch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c5580916a7b645ae",
+      "title": "Amazon SageMaker HyperPod now supports partition-level topology for Slurm orchestrated clusters",
+      "description": "Amazon SageMaker HyperPod now supports network topology configuration at the partition level for Slurm orchestrated clusters. A single cluster can now run tree topology in one partition and block topology in another, with each partition using the topology best suited to its instance types. This improves distributed training performance by keeping job placement aligned with the interconnect characteristics of each instance type, so GPU-to-GPU communication is faster, NCCL collective operations are more efficient, and training throughput improves. HyperPod determines the topology for each partit",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports network topology configuration at the partition level for Slurm orchestrated clusters. A single cluster can now run tree topology in one partition and block topology in another, with each partition using the topology best suited to its instance types. This improves distributed training performance by keeping job placement aligned with the interconnect characteristics of each instance type, so GPU-to-GPU communication is faster, NCCL collective operations are more efficient, and training throughput improves.&lt;br&gt; &lt;br&gt; HyperPod determines the topology for each partition based on the instance types of its compute instance groups. Partitions with Amazon EC2 UltraServer instance types such as ml.p6e-gb200.36xlarge use block topology, and those with hierarchical-interconnect instance types such as ml.p5.48xlarge, ml.p5e.48xlarge, and ml.p5en.48xlarge use tree topology, while partitions with instance types that don't provide network topology information remain fully schedulable. HyperPod maintains this configuration automatically as the cluster changes through scale-up, scale-down, and node replacement events, so each partition's topology always reflects the current state of the cluster.&lt;br&gt; &lt;br&gt; To get started, create or update a SageMaker HyperPod Slurm cluster running Slurm 25.11 or later with supported GPU instance types. Topology-aware scheduling is enabled by default and requires no configuration. This feature is available in all AWS Regions where Amazon SageMaker HyperPod is supported. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-topology.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Using topology-aware scheduling in Amazon SageMaker HyperPod&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/hyperpod-partition-topology-slurm/",
+      "publishedAt": "2026-07-17T15:16:00.000Z",
+      "updatedAt": "2026-07-17T15:16:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Compute"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "compute",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
     {
       "id": "b49b9f9513bc502c",
       "title": "Amazon Managed Grafana achieves FedRAMP High authorization in AWS GovCloud (US)",
@@ -201,30 +262,8 @@
       "id": "0b227f2bc2f349ce",
       "title": "AWS Backup extends logically air-gapped vault support to six additional AWS Regions",
       "description": "AWS Backup logically air-gapped vaults are now available in six additional AWS Regions: Asia Pacific (Taipei), Asia Pacific (Malaysia), Asia Pacific (New Zealand), Asia Pacific (Thailand), Mexico (Central), and Canada West (Calgary). With logically air-gapped vaults now available in these Regions, you can store immutable, isolated backups that are locked by default and encrypted using AWS owned keys or customer-managed keys. You can back up directly to logically air-gapped vaults, copy backups across accounts and Regions, share vaults for recovery using AWS Resource Access Manager (RAM), and s",
-      "descriptionHtml": "&lt;p&gt;AWS Backup logically air-gapped vaults are now available in six additional AWS Regions: Asia Pacific (Taipei), Asia Pacific (Malaysia), Asia Pacific (New Zealand), Asia Pacific (Thailand), Mexico (Central), and Canada West (Calgary).&lt;/p&gt; \n&lt;p&gt;With logically air-gapped vaults now available in these Regions, you can store immutable, isolated backups that are locked by default and encrypted using AWS owned keys or customer-managed keys. You can back up directly to logically air-gapped vaults, copy backups across accounts and Regions, share vaults for recovery using AWS Resource Access Manager (RAM), and safeguard vault access during account compromise using Multi-party approval.&lt;/p&gt; \n&lt;p&gt;To get started, visit the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. For a complete list of supported Regions and features, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\"&gt;AWS Backup documentation&lt;/a&gt;. To learn more about logically air-gapped vaults, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairgappedvault.html\"&gt;feature documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/backup/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "descriptionHtml": "&lt;p&gt;AWS Backup logically air-gapped vaults are now available in six additional AWS Regions: Asia Pacific (Taipei), Asia Pacific (Malaysia), Asia Pacific (New Zealand), Asia Pacific (Thailand),&amp;nbsp;Mexico (Central), and Canada West (Calgary).&lt;/p&gt; \n&lt;p&gt;With logically air-gapped vaults now available in these Regions, you can store immutable, isolated backups that are locked by default and encrypted using AWS owned keys or customer-managed keys. You can back up directly to logically air-gapped vaults, copy backups across accounts and Regions, share vaults for recovery using AWS Resource Access Manager (RAM), and safeguard vault access during account compromise using Multi-party approval.&lt;/p&gt; \n&lt;p&gt;To get started, visit the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. For a complete list of supported Regions and features, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\"&gt;AWS Backup documentation&lt;/a&gt;. To learn more about logically air-gapped vaults, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairgappedvault.html\"&gt;feature documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/backup/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-backup-logically-air-gapped-vault-regions/",
-      "publishedAt": "2026-07-16T10:00:00.000Z",
-      "updatedAt": "2026-07-16T10:00:00.000Z",
-      "categories": [
-        "Storage",
-        "AWS Backup"
-      ],
-      "services": [
-        "Backup"
-      ],
-      "tags": [
-        "storage",
-        "aws backup",
-        "backup"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "fbf31dcb5dc19ce8",
-      "title": "AWS Backup extends restore testing support to six additional AWS Regions",
-      "description": "AWS Backup restore testing is now available in six additional AWS Regions: Asia Pacific (Taipei), Asia Pacific (Malaysia), Asia Pacific (New Zealand), Asia Pacific (Thailand), Mexico (Central), and Canada West (Calgary). Restore testing helps you automate and periodically run restore tests of supported AWS resources across storage, compute, and database services. You can create restore testing plans that automatically select recovery points, run restores on a schedule, and measure restore job completion time against your recovery time objectives (RTO). This helps you evaluate recovery readines",
-      "descriptionHtml": "&lt;p&gt;AWS Backup restore testing is now available in six additional AWS Regions: Asia Pacific (Taipei), Asia Pacific (Malaysia), Asia Pacific (New Zealand), Asia Pacific (Thailand), Mexico (Central), and Canada West (Calgary).&lt;/p&gt; \n&lt;p&gt;Restore testing helps you automate and periodically run restore tests of supported AWS resources across storage, compute, and database services. You can create restore testing plans that automatically select recovery points, run restores on a schedule, and measure restore job completion time against your recovery time objectives (RTO). This helps you evaluate recovery readiness and meet regulatory and compliance requirements for disaster recovery and business continuity.&lt;/p&gt; \n&lt;p&gt;To get started, visit the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. For a complete list of supported Regions and features, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\"&gt;AWS Backup documentation&lt;/a&gt;&amp;nbsp;To learn more about restore testing, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-testing.html\"&gt;feature documentation&lt;/a&gt;&amp;nbsp;and &lt;a href=\"https://aws.amazon.com/backup/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-backup-restore-testing-regions/",
       "publishedAt": "2026-07-16T10:00:00.000Z",
       "updatedAt": "2026-07-16T10:00:00.000Z",
       "categories": [
@@ -237,6 +276,28 @@
       "tags": [
         "aws backup",
         "storage",
+        "backup"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "fbf31dcb5dc19ce8",
+      "title": "AWS Backup extends restore testing support to seven additional AWS Regions",
+      "description": "AWS Backup restore testing is now available in seven additional AWS Regions: Asia Pacific (Taipei), Asia Pacific (Malaysia), Asia Pacific (New Zealand), Asia Pacific (Thailand), Israel (Tel Aviv), Mexico (Central), and Canada West (Calgary). Restore testing helps you automate and periodically run restore tests of supported AWS resources across storage, compute, and database services. You can create restore testing plans that automatically select recovery points, run restores on a schedule, and measure restore job completion time against your recovery time objectives (RTO). This helps you evalu",
+      "descriptionHtml": "&lt;p&gt;AWS Backup restore testing is now available in seven additional AWS Regions: Asia Pacific (Taipei), Asia Pacific (Malaysia), Asia Pacific (New Zealand), Asia Pacific (Thailand), Israel (Tel Aviv), Mexico (Central), and Canada West (Calgary).&lt;/p&gt; \n&lt;p&gt;Restore testing helps you automate and periodically run restore tests of supported AWS resources across storage, compute, and database services. You can create restore testing plans that automatically select recovery points, run restores on a schedule, and measure restore job completion time against your recovery time objectives (RTO). This helps you evaluate recovery readiness and meet regulatory and compliance requirements for disaster recovery and business continuity.&lt;/p&gt; \n&lt;p&gt;To get started, visit the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. For a complete list of supported Regions and features, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\"&gt;AWS Backup documentation&lt;/a&gt;&amp;nbsp;To learn more about restore testing, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-testing.html\"&gt;feature documentation&lt;/a&gt;&amp;nbsp;and &lt;a href=\"https://aws.amazon.com/backup/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-backup-restore-testing-regions/",
+      "publishedAt": "2026-07-16T10:00:00.000Z",
+      "updatedAt": "2026-07-16T10:00:00.000Z",
+      "categories": [
+        "Storage",
+        "AWS Backup"
+      ],
+      "services": [
+        "Backup"
+      ],
+      "tags": [
+        "storage",
+        "aws backup",
         "backup"
       ],
       "isNew": true
@@ -1135,7 +1196,7 @@
         "ec2",
         "ebs"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "983a670e1f65ccb7",
@@ -1159,7 +1220,7 @@
         "eks",
         "emr"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9f47e275f722b1d0",
@@ -1172,7 +1233,7 @@
       "categories": [],
       "services": [],
       "tags": [],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ad2a702952b0d906",
@@ -1196,7 +1257,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ee8cac6c72d637c5",
@@ -1218,7 +1279,7 @@
         "containers",
         "eks"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "32f53fbf119b6a39",
@@ -1242,7 +1303,7 @@
         "artificial intelligence",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "64a8a1caca6633d5",
@@ -1264,7 +1325,7 @@
         "aws database migration service",
         "dms"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8e05263916ee5dd3",
@@ -1288,7 +1349,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5fc705237343fd46",
@@ -1308,7 +1369,7 @@
         "amazon documentdb",
         "documentdb"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "aa3c5344721a72fe",
@@ -11029,71 +11090,6 @@
         "artificial intelligence",
         "amazon sagemaker jumpstart",
         "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "86b17fe1fd0e901b",
-      "title": "Reference stack outputs across accounts and Regions with AWS CloudFormation and CDK",
-      "description": "AWS CloudFormation now supports a new intrinsic function, Fn::GetStackOutput , that enables you to reference stack outputs across AWS accounts and Regions directly within your CloudFormation templates and CDK applications. This new capability simplifies the provisioning and management of multi-account and multi-Region workloads in CloudFormation and CDK, and eliminates deployment deadlocks when restructuring cross-stack dependencies in CDK apps. When managing multi-account AWS environments, teams often need to share infrastructure values, such as VPC IDs or database endpoints, across account b",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/cloudformation/\"&gt;AWS CloudFormation&lt;/a&gt; now supports a new intrinsic function, &lt;a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getstackoutput.html\"&gt;Fn::GetStackOutput&lt;/a&gt;, that enables you to reference stack outputs across AWS accounts and Regions directly within your CloudFormation templates and CDK applications. This new capability simplifies the provisioning and management of multi-account and multi-Region workloads in CloudFormation and CDK, and eliminates deployment deadlocks when restructuring cross-stack dependencies in CDK apps.&lt;br&gt; &lt;br&gt; When managing multi-account AWS environments, teams often need to share infrastructure values, such as VPC IDs or database endpoints, across account boundaries. Previously, achieving this required multiple steps, including copying values between templates or coordinating parameter updates across teams. Now, with Fn::GetStackOutput, you simply specify the target stack name, output key, an IAM role ARN for cross-account access, and optionally a Region. CloudFormation assumes the specified role, retrieves the output value, and resolves it during template processing, reducing manual coordination and the risk of configuration drift. In CDK applications, cross-account and cross-Region references now use this function automatically, eliminating the need for custom resources and SSM parameters that the previous approach required. Customers can also call &lt;a href=\"https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.Fn.html#static-getwbrstackwbroutputstackname-outputname-region-rolearn\"&gt;Fn.getStackOutput&lt;/a&gt; directly to create weak references between stacks, simplifying stack refactoring.&lt;br&gt; &lt;br&gt; To get started, add the &lt;a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getstackoutput.html\"&gt;Fn::GetStackOutput&lt;/a&gt; function to your CloudFormation template and configure the appropriate IAM permissions for cross-account access. In CDK, cross-account and cross-Region references use this function automatically. Visit the &lt;a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getstackoutput.html\"&gt;AWS CloudFormation User Guide&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib-readme.html#accessing-resources-in-a-different-stack-and-region\"&gt;CDK developer guide&lt;/a&gt; to learn more.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; This feature is available in all AWS Regions where CloudFormation is supported. Refer to the &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/cfn.html#cfn_region\"&gt;AWS Region table&lt;/a&gt; for service availability details.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-cloudformation-cdk-stack/",
-      "publishedAt": "2026-05-14T17:30:00.000Z",
-      "updatedAt": "2026-05-14T17:30:00.000Z",
-      "categories": [],
-      "services": [
-        "CloudFormation",
-        "CDK"
-      ],
-      "tags": [
-        "cloudformation",
-        "cdk"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5fb958735057e7cf",
-      "title": "Amazon EC2 X8aedz instances are now available in Europe (Ireland) region",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8aedz instances are available in Europe (Ireland) region. These instances are powered by 5th Gen AMD EPYC processors (formerly code named Turin). These instances offer the highest maximum CPU frequency, 5GHz in the cloud. X8aedz instances are built using the latest sixth generation AWS Nitro Cards and are ideal for electronic design automation (EDA) workloads such as physical layout and physical verification jobs, and relational databases that benefit from high single-threaded processor performance and a large memory footprint. The com",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8aedz instances are available in&amp;nbsp;Europe (Ireland) region. These instances are powered by 5th Gen AMD EPYC processors (formerly code named Turin). These instances offer the highest maximum CPU frequency, 5GHz in the cloud.&lt;br&gt; &lt;br&gt; X8aedz instances are built using the latest sixth generation&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/nitro/\"&gt;AWS Nitro Cards&lt;/a&gt;&amp;nbsp;and are ideal for electronic design automation (EDA) workloads such as physical layout and physical verification jobs, and relational databases that benefit from high single-threaded processor performance and a large memory footprint. The combination of 5 GHz processors and local NVMe storage enables faster processing of memory-intensive backend EDA workloads such as floor planning, logic placement, clock tree synthesis (CTS), routing, and power/signal integrity analysis.&lt;br&gt; &lt;br&gt; X8aedz instances feature a 32:1 ratio of memory to vCPU and are available in 8 sizes ranging from 2 to 96 vCPUs with 64 to 3,072 GiB of memory, including two bare metal variants, and up to 8 TB of local NVMe SSD storage.&lt;br&gt; &lt;br&gt; Customers can purchase X8aedz instances via Savings Plans, On-Demand instances, and Spot instances. To get started, sign in to the AWS Management Console. For more information visit the Amazon EC2&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/x8aedz\"&gt;X8aedz instance page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-x8aedz-europe-ireland/",
-      "publishedAt": "2026-05-14T17:00:00.000Z",
-      "updatedAt": "2026-05-14T17:00:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "amazon ec2",
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6d80b3a5643337c6",
-      "title": "Amazon Connect Customer launches permission for agents to view only their own performance evaluations",
-      "description": "Amazon Connect Customer now supports a permission that gives agents access to their own performance evaluations in the Connect UI, without exposing other agents' evaluations, so they can review feedback to improve their performance. With this permission, agents can search for contacts where they have received an evaluation, view their evaluations alongside call recordings and transcripts, and submit an acknowledgment after reviewing. Agents can be granted access to view their entire department's contacts for investigating multi-contact customer issues, while ensuring that they can only view th",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now supports a permission that gives agents access to their own performance evaluations in the Connect UI, without exposing other agents' evaluations, so they can review feedback to improve their performance. With this permission, agents can search for contacts where they have received an evaluation, view their evaluations alongside call recordings and transcripts, and submit an acknowledgment after reviewing. Agents can be granted access to view their entire department's contacts for investigating multi-contact customer issues, while ensuring that they can only view their own evaluations. This provides operational flexibility while ensuring that agents cannot view sensitive peer performance data.&lt;/p&gt; \n&lt;p&gt;This feature is available in all &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#amazonconnect_region\"&gt;AWS regions&lt;/a&gt; where Amazon Connect Customer is offered. To learn more, please see our &lt;a href=\"https://aws.amazon.com/connect/conversational-analytics/\"&gt;website&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/evaluation-and-coaching-permissions.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-connect-customer-permission-view-own-performance-evaluations/",
-      "publishedAt": "2026-05-14T17:00:00.000Z",
-      "updatedAt": "2026-05-14T17:00:00.000Z",
-      "categories": [
-        "Contact Center",
-        "Applications",
-        "Amazon Connect"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "contact center",
-        "applications",
-        "amazon connect",
-        "connect"
       ],
       "isNew": false
     }
