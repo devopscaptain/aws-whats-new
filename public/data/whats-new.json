@@ -1,7 +1,217 @@
 {
-  "lastUpdated": "2026-07-20T09:07:38.588Z",
+  "lastUpdated": "2026-07-21T08:57:43.189Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "772bbaf1d12e9404",
+      "title": "AWS Data Exports now provides standardized Amazon Bedrock product metadata",
+      "description": "Today, AWS announces standardized product metadata for Amazon Bedrock in AWS Data Exports (Cost and Usage Report), giving FinOps teams and cloud administrators consistent, structured attributes to understand Bedrock costs. AWS Data Exports lets you create customized exports of your AWS cost and usage data and deliver them to Amazon S3 for querying with Amazon Athena or loading into your data warehouse. With these attributes, you can attribute Bedrock spend without building custom logic to parse various product metadata in CUR 2.0. The standardized attributes include model provider, model name,",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces standardized product metadata for Amazon Bedrock in AWS Data Exports (Cost and Usage Report), giving FinOps teams and cloud administrators consistent, structured attributes to understand &amp;nbsp;Bedrock costs. AWS Data Exports lets you create customized exports of your AWS cost and usage data and deliver them to Amazon S3 for querying with Amazon Athena or loading into your data warehouse. With these attributes, you can attribute Bedrock spend without building custom logic to parse various product metadata in CUR 2.0.&lt;/p&gt; \n&lt;p&gt;The standardized attributes include model provider, model name, pricing unit, inference type (such as input tokens or output tokens), and feature (the inference serving mode, such as On-Demand or Batch), along with a unified \"Amazon Bedrock\" product family name that consolidates all Bedrock costs. In CUR 2.0, the model provider, model name, inference type, and feature attributes are available in the product map column, and pricing unit is available as a column. The standardized fields are available by default, at no additional cost, to Amazon Bedrock customers using AWS Data Exports.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://aws.amazon.com/bedrock/\"&gt;Amazon Bedrock&lt;/a&gt; product page, and see &lt;a href=\"https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2-product.html\"&gt;Product columns&lt;/a&gt; in the AWS Data Exports User Guide for the standardized product attributes.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-data-exports-amazon-bedrock-product-metadata/",
+      "publishedAt": "2026-07-20T18:29:00.000Z",
+      "updatedAt": "2026-07-20T18:29:00.000Z",
+      "categories": [
+        "Amazon Bedrock",
+        "Cost Management"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "amazon bedrock",
+        "cost management",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7260d5e9d3c50604",
+      "title": "Amazon EC2 R8i and R8i-flex instances are now available in additional regions",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the Europe (Stockholm, Zurich) regions. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the Europe (Stockholm, Zurich) regions. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads. They are up to 30% faster for PostgreSQL databases, up to 60% faster for NGINX web applications, and up to 40% faster for AI deep learning recommendation models compared to R7i.&lt;br&gt; &lt;br&gt; R8i-flex, our first memory-optimized Flex instances, are the easiest way to get price performance benefits for a majority of memory-intensive workloads. They offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources.&lt;br&gt; &lt;br&gt; R8i instances are a great choice for all memory-intensive workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. R8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications. &lt;a href=\"https://docs.aws.amazon.com/sap/latest/general/sap-hana-aws-ec2.html\" target=\"_blank\"&gt;R8i instances are SAP-certified &lt;/a&gt;and deliver 142,100 aSAPS, delivering exceptional performance for mission-critical SAP workloads.&lt;br&gt; &lt;br&gt; To get started, sign in to the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\"&gt;AWS Management Console&lt;/a&gt;. For more information about the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/r8i\" target=\"_blank\"&gt;R8i and R8i-flex &lt;/a&gt;instances visit the AWS News &lt;a href=\"https://aws.amazon.com/blogs/aws/best-performance-and-fastest-memory-with-the-new-amazon-ec2-r8i-and-r8i-flex-instances/\" target=\"_blank\"&gt;blog&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-r8i-r8i-flex-instances-in-stockholm-zurich-regions/",
+      "publishedAt": "2026-07-20T17:37:00.000Z",
+      "updatedAt": "2026-07-20T17:37:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "202a3111b0d939a2",
+      "title": "Selectively log network activity events by identity in AWS CloudTrail",
+      "description": "Today, AWS launches enhanced event filtering for network activity events for VPC end points, a CloudTrail event type that captures actions transmitted through a Virtual Private Cloud Endpoint . Customers can now control which network activity events are logged based on the IAM user identity making the API call. For example, you can configure selectors to log only access denied events when the calling user identity is not on a known safe list. This lets you capture unauthorized access attempts while excluding routine traffic from trusted identities, reducing both logging costs and noise. With U",
+      "descriptionHtml": "&lt;p&gt;Today, AWS launches enhanced event filtering for network activity events for VPC end points, a CloudTrail event type that captures actions transmitted through a&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html\"&gt;Virtual Private Cloud Endpoint&lt;/a&gt;.&amp;nbsp;Customers can now control which network activity events are logged based on the IAM user identity making the API call. For example, you can configure selectors to log only access denied events when the calling user identity is not on a known safe list. This lets you capture unauthorized access attempts while excluding routine traffic from trusted identities, reducing both logging costs and noise.&lt;/p&gt; \n&lt;p&gt;With UserIdentity filtering, customers building a data perimeter strategy can focus on network activity event logging for scenarios that matter most in security. You can configure selectors to log only VpceAccessDenied events from identities outside a trusted set of IAM roles. This enables detection of potential data exfiltration attempts through VPC endpoints without the cost of logging every successful API call from approved principals. You can combine UserIdentity conditions with existing fields like eventName or vpcEndpointId for fine-grained control over what gets recorded.&lt;/p&gt; \n&lt;p&gt;You can use this feature via the AWS Management Console, AWS Command Line Interface, and AWS SDKs. This feature is available in all AWS Regions where CloudTrail network activity events are supported. To learn more about Network Activity events, visit the &lt;a href=\"https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html\"&gt;AWS CloudTrail user guide&lt;/a&gt; or read &lt;a href=\"https://aws.amazon.com/blogs/mt/announcing-aws-cloudtrail-network-activity-events-for-vpc-endpoints/\"&gt;AWS Blog on how to enable Network Activity Events&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-cloudtrail-filter-useridentity-advance-selectors/",
+      "publishedAt": "2026-07-20T17:34:00.000Z",
+      "updatedAt": "2026-07-20T17:34:00.000Z",
+      "categories": [
+        "Management And Governance",
+        "AWS Cloudtrail",
+        "Security Identity And Compliance"
+      ],
+      "services": [
+        "CloudTrail"
+      ],
+      "tags": [
+        "management and governance",
+        "aws cloudtrail",
+        "security identity and compliance",
+        "cloudtrail"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7cda18667f9a9a65",
+      "title": "Amazon Connect delivers more natural agentic voice experiences with expanded language support and speech controls",
+      "description": "Amazon Connect customers can now deliver more natural, human-sounding agentic voice experiences with expanded support across 50+ languages including Spanish, French, Italian, Japanese, Korean, Portuguese, and Thai, over 100 new voice options, and conversational improvements that make AI interactions sound more fluid and responsive. Amazon Connect's agentic self-service capabilities enable AI agents to understand, reason, and take action across voice and digital channels, adapting responses to match customer tone and sentiment while maintaining natural conversational pace. With this launch, you",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect customers can now deliver more natural, human-sounding agentic voice experiences with expanded support across 50+ languages including Spanish, French, Italian, Japanese, Korean, Portuguese, and Thai, over 100 new voice options, and conversational improvements that make AI interactions sound more fluid and responsive.&lt;/p&gt; \n&lt;p&gt;Amazon Connect's agentic self-service capabilities enable AI agents to understand, reason, and take action across voice and digital channels, adapting responses to match customer tone and sentiment while maintaining natural conversational pace. With this launch, you can deliver smoother conversations with seamless response pacing that fills natural pauses so interactions feel immediate rather than halting, more accurate turn-taking so agents and customers don't talk over each other, and speech controls that let you adjust speed, volume, and emotion to match your brand's tone.&lt;/p&gt; \n&lt;p&gt;To learn more about this feature, see the Amazon Connect Customer &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/agentic-voice.html\"&gt;Administrator Guide&lt;/a&gt;. For the full list of supported languages and voices, see &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/supported-languages.html\"&gt;Supported Languages&lt;/a&gt;. For region availability, please see the availability of &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#gv_region\"&gt;Amazon Connect Customer features by Region&lt;/a&gt;. To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences visit the Amazon Connect Customer &lt;a href=\"https://aws.amazon.com/connect/\"&gt;website&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-connect-agentic-voice/",
+      "publishedAt": "2026-07-20T16:16:00.000Z",
+      "updatedAt": "2026-07-20T16:16:00.000Z",
+      "categories": [
+        "Contact Center",
+        "Amazon Connect"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "amazon connect",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "821d6abc0ea7b794",
+      "title": "Amazon EC2 I8ge instances are now available in AWS GovCloud (US) Regions",
+      "description": "Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in AWS GovCloud (US-East, US-West) regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn instances. They offer up to 60% lower storage I/O latency and up to 75% lower storage I/O l",
+      "descriptionHtml": "&lt;p&gt;Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in AWS GovCloud (US-East, US-West) regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn instances. They offer up to 60% lower storage I/O latency and up to 75% lower storage I/O latency variability compared to Im4gn instances.&lt;/p&gt; \n&lt;p&gt;I8ge instances are storage-optimized instances, and offer up to 120TB of local NVMe storage. They are ideal for workloads that demand rapid local storage with high random read/write performance and consistently low latency for accessing large datasets. These versatile instances are offered in eleven different sizes including two metal sizes, providing flexibility to match customers' computational needs. They deliver up to 180 Gbps of network performance bandwidth and 60 Gbps of dedicated bandwidth for Amazon Elastic Block Store (EBS), ensuring fast and efficient data transfer for the most demanding applications.&lt;/p&gt; \n&lt;p&gt;To begin your Graviton journey, visit the &lt;a&gt;Level up your compute with AWS Graviton page&lt;/a&gt;. To get started, see &lt;a&gt;AWS Management Console&lt;/a&gt;, &lt;a&gt;AWS Command Line Interface (AWS CLI)&lt;/a&gt;, and &lt;a&gt;AWS SDKs&lt;/a&gt;. To learn more, visit the &lt;a&gt;I8ge instances page&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-i8ge-instances-aws-govcloud-us-regions/",
+      "publishedAt": "2026-07-20T16:00:00.000Z",
+      "updatedAt": "2026-07-20T16:00:00.000Z",
+      "categories": [
+        "Storage",
+        "AWS Govcloud Us",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "storage",
+        "aws govcloud us",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "40200905f0e1d03f",
+      "title": "Amazon WorkSpaces Applications now supports Microsoft OneDrive and Google Drive on Multi-Session fleets",
+      "description": "Amazon WorkSpaces Applications now supports Microsoft OneDrive for Business and Google Drive as persistent storage options on multi-session fleets. Users streaming on multi-session fleets can now connect their OneDrive or Google Drive accounts and access, save, and sync their cloud-based files directly within their streaming sessions, in addition to the existing home folder backed by Amazon S3. Multi-session fleets allow multiple users to share a single fleet instance, enabling organizations to achieve cost efficiencies by increasing session density across their infrastructure. With the additi",
+      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces Applications now supports Microsoft OneDrive for Business and Google Drive as persistent storage options on multi-session fleets. Users streaming on multi-session fleets can now connect their OneDrive or Google Drive accounts and access, save, and sync their cloud-based files directly within their streaming sessions, in addition to the existing home folder backed by Amazon S3.&lt;br&gt; &lt;br&gt; Multi-session fleets allow multiple users to share a single fleet instance, enabling organizations to achieve cost efficiencies by increasing session density across their infrastructure. With the addition of OneDrive and Google Drive support, customers can now take full advantage of the cost savings offered by multi-session fleets while providing their users with familiar, enterprise-grade cloud storage experiences. Users can browse, upload, and download files from their connected storage accounts without disruption, enabling seamless collaboration and continuity across streaming sessions.&lt;br&gt; &lt;br&gt; Microsoft OneDrive for Business and Google Drive support on multi-session fleets is available in all AWS Regions where Amazon WorkSpaces Applications is offered. Standard usage &lt;a href=\"https://aws.amazon.com/workspaces/applications/pricing/\"&gt;pricing&lt;/a&gt; applies for WorkSpaces Applications streaming sessions; there is no additional charge for enabling OneDrive or Google Drive storage connectors.&lt;br&gt; &lt;br&gt; To enable this feature for your users, you must use an WorkSpaces Applications image that uses &lt;a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/base-images-agent.html\"&gt;WorkSpaces Applications agent&lt;/a&gt; released on or after June 29, 2026 or your image is using &lt;a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/keep-image-updated-managed-image-updates.html\"&gt;Managed WorkSpaces Applications image updates&lt;/a&gt;&amp;nbsp;released on or after June 29, 2026. To learn more about WorkSpaces Applications refer &lt;a href=\"https://aws.amazon.com/workspaces/applications/faqs/\"&gt;FAQs&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/storage-multi-session-fleets/",
+      "publishedAt": "2026-07-20T15:00:00.000Z",
+      "updatedAt": "2026-07-20T15:00:00.000Z",
+      "categories": [
+        "Amazon Appstream 2 0",
+        "Desktop And App Streaming",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "WorkSpaces",
+        "AppStream"
+      ],
+      "tags": [
+        "amazon appstream 2 0",
+        "desktop and app streaming",
+        "aws govcloud us",
+        "workspaces",
+        "appstream"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3115cbdaae3f00c0",
+      "title": "Amazon Managed Service for Apache Flink now supports Apache Flink 2.3",
+      "description": "Amazon Managed Service for Apache Flink now supports Apache Flink version 2.3. This release includes adaptive partition selection for improved backpressure handling, so applications run more smoothly under uneven load. It also introduces better handling of out-of-order updates in change data capture (CDC) pipelines that improves data correctness, and new SQL functions make it easier to convert between changelog and standard streams. For a full list of improvements, see the Amazon Managed Service for Apache Flink release notes . Amazon Managed Service for Apache Flink makes it easier to transfo",
+      "descriptionHtml": "&lt;p&gt;Amazon Managed Service for Apache Flink now supports Apache Flink version 2.3. This release includes adaptive partition selection for improved backpressure handling, so applications run more smoothly under uneven load. It also introduces better handling of out-of-order updates in change data capture (CDC) pipelines that improves data correctness, and new SQL functions make it easier to convert between changelog and standard streams. For a full list of improvements, see the Amazon Managed Service for Apache Flink &lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/flink-2-3.html\"&gt;release notes&lt;/a&gt;.&lt;br&gt; &lt;br&gt; Amazon Managed Service for Apache Flink makes it easier to transform and analyze streaming data in real time, by simplifying the setup, operation, and scaling of Apache Flink applications. Developers and data engineers can focus on building and running their streaming applications without managing the underlying infrastructure.&lt;br&gt; &lt;br&gt; To get started, &lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/how-creating-apps.html\"&gt;create a new application&lt;/a&gt; on Apache Flink 2.3, or use &lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/how-in-place-version-upgrades.html\"&gt;in-place version upgrades &lt;/a&gt;to move compatible applications to the Flink 2.3 runtime for a simpler and faster upgrade. Apache Flink 2.3 is available across all AWS Regions where Amazon Managed Service for Apache Flink is offered. To learn more, see the Amazon Managed Service for Apache Flink &lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html\"&gt;Developer Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-managed-service-flink-2-3/",
+      "publishedAt": "2026-07-20T15:00:00.000Z",
+      "updatedAt": "2026-07-20T15:00:00.000Z",
+      "categories": [
+        "Amazon Managed Service For Apache Flink",
+        "Analytics"
+      ],
+      "services": [],
+      "tags": [
+        "amazon managed service for apache flink",
+        "analytics"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "08f3589a60f87392",
+      "title": "Announcing the general availability of a new AWS Local Zone in Athens, Greece",
+      "description": "Today, AWS announces the general availability of a new Local Zone in Athens, Greece. The Athens Local Zone is the second Local Zone in EMEA with support for Amazon Simple Storage Service (Amazon S3) and Amazon Elastic Block Store (Amazon EBS) Local Snapshots, enabling customers to store and process data within Greece to help meet local data residency requirements. The Athens Local Zone supports Amazon Elastic Compute Cloud (Amazon EC2) with C7i, M7i, and R7i instances, Amazon S3 with the One Zone-Infrequent Access storage class, Amazon EBS with Local Snapshots and volume types gp3, gp2, io1, s",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of a new Local Zone in Athens, Greece. The Athens Local Zone is the second Local Zone in EMEA with support for Amazon Simple Storage Service (Amazon S3) and Amazon Elastic Block Store (Amazon EBS) Local Snapshots, enabling customers to store and process data within Greece to help meet local data residency requirements.&lt;/p&gt; \n&lt;p&gt;The Athens Local Zone supports Amazon Elastic Compute Cloud (Amazon EC2) with C7i, M7i, and R7i instances, Amazon S3 with the One Zone-Infrequent Access storage class, Amazon EBS with Local Snapshots and volume types gp3, gp2, io1, sc1, and st1, Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), Amazon Virtual Private Cloud (Amazon VPC), AWS Direct Connect, and Application Load Balancer.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Use cases include public sector services that need to meet strict data residency requirements, financial applications that require in-country data processing, and real-time gaming and interactive experiences that benefit from single-digit millisecond latency. Customers use the same APIs, tools, and security features available in AWS Regions, with no minimum commitment and pay-as-you-go pricing including On-Demand, Savings Plans, and Spot Instances.&lt;/p&gt; \n&lt;p&gt;The Athens Local Zone is part of AWS Global Infrastructure, with Local Zones now available in more than 30 metropolitan areas worldwide. To get started, enable the Athens Local Zone (eu-central-1-ath-1a) from the &lt;a href=\"https://us-east-1.console.aws.amazon.com/ec2globalview/home\"&gt;Regions and Zones&lt;/a&gt; tab in the AWS Global View or by using the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyAvailabilityZoneGroup.html?refid=769a1a2b-8c19-4976-9c45-b6b1226c7d20\"&gt;ModifyAvailabilityZoneGroup&lt;/a&gt; API. For pricing information, visit the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/pricing/?nc=sn&amp;amp;loc=4\"&gt;AWS Local Zones pricing page&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/\"&gt;AWS Local Zones overview page&lt;/a&gt;. &amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-local-zone-athens-greece/",
+      "publishedAt": "2026-07-20T14:00:00.000Z",
+      "updatedAt": "2026-07-20T14:00:00.000Z",
+      "categories": [
+        "AWS Local Zones",
+        "Global Infrastructure",
+        "Compute"
+      ],
+      "services": [],
+      "tags": [
+        "aws local zones",
+        "global infrastructure",
+        "compute"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "995923cef4254453",
+      "title": "Amazon CloudWatch announces coding agent insights",
+      "description": "Amazon CloudWatch announces the launch of coding agent insights, giving engineering leaders visibility into how AI coding tools are driving value across their organization. Coding Agent Insights integrates with Claude apps gateway for AWS to collect telemetry from Claude Code without additional instrumentation. Other supported coding agents include Codex and GitHub Copilot. As organizations scale AI coding agent adoption, they need to understand return on investment. Coding agent insights is built on OpenTelemetry metrics emitted by your coding agents and presents them alongside your existing ",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch announces the launch of coding agent insights, giving engineering leaders visibility into how AI coding tools are driving value across their organization. Coding Agent Insights integrates with &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/introducing-claude-apps-gateway-for-aws/\"&gt;Claude apps gateway for AWS&lt;/a&gt; to collect telemetry from Claude Code without additional instrumentation. Other supported coding agents include Codex and GitHub Copilot.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;As organizations scale AI coding agent adoption, they need to understand return on investment. Coding agent insights is built on OpenTelemetry metrics emitted by your coding agents and presents them alongside your existing CloudWatch operational data. This helps you answer questions like which teams would benefit from expanded access, where are agents accelerating delivery, and how can you right-size token budgets across departments. You can track spend trends, set proactive token billing alerts, correlate agent adoption with improvements in commit throughput and pull request velocity, or identify the models delivering the best cost-to-output ratio for your workloads.&lt;/p&gt; \n&lt;p&gt;CloudWatch coding agent insights is available in all AWS commercial regions except Middle East (UAE), Middle East (Bahrain), and Israel (Tel Aviv). Configure your Claude apps gateway to emit telemetry to CloudWatch using the &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/coding-agents-claude-code-gateway.html\"&gt;setup guide&lt;/a&gt; and view the Coding Agent Insights dashboard in the CloudWatch console. Standard CloudWatch OpenTelemetry metric ingestion pricing applies — see metrics&amp;nbsp;&lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;pricing&lt;/a&gt; for details. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/coding-agents-insights.html\"&gt;the documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/",
+      "publishedAt": "2026-07-20T09:51:00.000Z",
+      "updatedAt": "2026-07-20T09:51:00.000Z",
+      "categories": [],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c0399a3beb8f69f9",
+      "title": "Introducing KNFSD File Cache - Now in Preview",
+      "description": "Today, AWS announces the availability of KNFSD File Cache, an open-source, Apache-2.0 licensed solution for deploying a scalable, high-speed Network File System (NFS) cache on AWS. KNFSD File Cache mounts exports from one or more source NFS servers, whether on-premises, in another AWS Availability Zone or Region, or in another cloud over AWS Interconnect - multicloud, and re-exports them to NFS clients in AWS. You can front multiple on-premises filers, in-cloud file systems such as Amazon FSx for OpenZFS and Amazon FSx for NetApp ONTAP, and any other NFS v3, v4.1, or v4.2 compliant filer. Freq",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the availability of KNFSD File Cache, an open-source, Apache-2.0 licensed solution for deploying a scalable, high-speed Network File System (NFS) cache on AWS. KNFSD File Cache mounts exports from one or more source NFS servers, whether on-premises, in another AWS Availability Zone or Region, or in another cloud over AWS Interconnect - multicloud, and re-exports them to NFS clients in AWS. You can front multiple on-premises filers, in-cloud file systems such as Amazon FSx for OpenZFS and Amazon FSx for NetApp ONTAP, and any other NFS v3, v4.1, or v4.2 compliant filer. Frequently read data is cached in memory and on local NVMe storage, so files cross the high-latency link to the source once and are then served to large compute fleets at local VPC speed. The solution is designed for read-heavy burst compute workloads such as visual effects rendering, simulation, financial services, health and life sciences, microprocessor design, weather forecasting, and energy.&lt;/p&gt; \n&lt;p&gt;KNFSD File Cache builds on standard Linux kernel technology: nfs-kernel-server provides NFS re-export, and FS-Cache provides the persistent disk cache. Because it uses the native NFS stack, it fully supports the NFS client-server protocol, including byte-range reads and writes, synchronous and asynchronous writes, and both write-through and write-around modes. You build the cache Amazon Machine Image (AMI) with Packer, then deploy the cluster with the included Terraform module. Cache nodes run in an Amazon Elastic Compute Cloud (Amazon EC2) Auto Scaling group on AMD, Intel, or AWS Graviton instances, with client traffic distributed by DNS round-robin or a Network Load Balancer, and optional automatic scaling based on the number of active NFS client connections. An Amazon CloudWatch dashboard provides more than 70 metrics through an OpenTelemetry-based agent, which can also publish to third-party tools such as Prometheus and Grafana.&lt;/p&gt; \n&lt;p&gt;KNFSD File Cache (preview) is available in all AWS Regions. There are no licensing costs; you pay only for the AWS resources you consume.&lt;/p&gt; \n&lt;p&gt;To get started, visit the KNFSD File Cache GitHub &lt;a href=\"https://github.com/awslabs/knfsd-file-cache\"&gt;repository&lt;/a&gt;, launch &lt;a href=\"https://aws.amazon.com/blogs/media/introducing-knfsd-file-cache-extending-your-nfs-storage-into-the-cloud/\"&gt;blog&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/solutions/knfsd-file-cache-on-aws\"&gt;AWS Solutions Guidance&lt;/a&gt;. For detailed deployment and configuration guidance, see the GitHub &lt;a href=\"https://github.com/awslabs/knfsd-file-cache/blob/main/docs/index.md\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/knfsd-file-cache/",
+      "publishedAt": "2026-07-20T08:00:00.000Z",
+      "updatedAt": "2026-07-20T08:00:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
     {
       "id": "a48a59efd1a555b5",
       "title": "Amazon GameLift Streams now supports IAM role credentials for stream sessions",
@@ -60,6 +270,28 @@
         "artificial intelligence",
         "compute",
         "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f3eec9f9a4357994",
+      "title": "Amazon CloudWatch Synthetics now supports customer managed encryption keys",
+      "description": "Amazon CloudWatch Synthetics now supports customer managed AWS Key Management Service (KMS) keys for encrypting canary environment variables, giving you full control over the encryption of sensitive configuration data such as API keys, credentials, and tokens. Previously, environment variables were encrypted at rest using only an AWS owned key. Now, in addition to the default AWS owned key, you can specify your own symmetric KMS key for encryption at rest, and you can also encrypt individual values client-side before they are stored. With encryption at rest, you specify a customer managed KMS ",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch Synthetics now supports customer managed AWS Key Management Service (KMS) keys for encrypting canary environment variables, giving you full control over the encryption of sensitive configuration data such as API keys, credentials, and tokens. Previously, environment variables were encrypted at rest using only an AWS owned key. Now, in addition to the default AWS owned key, you can specify your own symmetric KMS key for encryption at rest, and you can also encrypt individual values client-side before they are stored.&lt;/p&gt; \n&lt;p&gt;With encryption at rest, you specify a customer managed KMS key when creating or updating a canary, and CloudWatch Synthetics uses a grant on the key to handle encryption and decryption transparently. With client-side encryption, you encrypt values before storage, and your canary script decrypts them at runtime using the AWS KMS Decrypt API. This benefits teams in regulated industries that require organizational key management policies, auditability, or key rotation controls across all services.&lt;/p&gt; \n&lt;p&gt;Amazon CloudWatch Synthetics customer managed key encryption is available in all commercial AWS Regions. Multi-location canaries can use a different KMS key per replica Region.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_CommonFeatures.html#CloudWatch_Synthetics_function_encryption\"&gt;Encrypting environment variables&lt;/a&gt; in the Amazon CloudWatch User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/synthetics-customer-managed-keys/",
+      "publishedAt": "2026-07-16T20:34:00.000Z",
+      "updatedAt": "2026-07-16T20:34:00.000Z",
+      "categories": [
+        "Amazon Cloudwatch",
+        "Management And Governance"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "amazon cloudwatch",
+        "management and governance",
+        "cloudwatch"
       ],
       "isNew": true
     },
@@ -940,7 +1172,7 @@
         "networking and content delivery",
         "cloudfront"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2a1fe5452ef5fd6a",
@@ -957,7 +1189,7 @@
       "tags": [
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1c724f1e6ce5d420",
@@ -974,7 +1206,7 @@
       "tags": [
         "management and governance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1b4cdb23e379d548",
@@ -996,7 +1228,7 @@
         "databases",
         "documentdb"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c85d1167cb6cfdc7",
@@ -1018,7 +1250,7 @@
         "amazon documentdb",
         "documentdb"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e35be4bb933d49ad",
@@ -1044,7 +1276,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a861c82bed0da7ba",
@@ -1070,7 +1302,7 @@
         "aiml",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f45b35d5a2a3caea",
@@ -1096,7 +1328,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e360a7032a8d70bd",
@@ -1122,7 +1354,7 @@
         "artificial intelligence",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b10ad2c48805ef5e",
@@ -1150,7 +1382,7 @@
         "s3",
         "redshift"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b14de779fff02a64",
@@ -1172,7 +1404,7 @@
         "artificial intelligence",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9f4d4b6bd7c7b581",
@@ -10844,252 +11076,6 @@
         "artificial intelligence",
         "amazon bedrock",
         "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "e1fe90b45f8eca60",
-      "title": "Announcing general availability of Amazon EC2 M3 Ultra Mac instances",
-      "description": "Amazon Web Services announces general availability of Amazon EC2 M3 Ultra Mac instances, powered by the latest Mac Studio hardware. Amazon EC2 M3 Ultra Mac instances are the next-generation EC2 Mac instances, that enable Apple developers to migrate their most demanding build and test workloads onto AWS. These instances are ideal for building and testing applications for Apple platforms such as iOS, macOS, iPadOS, tvOS, watchOS, visionOS, and Safari. M3 Ultra Mac instances are powered by the AWS Nitro System, providing up to 10 Gbps network bandwidth and 8 Gbps of Amazon Elastic Block Store (Am",
-      "descriptionHtml": "&lt;p&gt;Amazon Web Services announces general availability of Amazon EC2 M3&amp;nbsp;Ultra&amp;nbsp;Mac instances, powered by the latest Mac Studio hardware. Amazon EC2 M3 Ultra Mac instances are the next-generation EC2 Mac instances, that enable Apple developers to migrate their most demanding build and test workloads onto AWS. These instances are ideal for building and testing applications for Apple platforms such as iOS, macOS, iPadOS, tvOS, watchOS,&amp;nbsp;visionOS, and Safari.&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; M3 Ultra Mac instances are powered by the AWS Nitro System, providing up to 10 Gbps network bandwidth and 8 Gbps of Amazon Elastic Block Store (Amazon EBS) storage bandwidth. These instances are built on Apple M3 Ultra Mac Studio computers featuring a 28-core CPU, 60-core GPU, 32-core Neural Engine, and 256GB of unified memory.&amp;nbsp;Compared to EC2 M4 Max Mac instances, M3 Ultra Mac instances provide&amp;nbsp;2x the unified memory, 1.75x the CPU cores, 1.5x the GPU cores, and 2x the Neural Engine cores, giving Apple developers the headroom to run significantly more Xcode simulators in parallel&amp;nbsp;and accelerate on-device ML workflows&amp;nbsp;to improve product time to market.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Amazon EC2 M3 Ultra Mac instances are available in US East (N. Virginia) and US West (Oregon). To learn more about Amazon EC2 M3 Ultra Mac&amp;nbsp;instances, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/mac/\" target=\"_blank\"&gt;Amazon EC2 Mac page.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-m3-ultra-mac-instances-generally-available/",
-      "publishedAt": "2026-05-14T21:23:00.000Z",
-      "updatedAt": "2026-05-14T21:23:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ef5f6d4b4ebfcbd6",
-      "title": "Amazon EC2 High Memory U7i instances now available in AWS Europe (Paris) region",
-      "description": "Amazon EC2 High Memory U7i-12TB instances (u7i-12tb.224xlarge) and U7in-16TB instances (u7in-16tb.224xlarge) are now available in the AWS Europe (Paris) region. U7i instances are part of the AWS 7th generation and are powered by custom fourth-generation Intel Xeon Scalable processors (Sapphire Rapids). U7i instances offer up to 45% better price performance over existing U-1 instances. U7i-12TB instances offer 12 TiB of DDR5 memory, U7in-16TB instances offer 16 TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment. U7i-12TB instance",
-      "descriptionHtml": "&lt;p&gt;Amazon EC2 High Memory U7i-12TB instances (u7i-12tb.224xlarge) and U7in-16TB instances (u7in-16tb.224xlarge) are now available in the AWS Europe (Paris) region. U7i instances are part of the AWS 7th generation and are powered by custom fourth-generation Intel Xeon Scalable processors (Sapphire Rapids).&amp;nbsp;U7i instances offer up to 45% better price performance over existing U-1 instances.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;U7i-12TB instances offer 12 TiB of DDR5 memory, U7in-16TB instances offer 16 TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment. U7i-12TB instances deliver 896 vCPUs and support up to 100 Gbps of Amazon EBS bandwidth, 100 Gbps of network bandwidth, and ENA Express. U7in-16TB instances deliver 896 vCPUs and support up to 100 Gbps of Amazon EBS bandwidth for faster data loading and backups, 200 Gbps of network bandwidth, and ENA Express. U7i instances are ideal for customers running mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.&lt;/p&gt; \n&lt;p&gt;To learn more about U7i instances, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/u7i/\"&gt;High Memory instances page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-u7i-aws-europe-paris/",
-      "publishedAt": "2026-05-14T20:00:00.000Z",
-      "updatedAt": "2026-05-14T20:00:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "55e5d491c1970d58",
-      "title": "SageMaker AI now supports serverless model customization for Qwen3.6",
-      "description": "Amazon SageMaker AI now supports serverless model customization for Qwen3.6 27B parameter model using supervised fine-tuning (SFT) and reinforcement fine-tuning (RFT). Qwen3.6 is a popular open-weight model family from Alibaba Cloud. This launch is an addition to our support for fine-tuning Qwen3.5 and other popular models. Before this launch, you could deploy Qwen3.6 base model on SageMaker AI and now, you can also adapt it to your specific domains and workflows. Model customization enables you to tailor foundation models with your proprietary data so they more accurately reflect your domain ",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker AI now supports serverless model customization for Qwen3.6 27B parameter model using supervised fine-tuning (SFT) and reinforcement fine-tuning (RFT). Qwen3.6 is a popular open-weight model family from Alibaba Cloud. This launch is an addition to our support for fine-tuning Qwen3.5 and other popular models. Before this launch, you could deploy Qwen3.6 base model on SageMaker AI and now, you can also adapt it to your specific domains and workflows.&lt;br&gt; &lt;br&gt; Model customization enables you to tailor foundation models with your proprietary data so they more accurately reflect your domain knowledge, terminology, and quality standards. Rather than building models from scratch, fine-tuning lets you start from a capable base model and specialize it for your use cases, whether that's improving accuracy on domain-specific tasks, aligning outputs with your organization's tone, or improving performance on new tasks using your labeled data. With serverless customization, SageMaker AI handles all infrastructure provisioning and training orchestration, so you can focus on your data and evaluation rather than cluster management, and only pay for what you use.&lt;br&gt; &lt;br&gt; Serverless model customization for Qwen3.6 on SageMaker AI is available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and EU (Ireland). To get started, navigate to the Models page in Amazon SageMaker Studio to launch a customization job, or use the &lt;a href=\"https://sagemaker.readthedocs.io/en/stable/model_customization/index.html\"&gt;SageMaker Python SDK&lt;/a&gt; for programmatic access. To learn more, see the Amazon SageMaker AI &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/customize-model.html\"&gt;model customization documentation.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-sagemaker-ft-qwen3-6/",
-      "publishedAt": "2026-05-14T19:18:00.000Z",
-      "updatedAt": "2026-05-14T19:18:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "2f39042d6398c049",
-      "title": "AWS Transform agents now available in Kiro, Claude, Cursor, and Codex",
-      "description": "Today, AWS announces that the AWS Transform agents — built on decades of AWS migration and modernization experience — are now accessible through a Kiro power, agent plugins, and via the AWS Transform MCP server. Developers can now consume all of AWS Transform's capabilities directly from their preferred development environment, whether working interactively in an agentic IDE, managing jobs through the web console, or integrating programmatically via MCP. This launch gives builders flexibility to choose the surface that fits their workflow while gaining the depth of transformation expertise beh",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces that the AWS Transform agents — built on decades of AWS migration and modernization experience — are now accessible through a Kiro power, agent plugins, and via the AWS Transform MCP server. Developers can now consume all of AWS Transform's capabilities directly from their preferred development environment, whether working interactively in an agentic IDE, managing jobs through the web console, or integrating programmatically via MCP.&lt;/p&gt; \n&lt;p&gt;This launch gives builders flexibility to choose the surface that fits their workflow while gaining the depth of transformation expertise behind the AWS Transform agents for Windows, VMware, mainframe and more. A developer can start a transformation in their agentic IDE, monitor progress and collaborate in the web console, then see results back in their IDE — all against the same underlying job with consistent state. Additionally, AWS Transform now supports IAM role authentication. Customers who start using AWS Transform in their IDE or the web app can use their existing AWS credentials to create a Transform environment, workspace, and transformation job.&lt;/p&gt; \n&lt;p&gt;The &lt;a href=\"https://github.com/awslabs/agent-plugins/tree/main/plugins/aws-transform/\"&gt;agent plugin&lt;/a&gt; and &lt;a href=\"https://github.com/awslabs/mcp/tree/main/src/aws-transform-mcp-server\"&gt;MCP&lt;/a&gt; are available on GitHub, and the Kiro Power within the Kiro marketplace. To learn more, see https://aws.amazon.com/transform.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/aws-transform-developer-tools/",
-      "publishedAt": "2026-05-14T19:00:00.000Z",
-      "updatedAt": "2026-05-14T19:00:00.000Z",
-      "categories": [
-        "Migration",
-        "Developer Tools"
-      ],
-      "services": [
-        "Claude"
-      ],
-      "tags": [
-        "migration",
-        "developer tools",
-        "claude"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "4cf0b99e646070cc",
-      "title": "AWS Transform introduces the agent builder toolkit Kiro power for building customized transformation agents",
-      "description": "Today, as part of the AWS Transform composability initiative , AWS announces the general availability of the agent builder toolkit Kiro power for AWS Transform. With the agent builder toolkit, AWS Partners and customers can build agents tailored to their specific modernization needs and ensure it works seamlessly within AWS Transform. This capability enables Migration and Modernization Competency Partners, ISVs, or customers to create differentiated transformation solutions by integrating their specialized agents, tools, knowledge bases, and workflows with AWS Transform's agentic AI capabiliti",
-      "descriptionHtml": "&lt;p&gt;Today, as part of the &lt;a href=\"https://aws.amazon.com/transform/partners/\"&gt;AWS Transform composability initiative&lt;/a&gt;, AWS announces the general availability of the agent builder toolkit Kiro power for AWS Transform. With the agent builder toolkit, AWS Partners and customers can build agents tailored to their specific modernization needs and ensure it works seamlessly within AWS Transform.&lt;/p&gt; \n&lt;p&gt;This capability enables Migration and Modernization Competency Partners, ISVs, or customers to create differentiated transformation solutions by integrating their specialized agents, tools, knowledge bases, and workflows with AWS Transform's agentic AI capabilities. The agent builder toolkit provides the end-to-end lifecycle for transformation agents: build agents using the Kiro power; share them with teams or across partner networks, and register them with AWS Transform for discovery.&lt;br&gt; &lt;br&gt; The agent builder toolkit for AWS Transform is available in the Kiro power marketplace. To learn more, see AWS Transform (https://aws.amazon.com/transform).&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-transform-agent-builder-toolkit/",
-      "publishedAt": "2026-05-14T19:00:00.000Z",
-      "updatedAt": "2026-05-14T19:00:00.000Z",
-      "categories": [
-        "Migration",
-        "Developer Tools",
-        "Artificial Intelligence"
-      ],
-      "services": [],
-      "tags": [
-        "migration",
-        "developer tools",
-        "artificial intelligence"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "57bc9ec89dc77278",
-      "title": "AWS Transform now supports customer-owned artifact stores",
-      "description": "AWS Transform brings assessment, migration, and modernization into a single AI-powered experience that guides enterprises through their full transformation journey. Today, AWS announces support for customer-owned Amazon S3 buckets, giving customers full control over where their transformation artifacts are stored and how they are secured. With this launch, you can configure your own S3 bucket, optionally encrypt artifacts with your own AWS KMS key, and manage access policies through your own AWS account. Migration practitioners can upload files directly to their bucket for immediate use by tra",
-      "descriptionHtml": "&lt;p&gt;AWS Transform brings assessment, migration, and modernization into a single AI-powered experience that guides enterprises through their full transformation journey. Today, AWS announces support for customer-owned Amazon S3 buckets, giving customers full control over where their transformation artifacts are stored and how they are secured.&lt;/p&gt; \n&lt;p&gt;With this launch, you can configure your own S3 bucket, optionally encrypt artifacts with your own AWS KMS key, and manage access policies through your own AWS account. Migration practitioners can upload files directly to their bucket for immediate use by transformation agents and centralize artifact storage across multiple AWS accounts. This is designed to help enterprises in regulated industries meet data sovereignty and compliance requirements without changing how they use AWS Transform.&lt;/p&gt; \n&lt;p&gt;This capability is available in all AWS Regions where AWS Transform is offered. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/custom-s3-bucket.html\"&gt;AWS Transform User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-transform-customer-owned-artifact/",
-      "publishedAt": "2026-05-14T19:00:00.000Z",
-      "updatedAt": "2026-05-14T19:00:00.000Z",
-      "categories": [
-        "Migration",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "Artifact"
-      ],
-      "tags": [
-        "migration",
-        "artificial intelligence",
-        "artifact"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "40302c0232c6c66b",
-      "title": "New models for image generation and text embeddings are now available in Amazon SageMaker JumpStart",
-      "description": "Today, AWS announced the availability of FLUX.2-klein-base-4B and Qwen3-Embedding-0.6B in Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These models from Black Forest Labs and Qwen bring state-of-the-art image generation and multilingual text embedding capabilities, enabling customers to build creative AI applications and intelligent search systems on AWS infrastructure. These models address different enterprise AI challenges with specialized capabilities: FLUX.2-klein-base-4B excels at real-time image generation and multi-reference editin",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announced the availability of FLUX.2-klein-base-4B and Qwen3-Embedding-0.6B in Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These models from Black Forest Labs and Qwen bring state-of-the-art image generation and multilingual text embedding capabilities, enabling customers to build creative AI applications and intelligent search systems on AWS infrastructure.&lt;/p&gt; \n&lt;p&gt;These models address different enterprise AI challenges with specialized capabilities:&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;FLUX.2-klein-base-4B&lt;/b&gt;&amp;nbsp;excels at real-time image generation and multi-reference editing in a compact architecture, delivering state-of-the-art quality that runs on consumer hardware with as little as 13GB VRAM. It is ideal for creative content pipelines, product visualization, rapid prototyping, and applications that require high-quality image synthesis without sacrificing speed.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Qwen3-Embedding-0.6B&lt;/b&gt;&amp;nbsp;excels at text embedding for retrieval, classification, clustering, and bitext mining across 100+ languages, with flexible output dimensions and instruction-aware embeddings. It is ideal for building semantic search systems, RAG pipelines, multilingual document retrieval, and applications that require efficient, high-quality text representations at scale.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt; \n&lt;p&gt;To get started with these models, navigate to the Models section of SageMaker Studio or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;&lt;/a&gt;&lt;a&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/image-embeddings-models-on-sagemaker-jumpstart/",
-      "publishedAt": "2026-05-14T18:00:00.000Z",
-      "updatedAt": "2026-05-14T18:00:00.000Z",
-      "categories": [
-        "Aiml",
-        "Amazon Sagemaker",
-        "Amazon Sagemaker Jumpstart",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "aiml",
-        "amazon sagemaker",
-        "amazon sagemaker jumpstart",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5a8e982ef29d1241",
-      "title": "ARC Region switch adds Lambda event source mapping execution block for event handling during failover",
-      "description": "Amazon Application Recovery Controller (ARC) Region Switch helps customers orchestrate the failover of their multi-Region applications to achieve a bounded recovery time in the event of a Regional impairment. Today, we are announcing the Lambda event source mapping execution block, which automates the coordinated failover of event streams for multi-Region workloads. Customers running event-driven architectures use Lambda functions with event source mappings to process event streams from Kinesis, DynamoDB Streams, MSK, or SQS. For active-passive workloads, customers may maintain Lambda function",
-      "descriptionHtml": "&lt;p&gt;Amazon Application Recovery Controller (ARC) Region Switch helps customers orchestrate the failover of their multi-Region applications to achieve a bounded recovery time in the event of a Regional impairment. Today, we are announcing the Lambda event source mapping execution block, which automates the coordinated failover of event streams for multi-Region workloads.&lt;br&gt; &lt;br&gt; Customers running event-driven architectures use Lambda functions with event source mappings to process event streams from Kinesis, DynamoDB Streams, MSK, or SQS. For active-passive workloads, customers may maintain Lambda functions in each Region but process events in only one Region at a time. These event source mappings must be toggled during failover to avoid duplicate processing—a manual, error-prone step. The Lambda event source mapping execution block automates this by enabling or disabling event source mappings in either the activating or deactivating Region. To control duplicate processing, customers can configure two Lambda event source mapping execution blocks&lt;b&gt; &lt;/b&gt;in sequence: a disable block to stop event processing in the deactivating Region, and an enable block to start it in the activating Region. The disable block can be overridden by running the plan in \"ungraceful\" mode for unplanned failovers where the deactivating Region may be impaired. Native cross-account support enables a single plan to handle event stream failover across multiple accounts.&lt;br&gt; &lt;br&gt; To get started, see the Lambda event source mapping execution block&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/r53recovery/latest/dg/lambda-event-source-mapping-block.html\"&gt;documentation&lt;/a&gt;.&amp;nbsp;ARC Region switch is available in all commercial Regions. See&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/r53recovery/latest/dg/aws-regions-rs.html\"&gt;ARC Region switch availability&lt;/a&gt;&lt;br&gt; &lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/region-switch-lambda-esm-execution-block/",
-      "publishedAt": "2026-05-14T18:00:00.000Z",
-      "updatedAt": "2026-05-14T18:00:00.000Z",
-      "categories": [],
-      "services": [
-        "Lambda"
-      ],
-      "tags": [
-        "lambda"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "cdef36449f043904",
-      "title": "Amazon Aurora DSQL now supports change data capture (Preview)",
-      "description": "Amazon Aurora DSQL introduces support for change data capture (CDC) in preview, enabling you to stream real-time database changes directly to Amazon Kinesis Data Streams. This fully managed capability removes the need to build or maintain custom streaming pipelines, making it easier to build event-driven applications, power real-time analytics pipelines, and synchronize data across systems. Aurora DSQL automatically captures the result of insert, update, and delete operations as change events. You can use these events to synchronize data across microservices, trigger downstream processing with",
-      "descriptionHtml": "&lt;p&gt;Amazon Aurora DSQL introduces support for change data capture (CDC) in preview, enabling you to stream real-time database changes directly to Amazon Kinesis Data Streams. This fully managed capability removes the need to build or maintain custom streaming pipelines, making it easier to build event-driven applications, power real-time analytics pipelines, and synchronize data across systems.&lt;br&gt; &lt;br&gt; Aurora DSQL automatically captures the result of insert, update, and delete operations as change events. You can use these events to synchronize data across microservices, trigger downstream processing with AWS Lambda, or deliver to Amazon S3, Amazon Redshift, and Amazon OpenSearch Service through Amazon Data Firehose for analytics. CDC streaming requires no infrastructure setup and is designed to have zero impact on your database workload, so you can stream changes without affecting database throughput or latency.&lt;br&gt; &lt;br&gt; CDC streaming in preview is available in all AWS Regions where Aurora DSQL is available. Streams are billed using Distributed Processing Units (DPUs) based on the volume of data captured, with standard Amazon Kinesis Data Streams pricing applying separately.&amp;nbsp;To learn more, read the &lt;a href=\"https://aws.amazon.com/blogs/database/getting-started-with-change-data-capture-in-amazon-aurora-dsql/\"&gt;blog&lt;/a&gt; and see&lt;a href=\"https://docs.aws.amazon.com/aurora-dsql/latest/userguide/cdc-setup.html\"&gt; getting started&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-aurora-dsql-change-data-capture-preview/",
-      "publishedAt": "2026-05-14T18:00:00.000Z",
-      "updatedAt": "2026-05-14T18:00:00.000Z",
-      "categories": [
-        "Databases"
-      ],
-      "services": [
-        "Aurora"
-      ],
-      "tags": [
-        "databases",
-        "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "328c47f8d26d2863",
-      "title": "Three new models for speech recognition and text-to-speech are now available in Amazon SageMaker JumpStart",
-      "description": "Today, AWS announced the availability of Qwen3-TTS-12Hz-1.7B-CustomVoice, Qwen3-TTS-12Hz-1.7B-Base, and Qwen3-ASR-1.7B in Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three models from Qwen bring advanced speech synthesis and recognition capabilities across 10+ languages, enabling customers to build intelligent voice-powered applications on AWS infrastructure. These models address different enterprise speech and audio challenges with specialized capabilities: Qwen3-TTS-12Hz-1.7B-CustomVoice excels at multilingual text-to-speech with",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announced the availability of Qwen3-TTS-12Hz-1.7B-CustomVoice, Qwen3-TTS-12Hz-1.7B-Base, and Qwen3-ASR-1.7B in Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three models from Qwen bring advanced speech synthesis and recognition capabilities across 10+ languages, enabling customers to build intelligent voice-powered applications on AWS infrastructure.&lt;/p&gt; \n&lt;p&gt;These models address different enterprise speech and audio challenges with specialized capabilities:&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Qwen3-TTS-12Hz-1.7B-CustomVoice&lt;/b&gt; excels at multilingual text-to-speech with customizable voice styles, supporting 10 languages with instruction-driven control over timbre, emotion, and prosody. It is ideal for building real-time interactive voice applications, customer-facing virtual assistants, and content creation workflows that require natural, expressive speech output.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Qwen3-TTS-12Hz-1.7B-Base&lt;/b&gt; excels at multilingual text-to-speech with 3-second rapid voice cloning from audio input. It is ideal for building custom voice applications, fine-tuning domain-specific speech synthesis, and scenarios where developers need a flexible foundation model for voice generation.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Qwen3-ASR-1.7B&lt;/b&gt; excels at automatic speech recognition supporting 52 languages and dialects with state-of-the-art accuracy in complex acoustic environments. It is ideal for transcription services, multilingual customer support, real-time captioning, and applications that require robust streaming and offline speech-to-text.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt; \n&lt;p&gt;To get started with these models, navigate to the Models section of SageMaker Studio or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;&lt;/a&gt;&lt;a data-agent-id=\"35\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/speech-models-on-sagemaker-jumpstart/",
-      "publishedAt": "2026-05-14T18:00:00.000Z",
-      "updatedAt": "2026-05-14T18:00:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Aiml",
-        "Amazon Sagemaker Jumpstart",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "aiml",
-        "amazon sagemaker jumpstart",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a7e76729a927a100",
-      "title": "Two new models for agentic coding and efficient AI are now available in Amazon SageMaker JumpStart",
-      "description": "Today, AWS announced the availability of GLM-5.1-FP8 and Phi-4-mini-instruct in Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These models from Z.ai and Microsoft bring advanced agentic capabilities and efficient inference to enterprise AI workloads on AWS infrastructure. These models address different enterprise AI challenges with specialized capabilities: GLM-5.1-FP8 excels at agentic software engineering with sustained multi-round optimization, handling repository-level code generation, terminal tasks, and complex debugging workflows th",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announced the availability of GLM-5.1-FP8 and Phi-4-mini-instruct in Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These models from Z.ai and Microsoft bring advanced agentic capabilities and efficient inference to enterprise AI workloads on AWS infrastructure.&lt;/p&gt; \n&lt;p&gt;These models address different enterprise AI challenges with specialized capabilities:&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;GLM-5.1-FP8&lt;/b&gt; excels at agentic software engineering with sustained multi-round optimization, handling repository-level code generation, terminal tasks, and complex debugging workflows that improve with extended reasoning. It is ideal for automated code review pipelines, AI-powered development environments, and long-horizon problem-solving where the model iterates over hundreds of rounds to refine solutions.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Phi-4-mini-instruct&lt;/b&gt; excels at strong reasoning, math, and logic in memory-constrained and latency-bound environments, supporting 24 languages and function calling in a compact form factor. It is ideal for edge deployment, latency-sensitive applications, multilingual chatbots, and scenarios where customers need capable reasoning with minimal resource overhead.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt; \n&lt;p&gt;To get started with these models, navigate to the Models section of SageMaker Studio or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;&lt;/a&gt;&lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;&lt;/a&gt;&lt;a data-agent-id=\"35\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/agentic-reasoning-models-on-sagemaker-jumpstart/",
-      "publishedAt": "2026-05-14T18:00:00.000Z",
-      "updatedAt": "2026-05-14T18:00:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Aiml",
-        "Artificial Intelligence",
-        "Amazon Sagemaker Jumpstart"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "aiml",
-        "artificial intelligence",
-        "amazon sagemaker jumpstart",
-        "sagemaker"
       ],
       "isNew": false
     }
