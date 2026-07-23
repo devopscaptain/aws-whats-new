@@ -1,7 +1,274 @@
 {
-  "lastUpdated": "2026-07-22T08:56:32.758Z",
+  "lastUpdated": "2026-07-23T08:56:46.994Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "97fa876ccfb4bcba",
+      "title": "Amazon EC2 C7a instances are now available in the US West (N. California) Region",
+      "description": "Starting today, the compute optimized Amazon EC2 C7a instances are now available in AWS US West (N. California) Region. C7a instances, powered by 4th Gen AMD EPYC processors (code-named Genoa) with a maximum frequency of 3.7 GHz, deliver up to 50% higher performance compared to C6a instances. C7a instances offer new processor capabilities such as AVX-512, VNNI, and bfloat16. They feature Double Data Rate 5 (DDR5) memory to enable high-speed access to data in memory and 2.25x more memory bandwidth compared to C6a instances, making these instances ideal for even latency sensitive workloads. C7a ",
+      "descriptionHtml": "&lt;p&gt;Starting today, the compute optimized Amazon EC2 C7a instances are now available in AWS US West (N. California) Region. C7a instances, powered by 4th Gen AMD EPYC processors (code-named Genoa) with a maximum frequency of 3.7 GHz, deliver up to 50% higher performance compared to C6a instances.&lt;br&gt; &lt;br&gt; C7a instances offer new processor capabilities such as AVX-512, VNNI, and bfloat16. They feature Double Data Rate 5 (DDR5) memory to enable high-speed access to data in memory and 2.25x more memory bandwidth compared to C6a instances, making these instances ideal for even latency sensitive workloads. C7a instances offer 12 sizes from medium to 48xlarge, including a bare-metal size. And with the launch of C7a instances, customers can attach up to 128 EBS volumes to an EC2 instance — by comparison, C6a instances allow up to 28 EBS volume attachments to an EC2 instance. These instances are built on the AWS Nitro System and ideal for high performance, compute-intensive workloads such as batch processing, distributed analytics, high performance computing (HPC), ad serving, highly-scalable multiplayer gaming, and video encoding.&lt;br&gt; &lt;br&gt; C7a instances are available through On-Demand, Spot Instances, and Savings Plans. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface (CLI)&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html\"&gt;AWS SDKs&lt;/a&gt;. To learn more, see &lt;a href=\"https://aws.amazon.com/ec2/instance-types/c7a/\"&gt;C7a instances&lt;/a&gt;.&lt;br&gt; &lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-c7a-instances-us-west-ncalifornia-region/",
+      "publishedAt": "2026-07-22T21:42:00.000Z",
+      "updatedAt": "2026-07-22T21:42:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f168b3b537b90c7d",
+      "title": "Amazon EC2 M8a instances now available in the Asia Pacific (Hyderabad) region",
+      "description": "Starting today, the general-purpose Amazon EC2 M8a instances are available in AWS Asia Pacific (Hyderabad) region. M8a instances are powered by 5th Gen AMD EPYC processors (formerly code named Turin) with a maximum frequency of 4.5 GHz, deliver up to 30% higher performance, and up to 19% better price-performance compared to M7a instances. M8a instances deliver 45% more memory bandwidth compared to M7a instances, making these instances ideal for even latency sensitive workloads. M8a instances deliver even higher performance gains for specific workloads. M8a instances are up to 60% faster for Gr",
+      "descriptionHtml": "&lt;p&gt;Starting today, the general-purpose Amazon EC2 M8a instances are available in AWS Asia Pacific (Hyderabad) region. M8a instances are powered by 5th Gen AMD EPYC processors (formerly code named Turin) with a maximum frequency of 4.5 GHz, deliver up to 30% higher performance, and up to 19% better price-performance compared to M7a instances.&lt;br&gt; &lt;br&gt; M8a instances deliver 45% more memory bandwidth compared to M7a instances, making these instances ideal for even latency sensitive workloads. M8a instances deliver even higher performance gains for specific workloads. M8a instances are up to 60% faster for GroovyJVM benchmark, and up to 39% faster for Cassandra benchmark compared to Amazon EC2 M7a instances. M8a instances are SAP-certified and offer 12 sizes including 2 bare metal sizes. This range of instance sizes allows customers to precisely match their workload requirements.&lt;br&gt; &lt;br&gt; M8a instances are built using the latest sixth generation &lt;a href=\"https://aws.amazon.com/ec2/nitro/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Nitro Cards&lt;/a&gt; and ideal for applications that benefit from high performance and high throughput such as financial applications, gaming, rendering, application servers, simulation modeling, mid-size data stores, application development environments, and caching fleets.&lt;br&gt; &lt;br&gt; To get started, sign in to the AWS Management Console. Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information visit the Amazon EC2 &lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8a\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;M8a instance page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-m8a-instances-asia-pacific-hyderabad-region/",
+      "publishedAt": "2026-07-22T20:55:00.000Z",
+      "updatedAt": "2026-07-22T20:55:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "17159397d18f196a",
+      "title": "AWS Network Load Balancer now supports Listener Rules for custom traffic routing",
+      "description": "Network Load Balancer (NLB) now supports listener rules allowing you to route connections to different target groups based on the source IP address type. With listener rules, a single dual-stack NLB sends IPv6 client traffic to IPv6 targets and IPv4 client traffic to IPv4 targets, preserving the original client IP address end to end for both address families. Previously, serving both IPv4 and IPv6 clients from one NLB meant accepting a tradeoff: either run two separate load balancers (one per IP version) and split clients with DNS, or send all traffic to one target group and lose the original ",
+      "descriptionHtml": "&lt;p&gt;Network Load Balancer (NLB) now supports listener rules allowing you to route connections to different target groups based on the source IP address type. With listener rules, a single dual-stack NLB sends IPv6 client traffic to IPv6 targets and IPv4 client traffic to IPv4 targets, preserving the original client IP address end to end for both address families.&lt;br&gt; &lt;br&gt; Previously, serving both IPv4 and IPv6 clients from one NLB meant accepting a tradeoff: either run two separate load balancers (one per IP version) and split clients with DNS, or send all traffic to one target group and lose the original client IP through protocol translation. Listener rules remove that tradeoff by enabling conditional routing at Layer 3, directing each connection to a same-family target group with no translation and no additional infrastructure.&lt;br&gt; &lt;br&gt; You can add listener rules to existing dual-stack NLBs without recreating them. Rules are supported on TCP, UDP, TCP_UDP, and TLS listeners and work alongside existing NLB features including connection draining, target group stickiness, cross-zone load balancing, weighted target groups, and client IP preservation.&lt;br&gt; &lt;br&gt; Listener rules for Network Load Balancer are available in all AWS commercial Regions and the AWS GovCloud (US) Regions at no additional charge. Standard NLB pricing for load balancer hours and LCUs applies. To get started, see &lt;a href=\"https://aws.amazon.com/blogs/networking-and-content-delivery/consolidate-dual-stack-architectures-with-listener-rules-for-network-load-balancer/\"&gt;this AWS blog&lt;/a&gt;, and the &lt;a href=\"https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html\"&gt;Network Load Balancer User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-network-load-balancer-supports-listener-rules/",
+      "publishedAt": "2026-07-22T19:13:00.000Z",
+      "updatedAt": "2026-07-22T19:13:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "Amazon Elastic Load Balancing"
+      ],
+      "services": [],
+      "tags": [
+        "networking and content delivery",
+        "amazon elastic load balancing"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8f00bf335dc2b3c5",
+      "title": "AWS Entity Resolution now supports advanced real-time matching",
+      "description": "AWS Entity Resolution now supports real-time matching with advanced matching workflows, enabling customers to match records in milliseconds using complex rulesets through the GenerateMatchId API. Previously, real-time matching was limited to simple rule-based workflows, while advanced rulesets—which support operators like Exact and ExactManyToMany combined with AND/OR logic—could only be used for batch processing that took minutes to hours. This created a critical gap for customers needing real-time entity resolution with sophisticated matching logic. With this launch, customers performing fra",
+      "descriptionHtml": "&lt;p&gt;AWS Entity Resolution now supports real-time matching with advanced matching workflows, enabling customers to match records in milliseconds using complex rulesets through the GenerateMatchId API. Previously, real-time matching was limited to simple rule-based workflows, while advanced rulesets—which support operators like Exact and ExactManyToMany combined with AND/OR logic—could only be used for batch processing that took minutes to hours. This created a critical gap for customers needing real-time entity resolution with sophisticated matching logic.&lt;/p&gt; \n&lt;p&gt;With this launch, customers performing fraud detection, real-time account lookup, or website personalization can define advanced matching rules and get results in real-time without maintaining separate matching infrastructure or re-architecting applications. To enable advanced real-time matching, customers set the enableRealTimeMatching parameter to true on their matching workflow, then call the existing GenerateMatchId API—no new endpoints or migration required.&lt;/p&gt; \n&lt;p&gt;Advanced real-time matching is available in all &lt;a href=\"https://aws.amazon.com/entity-resolution/faqs/\"&gt;AWS Regions&lt;/a&gt; where AWS Entity Resolution is available.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To get started, see &lt;a href=\"https://docs.aws.amazon.com/entityresolution/latest/userguide/generate-match-id.html\"&gt;Using GenerateMatchId&lt;/a&gt; in the AWS Entity Resolution User Guide.&amp;nbsp;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;For more information about AWS Entity Resolution, visit the &lt;a href=\"https://aws.amazon.com/entity-resolution/\"&gt;product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-entity-resolution/",
+      "publishedAt": "2026-07-22T19:00:00.000Z",
+      "updatedAt": "2026-07-22T19:00:00.000Z",
+      "categories": [
+        "AWS Entity Resolution",
+        "Databases",
+        "Business Productivity",
+        "Contact Center"
+      ],
+      "services": [
+        "Entity Resolution"
+      ],
+      "tags": [
+        "aws entity resolution",
+        "databases",
+        "business productivity",
+        "contact center",
+        "entity resolution"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "96ab3a694ed0f582",
+      "title": "AWS Lambda durable functions now supports customer managed key encryption",
+      "description": "AWS Lambda durable functions now supports encryption of durable execution data with an AWS Key Management Service (AWS KMS) customer managed key. Lambda durable functions lets you build long-running, reliable workflows directly in your Lambda function code with automatic state management. Lambda encrypts execution state at rest by default with an AWS owned key. Now with support for AWS KMS, you can choose and manage the encryption key yourself. If you operate in regulated industries such as financial services or healthcare, your data governance policies may require customer-owned encryption ke",
+      "descriptionHtml": "&lt;p&gt;AWS Lambda durable functions now supports encryption of durable execution data with an AWS Key Management Service (AWS KMS) customer managed key. &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html\"&gt;Lambda durable functions&lt;/a&gt;&amp;nbsp;lets you build long-running, reliable workflows directly in your Lambda function code with automatic state management. Lambda encrypts execution state at rest by default with an AWS owned key.&amp;nbsp;Now with support for AWS KMS, you can choose and manage the encryption key yourself.&lt;/p&gt; \n&lt;p&gt;If you operate in regulated industries such as financial services or healthcare, your data governance policies may require customer-owned encryption keys. You can now configure a customer managed key for durable execution data, giving you control over key rotation and who can access execution history and state. The durable execution key operates independently of the function-level key that protects environment variables and SnapStart snapshots, so you can manage access to execution data separately from function configuration.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where Lambda durable functions is available. Standard AWS KMS charges apply for customer managed keys. There are no additional Lambda charges for this feature.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/durable-encryption.html\"&gt;Encrypting Lambda durable execution data&lt;/a&gt; in the AWS Lambda Developer Guide.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/durablefunctions-cmk/",
+      "publishedAt": "2026-07-22T18:30:00.000Z",
+      "updatedAt": "2026-07-22T18:30:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "AWS Lambda"
+      ],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "aws lambda",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1561453b5695aeeb",
+      "title": "Amazon Corretto July 2026 Quarterly Updates",
+      "description": "On July 22, 2026, Amazon announced quarterly security and critical updates for Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto 26.0.2, 25.0.4, 21.0.12, 17.0.20, 11.0.32, and 8u502 are now available for download . Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK. Starting with this release, the default Amazon Corretto Docker images are based on Amazon Linux 2023. Amazon Linux 2 images will continue to be provided as non-default options for customers who cannot yet migrate. JavaFX binaries are no longer included",
+      "descriptionHtml": "&lt;p&gt;On July 22, 2026, Amazon announced quarterly security and critical updates for Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto 26.0.2, 25.0.4, 21.0.12, 17.0.20, 11.0.32, and 8u502 are now available for &lt;a href=\"https://aws.amazon.com/corretto/\"&gt;download&lt;/a&gt;. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.&lt;br&gt; &lt;br&gt; Starting with this release, the default Amazon Corretto Docker images are based on Amazon Linux 2023. Amazon Linux 2 images will continue to be provided as non-default options for customers who cannot yet migrate.&lt;br&gt; &lt;br&gt; JavaFX binaries are no longer included with Corretto 8 starting from this release. You can learn more about the migration recommendations at &lt;a href=\"https://github.com/corretto/corretto-8/issues/569\"&gt;Corretto 8 GitHub&lt;/a&gt;.&lt;br&gt; &lt;br&gt; Visit Corretto &lt;a href=\"https://aws.amazon.com/corretto\"&gt;home page&lt;/a&gt; to download Corretto 26, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a &lt;a href=\"https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/generic-linux-install.html\"&gt;Corretto Apt, Yum, or Apk repo&lt;/a&gt;.&lt;br&gt; &lt;br&gt; Feedback is &lt;a href=\"https://github.com/corretto\"&gt;welcomed&lt;/a&gt;!&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-corretto-july-2026-quarterly-updates",
+      "publishedAt": "2026-07-22T18:00:00.000Z",
+      "updatedAt": "2026-07-22T18:00:00.000Z",
+      "categories": [
+        "Developer Tools",
+        "Amazon Corretto"
+      ],
+      "services": [],
+      "tags": [
+        "developer tools",
+        "amazon corretto"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "943d6958f7f267f4",
+      "title": "AWS Organizations increases RCP quota to 2,000 per organization",
+      "description": "AWS Organizations now supports up to 2,000 resource control policies (RCPs) per organization, doubling the previous limit of 1,000. RCPs enable centralized management of the maximum permissions available to resources across member accounts in your organization. This quota increase helps customers managing large, complex, multi-account environments define more granular resource access controls without encountering policy limits. With RCPs, you can restrict which external principals can access resources across your organization's member accounts, helping enforce organization-wide access control ",
+      "descriptionHtml": "&lt;p&gt;AWS Organizations now supports up to 2,000 resource control policies (RCPs) per organization, doubling the previous limit of 1,000. RCPs enable centralized management of the maximum permissions available to resources across member accounts in your organization. This quota increase helps customers managing large, complex, multi-account environments define more granular resource access controls without encountering policy limits.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;With RCPs, you can restrict which external principals can access resources across your organization's member accounts, helping enforce organization-wide access control guidelines at scale — without updating individual resource-based policies. This is especially valuable for organizations that require fine-grained, centralized permission management across hundreds of accounts, where the previous 1,000-policy limit created barriers to sufficiently detailed access control configurations.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;The increased quota of 2,000 RCPs per organization is available at no additional cost in all AWS Regions where AWS Organizations is supported. No action is required — existing organizations automatically have access to the higher limit.&amp;nbsp;&lt;br&gt; &amp;nbsp;To learn more about resource control policies and managing quotas in AWS Organizations, visit the &lt;a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_reference_limits.html\"&gt;AWS Organizations documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-organizations-resource-control-policy-limit-increase-2000",
+      "publishedAt": "2026-07-22T17:00:00.000Z",
+      "updatedAt": "2026-07-22T17:00:00.000Z",
+      "categories": [
+        "Security And Compliance",
+        "Security Compliance",
+        "AWS Organizations"
+      ],
+      "services": [
+        "Organizations"
+      ],
+      "tags": [
+        "security and compliance",
+        "security compliance",
+        "aws organizations",
+        "organizations"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3cf4f206660d6f22",
+      "title": "Amazon EKS now supports EFA and placement groups on Amazon EKS Auto Mode and Karpenter",
+      "description": "Amazon Elastic Kubernetes Service (EKS) now supports Amazon EC2 placement groups and Elastic Fabric Adapter (EFA) network device configuration for node pools on EKS Auto Mode and the open-source Karpenter project, enabling you to optimize EKS workloads for performance and availability. These capabilities allow you to control EFA network interface configuration and how EC2 instances are physically distributed across AWS infrastructure for distributed training and inference workloads. With EKS Auto Mode and Karpenter’s EFA configuration, you can configure network interfaces as EFA-only or standa",
+      "descriptionHtml": "&lt;p&gt;Amazon Elastic Kubernetes Service (EKS) now supports Amazon EC2 placement groups and Elastic Fabric Adapter (EFA) network device configuration for node pools on EKS Auto Mode and the open-source Karpenter project, enabling you to optimize EKS workloads for performance and availability. These capabilities allow you to control EFA network interface configuration and how EC2 instances are physically distributed across AWS infrastructure for distributed training and inference workloads.&lt;br&gt; &lt;br&gt; With EKS Auto Mode and Karpenter’s EFA configuration, you can configure network interfaces as EFA-only or standard ENI on EFA-capable instances with both dynamic and static capacity node pools. EFA-only interfaces do not consume IP addresses, giving you fine-grained control over IP utilization in your VPC while achieving full interconnect bandwidth. With placement group support, you can launch EC2 instances using cluster, spread, or partition strategies directly from your EKS Auto Mode or Karpenter node pool configuration, giving you control over how instances are physically distributed without additional operational workarounds. Together, these capabilities let you optimize for the performance, availability, and fault isolation characteristics your workloads require, whether that's maximizing throughput for distributed training jobs or minimizing blast radius for critical production services.&lt;br&gt; &lt;br&gt; These features are available in all AWS Regions where Amazon EKS is available. To get started and learn more, see the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/create-node-class.html#static-network-interfaces\"&gt;EKS Auto Mode User Guide&lt;/a&gt; and &lt;a href=\"https://karpenter.sh/docs/concepts/nodeclasses/#specnetworkinterfaces\"&gt;Karpenter documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-eks-efa-placement-groups/",
+      "publishedAt": "2026-07-22T14:30:00.000Z",
+      "updatedAt": "2026-07-22T14:30:00.000Z",
+      "categories": [
+        "Containers",
+        "General:Products"
+      ],
+      "services": [
+        "EKS"
+      ],
+      "tags": [
+        "containers",
+        "general:products",
+        "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a9ae59e94ce2d748",
+      "title": "Amazon RDS now supports the latest CU and GDR updates for Microsoft SQL Server",
+      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2016 SP3+GDR KB5089271 (RDS version 13.00.6490.1.v1), SQL Server 2017 CU31+GDR KB5090354 (RDS version 14.00.3530.2.v1), SQL Server 2019 CU32+GDR KB5090407 (RDS version 15.00.4470.1.v1) and SQL Server 2022 CU25 KB5081477 (RDS version 16.00.4255.1.v1). The GDR updates address vulnerabilities described in CVE-2026-40370. For additional information on the improve",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server &lt;/a&gt;now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2016 SP3+GDR &lt;a href=\"https://support.microsoft.com/help/5089271\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;KB5089271&lt;/a&gt; (RDS version 13.00.6490.1.v1), SQL Server 2017 CU31+GDR &lt;a href=\"https://support.microsoft.com/help/5090354\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;KB5090354&lt;/a&gt; (RDS version 14.00.3530.2.v1), SQL Server 2019 CU32+GDR &lt;a href=\"https://support.microsoft.com/help/5090407\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;KB5090407&lt;/a&gt; (RDS version 15.00.4470.1.v1) and SQL Server 2022 CU25 &lt;a href=\"https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate25\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;KB5081477&lt;/a&gt; (RDS version 16.00.4255.1.v1).&lt;br&gt; &lt;br&gt; The GDR updates address vulnerabilities described in CVE-2026-40370. For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5089271, KB5090354, KB5090407 and KB5081477. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.SQLServer.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS SQL Server User Guide for upgrading your RDS Microsoft SQL Server DB engine&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-supports-latest-cu-gdr-microsoft-sql-server",
+      "publishedAt": "2026-07-22T07:45:00.000Z",
+      "updatedAt": "2026-07-22T07:45:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds For Sql Server",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds for sql server",
+        "aws govcloud us",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "384c1f5016549745",
+      "title": "AWS Secrets Manager now publishes secret update notifications to Amazon EventBridge",
+      "description": "AWS Secrets Manager now automatically publishes events to Amazon EventBridge whenever your secret values change, enabling you to build event-driven workflows that respond in real time to secret updates. Until now, you had to rely on AWS CloudTrail events parsed into EventBridge to know when a secret value changed — requiring you to match multiple API events such as rotation success, PutSecretValue, and UpdateSecretValue. With this launch, Secrets Manager publishes events directly into EventBridge whenever your secret value changes. You can use EventBridge rules to detect when the active secret",
+      "descriptionHtml": "&lt;p&gt;AWS Secrets Manager now automatically publishes events to Amazon EventBridge whenever your secret values change, enabling you to build event-driven workflows that respond in real time to secret updates.&lt;br&gt; &lt;br&gt; Until now, you had to rely on AWS CloudTrail events parsed into EventBridge to know when a secret value changed — requiring you to match multiple API events such as rotation success, PutSecretValue, and UpdateSecretValue. With this launch, Secrets Manager publishes events directly into EventBridge whenever your secret value changes. You can use EventBridge rules to detect when the active secret value changes — such as during rotation — and route notifications to targets like AWS Lambda, Amazon SNS, Amazon SQS, or Amazon Step Functions. This enables you to proactively refresh cached credentials in your applications, restart dependent services, or update compliance reports for secret rotation.&lt;br&gt; &lt;br&gt; Secret update notifications are published to your default event bus automatically with no additional configuration or opt-in required. This feature is available in all AWS Regions where AWS Secrets Manager is available at no additional cost. To get started, see &lt;a href=\"https://docs.aws.amazon.com/secretsmanager/latest/userguide/secret-event-notifications.html\"&gt;secret event notifications&lt;/a&gt;&amp;nbsp;in the AWS Secrets Manager User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/secrets-manager-update-notifications",
+      "publishedAt": "2026-07-22T07:00:00.000Z",
+      "updatedAt": "2026-07-22T07:00:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "AWS Secrets Manager"
+      ],
+      "services": [
+        "Secrets Manager",
+        "EventBridge"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "aws secrets manager",
+        "secrets manager",
+        "eventbridge"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1bc5ce41980ca007",
+      "title": "AWS Direct Connect announces 100G expansion in Lima, Peru",
+      "description": "Today, AWS announced the expansion of 100 Gbps dedicated connections at the existing AWS Direct Connect location within the Cirion data center in Lima, Peru. You can now establish private, direct network access to all public AWS Regions (except those in China), AWS GovCloud Regions, and AWS Local Zones from this location. This is the first AWS Direct Connect location in Peru to provide 100 Gbps connections with MACsec encryption capabilities. The Direct Connect service enables you to establish a private, physical network connection between AWS and your data center, office, or colocation enviro",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announced the expansion of 100 Gbps dedicated connections at the existing &lt;a href=\"https://aws.amazon.com/directconnect\"&gt;AWS Direct Connect&lt;/a&gt; location within the Cirion data center in Lima, Peru. You can now establish private, direct network access to all public AWS Regions (except those in China), AWS GovCloud Regions, and &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/\"&gt;AWS Local Zones&lt;/a&gt; from this location. This is the first AWS Direct Connect location in Peru to provide 100 Gbps connections with MACsec encryption capabilities.&lt;/p&gt; \n&lt;p&gt;The Direct Connect service enables you to establish a private, physical network connection between AWS and your data center, office, or colocation environment. These private connections can provide a more consistent network experience than those made over the public internet.&lt;/p&gt; \n&lt;p&gt;For more information on the over 150 Direct Connect locations worldwide, visit the &lt;a href=\"https://aws.amazon.com/directconnect/locations/\"&gt;locations&lt;/a&gt; section of the Direct Connect &lt;a href=\"https://aws.amazon.com/directconnect\"&gt;product detail pages&lt;/a&gt;. Or, visit our &lt;a href=\"https://aws.amazon.com/directconnect/getting-started/\"&gt;getting started&lt;/a&gt; page to learn more about how to purchase and deploy Direct Connect.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-direct-connect-100g-lima/",
+      "publishedAt": "2026-07-22T04:00:00.000Z",
+      "updatedAt": "2026-07-22T04:00:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "AWS Direct Connect"
+      ],
+      "services": [
+        "Direct Connect",
+        "Connect"
+      ],
+      "tags": [
+        "networking and content delivery",
+        "aws direct connect",
+        "direct connect",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b77f8d0671b4efaf",
+      "title": "AWS Elastic Disaster Recovery is now available in six additional AWS Regions",
+      "description": "AWS Elastic Disaster Recovery (AWS DRS) is now available in six additional AWS Regions: Asia Pacific (Bangkok), Asia Pacific (Malaysia), Asia Pacific (New Zealand), Asia Pacific (Taipei), Canada West (Calgary), and Mexico (Central). Elastic Disaster Recovery is the recommended service for disaster recovery to AWS. It helps minimize downtime and data loss with fast, reliable recovery of on-premises and cloud-based applications using affordable storage, minimal compute, and point-in-time recovery. With Elastic Disaster Recovery, you can recover your applications on AWS from physical infrastructu",
+      "descriptionHtml": "&lt;p&gt;AWS Elastic Disaster Recovery (AWS DRS) is now available in six additional AWS Regions: Asia Pacific (Bangkok), Asia Pacific (Malaysia), Asia Pacific (New Zealand), Asia Pacific (Taipei), Canada West (Calgary), and Mexico (Central). Elastic Disaster Recovery is the recommended service for disaster recovery to AWS. It helps minimize downtime and data loss with fast, reliable recovery of on-premises and cloud-based applications using affordable storage, minimal compute, and point-in-time recovery. With Elastic Disaster Recovery, you can recover your applications on AWS from physical infrastructure, VMware vSphere, Microsoft Hyper-V, and cloud infrastructure. You can also use Elastic Disaster Recovery to recover Amazon EC2 instances in a different AWS Region. AWS DRS replicates and recovers a wide range of applications, including critical databases such as Oracle, MySQL, and SQL Server, and enterprise applications such as SAP. AWS DRS uses a unified process for drills, recovery, and failback, so you do not need application-specific skillsets to operate the service. With this launch, Elastic Disaster Recovery is now available in 36 AWS Regions. See the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regional Services List&lt;/a&gt; for the most up-to-date availability information. &lt;/p&gt; \n&lt;p&gt;To learn more about AWS Elastic Disaster Recovery, visit our &lt;a href=\"https://aws.amazon.com/disaster-recovery/\"&gt;product page&lt;/a&gt; or &lt;a href=\"https://docs.aws.amazon.com/drs/latest/userguide/supported-regions.html\"&gt;documentation&lt;/a&gt;. To get started, sign in to the &lt;a href=\"https://console.aws.amazon.com/drs/\"&gt;AWS Elastic Disaster Recovery Console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-drs-additional-regions/",
+      "publishedAt": "2026-07-21T22:00:00.000Z",
+      "updatedAt": "2026-07-21T22:00:00.000Z",
+      "categories": [
+        "AWS Elastic Disaster Recovery",
+        "Storage"
+      ],
+      "services": [],
+      "tags": [
+        "aws elastic disaster recovery",
+        "storage"
+      ],
+      "isNew": true
+    },
     {
       "id": "71120839bc643690",
       "title": "Amazon EC2 R6in and R6idn instances are now available in additional regions",
@@ -65,6 +332,30 @@
         "compute",
         "networking",
         "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "efa263a4d551147e",
+      "title": "Amazon SageMaker Unified Studio now supports Amazon OpenSearch",
+      "description": "Amazon SageMaker Unified Studio now supports Amazon OpenSearch as a data source, enabling you to query and analyze your search and log analytics data directly alongside your other data assets. With this new connection, you can combine operational search data in OpenSearch with data from sources like Amazon Redshift, Amazon S3, and relational databases - all within a single, governed environment. This integration is particularly valuable when you need to correlate data across analytical and operational workloads. For example, you can join application logs and metrics stored in OpenSearch with t",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now supports Amazon OpenSearch as a data source, enabling you to query and analyze your search and log analytics data directly alongside your other data assets. With this new connection, you can combine operational search data in OpenSearch with data from sources like Amazon Redshift, Amazon S3, and relational databases - all within a single, governed environment.&lt;/p&gt; \n&lt;p&gt;This integration is particularly valuable when you need to correlate data across analytical and operational workloads. For example, you can join application logs and metrics stored in OpenSearch with transactional data to gain insights into system performance and user behavior. Data engineers and analysts can build data pipelines that bring together real-time search and analytics data with structured datasets, streamlining cross-source workflows without switching between tools. To get started, add an Amazon OpenSearch connection under your project’s data section. Your OpenSearch data now appears in the data explorer alongside your other project data. From there, you can query it directly using the query editor, explore it in notebooks, or incorporate it into a visual ETL job, all without leaving the studio.&lt;/p&gt; \n&lt;p&gt;Support for Amazon OpenSearch connections is available in &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;all AWS Regions where Amazon SageMaker Unified Studio is available&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;To get started, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/connecting-new-data-source.html\"&gt;connecting to a new data source&lt;/a&gt; in the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/what-is-sagemaker-unified-studio.html\"&gt;Amazon SageMaker Unified Studio User Guide&lt;/a&gt;. For more information about Amazon OpenSearch Service, visit the &lt;a href=\"https://aws.amazon.com/opensearch-service/\"&gt;Amazon OpenSearch Service page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-unified/",
+      "publishedAt": "2026-07-21T17:36:00.000Z",
+      "updatedAt": "2026-07-21T17:36:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "OpenSearch",
+        "SageMaker"
+      ],
+      "tags": [
+        "analytics",
+        "amazon sagemaker",
+        "opensearch",
+        "sagemaker"
       ],
       "isNew": true
     },
@@ -162,26 +453,21 @@
       "isNew": true
     },
     {
-      "id": "a9ae59e94ce2d748",
-      "title": "Amazon RDS now supports the latest CU and GDR updates for Microsoft SQL Server",
-      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2016 SP3+GDR KB5089271 (RDS version 13.00.6490.1.v1), SQL Server 2017 CU31+GDR KB5090354 (RDS version 14.00.3530.2.v1), SQL Server 2019 CU32+GDR KB5090407 (RDS version 15.00.4470.1.v1) and SQL Server 2022 CU25 KB5081477 (RDS version 16.00.4255.1.v1). The GDR updates address vulnerabilities described in CVE-2026-40370. For additional information on the improve",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server &lt;/a&gt;now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2016 SP3+GDR &lt;a href=\"https://support.microsoft.com/help/5089271\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;KB5089271&lt;/a&gt; (RDS version 13.00.6490.1.v1), SQL Server 2017 CU31+GDR &lt;a href=\"https://support.microsoft.com/help/5090354\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;KB5090354&lt;/a&gt; (RDS version 14.00.3530.2.v1), SQL Server 2019 CU32+GDR &lt;a href=\"https://support.microsoft.com/help/5090407\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;KB5090407&lt;/a&gt; (RDS version 15.00.4470.1.v1) and SQL Server 2022 CU25 &lt;a href=\"https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate25\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;KB5081477&lt;/a&gt; (RDS version 16.00.4255.1.v1).&lt;br&gt; &lt;br&gt; The GDR updates address vulnerabilities described in CVE-2026-40370. For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5089271, KB5090354, KB5090407 and KB5081477. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.SQLServer.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS SQL Server User Guide for upgrading your RDS Microsoft SQL Server DB engine&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-supports-latest-cu-gdr-microsoft-sql-server",
-      "publishedAt": "2026-07-21T07:45:00.000Z",
-      "updatedAt": "2026-07-21T07:45:00.000Z",
+      "id": "00983218b37a8652",
+      "title": "AWS Marketplace now supports self-service seller signature management for India-based sellers",
+      "description": "AWS Marketplace now enables India-based sellers to upload and manage their seller signatures directly through AWS Partner Central, eliminating the previous manual, email-based submission process. Sellers located in India are required to provide a valid seller signature for tax invoicing and regulatory compliance. This launch consolidates Goods and Services Tax Identification Number (GSTIN) registration and seller signature management into a single, centralized location purpose-built for India-based sellers transacting on AWS Marketplace. Once uploaded, AWS Marketplace securely stores your sign",
+      "descriptionHtml": "&lt;p&gt;AWS Marketplace now enables India-based sellers to upload and manage their seller signatures directly through AWS Partner Central, eliminating the previous manual, email-based submission process. Sellers located in India are required to provide a valid seller signature for tax invoicing and regulatory compliance. This launch consolidates Goods and Services Tax Identification Number (GSTIN) registration and seller signature management into a single, centralized location purpose-built for India-based sellers transacting on AWS Marketplace.&lt;br&gt; &lt;br&gt; Once uploaded, AWS Marketplace securely stores your signature and uses it for applicable buyer tax invoices generated on your behalf for transactions in India. This launch introduces automated real-time validation and a new tax summary container providing at-a-glance visibility into GSTIN registration and seller signature verification status. Sellers are notified by email when their signature is verified or rejected, and can resolve rejections independently by resubmitting directly in the console using the displayed rejection reason, ensuring real-time compliance visibility.&lt;br&gt; &lt;br&gt; To learn more about managing your tax compliance and seller signature in AWS Partner Central, visit the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/getting-started-seller-india.html\"&gt;AWS Marketplace Seller Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-marketplace-india/",
+      "publishedAt": "2026-07-21T07:18:00.000Z",
+      "updatedAt": "2026-07-21T07:18:00.000Z",
       "categories": [
-        "Databases",
-        "Amazon Rds For Sql Server",
-        "AWS Govcloud Us"
+        "AWS Marketplace And Partners",
+        "Partner Network"
       ],
-      "services": [
-        "RDS"
-      ],
+      "services": [],
       "tags": [
-        "databases",
-        "amazon rds for sql server",
-        "aws govcloud us",
-        "rds"
+        "aws marketplace and partners",
+        "partner network"
       ],
       "isNew": true
     },
@@ -826,7 +1112,7 @@
         "control tower",
         "terraform"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1c35ba129025035e",
@@ -846,7 +1132,7 @@
         "databases",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "43caf28b348afcd1",
@@ -870,7 +1156,7 @@
         "amazon cloudwatch logs",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "918c1e12bb9666e3",
@@ -887,7 +1173,7 @@
       "tags": [
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b2617d03f91d20b1",
@@ -915,7 +1201,7 @@
         "migration",
         "mq"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5b0f5672498bcd4b",
@@ -937,7 +1223,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a7f58252249e8933",
@@ -959,7 +1245,7 @@
         "security identity and compliance",
         "cognito"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e51950829b28e035",
@@ -983,7 +1269,7 @@
         "rds",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "187296da0d1331a4",
@@ -1007,7 +1293,7 @@
         "rds",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "74bf9a8ab68f0d2c",
@@ -1031,7 +1317,7 @@
         "msk",
         "kafka"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "da694db48a321dcb",
@@ -1053,7 +1339,7 @@
         "databases",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3e5b8390689dd025",
@@ -1075,7 +1361,7 @@
         "aws glue",
         "glue"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "09deffb8c3a90255",
@@ -1099,7 +1385,7 @@
         "amazon opensearch service",
         "opensearch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6b7b0ef77faf6432",
@@ -1172,7 +1458,8 @@
       "updatedAt": "2026-07-14T22:00:56.000Z",
       "categories": [
         "Storage",
-        "AWS Elastic Disaster Recovery"
+        "AWS Elastic Disaster Recovery",
+        "AWS Govcloud Us"
       ],
       "services": [
         "EBS"
@@ -1180,6 +1467,7 @@
       "tags": [
         "storage",
         "aws elastic disaster recovery",
+        "aws govcloud us",
         "ebs"
       ],
       "isNew": false
@@ -1337,19 +1625,21 @@
       "publishedAt": "2026-07-14T17:00:00.000Z",
       "updatedAt": "2026-07-14T17:00:00.000Z",
       "categories": [
-        "Desktop And App Streaming",
+        "Business Productivity",
         "Security Identity And Compliance",
-        "Amazon Workspaces",
-        "Business Productivity"
+        "AWS Govcloud Us",
+        "Desktop And App Streaming",
+        "Amazon Workspaces"
       ],
       "services": [
         "WorkSpaces"
       ],
       "tags": [
-        "desktop and app streaming",
-        "security identity and compliance",
-        "amazon workspaces",
         "business productivity",
+        "security identity and compliance",
+        "aws govcloud us",
+        "desktop and app streaming",
+        "amazon workspaces",
         "workspaces"
       ],
       "isNew": false
@@ -1509,15 +1799,17 @@
       "publishedAt": "2026-07-13T17:00:00.000Z",
       "updatedAt": "2026-07-13T17:00:00.000Z",
       "categories": [
-        "Databases",
-        "Amazon Documentdb"
+        "Amazon Documentdb",
+        "AWS Govcloud Us",
+        "Databases"
       ],
       "services": [
         "DocumentDB"
       ],
       "tags": [
-        "databases",
         "amazon documentdb",
+        "aws govcloud us",
+        "databases",
         "documentdb"
       ],
       "isNew": false
@@ -1728,13 +2020,17 @@
       "id": "9f47e275f722b1d0",
       "title": "Amazon Location Service enhances Places APIs with new address and search options",
       "description": "Today, Amazon Location Service announced new enhancements to its Places APIs that give developers greater control over address name formatting, multilingual address, travel-optimized POI search, and drive-through data. These capabilities span the Geocode, ReverseGeocode, GetPlace, Suggest, Autocomplete, SearchNearby, and SearchText APIs. Developers can now control how address component names are returned using the new AddressNamesMode parameter. By default, addresses are returned with normalized (canonical) names; developers can instead request matched names (echoing input) or administrative (",
-      "descriptionHtml": "&lt;p&gt;Today, Amazon Location Service announced new enhancements to its Places APIs that give developers greater control over address name formatting, multilingual address, travel-optimized POI search, and drive-through data. These capabilities span the Geocode, ReverseGeocode, GetPlace, Suggest, Autocomplete, SearchNearby, and SearchText APIs.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Developers can now control how address component names are returned using the new AddressNamesMode parameter. By default, addresses are returned with normalized (canonical) names; developers can instead request matched names (echoing input) or administrative (government hierarchy) names. The new AddressTranslations parameter returns place name translations in 50+ languages, making it easier to build multilingual applications. A TravelMode parameter optimizes Suggest and SearchText results for users on the move, improving relevance for navigation and in-vehicle scenarios. Additionally, GetPlace, Suggest, SearchNearby, and SearchText now return a DriveThrough attribute indicating whether a place offers drive-through service — useful for logistics, food delivery, and navigation applications. The Geocode API also now supports a new Parsing.AdditionalInfo response field with additional detail about how the input address was interpreted.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; Amazon Location Service is available in the following AWS Regions: US East (Ohio), US East (N. Virginia), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Spain), Europe (Stockholm), South America (São Paulo), and AWS GovCloud (US-West).&lt;br&gt; &lt;br&gt; To get started, see the &lt;a href=\"https://docs.aws.amazon.com/location/latest/APIReference/API_Operations_Amazon_Location_Service_Places_V2.html\"&gt;Amazon Location Service Places API reference&lt;/a&gt;, or learn more about &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/places.html\"&gt;Places&lt;/a&gt; in the Amazon Location Service Developer Guide.&lt;/p&gt;",
+      "descriptionHtml": "&lt;p&gt;Today, Amazon Location Service announced new enhancements to its Places APIs that give developers greater control over address name formatting, multilingual address, travel-optimized POI search, and drive-through data. These capabilities span the Geocode, ReverseGeocode, GetPlace, Suggest, Autocomplete, SearchNearby, and SearchText APIs.&lt;/p&gt; \n&lt;p&gt;Developers can now control how address component names are returned using the new AddressNamesMode parameter. By default, addresses are returned with normalized (canonical) names; developers can instead request matched names (echoing input) or administrative (government hierarchy) names. The new AddressTranslations parameter returns place name translations in 50+ languages, making it easier to build multilingual applications. A TravelMode parameter optimizes Suggest and SearchText results for users on the move, improving relevance for navigation and in-vehicle scenarios. Additionally, GetPlace, Suggest, SearchNearby, and SearchText now return a DriveThrough attribute indicating whether a place offers drive-through service — useful for logistics, food delivery, and navigation applications. The Geocode API also now supports a new Parsing.AdditionalInfo response field with additional detail about how the input address was interpreted.&lt;/p&gt; \n&lt;p&gt;Amazon Location Service is available in the following AWS Regions: US East (Ohio), US East (N. Virginia), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Spain), Europe (Stockholm), South America (São Paulo), and AWS GovCloud (US-West).&lt;br&gt; &lt;br&gt; To get started, see the &lt;a href=\"https://docs.aws.amazon.com/location/latest/APIReference/API_Operations_Amazon_Location_Service_Places_V2.html\"&gt;Amazon Location Service Places API reference&lt;/a&gt;, or learn more about &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/places.html\"&gt;Places&lt;/a&gt; in the Amazon Location Service Developer Guide.&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-location-service-enhanced-address-search",
       "publishedAt": "2026-07-10T17:26:00.000Z",
       "updatedAt": "2026-07-10T17:26:00.000Z",
-      "categories": [],
+      "categories": [
+        "AWS Govcloud Us"
+      ],
       "services": [],
-      "tags": [],
+      "tags": [
+        "aws govcloud us"
+      ],
       "isNew": false
     },
     {
@@ -1862,13 +2158,15 @@
       "publishedAt": "2026-07-10T14:00:00.000Z",
       "updatedAt": "2026-07-10T14:00:00.000Z",
       "categories": [
-        "Amazon Documentdb"
+        "Amazon Documentdb",
+        "AWS Govcloud Us"
       ],
       "services": [
         "DocumentDB"
       ],
       "tags": [
         "amazon documentdb",
+        "aws govcloud us",
         "documentdb"
       ],
       "isNew": false
@@ -1904,15 +2202,17 @@
       "publishedAt": "2026-07-10T07:00:00.000Z",
       "updatedAt": "2026-07-10T07:00:00.000Z",
       "categories": [
-        "AWS Organizations",
-        "Security And Compliance"
+        "AWS Govcloud Us",
+        "Security And Compliance",
+        "AWS Organizations"
       ],
       "services": [
         "Organizations"
       ],
       "tags": [
-        "aws organizations",
+        "aws govcloud us",
         "security and compliance",
+        "aws organizations",
         "organizations"
       ],
       "isNew": false
@@ -10778,308 +11078,6 @@
         "iam",
         "iam identity center",
         "transfer family"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d18cd3ec7291c392",
-      "title": "Amazon SageMaker HyperPod now supports data capture for inference workloads",
-      "description": "Amazon SageMaker HyperPod now supports data capture for inference workloads, a new capability that records inference request and response payloads from production endpoints to Amazon S3. Customers deploying generative AI models on HyperPod need visibility into model inputs and outputs to detect drift, troubleshoot production issues, build evaluation datasets, and continuously improve their deployed models, but previously had to build custom logging pipelines outside of the service to obtain this visibility. With data capture, customers can train speculative decoding draft models from their rea",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports data capture for inference workloads, a new capability that records inference request and response payloads from production endpoints to Amazon S3. Customers deploying generative AI models on HyperPod need visibility into model inputs and outputs to detect drift, troubleshoot production issues, build evaluation datasets, and continuously improve their deployed models, but previously had to build custom logging pipelines outside of the service to obtain this visibility.&lt;/p&gt; \n&lt;p&gt;With data capture, customers can train speculative decoding draft models from their real production traffic for better performance than generic draft models, build evaluation pipelines from production data, feed fine-tuning jobs with real-world inputs, and maintain audit trails for compliance. Customers choose where to capture inference traffic on each endpoint, at the SageMaker endpoint, the load balancer, or the model pod. Captured data is delivered asynchronously to their Amazon S3 bucket without blocking inference, and supports configurable sampling and customer-managed AWS KMS encryption. You can enable data capture when deploying models through the HyperPod Inference Operator, and use the captured data with Amazon SageMaker Model Monitor and your existing evaluation, fine-tuning, and draft-model training workflows.&lt;/p&gt; \n&lt;p&gt;This feature is available for SageMaker HyperPod clusters using the EKS orchestrator in all AWS Regions where Amazon SageMaker HyperPod is supported. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-model-deployment-data-capture.html\"&gt;Data capture for inference on HyperPod&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-sagemaker-hyperpod-data-capture",
-      "publishedAt": "2026-05-20T01:08:00.000Z",
-      "updatedAt": "2026-05-20T01:08:00.000Z",
-      "categories": [
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "1a92a7ece4654894",
-      "title": "Amazon MWAA now supports Apache Airflow 3.2",
-      "description": "Amazon Managed Workflows for Apache Airflow (MWAA) now supports Apache Airflow version 3.2, the latest major release of the popular open-source workflow orchestration framework. Amazon MWAA is a managed service that lets you run Apache Airflow at scale without managing the underlying infrastructure. This release brings new data-aware scheduling capabilities and developer productivity improvements to teams building and operating data pipelines on AWS. With Apache Airflow 3.2, you can now use asset partitioning to trigger downstream DAGs based on specific slices of data, such as a date-partition",
-      "descriptionHtml": "&lt;p&gt;Amazon Managed Workflows for Apache Airflow (MWAA) now supports Apache Airflow version 3.2, the latest major release of the popular open-source workflow orchestration framework. Amazon MWAA is a managed service that lets you run Apache Airflow at scale without managing the underlying infrastructure. This release brings new data-aware scheduling capabilities and developer productivity improvements to teams building and operating data pipelines on AWS.&lt;/p&gt; \n&lt;p&gt;With Apache Airflow 3.2, you can now use asset partitioning to trigger downstream DAGs based on specific slices of data, such as a date-partitioned S3 path, rather than an entire asset, giving data engineering teams more precise control over pipeline execution. This release also expands Human-in-the-Loop (HITL) capabilities with a full audit history view for approvals, HITL support for the AgenticOperator, and synchronous callback support for Deadline Alerts. Additional improvements include Grid View virtualization for faster rendering of large DAGs, full XCom management from the Airflow UI, and async callable support in PythonOperator..&lt;/p&gt; \n&lt;p&gt;You can launch a new Apache Airflow 3.2 environment on Amazon MWAA, or upgrade from 2.11 or later, with just a few clicks in the&amp;nbsp;&lt;a href=\"https://console.aws.amazon.com/mwaa/home\"&gt;AWS Management Console&lt;/a&gt;&amp;nbsp;in all currently supported&amp;nbsp;&lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Amazon MWAA regions&lt;/a&gt;. To learn more about Apache Airflow 3.2 visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html\"&gt;Amazon MWAA documentation&lt;/a&gt;, and the&amp;nbsp;&lt;a href=\"https://airflow.apache.org/docs/apache-airflow/stable/release_notes.html#airflow-3-2-0-2026-04-07\"&gt;Apache Airflow 3.2 change log&lt;/a&gt;&amp;nbsp;in the Apache Airflow documentation.&lt;br&gt; &lt;br&gt; &lt;i&gt;Apache, Apache Airflow, and Airflow are either registered trademarks or trademarks of the&amp;nbsp;&lt;a href=\"https://www.apache.org/\"&gt;Apache Software Foundation&lt;/a&gt;&amp;nbsp;in the United States and/or other countries.&lt;/i&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-mwaa-now-supports-apache-airflow-3-2/",
-      "publishedAt": "2026-05-19T20:00:00.000Z",
-      "updatedAt": "2026-05-19T20:00:00.000Z",
-      "categories": [],
-      "services": [
-        "MWAA"
-      ],
-      "tags": [
-        "mwaa"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0f54f79166802c8d",
-      "title": "Amazon Inspector is now available in the AWS Asia Pacific (Taipei) Region",
-      "description": "Today, AWS announces the availability of Amazon Inspector in the AWS Asia Pacific (Taipei) Region. Amazon Inspector is an automated vulnerability management service that continually scans AWS workloads including Amazon EC2 instances, container images, and AWS Lambda functions for software vulnerabilities and unintended network exposure across your AWS Organization. With this expansion, Amazon Inspector extends its security coverage to AWS Asia Pacific (Taipei) Region, designed to help customers automatically discover workloads, conduct continuous vulnerability assessments, and receive actionab",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the availability of Amazon Inspector in the AWS Asia Pacific (Taipei) Region. Amazon Inspector is an automated vulnerability management service that continually scans AWS workloads including Amazon EC2 instances, container images, and AWS Lambda functions for software vulnerabilities and unintended network exposure across your AWS Organization.&amp;nbsp;&lt;br&gt; &lt;br&gt; With this expansion, Amazon Inspector extends its security coverage to AWS Asia Pacific (Taipei) Region, designed to help customers automatically discover workloads, conduct continuous vulnerability assessments, and receive actionable security findings. The service is designed to detect newly launched Amazon EC2 instances, Lambda functions, and eligible container images pushed to Amazon Elastic Container Registry (ECR) and scan them for software vulnerabilities and unintended network exposure.&lt;br&gt; &lt;br&gt; All accounts new to Amazon Inspector are eligible for a 15-day free trial to evaluate the service and estimate its cost. During the trial, all eligible Amazon EC2 instances, AWS Lambda functions, and container images pushed to Amazon ECR are continually scanned at no cost. After the trial period, you will be charged based on public pricing for Amazon Inspector. Visit the Amazon Inspector &lt;a href=\"https://aws.amazon.com/inspector/pricing/\"&gt;pricing page&lt;/a&gt; for more details.&lt;br&gt; &lt;br&gt; To get started with &lt;a href=\"https://aws.amazon.com/inspector/\"&gt;Amazon Inspector&lt;/a&gt; visit our documentation or begin your &lt;a href=\"https://aws.amazon.com/inspector/pricing/\"&gt;free trial today&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-inspector-taipei/",
-      "publishedAt": "2026-05-19T17:00:00.000Z",
-      "updatedAt": "2026-05-19T17:00:00.000Z",
-      "categories": [],
-      "services": [
-        "Inspector"
-      ],
-      "tags": [
-        "inspector"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f5080e20cc4c2983",
-      "title": "Amazon ECS introduces pause and continue controls for service deployments",
-      "description": "Amazon Elastic Container Service (Amazon ECS) now enables you to pause service deployments at critical stages during deployment progression and continue deployments when ready. You can use these pause points to introduce manual decision points and interactive controls into your deployments for scenarios such as manual approval workflows, operational checks, integration tests, or custom automation, while continuing to use native Amazon ECS deployment strategies with managed traffic shifting, bake times, fast rollbacks, CloudWatch alarms, and deployment circuit breaker. With this launch, you can",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\"&gt;Amazon Elastic Container Service&lt;/a&gt; (Amazon ECS) now enables you to pause service deployments at critical stages during deployment progression and continue deployments when ready. You can use these pause points to introduce manual decision points and interactive controls into your deployments for scenarios such as manual approval workflows, operational checks, integration tests, or custom automation, while continuing to use native Amazon ECS deployment strategies with managed traffic shifting, bake times, fast rollbacks, CloudWatch alarms, and deployment circuit breaker.&lt;/p&gt; \n&lt;p&gt;With this launch, you can configure a new PAUSE deployment lifecycle hook as part of your Amazon ECS service deployment configuration. When a deployment reaches a configured pause point, Amazon ECS pauses deployment progression and emits Amazon EventBridge events that you can use to trigger automation workflows, approval systems, or external validation processes. You can then continue or roll back the deployment using the new ContinueServiceDeployment API. With pause hooks, you can configure timeout durations up to 14 days and timeout actions to automatically continue or roll back the deployment if no action is received.&lt;/p&gt; \n&lt;p&gt;You can configure pause hooks for rolling, blue/green, linear, and canary deployment strategies using the Amazon ECS Console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS CDK, and Terraform. You can use the ContinueServiceDeployment API through the Amazon ECS Console, AWS CLI, and AWS SDKs. This feature is available in all AWS commercial and AWS GovCloud (US) &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\"&gt;Regions&lt;/a&gt;. To learn more, see our documentation on &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/pause-lifecycle-hooks.html\" target=\"_blank\"&gt;pause hooks for service deployments&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/continue-service-deployment.html\" target=\"_blank\"&gt;continuing service deployments&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ecs-pause-continue-deployments/",
-      "publishedAt": "2026-05-19T17:00:00.000Z",
-      "updatedAt": "2026-05-19T17:00:00.000Z",
-      "categories": [
-        "Serverless",
-        "Compute",
-        "AWS Govcloud Us",
-        "AWS Fargate",
-        "Containers",
-        "Amazon Ecs"
-      ],
-      "services": [
-        "ECS",
-        "Fargate"
-      ],
-      "tags": [
-        "serverless",
-        "compute",
-        "aws govcloud us",
-        "aws fargate",
-        "containers",
-        "amazon ecs",
-        "ecs",
-        "fargate"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d5be2dc756ccc9fb",
-      "title": "Amazon Managed Grafana now supports dual-stack connectivity (IPv6 and IPv4)",
-      "description": "Amazon Managed Grafana now supports dual-stack connectivity, enabling workspaces to communicate over both Internet Protocol version 4 (IPv4) and Internet Protocol version 6 (IPv6). Dual-stack mode is available for workspaces running Grafana version 10.4 or later. With dual-stack support, customers can simplify their network stack by eliminating the need to manage overlapping address spaces in their VPCs. Customers migrating to IPv6 can connect to their Grafana workspaces over IPv6 while maintaining IPv4 compatibility, and those not yet on IPv6 can continue using IPv4-only connections. This is ",
-      "descriptionHtml": "&lt;p&gt;Amazon Managed Grafana now supports dual-stack connectivity, enabling workspaces to communicate over both Internet Protocol version 4 (IPv4) and Internet Protocol version 6 (IPv6). Dual-stack mode is available for&amp;nbsp;workspaces&amp;nbsp;running Grafana version 10.4 or later.&lt;/p&gt; \n&lt;p&gt;With dual-stack support, customers can simplify their network stack by&amp;nbsp;eliminating&amp;nbsp;the need to manage overlapping address spaces in their VPCs. Customers migrating to IPv6 can connect to their Grafana workspaces over IPv6 while maintaining IPv4 compatibility, and those not yet on IPv6 can continue using IPv4-only connections. This is especially beneficial as the continued growth of the internet exhausts&amp;nbsp;available&amp;nbsp;IPv4 addresses.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Support for&amp;nbsp;dual-stack connectivity&amp;nbsp;on Amazon Managed Grafana is available in all&amp;nbsp;&lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;regions&lt;/a&gt;&amp;nbsp;where the service is&amp;nbsp;generally available.&amp;nbsp;To get started, update your workspace configuration via the Amazon Managed Grafana console, API, or CLI. For more information, see&amp;nbsp;the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/grafana/latest/userguide/AMG-configure-workspace.html\"&gt;Amazon Managed Grafana User Guide&lt;/a&gt;.&amp;nbsp;To learn more about best practices for configuring IPv6 in your environment, visit the whitepaper on&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/internet-protocol-version-6.html\"&gt;IPv6 in AWS&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-managed-grafana-ipv6/",
-      "publishedAt": "2026-05-19T15:00:00.000Z",
-      "updatedAt": "2026-05-19T15:00:00.000Z",
-      "categories": [
-        "Management And Governance",
-        "Amazon Managed Service For Grafana"
-      ],
-      "services": [],
-      "tags": [
-        "management and governance",
-        "amazon managed service for grafana"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "e267c7bec31f330a",
-      "title": "AWS Management Console now displays AWS Local Zones in the Region Selector",
-      "description": "Today, AWS announces the addition of AWS Local Zones to the Region selector in the AWS Management Console, providing a unified experience across AWS global infrastructure. AWS Local Zones now appear alongside AWS Regions in the Console's top navigation, making it easier for customers to quickly navigate to the Console page for managing their resources in AWS Local Zones. Now, when customers select the Local Zones tab in the Region selector, they will see all opted-in AWS Local Zones in one place. Clicking on an AWS Local Zone takes customers directly to its parent Region's Console page to view",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the addition of AWS Local Zones to the Region selector in the AWS Management Console, providing a unified experience across AWS global infrastructure. AWS Local Zones now appear alongside AWS Regions in the Console's top navigation, making it easier for customers to quickly navigate to the Console page for managing their resources in AWS Local Zones.&lt;/p&gt; \n&lt;p&gt;Now, when customers select the Local Zones tab in the Region selector, they will see all opted-in AWS Local Zones in one place. Clicking on an AWS Local Zone takes customers directly to its parent Region's Console page to view and manage resources. This capability streamlines navigation for customers operating across multiple AWS Local Zones parented to different AWS Regions.&lt;/p&gt; \n&lt;p&gt;This capability is available across all AWS Local Zones in public AWS Regions. To get started, navigate to the Region selector in the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html\"&gt;AWS Local Zones&lt;/a&gt; documentation.&lt;b&gt;&lt;/b&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-local-zones-region-selector/",
-      "publishedAt": "2026-05-18T21:50:00.000Z",
-      "updatedAt": "2026-05-18T21:50:00.000Z",
-      "categories": [
-        "AWS Management Console",
-        "Global Infrastructure",
-        "Compute",
-        "AWS Local Zones"
-      ],
-      "services": [
-        "Local Zones"
-      ],
-      "tags": [
-        "aws management console",
-        "global infrastructure",
-        "compute",
-        "aws local zones",
-        "local zones"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7ad126063dc214cf",
-      "title": "AWS Glue zero-ETL is now available in Asia Pacific (Mumbai) region",
-      "description": "AWS Glue zero-ETL integrations are now available in the Asia Pacific (Mumbai) region. With this expansion, customers in the Asia Pacific (Mumbai) region can now use zero-ETL integrations to simplify their data pipelines, reduce data movement latency, and accelerate time-to-insight for analytics and machine learning workloads. Zero-ETL integrations offer a set of fully managed integrations by AWS that minimizes the need to build ETL data pipelines for common ingestion and replication use cases. You can use zero-ETL to replicate data from sources such as Amazon DynamoDB, Oracle Database@AWS, sel",
-      "descriptionHtml": "&lt;p&gt;AWS Glue zero-ETL integrations are now available in the Asia Pacific (Mumbai) region. With this expansion, customers in the Asia Pacific (Mumbai) region can now use zero-ETL integrations to simplify their data pipelines, reduce data movement latency, and accelerate time-to-insight for analytics and machine learning workloads.&lt;br&gt; &lt;br&gt; Zero-ETL integrations offer a set of fully managed integrations by AWS that minimizes the need to build ETL data pipelines for common ingestion and replication use cases. You can use zero-ETL to replicate data from sources such as Amazon DynamoDB, Oracle Database@AWS, self-managed databases (Oracle, SQL Server, MySQL or PostgreSQL), and supported SaaS applications including Salesforce, SAP, Zendesk, and Zoho CRM directly into target analytics data stores without writing or maintaining ETL pipelines. It automatically handles schema mapping, change data capture, and incremental data replication, eliminating the need to build and manage complex data pipelines by yourself. This allows your data engineering teams to focus on deriving value from data rather than managing infrastructure, while replicating data in your target data stores in near real-time.&lt;br&gt; &lt;br&gt; To learn more, visit the AWS Glue &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/zero-etl-using.html\"&gt;documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-glue-zero-etl-mumbai-region",
-      "publishedAt": "2026-05-18T21:10:00.000Z",
-      "updatedAt": "2026-05-18T21:10:00.000Z",
-      "categories": [
-        "Analytics",
-        "AWS Glue"
-      ],
-      "services": [
-        "Glue"
-      ],
-      "tags": [
-        "analytics",
-        "aws glue",
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a9ae483cee845c8a",
-      "title": "Amazon Lightsail CDN distributions now support IPv6-only instances as origins",
-      "description": "Amazon Lightsail content delivery network (CDN) distributions now support IPv6-only instances as origins. This feature enables customers to use IPv6-only instances to deliver content through the Lightsail CDN distributions with low latency and high transfer speeds worldwide. With this launch, customers can run their websites and applications on cost-effective IPv6-only instances while seamlessly serving content to all end users, including those on networks that don't yet support IPv6 connectivity. Previously, only IPv4 and dual-stack instances were supported as origins for Lightsail CDN distri",
-      "descriptionHtml": "&lt;p&gt;Amazon Lightsail content delivery network (CDN) distributions now support IPv6-only instances as origins. This feature enables customers to use IPv6-only instances to deliver content through the Lightsail CDN distributions with low latency and high transfer speeds worldwide. With this launch, customers can run their websites and applications on cost-effective IPv6-only instances while seamlessly serving content to all end users, including those on networks that don't yet support IPv6 connectivity.&lt;br&gt; &lt;br&gt; Previously, only IPv4 and dual-stack instances were supported as origins for Lightsail CDN distributions. With this launch, customers can also use IPv6-only instances as origins for their Lightsail CDN distributions, making applications running on those instances accessible to all end users, regardless of whether end users have IPv6 connectivity. Lightsail CDN distributions support multiple origin types including instances, containers, buckets, and load balancers.&lt;/p&gt; \n&lt;p&gt;Amazon Lightsail is available in &lt;a href=\"https://docs.aws.amazon.com/lightsail/latest/userguide/understanding-regions-and-availability-zones-in-amazon-lightsail.html\"&gt;16 AWS Regions&lt;/a&gt; including US East (N. Virginia), US West (Oregon), Europe (Frankfurt), Europe (London), Asia Pacific (Tokyo), and Asia Pacific (Malaysia). To get started, visit the &lt;a href=\"https://lightsail.aws.amazon.com/\"&gt;Lightsail console&lt;/a&gt;. For pricing and other details, visit the &lt;a href=\"https://aws.amazon.com/lightsail/pricing/\"&gt;Amazon Lightsail pricing&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-lightsail-cdn-ipv6/",
-      "publishedAt": "2026-05-18T18:49:00.000Z",
-      "updatedAt": "2026-05-18T18:49:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Lightsail"
-      ],
-      "services": [
-        "Lightsail"
-      ],
-      "tags": [
-        "compute",
-        "amazon lightsail",
-        "lightsail"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "4f90d41ce4e45c41",
-      "title": "Amazon EVS enables support for 32 hosts per environment",
-      "description": "Today, we are announcing that Amazon Elastic VMware Service (Amazon EVS) now supports up to 32 ESXi hosts per environment, double the previous limit of 16 hosts. Amazon EVS gives you flexibility in how you configure VMware Cloud Foundation (VCF) domains and clusters within an environment. You can put all your hosts into a single large cluster, spread them across several smaller clusters, or any combination that fits your needs. With this release, you can now submit a service quota increase to scale up to a total of 32 hosts and reduce the operational overhead of managing multiple environments.",
-      "descriptionHtml": "&lt;p&gt;Today, we are announcing that Amazon Elastic VMware Service (Amazon EVS) now supports up to 32&amp;nbsp;ESXi&amp;nbsp;hosts per environment, double the&amp;nbsp;previous&amp;nbsp;limit of 16 hosts.&lt;/p&gt; \n&lt;p&gt;Amazon EVS gives you flexibility in how you configure VMware Cloud Foundation (VCF) domains and clusters within an environment. You can put all your hosts into a single large cluster, spread them across several smaller clusters, or any combination that fits your needs. With this release, you can now&amp;nbsp;submit&amp;nbsp;a service quota increase to&amp;nbsp;scale up to a total of 32 hosts and&amp;nbsp;reduce the operational overhead of managing multiple environments.&lt;/p&gt; \n&lt;p&gt;This latest release is available in all regions where Amazon EVS&amp;nbsp;is&amp;nbsp;offered.&lt;/p&gt; \n&lt;p&gt;For more details&amp;nbsp;on the steps and procedure, visit the Amazon EVS&amp;nbsp;&lt;a href=\"https://aws.amazon.com/evs/\"&gt;product detail page&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/evs/latest/userguide/what-is-evs.html\"&gt;user guide.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-evs-32-hosts",
-      "publishedAt": "2026-05-18T17:55:00.000Z",
-      "updatedAt": "2026-05-18T17:55:00.000Z",
-      "categories": [
-        "Compute",
-        "Migration"
-      ],
-      "services": [],
-      "tags": [
-        "compute",
-        "migration"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "15f398ca3a09fd72",
-      "title": "AWS SAM CLI adds AWS CloudFormation Language Extensions support to accelerate local serverless development",
-      "description": "AWS SAM CLI now supports AWS CloudFormation Language Extensions , enabling you to reduce duplication in your infrastructure as code (IaC) templates while retaining the full local development workflow. This accelerates your serverless development by letting you define resources once and iterate locally without waiting for cloud deployments. Developers frequently need to define multiple similar resources, such as Lambda functions, DynamoDB tables, or SNS topics, from a single template definition. However, developers who use SAM CLI to build, test, and deploy their serverless applications previou",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/using-sam-cli.html\" target=\"_blank\"&gt;AWS SAM CLI&lt;/a&gt; now supports &lt;a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/transform-aws-languageextensions.html\" target=\"_blank\"&gt;AWS CloudFormation Language Extensions&lt;/a&gt;, enabling you to reduce duplication in your infrastructure as code (IaC) templates while retaining the full local development workflow. This accelerates your serverless development by letting you define resources once and iterate locally without waiting for cloud deployments.&lt;/p&gt; \n&lt;p&gt;Developers frequently need to define multiple similar resources, such as Lambda functions, DynamoDB tables, or SNS topics, from a single template definition. However, developers who use SAM CLI to build, test, and deploy their serverless applications previously could not process templates that use CloudFormation Language Extensions. This required choosing between reducing template duplication and using SAM CLI for local development. Now, SAM CLI processes Language Extensions in memory for local operations while preserving your original template for CloudFormation deployment. You can define your resources once and test them locally across all SAM CLI commands, catching errors like invalid syntax or missing dependencies before deploying. This shortens your iteration cycles and reduces time spent debugging failed deployments in the cloud.&lt;/p&gt; \n&lt;p&gt;To get started, download or update SAM CLI to the latest version. Add the AWS::LanguageExtensions transform to your SAM template and use Fn::ForEach to generate multiple resources from a single definition. SAM CLI commands including sam build, sam local invoke, sam sync, sam local start-api, and sam validate will automatically expand your loops and process each generated resource. You can invoke expanded functions by name, for example sam local invoke AlphaFunction. SAM CLI also supports Fn::Length, Fn::ToJsonString, Fn::FindInMap with DefaultValue, and conditional DeletionPolicy and UpdateReplacePolicy attributes.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/sam-specification-language-extensions.html\" target=\"_blank\"&gt;SAM CLI developer guide&lt;/a&gt;&amp;nbsp;and &lt;a href=\"https://builder.aws.com/content/3DiJq5vQ2hnGq1ddBlCApT8uy6u/dynamic-looping-comes-to-aws-sam\" target=\"_blank\"&gt;launch blog post&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-sam-cli-cloudformation/",
-      "publishedAt": "2026-05-18T16:31:00.000Z",
-      "updatedAt": "2026-05-18T16:31:00.000Z",
-      "categories": [
-        "Developer Tools",
-        "AWS Serverless Application Model Sam",
-        "Compute",
-        "Serverless"
-      ],
-      "services": [
-        "CloudFormation",
-        "SAM"
-      ],
-      "tags": [
-        "developer tools",
-        "aws serverless application model sam",
-        "compute",
-        "serverless",
-        "cloudformation",
-        "sam"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6b19f478d74f6f2a",
-      "title": "Amazon Redshift adds ALTER TABLE for Iceberg tables and writes via the AWS Glue Data Catalog mount",
-      "description": "Amazon Redshift now supports writing directly to Apache Iceberg tables via the AWS Glue Data Catalog (awsdatacatalog) mount and ALTER TABLE DDL statements to modify the schema, partitioning, and properties of Apache Iceberg tables. With write access through the auto-mounted awsdatacatalog, you can land Redshift transformations in your data lake for any engine to query without creating external schemas—particularly useful for Iceberg tables federated with AWS Lake Formation. Supported ALTER TABLE operations include ADD/DROP/ALTER columns, RENAME COLUMN, SET TABLE PROPERTIES to overwrite the def",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"http://aws.amazon.com/redshift\"&gt;Amazon Redshift&lt;/a&gt; now supports writing directly to Apache Iceberg tables via the AWS Glue Data Catalog (awsdatacatalog) mount and ALTER TABLE DDL statements to modify the schema, partitioning, and properties of Apache Iceberg tables. With write access through the auto-mounted awsdatacatalog, you can land Redshift transformations in your data lake for any engine to query without creating external schemas—particularly useful for Iceberg tables federated with AWS Lake Formation.&amp;nbsp;Supported ALTER TABLE operations include ADD/DROP/ALTER columns, RENAME COLUMN, SET TABLE PROPERTIES to overwrite the default compression type, and ADD/DROP/REPLACE PARTITION FIELD to adapt partitioning strategies as data volumes grow. Previously, updating the structure of Iceberg tables required deleting the table and its data, adding complexity and latency to data pipelines.&amp;nbsp;Tables modified by Redshift remain compatible with other Iceberg-compatible engines, including &lt;a href=\"https://aws.amazon.com/emr/\"&gt;Amazon EMR&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/athena/\"&gt;Amazon Athena&lt;/a&gt;, preserving cross-engine interoperability. AWS Lake Formation permissions are supported for Iceberg write operations.&lt;br&gt; &lt;br&gt; These capabilities are available in all AWS Regions where Amazon Redshift is available. To get started, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/redshift/latest/dg/referencing-iceberg-tables.html\"&gt;Referencing Iceberg tables in Amazon Redshift&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/dg/iceberg-alter-table.html\"&gt;Altering table definitions&lt;/a&gt; sections in the Amazon Redshift Database Developer Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-redshift-alter-table-iceberg/",
-      "publishedAt": "2026-05-18T16:25:00.000Z",
-      "updatedAt": "2026-05-18T16:25:00.000Z",
-      "categories": [
-        "Amazon Redshift",
-        "Analytics"
-      ],
-      "services": [
-        "Redshift",
-        "Glue"
-      ],
-      "tags": [
-        "amazon redshift",
-        "analytics",
-        "redshift",
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "fb58ba2e7000f1c2",
-      "title": "Amazon ECS now integrates with Amazon EBS volumes in AWS GovCloud Regions",
-      "description": "Amazon Elastic Container Service (Amazon ECS) now integrates with Amazon Elastic Block Store (Amazon EBS) volumes in AWS GovCloud Regions. This capability makes it easier for you to deploy storage and data-intensive applications such as ETL jobs, media transcoding, and ML inference workloads using ECS. To use EBS volumes with your Amazon ECS tasks, simply configure the path you want the EBS volume to be mounted on in your task definition, and pass desired EBS volume attributes (e.g., size, type, IOPS, throughput), AWS Key Management Service (AWS KMS) key, and a snapshot ID (if you want the vol",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\"&gt;Amazon Elastic Container Service&lt;/a&gt; (Amazon ECS) now integrates with Amazon Elastic Block Store (Amazon EBS) volumes in AWS GovCloud Regions. This capability makes it easier for you to deploy storage and data-intensive applications such as ETL jobs, media transcoding, and ML inference workloads using ECS.&lt;br&gt; &lt;br&gt; To use EBS volumes with your Amazon ECS tasks, simply configure the path you want the EBS volume to be mounted on in your task definition, and pass desired EBS volume attributes (e.g., size, type, IOPS, throughput), AWS Key Management Service (AWS KMS) key, and a snapshot ID (if you want the volume to be initialized from an existing EBS snapshot) in the RunTask, CreateService, or UpdateService API request. When you configure EBS volumes for your Amazon ECS tasks or services, Amazon ECS provisions an equal number of EBS volumes as the number of tasks and mounts one EBS volume to each task. By default, Amazon ECS automatically deletes the attached Amazon EBS volume when a task exits. This integration gives you access to all EBS features including configurable volume types and performance, snapshots, Amazon Data Lifecycle Manager, and encryption for your applications deployed with Amazon ECS.&lt;br&gt; &lt;br&gt; Amazon ECS support for Amazon EBS volumes is available in the AWS GovCloud Regions for Amazon EC2, AWS Fargate, and ECS Managed Instances. To get started, &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-volumes.html\"&gt;view our documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/blogs/aws/amazon-ecs-supports-a-native-integration-with-amazon-ebs-volumes-for-data-intensive-workloads/\"&gt;blog&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/ecs-amazon-ebs-govcloud/",
-      "publishedAt": "2026-05-18T15:53:00.000Z",
-      "updatedAt": "2026-05-18T15:53:00.000Z",
-      "categories": [
-        "Amazon Ecs",
-        "Containers",
-        "AWS Fargate",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "ECS",
-        "Fargate",
-        "EBS"
-      ],
-      "tags": [
-        "amazon ecs",
-        "containers",
-        "aws fargate",
-        "aws govcloud us",
-        "ecs",
-        "fargate",
-        "ebs"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "23f14ca7b2030158",
-      "title": "Amazon SageMaker Studio now supports GPU capacity reservation through SageMaker Flexible Training Plans",
-      "description": "Amazon SageMaker Studio IDEs, including JupyterLab and Code Editor, now support GPU capacity reservations through SageMaker Flexible Training Plans (FTP) , giving you predictable access to high-demand, high-performance computational resources within your budget. By leveraging FTP, you can achieve up to 65% cost savings compared to On-Demand instances while running ML workflows in JupyterLab or Code Editor. FTP provides a fully self-serve procurement experience. To get started, navigate to the SageMaker FTP console and select your preferred instance type, reservation length, and start date for ",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Studio IDEs, including JupyterLab and Code Editor, now support GPU capacity reservations through &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/reserve-capacity-with-training-plans.html\"&gt;SageMaker Flexible Training Plans (FTP)&lt;/a&gt;, giving you predictable access to high-demand, high-performance computational resources within your budget. By leveraging FTP, you can achieve up to 65% cost savings compared to On-Demand instances while running ML workflows in JupyterLab or Code Editor.&lt;br&gt; &lt;br&gt; FTP provides a fully self-serve procurement experience. To get started, navigate to the SageMaker FTP console and select your preferred instance type, reservation length, and start date for your Studio IDE workload. Review your order, complete the purchase, and wait for the plan to become active. When creating a Studio app from the SageMaker Studio UI, select your purchased plan from the Instance dropdown. SageMaker provisions the instance automatically with no infrastructure management required on your part. As your plan nears expiration, the IDE proactively notifies you, giving you time to save your work before the reservation ends.&lt;br&gt; &lt;/p&gt; \n&lt;p&gt;To learn more about using FTP capacity reservation capability with Studio IDEs, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/training-plan-utilization-for-studio-apps.html\"&gt;Using Training Plans with Studio IDEs&lt;/a&gt;.&lt;br&gt; To learn about launching JupyterLab and Code Editor applications in SageMaker Studio, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-spaces.html\"&gt;Studio Spaces documentation&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-sagemaker-training-plan-support-for-studio/",
-      "publishedAt": "2026-05-18T15:00:00.000Z",
-      "updatedAt": "2026-05-18T15:00:00.000Z",
-      "categories": [
-        "Cost Management",
-        "Amazon Sagemaker",
-        "Artificial Intelligence",
-        "Compute"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "cost management",
-        "amazon sagemaker",
-        "artificial intelligence",
-        "compute",
-        "sagemaker"
       ],
       "isNew": false
     }
