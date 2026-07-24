@@ -1,7 +1,284 @@
 {
-  "lastUpdated": "2026-07-23T08:56:46.994Z",
+  "lastUpdated": "2026-07-24T08:55:08.390Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "cfdaf7b1fbfcb3be",
+      "title": "Amazon ECS Service Connect now supports Zone-Aware routing",
+      "description": "Amazon Elastic Container Service (Amazon ECS) introduces zone-aware routing for ECS Service Connect, enabling customers to reduce cross Availability Zone (AZ) data transfer costs and latency by automatically prioritizing service-to-service traffic within the same AZ. With this launch, ECS Service Connect preferentially routes requests to endpoints in the same AZ as the originating task while dynamically adjusting traffic weights as endpoints scale to maintain balanced load across target services. Previously, as customers distributed their applications across AZs for resiliency, service-to-serv",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\"&gt;Amazon Elastic Container Service&lt;/a&gt; (Amazon ECS)&amp;nbsp;introduces zone-aware routing for ECS Service Connect, enabling customers to reduce cross Availability Zone (AZ) data transfer costs and latency by automatically prioritizing service-to-service traffic within the same AZ.&lt;/p&gt; \n&lt;p&gt;With this launch, ECS Service Connect preferentially routes requests to endpoints in the same AZ as the originating task while dynamically adjusting traffic weights as endpoints scale to maintain balanced load across target services. Previously, as customers distributed their applications across AZs for resiliency, service-to-service traffic led to significant cross-zone data transfer, requiring trade-offs between cost and resilience. Zone-aware routing eliminates this trade-off, and when local endpoints become unhealthy or fall below capacity thresholds, traffic automatically redistributes across healthy AZs to maintain availability without overloading any single zones.&lt;/p&gt; \n&lt;p&gt;Zone-aware routing is enabled by default for all new and existing services and requires no additional infrastructure or application code changes. Existing services require a one-time redeployment to enable the new routing behavior. You can use Amazon VPC Flow Logs with AZ metadata to monitor cross-AZ traffic patterns and validate routing effectiveness. This feature is available in all AWS commercial and AWS GovCloud (US) &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Regions&lt;/a&gt;, where ECS Service Connect is supported at no additional cost. For more details, refer to our &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-zone-aware-routing.html\"&gt;documentation&lt;/a&gt; and launch &lt;a href=\"https://aws.amazon.com/blogs/containers/announcing-zone-aware-routing-in-amazon-ecs-service-connect/\"&gt;blog post&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/ecs-service-connect-zone-aware/",
+      "publishedAt": "2026-07-23T23:46:00.000Z",
+      "updatedAt": "2026-07-23T23:46:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Containers",
+        "AWS Fargate",
+        "Amazon Ecs"
+      ],
+      "services": [
+        "ECS",
+        "Fargate",
+        "Connect"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "containers",
+        "aws fargate",
+        "amazon ecs",
+        "ecs",
+        "fargate",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "efab03bad6012ea9",
+      "title": "AWS now supports automatic credit memo application preferences",
+      "description": "AWS now enables customers who pay through electronic funds transfer to configure preferences for how credit memos are automatically applied to outstanding invoices. Customers can choose from different application preferences directly on the Billing and Cost Management console to match their internal payment processes. These options include combinations of applying credit memos to the original invoice, next eligible invoice, and oldest unpaid invoice. By default, credit memos are applied to the original invoice first, then to future invoices, unless a different preference is selected. Automatic",
+      "descriptionHtml": "&lt;p&gt;AWS now enables customers who pay through electronic funds transfer to configure preferences for how credit memos are automatically applied to outstanding invoices. Customers can choose from different application preferences directly on the Billing and Cost Management console to match their internal payment processes. These options include combinations of applying credit memos to the original invoice, next eligible invoice, and oldest unpaid invoice. By default,&amp;nbsp;credit memos are applied to the original invoice first, then to future invoices, unless a different preference is selected.&lt;br&gt; &lt;br&gt; Automatic credit memo application preferences are available in all commercial AWS Regions. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/billing/home#/paymentpreferences/balanceapplications\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Payment Preferences&lt;/a&gt; page in the AWS Billing and Cost Management console. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-balance-application-preferences.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Managing balance application preferences&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/credit-memo-applications/",
+      "publishedAt": "2026-07-23T18:16:00.000Z",
+      "updatedAt": "2026-07-23T18:16:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
+    {
+      "id": "d90670faf5ed394a",
+      "title": "Amazon RDS for MySQL supports MySQL 9.7 in Amazon RDS Database Preview Environment",
+      "description": "Amazon RDS for MySQL now supports version community MySQL 9.7 in the Amazon RDS Database Preview Environment , allowing you to evaluate the latest Release on Amazon RDS for MySQL. This preview environment provides a sandbox where you can test applications and explore new MySQL 9.7 capabilities before they become generally available. MySQL 9.7 is the latest Long-Term Support release for community MySQL. MySQL Long-Term Support releases include bug fixes, security patches, as well as new features. Please refer to the MySQL 9.7 release notes for more details about this release. Amazon RDS Databas",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/mysql/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for MySQL&lt;/a&gt;&amp;nbsp;now supports version community MySQL 9.7 in the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/rds/databasepreview/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Database Preview Environment&lt;/a&gt;, allowing you to evaluate the latest Release on Amazon RDS for MySQL. This preview environment provides a sandbox where you can test applications and explore new MySQL 9.7 capabilities before they become generally available.&lt;br&gt; &lt;br&gt; MySQL 9.7 is the latest Long-Term Support release for community MySQL. MySQL Long-Term Support releases include bug fixes, security patches, as well as new features. Please refer to the&amp;nbsp;&lt;a href=\"https://dev.mysql.com/doc/refman/9.7/en/mysql-nutshell.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;MySQL 9.7 release notes&lt;/a&gt;&amp;nbsp;for more details about this release.&lt;br&gt; &lt;br&gt; Amazon RDS Database Preview Environment database instances are retained for a maximum of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots created in the preview environment can only be used to create or restore database instances within the preview environment. Amazon RDS Database Preview Environment database instances are&amp;nbsp;&lt;a href=\"https://aws.amazon.com/rds/mysql/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;priced the same as production RDS instances created in the US East (Ohio) Region&lt;/a&gt;. For further information, see&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Previewenvironment.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Working with the Database Preview Environment&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-mysql-long-term-9-7-rds-database-preview/",
+      "publishedAt": "2026-07-23T18:05:00.000Z",
+      "updatedAt": "2026-07-23T18:05:00.000Z",
+      "categories": [
+        "Amazon Rds For Mysql",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "amazon rds for mysql",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5a107150f4f80f92",
+      "title": "AWS Lambda durable execution SDK for .NET is now generally available",
+      "description": "Today, AWS announces the general availability of the AWS Lambda Durable Execution SDK for .NET, empowering C# developers to build resilient, long-running workflows using Lambda durable functions. With this SDK, developers can create multi-step applications like payment processing pipelines, AI agent orchestration, and human-in-the-loop approvals directly in their applications without implementing custom progress tracking or integrating external orchestration services. Lambda durable functions extend Lambda's event-driven programming model with operations that checkpoint progress automatically ",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of the AWS Lambda Durable Execution SDK for .NET, empowering C# developers to build resilient, long-running workflows using Lambda durable functions. With this SDK, developers can create multi-step applications like payment processing pipelines, AI agent orchestration, and human-in-the-loop approvals directly in their applications without implementing custom progress tracking or integrating external orchestration services.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Lambda durable functions extend Lambda's event-driven programming model with operations that checkpoint progress automatically and pause execution for up to a year when waiting on external events. The AWS Lambda Durable Execution SDK for .NET provides an idiomatic C# experience for building with Lambda durable functions. It includes steps for progress tracking, callback integration for human and agent-in-the-loop workflows, durable invocation for reliable function chaining, and waits for efficient suspension. The SDK installs from NuGet into the .NET toolchain you use today. The &lt;a href=\"https://www.nuget.org/packages/Amazon.Lambda.DurableExecution.Testing/\"&gt;local testing emulator&lt;/a&gt; in the SDK enables developers to build and debug locally before deploying to production.&lt;/p&gt; \n&lt;p&gt;To get started, see the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html\"&gt;Lambda durable functions developer guide&lt;/a&gt; and the &lt;a href=\"https://www.nuget.org/packages/Amazon.Lambda.DurableExecution\"&gt;AWS Lambda Durable Execution SDK&lt;/a&gt; for .NET on NuGet. For Regional availability and pricing details, see the &lt;a href=\"https://builder.aws.com/build/capabilities\"&gt;AWS Regional Services List&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/lambda/pricing/\"&gt;AWS Lambda Pricing.&lt;/a&gt;&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/lambdadf-dotnet/",
+      "publishedAt": "2026-07-23T18:00:00.000Z",
+      "updatedAt": "2026-07-23T18:00:00.000Z",
+      "categories": [
+        "Serverless",
+        "AWS Lambda"
+      ],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "serverless",
+        "aws lambda",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6a9075f5b08e6a36",
+      "title": "Amazon Bedrock AgentCore now delivers unified observability with traces and logs in a single log group",
+      "description": "Amazon Bedrock AgentCore now delivers agent traces and prompts to the same log group as your agent's logs, giving you unified observability for AI agents in a single Amazon CloudWatch log group. Previously, AgentCore split agent telemetry across multiple destinations trace spans went to the shared `aws/spans` log group while event logs containing prompts, inputs, and outputs went to a separate resource-specific log group. This meant debugging an agent invocation required searching across multiple log groups, and customers could not apply fine-grained access control or customer-managed key (CMK",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore now delivers agent traces and prompts to the same log group as your agent's logs, giving you unified observability for AI agents in a single Amazon CloudWatch log group.&lt;/p&gt; \n&lt;p&gt;Previously, AgentCore split agent telemetry across multiple destinations trace spans went to the shared `aws/spans` log group while event logs containing prompts, inputs, and outputs went to a separate resource-specific log group. This meant debugging an agent invocation required searching across multiple log groups, and customers could not apply fine-grained access control or customer-managed key (CMK) encryption at the individual agent level. With today's launch, all of an agent's telemetry traces, prompts, structured logs, and standard output is delivered to a single per-agent log group (`/aws/bedrock-agentcore/runtimes/&amp;lt;agent_id&amp;gt;-&amp;lt;endpoint_name&amp;gt;`). You can now correlate traces and logs in one place, scope IAM policies and CMK encryption to individual agents, and export all telemetry by subscribing to a single log group. For multi-agent systems, each agent's complete execution history stays together, making end-to-end debugging straightforward.&lt;/p&gt; \n&lt;p&gt;All newly created agents starting July 20, 2026 in supported AWS Regions use unified observability by default starting no configuration needed. For existing agents, set the `UNIFIED_TRACES_DESTINATION_ENABLED=true` environment variable on your agent runtime and upgrade ADOT to version 0.17.1 or later. This feature is available in all AWS commercial regions where AgentCore runtime is supported. Learn more in the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html\"&gt;AgentCore Developer Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-bedrock-agentcore-unified-observability-single-log-group/",
+      "publishedAt": "2026-07-23T17:00:00.000Z",
+      "updatedAt": "2026-07-23T17:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5cb74ec85608a316",
+      "title": "Amazon CloudWatch Logs now supports Application Load Balancer logs",
+      "description": "Amazon CloudWatch Logs now supports Application Load Balancer (ALB) logs as vended logs, improving observability and simplifying debugging for network traffic patterns. You can now analyze ALB access, connection and health check logs directly in CloudWatch to gain insights into client connections, traffic distribution, connection status and target health, helping you identify and troubleshoot network issues faster. Additionally, you can set up CloudWatch telemetry enablement rules to automatically configure logging of both existing and newly created ALB resources, for your organization, specif",
+      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch Logs now supports Application Load Balancer (ALB) logs as vended logs, improving observability and simplifying debugging for network traffic patterns. You can now analyze ALB access, connection and health check logs directly in CloudWatch to gain insights into client connections, traffic distribution, connection status and target health, helping you identify and troubleshoot network issues faster. Additionally, you can set up &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/telemetry-config-rules.html\"&gt;CloudWatch telemetry enablement rules&lt;/a&gt; to automatically configure logging of both existing and newly created ALB resources, for your organization, specific accounts, or specific resources, ensuring consistent monitoring coverage without manual setup.&lt;br&gt; &lt;br&gt; With this CloudWatch Logs integration, you can track detailed access patterns using CloudWatch Logs Insights queries, create metric filters for monitoring and alarming, and review traffic patterns in real time using Live Tail. ALB logs can be configured through the integrations tab of your application load balancer in AWS Management Console, AWS CLI, or SDKs. You can also configure delivery of ALB logs to Amazon Data Firehose or Amazon S3 with support for Apache Parquet format.&lt;br&gt; &lt;br&gt; ALB logs delivery to CloudWatch is available in all AWS Commercial and GovCloud regions where Application Load Balancer and CloudWatch are available. ALB logs are charged as vended logs when delivered to CloudWatch Logs and Data Firehose, while delivery to Amazon S3 is free (Parquet conversion is charged at $0.035/GB - N. Virginia).&lt;br&gt; &lt;br&gt; To learn more about configuring ALB logs in CloudWatch Logs, &lt;a href=\"https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-logs.html\"&gt;please visit our documentation&lt;/a&gt;. For pricing information, see &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;CloudWatch pricing page.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-cloudwatch-logs/",
+      "publishedAt": "2026-07-23T17:00:00.000Z",
+      "updatedAt": "2026-07-23T17:00:00.000Z",
+      "categories": [
+        "Amazon Elastic Load Balancing",
+        "Networking And Content Delivery",
+        "Amazon Cloudwatch Logs"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "amazon elastic load balancing",
+        "networking and content delivery",
+        "amazon cloudwatch logs",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e4d3a57bb96c2b30",
+      "title": "Amazon EVS is now available in additional Regions",
+      "description": "Today, we're announcing that Amazon Elastic VMware Service (Amazon EVS) is now available in the Asia Pacific (Seoul), Europe (Zurich), and Europe (Stockholm) Regions. This expansion provides more options to leverage the scale and flexibility of AWS for running your VMware workloads in the cloud. Amazon EVS lets you run VMware Cloud Foundation (VCF) directly within your Amazon Virtual Private Cloud (VPC) on EC2 bare-metal instances, powered by AWS Nitro. You can set up a complete VCF environment in just a few hours, enabling rapid workload migration to AWS to help you eliminate aging infrastruc",
+      "descriptionHtml": "&lt;p&gt;Today, we're announcing that Amazon Elastic VMware Service (Amazon EVS) is now available in the Asia Pacific (Seoul), Europe (Zurich), and Europe (Stockholm)&amp;nbsp;Regions. This expansion provides more options to leverage the scale and flexibility of AWS for running your VMware workloads in the cloud.&lt;br&gt; &lt;br&gt; Amazon EVS lets you run VMware Cloud Foundation (VCF) directly within your Amazon Virtual Private Cloud (VPC) on EC2 bare-metal instances, powered by AWS Nitro. You can set up a complete VCF environment in just a few hours, enabling rapid workload migration to AWS to help you eliminate aging infrastructure, reduce operational risks, and meet critical timelines for exiting your data center. This launch supports all existing Amazon EVS features, including &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-evs-vcf9/\"&gt;VCF 9.0 and 9.1 support&lt;/a&gt; to take advantage of the latest VMware features, such as memory tiering.&lt;br&gt; &lt;br&gt; The added availability in these Regions gives your VMware workloads lower latency through closer proximity to your end users, compliance with data residency or sovereignty requirements, and additional high availability and resiliency options for your enhanced redundancy strategy.&lt;br&gt; &lt;br&gt; To get started, visit the Amazon EVS &lt;a href=\"https://aws.amazon.com/evs/\"&gt;product detail page&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/evs/latest/userguide/what-is-evs.html\"&gt;user guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-evs-available-in-additional-regions/",
+      "publishedAt": "2026-07-23T16:24:00.000Z",
+      "updatedAt": "2026-07-23T16:24:00.000Z",
+      "categories": [
+        "Migration",
+        "Compute"
+      ],
+      "services": [],
+      "tags": [
+        "migration",
+        "compute"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "57b799122179163e",
+      "title": "Claude Sonnet 5 is now available on Amazon Bedrock in AWS GovCloud (US)",
+      "description": "AWS GovCloud (US) now offers Claude Sonnet 5 on Amazon Bedrock. Claude Sonnet 5 delivers strong performance across coding, professional work, and agentic tasks while maintaining the balance of capability, cost, and speed. For coding, it navigates large codebases, lands multi-file changes, and carries debugging and refactoring tasks through to completion with fewer rounds of correction. For agents, it calls tools precisely, holds state across many steps, and recovers from errors so more runs finish correctly the first time. For knowledge work, it builds spreadsheets, drafts documents, and turns",
+      "descriptionHtml": "&lt;p&gt;AWS GovCloud (US) now offers Claude Sonnet 5 on Amazon Bedrock. Claude Sonnet 5 delivers strong performance across coding, professional work, and agentic tasks while maintaining the balance of capability, cost, and speed. For coding, it navigates large codebases, lands multi-file changes, and carries debugging and refactoring tasks through to completion with fewer rounds of correction. For agents, it calls tools precisely, holds state across many steps, and recovers from errors so more runs finish correctly the first time. For knowledge work, it builds spreadsheets, drafts documents, and turns unstructured material into structured analysis. &lt;/p&gt; \n&lt;p&gt;With this launch, &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/05/claude-opus-4.8-aws-govcloud-us/\"&gt;Claude Opus 4.8&lt;/a&gt; and Claude Sonnet 5 are available on bedrock-runtime endpoints in AWS GovCloud (US-West and US-East) and bedrock-mantle endpoints in AWS GovCloud (US-West) for performing inference. Bedrock Mantle, Amazon Bedorck's next-generation inference engine, supports the Anthropic Messages API. Amazon Bedrock keeps your data within AWS infrastructure and provides access to Claude Sonnet 5 through a unified service with AWS-managed features like Guardrails, Knowledge Bases, and regional data residency. To learn more, see the Amazon Bedrock &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5.html\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html#model-regions-anthropic\"&gt;regional availability&lt;/a&gt;. &lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/claude-sonnet-5-govcloud/",
+      "publishedAt": "2026-07-23T16:02:00.000Z",
+      "updatedAt": "2026-07-23T16:02:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock",
+        "Claude"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "amazon bedrock",
+        "bedrock",
+        "claude"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "29fc2fa99e44a645",
+      "title": "Announcing region expansion of G7e instances on SageMaker AI inference",
+      "description": "We are pleased to announce the availability of Amazon EC2 G7e instances in Asia Pacific (Seoul), Europe (London), and Asia Pacific (Tokyo) on Amazon SageMaker AI inference. G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs with 96 GB of memory per GPU, 5th Generation Intel Xeon processors, and up to 1,600 Gbps of Elastic Fabric Adapter networking bandwidth, delivering up to 2.3x inference performance compared to previous-generation G6e instances. With this region expansion, you can now deploy inference endpoints on G7e instances closer to your end users in Asia an",
+      "descriptionHtml": "&lt;p&gt;We are pleased to announce the availability of &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g7e/\"&gt;Amazon EC2 G7e instances &lt;/a&gt;in Asia Pacific (Seoul), Europe (London), and Asia Pacific (Tokyo) on Amazon SageMaker AI inference. G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs with 96 GB of memory per GPU, 5th Generation Intel Xeon processors, and up to 1,600 Gbps of Elastic Fabric Adapter networking bandwidth, delivering up to 2.3x inference performance compared to previous-generation G6e instances.&lt;br&gt; &lt;br&gt; With this region expansion, you can now deploy inference endpoints on G7e instances closer to your end users in Asia and Europe, reducing latency for generative AI workloads. G7e instances provide up to 768 GB of total GPU memory on a single instance, enabling you to serve medium-to-large language models of up to 70B parameters with FP8 precision without multi-node configurations. These instances are well suited for LLM inference, image and video generation, spatial computing, and scientific computing workloads that require high GPU memory capacity and bandwidth.&lt;br&gt; &lt;br&gt; G7e instances for SageMaker AI inference are now available in Asia Pacific (Seoul), Europe (London), and Asia Pacific (Tokyo), in addition to previously supported regions. For pricing information on these instances, please visit our &lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;&lt;u&gt;pricing page&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/g7e-sagemaker-ai/",
+      "publishedAt": "2026-07-23T15:04:00.000Z",
+      "updatedAt": "2026-07-23T15:04:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Sagemaker Deploy",
+        "Amazon Sagemaker",
+        "Compute",
+        "Global Infrastructure"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon sagemaker deploy",
+        "amazon sagemaker",
+        "compute",
+        "global infrastructure",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "fc69a7e874e89b9d",
+      "title": "Announcing region expansion of G6 instances on SageMaker AI Inference",
+      "description": "We are pleased to announce the availability of Amazon EC2 G6 instances in the AWS GovCloud (US-East) region on Amazon SageMaker AI inference. G6 instances are powered by up to 8 NVIDIA L4 Tensor Core GPUs, each with 24 GB of memory, and third-generation AMD EPYC processors, delivering up to 2x the deep learning inference performance compared to G4dn instances. With this region expansion, government agencies and organizations operating in GovCloud can deploy inference endpoints on G6 instances to serve generative AI workloads—including small-to-medium language models, image generation, and comp",
+      "descriptionHtml": "&lt;p&gt;We are pleased to announce the availability of &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g6/\"&gt;Amazon EC2 G6 &lt;/a&gt;instances in the AWS GovCloud (US-East) region on Amazon SageMaker AI inference. G6 instances are powered by up to 8 NVIDIA L4 Tensor Core GPUs, each with 24 GB of memory, and third-generation AMD EPYC processors, delivering up to 2x the deep learning inference performance compared to G4dn instances.&lt;br&gt; &lt;br&gt; With this region expansion, government agencies and organizations operating in GovCloud can deploy inference endpoints on G6 instances to serve generative AI workloads—including small-to-medium language models, image generation, and computer vision tasks—while meeting strict compliance and data residency requirements. G6 instances offer strong price-performance for production inference workloads that fit within 24 GB of GPU memory.&lt;br&gt; &lt;br&gt; G6 instances for SageMaker AI inference are now available in AWS GovCloud (US-East), in addition to previously supported regions. For pricing information on these instances, please visit our &lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;&lt;u&gt;pricing page&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/g6-sagemaker-ai-inference/",
+      "publishedAt": "2026-07-23T14:51:00.000Z",
+      "updatedAt": "2026-07-23T14:51:00.000Z",
+      "categories": [
+        "Global Infrastructure",
+        "Compute",
+        "Artificial Intelligence",
+        "Amazon Sagemaker Deploy",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "global infrastructure",
+        "compute",
+        "artificial intelligence",
+        "amazon sagemaker deploy",
+        "amazon sagemaker",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "417b8190cb5817fa",
+      "title": "AWS Wickr announces Data Retention Service feature",
+      "description": "AWS Wickr now offers a managed Data Retention Service feature for Premium users, enabling organizations to retain conversations across their network for data archiving purposes. AWS Wickr is an enterprise-grade, secure collaboration product that provides end-to-end encrypted messaging, file management, screen sharing, and voice/video conferencing capabilities. The Data Retention Service feature provides a cloud-native alternative to traditional container-based data retention methods. The Data Retention Service can retain conversations in your network, including direct messages and conversation",
+      "descriptionHtml": "&lt;p&gt;AWS Wickr now offers a managed Data Retention Service feature for Premium users, enabling organizations to retain conversations across their network for data archiving purposes. &lt;a href=\"https://aws.amazon.com/wickr/\"&gt;AWS Wickr&lt;/a&gt; is an enterprise-grade, secure collaboration product that provides end-to-end encrypted messaging, file management, screen sharing, and voice/video conferencing capabilities. The Data Retention Service feature provides a cloud-native alternative to traditional container-based data retention methods.&lt;/p&gt; \n&lt;p&gt;The Data Retention Service can retain conversations in your network, including direct messages and conversations in Groups or Rooms between internal members and external federated teams. The serverless architecture offers simplified deployment, managed infrastructure, automatic scaling, and comprehensive monitoring while maintaining Wickr's end-to-end encryption standards. This feature is particularly valuable for organizations that require comprehensive data archiving capabilities and maintaining audit trails.&lt;/p&gt; \n&lt;p&gt;AWS Wickr Premium customers can opt in to enable data retention for their networks. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/wickr/latest/adminguide/serverless-method.html\"&gt;AWS Wickr documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-wickr-data/",
+      "publishedAt": "2026-07-23T04:00:00.000Z",
+      "updatedAt": "2026-07-23T04:00:00.000Z",
+      "categories": [
+        "Government And Public Sector",
+        "Messaging",
+        "AWS Wickr",
+        "Security Identity And Compliance"
+      ],
+      "services": [],
+      "tags": [
+        "government and public sector",
+        "messaging",
+        "aws wickr",
+        "security identity and compliance"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6017a2d36100ef75",
+      "title": "Amazon EC2 High Memory U7i instances now available in additional regions",
+      "description": "Amazon EC2 High Memory U7in-16TB instances (u7in-16tb.224xlarge) are now available in AWS South America (São Paulo) region, and U7in-24TB instances (u7in-24tb.224xlarge) are now available in AWS Europe (Ireland) region. U7i instances are part of the AWS 7th generation and are powered by custom fourth-generation Intel Xeon Scalable processors (Sapphire Rapids). U7in-16TB instances offer 16 TiB of DDR5 memory, and U7in-24TB instances offer 24 TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment. Both U7in-16TB and U7in-24TB instance",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 High Memory U7in-16TB instances (u7in-16tb.224xlarge) are now available in AWS South America (São Paulo) region, and U7in-24TB instances (u7in-24tb.224xlarge) are now available in AWS Europe (Ireland) region. U7i instances are part of the AWS 7th generation and are powered by custom fourth-generation Intel Xeon Scalable processors (Sapphire Rapids). U7in-16TB instances offer 16 TiB of DDR5 memory, and U7in-24TB instances offer 24 TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment.&lt;/p&gt; \n&lt;p&gt;Both U7in-16TB and U7in-24TB instances deliver 896 vCPUs and support up to 100 Gbps of Amazon EBS bandwidth for faster data loading and backups, 200 Gbps of network bandwidth, and ENA Express. U7i instances are ideal for customers running mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.&lt;/p&gt; \n&lt;p&gt;To learn more about U7i instances, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/u7i/\"&gt;High Memory instances page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-high-memory-u7i/",
+      "publishedAt": "2026-07-23T00:00:00.000Z",
+      "updatedAt": "2026-07-23T00:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
     {
       "id": "97fa876ccfb4bcba",
       "title": "Amazon EC2 C7a instances are now available in the US West (N. California) Region",
@@ -32,6 +309,28 @@
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-m8a-instances-asia-pacific-hyderabad-region/",
       "publishedAt": "2026-07-22T20:55:00.000Z",
       "updatedAt": "2026-07-22T20:55:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "89e9165d33ea0a12",
+      "title": "Amazon EC2 M8id instances are now available in Europe (Ireland) region",
+      "description": "Amazon EC2 M8id instances are now available in (Ireland). These instances are powered by custom Intel Xeon 6 processors and deliver up to 43% higher performance and 3.3x more memory bandwidth compared to previous generation M6id instances. M8id instances offer up to 384 vCPUs, 1.5TiB of memory, and 22.8TB of NVMe SSD storage, 3x more than previous generation instances. These instances deliver up to 46% higher performance for I/O intensive database workloads, and up to 30% faster query results for I/O intensive real-time data analytics than previous sixth-generation instances. Additionally, the",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 M8id instances are now available in (Ireland). These instances are powered by custom Intel Xeon 6 processors and deliver up to 43% higher performance and 3.3x more memory bandwidth compared to previous generation M6id instances.&lt;br&gt; &lt;br&gt; M8id instances offer up to 384 vCPUs, 1.5TiB of memory, and 22.8TB of NVMe SSD storage, 3x more than previous generation instances. These instances deliver up to 46% higher performance for I/O intensive database workloads, and up to 30% faster query results for I/O intensive real-time data analytics than previous sixth-generation instances. Additionally, these instances support Instance Bandwidth Configuration, allowing 25% flexible allocation between network and EBS bandwidth, allocating resources optimally for each workload.&lt;br&gt; &lt;br&gt; M8id instances are well-suited for balanced workloads including application servers, microservices, enterprise applications, and small to medium databases.&lt;br&gt; &lt;br&gt; Customers can purchase these instances via Savings Plans, On-Demand instances, and Spot instances. For more information visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/\"&gt;Amazon EC2 instance type page.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-m8id-europe-ireland/",
+      "publishedAt": "2026-07-22T19:55:00.000Z",
+      "updatedAt": "2026-07-22T19:55:00.000Z",
       "categories": [
         "Amazon Ec2",
         "Compute"
@@ -153,6 +452,32 @@
         "security compliance",
         "aws organizations",
         "organizations"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "847de5bcd55c696b",
+      "title": "Amazon SageMaker AI inference now supports G7 instances",
+      "description": "Amazon SageMaker AI inference now supports G7 instances powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs, enabling you to deploy machine learning models with up to 4.6x AI inference performance compared to previous-generation G6 instances. Customers deploying generative AI models for production inference need high GPU throughput and memory capacity to serve medium-to-large models cost-effectively, but previous-generation instances often required over-provisioning expensive compute or quantizing models to fit within memory constraints. G7 instances provide 32 GB of GPU memory per GP",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker AI inference now supports &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g7/\"&gt;G7 instances&lt;/a&gt; powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs, enabling you to deploy machine learning models with up to 4.6x AI inference performance compared to previous-generation G6 instances. Customers deploying generative AI models for production inference need high GPU throughput and memory capacity to serve medium-to-large models cost-effectively, but previous-generation instances often required over-provisioning expensive compute or quantizing models to fit within memory constraints.&lt;br&gt; &lt;br&gt; G7 instances provide 32 GB of GPU memory per GPU with 5th Generation Tensor Cores, up to 700 Gbps of EFA-enabled networking (7x compared to G6), and up to 7.6 TB of local NVMe SSD storage for keeping large models close to compute. These capabilities make G7 instances well suited for serving models in the 7B–30B parameter range, image and video generation workloads, and multi-model inference endpoints that benefit from higher memory bandwidth and throughput. You can deploy models on G7 instances using the SageMaker AI Inference console, API, or SDK by specifying G7 instance types (such as ml.g7.xlarge through ml.g7.48xlarge) in your endpoint configuration.&lt;br&gt; &lt;br&gt; G7 instances for SageMaker AI inference are available in US East (N. Virginia, Ohio) and US West (Oregon). For pricing information on these instances, please visit our &lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;&lt;u&gt;pricing page&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-ai-g7/",
+      "publishedAt": "2026-07-22T15:23:00.000Z",
+      "updatedAt": "2026-07-22T15:23:00.000Z",
+      "categories": [
+        "Amazon Sagemaker",
+        "Compute",
+        "Artificial Intelligence",
+        "Global Infrastructure"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "amazon sagemaker",
+        "compute",
+        "artificial intelligence",
+        "global infrastructure",
+        "sagemaker"
       ],
       "isNew": true
     },
@@ -511,6 +836,29 @@
       "isNew": true
     },
     {
+      "id": "27a76818a97e2888",
+      "title": "AWS HealthOmics now available in two additional AWS Regions",
+      "description": "AWS HealthOmics private workflows are now available in the Asia Pacific (Tokyo) and US East (Ohio) Regions, expanding access to fully-managed bioinformatics workflows for research, drug discovery, and agriculture science initiatives with regional compliance requirements. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs with fully managed bioinformatics workflows. With HealthOmics private workflows, customers can build and scale genomics data analysis pipelines using familiar domain-specific languages including Nex",
+      "descriptionHtml": "&lt;p&gt;AWS HealthOmics private workflows are now available in the&amp;nbsp;Asia Pacific (Tokyo) and US East (Ohio) Regions, expanding access to fully-managed bioinformatics workflows&amp;nbsp;for research, drug discovery, and agriculture science initiatives with regional compliance requirements. &lt;a href=\"https://aws.amazon.com/healthomics/\"&gt;AWS HealthOmics&lt;/a&gt;&amp;nbsp;is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs with fully managed bioinformatics workflows.&lt;/p&gt; \n&lt;p&gt;With HealthOmics private workflows, customers can build and scale genomics data analysis pipelines using familiar domain-specific languages including Nextflow, WDL, and CWL, enabling healthcare and life sciences customers to focus on scientific discovery rather than infrastructure management.&amp;nbsp;HealthOmics provides built-in features, such as Git integrations for version-controlled workflow development and third-party container registry support through Amazon ECR, to make it easy to migrate existing pipelines and accelerate development of new genomics workflows while maintaining full data provenance and compliance requirements. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Private workflows are now available in the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Seoul, Singapore, Tokyo). To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/omics/latest/dev/what-is-healthomics.html\"&gt;AWS HealthOmics User Guide&lt;/a&gt;. For more information on pricing, visit &lt;a href=\"https://aws.amazon.com/healthomics/pricing/\"&gt;AWS HealthOmics pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/healthomics-tokyo-ohio/",
+      "publishedAt": "2026-07-20T18:54:00.000Z",
+      "updatedAt": "2026-07-20T18:54:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Omics",
+        "Containers",
+        "Serverless"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence",
+        "amazon omics",
+        "containers",
+        "serverless"
+      ],
+      "isNew": true
+    },
+    {
       "id": "772bbaf1d12e9404",
       "title": "AWS Data Exports now provides standardized Amazon Bedrock product metadata",
       "description": "Today, AWS announces standardized product metadata for Amazon Bedrock in AWS Data Exports (Cost and Usage Report), giving FinOps teams and cloud administrators consistent, structured attributes to understand Bedrock costs. AWS Data Exports lets you create customized exports of your AWS cost and usage data and deliver them to Amazon S3 for querying with Amazon Athena or loading into your data warehouse. With these attributes, you can attribute Bedrock spend without building custom logic to parse various product metadata in CUR 2.0. The standardized attributes include model provider, model name,",
@@ -849,7 +1197,7 @@
         "management and governance",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b49b9f9513bc502c",
@@ -868,7 +1216,7 @@
         "amazon managed service for grafana",
         "management and governance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5c0ce1620e841744",
@@ -891,7 +1239,7 @@
         "cloud financial management",
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ab0aec585bf023ae",
@@ -917,7 +1265,7 @@
         "ec2",
         "ssm"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a1632b251b9f29d5",
@@ -939,7 +1287,7 @@
         "amazon simple storage service",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ed946bf8426f7059",
@@ -961,7 +1309,7 @@
         "databases",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "22a6d31a560de286",
@@ -978,7 +1326,7 @@
       "tags": [
         "management tools"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f8ec2b35aded223b",
@@ -1000,7 +1348,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2ac9579276ae37b2",
@@ -1022,7 +1370,7 @@
         "analytics",
         "redshift"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "34945fc0e1ec666c",
@@ -1044,7 +1392,7 @@
         "amazon s3",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0b227f2bc2f349ce",
@@ -1066,7 +1414,7 @@
         "storage",
         "backup"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fbf31dcb5dc19ce8",
@@ -1088,7 +1436,7 @@
         "aws backup",
         "backup"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1c54b3a7d5ccafcc",
@@ -3435,36 +3783,6 @@
         "cloudwatch"
       ],
       "isNew": false
-    },
-    {
-      "id": "cfdaf7b1fbfcb3be",
-      "title": "ECS Service Connect now supports Zone-Aware routing",
-      "description": "Amazon Elastic Container Service (Amazon ECS) introduces zone-aware routing for ECS Service Connect, enabling customers to reduce cross Availability Zone (AZ) data transfer costs and latency by automatically prioritizing service-to-service traffic within the same AZ. With this launch, ECS Service Connect preferentially routes requests to endpoints in the same AZ as the originating task while dynamically adjusting traffic weights as endpoints scale to maintain balanced load across target services. Previously, as customers distributed their applications across AZs for resiliency, service-to-serv",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\"&gt;Amazon Elastic Container Service&lt;/a&gt;&amp;nbsp;(Amazon ECS) introduces zone-aware routing for ECS Service Connect, enabling customers to reduce cross Availability Zone (AZ) data transfer costs and latency by automatically prioritizing service-to-service traffic within the same AZ.&lt;br&gt; &lt;br&gt; With this launch, ECS Service Connect preferentially routes requests to endpoints in the same AZ as the originating task while dynamically adjusting traffic weights as endpoints scale to maintain balanced load across target services. Previously, as customers distributed their applications across AZs for resiliency, service-to-service traffic led to significant cross-zone data transfer, requiring trade-offs between cost and resilience. Zone-aware routing eliminates this trade-off, and when local endpoints become unhealthy or fall below capacity thresholds, traffic automatically redistributes across healthy AZs to maintain availability without overloading any single zones.&lt;br&gt; &lt;br&gt; Zone-aware routing is enabled by default for all new and existing services and requires no additional infrastructure or application code changes. Existing services require a one-time redeployment to enable the new routing behavior. You can use Amazon VPC Flow Logs with AZ metadata to monitor cross-AZ traffic patterns and validate routing effectiveness.&amp;nbsp;This feature is available in all AWS commercial and AWS GovCloud (US) &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Regions&lt;/a&gt;,&amp;nbsp;where ECS Service Connect is supported at no additional cost.&amp;nbsp;For more details, refer to our &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-zone-aware-routing.html\"&gt;documentation&lt;/a&gt; and launch &lt;a href=\"https://aws.amazon.com/blogs/containers/announcing-zone-aware-routing-in-amazon-ecs-service-connect/\"&gt;blog post&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/ecs-service-connect-zone-aware/",
-      "publishedAt": "2026-07-01T21:28:00.000Z",
-      "updatedAt": "2026-07-01T21:28:00.000Z",
-      "categories": [
-        "Amazon Ecs",
-        "Containers",
-        "AWS Govcloud Us",
-        "AWS Fargate"
-      ],
-      "services": [
-        "ECS",
-        "Fargate",
-        "Connect"
-      ],
-      "tags": [
-        "amazon ecs",
-        "containers",
-        "aws govcloud us",
-        "aws fargate",
-        "ecs",
-        "fargate",
-        "connect"
-      ],
-      "isNew": true
     },
     {
       "id": "674c2bcae06fcd6d",
@@ -10798,286 +11116,6 @@
         "artificial intelligence",
         "amazon sagemaker",
         "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "86a1d68e75acff94",
-      "title": "Amazon Aurora MySQL 8.4  is now generally available",
-      "description": "Amazon Aurora MySQL-Compatible Edition now supports MySQL 8.4, a community MySQL Long Term Support (LTS) major version. Aurora MySQL 8.4 launches with compatibility for community MySQL 8.4.7 and introduces aligned version numbering, so the version number you run on Aurora matches the community MySQL version it is compatible with. Aurora also manages the underlying patch on your behalf, simplifying day-to-day operations. Aurora MySQL now targets major versions within 12 months of community MySQL LTS releases, minor versions within 3 months of each community minor, and an Aurora LTS minor within",
-      "descriptionHtml": "&lt;p&gt;Amazon Aurora MySQL-Compatible Edition now supports MySQL 8.4, a community MySQL Long Term Support (LTS) major version. Aurora MySQL 8.4 launches with compatibility for community MySQL 8.4.7 and introduces aligned version numbering, so the version number you run on Aurora matches the community MySQL version it is compatible with. Aurora also manages the underlying patch on your behalf, simplifying day-to-day operations. Aurora MySQL now targets major versions within 12 months of community MySQL LTS releases, minor versions within 3 months of each community minor, and an Aurora LTS minor within 12 months of each major. For engine specific release objectives, see the &lt;a href=\"https://aws.amazon.com/blogs/database/knowing-when-new-open-source-database-engine-versions-release-on-amazon-aurora-and-amazon-rds/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Aurora and RDS open source release calendar announcement&lt;/a&gt;.&lt;br&gt; &lt;br&gt; Aurora MySQL 8.4 strengthens security defaults for new clusters. TLS is enforced by default with only TLS 1.2 and 1.3 supported, new accounts use the caching_sha2_password authentication plugin, and password validation policies are customizable through DB cluster parameter groups. Automated upgrade prechecks identify compatibility issues before your cluster goes offline, giving you confidence before you upgrade. To learn more about the Aurora MySQL 8.4 customer experience, refer to the &lt;a href=\"https://aws.amazon.com/blogs/database/amazon-aurora-mysql-8-4-is-now-generally-available/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Aurora MySQL 8.4 launch announcement blog.&lt;/a&gt;&lt;br&gt; &lt;br&gt; You can upgrade your database using &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Blue/Green Deployments&lt;/a&gt;, in-place upgrade, or restore from a snapshot. Learn more about performing major version upgrades in the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Updates.MajorVersionUpgrade.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Aurora User Guide&lt;/a&gt;. You can also migrate to Aurora MySQL 8.4 from external MySQL sources using &lt;a href=\"https://aws.amazon.com/dms/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Database Migration Service&lt;/a&gt; or &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Migrating.ExtMySQL.S3.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Percona XtraBackup&lt;/a&gt;. Aurora MySQL 8.4 is available in &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.RegionsAndAvailabilityZones.html#Aurora.Overview.Availability.MySQL\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;all AWS Regions&lt;/a&gt; where Aurora MySQL is available.&lt;br&gt; &lt;br&gt; Amazon Aurora MySQL is designed for unparalleled high performance and availability at global scale with full MySQL compatibility. It provides scale-to-zero serverless compute, Aurora Global Database for Multi-Region resilience, Aurora I/O-Optimized for improved price performance on I/O-intensive workloads, and built-in security and continuous backups. To get started with Amazon Aurora, take a look at our &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMySQL.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;getting started page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-aurora-mysql/8-4/",
-      "publishedAt": "2026-05-21T16:00:00.000Z",
-      "updatedAt": "2026-05-21T16:00:00.000Z",
-      "categories": [
-        "Amazon Aurora",
-        "Databases"
-      ],
-      "services": [
-        "Aurora"
-      ],
-      "tags": [
-        "amazon aurora",
-        "databases",
-        "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "8cc2e674959ead61",
-      "title": "Amazon RDS Custom now supports the latest GDR updates for Microsoft SQL Server",
-      "description": "Amazon Relational Database Service (Amazon RDS) Custom for SQL Server now supports the latest General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for SQL Server 2019 CU32+GDR KB5084816 (RDS version 15.00.4465.1.v1) and SQL Server 2022 CU24+GDR KB5083252 (RDS version 16.00.4250.1.v1). The GDR updates address vulnerabilities described in CVE-2026-32167 and CVE-2026-32176. For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5084816, KB5083252. You can upgrade your Amazon RDS Custom for",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/custom/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (Amazon RDS) Custom for SQL Server&lt;/a&gt; now supports the latest General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for SQL Server 2019 CU32+GDR &lt;a href=\"https://support.microsoft.com/help/5084816\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;KB5084816&lt;/a&gt; (RDS version 15.00.4465.1.v1) and SQL Server 2022 CU24+GDR &lt;a href=\"https://support.microsoft.com/help/5083252\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;KB5083252&lt;/a&gt; (RDS version 16.00.4250.1.v1).&lt;br&gt; &lt;br&gt; The GDR updates address vulnerabilities described in CVE-2026-32167 and CVE-2026-32176. For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5084816, KB5083252. You can upgrade your Amazon RDS Custom for SQL Server instances to apply these recommended updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. To learn more about upgrading your database instances, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-upgrading-sqlserver.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Custom User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-custom-sql-server-latest-gdr-updates-microsoft-sql-server",
-      "publishedAt": "2026-05-21T07:22:00.000Z",
-      "updatedAt": "2026-05-21T07:22:00.000Z",
-      "categories": [
-        "Amazon Rds For Sql Server",
-        "Databases"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "amazon rds for sql server",
-        "databases",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "46b5e6534fe72a9a",
-      "title": "Quick Research now supports customer managed keys",
-      "description": "Amazon Quick Research now enables customers to encrypt their data using customer-managed keys (CMK) through AWS Key Management Service (KMS). This enhancement allows organizations with strict security and compliance requirements to manage their own encryption keys. With customer-managed keys, you gain enhanced security control and comprehensive audit capabilities through AWS CloudTrail integration. You can encrypt your data with your own KMS keys, trace all data access for security auditing, and revoke access to compromised keys within 15 minutes during security incidents. This feature support",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick Research now enables customers to encrypt their data using customer-managed keys (CMK) through AWS Key Management Service (KMS).&lt;/p&gt; \n&lt;p&gt;This enhancement allows organizations with strict security and compliance requirements to manage their own encryption keys. With customer-managed keys, you gain enhanced security control and comprehensive audit capabilities through AWS CloudTrail integration. You can encrypt your data with your own KMS keys, trace all data access for security auditing, and revoke access to compromised keys within 15 minutes during security incidents. This feature supports multiple CMKs with one default key per AWS account per region, providing the flexibility to manage encryption across different datasets while maintaining granular control over your sensitive business intelligence data.&lt;/p&gt; \n&lt;p&gt;Customer-managed keys must be created in the same AWS account and region as your Quick resources, and only symmetric AWS KMS keys are supported.&lt;/p&gt; \n&lt;p&gt;This feature is generally available in all AWS Regions&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html#regions-qs\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;where Amazon Quick is available&lt;/a&gt;. To learn more, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/quick/research/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Quick Research detail page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-quick-research-cmk",
-      "publishedAt": "2026-05-21T07:00:00.000Z",
-      "updatedAt": "2026-05-21T07:00:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "ac54c4b95e62e175",
-      "title": "Amazon Bedrock expands support for request-level usage attribution",
-      "description": "Amazon Bedrock customers can now attribute model inference usage to specific teams, applications, environments, and experiments at the individual request level on the InvokeModel and InvokeModelWithResponseStream APIs. This gives customers fine-grained visibility into how their Amazon Bedrock usage is distributed across their organization, helping them understand consumption patterns, optimize spend, and report usage back to internal stakeholders without provisioning additional resources. This launch builds on Amazon Bedrock's existing portfolio of usage attribution capabilities. Customers can",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock customers can now attribute model inference usage to specific teams, applications, environments, and experiments at the individual request level on the InvokeModel and InvokeModelWithResponseStream APIs. This gives customers fine-grained visibility into how their Amazon Bedrock usage is distributed across their organization, helping them&lt;br&gt; understand consumption patterns, optimize spend, and report usage back to internal stakeholders without provisioning additional resources.&lt;br&gt; &lt;br&gt; This launch builds on Amazon Bedrock's existing portfolio of usage attribution capabilities. Customers can already attribute model inference usage at the resource and identity level using application inference profiles, IAM principal-based attribution, project-level tracking on the OpenAI-compatible bedrock-mantle endpoint, and workspace-level tracking for&lt;br&gt; Anthropic Claude models. For finer-grained, per-request attribution, the Converse and ConverseStream APIs have supported request-level metadata since launch. Today's release brings the same capability to the InvokeModel and InvokeModelWithResponseStream APIs, giving customers a consistent way to tag inference calls across the entire bedrock-runtime endpoint.&lt;br&gt; &lt;br&gt; With this launch, customers can tag each Amazon Bedrock model inference call with attributes like team, project, or environment, and analyze usage by these tags in Amazon Bedrock model invocation logs. To get started, enable model invocation logging in the AWS Region where you call Amazon Bedrock, then add metadata to your inference requests. This feature is available in all AWS commercial Regions where Amazon Bedrock is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/cost-mgmt-request-metadata.html\"&gt;Request metadata&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-bedrock-request-level-usage-attribution/",
-      "publishedAt": "2026-05-20T23:34:00.000Z",
-      "updatedAt": "2026-05-20T23:34:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "784bde9f7ce5b70e",
-      "title": "AWS Deadline Cloud now supports browsing job attachments in the monitor",
-      "description": "AWS Deadline Cloud now supports browsing job attachment files directly within the Deadline Cloud monitor. AWS Deadline Cloud is a fully managed service that simplifies render management for teams creating computer-generated graphics and visual effects, for films, television, broadcasting, web content, and design. The Deadline Cloud job attachments feature simplifies managing input and output files for render jobs by handling uploads and downloads through Amazon S3. Previously, you could download all outputs for a job but couldn't easily see which specific files were attached as inputs or gener",
-      "descriptionHtml": "&lt;p&gt;AWS Deadline Cloud now supports browsing job attachment files directly within the Deadline Cloud monitor. AWS Deadline Cloud is a fully managed service that simplifies render management for teams creating computer-generated graphics and visual effects, for films, television, broadcasting, web content, and design.&lt;br&gt; &lt;br&gt; The Deadline Cloud job attachments feature simplifies managing input and output files for render jobs by handling uploads and downloads through Amazon S3. Previously, you could download all outputs for a job but couldn't easily see which specific files were attached as inputs or generated as outputs. With this new browsing capability, you can now view all attached files for a given job directly from the monitor in the browser or desktop application, clearly organized by inputs and outputs. You can also download individual files as needed, making it easy to retrieve specific assets without downloading everything.&lt;br&gt; &lt;br&gt; For more information, please visit the &lt;a href=\"https://aws.amazon.com/deadline-cloud\"&gt;Deadline Cloud product page&lt;/a&gt; and our &lt;a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/userguide/\"&gt;AWS Deadline Cloud documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-deadline-cloud/",
-      "publishedAt": "2026-05-20T20:28:00.000Z",
-      "updatedAt": "2026-05-20T20:28:00.000Z",
-      "categories": [
-        "AWS Deadline Cloud",
-        "Media Services"
-      ],
-      "services": [],
-      "tags": [
-        "aws deadline cloud",
-        "media services"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "553bab6b06c6f130",
-      "title": "AWS Security Hub now uncovers identity risks from unused access",
-      "description": "Today, AWS Security Hub brings identity risk into the same unified console where central security teams already manage threats, exposures, and posture findings. Security Hub now detects unused IAM permissions, roles, and credentials across your AWS organization, helping central security teams identify and reduce identity risk at scale. Until now, managing identity risk across hundreds of accounts required toggling between multiple tools, with no unified view connecting unused permissions to actual resource exposure. Security Hub now surfaces these identity risks alongside threats, exposures, a",
-      "descriptionHtml": "&lt;p&gt;Today, AWS Security Hub brings identity risk into the same unified console where central security teams already manage threats, exposures, and posture findings. Security Hub now detects unused IAM permissions, roles, and credentials across your AWS organization, helping central security teams identify and reduce identity risk at scale. Until now, managing identity risk across hundreds of accounts required toggling between multiple tools, with no unified view connecting unused permissions to actual resource exposure. Security Hub now surfaces these identity risks alongside threats, exposures, and posture findings in a unified console, enabling teams to prioritize remediation based on actual organizational risk.&lt;br&gt; &lt;br&gt; When you enable Security Hub for your organization, a service-linked IAM Access Analyzer is automatically created in each member account with no additional configuration required. Security Hub evaluates IAM principals against 90 days of actual access activity, detects unused access, and correlates identity findings with exposure context so teams can focus on the risks that matter most. Security Hub also provides on-demand generation of recommended least-privilege policies based on actual usage patterns, helping teams refine IAM permissions and reduce their attack surface. These capabilities represent a foundational step toward broader cloud infrastructure entitlement management in Security Hub, delivered with consistent workflows, automation rules, and downstream integrations.&amp;nbsp;These capabilities are included with Security Hub Essentials at no additional cost.&lt;br&gt; &lt;br&gt; To learn more, see Understanding unused access findings in Security Hub in the &lt;a href=\"https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub-v2.html\"&gt;AWS Security Hub User Guide &lt;/a&gt;and the &lt;a href=\"https://aws.amazon.com/security-hub/\"&gt;AWS Security Hub product page&lt;/a&gt;. For the full list of AWS Regions where Security Hub is available, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regional Services List&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-security-hub-unused-access/",
-      "publishedAt": "2026-05-20T20:20:00.000Z",
-      "updatedAt": "2026-05-20T20:20:00.000Z",
-      "categories": [
-        "Security Identity And Compliance",
-        "AWS Security Hub"
-      ],
-      "services": [
-        "Security Hub"
-      ],
-      "tags": [
-        "security identity and compliance",
-        "aws security hub",
-        "security hub"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "19677afbecfde47a",
-      "title": "Amazon DocumentDB (with MongoDB compatibility) Serverless is now available on DocumentDB 8.0",
-      "description": "Amazon DocumentDB (with MongoDB compatibility) Serverless, an on-demand, auto-scaling configuration for DocumentDB, is now available on version 8.0. Amazon DocumentDB Serverless automatically scales capacity up or down in fine-grained increments based on your application's demand, offering up to 90% cost savings compared to provisioning for peak capacity. DocumentDB 8.0 improves query latency by up to 7x and compression ratio by up to 5x, while adding compatibility with MongoDB API versions 6.0, 7.0, and 8.0. It also introduces enhanced vector search with up to 30x faster index builds, new agg",
-      "descriptionHtml": "&lt;p&gt;Amazon DocumentDB (with MongoDB compatibility) Serverless, an on-demand, auto-scaling configuration for DocumentDB, is now available on version 8.0. Amazon DocumentDB Serverless automatically scales capacity up or down in fine-grained increments based on your application's demand, offering up to 90% cost savings compared to provisioning for peak capacity.&lt;br&gt; &lt;br&gt; DocumentDB 8.0 improves query latency by up to 7x and compression ratio by up to 5x, while adding compatibility with MongoDB API versions 6.0, 7.0, and 8.0. It also introduces enhanced vector search with up to 30x faster index builds, new aggregation stages and operators, and support for collation and views. DocumentDB Serverless is available for both new and existing clusters on Amazon DocumentDB 8.0.&lt;/p&gt; \n&lt;p&gt;You can use the in-place major version upgrade (MVU) to convert your Amazon DocumentDB 5.0 clusters to Amazon DocumentDB 8.0 clusters. Please see&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/docdb-migration.versions.html\"&gt;&lt;u&gt;upgrading your DocumentDB cluster&lt;/u&gt;&lt;/a&gt;&amp;nbsp;to learn more. To learn more about the regions Amazon DocumentDB Serverless is available, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/what-is.html#what-is-db-instances\"&gt;supported instance classes by region&lt;/a&gt;. To learn more about Amazon DocumentDB Serverless, see the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/documentdb/serverless\"&gt;overview&lt;/a&gt;,&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/docdb-serverless.html\"&gt;documentation&lt;/a&gt;, and&amp;nbsp;&lt;a href=\"https://aws.amazon.com/blogs/aws/amazon-documentdb-serverless-is-now-available\"&gt;AWS News blog&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/5/docdb8-serverless",
-      "publishedAt": "2026-05-20T18:17:00.000Z",
-      "updatedAt": "2026-05-20T18:17:00.000Z",
-      "categories": [
-        "Amazon Documentdb"
-      ],
-      "services": [
-        "DocumentDB"
-      ],
-      "tags": [
-        "amazon documentdb",
-        "documentdb"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "89cca7fa01df45bc",
-      "title": "Security Hub Extended expands to 21 curated partner solutions across 9 categories",
-      "description": "AWS Security Hub Extended plan now includes 21 curated partner solutions across 9 security categories, adding SentinelOne (endpoint), CyberArk (identity), Sublime (email), Varonis (data security), LayerX (browser), Native Security (cloud), and Zenity (AI security). With these additions, you have more flexibility to select the solutions that best fit your enterprise security requirements. All solutions have published pay-as-you-go pricing, a single AWS bill, automatic Enterprise Discount Program (EDP) eligibility, unified Level 1 support for AWS Enterprise Support customers, and no long-term co",
-      "descriptionHtml": "&lt;p&gt;AWS Security Hub Extended plan now includes 21 curated partner solutions across 9 security categories, adding SentinelOne (endpoint), CyberArk (identity), Sublime (email), Varonis (data security), LayerX (browser), Native Security (cloud), and Zenity (AI security). With these additions, you have more flexibility to select the solutions that best fit your enterprise security requirements. All solutions have published pay-as-you-go pricing, a single AWS bill, automatic Enterprise Discount Program (EDP) eligibility, unified Level 1 support for AWS Enterprise Support customers, and no long-term commitments.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; Security Hub Extended is a plan of Security Hub that helps simplify how you procure, deploy, and integrate a full-stack enterprise security solution across endpoint, identity, email, network, data, browser, cloud, AI, and security operations. With today's expansion, you now have more choice within each category, selecting between established leaders and fast-growing innovators across your security domains. Security findings from all participating solutions are emitted in the Open Cybersecurity Schema Framework (OCSF) schema and automatically aggregated in AWS Security Hub. With the Extended plan, you can combine AWS and curated partner solutions to quickly identify and respond to risks that span boundaries.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;We will continue to expand the Extended plan based on customer feedback. The seven new curated partner solutions are available today in all AWS commercial Regions where Security Hub is available. For a list of supported Regions, see the&lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/?p=ngi&amp;amp;loc=4&amp;amp;refid=d8ec3b19-0f37-4f8c-8c12-189f913e205c\" target=\"_blank\" rel=\"noopener noreferrer\"&gt; AWS Region table.&lt;/a&gt; For more information about pricing, visit the&lt;a href=\"https://aws.amazon.com/security-hub/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt; AWS Security Hub pricing page&lt;/a&gt;. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/securityhub/v2/home\" target=\"_blank\"&gt;AWS Security Hub console&lt;/a&gt; or &lt;a href=\"https://aws.amazon.com/security-hub/?nc=sn&amp;amp;loc=1\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;product page.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-security-hub-extended/",
-      "publishedAt": "2026-05-20T18:00:00.000Z",
-      "updatedAt": "2026-05-20T18:00:00.000Z",
-      "categories": [
-        "Security Identity And Compliance"
-      ],
-      "services": [
-        "Security Hub"
-      ],
-      "tags": [
-        "security identity and compliance",
-        "security hub"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "055a5eddc4ad3ff4",
-      "title": "Amazon SageMaker Unified Studio now supports data quality rule authoring and evaluation",
-      "description": "Amazon SageMaker Unified Studio now supports data quality rule authoring and evaluation, powered by AWS Glue Data Quality. Data engineers, analysts, and data scientists can define data quality rules, run ruleset evaluations, and view results directly within SageMaker Unified Studio for both data at rest in catalog tables and data in transit within Visual ETL jobs. This helps you catch data quality issues before bad data enters your data lakes or affects downstream analytics and machine learning workloads. With this launch, you can author rules using the same Data Quality Definition Language (D",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now supports data quality rule authoring and evaluation, powered by AWS Glue Data Quality. Data engineers, analysts, and data scientists can define data quality rules, run ruleset evaluations, and view results directly within SageMaker Unified Studio for both data at rest in catalog tables and data in transit within Visual ETL jobs. This helps you catch data quality issues before bad data enters your data lakes or affects downstream analytics and machine learning workloads.&lt;br&gt; &lt;br&gt; With this launch, you can author rules using the same Data Quality Definition Language (DQDL) used in AWS Glue Data Quality and run evaluations directly in SageMaker Unified Studio across two workflows. For data at rest, a dedicated Data Quality tab on catalog assets provides rule authoring, on-demand or scheduled evaluations, and detailed per-rule pass/fail results. For data in transit, you can add an Evaluate Data Quality transform to any Visual ETL job, and review data quality results as part of the run details. You can create rulesets that check for completeness, uniqueness, freshness, accuracy, and other data quality dimensions.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available, in both AWS IAM Identity Center-based and IAM-based domains. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/data-quality-catalog.html\"&gt;Amazon SageMaker Unified Studio documentation.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/smus-data-quality",
-      "publishedAt": "2026-05-20T17:42:00.000Z",
-      "updatedAt": "2026-05-20T17:42:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "analytics",
-        "amazon sagemaker",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "61fdff8b435d9d6d",
-      "title": "AWS announces ExtendDB, an open source DynamoDB-compatible adapter",
-      "description": "Today, Amazon Web Services (AWS) announced version 0.1 of ExtendDB, an open source project that implements the Amazon DynamoDB API with pluggable storage backends. Amazon DynamoDB is a serverless, fully managed NoSQL database with single-digit millisecond performance at any scale. ExtendDB enables application developers, platform teams, and enterprise architects to use the DynamoDB programming model in environments where the DynamoDB managed service is not available, including developer laptops, on-premises data centers, and disconnected edge sites, without rewriting application code. ExtendDB",
-      "descriptionHtml": "&lt;p&gt;Today, Amazon Web Services (AWS) announced version 0.1 of ExtendDB, an open source project that implements the Amazon DynamoDB API with pluggable storage backends. Amazon DynamoDB is a serverless, fully managed NoSQL database with single-digit millisecond performance at any scale. ExtendDB enables application developers, platform teams, and enterprise architects to use the DynamoDB programming model in environments where the DynamoDB managed service is not available, including developer laptops, on-premises data centers, and disconnected edge sites, without rewriting application code.&lt;br&gt; &lt;br&gt; ExtendDB implements the DynamoDB control plane and data plane APIs, including operations on tables, items, and streams. The reference storage backend at launch is PostgreSQL, and the pluggable architecture allows the community to add new storage backends without modifying the core adapter. Developers can use ExtendDB for high-fidelity local development and continuous integration testing, and operate DynamoDB-shaped workloads in on-premises data centers backed by a supported database.&lt;br&gt; &lt;br&gt; ExtendDB is maintained by AWS, released under the Apache 2.0 license, and developed in the open on GitHub. We invite the community to contribute backend implementations, submit feedback, and participate in the project's evolution. To learn more, see the &lt;a href=\"https://extenddb.org\"&gt;ExtendDB project page&lt;/a&gt; and the AWS database &lt;a href=\"https://aws.amazon.com/blogs/database/introducing-extenddb-an-open-source-dynamodb-compatible-adapter-with-pluggable-storage-backends/\"&gt;blog post&lt;/a&gt;. To get started or contribute, visit the &lt;a href=\"https://github.com/ExtendDB/extenddb\"&gt;GitHub repository&lt;/a&gt;.&lt;a href=\"https://github.com/ExtendDB/extenddb\"&gt;&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-extenddb-dynamodb/",
-      "publishedAt": "2026-05-20T17:00:00.000Z",
-      "updatedAt": "2026-05-20T17:00:00.000Z",
-      "categories": [],
-      "services": [
-        "DynamoDB"
-      ],
-      "tags": [
-        "dynamodb"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "19d04b15d224dc27",
-      "title": "AWS Billing Conductor Improves Account Visibility with Billing Transfer Inventory",
-      "description": "AWS Billing Conductor Console now enables you to see which accounts have received or accepted billing transfer invites but still lack access to pro forma billing data. This page helps customers detect and close gaps in their account’s billing visibility. When an account accepts a billing transfer invitation, billing data is transferred to the inviting account. By configuring a billing group via AWS Billing Conductor, accounts can access pro forma cost data across Billing and Cost Management tools. This page provides visibility into what accounts currently lack access to pro forma billing data,",
-      "descriptionHtml": "&lt;div class=\"OutlineElement Ltr SCXW31228399 BCX2\" style=\"direction: ltr;\"&gt;\n &lt;p class=\"Paragraph SCXW31228399 BCX2\" lang=\"EN-US\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"&gt;&lt;span data-contrast=\"auto\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt;AWS Billing Conductor Console now enables you to see which accounts have received or accepted billing transfer invites but still lack access to pro forma billing data. &lt;/span&gt;&lt;/span&gt;&lt;/p&gt; \n &lt;p class=\"Paragraph SCXW31228399 BCX2\" lang=\"EN-US\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"&gt;&amp;nbsp;&lt;/p&gt; \n &lt;p class=\"Paragraph SCXW31228399 BCX2\" lang=\"EN-US\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"&gt;&lt;span data-contrast=\"auto\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt;This page helps customers detect and close gaps in their account’s billing visibility. When an account accepts a billing transfer invitation, billing data is transferred to the inviting account. By configuring a billing group via AWS Billing Conductor, accounts can access pro forma cost data across Billing and Cost Management tools. This page provides visibility into what accounts currently lack access to pro forma billing data, making it easier to complete this configuration step. Customers can also sign up for daily notifications via AWS User Notifications and Amazon &lt;/span&gt;&lt;span class=\"NormalTextRun SpellingErrorV2Themed CommentHighlightClicked SCXW31228399 BCX2\"&gt;EventBridge&lt;/span&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt; to receive a summary of accepted billing transfers that lack a corresponding billing group. Notifications are available via email, Amazon Q Developer in chat applications (Slack, Microsoft Teams, and Amazon Chime), AWS Console Mobile Application push notifications, and the Console Notifications Center.&lt;/span&gt;&lt;/span&gt;&lt;span class=\"EOP CommentHighlightClicked SCXW31228399 BCX2\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" data-ccp-props=\"{&amp;quot;335551550&amp;quot;:0,&amp;quot;335551620&amp;quot;:0}\"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt; \n&lt;/div&gt; \n&lt;div class=\"OutlineElement Ltr SCXW31228399 BCX2\" style=\"direction: ltr;\"&gt;\n &lt;p class=\"Paragraph SCXW31228399 BCX2\" lang=\"EN-US\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"&gt;&lt;span data-contrast=\"auto\" style=\"font-size: 12pt; line-height: 19px; font-family: Aptos, &amp;quot;Aptos_EmbeddedFont&amp;quot;, &amp;quot;Aptos_MSFontService&amp;quot;, sans-serif;\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\"EOP CommentHighlightClicked SCXW31228399 BCX2\" style=\"font-size: 12pt; line-height: 19px; font-family: Aptos, &amp;quot;Aptos_EmbeddedFont&amp;quot;, &amp;quot;Aptos_MSFontService&amp;quot;, sans-serif;\" data-ccp-props=\"{&amp;quot;335551550&amp;quot;:0,&amp;quot;335551620&amp;quot;:0}\"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt; \n&lt;/div&gt; \n&lt;div class=\"OutlineElement Ltr SCXW31228399 BCX2\" style=\"direction: ltr;\"&gt;\n &lt;p class=\"Paragraph SCXW31228399 BCX2\" lang=\"EN-US\" style=\"font-weight: normal; font-style: normal; vertical-align: baseline; background-color: transparent; color: windowtext; text-align: left; margin: 0px; padding-left: 0px; padding-right: 0px; text-indent: 0px;\"&gt;&lt;span data-contrast=\"auto\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt;These features are available in the US East (N. Virginia) region. To get started, visit the &lt;/span&gt;&lt;/span&gt;&lt;a class=\"Hyperlink SCXW31228399 BCX2\" style=\"text-decoration: none; color: inherit;\" target=\"_blank\" rel=\"noreferrer noopener\"&gt;&lt;span style=\"color: rgb(70, 120, 134); font-size: 10.5pt; text-decoration: underline; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" data-contrast=\"none\" lang=\"EN-US\" class=\"TextRun Underlined SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\" data-ccp-charstyle=\"Hyperlink\"&gt;AWS Billing Conductor console&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span data-contrast=\"auto\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt;. To learn more about setting up &lt;/span&gt;&lt;span class=\"NormalTextRun SpellingErrorV2Themed CommentHighlightClicked SCXW31228399 BCX2\"&gt;EventBridge&lt;/span&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt; integration, see the &lt;/span&gt;&lt;/span&gt;&lt;a class=\"Hyperlink SCXW31228399 BCX2\" style=\"text-decoration: none; color: inherit;\" target=\"_blank\" rel=\"noreferrer noopener\"&gt;&lt;span style=\"color: rgb(70, 120, 134); font-size: 10.5pt; text-decoration: underline; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" data-contrast=\"none\" lang=\"EN-US\" class=\"TextRun Underlined SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\" data-ccp-charstyle=\"Hyperlink\"&gt;EventBridge documentation&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span data-contrast=\"auto\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt;. For instructions on configuring User Notifications, see the &lt;/span&gt;&lt;/span&gt;&lt;a class=\"Hyperlink SCXW31228399 BCX2\" style=\"text-decoration: none; color: inherit;\" target=\"_blank\" rel=\"noreferrer noopener\"&gt;&lt;span style=\"color: rgb(70, 120, 134); font-size: 10.5pt; text-decoration: underline; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" data-contrast=\"none\" lang=\"EN-US\" class=\"TextRun Underlined SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\" data-ccp-charstyle=\"Hyperlink\"&gt;User Notifications documentation&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span data-contrast=\"auto\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt;. To learn more about Billing Transfer and AWS Billing Conductor visit the &lt;/span&gt;&lt;/span&gt;&lt;a class=\"Hyperlink SCXW31228399 BCX2\" style=\"text-decoration: none; color: inherit;\" target=\"_blank\" rel=\"noreferrer noopener\"&gt;&lt;span style=\"color: rgb(70, 120, 134); font-size: 10.5pt; text-decoration: underline; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" data-contrast=\"none\" lang=\"EN-US\" class=\"TextRun Underlined SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\" data-ccp-charstyle=\"Hyperlink\"&gt;Billing Transfer product page&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span data-contrast=\"auto\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt;, &lt;/span&gt;&lt;/span&gt;&lt;a class=\"Hyperlink SCXW31228399 BCX2\" style=\"text-decoration: none; color: inherit;\" target=\"_blank\" rel=\"noreferrer noopener\"&gt;&lt;span style=\"color: rgb(70, 120, 134); font-size: 10.5pt; text-decoration: underline; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" data-contrast=\"none\" lang=\"EN-US\" class=\"TextRun Underlined SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\" data-ccp-charstyle=\"Hyperlink\"&gt;AWS Billing documentation&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span data-contrast=\"auto\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt; and the&lt;/span&gt;&lt;/span&gt;&lt;span style=\"color: rgb(61, 135, 245); font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" data-contrast=\"none\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt; &lt;/span&gt;&lt;/span&gt;&lt;a class=\"Hyperlink SCXW31228399 BCX2\" style=\"text-decoration: none; color: inherit;\" target=\"_blank\" rel=\"noreferrer noopener\"&gt;&lt;span style=\"color: rgb(70, 120, 134); font-size: 10.5pt; text-decoration: underline; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" data-contrast=\"none\" lang=\"EN-US\" class=\"TextRun Underlined SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\" data-ccp-charstyle=\"Hyperlink\"&gt;AWS Cost Management documentation.&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;span data-contrast=\"auto\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" lang=\"EN-US\" class=\"TextRun SCXW31228399 BCX2\"&gt;&lt;span class=\"NormalTextRun CommentHighlightClicked SCXW31228399 BCX2\"&gt; &lt;/span&gt;&lt;/span&gt;&lt;span class=\"EOP CommentHighlightClicked SCXW31228399 BCX2\" style=\"font-size: 10.5pt; line-height: 18px; font-family: &amp;quot;Amazon Ember&amp;quot;, &amp;quot;Amazon Ember_EmbeddedFont&amp;quot;, sans-serif;\" data-ccp-props=\"{&amp;quot;335551550&amp;quot;:0,&amp;quot;335551620&amp;quot;:0}\"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt; \n&lt;/div&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-billing-conductor-billing-transfer/",
-      "publishedAt": "2026-05-20T16:28:00.000Z",
-      "updatedAt": "2026-05-20T16:28:00.000Z",
-      "categories": [
-        "Cost Management"
-      ],
-      "services": [],
-      "tags": [
-        "cost management"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d8ce7e7ca14c2fe4",
-      "title": "AWS Transform now modernizes networks during migrations",
-      "description": "Network migration teams previously spent days manually reviewing network designs and discovered conflicts only at deployment. AWS Transform now includes two new capabilities that solve both. A new modernization engine goes beyond network mapping to optimize constructs across naming, sizing, security, and structure while surfacing conflicts with existing VPCs already deployed in target accounts. It replaces days of manual review with instant guidance before a single resource provisions in AWS. The service also accepts network configuration files in any format, processing them for migration rega",
-      "descriptionHtml": "&lt;p&gt;Network migration teams previously spent days manually reviewing network designs and discovered conflicts only at deployment. AWS Transform now includes two new capabilities that solve both. A new modernization engine goes beyond network mapping to optimize constructs across naming, sizing, security, and structure while surfacing conflicts with existing VPCs already deployed in target accounts. It replaces days of manual review with instant guidance before a single resource provisions in AWS. The service also accepts network configuration files in any format, processing them for migration regardless of source tool or vendor.&lt;br&gt; Before provisioning begins, network teams review and act on modernization recommendations directly or edit any mapped VPC or subnet, retaining full control over the final network design. AWS Transform recommendations include:&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;Splitting VPCs with mixed workload tiers into segmented environments&lt;/li&gt; \n &lt;li&gt;Consolidating constructs fragmented by on-premises hardware constraints&lt;/li&gt; \n &lt;li&gt;Right-sizing CIDR allocations to eliminate waste and improve address space management&lt;/li&gt; \n &lt;li&gt;Standardizing naming conventions across all constructs&lt;/li&gt; \n &lt;li&gt;Flagging unrestricted security group rules that pose security risks&lt;/li&gt; \n &lt;li&gt;Removing out-of-scope resources from the target environment&lt;/li&gt; \n &lt;li&gt;Identifying CIDR conflicts between mapped and existing VPCs across target accounts, recommending resolutions, and implementing the customer's chosen path&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Customers can now upload their network configuration files as-is, and AWS Transform translates them into AWS-compatible networks. Customers reach deployment faster, as they optimized their network, resolved conflicts, and made every decision themselves.&lt;br&gt; &lt;br&gt; These features are available in all &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html#transform-vmware-cta-supported-regions\" target=\"_blank\"&gt;AWS Transform Target Regions. &lt;/a&gt;&lt;br&gt; To learn more, visit the AWS Transform &lt;a href=\"https://aws.amazon.com/transform/vmware/\" target=\"_blank\"&gt;product page&lt;/a&gt; and read the network migration &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-migrate-network.html\" target=\"_blank\"&gt;user guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-transform-network-modernization",
-      "publishedAt": "2026-05-20T14:53:00.000Z",
-      "updatedAt": "2026-05-20T14:53:00.000Z",
-      "categories": [
-        "Migration"
-      ],
-      "services": [],
-      "tags": [
-        "migration"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "94ac5b3a0c9627f3",
-      "title": "Announcing the general availability of a new AWS Local Zone in Istanbul, Türkiye",
-      "description": "Today, AWS announces the general availability of a new AWS Local Zone in Istanbul, Türkiye, bringing AWS infrastructure closer to end users, while enabling organizations to meet data residency requirements by storing and backing up data locally. AWS Local Zones are AWS infrastructure deployments that extend core services, such as compute, storage, networking, and other select services, closer to metropolitan areas worldwide. AWS Local Zones help you achieve single-digit millisecond latency for end-user workloads, meet data residency requirements, support AI/ML inference workloads, and accelera",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of a new AWS Local Zone in Istanbul, Türkiye, bringing AWS infrastructure closer to end users, while enabling organizations to meet data residency requirements by storing and backing up data locally.&lt;/p&gt; \n&lt;p&gt;AWS Local Zones are AWS infrastructure deployments that extend core services, such as compute, storage, networking, and other select services, closer to metropolitan areas worldwide. AWS Local Zones help you achieve single-digit millisecond latency for end-user workloads, meet data residency requirements, support AI/ML inference workloads, and accelerate migration and modernization of legacy applications to the cloud, all while maintaining consistent AWS APIs, tools, and services as AWS Regions. AWS Local Zones are available in more than 30 metropolitan areas worldwide.&lt;/p&gt; \n&lt;p&gt;The AWS Local Zone in Istanbul supports Amazon Elastic Compute Cloud (Amazon EC2) with C7i, M7i, and R7i instances, Amazon S3 with the One Zone-Infrequent Access storage class, Amazon EBS with Local Snapshots and volume types gp3, gp2, io1, sc1, and st1, Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), Amazon Virtual Private Cloud (Amazon VPC), AWS Direct Connect, and Application Load Balancer. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To get started, enable the AWS Local Zone in Istanbul (eu-central-1-ist-1a) from the &lt;a href=\"https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1&amp;amp;refid=769a1a2b-8c19-4976-9c45-b6b1226c7d20#Settings:tab=zones;Category=local-zone\"&gt;Zones&lt;/a&gt; tab in the Amazon EC2 console settings or by using the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyAvailabilityZoneGroup.html?refid=769a1a2b-8c19-4976-9c45-b6b1226c7d20\"&gt;ModifyAvailabilityZoneGroup&lt;/a&gt; API. For pricing information, visit the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/pricing/?nc=sn&amp;amp;loc=4\"&gt;AWS Local Zones pricing page&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/\"&gt;AWS Local Zones overview page&lt;/a&gt;. &lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-local-zones-istanbul-turkiye/",
-      "publishedAt": "2026-05-20T14:00:00.000Z",
-      "updatedAt": "2026-05-20T14:00:00.000Z",
-      "categories": [
-        "Global Infrastructure",
-        "Compute",
-        "AWS Local Zones"
-      ],
-      "services": [],
-      "tags": [
-        "global infrastructure",
-        "compute",
-        "aws local zones"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f54fc2f43dfedebf",
-      "title": "AWS Transfer Family web apps now support federated permissions with IAM Identity Center across AWS Regions",
-      "description": "AWS Transfer Family web apps now support federated permissions with AWS IAM Identity Center across multiple AWS Regions. Previously, you could only create Transfer Family web apps in the Region where your IAM Identity Center instance was enabled. With IAM Identity Center's support for multi-Region replication, you can now replicate your identity configurations to another Region and create Transfer Family web apps there, reducing latency and improving reliability for your users. After you enable a new Region in IAM Identity Center, you can create a Transfer Family web app in that Region. IAM Id",
-      "descriptionHtml": "&lt;p&gt;AWS Transfer Family web apps now support federated permissions with AWS IAM Identity Center across multiple AWS Regions.&amp;nbsp;Previously, you could only create&amp;nbsp;Transfer Family web apps&amp;nbsp;in the Region where your IAM Identity Center instance&amp;nbsp;was enabled. With IAM Identity Center's support for multi-Region replication, you can now replicate your identity configurations to&amp;nbsp;another Region&amp;nbsp;and create Transfer Family web apps there, reducing latency and improving reliability for your users.&lt;/p&gt; \n&lt;p&gt;After you enable a new Region in IAM Identity Center, you can create a Transfer Family web app in that Region. IAM Identity Center automatically replicates your workforce identities to the new Region,&amp;nbsp;eliminating&amp;nbsp;the need to reconfigure user credentials. Administrators can manage fine-grained permissions using the same workforce identities already configured in IAM Identity Center, and&amp;nbsp;your Transfer&amp;nbsp;Family&amp;nbsp;web app&amp;nbsp;users can sign in&amp;nbsp;immediately&amp;nbsp;using their existing credentials.&lt;/p&gt; \n&lt;p&gt;To get started, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/transfer/latest/userguide/web-app.html\"&gt;Transfer Family User Guide&lt;/a&gt;. To enable IAM Identity Center across multiple Regions, refer to the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-region-iam-identity-center.html\"&gt;IAM Identity Center User Guide&lt;/a&gt;. For regional availability, visit&amp;nbsp;&lt;a href=\"https://builder.aws.com/build/capabilities\"&gt;AWS Capabilities&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-transfer-family-federated-permissions-across-regions/",
-      "publishedAt": "2026-05-20T10:00:00.000Z",
-      "updatedAt": "2026-05-20T10:00:00.000Z",
-      "categories": [
-        "AWS Transfer Family",
-        "Migration"
-      ],
-      "services": [
-        "IAM",
-        "IAM Identity Center",
-        "Transfer Family"
-      ],
-      "tags": [
-        "aws transfer family",
-        "migration",
-        "iam",
-        "iam identity center",
-        "transfer family"
       ],
       "isNew": false
     }
