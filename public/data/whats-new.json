@@ -1,7 +1,202 @@
 {
-  "lastUpdated": "2026-07-24T08:55:08.390Z",
+  "lastUpdated": "2026-07-25T08:44:13.145Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "67b2bd1959b391ae",
+      "title": "Amazon Connect now supports audio optimization for Azure Virtual Desktop and Windows 365 Cloud PC",
+      "description": "Agents using Microsoft Azure Virtual Desktop (AVD) or Windows 365 Cloud PC can now take calls directly from their virtual desktop session with audio optimization enabled. To get started, IT administrators need to complete a one-time setup for their virtual desktop environment. Once configured, media is redirected from the virtual desktop to the agent's local device, improving audio quality. Agents simply log into their Azure Virtual Desktop or Windows 365 Cloud PC session and start accepting calls using the Amazon Connect Customer agent workspace or a custom agent interface built with the Amaz",
+      "descriptionHtml": "&lt;p&gt;Agents using Microsoft Azure Virtual Desktop (AVD) or Windows 365 Cloud PC can now take calls directly from their virtual desktop session with audio optimization enabled. To get started, IT administrators need to complete a one-time setup for their virtual desktop environment. Once configured, media is redirected from the virtual desktop to the agent's local device, improving audio quality.&lt;br&gt; &lt;br&gt; Agents simply log into their Azure Virtual Desktop or Windows 365 Cloud PC session and start accepting calls using the Amazon Connect Customer agent workspace or a custom agent interface built with the Amazon Connect Customer open-source JavaScript libraries. This support is in addition to existing audio optimization for Amazon WorkSpaces, Citrix cloud desktops, and Omnissa cloud desktops.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon Connect Customer is offered, except AWS GovCloud (US-West). To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/using-ccp-vdi-azure-step-by-step.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Connect Customer Administrator Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-connect/",
+      "publishedAt": "2026-07-24T23:11:00.000Z",
+      "updatedAt": "2026-07-24T23:11:00.000Z",
+      "categories": [
+        "Amazon Connect",
+        "Contact Center"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "amazon connect",
+        "contact center",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1517d80a6d1ff2f7",
+      "title": "Amazon MWAA now supports Apache Airflow version 2.11.2",
+      "description": "Amazon Managed Workflows for Apache Airflow (MWAA) now supports Apache Airflow version 2.11.2. Amazon MWAA is a managed service that runs Apache Airflow at scale without the operational overhead of managing the underlying infrastructure. Apache Airflow 2.11.2 is a maintenance release that includes security improvements, bug fixes, and dependency upgrades. This release upgrades core dependencies with security patches and stability improvements to the Airflow webserver and task execution layers. It also includes fixes to task lifecycle management for queued tasks, enhanced secrets masking in log",
+      "descriptionHtml": "&lt;p&gt;Amazon Managed Workflows for Apache Airflow (MWAA) now supports Apache Airflow version 2.11.2. Amazon MWAA is a managed service that runs Apache Airflow at scale without the operational overhead of managing the underlying infrastructure. Apache Airflow 2.11.2 is a maintenance release that includes security improvements, bug fixes, and dependency upgrades.&lt;br&gt; &lt;br&gt; This release upgrades core dependencies with security patches and stability improvements to the Airflow webserver and task execution layers. It also includes fixes to task lifecycle management for queued tasks, enhanced secrets masking in logs, UI corrections in the Task Instances list view, and provider package updates for S3 and CloudWatch log delivery.&lt;br&gt; &lt;br&gt; You can create a new Apache Airflow 2.11.2 environment on Amazon MWAA or upgrade your existing environments with a few clicks in the AWS Management Console in all currently available Amazon MWAA regions. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html\"&gt;Amazon MWAA documentation&lt;/a&gt;, review the &lt;a href=\"https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html#airflow-2-11-2-2026-03-14\"&gt;Apache Airflow 2.11.2 release notes&lt;/a&gt;, and explore the &lt;a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/airflow-versions.html\"&gt;list of available Airflow versions on MWAA&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-mwaa-now-supports-apache-airflow-version-2-11-2",
+      "publishedAt": "2026-07-24T21:57:00.000Z",
+      "updatedAt": "2026-07-24T21:57:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Mwaa"
+      ],
+      "services": [
+        "MWAA"
+      ],
+      "tags": [
+        "analytics",
+        "amazon mwaa",
+        "mwaa"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "80a0b5eae53e2e9c",
+      "title": "Amazon EC2 Dedicated Hosts now support host resource groups without self-managed licenses",
+      "description": "Starting today, customers can create Host Resource Groups (HRGs) for EC2 Dedicated Hosts without the previously required step of creating Self-Managed Licenses (SMLs) and associating AMIs through AWS License Manager. This flexibility is particularly valuable for EC2 Mac Instance customers and for customers who need Dedicated Hosts for hardware-level isolation rather than Bring Your Own License (BYOL). Customers with BYOL workloads can continue to create HRGs with SMLs to ensure that only instances from associated AMIs can be launched on the host and track host-level license consumption. To cre",
+      "descriptionHtml": "&lt;p&gt;Starting today, customers can create Host Resource Groups (HRGs) for EC2 Dedicated Hosts without the previously required step of creating Self-Managed Licenses (SMLs) and associating AMIs through AWS License Manager.&lt;/p&gt; \n&lt;p&gt;This flexibility is particularly valuable for EC2 Mac Instance customers and for customers who need Dedicated Hosts for hardware-level isolation rather than Bring Your Own License (BYOL). Customers with BYOL workloads can continue to create HRGs with SMLs to ensure that only instances from associated AMIs can be launched on the host and track host-level license consumption.&lt;/p&gt; \n&lt;p&gt;To create an HRG without SML, uncheck the \"Restrict to AMIs associated with self-managed license\" option when creating a Host Resource Group in the EC2 Console, or set instance-launch-option to license-configuration-required via the AWS CLI.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where Host Resource Groups are supported. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/license-manager/latest/userguide/host-resource-groups.html\"&gt;Host Resource Group User Guide&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/ec2-dedicated-hosts-hrg/",
+      "publishedAt": "2026-07-24T21:00:00.000Z",
+      "updatedAt": "2026-07-24T21:00:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "AWS Resource Groups",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "aws resource groups",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9849992ef2c5f1f6",
+      "title": "Amazon Kinesis Data Streams now supports scaling down ingest capacity with warm throughput",
+      "description": "Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale. On-demand streams automatically increase ingest capacity in response to rising data ingest usage. With On-demand Advantage mode, you can proactively manage stream capacity using warm throughput to prepare streams for sudden changes in data traffic. We are extending warm throughput with the ability to also scale down ingest capacity, giving you full control to scale your stream's write throughput up or down. To scale down, simply set a lower warm throug",
+      "descriptionHtml": "&lt;p&gt;Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale. On-demand streams automatically increase ingest capacity in response to rising data ingest usage. With On-demand Advantage mode, you can proactively manage stream capacity using warm throughput to prepare streams for sudden changes in data traffic. We are extending warm throughput with the ability to also scale down ingest capacity, giving you full control to scale your stream's write throughput up or down. &lt;/p&gt; \n&lt;p&gt;To scale down, simply set a lower warm throughput value on your on-demand stream. The stream adjusts to the requested capacity or the amount needed to support peak data ingest usage in the last hour, whichever is higher. This ensures your stream always retains sufficient capacity for current traffic while releasing excess capacity you no longer need. As a result, you get optimal stream-processing performance and cost efficiency.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Warm throughput scale-down is available at no additional cost for all on-demand streams with On-demand Advantage mode enabled.&amp;nbsp; For more information about On-demand Advantage, see &lt;a href=\"https://docs.aws.amazon.com/streams/latest/dev/how-do-i-size-a-stream.html\"&gt;Choose the right mode to stream in&lt;/a&gt; in the Amazon Kinesis Data Streams Developer Guide. To get started with the feature, see &lt;a href=\"https://docs.aws.amazon.com/streams/latest/dev/updating-a-stream.html\"&gt;Update a stream&lt;/a&gt;. For pricing details, see &lt;a href=\"https://aws.amazon.com/kinesis/data-streams/pricing/\"&gt;Amazon Kinesis Data Streams pricing&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;The feature is available in all AWS Regions where Amazon Kinesis Data Streams On-demand Advantage is supported.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/kinesis/on-demand-scale-down",
+      "publishedAt": "2026-07-24T18:55:00.000Z",
+      "updatedAt": "2026-07-24T18:55:00.000Z",
+      "categories": [
+        "Serverless",
+        "Amazon Kinesis",
+        "Analytics"
+      ],
+      "services": [
+        "Kinesis"
+      ],
+      "tags": [
+        "serverless",
+        "amazon kinesis",
+        "analytics",
+        "kinesis"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a86ccba33446e0d5",
+      "title": "AWS Lambda now publishes logs for Lambda Managed Instances capacity providers",
+      "description": "AWS Lambda now publishes logs for Lambda Managed Instances (LMI) capacity providers to Amazon CloudWatch Logs, giving you visibility into scaling activity and instance lifecycle operations. LMI enables you to run Lambda functions on Amazon EC2 instances while maintaining serverless operational simplicity. Capacity providers are resources that let you define compute resources that Lambda provisions on your behalf. With capacity provider logs, you can monitor, troubleshoot, and optimize these managed EC2 instances, helping you quickly diagnose provisioning issues and understand scaling behavior.",
+      "descriptionHtml": "&lt;p&gt;AWS Lambda now publishes logs for Lambda Managed Instances (LMI) capacity providers to Amazon CloudWatch Logs, giving you visibility into scaling activity and instance lifecycle operations. LMI enables you to run Lambda functions on Amazon EC2 instances while maintaining serverless operational simplicity. Capacity providers are resources that let you define compute resources that Lambda provisions on your behalf. With capacity provider logs, you can monitor, troubleshoot, and optimize these managed EC2 instances, helping you quickly diagnose provisioning issues and understand scaling behavior.&lt;/p&gt; \n&lt;p&gt;Customers use LMI to operate high-volume, predictable workloads with specialized compute configurations and achieve cost efficiency through EC2 pricing options like Savings Plans and Reserved Instances. With this launch, Lambda automatically generates logs for compute resources managed by capacity providers and delivers them to CloudWatch Logs. Lambda publishes structured JSON logs capturing instance lifecycle events like launches, terminations, and health checks. This structured format lets you identify failed operations and provisioning errors through CloudWatch Logs filtering, helping you resolve issues quickly and shorten debugging cycles.&lt;/p&gt; \n&lt;p&gt;The capacity provider logs are&amp;nbsp;available in all AWS Commercial Regions where LMI is available. The logs are enabled by default for all capacity providers. You can view your capacity provider logs by visiting the Lambda console's capacity provider page. You can use the Lambda API, Lambda console, AWS CLI, AWS SAM, or AWS CloudFormation to change&amp;nbsp;capacity provider&amp;nbsp;log configuration. Standard Amazon CloudWatch Logs charges apply.&amp;nbsp;To learn more, visit the AWS Lambda Managed Instances &lt;a href=\"https://aws.amazon.com/lambda/lambda-managed-instances/\"&gt;product page&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances.html\"&gt;documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-lambda-managed-instances-logs/",
+      "publishedAt": "2026-07-24T16:00:00.000Z",
+      "updatedAt": "2026-07-24T16:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "183672c51e35b1da",
+      "title": "Amazon SES simplifies sending emails over SMTP using Mail Manager",
+      "description": "Amazon Simple Email Service (SES) now offers a simplified console experience for sending emails over SMTP using Mail Manager. Mail Manager is a capability within SES for managing email flow, but configuring its resources individually to set up SMTP sending requires multiple steps. The new guided setup creates and configures these resources automatically, so developers can get started in just a few clicks. The guided setup gives developers a working SMTP endpoint and downloadable credentials they can plug into any application or framework that supports SMTP. This is ideal for teams building app",
+      "descriptionHtml": "&lt;p&gt;Amazon Simple Email Service (SES) now offers a simplified console experience for sending emails over SMTP using Mail Manager. Mail Manager is a capability within SES for managing email flow, but configuring its resources individually to set up SMTP sending requires multiple steps. The new guided setup creates and configures these resources automatically, so developers can get started in just a few clicks.&lt;/p&gt; \n&lt;p&gt;The guided setup gives developers a working SMTP endpoint and downloadable credentials they can plug into any application or framework that supports SMTP. This is ideal for teams building applications that send email notifications, password resets, or transactional messages and need a fast path to a production-ready SMTP configuration.&lt;/p&gt; \n&lt;p&gt;This experience is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where &lt;a href=\"https://aws.amazon.com/ses/\"&gt;Amazon SES&lt;/a&gt; is available.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://console.aws.amazon.com/ses/\"&gt;Amazon SES console&lt;/a&gt; or refer to the &lt;a href=\"https://docs.aws.amazon.com/ses/latest/dg/smtp-credentials-mail-manager.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ses-simplified-smtp-mail-manager",
+      "publishedAt": "2026-07-24T15:03:00.000Z",
+      "updatedAt": "2026-07-24T15:03:00.000Z",
+      "categories": [
+        "Amazon Simple Email Service"
+      ],
+      "services": [
+        "SES"
+      ],
+      "tags": [
+        "amazon simple email service",
+        "ses"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "97ec98d5c6d61cff",
+      "title": "Claude Opus 5 is now available on AWS",
+      "description": "AWS now offers Claude Opus 5 — the most advanced Opus model yet, and compatible with zero data retention (ZDR) — bringing a step-change in coding, long-running agents, and complex professional work to teams building at the highest level. Claude Opus 5 delivers advances in coding, understanding and navigating codebases like an experienced engineer and writing production-quality code while adapting its strategy as it works. It powers dependable agents that run for hours and even overnight, finding paths around obstacles, recovering from errors, and reaching their objectives. And it brings deeper",
+      "descriptionHtml": "&lt;p&gt;AWS now offers Claude Opus 5 — the most advanced Opus model yet, and compatible with zero data retention (ZDR) — bringing a step-change in coding, long-running agents, and complex professional work to teams building at the highest level.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Claude Opus 5 delivers advances in coding, understanding and navigating codebases like an experienced engineer and writing production-quality code while adapting its strategy as it works. It powers dependable agents that run for hours and even overnight, finding paths around obstacles, recovering from errors, and reaching their objectives. And it brings deeper reasoning to long documents and higher accuracy to complex analysis, with the largest gains on document-heavy enterprise work.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Customers have two ways to access Claude Opus 5: Amazon Bedrock and Claude Platform on AWS.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Amazon Bedrock offers Claude Opus 5 with zero data retention (ZDR) enabled by default, giving you Opus' top-tier intelligence while meeting your data governance requirements. It keeps your data within AWS infrastructure with regional data residency, and provides access through a unified service with AWS-managed features like Guardrails and Knowledge Bases. To learn more, see the Amazon Bedrock &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html#model-regions-anthropic\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;regional availability.&lt;/a&gt;&lt;/p&gt; \n&lt;p&gt;Claude Platform on AWS gives you direct access to Anthropic's native platform experience and capabilities via the AWS Console, with support for zero data retention (ZDR) available on request. Build, test, and deploy with the same APIs, features, and console experience you'd get working with Anthropic directly, unified with AWS billing and authentication. To get started, see the Claude Platform on AWS &lt;a href=\"https://docs.aws.amazon.com/claude-platform/latest/userguide/setup.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/claude-opus-5-aws/",
+      "publishedAt": "2026-07-24T15:00:00.000Z",
+      "updatedAt": "2026-07-24T15:00:00.000Z",
+      "categories": [
+        "Amazon Bedrock",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "Bedrock",
+        "Claude"
+      ],
+      "tags": [
+        "amazon bedrock",
+        "artificial intelligence",
+        "bedrock",
+        "claude"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f5fbb5d8b4b96666",
+      "title": "Opus 4.8, Sonnet 5, and User Activity Monitoring now available on Kiro in AWS GovCloud (US)",
+      "description": "Two new models are now available in the Kiro IDE and CLI for the AWS GovCloud (US) Regions. Claude Opus 4.8 is the most intelligent Opus model, delivering stronger self-verification, more efficient tool calling, and better follow-through on long-horizon projects. It plans before it edits, catches its own mistakes, and finds creative paths around obstacles instead of stalling, making it well suited for complex multi-step tasks that previously required close supervision. Available with a 1M context window and 2.2x credit multiplier. Claude Sonnet 5 is the most agentic Sonnet model, bringing stro",
+      "descriptionHtml": "&lt;p&gt;Two new models are now available in the Kiro IDE and CLI for the AWS GovCloud (US) Regions.&lt;br&gt; &lt;br&gt; Claude Opus 4.8 is the most intelligent Opus model, delivering stronger self-verification, more efficient tool calling, and better follow-through on long-horizon projects. It plans before it edits, catches its own mistakes, and finds creative paths around obstacles instead of stalling, making it well suited for complex multi-step tasks that previously required close supervision. Available with a 1M context window and 2.2x credit multiplier.&lt;br&gt; &lt;br&gt; Claude Sonnet 5 is the most agentic Sonnet model, bringing stronger reasoning, tool use, and coding at Sonnet-class pricing. It approaches Opus 4.8 on reasoning and agentic coding benchmarks while running at meaningfully lower cost, giving developers a cost-performance dial between maximum accuracy and higher throughput. Available with &lt;a href=\"https://kiro.dev/docs/privacy-and-security/data-protection/#global-cross-region-inference-for-experimental-features\"&gt;experimental support&lt;/a&gt;, a 1M context window, and 1.3x credit multiplier.&lt;br&gt; &lt;br&gt; Kiro enterprise administrators now have full visibility into organizational usage through built-in monitoring and tracking. A usage dashboard provides aggregate metrics at a glance, per-user activity reports deliver daily CSV telemetry (credits, model usage, and more) to your S3 bucket for license optimization and audit, and optional prompt logging captures user prompts and Kiro responses for compliance and debugging. All data is stored in your own account with no additional charge beyond S3 storage.&lt;br&gt; &lt;br&gt; Ensure your IDE or CLI is updated to the latest version, then restart it to access the new models from the model selector. For more details, visit the &lt;a href=\"https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-kiro.html\"&gt;GovCloud documentation&lt;/a&gt;, the &lt;a href=\"https://kiro.dev/docs/enterprise/monitor-and-track/\"&gt;monitoring and tracking guide&lt;/a&gt;, or contact your AWS account team. To learn more about Kiro, visit the &lt;a href=\"https://kiro.dev/\"&gt;Kiro product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/kiro-opus-sonnet-monitoring-launch-aws-govcloud-us/",
+      "publishedAt": "2026-07-24T14:00:00.000Z",
+      "updatedAt": "2026-07-24T14:00:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "aws govcloud us",
+        "developer tools",
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d2d6ed49d9fc4f19",
+      "title": "AWS announces aws-bench, an open-source benchmark for AI agents on AWS",
+      "description": "Today, AWS announces a research preview of aws-bench, an open-source benchmark that measures how accurately and efficiently AI agents complete real-world AWS tasks. Model providers and AI researchers building agents that operate on AWS infrastructure need an objective, reproducible way to measure performance and diagnose failures. aws-bench provides a public suite of test cases derived from analysis of real AWS usage, including investigation, troubleshooting, and infrastructure creation tasks. Each test case pairs a natural-language query with a defined cloud resource state and a ground-truth ",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces a research preview of aws-bench, an open-source benchmark that measures how accurately and efficiently AI agents complete real-world AWS tasks. Model providers and AI researchers building agents that operate on AWS infrastructure need an objective, reproducible way to measure performance and diagnose failures. aws-bench provides a public suite of test cases derived from analysis of real AWS usage, including investigation, troubleshooting, and infrastructure creation tasks.&lt;br&gt; &lt;br&gt; Each test case pairs a natural-language query with a defined cloud resource state and a ground-truth answer, so you can score any agent or model on a consistent, verifiable basis. Researchers and model providers can use aws-bench to improve foundation model performance on AWS tasks, improve agent harnesses, and track improvement progress. The release includes an easy-to-use CLI tool to instantiate testing environments, execute and score evaluation runs, and reset resource state.&lt;br&gt; &lt;br&gt; aws-bench is available now on &lt;a href=\"https://github.com/aws-bench/aws-bench\"&gt;GitHub&lt;/a&gt;. To get started, follow the setup instructions on the README.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-bench/",
+      "publishedAt": "2026-07-24T13:00:00.000Z",
+      "updatedAt": "2026-07-24T13:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "AWS Developer Tools",
+        "Developer Tools"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence",
+        "aws developer tools",
+        "developer tools"
+      ],
+      "isNew": true
+    },
     {
       "id": "cfdaf7b1fbfcb3be",
       "title": "Amazon ECS Service Connect now supports Zone-Aware routing",
@@ -132,6 +327,28 @@
         "networking and content delivery",
         "amazon cloudwatch logs",
         "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2652adf9be834a7a",
+      "title": "Amazon EC2 I8ge instances are now generally available in additional AWS regions",
+      "description": "Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in AWS Europe (London) and Canada (Central) regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn instances . They offer up to 60% lower storage I/O latency and up to 75% lower sto",
+      "descriptionHtml": "&lt;p&gt;Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in AWS Europe (London) and Canada (Central)&amp;nbsp; regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn instances . They offer up to 60% lower storage I/O latency and up to 75% lower storage I/O latency variability compared to Im4gn instances.&lt;b&gt;&lt;i&gt; &lt;/i&gt;&lt;/b&gt;&lt;br&gt; &lt;br&gt; I8ge instances are storage-optimized instances, and offer up to 120TB of local NVMe storage. They are ideal for workloads that demand rapid local storage with high random read/write performance and consistently low latency for accessing large datasets. These versatile instances are offered in eleven different sizes including two metal sizes, providing flexibility to match customers’ computational needs. They deliver up to 180 Gbps of network performance bandwidth and 60 Gbps of dedicated bandwidth for Amazon Elastic Block Store (EBS), ensuring fast and efficient data transfer for the most demanding applications.&lt;br&gt; &lt;br&gt; To begin your Graviton journey, visit the &lt;a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\"&gt;Level up your compute with AWS Graviton page&lt;/a&gt;. To get started, see &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface (AWS CLI)&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html\"&gt;AWS SDKs&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/i8g/\"&gt;I8ge instances page.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-i8ge-additional-regions/",
+      "publishedAt": "2026-07-23T17:00:00.000Z",
+      "updatedAt": "2026-07-23T17:00:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
       ],
       "isNew": true
     },
@@ -1114,7 +1331,7 @@
         "analytics",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a48a59efd1a555b5",
@@ -1131,7 +1348,7 @@
       "tags": [
         "iam"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2d03802ecbc54d46",
@@ -1153,7 +1370,7 @@
         "analytics",
         "opensearch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c5580916a7b645ae",
@@ -1175,7 +1392,7 @@
         "compute",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f3eec9f9a4357994",
@@ -10911,210 +11128,6 @@
         "amazon sagemaker",
         "analytics",
         "iam",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "8f3243725cceb0c4",
-      "title": "AWS Security Agent adds verification scripts for pentest findings",
-      "description": "AWS Security Agent now generates verification scripts for penetration test findings, enabling security teams to independently reproduce and validate discovered vulnerabilities. Previously, teams manually followed reproduction steps from finding details. Now, AWS Security Agent automatically generates ready-to-run scripts for each confirmed finding. Teams download the script, configure environment variables, and execute it against their target system to verify the vulnerability, streamlining triage and accelerating remediation. Verification scripts include setup instructions, documented environ",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/security-agent/\"&gt;AWS Security Agent&lt;/a&gt; now generates verification scripts for penetration test findings, enabling security teams to independently reproduce and validate discovered vulnerabilities.&lt;br&gt; &lt;br&gt; Previously, teams manually followed reproduction steps from finding details. Now, AWS Security Agent automatically generates ready-to-run scripts for each confirmed finding. Teams download the script, configure environment variables, and execute it against their target system to verify the vulnerability, streamlining triage and accelerating remediation.&lt;br&gt; &lt;br&gt; Verification scripts include setup instructions, documented environment variables, and redacted sensitive values. Available in all AWS Regions where AWS Security Agent is supported.&lt;br&gt; &lt;br&gt; To get started, run a penetration test, navigate to findings, and expand the Verification Script section. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/securityagent/latest/userguide/review-penetration-findings.html\"&gt;Review findings&lt;/a&gt; from a penetration test in the AWS Security Agent User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-security-agent/",
-      "publishedAt": "2026-05-22T17:21:00.000Z",
-      "updatedAt": "2026-05-22T17:21:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "3da727124f27466c",
-      "title": "Amazon GameLift Streams launches Generation 6e stream classes for high-fidelity game streaming",
-      "description": "Today, Amazon GameLift Streams launched Generation 6e (G6e) stream classes, providing enhanced GPU performance for streaming high-fidelity, graphically demanding games and applications. The new G6e stream classes are powered by EC2 G6e instances featuring NVIDIA L40S Tensor Core GPUs and 3rd generation AMD EPYC processors, delivering 2x the GPU memory and up to 2.9x faster GPU memory bandwidth compared to standard Generation 6 stream classes. The two new G6e stream classes -- gen6e_pro and gen6e_pro_win2022 -- are designed for customers who need maximum GPU performance for AAA-quality game str",
-      "descriptionHtml": "&lt;p&gt;Today, Amazon GameLift Streams launched Generation 6e (G6e) stream classes, providing enhanced GPU performance for streaming high-fidelity, graphically demanding games and applications. The new G6e stream classes are powered by EC2 G6e instances featuring NVIDIA L40S Tensor Core GPUs and 3rd generation AMD EPYC processors, delivering 2x the GPU memory and up to 2.9x faster GPU memory bandwidth compared to standard Generation 6 stream classes.&lt;/p&gt; \n&lt;p&gt;The two new G6e stream classes -- gen6e_pro and gen6e_pro_win2022 -- are designed for customers who need maximum GPU performance for AAA-quality game streaming or GPU-intensive applications. These classes provide a full dedicated NVIDIA L40S GPU with 48 GB of GPU memory, making them ideal for streaming experiences that require high frame rates at high resolutions.&lt;/p&gt; \n&lt;p&gt;Generation 6e stream classes are available in the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt, Stockholm), and Asia Pacific (Tokyo, Seoul).&lt;/p&gt; \n&lt;p&gt;To learn more and get started, visit:&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;AWS Docs: Configuration options - Stream classes&amp;nbsp;&lt;br&gt; https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/configuration-options.html#configuration-options-stream-classes&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;API Reference Guide: CreateStreamGroup&amp;nbsp;&lt;br&gt; https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_CreateStreamGroup.html&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-gamelift-streams-g6e-stream-class/",
-      "publishedAt": "2026-05-22T16:39:00.000Z",
-      "updatedAt": "2026-05-22T16:39:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "966c64bdfaef0842",
-      "title": "Amazon WorkSpaces Personal now supports WorkSpace Migration for Linux WorkSpaces",
-      "description": "Amazon WorkSpaces now supports the WorkSpace Migration feature for all Linux operating systems that Amazon WorkSpaces offers. This allows customers to seamlessly migrate WorkSpaces from one Linux operating system to another, automating the process to migrate to newer operating system versions or to move from one Linux operating system to another. When customers migrate their WorkSpaces from one operating system to another, the user data on a Linux WorkSpace’s home directory is now automatically moved to the new WorkSpace. Customers can seamlessly migrate WorkSpaces without having to manually c",
-      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces now supports the WorkSpace Migration feature for all Linux operating systems that Amazon WorkSpaces offers. This allows customers to seamlessly migrate WorkSpaces from one Linux operating system to another, automating the process to migrate to newer operating system versions or to move from one Linux operating system to another.&lt;br&gt; &lt;br&gt; When customers migrate their WorkSpaces from one operating system to another, the user data on a Linux WorkSpace’s home directory is now automatically moved to the new WorkSpace. Customers can seamlessly migrate WorkSpaces without having to manually copy data between WorkSpaces. This streamlines the process to upgrade Linux WorkSpaces to take advantage of the latest Linux operating systems without disrupting end users with manual migration steps.&lt;br&gt; &lt;br&gt; The WorkSpace Migration feature is now supported for all Linux operating systems in AWS commercial and AWS GovCloud (US) Regions where Amazon WorkSpaces Personal is supported. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/migrate-linux-workspaces.html\"&gt;Migrate a Linux WorkSpace section&lt;/a&gt; in the &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html\"&gt;Amazon WorkSpaces Administration Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/workspaces-linux-migration",
-      "publishedAt": "2026-05-22T16:24:00.000Z",
-      "updatedAt": "2026-05-22T16:24:00.000Z",
-      "categories": [
-        "Amazon Workspaces",
-        "Desktop And App Streaming"
-      ],
-      "services": [
-        "WorkSpaces"
-      ],
-      "tags": [
-        "amazon workspaces",
-        "desktop and app streaming",
-        "workspaces"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "4249177511ce0738",
-      "title": "Amazon Keyspaces (for Apache Cassandra) expands to Asia Pacific (Malaysia) and Asia Pacific (Thailand) Regions",
-      "description": "Amazon Keyspaces (for Apache Cassandra) is now available in the Asia Pacific (Malaysia) and Asia Pacific (Thailand) Regions, allowing customers in Asia Pacific Region to build Cassandra-compatible applications with lower latency while keeping their data within the Region to meet data residency requirements. Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. Amazon Keyspaces is serverless, so you pay for only the resources that you use and you can build applications that serve thousands of requests per second with v",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/keyspaces/\"&gt;Amazon Keyspaces (for Apache Cassandra)&lt;/a&gt; is now available in the Asia Pacific (Malaysia) and Asia Pacific (Thailand) Regions, allowing customers in Asia Pacific Region to build Cassandra-compatible applications with lower latency while keeping their data within the Region to meet data residency requirements.&lt;br&gt; &amp;nbsp;&amp;nbsp;&lt;br&gt; Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. Amazon Keyspaces is serverless, so you pay for only the resources that you use and you can build applications that serve thousands of requests per second with virtually unlimited throughput and storage.&lt;br&gt; &amp;nbsp;&amp;nbsp;&lt;br&gt; The Asia Pacific (Malaysia) and Asia Pacific (Thailand) Regions provide the same Amazon Keyspaces features available in other AWS Regions, including point-in-time recovery, Multi-Region replication, CDC streams, and IPv6 support. This regional expansion enables organizations in Asia Pacific to build highly scalable, low-latency applications using familiar Cassandra Query Language (CQL) without the operational burden of managing Cassandra clusters.&lt;/p&gt; \n&lt;p&gt;To learn more about Keyspaces, visit the &lt;a href=\"https://docs.aws.amazon.com/keyspaces/latest/devguide/what-is-keyspaces.html\"&gt;Amazon Keyspaces documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-keyspaces-malaysia-thailand/",
-      "publishedAt": "2026-05-22T16:00:00.000Z",
-      "updatedAt": "2026-05-22T16:00:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Keyspaces"
-      ],
-      "services": [
-        "Keyspaces"
-      ],
-      "tags": [
-        "databases",
-        "amazon keyspaces",
-        "keyspaces"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f83f5d3db11fa6b4",
-      "title": "AWS Clean Rooms now supports mutable payment configurations for collaborations",
-      "description": "AWS Clean Rooms now supports mutable fine-grained payment configurations for collaboration members. This capability offers customers greater flexibility and control over payment responsibilities as they develop new use cases with their partners. With this launch, customers can specify which partners are authorized to pay for specific cost types after a collaboration is created—including SQL queries, PySpark jobs, ML model training and inference jobs, and synthetic data generation in AWS Clean Rooms. With AWS Clean Rooms, you can add or remove authorized payers for specific cost types through a",
-      "descriptionHtml": "&lt;p&gt;AWS Clean Rooms now supports mutable fine-grained &lt;a href=\"https://docs.aws.amazon.com/clean-rooms/latest/userguide/change-requests.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;payment configurations&lt;/a&gt; for collaboration members. This capability offers customers greater flexibility and control over payment responsibilities as they develop new use cases with their partners. With this launch, customers can specify which partners are authorized to pay for specific cost types after a collaboration is created—including SQL queries, PySpark jobs, ML model training and inference jobs, and synthetic data generation in AWS Clean Rooms.&lt;/p&gt; \n&lt;p&gt;With AWS Clean Rooms, you can add or remove authorized payers for specific cost types through a change request. Collaboration members must approve the results before it takes effect. Payment configurations support multiple authorized payers for SQL and PySpark analyses. You can select an authorized payer when submitting the analysis. For example, a pharmaceutical research company collaborates with healthcare organizations for real-world clinical trial data. The pharmaceutical research company can pay for complex analysis, and the healthcare organizations can pay for simple SQL analyses in a collaboration.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;AWS Clean Rooms helps companies and their partners easily analyze and collaborate on their collective datasets without revealing or copying one another’s underlying data. For more information about the AWS Regions where AWS Clean Rooms is available, see the &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/clean-rooms.html#clean-rooms_region\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions&lt;/a&gt; table. To learn more about collaborating with AWS Clean Rooms, visit &lt;a href=\"https://aws.amazon.com/clean-rooms/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Clean Rooms&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-clean-rooms-mutable-payments",
-      "publishedAt": "2026-05-22T12:00:00.000Z",
-      "updatedAt": "2026-05-22T12:00:00.000Z",
-      "categories": [
-        "AWS Clean Rooms",
-        "Analytics"
-      ],
-      "services": [
-        "Clean Rooms"
-      ],
-      "tags": [
-        "aws clean rooms",
-        "analytics",
-        "clean rooms"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "77c247e7bf7ff8b5",
-      "title": "AWS Secrets Manager adds managed external secrets support for Datadog vended keys and Snowflake Programmatic Access Tokens",
-      "description": "AWS Secrets Manager now extends its managed external secrets capability to include Datadog Keys and Snowflake Programmatic Access Tokens (PATs). Managed external secrets enable customers to automatically rotate third-party credentials directly from AWS Secrets Manager by offering first-class integration with supported third-party services. With this launch, you can manage rotation for three types of Datadog credentials — API keys, Application keys, and admin credential pairs for service accounts. For Snowflake, you can now rotate Programmatic Access Tokens using Snowflake's native authenticati",
-      "descriptionHtml": "&lt;p&gt;AWS Secrets Manager now extends its managed external secrets capability to include Datadog Keys and Snowflake Programmatic Access Tokens (PATs). Managed external secrets enable customers to automatically rotate third-party credentials directly from AWS Secrets Manager by offering first-class integration with supported third-party services.&lt;/p&gt; \n&lt;p&gt;With this launch, you can manage rotation for three types of Datadog credentials —&lt;a&gt;&lt;/a&gt;&lt;a&gt; API keys, Application keys, and admin credential pairs&lt;/a&gt;&amp;nbsp;for service accounts. For Snowflake, you can now rotate Programmatic Access Tokens using Snowflake's native authentication, with a configurable grace period that allows applications to seamlessly transition to new tokens without interruption.&lt;/p&gt; \n&lt;p&gt;These new integrations join existing managed external secrets integrations with BigID, Confluent Cloud, MongoDB Atlas, and Salesforce, enabling customers to manage third-party software vended secrets.&lt;/p&gt; \n&lt;p&gt;Datadog and Snowflake PAT managed external secrets are available in all AWS Regions where AWS Secrets Manager managed external secrets is supported. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/secretsmanager/latest/userguide/managed-external-secrets.html\"&gt;AWS Secrets Manager managed external secrets documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/secrets-manager-managed-external-secrets-datadog-snowflake/",
-      "publishedAt": "2026-05-22T07:00:00.000Z",
-      "updatedAt": "2026-05-22T07:00:00.000Z",
-      "categories": [
-        "AWS Secrets Manager"
-      ],
-      "services": [
-        "Secrets Manager"
-      ],
-      "tags": [
-        "aws secrets manager",
-        "secrets manager"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d22daa9f6128bb17",
-      "title": "Amazon CloudWatch Logs Insights adds new query commands and functions",
-      "description": "Amazon CloudWatch Logs Insights query language now supports 13 new commands and functions that give you more powerful ways to query, transform, and analyze your logs. Customers analyzing logs in CloudWatch Logs Insights often need to perform string manipulation, encode or decode field values, parse non-JSON log formats, or calculate geographic distances, so they can derive deeper insights from their logs. With this launch, CloudWatch Logs Insights provides new string and numeric functions (round, startswith, endswith, case, regex_replace, haversine), encoding and decoding functions (urlencode,",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch Logs Insights query language now supports 13 new commands and functions that give you more powerful ways to query, transform, and analyze your logs. Customers analyzing logs in CloudWatch Logs Insights often need to perform string manipulation, encode or decode field values, parse non-JSON log formats, or calculate geographic distances, so they can derive deeper insights from their logs.&lt;br&gt; &lt;br&gt; With this launch, CloudWatch Logs Insights provides new string and numeric functions (round, startswith, endswith, case, regex_replace, haversine), encoding and decoding functions (urlencode, urldecode, base64encode, base64decode), and new parse and analysis commands (parse logfmt, expand, relevantfields). You can now filter logs by string prefixes, decode Base64 payloads inline, parse logfmt structured logs into fields, expand nested JSON arrays into individual records, calculate distances between coordinates, and automatically surface relevant fields in high-cardinality log groups.&lt;br&gt; &lt;br&gt; These commands and functions are available today in all commercial AWS Regions. To learn more, see the Amazon CloudWatch Logs &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_AnalyzeLogData_LogsInsights.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-cloudwatch-logs-insights/",
-      "publishedAt": "2026-05-21T23:00:00.000Z",
-      "updatedAt": "2026-05-21T23:00:00.000Z",
-      "categories": [
-        "Management And Governance",
-        "Amazon Cloudwatch",
-        "Amazon Cloudwatch Logs"
-      ],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "management and governance",
-        "amazon cloudwatch",
-        "amazon cloudwatch logs",
-        "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "4af75c1b23e824bd",
-      "title": "Amazon EC2 C7i-flex, M7i-flex &amp; M7i instances now available in Asia Pacific (Hyderabad) region",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C7i-flex, M7i-flex and M7i instances powered by custom 4th Gen Intel Xeon Scalable processors (code-named Sapphire Rapids) are available in Asia Pacific (Hyderabad) region. These custom processors, available only on AWS, offer up to 15% better performance over comparable x86-based Intel processors utilized by other cloud providers. C7i-flex and M7i-flex instances are the easiest way for you to get price-performance benefits for a majority of general-purpose workloads. They deliver up to 19% better price-performance compared to C6i and M",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C7i-flex, M7i-flex and M7i instances powered by custom 4th Gen Intel Xeon Scalable processors (code-named Sapphire Rapids) are available in Asia Pacific (Hyderabad) region. These custom processors, available only on AWS, offer up to 15% better performance over comparable x86-based Intel processors utilized by other cloud providers.&lt;br&gt; &lt;br&gt; C7i-flex and M7i-flex instances are the easiest way for you to get price-performance benefits for a majority of general-purpose workloads. They deliver up to 19% better price-performance compared to C6i and M6i&amp;nbsp; instances respectively. These instances offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources such as web and application servers, virtual-desktops, batch-processing, and microservices.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;M7i deliver up to 15% better price-performance compared to M6i. M7i instances are a great choice for workloads that need the largest instance sizes or continuous high CPU usage, such as gaming servers, CPU-based machine learning (ML), and video-streaming. M7i offer larger instance sizes, up to 48xlarge, and two bare metal sizes (metal-24xl, metal-48xl). These bare-metal sizes support built-in Intel accelerators: Data Streaming Accelerator, In-Memory Analytics Accelerator, and QuickAssist Technology that are used to facilitate efficient offload and acceleration of data operations and optimize performance for workloads.&lt;br&gt; &lt;br&gt; To learn more, visit the&amp;nbsp;EC2&amp;nbsp;&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/c7i/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;C7i-flex&lt;/a&gt;&amp;nbsp;and&amp;nbsp;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/m7i/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;M7i/M7i-flex&lt;/a&gt; instances pages.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-c7i-flex-m7i-flex-m7i-instances-HYD-region/",
-      "publishedAt": "2026-05-21T19:39:00.000Z",
-      "updatedAt": "2026-05-21T19:39:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9224e62b1a772bc6",
-      "title": "SageMaker Unified Studio automates Glue connector provisioning for cross-subnet job retries",
-      "description": "Amazon SageMaker Unified Studio now supports automatic creation of connections for Glue job retries across subnets to improve data pipeline resilience. This helps organizations running business-critical data pipelines reduce unplanned downtime and meet their SLAs — without requiring engineers to manually configure backup connectors or intervene during subnet failures. With this launch, SageMaker Unified Studio automates the provisioning of Glue connectors across subnets defined in the domain VPC configuration. Administrators can define their domain VPC with multiple private subnets across avai",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now supports automatic creation of connections for Glue job retries across subnets to improve data pipeline resilience. This helps organizations running business-critical data pipelines reduce unplanned downtime and meet their SLAs — without requiring engineers to manually configure backup connectors or intervene during subnet failures.&lt;/p&gt; \n&lt;p&gt;With this launch, SageMaker Unified Studio automates the provisioning of Glue connectors across subnets defined in the domain VPC configuration. Administrators can define their domain VPC with multiple private subnets across availability zones, and the system provisions the connectors needed for all new projects so that failed jobs can be retried on an alternate subnet automatically. If a Glue job fails because the primary subnet is unavailable due to IP address exhaustion or availability zone degradation, the job can be retried on a connector in a different subnet. No user action is needed beyond the initial VPC configuration on the domain.&lt;/p&gt; \n&lt;p&gt;This feature is available in all &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;AWS Regions where Amazon SageMaker Unified Studio&lt;/a&gt; is available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/what-is-sagemaker-unified-studio.html\"&gt;Amazon SageMaker Unified Studio documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/sagemaker-unified-studio-glue/",
-      "publishedAt": "2026-05-21T19:27:00.000Z",
-      "updatedAt": "2026-05-21T19:27:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker",
-        "Glue"
-      ],
-      "tags": [
-        "analytics",
-        "amazon sagemaker",
-        "sagemaker",
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a4b8ea2a363ec762",
-      "title": "Amazon SageMaker AI now supports OpenAI-compatible APIs for inference endpoints",
-      "description": "Amazon SageMaker Inference now supports OpenAI-compatible APIs, so you can use the tools and frameworks you already know, like the OpenAI SDK, LangChain, and Strands Agents, to connect directly to your SageMaker endpoints. Switching requires nothing more than changing an endpoint URL — no custom integration code, no SDK wrappers, no rewrites. With this launch, you no longer need to adopt a different API format or change your authentication approach. Simply change your endpoint URL, and your existing SDK calls, streaming logic, and framework integrations continue to work as-is. You immediately ",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Inference now supports OpenAI-compatible APIs, so you can use the tools and frameworks you already know, like the OpenAI SDK, LangChain, and Strands Agents, to connect directly to your SageMaker endpoints. Switching requires nothing more than changing an endpoint URL — no custom integration code, no SDK wrappers, no rewrites.&lt;br&gt; &lt;br&gt; With this launch, you no longer need to adopt a different API format or change your authentication approach. Simply change your endpoint URL, and your existing SDK calls, streaming logic, and framework integrations continue to work as-is. You immediately gain the ability to choose your own GPU instances, keep data in your own VPC, run any open source or fine-tuned model, and scale with auto-scaling policies tuned to your workload. Authentication uses existing AWS credentials with automatic token refresh, so there is nothing extra to manage in production.&lt;br&gt; &lt;br&gt; This capability is available today in US East (N. Virginia), US West (Oregon), US East (Ohio), Asia Pacific (Mumbai), Asia Pacific (Jakarta), Europe (Ireland), Europe (Frankfurt), South America (São Paulo), Asia Pacific (Tokyo), Asia Pacific (Seoul), Europe (London), Asia Pacific (Singapore), Asia Pacific (Sydney), and Canada (Central). To learn more and get started, read the &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/announcing-openai-compatible-api-support-for-amazon-sagemaker-ai-endpoints/\"&gt;launch blog &lt;/a&gt;or visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints-openai-compatible.html\"&gt;SageMaker Inference documentation.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-sagemaker-ai-openai-apis/",
-      "publishedAt": "2026-05-21T17:55:00.000Z",
-      "updatedAt": "2026-05-21T17:55:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon sagemaker",
         "sagemaker"
       ],
       "isNew": false
