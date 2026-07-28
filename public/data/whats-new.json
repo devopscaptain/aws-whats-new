@@ -1,7 +1,160 @@
 {
-  "lastUpdated": "2026-07-27T09:11:44.530Z",
+  "lastUpdated": "2026-07-28T08:59:12.924Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "ab912f00f77e7e53",
+      "title": "Amazon Neptune now supports tag-based access control for IAM",
+      "description": "Amazon Neptune Database now supports tag-based access control (TBAC) for IAM, enabling customers to use AWS resource tags and IAM principal tags as conditions in IAM policies and Service Control Policies (SCPs) to control access to Neptune data-plane operations. Neptune already provides robust security through VPC isolation, TLS encryption, and IAM authentication, but customers managing multiple clusters at scale needed a dynamic, attribute-based mechanism to enforce organizational access boundaries. TBAC addresses this by allowing administrators to govern cluster access without enumerating sp",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/neptune/\" target=\"_blank\"&gt;Amazon Neptune&lt;/a&gt; Database now supports tag-based access control (TBAC) for IAM, enabling customers to use AWS resource tags and IAM principal tags as conditions in IAM policies and Service Control Policies (SCPs) to control access to Neptune data-plane operations. Neptune already provides robust security through VPC isolation, TLS encryption, and IAM authentication, but customers managing multiple clusters at scale needed a dynamic, attribute-based mechanism to enforce organizational access boundaries. TBAC addresses this by allowing administrators to govern cluster access without enumerating specific cluster ARNs in every policy.&lt;br&gt; &lt;br&gt; With TBAC, IAM principals can only perform `neptune-db:*` actions against Neptune clusters whose tags match their own — for example, a principal tagged `Project=FraudDetection` is automatically restricted to clusters sharing that same tag. This eliminates lateral access risk within shared VPC environments, enforces team and environment-level isolation across projects, and supports federated identity workflows using SAML or OIDC session tags from external identity providers. Granular permissions like neptune-db:QueryLanguage can be used alongside TBAC for more fine-grained access control.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon Neptune is available and requires Neptune engine version 1.2.0.0 or later with IAM authentication enabled.&lt;br&gt; &lt;br&gt; To learn more about configuring tag-based access control for Amazon Neptune, including how to tag your DB clusters and IAM principals and deploy organization-wide guardrails using SCPs, visit the &lt;a href=\"https://docs.aws.amazon.com/neptune/latest/userguide/iam-data-tbac.html\" target=\"_blank\"&gt;Amazon Neptune documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-neptune-tbac/",
+      "publishedAt": "2026-07-27T22:00:00.000Z",
+      "updatedAt": "2026-07-27T22:00:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Neptune"
+      ],
+      "services": [
+        "Neptune",
+        "IAM"
+      ],
+      "tags": [
+        "databases",
+        "amazon neptune",
+        "neptune",
+        "iam"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0022cf9272a07002",
+      "title": "AWS Glue Data Quality now supports anomaly detection and writing results to the AWS Glue Data Catalog",
+      "description": "AWS Glue Data Quality now supports anomaly detection for Catalog-based data quality evaluations and the ability to write evaluation results to AWS Glue Data Catalog (GDC) tables. These capabilities work across both ETL jobs and Catalog evaluations, giving you a consistent data quality experience regardless of workflow type. With anomaly detection support for GDC, you can identify unexpected changes in data statistics such as sudden drops in distinct values or row count spikes in your GDC tables using ML-powered time-series forecasting, without writing rules with explicit thresholds. This is es",
+      "descriptionHtml": "&lt;p&gt;AWS Glue Data Quality now supports anomaly detection for Catalog-based data quality evaluations and the ability to write evaluation results to AWS Glue Data Catalog (GDC) tables. These capabilities work across both ETL jobs and Catalog evaluations, giving you a consistent data quality experience regardless of workflow type.&lt;br&gt; &lt;br&gt; With anomaly detection support for GDC, you can identify unexpected changes in data statistics such as sudden drops in distinct values or row count spikes in your GDC tables using ML-powered time-series forecasting, without writing rules with explicit thresholds. This is especially valuable for data engineers monitoring hundreds of tables in the GDC who need to surface issues automatically.&lt;br&gt; &lt;br&gt; With results storage&lt;b&gt; &lt;/b&gt;in GDC, Data Quality rule outcomes, profiling metrics, and anomaly predictions (with confidence bounds) are written back to GDC tables, creating a queryable record of all quality evaluations. Whether the evaluation runs in an ETL job or directly on a Catalog table, results can be queried at any time using standard SQL.&lt;br&gt; &lt;br&gt; AWS Glue Data Quality anomaly detection and Catalog results storage are available in all AWS commercial regions and AWS GovCloud (US) regions.&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/data-quality.html\"&gt;AWS Glue Data Quality documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-glue-data-quality-catalog-anomaly-detection-write-results",
+      "publishedAt": "2026-07-27T20:45:00.000Z",
+      "updatedAt": "2026-07-27T20:45:00.000Z",
+      "categories": [
+        "Analytics",
+        "AWS Glue"
+      ],
+      "services": [
+        "Glue"
+      ],
+      "tags": [
+        "analytics",
+        "aws glue",
+        "glue"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6b5f40432fe6a57c",
+      "title": "AWS Glue Data Quality now supports distribution statistics for data profiling",
+      "description": "AWS Glue Data Quality now supports a new Distribution Analyzer that generates frequency distribution profiles for your data. Using this new Distribution Analyzer in the Data Quality Definition Language (DQDL), you can generate histograms for numeric columns and value distributions for categorical, date, and boolean columns. With support for custom bin counts, you can explore the shape and patterns of your data at the granularity that matters most to your use case. Understanding how data is distributed is foundational to building reliable data pipelines. Distribution statistics help you quickly",
+      "descriptionHtml": "&lt;p&gt;AWS Glue Data Quality now supports a new Distribution Analyzer that generates frequency distribution profiles for your data. Using this new Distribution Analyzer in the Data Quality Definition Language (DQDL), you can generate histograms for numeric columns and value distributions for categorical, date, and boolean columns. With support for custom bin counts, you can explore the shape and patterns of your data at the granularity that matters most to your use case.&lt;br&gt; &lt;br&gt; Understanding how data is distributed is foundational to building reliable data pipelines. Distribution statistics help you quickly identify skewness, outliers, and unexpected patterns across your datasets, without writing custom code. The capability integrates directly with your existing DQDL rulesets, so you can add distribution profiling alongside your current data quality checks in a single evaluation run. Distribution statistics are stored in Amazon S3 for future querying through services like Amazon Athena, and are also surfaced through APIs, making it easy to integrate distribution insights into monitoring workflows and visualization tools, including SageMaker Unified Studio.&lt;br&gt; &lt;br&gt; AWS Glue Data Quality distribution statistics are available in all AWS commercial regions and AWS GovCloud (US) regions.&lt;br&gt; &lt;br&gt; To learn more about Glue Data Quality, visit the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/glue-data-quality.html\"&gt;AWS Glue Data Quality documentation&lt;/a&gt;. To get started with using Distribution Analyzer, visit the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/dqdl.html#dqdl-analyzers\"&gt;Analyzers documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-glue-data-quality-distribution-profiling",
+      "publishedAt": "2026-07-27T20:23:00.000Z",
+      "updatedAt": "2026-07-27T20:23:00.000Z",
+      "categories": [
+        "AWS Glue",
+        "Analytics"
+      ],
+      "services": [
+        "Glue"
+      ],
+      "tags": [
+        "aws glue",
+        "analytics",
+        "glue"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "cb63fbe532f7212a",
+      "title": "Amazon GameLift Streams now supports Custom Aspect Ratio and Dynamic Resolution",
+      "description": "Amazon GameLift Streams now supports Custom Aspect Ratio and Dynamic Resolution, giving you greater control over the streaming experience across diverse player devices and network conditions. With Custom Aspect Ratio, you can configure a specific resolution per stream session to match your player's device — including portrait, landscape, ultra-wide, and square aspect ratios. This eliminates letterboxing or pillarboxing, delivering native full-screen experiences on mobile phones, tablets, and non-standard displays. Specify any resolution from 320 to 4096 pixels per dimension (up to 1080p total ",
+      "descriptionHtml": "&lt;p&gt;Amazon GameLift Streams now supports Custom Aspect Ratio and Dynamic Resolution, giving you greater control over the streaming experience across diverse player devices and network conditions.&lt;/p&gt; \n&lt;p&gt;With Custom Aspect Ratio, you can configure a specific resolution per stream session to match your player's device — including portrait, landscape, ultra-wide, and square aspect ratios. This eliminates letterboxing or pillarboxing, delivering native full-screen experiences on mobile phones, tablets, and non-standard displays. Specify any resolution from 320 to 4096 pixels per dimension (up to 1080p total pixel budget) using the DisplayConfiguration parameter in the StartStreamSession API. You can also try custom resolution from the AWS Console.&lt;/p&gt; \n&lt;p&gt;Dynamic Resolution automatically adapts stream quality when a player's network bandwidth fluctuates. When bandwidth drops, the stream gracefully reduces resolution to maintain smooth playback without frame drops or disconnections — and automatically recovers to full quality when conditions improve. Dynamic Resolution is enabled by default for all new stream groups with no configuration required. Customers will need to download the new Web SDK.&lt;/p&gt; \n&lt;p&gt;Both features are available in all AWS Regions where Amazon GameLift Streams is offered. To learn more, see Custom stream resolution in the Amazon GameLift Streams Developer Guide.&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; &lt;a href=\"https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/custom-stream-resolution.html\"&gt;https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/custom-stream-resolution.html&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-gamelift-streams/",
+      "publishedAt": "2026-07-27T18:58:00.000Z",
+      "updatedAt": "2026-07-27T18:58:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
+    {
+      "id": "5e1232cf39e36374",
+      "title": "AWS Security Hub MCP App brings exposure findings into your AI-assisted workflow (Preview)",
+      "description": "AWS announces the preview of the AWS Security Hub MCP App, a local Model Context Protocol (MCP) server that brings your Security Hub exposure findings directly into Claude Desktop. This capability can help accelerates your security investigations by reducing context switching and manual triage, letting you explore and act on your exposures without leaving your AI-assisted workflow. With the Security Hub MCP App, you can investigate your security posture in natural language: view your top exposure findings, drill into a finding’s attack path and expanded network path, examine correlated finding",
+      "descriptionHtml": "&lt;p&gt;AWS announces the preview of the AWS Security Hub MCP App, a local Model Context Protocol (MCP) server that brings your Security Hub exposure findings directly into Claude Desktop.&amp;nbsp;&amp;nbsp;This capability can help accelerates your security investigations by reducing context switching and manual triage, letting you explore and act on your exposures without leaving your AI-assisted workflow.&lt;/p&gt; \n&lt;p&gt;With the Security Hub MCP App, you can investigate your security posture in natural language: view your top exposure findings, drill into a finding’s attack path and expanded network path, examine correlated findings and affected resource configurations, and get remediation recommendations. Each tool call returns both a text summary for your AI agent to reason overover and an interactive visualization for you to verify in the same conversation. The MCP server runs locally on your machine using your existing AWS credentials, and every tool is read-only,-- no changes are made to your environment.&lt;/p&gt; \n&lt;p&gt;The Security Hub MCP App is available at no additional cost to Security Hub customers. This feature is available in preview in all AWS commercial Regions that support Security Hub.&amp;nbsp;To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-mcp-app.html\"&gt;AWS Security Hub User Guide&lt;/a&gt; and the &lt;a href=\"https://aws.amazon.com/security-hub/\"&gt;AWS Security Hub product page&lt;/a&gt;. For the full list of Regions, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regional Services List&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-security-hub-mcp-app/",
+      "publishedAt": "2026-07-27T17:00:00.000Z",
+      "updatedAt": "2026-07-27T17:00:00.000Z",
+      "categories": [
+        "Applications",
+        "Security Identity And Compliance",
+        "AWS Security Hub",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "Security Hub"
+      ],
+      "tags": [
+        "applications",
+        "security identity and compliance",
+        "aws security hub",
+        "artificial intelligence",
+        "security hub"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a41564275d0c621e",
+      "title": "AWS Elemental MediaTailor adds configurable ad timeout and concurrency controls for improved ad fill and faster startup",
+      "description": "AWS Elemental MediaTailor now gives you direct control over ad decision server (ADS) timeout. Previously, changing these settings required contacting AWS Support. You can now configure individual HTTP ad request timeouts, total ad personalization time budgets for live, VOD, and live ad prefetch, and enable parallel ADS requests. These settings allow you to optimize ad delivery performance for your specific workflows. For example, you can increase the personalization time budget for live events to improve ad fill rates or enable parallel ADS requests in VOD workflows to reduce overall response ",
+      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaTailor now gives you direct control over ad decision server (ADS) timeout. Previously, changing these settings required contacting AWS Support. You can now configure individual HTTP ad request timeouts, total ad personalization time budgets for live, VOD, and live ad prefetch, and enable parallel ADS requests.&lt;/p&gt; \n&lt;p&gt;These settings allow you to optimize ad delivery performance for your specific workflows. For example, you can increase the personalization time budget for live events to improve ad fill rates or enable parallel ADS requests in VOD workflows to reduce overall response time for faster video startup. New prefetch-specific timeout settings give you additional granularity for livestream ad retrieval.&lt;/p&gt; \n&lt;p&gt;You can configure these settings through the AWS Elemental MediaTailor console, AWS CLI, or AWS SDKs using the new AdsPersonalizationTimeouts and AdsPersonalizationConcurrency parameters on your playback configurations.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where AWS Elemental MediaTailor is available.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more about configuring ADS request timeouts, personalization time budgets, and concurrency, see &lt;a href=\"https://docs.aws.amazon.com/mediatailor/latest/ug/configurations-create.html#configurations-advanced-settings\"&gt;Advanced settings&lt;/a&gt; in the AWS Elemental MediaTailor User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/mediatail-configurable-ad-timeout-and-concurrency",
+      "publishedAt": "2026-07-27T16:09:00.000Z",
+      "updatedAt": "2026-07-27T16:09:00.000Z",
+      "categories": [
+        "AWS Elemental Mediatailor",
+        "Media Services"
+      ],
+      "services": [
+        "Elemental",
+        "MediaTailor"
+      ],
+      "tags": [
+        "aws elemental mediatailor",
+        "media services",
+        "elemental",
+        "mediatailor"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "184750535f90e92d",
+      "title": "Amazon RDS for SQL Server now supports restoring TDE databases on Mult-AZ instances",
+      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports restoring Transparent Data Encryption (TDE)-enabled SQL Server databases on Multi-AZ instances and instances configured with a read replica in the same region, using native backup and restore. Previously, TDE-enabled database restore was available only for Single-AZ instances, requiring you to disable TDE or migrate to a Single-AZ configuration before restoring encrypted databases. You can restore TDE-enabled database backups directly to Amazon RDS for SQL Server Multi-AZ instances and instances configured with a read ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server&lt;/a&gt; now supports restoring Transparent Data Encryption (TDE)-enabled SQL Server databases on Multi-AZ instances and instances configured with a read replica in the same region, using native backup and restore. Previously, TDE-enabled database restore was available only for Single-AZ instances, requiring you to disable TDE or migrate to a Single-AZ configuration before restoring encrypted databases.&lt;br&gt; &lt;br&gt; You can restore TDE-enabled database backups directly to Amazon RDS for SQL Server Multi-AZ instances and instances configured with a read replica in the same region. Back up your existing TDE certificate, store it in Amazon S3, and restore it to your Amazon RDS instance with the TDE option enabled.&amp;nbsp;Then, restore your TDE-enabled database backup from Amazon S3 using Amazon RDS native backup and restore. This simplifies your migration and recovery workflows when you require both encryption at rest with TDE and the high availability of Multi-AZ deployments.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon RDS for SQL Server is supported. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.Options.TDE.html\" target=\"_blank\"&gt;Amazon RDS for SQL Server User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/rds-sql-server-supports-tde-for-maz/",
+      "publishedAt": "2026-07-27T07:00:00.000Z",
+      "updatedAt": "2026-07-27T07:00:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds For Sql Server"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds for sql server",
+        "rds"
+      ],
+      "isNew": true
+    },
     {
       "id": "67b2bd1959b391ae",
       "title": "Amazon Connect now supports audio optimization for Azure Virtual Desktop and Windows 365 Cloud PC",
@@ -198,6 +351,23 @@
       "isNew": true
     },
     {
+      "id": "7d21c8f32c3cf16d",
+      "title": "AWS Clean Rooms supports larger worker types up to 32 vCPUs for SQL",
+      "description": "AWS Clean Rooms now supports larger worker types of 32 vCPUs with 244 GB of memory for SQL analyses, allowing you to run more compute and memory-intensive workloads. Previously, the largest worker type available was 16 vCPUs with 120 GB of memory. Larger workers can help improve performance for complex queries on large datasets, optimizing costs for customers. For example, an advertiser collaborating with a publisher can use larger workers to run complex feature engineering across billions of records to train their multi-touch attribution model, accelerating time-to-value and optimizing costs.",
+      "descriptionHtml": "&lt;p&gt;AWS Clean Rooms now supports &lt;a href=\"https://docs.aws.amazon.com/clean-rooms/latest/userguide/use-sql-editor.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;larger worker types&lt;/a&gt; of 32 vCPUs with 244 GB of memory for SQL analyses, allowing you to run more compute and memory-intensive workloads. Previously, the largest worker type available was 16 vCPUs with 120 GB of memory. Larger workers can help improve performance for complex queries on large datasets, optimizing costs for customers. For example, an advertiser collaborating with a publisher can use larger workers to run complex feature engineering across billions of records to train their multi-touch attribution model, accelerating time-to-value and optimizing costs.&lt;/p&gt; \n&lt;p&gt;AWS Clean Rooms helps companies and their partners easily analyze and collaborate on their collective datasets without revealing or copying one another’s underlying data. For more information about the AWS Regions where AWS Clean Rooms is available, see the &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/clean-rooms.html#clean-rooms_region\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions&lt;/a&gt; table. To learn more about collaborating with AWS Clean Rooms, visit &lt;a href=\"https://aws.amazon.com/clean-rooms/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Clean Rooms&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-clean-rooms-32-vcpu-worker-types-sql",
+      "publishedAt": "2026-07-24T12:00:00.000Z",
+      "updatedAt": "2026-07-24T12:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Clean Rooms"
+      ],
+      "tags": [
+        "clean rooms"
+      ],
+      "isNew": true
+    },
+    {
       "id": "cfdaf7b1fbfcb3be",
       "title": "Amazon ECS Service Connect now supports Zone-Aware routing",
       "description": "Amazon Elastic Container Service (Amazon ECS) introduces zone-aware routing for ECS Service Connect, enabling customers to reduce cross Availability Zone (AZ) data transfer costs and latency by automatically prioritizing service-to-service traffic within the same AZ. With this launch, ECS Service Connect preferentially routes requests to endpoints in the same AZ as the originating task while dynamically adjusting traffic weights as endpoints scale to maintain balanced load across target services. Previously, as customers distributed their applications across AZs for resiliency, service-to-serv",
@@ -375,7 +545,7 @@
       "id": "57b799122179163e",
       "title": "Claude Sonnet 5 is now available on Amazon Bedrock in AWS GovCloud (US)",
       "description": "AWS GovCloud (US) now offers Claude Sonnet 5 on Amazon Bedrock. Claude Sonnet 5 delivers strong performance across coding, professional work, and agentic tasks while maintaining the balance of capability, cost, and speed. For coding, it navigates large codebases, lands multi-file changes, and carries debugging and refactoring tasks through to completion with fewer rounds of correction. For agents, it calls tools precisely, holds state across many steps, and recovers from errors so more runs finish correctly the first time. For knowledge work, it builds spreadsheets, drafts documents, and turns",
-      "descriptionHtml": "&lt;p&gt;AWS GovCloud (US) now offers Claude Sonnet 5 on Amazon Bedrock. Claude Sonnet 5 delivers strong performance across coding, professional work, and agentic tasks while maintaining the balance of capability, cost, and speed. For coding, it navigates large codebases, lands multi-file changes, and carries debugging and refactoring tasks through to completion with fewer rounds of correction. For agents, it calls tools precisely, holds state across many steps, and recovers from errors so more runs finish correctly the first time. For knowledge work, it builds spreadsheets, drafts documents, and turns unstructured material into structured analysis. &lt;/p&gt; \n&lt;p&gt;With this launch, &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/05/claude-opus-4.8-aws-govcloud-us/\"&gt;Claude Opus 4.8&lt;/a&gt; and Claude Sonnet 5 are available on bedrock-runtime endpoints in AWS GovCloud (US-West and US-East) and bedrock-mantle endpoints in AWS GovCloud (US-West) for performing inference. Bedrock Mantle, Amazon Bedorck's next-generation inference engine, supports the Anthropic Messages API. Amazon Bedrock keeps your data within AWS infrastructure and provides access to Claude Sonnet 5 through a unified service with AWS-managed features like Guardrails, Knowledge Bases, and regional data residency. To learn more, see the Amazon Bedrock &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5.html\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html#model-regions-anthropic\"&gt;regional availability&lt;/a&gt;. &lt;/p&gt;",
+      "descriptionHtml": "&lt;p&gt;AWS GovCloud (US) now offers Claude Sonnet 5 on Amazon Bedrock. Claude Sonnet 5 delivers strong performance across coding, professional work, and agentic tasks while maintaining the balance of capability, cost, and speed. For coding, it navigates large codebases, lands multi-file changes, and carries debugging and refactoring tasks through to completion with fewer rounds of correction. For agents, it calls tools precisely, holds state across many steps, and recovers from errors so more runs finish correctly the first time. For knowledge work, it builds spreadsheets, drafts documents, and turns unstructured material into structured analysis. &lt;/p&gt; \n&lt;p&gt;With this launch, &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/05/claude-opus-4.8-aws-govcloud-us/\"&gt;Claude Opus 4.8&lt;/a&gt; and Claude Sonnet 5 are available on bedrock-runtime endpoints in AWS GovCloud (US-West and US-East) and bedrock-mantle endpoints in AWS GovCloud (US-West) for performing inference. Bedrock Mantle, Amazon's next-generation inference engine, supports the Anthropic Messages API. Amazon Bedrock keeps your data within AWS infrastructure and provides access to Claude Sonnet 5 through a unified service with AWS-managed features like Guardrails, Knowledge Bases, and regional data residency. To learn more, see the Amazon Bedrock &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5.html\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html#model-regions-anthropic\"&gt;regional availability&lt;/a&gt;. &lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/claude-sonnet-5-govcloud/",
       "publishedAt": "2026-07-23T16:02:00.000Z",
       "updatedAt": "2026-07-23T16:02:00.000Z",
@@ -1011,7 +1181,7 @@
         "aws marketplace and partners",
         "partner network"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d7c3faa5fb21b770",
@@ -1031,7 +1201,7 @@
         "databases",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2895d16558093927",
@@ -1050,7 +1220,7 @@
         "partner network",
         "aws marketplace and partners"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "27a76818a97e2888",
@@ -1073,7 +1243,7 @@
         "containers",
         "serverless"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "772bbaf1d12e9404",
@@ -1095,7 +1265,7 @@
         "cost management",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7260d5e9d3c50604",
@@ -1117,7 +1287,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "202a3111b0d939a2",
@@ -1141,7 +1311,7 @@
         "security identity and compliance",
         "cloudtrail"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7cda18667f9a9a65",
@@ -1163,7 +1333,7 @@
         "amazon connect",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "821d6abc0ea7b794",
@@ -1187,7 +1357,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6faa7d6e70c385b7",
@@ -1213,7 +1383,7 @@
         "business productivity",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "40200905f0e1d03f",
@@ -1239,7 +1409,7 @@
         "workspaces",
         "appstream"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3115cbdaae3f00c0",
@@ -1258,7 +1428,7 @@
         "amazon managed service for apache flink",
         "analytics"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "08f3589a60f87392",
@@ -1279,7 +1449,7 @@
         "global infrastructure",
         "compute"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "995923cef4254453",
@@ -1296,7 +1466,7 @@
       "tags": [
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c0399a3beb8f69f9",
@@ -1800,6 +1970,7 @@
       "updatedAt": "2026-07-15T17:00:00.000Z",
       "categories": [
         "Amazon Cognito",
+        "AWS Govcloud Us",
         "Security Identity And Compliance"
       ],
       "services": [
@@ -1807,6 +1978,7 @@
       ],
       "tags": [
         "amazon cognito",
+        "aws govcloud us",
         "security identity and compliance",
         "cognito"
       ],
@@ -1821,16 +1993,18 @@
       "publishedAt": "2026-07-15T17:00:00.000Z",
       "updatedAt": "2026-07-15T17:00:00.000Z",
       "categories": [
-        "Databases",
-        "Amazon Rds"
+        "Amazon Rds",
+        "AWS Govcloud Us",
+        "Databases"
       ],
       "services": [
         "RDS",
         "Aurora"
       ],
       "tags": [
-        "databases",
         "amazon rds",
+        "aws govcloud us",
+        "databases",
         "rds",
         "aurora"
       ],
@@ -1869,16 +2043,18 @@
       "publishedAt": "2026-07-15T17:00:00.000Z",
       "updatedAt": "2026-07-15T17:00:00.000Z",
       "categories": [
-        "Analytics",
-        "Amazon Msk"
+        "Amazon Msk",
+        "AWS Govcloud Us",
+        "Analytics"
       ],
       "services": [
         "MSK",
         "Kafka"
       ],
       "tags": [
-        "analytics",
         "amazon msk",
+        "aws govcloud us",
+        "analytics",
         "msk",
         "kafka"
       ],
@@ -1888,13 +2064,14 @@
       "id": "da694db48a321dcb",
       "title": "Amazon RDS now supports up to four storage modifications in 24 hours",
       "description": "Amazon RDS now allows up to four storage modifications per database instance within a rolling 24-hour window. These modifications let you increase the size, change the type, and adjust the performance of your RDS storage volumes. You can start a new modification right after storage optimization for the previous modification is complete without having to wait for the six-hour cool-off period to complete. This enhancement improves operational agility for scaling storage capacity or adjusting performance during sudden data growth or unexpected workload spikes. With RDS storage modifications, you ",
-      "descriptionHtml": "&lt;p&gt;Amazon RDS now allows up to four storage modifications per database instance within a rolling 24-hour window. These modifications let you increase the size, change the type, and adjust the performance of your RDS storage volumes. You can start a new modification right after storage optimization for the previous modification is complete without having to wait for the six-hour cool-off period to complete.&lt;/p&gt; \n&lt;p&gt;This enhancement improves operational agility for scaling storage capacity or adjusting performance during sudden data growth or unexpected workload spikes. With RDS storage modifications, you can modify your volumes without downtime, keeping applications running with minimal performance impact.&lt;/p&gt; \n&lt;p&gt;The feature is automatically enabled on all Amazon RDS for PostgreSQL, Amazon RDS for MariaDB, Amazon RDS for MySQL, Amazon RDS for Db2, Amazon RDS for Oracle, and Amazon RDS for Microsoft SQL Server instances in all commercial AWS Regions and the AWS GovCloud (US) Regions. To learn more, refer the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html\" target=\"_blank\"&gt;Amazon RDS User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "descriptionHtml": "&lt;p&gt;Amazon RDS now allows up to four storage modifications per database instance within a rolling 24-hour window. These modifications let you increase the size, change the type, and adjust the performance of your RDS storage volumes. You can start a new modification right after storage optimization for the previous modification is complete without having to wait for the six-hour cool-off period to complete.&lt;/p&gt; \n&lt;p&gt;This enhancement improves operational agility for scaling storage capacity or adjusting performance during sudden data growth or unexpected workload spikes. With RDS storage modifications, you can modify your volumes without downtime, keeping applications running with minimal performance impact.&lt;/p&gt; \n&lt;p&gt;The feature is automatically enabled on all Amazon RDS for PostgreSQL, Amazon RDS for MariaDB, Amazon RDS for MySQL, Amazon RDS for Db2, Amazon RDS for Oracle, and Amazon RDS for Microsoft SQL Server instances in all commercial AWS Regions and the AWS GovCloud (US) Regions. To learn more, refer the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS User Guide&lt;/a&gt;.&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-upto-four-storage-modifications-24-hours",
       "publishedAt": "2026-07-15T16:15:00.000Z",
       "updatedAt": "2026-07-15T16:15:00.000Z",
       "categories": [
         "Amazon Rds",
-        "Databases"
+        "Databases",
+        "AWS Govcloud Us"
       ],
       "services": [
         "RDS"
@@ -1902,6 +2079,7 @@
       "tags": [
         "amazon rds",
         "databases",
+        "aws govcloud us",
         "rds"
       ],
       "isNew": false
@@ -1915,15 +2093,17 @@
       "publishedAt": "2026-07-15T15:51:00.000Z",
       "updatedAt": "2026-07-15T15:51:00.000Z",
       "categories": [
-        "Analytics",
-        "AWS Glue"
+        "AWS Glue",
+        "AWS Govcloud Us",
+        "Analytics"
       ],
       "services": [
         "Glue"
       ],
       "tags": [
-        "analytics",
         "aws glue",
+        "aws govcloud us",
+        "analytics",
         "glue"
       ],
       "isNew": false
@@ -2005,11 +2185,13 @@
       "publishedAt": "2026-07-14T22:05:00.000Z",
       "updatedAt": "2026-07-14T22:05:00.000Z",
       "categories": [
-        "Storage"
+        "Storage",
+        "AWS Govcloud Us"
       ],
       "services": [],
       "tags": [
-        "storage"
+        "storage",
+        "aws govcloud us"
       ],
       "isNew": false
     },
@@ -10943,192 +11125,6 @@
         "compute",
         "amazon ec2",
         "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "830ffbbe121a2290",
-      "title": "Amazon EC2 M8i and M8i-flex instances are now available in AWS GovCloud (US-East) Region",
-      "description": "Starting today, Amazon EC2 M8i and M8i-flex instances are now available in AWS GovCloud (US-East) Region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and M8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up to 20% better performance than M7i and M7i-flex instances, with even higher gains for specific workloads. The M8i and M8i",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon EC2 M8i and M8i-flex instances are now available in AWS GovCloud (US-East)&lt;b&gt; &lt;/b&gt;Region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and M8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up to 20% better performance than M7i and M7i-flex instances, with even higher gains for specific workloads. The M8i and M8i-flex instances are up to 30% faster for PostgreSQL databases, up to 60% faster for NGINX web applications, and up to 40% faster for AI deep learning recommendation models compared to M7i and M7i-flex instances.&lt;br&gt; &lt;br&gt; M8i-flex are the easiest way to get price performance benefits for a majority of general-purpose workloads like web and application servers, microservices, small and medium data stores, virtual desktops, and enterprise applications. They offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources.&lt;br&gt; &lt;br&gt; M8i instances are a great choice for all general purpose workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. The SAP-certified M8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications.&lt;br&gt; &lt;br&gt; To get started, sign in to the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Management Console&lt;/a&gt;. For more information about the new instances, visit the&lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8i/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt; M8i and M8i-flex instance page&lt;/a&gt; or visit the AWS News &lt;a href=\"https://aws.amazon.com/blogs/aws/new-general-purpose-amazon-ec2-m8i-and-m8i-flex-instances-are-now-available/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;blog&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-m8i-m8i-flex-govcloud-east/",
-      "publishedAt": "2026-05-26T16:00:00.000Z",
-      "updatedAt": "2026-05-26T16:00:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Compute",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "amazon ec2",
-        "compute",
-        "aws govcloud us",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "bf7c553b282b5c18",
-      "title": "Amazon VPC IPAM now supports tags on IPAM pool allocations",
-      "description": "Amazon VPC IP Address Manager (IPAM) now supports tags on IPAM pool allocations, enabling customers to organize, govern, and control access to individual IP address allocations using the same tagging workflows they use across other AWS resources. Amazon VPC IP Address Manager (IPAM) helps customers plan, track, and monitor IP addresses across their AWS environments. With this launch, customers can tag allocations at creation time or add tags to existing allocations. These tags can be referenced in AWS Identity and Access Management and Service Control Policies, enabling centralized governance ",
-      "descriptionHtml": "&lt;p&gt;Amazon VPC IP Address Manager (IPAM) now supports tags on IPAM pool allocations, enabling customers to organize, govern, and control access to individual IP address allocations using the same tagging workflows they use across other AWS resources.&lt;/p&gt; \n&lt;p&gt;Amazon VPC IP Address Manager (IPAM) helps customers plan, track, and monitor IP addresses across their AWS environments. With this launch, customers can tag allocations at creation time or add tags to existing allocations. These tags can be referenced in AWS Identity and Access Management and Service Control Policies, enabling centralized governance over IP address usage at scale. For example, a network administrator can tag allocations by environment and enforce an IAM policy that allows only the production networking role to allocate from the pool, while development teams are restricted to development pools. Customers can also search and filter allocations by tag across all IPAM pools, making it faster to locate specific IP address ranges in large, multi-account environments.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where IPAM is available at no additional cost. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/vpc/latest/ipam/allocate-cidrs-ipam.html\"&gt;IPAM User Guide&lt;/a&gt;. To get started with IPAM, visit the &lt;a href=\"https://console.aws.amazon.com/ipam/\"&gt;IPAM console&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-vpc-ipam-tags/",
-      "publishedAt": "2026-05-26T13:00:00.000Z",
-      "updatedAt": "2026-05-26T13:00:00.000Z",
-      "categories": [
-        "Amazon Vpc",
-        "Networking And Content Delivery"
-      ],
-      "services": [
-        "VPC"
-      ],
-      "tags": [
-        "amazon vpc",
-        "networking and content delivery",
-        "vpc"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "481a1f3d5ddd5871",
-      "title": "Amazon GuardDuty Malware Protection for AWS Backup supports Amazon S3 continuous backups",
-      "description": "Amazon GuardDuty Malware Protection for AWS Backup is now available for Amazon S3 continuous backups. You can now scan your S3 continuous backups for malware and identify clean points in time across your entire backup timeline for safe recovery. You can enable full or incremental malware scans for S3 continuous backups within your backup plan, and run on-demand scans up to any restorable point in time. You can now query the malware scan status at any point in time within your continuous backup using the new GetPITRMalwareScanResults API, allowing you to verify whether a specific recovery time ",
-      "descriptionHtml": "&lt;p&gt;Amazon GuardDuty Malware Protection for AWS Backup is now available for Amazon S3 continuous backups. You can now scan your S3 continuous backups for malware and identify clean points in time across your entire backup timeline for safe recovery.&lt;/p&gt; \n&lt;p&gt;You can enable full or incremental malware scans for S3 continuous backups within your backup plan, and run on-demand scans up to any restorable point in time. You can now query the malware scan status at any point in time within your continuous backup using the new GetPITRMalwareScanResults API, allowing you to verify whether a specific recovery time is clean before initiating a restore.&lt;/p&gt; \n&lt;p&gt;Support for S3 continuous backups is available in all AWS Regions where Amazon GuardDuty Malware Protection for AWS Backup is supported. You can get started using the &lt;a href=\"https://console.aws.amazon.com/backup/home\"&gt;AWS Backup console&lt;/a&gt;, API, or CLI. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/malware-protection.html\"&gt;AWS Backup documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/guardduty/latest/ug/what-is-guardduty.html\"&gt;Amazon GuardDuty Malware Protection documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-guardduty-aws-backup-s3-continuous/",
-      "publishedAt": "2026-05-26T10:00:00.000Z",
-      "updatedAt": "2026-05-26T10:00:00.000Z",
-      "categories": [
-        "Amazon Guardduty",
-        "Storage",
-        "Security Identity And Compliance",
-        "AWS Backup"
-      ],
-      "services": [
-        "S3",
-        "Backup",
-        "GuardDuty"
-      ],
-      "tags": [
-        "amazon guardduty",
-        "storage",
-        "security identity and compliance",
-        "aws backup",
-        "s3",
-        "backup",
-        "guardduty"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "8226352d5420c323",
-      "title": "AWS Glue Data Catalog Client for Apache Hive Metastore now supports Hive 3 and discovery of multiple catalogs",
-      "description": "The AWS Glue Data Catalog Client for Apache Hive Metastore now supports Hive 3. With this update, Hive-compatible clients can now use this library to list and read multiple catalogs in the Glue Data Catalog. This client library is available as an open-source reference implementation that customers and partners can use to build their own Hive-compatible Glue Data Catalog integrations. To learn more, see AWS Glue Data Catalog Client for Apache Hive Metastore .",
-      "descriptionHtml": "&lt;p&gt;The AWS Glue Data Catalog Client for Apache Hive Metastore now supports Hive 3. With this update, Hive-compatible clients can now use this library to list and read multiple catalogs in the Glue Data Catalog. This client library is available as an open-source reference implementation that customers and partners can use to build their own Hive-compatible Glue Data Catalog integrations. To learn more, see &lt;a href=\"https://github.com/awslabs/aws-glue-data-catalog-client-for-apache-hive-metastore/tree/branch-3.5.0\"&gt;AWS Glue Data Catalog Client for Apache Hive Metastore&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-glue-data-catalog-apache-hive3/",
-      "publishedAt": "2026-05-23T00:11:00.000Z",
-      "updatedAt": "2026-05-23T00:11:00.000Z",
-      "categories": [
-        "AWS Glue",
-        "Developer",
-        "Analytics"
-      ],
-      "services": [
-        "Glue"
-      ],
-      "tags": [
-        "aws glue",
-        "developer",
-        "analytics",
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0bc081b209309cde",
-      "title": "Amazon SageMaker Unified Studio adds interactive interface for managing Feature Store in IAM Domains",
-      "description": "Amazon SageMaker Unified Studio IAM domains now includes an interactive interface for creating and managing feature groups in SageMaker Feature Store, eliminating the need to write code for common feature management tasks. This launch makes feature management accessible to data scientists, ML engineers, and business analysts from a single collaborative environment. Features are the inputs to ML models used during training and inference. For example, a music recommendation app might use features like song ratings, listening duration, and listener demographics to personalize which songs are sugg",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio IAM domains now includes an interactive interface for creating and managing feature groups in SageMaker Feature Store, eliminating the need to write code for common feature management tasks. This launch makes feature management accessible to data scientists, ML engineers, and business analysts from a single collaborative environment.&lt;/p&gt; \n&lt;p&gt;Features are the inputs to ML models used during training and inference. For example, a music recommendation app might use features like song ratings, listening duration, and listener demographics to personalize which songs are suggested to each user. With this interactive interface for creating and managing features, you can now discover and search existing features, create and modify feature groups, view definitions and schemas, monitor data ingestion status - all without writing API calls. Features created elsewhere appear immediately in SageMaker Unified Studio when sharing the same IAM role, ensuring seamless workflows across your ML development lifecycle.&lt;/p&gt; \n&lt;p&gt;To learn more about using the interactive interface for creating and managing features in SageMaker Unified Studio, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/feature-store.html\"&gt;Amazon SageMaker Unifed Studio User Guide.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/sagemaker-feature-store/",
-      "publishedAt": "2026-05-22T20:07:00.000Z",
-      "updatedAt": "2026-05-22T20:07:00.000Z",
-      "categories": [],
-      "services": [
-        "IAM",
-        "SageMaker"
-      ],
-      "tags": [
-        "iam",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "17eaf08bd1b6f299",
-      "title": "Amazon SageMaker expands domain management across domain types",
-      "description": "Amazon SageMaker Unified Studio now provides domain management experience for Identity Center and IAM-based domains outside of AWS console, allows administrators and data management teams to create and manage projects, configure workforce identity, manage users and permissions, and set networking properties for projects. Previously, this was only available for IAM based domains. With this launch, administrators of Identity Center-based domains can access domain management capabilities in SageMaker Unified Studio portal to create projects with configurable execution roles that define which AWS ",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now provides domain management experience for Identity Center and IAM-based domains outside of AWS console, allows administrators and data management teams to create and manage projects, configure workforce identity, manage users and permissions, and set networking properties for projects. Previously, this was only available for IAM based domains.&lt;br&gt; &lt;br&gt; With this launch, administrators of Identity Center-based domains can access domain management capabilities in SageMaker Unified Studio portal to create projects with configurable execution roles that define which AWS analytics, AI, and ML services the project can access. VPC configuration is consistent across both domain types, inherited by all projects, and can be edited to change the VPC, subnets, or security group. Administrators can also manage associated accounts, enabling users to publish and consume data from other AWS accounts within SageMaker Unified Studio.&lt;br&gt; &lt;br&gt; These features are available in all &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;AWS Regions where Amazon SageMaker Unified Studio&lt;/a&gt; is available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/access-domain-admin-portal-idc.html\"&gt;Domain administration for Identity Center-based domains&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/domain-management-iam-idc/",
-      "publishedAt": "2026-05-22T19:30:00.000Z",
-      "updatedAt": "2026-05-22T19:30:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "analytics",
-        "amazon sagemaker",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b08e3e46705a8676",
-      "title": "New agentic migration assessment capabilities now available with AWS Transform",
-      "description": "AWS Transform now offers advanced migration assessment capabilities including what-if scenarios, customizable assumptions, flexible file format support, and multiple new total cost of ownership (TCO) assessment features. These latest features let you quickly build a migration business case and accelerate your migration decisions. You can start your migration assessment with whatever data you have including RVTools exports, CMDB data, exports from the AWS Transform discovery tool, and a wide variety of third-party discovery tools. Create what-if scenarios for your migrations with customized ass",
-      "descriptionHtml": "&lt;p&gt;AWS Transform now offers advanced migration assessment capabilities including what-if scenarios, customizable assumptions, flexible file format support, and multiple new total cost of ownership (TCO) assessment features. These latest features let you quickly build a migration business case and accelerate your migration decisions.&lt;br&gt; &lt;br&gt; You can start your migration assessment with whatever data you have including RVTools exports, CMDB data, exports from the AWS Transform discovery tool, and a wide variety of third-party discovery tools. Create what-if scenarios for your migrations with customized assumptions including region, resource utilization, and service mapping. You can also compare scenarios and find the best path for your AWS migration. This latest release lets you include multiple analyses in your what-if scenarios including cost modelling of EC2, FSx, S3, SQL Server on EC2, and virtual desktops. On top of this, you can enhance your assessment with the inclusion of additional pillars of the &lt;a href=\"https://aws.amazon.com/executive-insights/content/business-value-on-aws/\"&gt;Cloud Value Framework&lt;/a&gt; such as staff productivity, operational resilience, business agility, and sustainability.&lt;br&gt; &lt;br&gt; Now you can build a comprehensive assessment for migrating to AWS faster than ever before and start your migration with the confidence of having an optimized TCO.&lt;br&gt; &lt;br&gt; AWS Transform migration assessments are available in all AWS Regions where &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/regions.html\"&gt;AWS Transform is offered&lt;/a&gt;. Learn more here on the &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/what-is-service.html\"&gt;user guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/assessment-capabilities-transform",
-      "publishedAt": "2026-05-22T18:58:00.000Z",
-      "updatedAt": "2026-05-22T18:58:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Migration",
-        "Compute"
-      ],
-      "services": [],
-      "tags": [
-        "artificial intelligence",
-        "migration",
-        "compute"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "1b3e423019e149df",
-      "title": "Amazon SageMaker adds business metadata and governance in IAM-based domains",
-      "description": "Amazon SageMaker Unified Studio now supports business context, metadata and data governance capabilities in IAM-based domains. With this launch, customers using Amazon SageMaker IAM-based domains can add business context to their AWS Glue Data Catalog tables, including business names, descriptions, and README documentation. They can use AI-generated metadata to produce business names and descriptions automatically, reducing the effort of cataloging large numbers of tables. Customers can also create business glossaries so that teams across the organization use consistent definitions for terms l",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/sagemaker/unified-studio/\"&gt;Amazon SageMaker Unified Studio&lt;/a&gt; now supports business context, metadata and data governance capabilities in IAM-based domains. With this launch, customers using Amazon SageMaker IAM-based domains can add business context to their AWS Glue Data Catalog tables, including business names, descriptions, and README documentation. They can use AI-generated metadata to produce business names and descriptions automatically, reducing the effort of cataloging large numbers of tables. Customers can also create business glossaries so that teams across the organization use consistent definitions for terms like \"ARR\" or \"churn rate,\" and define metadata form templates to capture structured attributes such as data classification, retention policies, or ownership details.&lt;/p&gt; \n&lt;p&gt;With this business context in place, data engineers, analysts, and data scientists can search for and discover tables across the entire domain, filter results by glossary terms and metadata form fields, and request access through subscriptions. After an administrator approves the request, SageMaker Unified Studio automatically grants the necessary AWS Lake Formation permissions to the project. Administrators can also grant access to tables directly from within SageMaker Unified Studio without waiting for a request.&lt;/p&gt; \n&lt;p&gt;Amazon SageMaker Unified Studio business context, metadata, and governance capabilities in IAM-based domains are available in all AWS Regions where SageMaker Unified Studio is &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;supported&lt;/a&gt;. To learn more, visit the Amazon SageMaker Unified Studio &lt;a href=\"https://preview.docs.aws.dev/preview/utmittal/SEA/AWSMaxdomeDocs/utkarsh-m2-catalog-branch/sagemaker-unified-studio/latest/userguide/catalog-iam-based-domains.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/sagemaker-catalog-iam-domains/",
-      "publishedAt": "2026-05-22T18:24:00.000Z",
-      "updatedAt": "2026-05-22T18:24:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Analytics"
-      ],
-      "services": [
-        "IAM",
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "analytics",
-        "iam",
-        "sagemaker"
       ],
       "isNew": false
     }
