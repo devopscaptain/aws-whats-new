@@ -1,7 +1,146 @@
 {
-  "lastUpdated": "2026-07-28T08:59:12.924Z",
+  "lastUpdated": "2026-07-29T09:00:27.274Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "e9e1e61b45a758de",
+      "title": "Amazon EKS Provisioned Control Plane now delivers faster pod autoscaling",
+      "description": "Amazon EKS now delivers faster pod autoscaling across all Provisioned Control Plane clusters by increasing Horizontal Pod Autoscaler (HPA) sync concurrency to up to 40 times the default Kubernetes value. This reduces the time it takes for HPA-driven workloads to scale in response to increased load, enabling faster responsiveness to demand. The Kubernetes Horizontal Pod Autoscaler (HPA) continuously monitors workload metrics and adjusts pod counts to match demand. In clusters running hundreds or thousands of HPA objects, the speed at which the Kubernetes control plane processes these objects de",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/pm/eks\"&gt;Amazon EKS&lt;/a&gt; now delivers faster pod autoscaling across all &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/eks-provisioned-control-plane.html\"&gt;Provisioned Control Plane&lt;/a&gt; clusters by increasing &lt;a href=\"https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/\"&gt;Horizontal Pod Autoscaler (HPA)&lt;/a&gt; sync concurrency to up to 40 times the default Kubernetes value. This reduces the time it takes for HPA-driven workloads to scale in response to increased load, enabling faster responsiveness to demand.&lt;br&gt; &lt;br&gt; The Kubernetes Horizontal Pod Autoscaler (HPA) continuously monitors workload metrics and adjusts pod counts to match demand. In clusters running hundreds or thousands of HPA objects, the speed at which the Kubernetes control plane processes these objects determines how quickly workloads scale in response to changing demand. The HPA sync concurrency setting controls how many HPA objects the control plane evaluates in parallel. By increasing this value, Provisioned Control Plane clusters now process more HPA objects simultaneously, reducing the time between detecting increased load and scaling out pods.&lt;br&gt; &lt;br&gt; This enhancement is available to all customers using EKS Provisioned Control Plane and requires no configuration changes. To learn more about this enhancement, see EKS Provisioned Control Plane in the EKS &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/eks-provisioned-control-plane.html\"&gt;User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-eks-provisioned-control/",
+      "publishedAt": "2026-07-28T17:18:00.000Z",
+      "updatedAt": "2026-07-28T17:18:00.000Z",
+      "categories": [
+        "Containers",
+        "Amazon Eks"
+      ],
+      "services": [
+        "EKS"
+      ],
+      "tags": [
+        "containers",
+        "amazon eks",
+        "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "fead2c3a5e361053",
+      "title": "Second-generation AWS Outposts racks now supported in the AWS Asia Pacific (Mumbai) Region",
+      "description": "Second-generation AWS Outposts racks are now supported in the Asia Pacific (Mumbai) Region. Outposts racks extend AWS infrastructure, AWS services, APIs, and tools to virtually any on-premises data center or colocation space for a truly consistent hybrid experience. Organizations from startups to enterprises and the public sector in and outside of India can now order their Outposts racks connected to this new supported region, optimizing for their latency and data residency needs. Outposts allows customers to run workloads that need low latency access to on-premises systems locally while conne",
+      "descriptionHtml": "&lt;p&gt;Second-generation AWS Outposts racks are now supported in the Asia Pacific (Mumbai) Region. Outposts racks extend AWS infrastructure, AWS services, APIs, and tools to virtually any on-premises data center or colocation space for a truly consistent hybrid experience.&lt;br&gt; &lt;br&gt; Organizations from startups to enterprises and the public sector in and outside of India can now order their Outposts racks connected to this new supported region, optimizing for their latency and data residency needs. Outposts allows customers to run workloads that need low latency access to on-premises systems locally while connecting back to their home Region for application management. Customers can also use Outposts and AWS services to manage and process data that needs to remain on-premises to meet data residency requirements. This regional expansion provides additional flexibility in the AWS Regions that customers’ Outposts can connect to.&lt;br&gt; &lt;br&gt; To learn more about second-generation Outposts racks, read &lt;a href=\"https://aws.amazon.com/blogs/aws/announcing-second-generation-aws-outposts-racks-with-breakthrough-performance-and-scalability-on-premises/\"&gt;&lt;u&gt;this blog post&lt;/u&gt;&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/outposts/latest/network-userguide/what-is-outposts.html\"&gt;&lt;u&gt;user guide&lt;/u&gt;&lt;/a&gt;. For the most updated list of countries and territories and the AWS Regions where second-generation Outposts racks are supported, check out the &lt;a href=\"https://aws.amazon.com/outposts/rack/faqs/\"&gt;&lt;u&gt;Outposts rack FAQs page&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-outposts-asia-pacific-mumbai/",
+      "publishedAt": "2026-07-28T16:00:00.000Z",
+      "updatedAt": "2026-07-28T16:00:00.000Z",
+      "categories": [
+        "AWS Outposts",
+        "Storage",
+        "Compute"
+      ],
+      "services": [
+        "Outposts"
+      ],
+      "tags": [
+        "aws outposts",
+        "storage",
+        "compute",
+        "outposts"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3e5b63617049e0a5",
+      "title": "AWS Console Home now supports the Cost and Usage widget in the AWS European Sovereign Cloud (Germany) Region",
+      "description": "AWS Console Home now supports the Cost and Usage widget in the AWS European Sovereign Cloud (Germany) Region, allowing customers to surface insights from Cost Explorer and Cost Optimization Hub on their Console Home dashboard. With the Cost and Usage widget, customers can track month-to-date and forecasted costs, identify savings opportunities, and see how their spend breaks down by service over time. To get started, sign in to the AWS Management Console , select Add widgets, and drag the Cost and Usage widget onto your Console Home dashboard. To learn more, see Working with widgets in AWS Con",
+      "descriptionHtml": "&lt;p&gt;AWS Console Home now supports the Cost and Usage widget in the AWS European Sovereign Cloud (Germany) Region, allowing customers to surface insights from Cost Explorer and Cost Optimization Hub on their Console Home dashboard.&lt;/p&gt; \n&lt;p&gt;With the Cost and Usage widget, customers can track month-to-date and forecasted costs, identify savings opportunities, and see how their spend breaks down by service over time.&lt;/p&gt; \n&lt;p&gt;To get started, sign in to the &lt;a href=\"https://console.amazonaws-eusc.eu/\"&gt;AWS Management Console&lt;/a&gt;, select Add widgets, and drag the Cost and Usage widget onto your Console Home dashboard. To learn more, see &lt;a href=\"https://docs.aws.eu/awsconsolehelpdocs/latest/gsg/work-with-widgets.html\"&gt;Working with widgets in AWS Console Home documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-console-home-cost-and-usage-eu-sovereign-cloud",
+      "publishedAt": "2026-07-28T16:00:00.000Z",
+      "updatedAt": "2026-07-28T16:00:00.000Z",
+      "categories": [
+        "AWS Management Console",
+        "Cost Management"
+      ],
+      "services": [],
+      "tags": [
+        "aws management console",
+        "cost management"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b8f6979d16a1826d",
+      "title": "AWS DataSync Enhanced mode now supports Amazon EFS and Amazon FSx for Lustre",
+      "description": "AWS DataSync Enhanced mode now supports Amazon EFS and Amazon FSx for Lustre as source or destination locations. AWS DataSync is a secure, high-speed data transfer service that simplifies moving data over a network. Enhanced mode processes data in parallel, removes file count limitations, and provides detailed transfer metrics. Previously, customers who wanted to move data to or from EFS or FSx for Lustre were limited to Basic mode. Now customers can use Enhanced mode for these locations, simplifying workflows for large-scale migrations, agentic AI and machine learning training, high-performan",
+      "descriptionHtml": "&lt;p&gt;AWS DataSync Enhanced mode now supports Amazon EFS and Amazon FSx for Lustre as source or destination locations.&lt;/p&gt; \n&lt;p&gt;AWS DataSync is a secure, high-speed data transfer service that simplifies moving data over a network. Enhanced mode processes data in parallel, removes file count limitations, and provides detailed transfer metrics. Previously, customers who wanted to move data to or from EFS or FSx for Lustre were limited to Basic mode. Now customers can use Enhanced mode for these locations, simplifying workflows for large-scale migrations, agentic AI and machine learning training, high-performance computing, genomics processing, and media rendering.&lt;/p&gt; \n&lt;p&gt;This capability is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where AWS DataSync is offered. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/datasync/home\"&gt;AWS DataSync console&lt;/a&gt;. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html\"&gt;AWS DataSync documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-datasync-amazon-efs-fsx-lustre/",
+      "publishedAt": "2026-07-28T10:00:00.000Z",
+      "updatedAt": "2026-07-28T10:00:00.000Z",
+      "categories": [
+        "AWS Datasync",
+        "Amazon Fsx For Lustre",
+        "Migration",
+        "Amazon Elastic File System"
+      ],
+      "services": [
+        "EFS",
+        "FSx",
+        "DataSync"
+      ],
+      "tags": [
+        "aws datasync",
+        "amazon fsx for lustre",
+        "migration",
+        "amazon elastic file system",
+        "efs",
+        "fsx",
+        "datasync"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1d14f1fbfca7af5f",
+      "title": "AWS DataSync Enhanced mode adds HDFS, Azure Blob, and object storage locations with Hyper-V agent support",
+      "description": "AWS DataSync Enhanced mode now supports agent-based data transfers with Hadoop Distributed File Systems (HDFS), Microsoft Azure Blob Storage, and self-managed object storage. Additionally, Enhanced mode agents can now be deployed on Microsoft Hyper-V. Using a DataSync agent, customers can transfer data to and from these locations with the parallelism, unlimited file counts, and detailed metrics that Enhanced mode provides. Enhanced mode HDFS support includes multiple NameNode configurations for high availability and Transparent Data Encryption (TDE) with Kerberos authentication, enabling organ",
+      "descriptionHtml": "&lt;p&gt;AWS DataSync Enhanced mode now supports agent-based data transfers with Hadoop Distributed File Systems (HDFS), Microsoft Azure Blob Storage, and self-managed object storage. Additionally, Enhanced mode agents can now be deployed on Microsoft Hyper-V. Using a DataSync agent, customers can transfer data to and from these locations with the parallelism, unlimited file counts, and detailed metrics that Enhanced mode provides.&lt;/p&gt; \n&lt;p&gt;Enhanced mode HDFS support includes multiple NameNode configurations for high availability and Transparent Data Encryption (TDE) with Kerberos authentication, enabling organizations in regulated industries to securely migrate petabyte-scale encrypted Hadoop data without sacrificing availability.&lt;/p&gt; \n&lt;p&gt;This capability is available in all AWS Regions where AWS DataSync is offered. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/datasync/home\"&gt;AWS DataSync console&lt;/a&gt;. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html\"&gt;AWS DataSync documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-datasync-hdfs-azure-blob-hyper-v/",
+      "publishedAt": "2026-07-28T10:00:00.000Z",
+      "updatedAt": "2026-07-28T10:00:00.000Z",
+      "categories": [
+        "AWS Datasync",
+        "Migration"
+      ],
+      "services": [
+        "DataSync"
+      ],
+      "tags": [
+        "aws datasync",
+        "migration",
+        "datasync"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0f9a6403f6eb841c",
+      "title": "Amazon S3 Tables now support the Variant data type for Apache Iceberg V3",
+      "description": "Amazon S3 Tables now support the Variant data type as defined in the Apache Iceberg Version 3 (V3) specification. You can now write semi-structured data like JSON directly to S3 Tables without defining a fixed schema in advance, allowing you to land data faster while still getting efficient analytical query performance. With the Variant data type, Apache Iceberg V3-compatible engines shred your semi-structured data into hidden columns as you write it, generating Parquet column statistics that query engines use for optimizations like file pruning, which reduces the data your analytical queries ",
+      "descriptionHtml": "&lt;p&gt;Amazon S3 Tables now support the Variant data type as defined in the Apache Iceberg Version 3 (V3) specification. You can now write semi-structured data like JSON directly to S3 Tables without defining a fixed schema in advance, allowing you to land data faster while still getting efficient analytical query performance.&lt;br&gt; &lt;br&gt; With the Variant data type, Apache Iceberg V3-compatible engines shred your semi-structured data into hidden columns as you write it, generating Parquet column statistics that query engines use for optimizations like file pruning, which reduces the data your analytical queries scan. S3 Tables also provide ongoing table maintenance, including compaction, for Variant columns, so you can consolidate data from small files into large files that Iceberg engines can read.&lt;br&gt; &lt;br&gt; Variant support in S3 Tables is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm), and South America (São Paulo).&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://aws.amazon.com/s3/features/tables/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon S3 Tables&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/table-spec-v3.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Prescriptive Guidance for working with Iceberg table format specification version 3&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-s3-tables-variant-iceberg-v3/",
+      "publishedAt": "2026-07-28T07:00:00.000Z",
+      "updatedAt": "2026-07-28T07:00:00.000Z",
+      "categories": [
+        "Storage",
+        "Amazon Simple Storage Service"
+      ],
+      "services": [
+        "S3"
+      ],
+      "tags": [
+        "storage",
+        "amazon simple storage service",
+        "s3"
+      ],
+      "isNew": true
+    },
     {
       "id": "ab912f00f77e7e53",
       "title": "Amazon Neptune now supports tag-based access control for IAM",
@@ -81,6 +220,32 @@
       "categories": [],
       "services": [],
       "tags": [],
+      "isNew": true
+    },
+    {
+      "id": "91f4cb211f1717f1",
+      "title": "Amazon EKS now supports AWS PrivateLink for the cluster OIDC endpoint",
+      "description": "Amazon Elastic Kubernetes Service (Amazon EKS) now supports AWS PrivateLink for the cluster OIDC discovery and JWKS endpoint . You can now reach the endpoint used by IAM roles for service accounts (IRSA) privately from your VPC without requiring internet egress. Each EKS cluster publishes public signing keys at its OIDC endpoint for IRSA. With AWS PrivateLink for the cluster OIDC endpoint, tools running inside your VPC, such as eksctl, Terraform, or custom token validators, can now reach the OIDC discovery document and JWKS privately by creating an interface VPC endpoint for the com.amazonaws.",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/eks/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Elastic Kubernetes Service&lt;/a&gt; (Amazon EKS) now supports &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/vpc-interface-endpoints.html#oidc-vpc-interface-endpoints\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS PrivateLink for the cluster OIDC discovery and JWKS endpoint&lt;/a&gt;. You can now reach the endpoint used by &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;IAM roles for service accounts (IRSA)&lt;/a&gt; privately from your VPC without requiring internet egress.&lt;br&gt; &lt;br&gt; Each EKS cluster publishes public signing keys at its OIDC endpoint for IRSA. With AWS PrivateLink for the cluster OIDC endpoint, tools running inside your VPC, such as eksctl, Terraform, or custom token validators, can now reach the OIDC discovery document and JWKS privately by creating an interface VPC endpoint for the com.amazonaws.&amp;lt;region&amp;gt;.oidc-eks service. This enables IRSA setup and token validation in VPCs without internet egress and ensures correct DNS resolution when the EKS management VPC endpoint is enabled with private DNS.&lt;br&gt; &lt;br&gt; AWS PrivateLink for the cluster OIDC endpoint is available at no additional cost beyond standard &lt;a href=\"https://aws.amazon.com/privatelink/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS PrivateLink pricing&lt;/a&gt; in all AWS Regions where Amazon EKS is available. To get started, see &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/vpc-interface-endpoints.html#oidc-vpc-interface-endpoints\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Access the cluster OIDC endpoint using AWS PrivateLink&lt;/a&gt; in the Amazon EKS User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-eks-oidc-endpoint-privatelink",
+      "publishedAt": "2026-07-27T18:00:00.000Z",
+      "updatedAt": "2026-07-27T18:00:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Containers",
+        "Amazon Eks"
+      ],
+      "services": [
+        "EKS",
+        "PrivateLink"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "containers",
+        "amazon eks",
+        "eks",
+        "privatelink"
+      ],
       "isNew": true
     },
     {
@@ -305,6 +470,34 @@
         "artificial intelligence",
         "bedrock",
         "claude"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "013e897f63854430",
+      "title": "Amazon Redshift Serverless now offers All Upfront pricing for 3-year Serverless Reservations",
+      "description": "Amazon Redshift announces the availability of All Upfront payment option for 3-year Serverless Reservations, providing up to 50% savings over on-demand rates. With All Upfront pricing, you pay for the full reservation term at the start and receive the maximum discount on your Amazon Redshift Serverless compute costs. This new payment option joins the existing 1-year No Upfront, 1-year All Upfront, and 3-year No Upfront options, giving you greater flexibility to optimize costs based on your financial preferences Amazon Redshift Serverless allows you to run and scale analytics without having to ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/redshift/\"&gt;Amazon Redshift&lt;/a&gt; announces the availability of All Upfront payment option for 3-year Serverless Reservations, providing up to 50% savings over on-demand rates. With All Upfront pricing, you pay for the full reservation term at the start and receive the maximum discount on your Amazon Redshift Serverless compute costs. This new payment option joins the existing 1-year No Upfront, 1-year All Upfront, and 3-year No Upfront options, giving you greater flexibility to optimize costs based on your financial preferences&lt;br&gt; &lt;br&gt; Amazon Redshift Serverless allows you to run and scale analytics without having to provision and manage clusters. Serverless Reservations help you further optimize compute costs and improve cost predictability by committing to a specific number of Redshift Processing Units (RPUs). Managed at the AWS payer account level, Serverless Reservations can be shared between multiple AWS accounts, reducing compute costs across all Amazon Redshift Serverless workloads in your organization. Any usage exceeding the reserved RPU level is charged at standard on-demand rates.&lt;br&gt; &lt;br&gt; This pricing option is available in all AWS commercial and AWS GovCloud (US) Regions where Amazon Redshift Serverless is available. You can purchase Serverless Reservations via the Amazon Redshift console or by invoking the Serverless Reservations API. To learn more, see the &lt;a href=\"https://aws.amazon.com/redshift/pricing/\"&gt;Amazon Redshift pricing page&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-serverless.html\"&gt;Amazon Redshift Management Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/redshift-serverless-three-year-auri/",
+      "publishedAt": "2026-07-24T15:00:00.000Z",
+      "updatedAt": "2026-07-24T15:00:00.000Z",
+      "categories": [
+        "Lower Cost",
+        "Cost Management",
+        "Analytics",
+        "Amazon Redshift",
+        "Serverless"
+      ],
+      "services": [
+        "Redshift"
+      ],
+      "tags": [
+        "lower cost",
+        "cost management",
+        "analytics",
+        "amazon redshift",
+        "serverless",
+        "redshift"
       ],
       "isNew": true
     },
@@ -912,7 +1105,7 @@
         "aws govcloud us",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "384c1f5016549745",
@@ -936,7 +1129,7 @@
         "secrets manager",
         "eventbridge"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1bc5ce41980ca007",
@@ -960,7 +1153,7 @@
         "direct connect",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b77f8d0671b4efaf",
@@ -979,7 +1172,7 @@
         "aws elastic disaster recovery",
         "storage"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "71120839bc643690",
@@ -1001,7 +1194,7 @@
         "networking",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "91a9b6ebb90658c0",
@@ -1023,7 +1216,7 @@
         "networking",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "db86b9b19f6690f4",
@@ -1045,7 +1238,7 @@
         "networking",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "efa263a4d551147e",
@@ -1069,7 +1262,7 @@
         "opensearch",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "38461e2d7b3c21b5",
@@ -1097,7 +1290,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ce2f4405764c3d74",
@@ -1117,7 +1310,7 @@
         "amazon simple email service",
         "ses"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9778fa5ac3fa95bd",
@@ -1145,7 +1338,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1b8d906694d45a5e",
@@ -1162,7 +1355,7 @@
       "tags": [
         "management and governance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "00983218b37a8652",
@@ -10936,195 +11129,6 @@
         "amazon connect",
         "contact center",
         "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5af19f213f8e6e21",
-      "title": "Amazon SageMaker HyperPod Slurm clusters now support specifying minimum capacity requirements with continuous provisioning",
-      "description": "Amazon SageMaker HyperPod now supports minimum capacity requirements (MinCount) for clusters using Slurm orchestration with continuous provisioning. With continuous provisioning , HyperPod provisions clusters with available partial capacity so you can start your AI/ML jobs quickly, while continuing to provision remaining instances asynchronously in the background. While this provides flexibility, some training workloads require a guaranteed minimum number of nodes before they can start effectively. MinCount lets you specify the minimum number of instances that must be successfully provisioned ",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports minimum capacity requirements (MinCount) for clusters using Slurm orchestration with continuous provisioning. With &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/03/amazon-sagemaker-hyperpod-continuous-provisioning/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;continuous provisioning&lt;/a&gt;, HyperPod provisions clusters with available partial capacity so you can start your AI/ML jobs quickly, while continuing to provision remaining instances asynchronously in the background. While this provides flexibility, some training workloads require a guaranteed minimum number of nodes before they can start effectively. MinCount lets you specify the minimum number of instances that must be successfully provisioned before an instance group transitions to InService status, giving you greater control over when your cluster becomes available for job scheduling.&lt;br&gt; &lt;br&gt; This is particularly useful for distributed training workloads using frameworks such as PyTorch FSDP, Megatron-LM, or NVIDIA NeMo, where training jobs are commonly configured with a fixed number of participating nodes and may not start efficiently or correctly with partial cluster capacity. It also benefits teams that need to guarantee a baseline GPU count to meet SLA or cost-efficiency targets before committing to a training run.&lt;br&gt; &lt;br&gt; You can specify MinInstanceCount in the CreateCluster or UpdateCluster API request to set a minimum capacity threshold for an instance group. The instance group remains in Creating or Updating status until the threshold is met, then transitions to InService and nodes become available for Slurm job scheduling. HyperPod continues launching additional instances beyond MinCount until the target count is reached. If MinCount cannot be satisfied within 3 hours, the system automatically rolls back the instance group to its last known good state.&lt;br&gt; &lt;br&gt; MinCount for Slurm clusters with continuous provisioning is available in all AWS Regions where Amazon SageMaker HyperPod is supported. To get started on specifying minimum capacity requirements for your cluster, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-scaling-slurm.html#sagemaker-hyperpod-scaling-slurm-mincount\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Minimum capacity requirements (MinCount)&lt;/a&gt; in the Amazon SageMaker AI documentation.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-sagemaker-hyperpod-mincount/",
-      "publishedAt": "2026-05-27T15:06:00.000Z",
-      "updatedAt": "2026-05-27T15:06:00.000Z",
-      "categories": [
-        "Compute",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "compute",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f1dbec880235b490",
-      "title": "Amazon Aurora MySQL now supports integration with Kiro Powers",
-      "description": "Today, AWS announces that Amazon Aurora MySQL-Compatible Edition now supports integration with Kiro Powers , enabling developers to build Aurora MySQL-backed applications faster with AI agent assistance. Kiro Powers is a repository of curated and pre-packaged Model Context Protocol (MCP) servers, steering files, and hooks that have been validated by Kiro partners to accelerate specialized software development and deployment. This integration bundles direct database connectivity with Aurora MySQL best practices, providing developers with instant expertise in Aurora MySQL operations and schema d",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces that Amazon Aurora MySQL-Compatible Edition now supports integration with &lt;a href=\"https://kiro.dev/powers/\"&gt;Kiro Powers&lt;/a&gt;, enabling developers to build Aurora MySQL-backed applications faster with AI agent assistance. Kiro Powers is a repository of curated and pre-packaged Model Context Protocol (MCP) servers, steering files, and hooks that have been validated by Kiro partners to accelerate specialized software development and deployment. This integration bundles direct database connectivity with Aurora MySQL best practices, providing developers with instant expertise in Aurora MySQL operations and schema design through natural language interactions.&lt;br&gt; &lt;br&gt; With this integration, developers can perform both data plane operations (database queries, table creation, schema management) and control plane operations (cluster creation and management) through conversational commands instead of complex syntax. The Kiro agent dynamically loads task-specific guidance for Aurora MySQL Serverless scaling, migration from RDS MySQL to Aurora MySQL, and replication configuration, ensuring developers receive only relevant context without information overload.&lt;br&gt; &lt;br&gt; This integration is available through one-click installation from the &lt;a href=\"https://kiro.dev/\"&gt;Kiro IDE&lt;/a&gt; and &lt;a href=\"https://kiro.dev/web/\"&gt;Kiro webpage&lt;/a&gt;, and can be used to create and manage database clusters in all AWS Regions where Aurora MySQL is available. For more information about development use cases, read this &lt;a href=\"https://aws.amazon.com/blogs/database/guide-your-amazon-aurora-mysql-migration-with-kiro-powers\"&gt;blog post&lt;/a&gt;. To learn more, explore the &lt;a href=\"https://awslabs.github.io/mcp/servers/mysql-mcp-server\"&gt;Aurora MySQL MCP Server documentation&lt;/a&gt;.&lt;br&gt; &lt;br&gt; Amazon Aurora is designed for unparalleled high performance and availability at global scale with full MySQL compatibility. It provides built-in security, continuous backups, serverless compute, up to 15 read replicas, automated multi-Region replication, and integrations with other AWS services. To get started with Amazon Aurora, take a look at our getting started page.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-aurora-mysql-kiro-powers/",
-      "publishedAt": "2026-05-27T15:00:00.000Z",
-      "updatedAt": "2026-05-27T15:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Aurora",
-        "Databases",
-        "Developer Tools"
-      ],
-      "services": [
-        "Aurora"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon aurora",
-        "databases",
-        "developer tools",
-        "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "3090255f09203194",
-      "title": "AWS Backup adds OTP verification for Multi-party approval on logically air-gapped vaults",
-      "description": "AWS Backup now requires one-time password (OTP) verification when approvers vote on Multi-party approval actions for logically air-gapped vaults. When an approver votes on an Multi-party approval request, they must enter a six-digit code sent to their registered email address in AWS IAM Identity Center. This ensures that only verified approvers can authorize protected vault operations, adding an additional layer of security for approval teams. OTP verification applies automatically to all existing and new Multi-party approval sessions for logically air-gapped vaults at no additional charge, wi",
-      "descriptionHtml": "&lt;p&gt;AWS Backup now requires one-time password (OTP) verification when approvers vote on Multi-party approval actions for logically air-gapped vaults.&lt;/p&gt; \n&lt;p&gt;When an approver votes on an Multi-party approval request, they must enter a six-digit code sent to their registered email address in AWS IAM Identity Center. This ensures that only verified approvers can authorize protected vault operations, adding an additional layer of security for approval teams. OTP verification applies automatically to all existing and new Multi-party approval sessions for logically air-gapped vaults at no additional charge, with no setup required.&lt;/p&gt; \n&lt;p&gt;You can get started with AWS Backup using the &lt;a href=\"https://console.aws.amazon.com/backup\"&gt;AWS Backup console&lt;/a&gt;, SDKs, or CLI. Multi-party approval with OTP verification is available in all AWS Regions where logically air-gapped vaults are&lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\"&gt; supported&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/multipartyapproval.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-backup-otp-multi-party-approval-lag/",
-      "publishedAt": "2026-05-27T10:00:00.000Z",
-      "updatedAt": "2026-05-27T10:00:00.000Z",
-      "categories": [
-        "Storage",
-        "Security Identity And Compliance",
-        "AWS Organizations",
-        "AWS Backup"
-      ],
-      "services": [
-        "Backup",
-        "Organizations"
-      ],
-      "tags": [
-        "storage",
-        "security identity and compliance",
-        "aws organizations",
-        "aws backup",
-        "backup",
-        "organizations"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b07de1adbf58fdf4",
-      "title": "Amazon EC2 X8i instances are now available in additional regions",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Asia Pacific (Singapore), Asia Pacific (Sydney) and AWS GovCloud (US-West) regions. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances. X8i instances are designed for me",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Asia Pacific (Singapore), Asia Pacific (Sydney) and AWS GovCloud (US-West) regions.&amp;nbsp;These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances.&lt;br&gt; &lt;br&gt; X8i instances are designed for memory-intensive workloads like SAP HANA, large databases, data analytics, and Electronic Design Automation (EDA). Compared to X2i instances, X8i instances offer up to 50% higher SAPS performance, up to 47% faster PostgreSQL performance, 88% faster Memcached performance, and 46% faster AI inference performance. X8i instances come in 14 sizes, from large to 96xlarge, including two bare metal options.&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\"&gt;AWS Management Console&lt;/a&gt;. X8i instances can be purchased via Savings Plans, On-Demand instances, and Spot instances. For more information visit &lt;a href=\"https://aws.amazon.com/ec2/instance-types/x8i/\" target=\"_blank\"&gt;X8i instances page&lt;/a&gt;&lt;br&gt; &lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-x8i-instances-SIN-SYD-PDT-region/",
-      "publishedAt": "2026-05-26T21:58:00.000Z",
-      "updatedAt": "2026-05-26T21:58:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "c871730957940e0c",
-      "title": "Amazon Connect Customer launches granular access controls for the agent login/logout report",
-      "description": "Amazon Connect Customer now supports tag-based access controls for the agent login/logout report, enabling you to apply granular access controls to meet compliance and regulatory requirements for data access. Contact center administrators can use resource tags to control who has access to view login and logout information for specific agents in their contact center. For example, you can tag agents with Department:Customer Service to only enable the Customer Service team manager to see login/logout information for these agents. Amazon Connect Customer agent login/logout report is available in a",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer&amp;nbsp;now supports tag-based access controls for the agent&lt;i&gt; &lt;/i&gt;login/logout report, enabling you to apply granular access controls to meet compliance and regulatory requirements for data access. Contact center administrators can use resource tags to control who has access to view login and logout information for specific agents in their contact center. For example, you can tag agents with Department:Customer Service to only enable the Customer Service team manager to see&lt;i&gt; &lt;/i&gt;login/logout information for these agents.&lt;br&gt; &lt;br&gt; Amazon Connect Customer agent login/logout report is available in all AWS commercial and AWS GovCloud (US-West) &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;regions&lt;/a&gt; where Amazon Connect Customer is offered. To learn more about dashboards, see the . To learn more about Amazon Connect Customer, the AWS cloud-based contact center, please visit the &lt;a href=\"https://aws.amazon.com/connect/\"&gt;Amazon Connect Customer website&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-connect-customer/",
-      "publishedAt": "2026-05-26T21:04:00.000Z",
-      "updatedAt": "2026-05-26T21:04:00.000Z",
-      "categories": [
-        "Amazon Connect",
-        "Business Productivity",
-        "Contact Center",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "amazon connect",
-        "business productivity",
-        "contact center",
-        "aws govcloud us",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b0e2b6dcc7d82a98",
-      "title": "AWS Neuron 2.30.0 now available with NKI 0.4.0 and 22 new NKI Library kernels",
-      "description": "Today, AWS announces the general availability of AWS Neuron 2.30.0, delivering NKI 0.4.0 with new AWS Trainium3 specific hardware capabilities, 22 new NKI Library kernels, and expanded Neuron Agentic Development skills for model porting and validation. This release is for ML developers building custom kernels, optimizing training and inference workloads, or porting models to AWS Trainium and Inferentia. NKI 0.4.0 introduces the activate2 Scalar Engine instruction for Trn3, OCP FP8 input support for matrix multiplication, and bytes-aware tile-size constants that simplify kernel development. The",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of AWS Neuron 2.30.0, delivering NKI 0.4.0 with new AWS Trainium3 specific hardware capabilities, 22 new NKI Library kernels, and expanded Neuron Agentic Development skills for model porting and validation. This release is for ML developers building custom kernels, optimizing training and inference workloads, or porting models to AWS Trainium and Inferentia.&lt;br&gt; &lt;br&gt; NKI 0.4.0 introduces the activate2 Scalar Engine instruction for Trn3, OCP FP8 input support for matrix multiplication, and bytes-aware tile-size constants that simplify kernel development. The NKI Library adds 3 new core kernels for segmented attention, KV-parallel prefill, and FP8 quantization, as well as 19 experimental kernels covering context parallelism, MXFP8 training, state-space models, and fused optimizers. PyTorch reference implementations are now available for 29 kernels.&lt;br&gt; &lt;br&gt; Neuron Agentic Development, launched as a beta in April 2026, adds two new skills: neuron-framework-autoport for porting HuggingFace models to NxD Inference end to end, and neuron-framework-equivalence for validating numerical equivalence of ported models. By default, both are now included in all Neuron DLAMIs and Deep Learning Containers. This release also introduces the &lt;a href=\"https://aws.amazon.com/blogs/containers/simplify-ai-infrastructure-for-aws-trainium-and-elastic-fabric-adapter-with-kubernetes-dynamic-resource-allocation/\"&gt;Neuron DRA Driver&lt;/a&gt; for Kubernetes Dynamic Resource Allocation, enabling topology-aware scheduling of Trainium accelerators and Elastic Fabric Adapter (EFA) interfaces. The Neuron Graph Compiler now delivers significant compile-time improvements, and the Neuron Runtime enables zero-copy host-device transfers by default.&lt;br&gt; &lt;br&gt; AWS Neuron is available in all AWS Regions where Amazon EC2 Trn1, Trn2, Inf2, and Inf1 instances are available. For more information about Regional availability, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Region table&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;To get started, see the following resources:&lt;br&gt; &lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/release-notes/index.html\"&gt;AWS Neuron 2.30.0 Release Notes&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/nki/index.html\"&gt;Neuron Kernel Interface (NKI) Documentation&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/tools/neuron-agentic-development/index.html\"&gt;Neuron Agentic Development&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;&lt;a href=\"https://aws.amazon.com/ai/machine-learning/neuron/\"&gt;AWS Neuron&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-announce-neuron-2-30-0",
-      "publishedAt": "2026-05-26T20:17:00.000Z",
-      "updatedAt": "2026-05-26T20:17:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Developer Tools"
-      ],
-      "services": [],
-      "tags": [
-        "artificial intelligence",
-        "developer tools"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "3d68d46bbce32437",
-      "title": "Amazon RDS now supports ENA Express for Multi-AZ replication",
-      "description": "Amazon RDS Multi-AZ instances now use ENA Express for replication traffic between Availability Zones. ENA Express uses AWS's Scalable Reliable Datagram (SRD) protocol to optimize network performance by delivering up to 25 Gbps single-flow bandwidth for cross-AZ replication traffic leveraging advanced congestion control and multi-pathing capabilities, and reducing latency variability for Multi-AZ deployments. RDS Multi-AZ instances replicate data synchronously to a standby in a different Availability Zone to provide high availability and automatic failover. AWS SRD, used by ENA Express, improve",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS &lt;/a&gt;Multi-AZ instances now use ENA Express for replication traffic between Availability Zones. ENA Express uses AWS's Scalable Reliable Datagram (SRD) protocol to optimize network performance by delivering up to 25 Gbps single-flow bandwidth for cross-AZ replication traffic leveraging advanced congestion control and multi-pathing capabilities, and reducing latency variability for Multi-AZ deployments.&lt;br&gt; &lt;br&gt; RDS Multi-AZ instances replicate data synchronously to a standby in a different Availability Zone to provide high availability and automatic failover. AWS SRD, used by ENA Express, improves replication by dynamically distributing traffic across multiple network paths and adapting to congestion in real time. Amazon RDS Multi-AZ with ENA Express delivers increased write throughput and lower write latencies for write-intensive database workloads.&lt;br&gt; &lt;br&gt; ENA Express for Amazon RDS is available at no additional charge for Amazon RDS for MariaDB, Amazon RDS for MySQL, Amazon RDS for PostgreSQL, Amazon RDS for Db2, and Amazon RDS for Oracle. It is supported in Africa (Cape Town), Asia Pacific (Hong Kong, Hyderabad, Jakarta, Malaysia, Melbourne, Mumbai, New Zealand, Osaka, Seoul, Singapore, Sydney, Taipei, Thailand, Tokyo), Canada (Central), Canada West (Calgary), Europe (Frankfurt, Ireland, London, Milan, Paris, Spain, Stockholm, Zurich), Israel (Tel Aviv), Mexico (Central), US East (N. Virginia, Ohio), US West (N. California, Oregon), and AWS GovCloud (US) Regions. To enable this on your existing Amazon RDS instances, perform a start-stop or scale compute action. For a list of supported instance types on ENA Express, refer the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.CrossAZENAExpress.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;u&gt;user guide&lt;/u&gt;&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-rds-ena-express-multiAZ/",
-      "publishedAt": "2026-05-26T19:00:00.000Z",
-      "updatedAt": "2026-05-26T19:00:00.000Z",
-      "categories": [
-        "Amazon Rds",
-        "Databases"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "amazon rds",
-        "databases",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "863620836515248d",
-      "title": "Amazon EC2 R8i and R8i-flex instances are now available in AWS GovCloud (US-East) Region",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the AWS GovCloud (US-East) Region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads. The",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the AWS GovCloud (US-East) Region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads. They are up to 30% faster for PostgreSQL databases, up to 60% faster for NGINX web applications, and up to 40% faster for AI deep learning recommendation models compared to R7i.&lt;br&gt; &lt;br&gt; R8i-flex, our first memory-optimized Flex instances, are the easiest way to get price performance benefits for a majority of memory-intensive workloads. They offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources.&lt;br&gt; &lt;br&gt; R8i instances are a great choice for all memory-intensive workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. R8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications. &lt;a href=\"https://docs.aws.amazon.com/sap/latest/general/sap-hana-aws-ec2.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;R8i instances are SAP-certified &lt;/a&gt;and deliver 142,100 aSAPS, delivering exceptional performance for mission-critical SAP workloads.&lt;br&gt; &lt;br&gt; To get started, sign in to the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Management Console&lt;/a&gt;. For more information about the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/r8i\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;R8i and R8i-flex &lt;/a&gt;instances visit the AWS News &lt;a href=\"https://aws.amazon.com/blogs/aws/best-performance-and-fastest-memory-with-the-new-amazon-ec2-r8i-and-r8i-flex-instances/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;blog&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-ec2-r8i-r8i-flex-govcloud-east/",
-      "publishedAt": "2026-05-26T16:00:00.000Z",
-      "updatedAt": "2026-05-26T16:00:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "compute",
-        "amazon ec2",
-        "ec2"
       ],
       "isNew": false
     }
