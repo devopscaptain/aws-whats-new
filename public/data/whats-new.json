@@ -1,7 +1,190 @@
 {
-  "lastUpdated": "2026-07-29T09:00:27.274Z",
+  "lastUpdated": "2026-07-30T08:58:29.317Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "05d7f1d641eb933c",
+      "title": "Amazon EC2 Auto Scaling now supports Instance Refresh in CloudFormation",
+      "description": "Amazon EC2 Auto Scaling now supports Instance Refresh as a new AWS CloudFormation update policy. When you configure the new AutoScalingInstanceRefresh update policy and update properties that require instance replacement, CloudFormation automatically triggers an Instance Refresh. With this integration, you can now access Instance Refresh capabilities including replace root volume for in-place updates, launch-before-terminate, alarm-based monitoring, and checkpoints with bake time for controlled rollouts. Auto Scaling features such as scaling policies and health checks remain active throughout ",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 Auto Scaling now supports Instance Refresh as a new AWS CloudFormation update policy. When you configure the new AutoScalingInstanceRefresh update policy and update properties that require instance replacement, CloudFormation automatically triggers an Instance Refresh.&lt;/p&gt; \n&lt;p&gt;With this integration, you can now access Instance Refresh capabilities including replace root volume for in-place updates, launch-before-terminate, alarm-based monitoring, and checkpoints with bake time for controlled rollouts. Auto Scaling features such as scaling policies and health checks remain active throughout the update, so your service health is not at risk during deployments. Rollback is handled through CloudFormation stack rollback.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions at no additional cost. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-attribute-updatepolicy.html#cfn-attributes-updatepolicy-instancerefresh\"&gt;AutoScalingInstanceRefresh update policy&lt;/a&gt; in the AWS CloudFormation Template Reference.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/ec2-auto-scaling-instance-refresh-cloudformation",
+      "publishedAt": "2026-07-29T21:00:00.000Z",
+      "updatedAt": "2026-07-29T21:00:00.000Z",
+      "categories": [
+        "Amazon Ec2 Auto Scaling",
+        "Compute"
+      ],
+      "services": [
+        "EC2",
+        "CloudFormation"
+      ],
+      "tags": [
+        "amazon ec2 auto scaling",
+        "compute",
+        "ec2",
+        "cloudformation"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "4002f850616b797c",
+      "title": "Amazon Redshift Data API announces long polling, session management, and flexible batch execution",
+      "description": "Amazon Redshift Data API introduces new capabilities that reduce the number of API calls to retrieve SQL statement metadata or results, provide visibility into sessions, and allow batch statements to execute on separate transactions. Long polling: Long polling enables you to retrieve SQL statement metadata or results without polling repeatedly until the SQL statement reaches a terminal state, by delaying returning a synchronous response until the SQL statement finishes. To use this feature, specify the WaitTimeSeconds parameter on ExecuteStatement, BatchExecuteStatement, DescribeStatement, Get",
+      "descriptionHtml": "&lt;p&gt;Amazon Redshift Data API introduces new capabilities that reduce the number of API calls to retrieve SQL statement metadata or results, provide visibility into sessions, and allow batch statements to execute on separate transactions.&lt;br&gt; &lt;br&gt; Long polling: Long polling enables you to retrieve SQL statement metadata or results without polling repeatedly until the SQL statement reaches a terminal state, by delaying returning a synchronous response until the SQL statement finishes. To use this feature, specify the WaitTimeSeconds parameter on ExecuteStatement, BatchExecuteStatement, DescribeStatement, GetStatementResult, or GetStatementResultV2.&lt;br&gt; &lt;br&gt; ListSessions: Applications that reuse sessions across multiple queries can now enumerate active sessions and filter by status, compute target, or database, eliminating the need to track session identifiers externally.&lt;br&gt; &lt;br&gt; Flexible batch execution: BatchExecuteStatement now supports an ExecutionMode parameter with AUTO_COMMIT mode, allowing each SQL statement in a batch to execute independently so a single failure no longer rolls back the entire batch — useful for ETL pipelines and administrative scripts where partial completion is acceptable. In addition, BatchExecuteStatement now accepts an array of SqlParameter, enabling parameter reuse across all statements in a batch: define parameters once and reference them in any statement, eliminating the need to embed literal values in each query.&lt;br&gt; &lt;br&gt; These features are generally available for Amazon Redshift Provisioned and Amazon Redshift Serverless in all AWS commercial and AWS GovCloud (US) Regions that support Amazon Redshift Data API. To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/data-api.html\"&gt;Amazon Redshift Data API developer guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-redshift-data-api-longpolling-listsession-flexiblebatchexecute/",
+      "publishedAt": "2026-07-29T20:45:00.000Z",
+      "updatedAt": "2026-07-29T20:45:00.000Z",
+      "categories": [
+        "Amazon Redshift",
+        "Lower Cost",
+        "Analytics"
+      ],
+      "services": [
+        "Batch",
+        "Redshift"
+      ],
+      "tags": [
+        "amazon redshift",
+        "lower cost",
+        "analytics",
+        "batch",
+        "redshift"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "78f4b5c602da4512",
+      "title": "AWS Glue announces VPC support, filter pushdown, and partition support for the REST API connector",
+      "description": "AWS Glue now supports VPC connections, filter pushdown, and partition support for the REST API connector. The REST API connector enables you to ingest data from any source that exposes a REST-based API, including proprietary systems and emerging platforms without native AWS Glue connectors. With this launch, you can operate your ETL pipelines from data sources with REST API endpoints by securely connecting to private endpoints, transfering only the data they need, and parallelizing reads for faster ingestion, all without writing custom code With VPC support, you can use the REST API connector ",
+      "descriptionHtml": "&lt;p&gt;AWS Glue now supports VPC connections, filter pushdown, and partition support for the REST API connector. The REST API connector enables you to ingest data from any source that exposes a REST-based API, including proprietary systems and emerging platforms without native AWS Glue connectors. With this launch, you can operate your ETL pipelines from data sources with REST API endpoints by securely connecting to private endpoints, transfering only the data they need, and parallelizing reads for faster ingestion, all without writing custom code&lt;br&gt; &lt;br&gt; With VPC support, you can use the REST API connector to access data sources hosted in private subnets or connected through VPNs or AWS PrivateLink, without exposing traffic to the public internet. Filter pushdown translates your query predicates into API-native parameters, so only matching records leave the source, reducing data transfer costs and improving job performance. Partition support splits large datasets across multiple Spark workers using field-based or record-count strategies, providing parallel reads that reduce ingestion time for high-volume, paginated APIs.&lt;br&gt; &lt;br&gt; These capabilities are available in all AWS commercial regions where AWS Glue is available.&lt;br&gt; &lt;br&gt; To get started, visit the AWS Glue &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-rest-api.html\"&gt;REST API connector documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-glue-rest-connector-filtering-partitioning-vpc",
+      "publishedAt": "2026-07-29T20:18:00.000Z",
+      "updatedAt": "2026-07-29T20:18:00.000Z",
+      "categories": [
+        "Analytics",
+        "AWS Glue"
+      ],
+      "services": [
+        "VPC",
+        "Glue"
+      ],
+      "tags": [
+        "analytics",
+        "aws glue",
+        "vpc",
+        "glue"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e009e6a9e48a21ba",
+      "title": "AWS WAF adds pre-parse text transformations and new text transformations",
+      "description": "Today, AWS WAF adds pre-parse text transformations for query arguments and ten new text transformations for use in any rule statement. Both help you normalize request content so that AWS WAF inspects requests the same way your application interprets them. Pre-parse text transformations normalize a raw query string before AWS WAF parses it into key-value pairs, closing HTTP parameter pollution and parser differential evasion gaps. You can chain up to ten transformations, including URL decode, Combine Duplicate Query Arguments by Comma, and Replace Semicolons with Ampersands, then layer standard",
+      "descriptionHtml": "&lt;p&gt;Today, AWS WAF adds pre-parse text transformations for query arguments and ten new text transformations for use in any rule statement. Both help you normalize request content so that AWS WAF inspects requests the same way your application interprets them.&lt;/p&gt; \n&lt;p&gt;Pre-parse text transformations normalize a raw query string before AWS WAF parses it into key-value pairs, closing HTTP parameter pollution and parser differential evasion gaps. You can chain up to ten transformations, including URL decode, Combine Duplicate Query Arguments by Comma, and Replace Semicolons with Ampersands, then layer standard post-parse transformations on top within a single rule statement.&lt;/p&gt; \n&lt;p&gt;The new text transformations give you more ways to normalize content before inspection, including industry-standard options such as Uppercase, Trim, Remove Whitespace, and SHA256, plus operating-system-aware command line and JavaScript decoding functions developed by the Amazon Threat Research Team.&lt;/p&gt; \n&lt;p&gt;Each new transformation consumes 10 WCUs, with no additional charge beyond standard AWS WAF pricing, and is available in all AWS Regions. To get started, see the following resources:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Pre-parse text transformations in AWS WAF:&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-preparse-transformation.html\"&gt;https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-preparse-transformation.html&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Text transformations in AWS WAF: &lt;a href=\"https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-transformation.html\"&gt;https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-transformation.html&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Getting started with AWS WAF: &lt;a href=\"https://docs.aws.amazon.com/waf/latest/developerguide/getting-started.html\"&gt;https://docs.aws.amazon.com/waf/latest/developerguide/getting-started.html&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-waf/",
+      "publishedAt": "2026-07-29T15:00:00.000Z",
+      "updatedAt": "2026-07-29T15:00:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "AWS Waf"
+      ],
+      "services": [
+        "WAF"
+      ],
+      "tags": [
+        "networking and content delivery",
+        "aws waf",
+        "waf"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "cd168f406918f78b",
+      "title": "AWS announces AWS Interconnect - multicloud connectivity with Oracle Cloud Infrastructure in GA",
+      "description": "AWS announces the general availability (GA) of AWS Interconnect — multicloud with Oracle Cloud Infrastructure (OCI). Customers have been adopting multicloud strategies while migrating more applications to the cloud. They do so for many reasons including interoperability requirements, the freedom to choose technology that best suits their needs, and the ability to build and deploy applications on any environment with greater ease and speed. Previously, when interconnecting workloads across multiple cloud providers (CSPs), customers had to go the route of a ‘do-it-yourself’ multicloud approach, ",
+      "descriptionHtml": "&lt;p&gt;AWS announces the general availability (GA) of AWS Interconnect — multicloud with Oracle Cloud Infrastructure (OCI).&lt;/p&gt; \n&lt;p&gt;Customers have been adopting multicloud strategies while migrating more applications to the cloud. They do so for many reasons including interoperability requirements, the freedom to choose technology that best suits their needs, and the ability to build and deploy applications on any environment with greater ease and speed. Previously, when interconnecting workloads across multiple cloud providers (CSPs), customers had to go the route of a ‘do-it-yourself’ multicloud approach, leading to complexities of building and managing global multi-layered networks at scale. AWS Interconnect - multicloud is the first purpose-built product of its kind and a new way of how clouds connect and talk to each other, allowing customers to quickly provision resilient, scalable private connections to other cloud providers.&lt;/p&gt; \n&lt;p&gt;In May, OCI launched support for AWS Interconnect in public preview and became the latest CSP to adopt the &lt;a href=\"https://github.com/aws/Interconnect\" target=\"_blank\"&gt;&lt;u&gt;open specification&lt;/u&gt;&lt;/a&gt; that powers the service. With today’s GA launch, AWS customers can now rely on the same consistent, simple experience to interconnect their workloads on OCI and Google Cloud. Microsoft Azure will launch later in 2026.&lt;br&gt; &lt;br&gt; Interconnect - multicloud is available with OCI in the us-east-1 (N. Virginia) AWS Region. You can create an Interconnect using the AWS Management Console, Command Line Interface (CLI), or API. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/interconnect/latest/userguide/what-is-interconnect.html\" target=\"_blank\"&gt;&lt;u&gt;AWS Interconnect - multicloud documentation&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-announces-AWS-interconnect-multicloud-OCI-GA/",
+      "publishedAt": "2026-07-29T15:00:00.000Z",
+      "updatedAt": "2026-07-29T15:00:00.000Z",
+      "categories": [
+        "AWS Direct Connect",
+        "Networking And Content Delivery"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "aws direct connect",
+        "networking and content delivery",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9d5ac4cc5815ba57",
+      "title": "Amazon Connect Customer now automatically finds example agent evaluations for tailored coaching",
+      "description": "Amazon Connect Customer now automatically surfaces relevant examples of an agent's evaluations when managers are preparing coaching feedback, so they can deliver actionable, evidence-backed coaching to agents. When a manager prepares agent coaching feedback in Amazon Connect Customer, they automatically receive examples of recent evaluations where the agent scored high or low on the chosen coaching topic, along with human or AI evaluator notes explaining the agent behaviors that drove the result. For example, while preparing feedback for an agent on \"de-escalation,\" a manager receives example ",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now automatically surfaces relevant examples of an agent's evaluations when managers are preparing coaching feedback, so they can deliver actionable, evidence-backed coaching to agents. When a manager prepares agent coaching feedback in Amazon Connect Customer, they automatically receive examples of recent evaluations where the agent scored high or low on the chosen coaching topic, along with human or AI evaluator notes explaining the agent behaviors that drove the result. For example, while preparing feedback for an agent on \"de-escalation,\" a manager receives example calls where the agent successfully calmed a frustrated customer, alongside calls that were escalated, with insights into the agent behaviors that led to each outcome. This enables managers to deliver tailored coaching that accelerates agent performance improvement, while saving the time spent manually searching for examples.&lt;/p&gt; \n&lt;p&gt;This feature is available in all regions where &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#amazonconnect_region\"&gt;Amazon Connect Customer&lt;/a&gt; is offered. To learn more, please visit our &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/provide-coaching.html\"&gt;documentation&lt;/a&gt; and our &lt;a href=\"https://aws.amazon.com/connect/conversational-analytics/\"&gt;webpage&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-connect-customer-example-evaluations-for-agent-coaching/",
+      "publishedAt": "2026-07-29T14:00:00.000Z",
+      "updatedAt": "2026-07-29T14:00:00.000Z",
+      "categories": [
+        "Applications",
+        "Contact Center",
+        "Amazon Connect"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "applications",
+        "contact center",
+        "amazon connect",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "dab534c2a566a5e0",
+      "title": "Amazon EFS now supports cross-account Replication in AWS GovCloud (US)",
+      "description": "Amazon EFS now supports cross-account Replication in AWS GovCloud (US), allowing customers to replicate file systems between AWS accounts. EFS Replication enables you to easily maintain an up-to-date replica of your file system in the AWS GovCloud (US) Region of your choice. With this launch, EFS Replication customers can meet business continuity, multi-account disaster recovery, and compliance requirements by automatically keeping replicas of their file data in separate accounts. Customers often use multiple AWS accounts to help isolate and manage business applications and data for operationa",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/efs/\"&gt;Amazon EFS&lt;/a&gt; now supports cross-account Replication in AWS GovCloud (US), allowing customers to replicate file systems between AWS accounts. EFS Replication enables you to easily maintain an up-to-date replica of your file system in the AWS GovCloud (US) Region of your choice. With this launch, EFS Replication customers can meet business continuity, multi-account disaster recovery, and compliance requirements by automatically keeping replicas of their file data in separate accounts.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Customers often use multiple AWS accounts to help isolate and manage business applications and data for operational excellence, security, and reliability. Starting today, you can use EFS Replication to replicate your file system to another account in any AWS GovCloud (US) region. This eliminates the need to set up custom processes to synchronize EFS data across accounts, enhancing resilience and reliability in distributed environments.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/efs/latest/ug/efs-replication.html\"&gt;Amazon EFS documentation&lt;/a&gt; and get started by configuring EFS Replication in just a few clicks using the &lt;a href=\"https://console.aws.amazon.com/efs\"&gt;Amazon EFS Console&lt;/a&gt;, AWS CLI, AWS CloudFormation, and APIs.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-efs-cross-account-replication-aws-gov-cloud-us",
+      "publishedAt": "2026-07-29T12:00:00.000Z",
+      "updatedAt": "2026-07-29T12:00:00.000Z",
+      "categories": [],
+      "services": [
+        "EFS"
+      ],
+      "tags": [
+        "efs"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "76a2c506b60031dc",
+      "title": "AWS IAM Identity Center extends multi-Region support to Identity Center directory",
+      "description": "IAM Identity Center helps you configure the single sign-on experience of your workforce to AWS accounts and applications. You can now replicate IAM Identity Center from the primary AWS Region where you first enabled it to additional Regions of your choice when using Identity Center directory as your identity source. This extends the multi-Region support capability, previously available for Identity Center organization instances connected to external identity providers, to instances that use the Identity Center directory to manage and authenticate their workforce. This feature enhances resilien",
+      "descriptionHtml": "&lt;p&gt;IAM Identity Center helps you configure the single sign-on experience of your workforce to AWS accounts and applications. You can now replicate IAM Identity Center from the primary AWS Region where you first enabled it to additional Regions of your choice when using Identity Center directory as your identity source. This extends the multi-Region support capability, previously available for Identity Center organization instances connected to external identity providers, to instances that use the Identity Center directory to manage and authenticate their workforce. This feature enhances resilience of user access to AWS accounts and helps you deploy AWS applications in the AWS Regions that best align with your business needs such as application data residency and proximity to users.&lt;/p&gt; \n&lt;p&gt;When you enable this feature, IAM Identity Center automatically replicates your identities, entitlements, and other information from the primary Region to additional Regions. If IAM Identity Center is affected by a disruption in the primary Region, IAM Identity Center users continue to have access to their AWS accounts using the already provisioned entitlements in the additional Regions.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;AWS application administrators can use the standard application deployment workflow to deploy their application in an additional Region while you continue to administer IAM Identity Center in the primary Region.&lt;/p&gt; \n&lt;p&gt;IAM Identity Center multi-Region support is currently available in the &lt;a href=\"https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html?refid=6e78b6f1-dfd8-49b4-ae84-4527ca1881cb#manage-acct-regions-regional-availability\"&gt;17 enabled-by-default commercial AWS Regions&lt;/a&gt; for organization instances of IAM Identity Center. The IAM Identity Center organization instance must be configured with a multi-Region customer managed KMS key (CMK). To find out which AWS applications support deployment in additional Regions, visit &lt;a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/awsapps-that-work-with-identity-center.html?refid=6e78b6f1-dfd8-49b4-ae84-4527ca1881cb\"&gt;AWS applications that you can use with IAM Identity Center&lt;/a&gt;. Standard &lt;a href=\"https://aws.amazon.com/kms/pricing/\"&gt;AWS KMS charges apply&lt;/a&gt; for storing and using CMKs. IAM Identity Center is provided at no additional cost. To learn more about IAM Identity Center, visit the &lt;a href=\"https://aws.amazon.com/iam/identity-center/?c=sc&amp;amp;sec=srvm&amp;amp;trk=6e78b6f1-dfd8-49b4-ae84-4527ca1881cb&amp;amp;sc_channel=ps\"&gt;product detail page&lt;/a&gt;. To get started, see the &lt;a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-region-iam-identity-center.html\"&gt;IAM Identity Center User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-iam-identity-center-extends-multi-region-support-to-identity-center-directory",
+      "publishedAt": "2026-07-29T07:00:00.000Z",
+      "updatedAt": "2026-07-29T07:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "AWS Iam Identity Center"
+      ],
+      "services": [
+        "IAM",
+        "IAM Identity Center"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "aws iam identity center",
+        "iam",
+        "iam identity center"
+      ],
+      "isNew": true
+    },
     {
       "id": "e9e1e61b45a758de",
       "title": "Amazon EKS Provisioned Control Plane now delivers faster pod autoscaling",
@@ -835,7 +1018,7 @@
         "aws wickr",
         "security identity and compliance"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6017a2d36100ef75",
@@ -857,7 +1040,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "97fa876ccfb4bcba",
@@ -879,7 +1062,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f168b3b537b90c7d",
@@ -901,7 +1084,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "89e9165d33ea0a12",
@@ -923,7 +1106,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "17159397d18f196a",
@@ -942,7 +1125,7 @@
         "networking and content delivery",
         "amazon elastic load balancing"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8f00bf335dc2b3c5",
@@ -968,7 +1151,7 @@
         "contact center",
         "entity resolution"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "96ab3a694ed0f582",
@@ -990,7 +1173,7 @@
         "aws lambda",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1561453b5695aeeb",
@@ -1009,7 +1192,7 @@
         "developer tools",
         "amazon corretto"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "943d6958f7f267f4",
@@ -1033,7 +1216,7 @@
         "aws organizations",
         "organizations"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "847de5bcd55c696b",
@@ -1059,7 +1242,7 @@
         "global infrastructure",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3cf4f206660d6f22",
@@ -1081,7 +1264,7 @@
         "general:products",
         "eks"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a9ae59e94ce2d748",
@@ -10947,188 +11130,6 @@
         "amazon sagemaker",
         "aiml",
         "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0b4206e81ca0c1dc",
-      "title": "Announcing Region Expansion of P4de instances on SageMaker Notebook Instances",
-      "description": "We are pleased to announce general availability of Amazon EC2 P4de instances in Asia Pacific (Tokyo) on SageMaker notebook instances. Amazon EC2 P4de instances are powered by 8 NVIDIA A100 GPUs with 80GB high-performance HBM2e GPU memory, 2X higher than the GPUs in our current P4d instances. The new P4de instances provide a total of 640GB of GPU memory, which provide up to 60% better ML training performance along with 20% lower cost to train when compared to P4d instances. The improved performance will allow customers to reduce model training times and accelerate time to market. Increased GPU ",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce general availability of Amazon EC2 P4de instances in Asia Pacific (Tokyo) on SageMaker notebook instances.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/p4/\"&gt;Amazon EC2 P4de instances&lt;/a&gt; are powered by 8 NVIDIA A100 GPUs with 80GB high-performance HBM2e GPU memory, 2X higher than the GPUs in our current P4d instances. The new P4de instances provide a total of 640GB of GPU memory, which provide up to 60% better ML training performance along with 20% lower cost to train when compared to P4d instances. The improved performance will allow customers to reduce model training times and accelerate time to market. Increased GPU memory on P4de will also benefit workloads that need to train on large datasets of high-resolution data.&lt;/p&gt; \n&lt;p&gt;Visit developer guides for instructions on setting up and using &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl.html\"&gt;&lt;u&gt;JupyterLab&lt;/u&gt;&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor.html\"&gt;&lt;u&gt;CodeEditor&lt;/u&gt;&lt;/a&gt; applications on &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html\"&gt;&lt;u&gt;SageMaker Studio&lt;/u&gt;&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/nbi.html\"&gt;&lt;u&gt;SageMaker notebook instances&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/04/p4de-region-expansion-sagemaker-notebook-instances/",
-      "publishedAt": "2026-05-27T23:30:00.000Z",
-      "updatedAt": "2026-05-27T23:30:00.000Z",
-      "categories": [
-        "Aiml",
-        "Amazon Sagemaker",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "aiml",
-        "amazon sagemaker",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6051b8fb4bdd445f",
-      "title": "Amazon Bedrock expands support for Service Quotas",
-      "description": "Amazon Bedrock is a fully managed service that provides secure, enterprise-grade access to high-performing foundation models from leading AI companies, enabling you to build and scale generative AI applications. Amazon Bedrock customers can now view inference quotas for the bedrock-mantle endpoint through AWS Service Quotas. This gives customers a familiar, consistent way to track limits for this endpoint, the same way they already do for the bedrock-runtime endpoint and other AWS services, and gives them clear visibility into the limits that apply to their workloads. The bedrock-mantle endpoi",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock is a fully managed service that provides secure, enterprise-grade access to high-performing foundation models from leading AI companies, enabling you to build and scale generative AI applications. Amazon Bedrock customers can now view inference quotas for the bedrock-mantle endpoint through AWS Service Quotas. This gives customers a familiar, consistent way to track limits for this endpoint, the same way they already do for the bedrock-runtime endpoint and other AWS services, and gives them clear visibility into the limits that apply to their workloads.&lt;br&gt; &lt;br&gt; The bedrock-mantle endpoint supports the OpenAI Responses API, OpenAI Chat Completions API, and the Anthropic Messages API, letting customers run existing OpenAI or Anthropic based applications on Amazon Bedrock with minimal code changes. AWS Service Quotas now exposes per-model input-tokens-per-minute and output-tokens-per-minute quotas for supported models on the endpoint.&lt;br&gt; &lt;br&gt; With this launch, customers gain visibility into how much limits they have on the bedrock-mantle endpoint and can proactively plan for production scale. To get started, open the AWS Service Quotas console, choose Amazon Bedrock, and search for \"Bedrock Mantle\" to view your current quotas. To request an increase to any of these quotas, follow the standard Amazon Bedrock limit increase process. Service Quotas support for the bedrock-mantle endpoint is available in all AWS Regions where the endpoint is offered: US East (N. Virginia, Ohio), US West (Oregon), Asia Pacific (Mumbai, Tokyo, Sydney, Jakarta), Europe (Frankfurt, Ireland, London, Milan, Stockholm), and South America (São Paulo). To learn more, see &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/quotas-mantle.html\"&gt;Quotas for Amazon Bedrock&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/5/amazon-bedrock-service-quotas/",
-      "publishedAt": "2026-05-27T21:41:00.000Z",
-      "updatedAt": "2026-05-27T21:41:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a3908b20465d7a2c",
-      "title": "AWS Elemental Inference now supports Smart Subtitles for automated live captioning",
-      "description": "AWS Elemental Inference now supports smart subtitles, a new AI-powered feature that automatically generates real-time subtitles for live video streams. Smart subtitles use advanced speech recognition to transcribe spoken audio and deliver Timed Text Markup Language (TTML)-formatted subtitles with low latency, helping broadcasters and streamers provide accessible content to viewers without manual captioning workflows or third-party services. With Smart subtitles, you can add live subtitling for content that is English (United States, Great Britain, and Australian), French, German, Italian, Port",
-      "descriptionHtml": "&lt;p&gt;AWS Elemental Inference now supports smart subtitles, a new AI-powered feature that automatically generates real-time subtitles for live video streams. Smart subtitles use advanced speech recognition to transcribe spoken audio and deliver Timed Text Markup Language (TTML)-formatted subtitles with low latency, helping broadcasters and streamers provide accessible content to viewers without manual captioning workflows or third-party services.&lt;/p&gt; \n&lt;p&gt;With Smart subtitles, you can add live subtitling for content that is English (United States, Great Britain, and Australian), French, German, Italian, Portuguese, and Spanish to your broadcasts by enabling the feature through the native integration with AWS Elemental MediaLive. You can improve transcription accuracy for specialized content—such as sports commentary with athlete names or technical terminology—by creating custom dictionaries through the AWS Elemental Inference API or console. Smart subtitles work alongside existing Elemental Inference features like smart cropping for vertical video and clip generation, and you benefit from the same non-linear pricing that reduces per-feature costs when using multiple features simultaneously on the same content.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/elemental-inference/latest/userguide/what-is.html\"&gt;AWS Elemental Inference documentation&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/medialive/latest/ug/elemental-inference-automatic-subtitling.html\"&gt;MediaLive documentation&lt;/a&gt;,&amp;nbsp;&amp;nbsp;and the &lt;a href=\"https://aws.amazon.com/elemental-inference/pricing/\"&gt;AWS Elemental Inference pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/elemental-inference-subtitles",
-      "publishedAt": "2026-05-27T21:00:00.000Z",
-      "updatedAt": "2026-05-27T21:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Media And Entertainment"
-      ],
-      "services": [
-        "Elemental"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "media and entertainment",
-        "elemental"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "dc8690caeef5c6f1",
-      "title": "SageMaker Notebook Instances now support P5.4xl instance types",
-      "description": "We are pleased to announce general availability of Amazon EC2 P5.4xl instances on SageMaker notebook instances. Amazon EC2 P5.4xl instances are powered by NVIDIA H100 Tensor Core GPUs and deliver high performance in Amazon EC2 for deep learning (DL) and high performance computing (HPC) applications. They help you accelerate your time to solution by up to 4x compared to previous-generation GPU-based EC2 instances, and reduce cost to train ML models by up to 40%. Customers can use P5 instances for training and deploying complex large language models (LLMs) and diffusion models powering generativ",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce general availability of Amazon EC2 P5.4xl instances on SageMaker notebook instances.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/p5/\"&gt;Amazon EC2 P5.4xl instances&lt;/a&gt; are powered by NVIDIA H100 Tensor Core GPUs and deliver high performance in Amazon EC2 for deep learning (DL) and high performance computing (HPC) applications. They help you accelerate your time to solution by up to 4x compared to previous-generation GPU-based EC2 instances, and reduce cost to train ML models by up to 40%. Customers can use P5 instances for training and deploying complex large language models (LLMs) and diffusion models powering generative AI applications. These applications include question answering, code generation, video and image generation, and speech recognition.&lt;/p&gt; \n&lt;p&gt;Amazon EC2 P5.4xl instances are available on SageMaker notebook instances in the AWS US East (N. Virginia and Ohio), US West (Oregon), Asia Pacific (Mumbai, Tokyo, Jakarta) and South America (São Paulo) regions.&lt;/p&gt; \n&lt;p&gt;Visit developer guides for instructions on setting up and using &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl.html\"&gt;&lt;u&gt;JupyterLab&lt;/u&gt;&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor.html\"&gt;&lt;u&gt;CodeEditor&lt;/u&gt;&lt;/a&gt; applications on &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html\"&gt;&lt;u&gt;SageMaker Studio&lt;/u&gt;&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/nbi.html\"&gt;&lt;u&gt;SageMaker notebook instances&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/03/p5-4xl-new-instance-launch-sagemaker-notebook-instances/",
-      "publishedAt": "2026-05-27T20:30:00.000Z",
-      "updatedAt": "2026-05-27T20:30:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Sagemaker",
-        "Aiml"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon sagemaker",
-        "aiml",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d6201484f5c4052a",
-      "title": "SageMaker Notebook Instances now support P5en.48xl instance types",
-      "description": "We are pleased to announce general availability of Amazon EC2 P5en.48xl instances on SageMaker notebook instances. Amazon EC2 P5en instances feature 8 H200 GPUs which have 1.7x GPU memory size and 1.4x GPU memory bandwidth than H100 GPUs featured in P5 instances. P5en instances pair the H200 GPUs with high performance custom 4 th Generation Intel Xeon Scalable processors, enabling Gen5 PCIe between CPU and GPU which provides up to 4x the bandwidth between CPU and GPU and boosts AI training and inference performance. P5en, with up to 3200 Gbps of third generation of EFA using Nitro v5, shows up",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce general availability of Amazon EC2 P5en.48xl instances on SageMaker notebook instances.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/p5/\"&gt;Amazon EC2 P5en instances&lt;/a&gt; feature 8 H200 GPUs which have 1.7x GPU memory size and 1.4x GPU memory bandwidth than H100 GPUs featured in P5 instances. P5en instances pair the H200 GPUs with high performance custom 4&lt;sup&gt;th &lt;/sup&gt;Generation Intel Xeon Scalable processors, enabling Gen5 PCIe between CPU and GPU which provides up to 4x the bandwidth between CPU and GPU and boosts AI training and inference performance. P5en, with up to 3200 Gbps of third generation of EFA using Nitro v5, shows up to 35% improvement in latency compared to P5 that uses the previous generation of EFA and Nitro. This helps improve collective communications performance for distributed training workloads such as deep learning, generative AI, real-time data processing, and high-performance computing (HPC) applications.&lt;/p&gt; \n&lt;p&gt;Amazon EC2 P5en.48xl instances are available on SageMaker notebook instances in the AWS US East (N. Virginia and Ohio), US West (Oregon), and Asia Pacific (Tokyo) regions.&lt;/p&gt; \n&lt;p&gt;Visit developer guides for instructions on setting up and using &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl.html\"&gt;&lt;u&gt;JupyterLab&lt;/u&gt;&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/code-editor.html\"&gt;&lt;u&gt;CodeEditor&lt;/u&gt;&lt;/a&gt; applications on &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated.html\"&gt;&lt;u&gt;SageMaker Studio&lt;/u&gt;&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/nbi.html\"&gt;&lt;u&gt;SageMaker notebook instances&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/02/p5en-new-instance-launch-sagemaker-notebook-instances/",
-      "publishedAt": "2026-05-27T20:30:00.000Z",
-      "updatedAt": "2026-05-27T20:30:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Artificial Intelligence",
-        "Aiml"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "artificial intelligence",
-        "aiml",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "55e7df350cc17739",
-      "title": "Amazon EMR now supports Apache Spark 4.0.2 in general availability",
-      "description": "Amazon EMR now supports Apache Spark 4.0.2 across all three deployment models. With Spark 4.0.2, you can build and maintain data pipelines more easily with ANSI SQL and VARIANT data types, enforce fine-grained access control (FGAC) at the row level or column level, strengthen compliance and governance frameworks with Apache Iceberg v3 table format, and deploy new real-time applications faster with enhanced streaming capabilities. With Spark 4.0.2, you can build data pipelines, making data engineering accessible to a broader range of users through standard ANSI SQL support, eliminating the need",
-      "descriptionHtml": "&lt;p&gt;Amazon EMR now supports Apache Spark 4.0.2 across all three deployment models. With Spark 4.0.2, you can build and maintain data pipelines more easily with ANSI SQL and VARIANT data types, enforce fine-grained access control (FGAC) at the row level or column level, strengthen compliance and governance frameworks with Apache Iceberg v3 table format, and deploy new real-time applications faster with enhanced streaming capabilities.&lt;br&gt; &lt;br&gt; With Spark 4.0.2, you can build data pipelines, making data engineering accessible to a broader range of users through standard ANSI SQL support, eliminating the need to learn Spark-specific syntax. Spark 4.0.2 natively supports JSON and semi-structured data through VARIANT data types, providing flexibility for handling diverse data formats. You can enforce fine-grained access control (FGAC) on both read and write operations for AWS Lake Formation registered tables in your Apache Spark jobs. Building on these security capabilities, Apache Iceberg v3 table format provides stronger transaction guarantees and tracks data lineage, creating the audit trails required for regulatory compliance. Enhanced streaming controls simplify management of complex stateful operations and improve monitoring, enabling you to deploy real-time applications for fraud detection, personalization, and other time-sensitive use cases faster.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; Apache Spark 4.0.2 is available in all regions where EMR is available. If you are upgrading your existing EMR application, you can use &lt;a href=\"https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-upgrades.html\"&gt;Apache Spark upgrade agent&lt;/a&gt; to accelerate your upgrades. To learn more about Apache Spark 4.0.2 on Amazon EMR, visit the &lt;a href=\"https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark800-release.html\"&gt;&lt;/a&gt;&lt;a href=\"https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark800-release.html\"&gt;&lt;/a&gt;&lt;a&gt;Amazon EMR &lt;/a&gt;release notes, or get started by creating an EMR application with Spark 4.0.2 from the &lt;a href=\"https://console.aws.amazon.com/emr/serverless\"&gt;AWS Management Console&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-emr-apache-spark/",
-      "publishedAt": "2026-05-27T20:17:00.000Z",
-      "updatedAt": "2026-05-27T20:17:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Emr"
-      ],
-      "services": [
-        "EMR"
-      ],
-      "tags": [
-        "analytics",
-        "amazon emr",
-        "emr"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "198260b544da1f68",
-      "title": "AWS Glue large and memory optimized workers now available in Europe (Spain) Region",
-      "description": "AWS Glue now offers large and memory-optimized workers in the AWS Europe (Spain) Region, giving customers in this region more power to handle complex data processing workloads. The new additions include two general compute workers (G.12X and G.16X) as well as four memory-optimized workers (R.1X, R.2X, R.4X, and R.8X). With these options, you can now tackle more complex transforms, aggregations, joins, and queries while processing higher volumes of data quickly using AWS Glue. The G.12X and G.16X workers extend the existing G worker lineup with additional compute, memory, and storage which make",
-      "descriptionHtml": "&lt;p&gt;AWS Glue now offers large and memory-optimized workers in the AWS Europe (Spain) Region, giving customers in this region more power to handle complex data processing workloads. The new additions include two general compute workers (G.12X and G.16X) as well as four memory-optimized workers (R.1X, R.2X, R.4X, and R.8X). With these options, you can now tackle more complex transforms, aggregations, joins, and queries while processing higher volumes of data quickly using AWS Glue.&lt;br&gt; &lt;br&gt; The G.12X and G.16X workers extend the existing G worker lineup with additional compute, memory, and storage which makes them ideal for large, resource-intensive workloads. The R-series workers (R.1X, R.2X, R.4X, and R.8X) offer double the memory of their G counterparts, making them well-suited for memory-intensive Spark operations such as caching, shuffling, and aggregating. You can select any of these worker types through AWS Glue Studio, using &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/create-notebook-job.html\"&gt;notebooks&lt;/a&gt; or &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/author-job-glue.html\"&gt;Visual ETL&lt;/a&gt;, or programmatically via the Glue Job APIs.&lt;br&gt; &lt;br&gt; For more information on these worker types and AWS Regions where they are available, visit the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/add-job.html\"&gt;AWS Glue documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/aws-glue-larger-memory-intensive-workers-spain",
-      "publishedAt": "2026-05-27T20:10:00.000Z",
-      "updatedAt": "2026-05-27T20:10:00.000Z",
-      "categories": [
-        "Analytics",
-        "AWS Glue"
-      ],
-      "services": [
-        "Glue"
-      ],
-      "tags": [
-        "analytics",
-        "aws glue",
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6bc055714c30196f",
-      "title": "Amazon Connect Customer now uses generative AI to automatically evaluate self-service interactions",
-      "description": "Amazon Connect Customer now enables managers to use generative AI to automatically evaluate self-service interactions, and get aggregated insights to help improve customer experience. Managers can define custom evaluation criteria in natural language within evaluation forms — such as \"Were all of the customer issues resolved by the AI agent?\" — which generative AI uses to help assess the quality of the self-service interaction. Connect provides detailed reasoning for the evaluation along with relevant reference points from the conversation transcript. Managers can review these insights in aggr",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now enables managers to use generative AI to automatically evaluate self-service interactions, and get aggregated insights to help improve customer experience. Managers can define custom evaluation criteria in natural language within evaluation forms — such as \"Were all of the customer issues resolved by the AI agent?\" — which generative AI uses to help assess the quality of the self-service interaction. Connect provides detailed reasoning for the evaluation along with relevant reference points from the conversation transcript. Managers can review these insights in aggregate and on individual contacts, alongside self-service interaction recordings and transcripts, to identify opportunities to improve AI agent performance.&lt;/p&gt; \n&lt;p&gt;This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Europe (Frankfurt). To learn more, please visit our &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/performance-evaluations-automated-interactions.html\"&gt;documentation&lt;/a&gt; and our &lt;a href=\"https://aws.amazon.com/products/connect/customer/conversational-analytics/\"&gt;webpage&lt;/a&gt;. For information about Amazon Connect Customer pricing, please visit our &lt;a href=\"https://aws.amazon.com/products/connect/customer/pricing/?trk=758059ab-77e5-44fc-8a4a-1be845ee42b9&amp;amp;sc_channel=ps\"&gt;pricing&lt;/a&gt; page.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-connect-customer-gen-AI-evaluations-self-service",
-      "publishedAt": "2026-05-27T17:00:00.000Z",
-      "updatedAt": "2026-05-27T17:00:00.000Z",
-      "categories": [
-        "Amazon Connect",
-        "Contact Center"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "amazon connect",
-        "contact center",
-        "connect"
       ],
       "isNew": false
     }
