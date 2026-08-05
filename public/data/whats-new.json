@@ -1,7 +1,305 @@
 {
-  "lastUpdated": "2026-08-04T09:00:10.551Z",
+  "lastUpdated": "2026-08-05T08:59:09.546Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "e8a842faa93c576a",
+      "title": "[Preview Announcement] Re-introducing Forward Proxy as AWS Network Firewall Functionality",
+      "description": "You can now use your Network Firewall with all its existing filtering capabilities and features as an explicit forward proxy. On Nov 25, 2025, AWS introduced Network Firewall proxy in public preview to help customers exert centralized security controls against data exfiltration and malware injection. At the time, the Network Firewall proxy was introduced as a standalone product, separate from Network Firewall transparent firewall and used its own separate proxy security policy. Customers who tested it in preview shared that they want the Network Firewall proxy to maintain parity with Network F",
+      "descriptionHtml": "&lt;p&gt;You can now use your Network Firewall with all its existing filtering capabilities and features as an explicit forward proxy.&lt;br&gt; &lt;br&gt; On Nov 25, 2025, AWS introduced Network Firewall &lt;i&gt;proxy &lt;/i&gt;in public preview to help customers exert centralized security controls against data exfiltration and malware injection. At the time, the Network Firewall &lt;i&gt;proxy&lt;/i&gt; was introduced as a standalone product, separate from Network Firewall &lt;i&gt;transparent firewall &lt;/i&gt;and used its own separate &lt;i&gt;proxy &lt;/i&gt;security policy. Customers who tested it in preview shared that they want the Network Firewall &lt;i&gt;proxy &lt;/i&gt;to maintain parity with Network Firewall’s existing set of capabilities and use the same security policy across the two functionalities&lt;i&gt;.&lt;/i&gt; In keeping with customer feedback, we are reintroducing explicit &lt;i&gt;proxy&lt;/i&gt; as a functionality of Network Firewall. With this launch, you can configure Network Firewall with your existing Firewall policy in a new &lt;i&gt;no-source-preservation&lt;/i&gt; deployment where it can be used as an explicit &lt;i&gt;proxy&lt;/i&gt; with all its existing features including managed rule groups, active threat defense, Geo-IP filtering, URL and domain category filtering, container attribute-based rules for Amazon EKS and Amazon ECS, etc. You can create a single security policy and use it for both explicit &lt;i&gt;proxy&lt;/i&gt; and &lt;i&gt;transparent firewall&lt;/i&gt; functionalities.&lt;br&gt; &lt;br&gt; Try out AWS Network Firewall in &lt;i&gt;no-source-preservation&lt;/i&gt; deployment with &lt;i&gt;proxy&lt;/i&gt; functionality in your test environment today in US East (Ohio) region. &lt;i&gt;no-source-preservation&lt;/i&gt; Network Firewall is available for free during public preview. For more information, check &lt;u&gt;&lt;a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/nfw-no-source-preservation.html\"&gt;no-source-preservation Network Firewall documentation&lt;/a&gt;&lt;/u&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-network-firewall-forward-proxy-preview/",
+      "publishedAt": "2026-08-04T22:24:00.000Z",
+      "updatedAt": "2026-08-04T22:24:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "Amazon Vpc",
+        "AWS Network Firewall"
+      ],
+      "services": [
+        "VPC",
+        "AWS Network Firewall"
+      ],
+      "tags": [
+        "networking and content delivery",
+        "amazon vpc",
+        "aws network firewall",
+        "vpc"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "572ae9f0029b7bb4",
+      "title": "Amazon Connect Customer now lets you export cases to CSV from the agent workspace",
+      "description": "Amazon Connect Customer now supports exporting cases to a CSV file directly from the agent workspace, making it easier to share case data with internal teams and external stakeholders such as vendors, legal teams, or business partners. Agents can filter and select cases and choose which case fields to include in the export. Admins can control access using a security profile permission. Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydn",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now supports exporting cases to a CSV file directly from the agent workspace, making it easier to share case data with internal teams and external stakeholders such as vendors, legal teams, or business partners. Agents can filter and select cases and choose which case fields to include in the export. Admins can control access using a security profile permission.&lt;br&gt; &lt;br&gt; Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town). To learn more and get started, visit the Cases &lt;a href=\"https://aws.amazon.com/connect/cases/\"&gt;webpage&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/case-bulk-export.html\"&gt;documentation&lt;/a&gt;.&lt;a href=\"http://aws.amazon.com\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-export-cases/",
+      "publishedAt": "2026-08-04T21:00:00.000Z",
+      "updatedAt": "2026-08-04T21:00:00.000Z",
+      "categories": [
+        "Contact Center",
+        "Amazon Connect",
+        "Messaging",
+        "Business Productivity"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "amazon connect",
+        "messaging",
+        "business productivity",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8be36b8d18877eec",
+      "title": "Amazon Bedrock launches Web Search for OpenAI GPT models",
+      "description": "Today, we are announcing the general availability of Web Search on Amazon Bedrock, a built-in server side tool that performs web search entirely within AWS, enabling OpenAI models (GPT-5.4, GPT-5.5, and GPT-5.6 Sol/Terra/Luna) to ground responses with current web knowledge while maintaining data residency within your secured AWS environment with zero data egress. Previously, adding web grounding required onboarding a third-party search provider, managing separate API keys and billing, building custom orchestration, and conducting additional compliance reviews for each external vendor. Web Sear",
+      "descriptionHtml": "&lt;p&gt;Today, we are announcing the general availability of Web Search on Amazon Bedrock, a built-in server side tool that performs web search entirely within AWS, enabling OpenAI models (GPT-5.4, GPT-5.5, and GPT-5.6 Sol/Terra/Luna) to ground responses with current web knowledge while maintaining data residency within your secured AWS environment with zero data egress. Previously, adding web grounding required onboarding a third-party search provider, managing separate API keys and billing, building custom orchestration, and conducting additional compliance reviews for each external vendor. Web Search removes this heavy lifting by enable grounding with a single parameter in an existing API call, with no vendor onboarding, no external APIs to orchestrate, and no additional vendor security reviews to conduct.&lt;br&gt; &lt;br&gt; Web Search is built by Amazon, informed by years of experience across Alexa+, Amazon Quick and Kiro. It combines a web index operated by Amazon, spanning tens of billions of documents refreshed continually, with a built-in knowledge graph that provides verified facts. Rather than returning raw pages, Web Search performs semantic snippet extraction, delivering context-efficient results optimized for the model's context window with low latency. Web Search integrates through a standardized tool-use interface, compatible with the OpenAI Responses API. Simply add the web search tool to your API call, and Bedrock handles the entire search lifecycle server-side; a single API call returns a grounded response with citations.&lt;br&gt; &lt;br&gt; Web Search on Amazon Bedrock is generally available today in US East (N. Virginia), US East (Ohio), and US West (Oregon). To get started, read our blog post &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-for-foundation-model-grounding/\"&gt;Introducing Web Search on Amazon Bedrock for foundation model grounding&lt;/a&gt;, review the &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/web-search.html\"&gt;Web Search section in the Amazon Bedrock User Guide&lt;/a&gt; for technical documentation, and visit the &lt;a href=\"https://aws.amazon.com/bedrock/pricing/\"&gt;Amazon Bedrock pricing page&lt;/a&gt; for cost details.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-web/",
+      "publishedAt": "2026-08-04T20:37:00.000Z",
+      "updatedAt": "2026-08-04T20:37:00.000Z",
+      "categories": [
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e02288784c2497dc",
+      "title": "Run interactive workloads on Amazon EMR on EC2 with Spark Connect",
+      "description": "Amazon EMR on EC2 now supports interactive Apache Spark sessions with Spark Connect. Data engineers and data scientists can develop and debug Apache Spark applications interactively from managed notebooks in Amazon SageMaker Unified Studio and their own IDEs, such as Jupyter and Visual Studio Code, with each session running on dedicated EMR on EC2 clusters. You can also monitor and debug active and completed sessions in the EMR console. An interactive session provides a persistent Spark context that spans across cells and scripts, letting you blend local Python code execution with remote Spark",
+      "descriptionHtml": "&lt;p&gt;Amazon EMR on EC2 now supports interactive Apache Spark sessions with Spark Connect. Data engineers and data scientists can develop and debug Apache Spark applications interactively from managed notebooks in Amazon SageMaker Unified Studio and their own IDEs, such as Jupyter and Visual Studio Code, with each session running on dedicated EMR on EC2 clusters. You can also monitor and debug active and completed sessions in the EMR console.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;An interactive session provides a persistent Spark context that spans across cells and scripts, letting you blend local Python code execution with remote Spark operations. Spark Connect's client-server architecture decouples your application client from the Spark driver and allows you to maintain your preferred development environment and tooling while Spark infrastructure runs on the cluster. This architecture supports workflows including ad hoc data exploration, iterative step-by-step debugging, and incremental PySpark job development before deploying to production. For observability, you get real-time session monitoring via the Spark UI, history tracking through the Spark History Server, and session management from the EMR console or API/CLI/SDK.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Interactive Sessions is available on Amazon EMR on EC2 with AWS runtime for Apache Spark (emr-spark-8.0) and later, in all AWS Regions where Amazon EMR is available, except the AWS GovCloud Regions and the China Regions. The Amazon SageMaker Unified Studio experience is available in &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;supported regions&lt;/a&gt;. To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-spark-connect-sessions.html\"&gt;Interactive sessions with Spark Connect&lt;/a&gt; guide or the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/what-is-sagemaker-unified-studio.html\"&gt;Amazon SageMaker Unified Studio Getting Started guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-emr-ec2-spark-connect/",
+      "publishedAt": "2026-08-04T20:29:00.000Z",
+      "updatedAt": "2026-08-04T20:29:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Emr"
+      ],
+      "services": [
+        "EC2",
+        "EMR",
+        "Connect"
+      ],
+      "tags": [
+        "analytics",
+        "amazon emr",
+        "ec2",
+        "emr",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f13a045fcd76145c",
+      "title": "AWS Security Hub Extended adds supply chain security as its 10th category",
+      "description": "The AWS Security Hub Extended plan now includes Supply Chain Security as its 10th security category, with Chainguard and Socket as the curated partners. As developers adopt open-source libraries at scale, security teams need confidence that the packages entering their environments are trustworthy and free from malicious code. With this addition, you can detect and block malicious dependencies before they are built into your applications, with the same streamlined activation and pay-as-you-go pricing as every other Extended category. This brings the Extended plan to 23 curated partner solutions",
+      "descriptionHtml": "&lt;p&gt;The AWS Security Hub Extended plan now includes Supply Chain Security as its 10th security category, with Chainguard and Socket as the curated partners. As developers adopt open-source libraries at scale, security teams need confidence that the packages entering their environments are trustworthy and free from malicious code. With this addition, you can detect and block malicious dependencies before they are built into your applications, with the same streamlined activation and pay-as-you-go pricing as every other Extended category. This brings the Extended plan to 23 curated partner solutions. All solutions are on a single AWS bill and no required long-term commitments.&lt;/p&gt; \n&lt;p&gt;Security Hub Extended is a plan within AWS Security Hub that helps simplify how you procure, deploy, and integrate a full-stack enterprise security solution across endpoint, identity, email, network, data, browser, cloud, AI, security operations, and supply chain. Security findings from all participating solutions are emitted in the Open Cybersecurity Schema Framework (OCSF) and automatically aggregated in AWS Security Hub. With the Extended plan, you can combine AWS and curated partner solutions to quickly identify and respond to risks that span boundaries.&lt;/p&gt; \n&lt;p&gt;We will continue to expand the Extended plan based on customer feedback. The two new curated partner solutions are available today in all AWS commercial Regions where Security Hub is available. For a list of supported Regions, see the&lt;a href=\"/about-aws/global-infrastructure/regional-product-services/?p=ngi&amp;amp;loc=4&amp;amp;refid=d8ec3b19-0f37-4f8c-8c12-189f913e205c\"&gt;&lt;u&gt; AWS Region table.&lt;/u&gt;&lt;/a&gt; For more information about pricing, visit the&lt;a href=\"/security-hub/pricing/\" title=\"AWS Security Hub pricing\"&gt;&lt;u&gt; AWS Security Hub pricing page&lt;/u&gt;&lt;/a&gt;. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/securityhub/v2/home\"&gt;&lt;u&gt;AWS Security Hub console&lt;/u&gt;&lt;/a&gt; or &lt;a href=\"/security-hub/\" title=\"AWS Security Hub overview\"&gt;&lt;u&gt;product page.&lt;/u&gt;&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-security-hub-extended-adds-supply-chain-security",
+      "publishedAt": "2026-08-04T19:14:00.000Z",
+      "updatedAt": "2026-08-04T19:14:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "AWS Security Hub"
+      ],
+      "services": [
+        "Security Hub"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "aws security hub",
+        "security hub"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b689ab40e2f68055",
+      "title": "Amazon EC2 C8g instances now available in additional regions",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8g instances are available in AWS Europe (Paris), AWS Africa (Cape Town), AWS Israel (Tel Aviv), and AWS Canada West (Calgary) regions. These instances are powered by AWS Graviton4 processors and deliver up to 30% better performance compared to AWS Graviton3-based instances. Amazon EC2 C8g instances are built for compute-intensive workloads, such as high performance computing (HPC), batch processing, gaming, video encoding, scientific modeling, distributed analytics, CPU-based machine learning (ML) inference, and ad serving. These inst",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8g instances are available in AWS Europe (Paris), AWS Africa (Cape Town), AWS Israel (Tel Aviv), and AWS Canada West (Calgary) regions. These instances are powered by AWS Graviton4 processors and deliver up to 30% better performance compared to AWS Graviton3-based instances. Amazon EC2 C8g instances are built for compute-intensive workloads, such as high performance computing (HPC), batch processing, gaming, video encoding, scientific modeling, distributed analytics, CPU-based machine learning (ML) inference, and ad serving. These instances are built on the &lt;a href=\"https://aws.amazon.com/ec2/nitro/\"&gt;AWS Nitro System&lt;/a&gt;, which oﬄoads CPU virtualization, storage, and networking functions to dedicated hardware and software to enhance the performance and security of your workloads.&lt;/p&gt; \n&lt;p&gt;AWS Graviton4-based Amazon EC2 instances deliver the best performance and energy efficiency for a broad range of workloads running on Amazon EC2. These instances offer larger instance sizes with up to 3x more vCPUs and memory compared to Graviton3-based Amazon C7g instances. AWS Graviton4 processors are up to 40% faster for databases, 30% faster for web applications, and 45% faster for large Java applications than AWS Graviton3 processors. C8g instances are available in 12 different instance sizes, including two bare metal sizes. They offer up to 50 Gbps enhanced networking bandwidth and up to 40 Gbps of bandwidth to the Amazon Elastic Block Store (Amazon EBS).&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://aws.amazon.com/ec2/instance-types/c8g/\"&gt;Amazon EC2 C8g Instances&lt;/a&gt;. To get started, see the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-c8g-instances-additional-regions/",
+      "publishedAt": "2026-08-04T18:57:00.000Z",
+      "updatedAt": "2026-08-04T18:57:00.000Z",
+      "categories": [
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c7be47166a5d124f",
+      "title": "AWS Application and Network Load Balancers now support RFC 9151 compliant security policies",
+      "description": "AWS Application Load Balancer (ALB) and Network Load Balancer (NLB) now support new TLS-based security policies that comply with RFC 9151 TLS server requirements for Commercial National Security Algorithm (CNSA) 1.0 suite requirements. These policies implement the cryptographic requirements defined by the US National Security Agency (NSA) for secure communications using TLS 1.2 and TLS 1.3 protocols. Customers who are required to meet CNSA 1.0 TLS security requirements can now use ALB and NLB with RFC 9151 compliant security policies. Broader interoperability policies are also supported, allow",
+      "descriptionHtml": "&lt;p&gt;AWS Application Load Balancer (ALB) and Network Load Balancer (NLB) now support new TLS-based security policies that comply with RFC 9151 TLS server requirements for Commercial National Security Algorithm (CNSA) 1.0 suite requirements. These policies implement the cryptographic requirements defined by the US National Security Agency (NSA) for secure communications using TLS 1.2 and TLS 1.3 protocols.&lt;br&gt; &lt;br&gt; Customers who are required to meet CNSA 1.0 TLS security requirements can now use ALB and NLB with RFC 9151 compliant security policies. Broader interoperability policies are also supported, allowing you to implement CNSA by default while maintaining compatibility with non-CNSA clients during their transition to RFC 9151 compliance, minimizing service disruption.&lt;br&gt; &lt;br&gt; This feature is available for ALB and NLB in all AWS Commercial Regions, the AWS GovCloud (US) Regions, and the China region at no additional cost. To use this capability, update your existing ALB HTTPS listeners or NLB TLS listeners to a RFC 9151 compliant security policy, or select a compliant policy when creating new listeners through the AWS Management Console, CLI, API, or SDK.&lt;br&gt; &lt;br&gt; To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/elasticloadbalancing/latest/application/describe-ssl-policies.html\"&gt;ALB User Guide&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/elasticloadbalancing/latest/network/describe-ssl-policies.html\"&gt;NLB User Guide&lt;/a&gt; documentation. Get started with &lt;a href=\"https://aws.amazon.com/elasticloadbalancing/\"&gt;Elastic Load Balancing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-application-network/",
+      "publishedAt": "2026-08-04T18:28:00.000Z",
+      "updatedAt": "2026-08-04T18:28:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "Amazon Elastic Load Balancing"
+      ],
+      "services": [],
+      "tags": [
+        "networking and content delivery",
+        "amazon elastic load balancing"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "56863a4f26c65190",
+      "title": "Amazon S3 Vectors is now available in the AWS European Sovereign Cloud (Germany) Region",
+      "description": "Amazon S3 Vectors is now available in the AWS European Sovereign Cloud (Germany) Region. Amazon S3 Vectors is purpose-built vector storage for AI agents, inference, Retrieval Augmented Generation (RAG), and semantic search at billion-vector scale. S3 Vectors is designed to provide the same elasticity, durability, and availability as Amazon S3, with a dedicated set of APIs that let you store, access, and query vectors without provisioning any infrastructure. For a full list of AWS Regions where Amazon S3 Vectors is available, see AWS Regions and endpoints . To learn more, visit the product page",
+      "descriptionHtml": "&lt;p&gt;Amazon S3 Vectors is now available in the AWS European Sovereign Cloud (Germany) Region. Amazon S3 Vectors is purpose-built vector storage for AI agents, inference, Retrieval Augmented Generation (RAG), and semantic search at billion-vector scale. S3 Vectors is designed to provide the same elasticity, durability, and availability as Amazon S3, with a dedicated set of APIs that let you store, access, and query vectors without provisioning any infrastructure.&lt;/p&gt; \n&lt;p&gt;For a full list of AWS Regions where Amazon S3 Vectors is available, see &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-regions-quotas.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions and endpoints&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/s3/features/vectors/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;product page&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;, and the &lt;a href=\"https://aws.amazon.com/s3/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon S3 pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-s3-vectors-european-sovereign-cloud-germany/",
+      "publishedAt": "2026-08-04T18:15:00.000Z",
+      "updatedAt": "2026-08-04T18:15:00.000Z",
+      "categories": [
+        "Amazon Simple Storage Service",
+        "Artificial Intelligence",
+        "Storage"
+      ],
+      "services": [
+        "S3"
+      ],
+      "tags": [
+        "amazon simple storage service",
+        "artificial intelligence",
+        "storage",
+        "s3"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "07131ba651a3d33d",
+      "title": "Amazon Connect Customer now supports capacity planning in 15 or 30 minute intervals",
+      "description": "Amazon Connect Customer now lets you generate capacity plans at the interval level (15-minute or 30-minute intervals), giving workforce planners visibility into more granular staffing requirements across Voice, Chat, Task, and Email channels. Interval-level plans capture how demand shifts throughout the day — such as a lunchtime surge in chat contacts or an end-of-day change in call volume — so you can align agent capacity with demand as it changes and staff precisely for each part of the day. You can also provide shrinkage assumptions and available headcount at the interval level for more acc",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now lets you generate capacity plans at the interval level (15-minute or 30-minute intervals), giving workforce planners visibility into more granular staffing requirements across Voice, Chat, Task, and Email channels. Interval-level plans capture how demand shifts throughout the day — such as a lunchtime surge in chat contacts or an end-of-day change in call volume — so you can align agent capacity with demand as it changes and staff precisely for each part of the day. You can also provide shrinkage assumptions and available headcount at the interval level for more accurate plans. Together, these capabilities improve planning accuracy and help you reduce over- and under-staffing, improving service levels and operational efficiency.&lt;br&gt; &lt;br&gt; This feature is available in all &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#optimization_region\"&gt;AWS Regions&lt;/a&gt; where Amazon Connect Customer agent scheduling is available. To learn more about Amazon Connect Customer agent scheduling, click &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html\"&gt;here&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-customer-interval-capacity-plan",
+      "publishedAt": "2026-08-04T17:00:00.000Z",
+      "updatedAt": "2026-08-04T17:00:00.000Z",
+      "categories": [
+        "Amazon Connect",
+        "AWS Govcloud Us",
+        "Business Productivity",
+        "Contact Center"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "amazon connect",
+        "aws govcloud us",
+        "business productivity",
+        "contact center",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e6ee45a17fcadb55",
+      "title": "Amazon EC2 I8g instances now available in AWS Europe (Paris), Asia Pacific (Jakarta) regions",
+      "description": "AWS announces the general availability of Amazon EC2 Storage Optimized I8g instances in AWS Europe (Paris) and Asia Pacific (Jakarta) regions. I8g instances are powered by AWS Graviton4 processors and offer the best compute performance in Amazon EC2 for storage-intensive workloads. I8g instances use the third generation AWS Nitro SSDs, local NVMe storage that deliver up to 65% better real-time storage performance per TB while offering up to 50% lower storage I/O latency and up to 60% lower storage I/O latency variability compared to I4g instances. These instances are built on the AWS Nitro Sys",
+      "descriptionHtml": "&lt;p&gt;AWS announces the general availability of Amazon EC2 Storage Optimized I8g instances in AWS Europe (Paris) and Asia Pacific (Jakarta) regions.&amp;nbsp;I8g instances are powered by AWS Graviton4 processors and offer the best compute performance in Amazon EC2 for storage-intensive workloads. I8g instances use the third generation AWS Nitro SSDs, local NVMe storage that deliver up to 65% better real-time storage performance per TB while offering up to 50% lower storage I/O latency and up to 60% lower storage I/O latency variability compared to I4g instances. These instances are built on the &lt;a href=\"https://aws.amazon.com/ec2/nitro/\"&gt;AWS Nitro System&lt;/a&gt;, which offloads CPU virtualization, storage, and networking functions to dedicated hardware and software enhancing the performance and security for your workloads.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; Amazon EC2 I8g instances are designed for I/O intensive workloads that require rapid data access and real-time latency from storage. These instances excel at handling transactional, real-time, distributed databases, including MySQL, PostgreSQL, Hbase and NoSQL solutions like Aerospike, MongoDB, ClickHouse, and Apache Druid. They're also optimized for real-time analytics platforms such as Apache Spark, data lakehouse and AI LLM pre-processing for training. I8g instances are available in eleven different sizes including two metal sizes, 1.5 TiB of memory, and 45 TB local instance storage. They deliver up to 100 Gbps of network performance bandwidth, and 60 Gbps of dedicated bandwidth for Amazon Elastic Block Store (EBS).&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; To learn more, visit &lt;a href=\"https://aws.amazon.com/ec2/instance-types/i8g/\"&gt;Amazon EC2 I8g instances.&lt;/a&gt; To begin your Graviton journey, visit the &lt;a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\"&gt;Level up your compute with AWS Graviton page&lt;/a&gt;. To get started, see &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface (AWS CLI)&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html\"&gt;AWS SDKs&lt;/a&gt;.&lt;br&gt; &lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-i8g-instances-aws-paris-jakarta-regions/",
+      "publishedAt": "2026-08-04T16:00:00.000Z",
+      "updatedAt": "2026-08-04T16:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Storage"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "storage",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "04e1aff0acda63dc",
+      "title": "Amazon RDS for SQL Server now support BYOM in additional commercial regions",
+      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports Bring Your Own Media (BYOM) in 10 additional AWS Regions: Asia Pacific (Taipei, Hyderabad, Jakarta, Malaysia, Melbourne, New Zealand, Thailand), Europe (Milan, Spain), and Mexico (Central). With BYOM, you can adopt Amazon RDS as a managed database service and reuse your existing Microsoft SQL Server licenses with active Software Assurance, through Microsoft's License Mobility program. BYOM is supported on SQL Server 2019, 2022, and 2025. Amazon RDS for SQL Server BYOM is integrated with AWS License Manager so you can t",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server&lt;/a&gt; now supports Bring Your Own Media (BYOM) in 10 additional AWS Regions: Asia Pacific (Taipei, Hyderabad, Jakarta, Malaysia, Melbourne, New Zealand, Thailand), Europe (Milan, Spain), and Mexico (Central).&lt;br&gt; &lt;br&gt; With BYOM, you can adopt Amazon RDS as a managed database service and reuse your existing Microsoft SQL Server licenses with active&amp;nbsp;Software Assurance, through Microsoft's License Mobility program. BYOM is supported on SQL Server 2019, 2022, and 2025. Amazon RDS for SQL Server BYOM is integrated with AWS License Manager so you can track license usage across your AWS environment for compliance.&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-byom.html\" target=\"_blank\"&gt;Bring Your Own Media (BYOM) for RDS for SQL Server.&lt;/a&gt; For pricing and regional availability, see &lt;a href=\"https://aws.amazon.com/rds/sqlserver/pricing/\" target=\"_blank\"&gt;Amazon RDS for SQL Server Pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/rds-sql-server-supports-byom-in-additional-aws-regions/",
+      "publishedAt": "2026-08-04T07:00:00.000Z",
+      "updatedAt": "2026-08-04T07:00:00.000Z",
+      "categories": [
+        "Amazon Rds For Sql Server",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "amazon rds for sql server",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b50c37ce89a26a61",
+      "title": "Amazon RDS for SQL Server supports Developer Edition in additional AWS regions",
+      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server Developer Edition is now available in 13 additional AWS Regions: Asia Pacific (Hong Kong, Taipei, Hyderabad, Jakarta, Malaysia, Melbourne, New Zealand, Thailand), Canada West (Calgary), Europe (Milan, Spain), Israel (Tel Aviv), and Mexico (Central). SQL Server Developer Edition includes all the functionality of Enterprise Edition and is free of license charges for use as a development and test system. With this expansion, you can build and test applications in more regions closer to your data and end users, reducing latency and sim",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server&lt;/a&gt; Developer Edition is now available in 13 additional AWS Regions: Asia Pacific (Hong Kong, Taipei, Hyderabad, Jakarta, Malaysia, Melbourne, New Zealand, Thailand), Canada West (Calgary), Europe (Milan, Spain), Israel (Tel Aviv), and Mexico (Central).&lt;br&gt; &lt;br&gt; SQL Server Developer Edition includes all the functionality of Enterprise Edition and is free of license charges for use as a development and test system. With this expansion, you can build and test applications in more regions closer to your data and end users, reducing latency and simplifying your development workflows.&lt;br&gt; &lt;br&gt; For more information about these features and region availability, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-dev-edition.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Working with SQL Server Developer Edition on RDS for SQL Server&lt;/a&gt;. For pricing details, see &lt;a href=\"https://aws.amazon.com/rds/sqlserver/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for SQL Server Pricing&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/rds-sql-server-supports-developer-edition-in-additional-aws-regions/",
+      "publishedAt": "2026-08-04T07:00:00.000Z",
+      "updatedAt": "2026-08-04T07:00:00.000Z",
+      "categories": [
+        "Amazon Rds For Sql Server",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "amazon rds for sql server",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "bc20f9e57e92629a",
+      "title": "RDS SQL Server now supports publishing SQL Server Audit logs to CloudWatch",
+      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports publishing SQL Server Audit logs to CloudWatch. SQL Server Audit is a native SQL Server feature that allows tracking and logging events that occur on the Database Engine. On Amazon RDS, you can create audits and audit specifications in the same way that you create them for on-premises SQL Server database servers. Now you can publish the audit logs to S3, CloudWatch, or both. If you enable both S3 and CloudWatch options, the audit log publication will be marked as \"completed\" only after the audit log files are uploaded ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server&lt;/a&gt; now supports publishing SQL Server Audit logs to CloudWatch.&amp;nbsp;SQL Server Audit is a native SQL Server feature that allows tracking and logging events that occur on the Database Engine. On Amazon RDS, you can create audits and audit specifications in the same way that you create them for on-premises SQL Server database servers.&lt;/p&gt; \n&lt;p&gt;Now you can publish the audit logs to S3, CloudWatch, or both. If you enable both S3 and CloudWatch options, the audit log publication will be marked as \"completed\" only after the audit log files are uploaded to both S3 and CloudWatch. Once the audit logs are in CloudWatch, you can perform real-time analysis of the log data. If you enable retention, RDS keeps your audit logs on your DB instance for the configured period of time.&lt;/p&gt; \n&lt;p&gt;For more information, see &lt;a href=\"https://docs.microsoft.com/sql/relational-databases/security/auditing/sql-server-audit-database-engine\" target=\"_blank\"&gt;SQL Server Audit (database engine)&lt;/a&gt; in the SQL Server documentation. For detailed configuration instructions, see the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.SQLServer.Options.Audit.html\" target=\"_blank\"&gt;Amazon RDS for SQL Server User Guide&lt;/a&gt;. This feature is available in all AWS Commercial and AWS GovCloud (US) Regions where Amazon RDS for SQL Server is available.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/rds-sqlserver-publish-sql-audit-to-cw/",
+      "publishedAt": "2026-08-04T07:00:00.000Z",
+      "updatedAt": "2026-08-04T07:00:00.000Z",
+      "categories": [
+        "Amazon Rds For Sql Server",
+        "Databases"
+      ],
+      "services": [
+        "RDS",
+        "CloudWatch"
+      ],
+      "tags": [
+        "amazon rds for sql server",
+        "databases",
+        "rds",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
     {
       "id": "83b518091fc30b87",
       "title": "AWS Transform continuous modernization is now generally available",
@@ -945,7 +1243,7 @@
         "iam",
         "iam identity center"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e9e1e61b45a758de",
@@ -967,7 +1265,7 @@
         "amazon eks",
         "eks"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fead2c3a5e361053",
@@ -991,7 +1289,7 @@
         "compute",
         "outposts"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3e5b63617049e0a5",
@@ -1010,7 +1308,7 @@
         "aws management console",
         "cost management"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b8f6979d16a1826d",
@@ -1040,7 +1338,7 @@
         "fsx",
         "datasync"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1d14f1fbfca7af5f",
@@ -1062,7 +1360,7 @@
         "migration",
         "datasync"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0f9a6403f6eb841c",
@@ -10823,285 +11121,6 @@
       "tags": [
         "media services",
         "aws deadline cloud"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0734edc3fc9f6db9",
-      "title": "Amazon SageMaker Studio now sets up in seconds with model customization ready from the start",
-      "description": "Amazon SageMaker Studio quick setup now completes in under twenty seconds, reduced from over two minutes. Whether you are building ML pipelines, exploring data, developing with notebooks, or fine-tuning foundation models, you can go from sign-in to a fully configured Studio environment almost instantly. As part of this streamlined setup, newly created Studio environments now come with serverless model customization permissions automatically configured. A new managed policy, AmazonSageMakerModelCustomizationCoreAccess, is created and attached for you, providing permissions for serverless model ",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Studio quick setup now completes in under twenty seconds, reduced from over two minutes. Whether you are building ML pipelines, exploring data, developing with notebooks, or fine-tuning foundation models, you can go from sign-in to a fully configured Studio environment almost instantly.&lt;br&gt; &lt;br&gt; As part of this streamlined setup, newly created Studio environments now come with serverless model customization permissions automatically configured. A new managed policy, AmazonSageMakerModelCustomizationCoreAccess, is created and attached for you, providing permissions for serverless model customization jobs including fine-tuning with custom reward functions for reinforcement learning, model evaluation, and deployment to SageMaker or Bedrock endpoints. This eliminates the need to manually create and configure IAM roles and policies before you can start experimenting. For existing Studio environments, actionable messages with direct links to documentation guide you through adding these permissions.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Commercial Regions where Amazon SageMaker Studio is supported. To get started, create a new Studio environment using quick setup in the SageMaker AI Console. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/onboard-quick-start.html\"&gt;Quick setup&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/model-customize-open-weight-prereq.html\"&gt;Model Customization permissions setup&lt;/a&gt; in the Amazon SageMaker documentation.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/quick-setup-model-customization-sagemaker-studio/",
-      "publishedAt": "2026-06-02T16:23:00.000Z",
-      "updatedAt": "2026-06-02T16:23:00.000Z",
-      "categories": [
-        "Amazon Sagemaker Deploy",
-        "Amazon Sagemaker Studio",
-        "Artificial Intelligence",
-        "Aiml",
-        "Amazon Sagemaker Training",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker deploy",
-        "amazon sagemaker studio",
-        "artificial intelligence",
-        "aiml",
-        "amazon sagemaker training",
-        "amazon sagemaker",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "73b39d5f01bf04e2",
-      "title": "Amazon ElastiCache for Valkey now supports durability",
-      "description": "Today, AWS announces durability support for Amazon ElastiCache. Durability enables you to use ElastiCache for workloads that require microsecond read latency but cannot tolerate data loss. With durability support, ElastiCache now stores data durably across multiple Availability Zones (AZs) using a Multi-AZ transactional log to enable fast failover, database recovery, and node restarts to prevent data loss in the unlikely event of a failure. You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before respondi",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces durability support for Amazon ElastiCache. Durability enables you to use ElastiCache for workloads that require microsecond read latency but cannot tolerate data loss. With durability support, ElastiCache now stores data durably across multiple Availability Zones (AZs) using a Multi-AZ transactional log to enable fast failover, database recovery, and node restarts to prevent data loss in the unlikely event of a failure.&lt;/p&gt; \n&lt;p&gt;You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before responding to the client, designed for zero data loss at single-digit millisecond write latency. Asynchronous writes persist data after responding to the client, maintaining microsecond write latency at no additional cost. However, up to 10 seconds of uncommitted data could be lost in the rare event of a failure. Both options maintain microsecond read latency. You can now use ElastiCache for a broader set of use cases beyond caching where data loss is unacceptable such as AI agent long-term memory, AI agent workflow state, knowledge bases for RAG applications, payment tokenization, and real-time inventory management.&lt;/p&gt; \n&lt;p&gt;Durability for ElastiCache is available in all AWS commercial Regions, AWS China Regions, and AWS GovCloud (US) Regions starting with Valkey 9.0. To get started, create a new ElastiCache cluster and select your preferred durability option using the AWS Management Console, AWS Software Development Kit (SDK), or AWS Command Line Interface (CLI). For pricing details, visit the &lt;a href=\"https://aws.amazon.com/elasticache/pricing/\"&gt;Amazon ElastiCache pricing page&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/durability.html\"&gt;ElastiCache documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/blogs/database/announcing-durability-for-amazon-elasticache/\"&gt;blog&lt;/a&gt;.&amp;nbsp;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/durability-amazon-elasticache",
-      "publishedAt": "2026-06-02T15:00:00.000Z",
-      "updatedAt": "2026-06-02T15:00:00.000Z",
-      "categories": [],
-      "services": [
-        "ElastiCache"
-      ],
-      "tags": [
-        "elasticache"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7c1dc8634405b874",
-      "title": "Amazon Location Service announces public transit and intermodal routing",
-      "description": "Amazon Location Service today announced support for public transit and intermodal routing in the Routes API. Developers can now use the CalculateRoutes operation with two new travel modes, Transit and Intermodal, to plan journeys that combine public transportation with walking, driving, taxi, and rental segments. With public transit routing, applications can calculate point-to-point routes using buses, subways, trains, ferries, and other transit types, including walking directions to and from stops, departure and arrival times, and transit line details. Intermodal routing extends this by combi",
-      "descriptionHtml": "&lt;p&gt;Amazon Location Service today announced support for public transit and intermodal routing in the Routes API. Developers can now use the CalculateRoutes operation with two new travel modes, Transit and Intermodal, to plan journeys that combine public transportation with walking, driving, taxi, and rental segments.&lt;br&gt; &lt;br&gt; With public transit routing, applications can calculate point-to-point routes using buses, subways, trains, ferries, and other transit types, including walking directions to and from stops, departure and arrival times, and transit line details. Intermodal routing extends this by combining multiple transport types in a single route, supporting common patterns such as park-and-ride (vehicle plus transit), taxi-and-ride (taxi plus transit), and last-mile completion using a taxi or rental. These capabilities help builders deliver applications across mobility, logistics, employee commute, and urban planning use cases that depend on accurate multi-modal route calculation.&lt;br&gt; &lt;br&gt; Public transit and intermodal routing are available in the following AWS Regions: US East (Ohio), US East (N. Virginia), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Stockholm), Europe (Spain), and South America (São Paulo).&lt;br&gt; &lt;br&gt; To get started, visit the Amazon Location Service Routes &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/what-is.html\"&gt;Developer Guide&lt;/a&gt;, the &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/transit-routing.html\"&gt;Transit Routing&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/intermodal-routing.html\"&gt;Intermodal Routing&lt;/a&gt; documentation pages, or the &lt;a href=\"https://docs.aws.amazon.com/location/latest/APIReference/API_CalculateRoutes.html\"&gt;CalculateRoutes API Reference.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-location-service/amazon-location-new-public-transit-intermodal-routing",
-      "publishedAt": "2026-06-02T14:51:00.000Z",
-      "updatedAt": "2026-06-02T14:51:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "de373083ee90115d",
-      "title": "AWS Cost and Usage Report 2.0 now supports Athena and Redshift integration",
-      "description": "AWS today announced that AWS Cost and Usage Report 2.0 (CUR 2.0) provides new integration options with AWS Athena and AWS Redshift. This capability allows customers to analyze the data from their AWS CUR 2.0 in Amazon Simple Storage Service (Amazon S3) using standard SQL without building custom data warehouse solutions, bringing feature parity with CUR 1.0 integration options. With this launch, when customers select Athena or Redshift integration, CUR 2.0 exports are automatically delivered in the optimal format (Parquet, GZIP) for the chosen query engine. Each export includes the supporting m",
-      "descriptionHtml": "&lt;p&gt;AWS today announced that AWS Cost and Usage Report 2.0 (CUR 2.0) provides new integration options with AWS Athena and AWS Redshift. This capability allows customers to analyze the data from their AWS CUR 2.0 in Amazon Simple Storage Service (Amazon S3) using standard SQL without building custom data warehouse solutions, bringing feature parity with CUR 1.0 integration options. &lt;br&gt; &lt;br&gt; With this launch, when customers select Athena or Redshift integration, CUR 2.0 exports are automatically delivered in the optimal format (Parquet, GZIP) for the chosen query engine. Each export includes the supporting metadata and automation resources needed to get started quickly, such as infrastructure templates, table definitions, and data loading instructions, so customers can begin querying their cost data without manual configuration. As CUR 2.0 data refreshes periodically, updates are automatically reflected in the Athena or Redshift tables with no additional ETL required.&lt;br&gt; &lt;br&gt; This feature is available in all commercial AWS Regions, except the AWS GovCloud (US) Regions and the China Regions.&lt;br&gt; &lt;br&gt; To learn more about this feature, see AWS Data Exports and &lt;a href=\"https://docs.aws.amazon.com/cur/latest/userguide/what-is-data-exports.html\"&gt;AWS Billing and Cost Management&lt;/a&gt; in the &lt;i&gt;AWS Cost Management User Guide&lt;/i&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-cur2.0-athena-redshift/",
-      "publishedAt": "2026-06-02T13:40:00.000Z",
-      "updatedAt": "2026-06-02T13:40:00.000Z",
-      "categories": [
-        "General:Products",
-        "Marketing:Marchitecture"
-      ],
-      "services": [
-        "Redshift",
-        "Athena",
-        "Cost and Usage Report"
-      ],
-      "tags": [
-        "general:products",
-        "marketing:marchitecture",
-        "redshift",
-        "athena",
-        "cost and usage report"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "afa0671c03e71637",
-      "title": "Amazon RDS for SQL Server supports Bring Your Own Media",
-      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server launches Bring Your Own Media (BYOM) for Microsoft SQL Server. With BYOM, customers who migrate SQL Server applications from on-premises environments can adopt a managed database service on AWS and reuse their existing Microsoft SQL Server licenses, including Software Assurance, through Microsoft's License Mobility program. Amazon RDS provides a managed SQL Server database service that lowers operating costs with features such as high availability, automated backups and monitoring. BYOM helps customers who currently run Microsoft S",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server&lt;/a&gt; launches Bring Your Own Media (BYOM) for Microsoft SQL Server. With BYOM, customers who migrate SQL Server applications from on-premises environments can adopt a managed database service on AWS and reuse their existing Microsoft SQL Server licenses, including Software Assurance, through Microsoft's License Mobility program.&lt;br&gt; &lt;br&gt; Amazon RDS provides a managed SQL Server database service that lowers operating costs with features such as high availability, automated backups and monitoring. BYOM helps customers who currently run Microsoft SQL Server on-premises, on other clouds, or as self-managed SQL Server on Amazon EC2, and want to adopt Amazon RDS and reuse their existing Microsoft SQL Server licenses. They no longer have to incur the cost of additional Microsoft SQL Server licenses, or wait for existing license agreements to expire to adopt RDS. Amazon RDS for SQL Server BYOM is integrated with AWS License Manager so customers can track their Microsoft SQL Server license usage across their AWS environment for licensing compliance.&lt;br&gt; &lt;br&gt; To learn more about how to set up RDS SQL Server database instances with BYOM, visit the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-byom.html\" target=\"_blank\"&gt;Amazon RDS SQL Server User Guide&lt;/a&gt;. For BYOM pricing and regional availability, visit the &lt;a href=\"https://aws.amazon.com/rds/sqlserver/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for SQL Server pricing page&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/rds-sqlserver-supports-bring-your-own-media/",
-      "publishedAt": "2026-06-02T07:00:00.000Z",
-      "updatedAt": "2026-06-02T07:00:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Rds For Sql Server",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "databases",
-        "amazon rds for sql server",
-        "aws govcloud us",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "64f1b09062176855",
-      "title": "AWS HealthOmics now supports Nextflow version pinning at run time",
-      "description": "AWS HealthOmics now allows customers to specify the Nextflow engine version at run time via the StartRun API, enabling customers to pin runs to a specific Nextflow version for controlled migration. With this launch, customers can select from supported Nextflow versions (22.04, 23.10, 24.10, 25.10, 26.04) through the new engine-settings parameter, giving explicit control at the point of execution. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows. Nextflow version",
-      "descriptionHtml": "&lt;p&gt;AWS HealthOmics now allows customers to specify the Nextflow engine version at run time via the StartRun API, enabling customers to pin runs to a specific Nextflow version for controlled migration. With this launch, customers can select from supported Nextflow versions (22.04, 23.10, 24.10, 25.10, 26.04) through the new engine-settings parameter, giving explicit control at the point of execution. &lt;a href=\"https://aws.amazon.com/healthomics/\"&gt;AWS HealthOmics&lt;/a&gt; is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows.&lt;/p&gt; \n&lt;p&gt;Nextflow version pinning gives customers full control over when and how they adopt new engine versions. The run-time version override ensures that even when a workflow definition specifies a version via manifest.nextflowVersion in its config or profile, the StartRun API parameter takes precedence, enabling customers to test the same workflow across multiple engine versions without modifying workflow source code. Production workflows can remain on a validated engine version while development teams test newer versions in parallel, reducing the risk of unexpected behavior changes. This is valuable for regulated environments where pipeline validation is required before upgrading to a new engine version.&lt;/p&gt; \n&lt;p&gt;Nextflow version pinning at run time is now available for Nextflow workflow runs in all AWS HealthOmics regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Singapore, Seoul). To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/omics/latest/dev/starting-a-run.html#start-run-api-engine-settings\"&gt;Nextflow engine settings documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-healthomics-nextflow-version-pinning-at-runtime/",
-      "publishedAt": "2026-06-01T23:00:00.000Z",
-      "updatedAt": "2026-06-01T23:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence"
-      ],
-      "services": [],
-      "tags": [
-        "artificial intelligence"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f53592db32c93eed",
-      "title": "AWS HealthOmics now supports Nextflow version 26.04",
-      "description": "AWS HealthOmics now supports Nextflow version 26.04, enabling customers to take advantage of new Nextflow features and enhancements: record types, the strict syntax parser, workflow output summaries, and agent logging mode. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows. The strict syntax parser, now enabled by default in Nextflow v26.04, helps customers save compute time and costs by enforcing strict linting, consistent block structures, and unambiguous scopi",
-      "descriptionHtml": "&lt;p&gt;AWS HealthOmics now supports Nextflow version 26.04, enabling customers to take advantage of new Nextflow features and enhancements: record types,&amp;nbsp;the strict syntax parser, workflow output summaries, and agent logging mode. &lt;a href=\"https://aws.amazon.com/healthomics/\"&gt;AWS HealthOmics&lt;/a&gt; is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows.&lt;/p&gt; \n&lt;p&gt;The strict syntax parser, now enabled by default in Nextflow v26.04, helps customers save compute time and costs by enforcing strict linting, consistent block structures, and unambiguous scoping, catching issues during pipeline initialization rather than hours into workflows. Record types allow workflow developers to write workflows with meaningful data names rather than keeping track of order of tuple elements, making workflows more readable, and less error-prone. Workflow output summary in JSON format simplifies integration with downstream tooling. Agent logging mode provides structured, minimal output optimized for AI-assisted workflow debugging and development.&lt;/p&gt; \n&lt;p&gt;Nextflow v26.04 is now available in all AWS HealthOmics regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Singapore, Seoul). To learn more, visit the AWS HealthOmics &lt;a href=\"https://docs.aws.amazon.com/omics/latest/dev/workflow-definition-nextflow.html#nextflow-v26-release-notes\"&gt;Nextflow workflow definition specifics documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-healthomics-nextflow-version-26-04/",
-      "publishedAt": "2026-06-01T23:00:00.000Z",
-      "updatedAt": "2026-06-01T23:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence"
-      ],
-      "services": [],
-      "tags": [
-        "artificial intelligence"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "18a25e526906d843",
-      "title": "Amazon Connect Customer now optimizes placement of ad-hoc activities in agent schedules",
-      "description": "Amazon Connect Customer now optimizes placement of ad-hoc activities in agent schedules, making it easier for you to schedule non-productive events while automatically minimizing impact to service level goals. For example, automatically find the optimal time within the next 2 weeks to schedule compliance training for 500 agents. When adding activities such as training or meetings, you can choose one of the following placement methods: (a) anytime within the shift; (b) within a specific time window, for example, 12:00pm–4:00pm; (c) relative to the shift, for example, 1 hour after shift start an",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now optimizes placement of ad-hoc activities in agent schedules, making it easier for you to schedule non-productive events while automatically minimizing impact to service level goals. For example, automatically find the optimal time within the next 2 weeks to schedule compliance training for 500 agents. When adding activities such as training or meetings, you can choose one of the following placement methods: (a) anytime within the shift; (b) within a specific time window, for example, 12:00pm–4:00pm; (c) relative to the shift, for example, 1 hour after shift start and 2 hours before shift end. Based on your selected placement method, system automatically identifies optimal time within your specified constraints to schedule the activity while minimizing impact to service levels. This launch eliminates the need for supervisors to manually look for optimal times to schedule these events, thus improving supervisor productivity and ensuring consistent service levels for end customers.&lt;br&gt; &lt;br&gt; This feature is available in all &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#optimization_region\"&gt;AWS Regions&lt;/a&gt; where Amazon Connect Customer agent scheduling is available. To learn more about Amazon Connect Customer agent scheduling, click &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html\"&gt;here&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-connect-customer-activity-optimization/",
-      "publishedAt": "2026-06-01T18:51:00.000Z",
-      "updatedAt": "2026-06-01T18:51:00.000Z",
-      "categories": [
-        "Amazon Connect",
-        "Business Productivity",
-        "AWS Govcloud Us",
-        "Contact Center"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "amazon connect",
-        "business productivity",
-        "aws govcloud us",
-        "contact center",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a48f0f4b74799c42",
-      "title": "Amazon Connect Customer now supports up to 5,000 agents per schedule",
-      "description": "Amazon Connect Customer now supports up to 5,000 agents per schedule, making it easier for you to schedule larger business units or multiple business units that share agents (multi-skilled agents) within a single schedule. Additional scale limit updates include up to 350 agents per staffing group and up to 300 staffing groups per forecast group (for a total of up to 5,000 agents per forecast group). This launch eliminates the need to split scheduling across multiple runs or maintain separate schedules for shared agent pools, thus reducing operational complexity and enabling more accurate sched",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now supports up to 5,000 agents per schedule, making it easier for you to schedule larger business units or multiple business units that share agents (multi-skilled agents) within a single schedule. Additional scale limit updates include up to 350 agents per staffing group and up to 300 staffing groups per forecast group (for a total of up to 5,000 agents per forecast group). This launch eliminates the need to split scheduling across multiple runs or maintain separate schedules for shared agent pools, thus reducing operational complexity and enabling more accurate schedule optimization across the entire workforce.&lt;br&gt; &lt;br&gt; This feature is available in all &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#optimization_region\"&gt;AWS Regions&lt;/a&gt; where Amazon Connect Customer agent scheduling is available. To learn more about Amazon Connect Customer agent scheduling, click &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html\"&gt;here&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-connect-customer-5000-agents/",
-      "publishedAt": "2026-06-01T18:43:00.000Z",
-      "updatedAt": "2026-06-01T18:43:00.000Z",
-      "categories": [
-        "Contact Center",
-        "Business Productivity",
-        "Amazon Connect",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "contact center",
-        "business productivity",
-        "amazon connect",
-        "aws govcloud us",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ad5a5af95bf5237b",
-      "title": "Quick Research now supports customer managed keys",
-      "description": "Amazon Quick Research now enables customers to encrypt their data using customer-managed keys (CMK) through AWS Key Management Service (KMS). This enhancement allows organizations with strict security and compliance requirements to manage their own encryption keys. With customer-managed keys, you gain enhanced security control and comprehensive audit capabilities through AWS CloudTrail integration. You can encrypt your data with your own KMS keys, trace all data access for security auditing, and revoke access to compromised keys within 15 minutes during security incidents. This feature support",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick Research now enables customers to encrypt their data using customer-managed keys (CMK) through AWS Key Management Service (KMS).&lt;/p&gt; \n&lt;p&gt;This enhancement allows organizations with strict security and compliance requirements to manage their own encryption keys. With customer-managed keys, you gain enhanced security control and comprehensive audit capabilities through AWS CloudTrail integration. You can encrypt your data with your own KMS keys, trace all data access for security auditing, and revoke access to compromised keys within 15 minutes during security incidents. This feature supports multiple CMKs with one default key per AWS account per region, providing the flexibility to manage encryption across different datasets while maintaining granular control over your sensitive business intelligence data.&lt;/p&gt; \n&lt;p&gt;Customer-managed keys must be created in the same AWS account and region as your Quick resources, and only symmetric AWS KMS keys are supported.&lt;/p&gt; \n&lt;p&gt;This feature is generally available in all AWS Regions&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html#regions-qs\"&gt;where Amazon Quick is available&lt;/a&gt;. To learn more, visit the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/quick/research/\"&gt;Amazon Quick Research detail page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-quick-research-cm-keys",
-      "publishedAt": "2026-06-01T18:27:00.000Z",
-      "updatedAt": "2026-06-01T18:27:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "3350addbc6d88da0",
-      "title": "Amazon Connect Customer now provides schedule update notifications",
-      "description": "Amazon Connect Customer now provides schedule update notifications, making it easier for you to automatically notify agents when their schedules change. You can define rules to send email or text notifications (via EventBridge) to supervisors and agents when new schedules are published, when existing schedules are updated, as well as when an agent’s leave request has a change in status. For example, you can automatically email all agents when their schedules for next month become available. These automated notifications eliminate manual effort for schedulers to notify workforce when schedules ",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now provides schedule update notifications, making it easier for you to automatically notify agents when their schedules change. You can define rules to send email or text notifications (via EventBridge) to supervisors and agents when new schedules are published, when existing schedules are updated, as well as when an agent’s leave request has a change in status. For example, you can automatically email all agents when their schedules for next month become available. These automated notifications eliminate manual effort for schedulers to notify workforce when schedules are updated and for agents to continuously monitor their leave request status, improving both scheduler and agent productivity.&lt;br&gt; &lt;br&gt; This feature is available in all &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#optimization_region\"&gt;AWS Regions&lt;/a&gt; where Amazon Connect Customer agent scheduling is available. To learn more about Amazon Connect Customer agent scheduling, click &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html\"&gt;here&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-connect-customer-scheduling-notifications/",
-      "publishedAt": "2026-06-01T18:24:00.000Z",
-      "updatedAt": "2026-06-01T18:24:00.000Z",
-      "categories": [
-        "Business Productivity",
-        "AWS Govcloud Us",
-        "Amazon Connect",
-        "Contact Center"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "business productivity",
-        "aws govcloud us",
-        "amazon connect",
-        "contact center",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ee077a94add60de5",
-      "title": "Amazon Quick now supports VPC connectivity for MCP connections",
-      "description": "Amazon Quick now enables enterprise customers to connect their privately hosted Model Context Protocol (MCP) servers to Quick through Amazon Virtual Private Cloud (VPC). Amazon Quick is an AI assistant that turns questions into answers, answers into actions, and actions into outcomes for you and your entire team. Previously, Quick's MCP support was limited to third-party hosted servers accessible over the public internet. With VPC support, organizations that host MCP servers on private networks for proprietary applications, custom data sources, and internal tools can now securely extend those ",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick now enables enterprise customers to connect their privately hosted Model Context Protocol (MCP) servers to Quick through Amazon Virtual Private Cloud (VPC). Amazon Quick is an AI assistant that turns questions into answers, answers into actions, and actions into outcomes for you and your entire team. Previously, Quick's MCP support was limited to third-party hosted servers accessible over the public internet. With VPC support, organizations that host MCP servers on private networks for proprietary applications, custom data sources, and internal tools can now securely extend those capabilities to AI workflows in Quick.&lt;br&gt; &lt;br&gt; With VPC connectivity for MCP, you can connect Quick to MCP servers running on Amazon EC2, AWS Fargate, AWS Agentcore, or other compute within your private network without exposing them to the internet. During MCP connector creation, select your VPC connection and provide your MCP server URL. Once connected, your team interacts with private MCP servers through natural language in Quick, with all traffic routed securely through your VPC.&lt;br&gt; &lt;br&gt; VPC support for MCP servers is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions&lt;/a&gt; where Amazon Quick is available.&lt;br&gt; &lt;br&gt; Learn more about &lt;a href=\"https://aws.amazon.com/quick/\" target=\"_blank\"&gt;Amazon Quick&lt;/a&gt; and try for free. To learn more about connecting private MCP servers, visit the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/mcp-integration.html\" target=\"_blank\"&gt;MCP documentation&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/working-with-aws-vpc.html\" target=\"_blank\"&gt;VPC connectivity guide&lt;/a&gt;.&lt;br&gt; &lt;br&gt; &lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-quick-vpc-mcp/",
-      "publishedAt": "2026-06-01T17:26:00.000Z",
-      "updatedAt": "2026-06-01T17:26:00.000Z",
-      "categories": [
-        "Business Productivity",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "VPC"
-      ],
-      "tags": [
-        "business productivity",
-        "artificial intelligence",
-        "vpc"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "cf82b926006b7bcc",
-      "title": "Amazon SageMaker adds permissions boundaries for SCP compliance",
-      "description": "Amazon SageMaker Unified Studio now supports custom IAM permissions boundaries, so organizations that enforce Service Control Policies (SCPs) requiring permissions boundaries on all IAM roles can adopt SageMaker Unified Studio without modifying their security posture. When a user creates a project, SageMaker Unified Studio provisions three IAM roles: a project user role, an Amazon Bedrock service role, and a Bedrock Lambda execution role. With this launch, administrators can specify a permissions boundary in the Tooling blueprint configuration, and all three roles are created with that permiss",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Unified Studio now supports custom IAM permissions boundaries, so organizations that enforce Service Control Policies (SCPs) requiring permissions boundaries on all IAM roles can adopt SageMaker Unified Studio without modifying their security posture.&lt;br&gt; &lt;br&gt; When a user creates a project, SageMaker Unified Studio provisions three IAM roles: a project user role, an Amazon Bedrock service role, and a Bedrock Lambda execution role. With this launch, administrators can specify a permissions boundary in the Tooling blueprint configuration, and all three roles are created with that permissions boundary attached. This satisfies SCP requirements at creation time, and project provisioning succeeds without administrator intervention. The permissions boundary also limits what the provisioned roles can do, so administrators retain control over project-level permissions even as new projects are created. Because the permissions boundary is set at the blueprint level, it applies to every new project automatically.&lt;br&gt; &lt;br&gt; This feature is available in all &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;AWS Regions where Amazon SageMaker Unified Studio&lt;/a&gt; is available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/manage-tooling-blueprint.html\"&gt;Manage Tooling blueprint parameters&lt;/a&gt; documentation.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/05/amazon-sagemaker-scp/",
-      "publishedAt": "2026-06-01T17:00:00.000Z",
-      "updatedAt": "2026-06-01T17:00:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Analytics"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "analytics",
-        "sagemaker"
       ],
       "isNew": false
     }
