@@ -1,7 +1,254 @@
 {
-  "lastUpdated": "2026-09-04T12:33:08.999Z",
+  "lastUpdated": "2026-09-05T11:41:30.953Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "09ecc39787d399c6",
+      "title": "Amazon Bedrock Managed Knowledge Base introduces user-managed setup for SharePoint, OneDrive, and Confluence data sources",
+      "description": "AWS announces user-managed setup (3LO) for SharePoint, OneDrive, and Confluence data sources in Amazon Bedrock Managed Knowledge Base. Previously, configuring these data sources required generating 2LO credentials on the third-party side, which could be time-consuming and inaccessible for users who lack admin-level access to those systems. With user-managed setup, you simply sign in with your existing third-party credentials, and Amazon Bedrock Managed Knowledge Base handles authentication—allowing you to complete data source setup in just a few minutes. This streamlined experience lowers the ",
+      "descriptionHtml": "&lt;p&gt;AWS announces user-managed setup (3LO) for SharePoint, OneDrive, and Confluence data sources in Amazon Bedrock Managed Knowledge Base. Previously, configuring these data sources required generating 2LO credentials on the third-party side, which could be time-consuming and inaccessible for users who lack admin-level access to those systems. With user-managed setup, you simply sign in with your existing third-party credentials, and Amazon Bedrock Managed Knowledge Base handles authentication—allowing you to complete data source setup in just a few minutes.&lt;br&gt; This streamlined experience lowers the barrier to getting started with managed knowledge bases. Teams that want to quickly prototype an AI assistant grounded in their SharePoint documentation, OneDrive files, or Confluence wikis no longer need to coordinate with IT administrators to obtain service account credentials. User-managed setup complements the existing service account authentication, giving you a faster path to connect your data while still preserving the programmatic, enterprise-grade option for production workloads.&lt;br&gt; To get started, see the following resources:;&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-sharepoint-3lo-setup.html\" target=\"_blank\"&gt;SharePoint user-managed setup&lt;/a&gt; in the Amazon Bedrock User Guide,&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-onedrive-3lo-setup.html\" target=\"_blank\"&gt;OneDrive user-managed setup&lt;/a&gt; in the Amazon Bedrock User Guide and,&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-confluence-3lo-setup.html\" target=\"_blank\"&gt;Confluence user-managed setup&lt;/a&gt; in the Amazon Bedrock User Guide&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-user-managed-setup-sharepoint-onedrive-confluence/",
+      "publishedAt": "2026-09-04T21:29:00.000Z",
+      "updatedAt": "2026-09-04T21:29:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Application Services",
+        "Aiml",
+        "Developer Tools"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "business productivity",
+        "application services",
+        "aiml",
+        "developer tools",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "de4eba1167c2a07b",
+      "title": "Amazon Bedrock Managed Knowledge Base now supports ServiceNow as a native data source connector",
+      "description": "AWS announces the ServiceNow data source connector for Amazon Bedrock Managed Knowledge Base, a fully managed retrieval-augmented generation (RAG) service. Customers can now connect their ServiceNow instance to crawl knowledge articles and service catalog items directly into their managed knowledge base. Previously, bringing ServiceNow content into Bedrock Knowledge Bases required building and maintaining custom ingestion pipelines—now, you simply provide your ServiceNow instance credentials, and the connector handles data crawling, metadata extraction, and incremental sync automatically. The ",
+      "descriptionHtml": "&lt;p&gt;AWS announces the ServiceNow data source connector for Amazon Bedrock Managed Knowledge Base, a fully managed retrieval-augmented generation (RAG) service. Customers can now connect their ServiceNow instance to crawl knowledge articles and service catalog items directly into their managed knowledge base. Previously, bringing ServiceNow content into Bedrock Knowledge Bases required building and maintaining custom ingestion pipelines—now, you simply provide your ServiceNow instance credentials, and the connector handles data crawling, metadata extraction, and incremental sync automatically.&lt;br&gt; The ServiceNow connector crawls knowledge articles and service catalog items, including file attachments, giving your AI agents access to the institutional knowledge already maintained in ServiceNow. You can scope crawls to specific knowledge bases, article categories, or service catalogs using sys ID inclusion lists, ensuring only relevant content is ingested. This makes it straightforward to power employee-facing IT assistants, HR helpdesks, or customer support agents grounded in your organization's up-to-date ServiceNow content.&lt;br&gt; To learn more, see &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-servicenow.html\" target=\"_blank\"&gt;ServiceNow data source&lt;/a&gt; in the Amazon Bedrock User Guide. For more information about Amazon Bedrock Managed Knowledge Base, visit the &lt;a href=\"https://aws.amazon.com/bedrock/knowledge-bases/\" target=\"_blank\"&gt;Amazon Bedrock Knowledge Bases product page&lt;/a&gt;.&lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-servicenow-native-data-source-connector/",
+      "publishedAt": "2026-09-04T21:14:00.000Z",
+      "updatedAt": "2026-09-04T21:14:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Artificial Intelligence",
+        "Aiml"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "business productivity",
+        "artificial intelligence",
+        "aiml",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ad51dd5101954569",
+      "title": "Amazon Bedrock Managed Knowledge Base now supports automatic sync scheduling for data source connectors",
+      "description": "AWS announces automatic sync scheduling for Amazon Bedrock Managed Knowledge Base, a fully managed retrieval-augmented generation (RAG) service that handles data ingestion, storage optimization, and advanced retrieval without requiring you to manage vector databases or data pipelines. Previously, keeping your knowledge base current required manually triggering a sync each time your source data changed or building a custom solution. Now, you can configure daily, weekly, or monthly sync schedules for all native data source connectors, so your AI agents always retrieve the most up-to-date informa",
+      "descriptionHtml": "&lt;p&gt;AWS announces automatic sync scheduling for Amazon Bedrock Managed Knowledge Base, a fully managed retrieval-augmented generation (RAG) service that handles data ingestion, storage optimization, and advanced retrieval without requiring you to manage vector databases or data pipelines. Previously, keeping your knowledge base current required manually triggering a sync each time your source data changed or building a custom solution. Now, you can configure daily, weekly, or monthly sync schedules for all native data source connectors, so your AI agents always retrieve the most up-to-date information.&lt;br&gt; With automatic sync scheduling, you can match your sync frequency to how often your source content changes. For example, set a daily sync for a rapidly evolving customer support knowledge base in Confluence, a weekly sync for SharePoint policy documents that update periodically, or a monthly sync for reference materials stored in Amazon S3. This eliminates the need to build and maintain custom scheduling workarounds, reducing operational overhead while ensuring your retrieval-augmented generation applications stay grounded in current enterprise data.&lt;br&gt; To learn more, see &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-sync.html#kb-managed-sync-schedule\"&gt;Sync scheduling for data sources&lt;/a&gt; in the Amazon Bedrock User Guide. For more information about Amazon Bedrock Managed Knowledge Base, visit the &lt;a href=\"https://aws.amazon.com/bedrock/knowledge-bases/\" target=\"_blank\"&gt;Amazon Bedrock Knowledge Bases product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-automatic-sync-scheduling-data-source-connectors/",
+      "publishedAt": "2026-09-04T21:01:00.000Z",
+      "updatedAt": "2026-09-04T21:01:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Business Productivity",
+        "Aiml"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "business productivity",
+        "aiml",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "465d4d97c09f1e02",
+      "title": "Amazon EC2 now supports specifying compatible instance types on AMIs",
+      "description": "Amazon EC2 now enables AMI owners to define which instance types are compatible with their AMIs. Owners can specify supported instance types, unsupported instance types, or both — and any launch attempt on a non-permitted instance type is automatically blocked. AMI owners now have a built-in way to prevent launches on instances that are not compatible with their AMIs. This reduces the risk of failed launches due to incompatible instance-AMI pairings. By default, an AMI can be launched on any instance type, so existing workflows remain unaffected until restrictions are explicitly applied. This ",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 now enables AMI owners to define which instance types are compatible with their AMIs. Owners can specify supported instance types, unsupported instance types, or both — and any launch attempt on a non-permitted instance type is automatically blocked.&lt;/p&gt; \n&lt;p&gt;AMI owners now have a built-in way to prevent launches on instances that are not compatible with their AMIs. This reduces the risk of failed launches due to incompatible instance-AMI pairings. By default, an AMI can be launched on any instance type, so existing workflows remain unaffected until restrictions are explicitly applied.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions at no additional cost. To learn more, please visit the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ami-allowed-instance-types.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-images-supported-instances",
+      "publishedAt": "2026-09-04T19:26:00.000Z",
+      "updatedAt": "2026-09-04T19:26:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "950d7b9c7a6a788f",
+      "title": "Amazon ECS introduces Early Success Criteria for service deployments",
+      "description": "Amazon Elastic Container Service (Amazon ECS) now supports Early Success Criteria for rolling service deployments, giving you the flexibility to define when a deployment is considered successful based on your confidence level and the operational needs of your workload. This can help you complete deployments sooner and unblock subsequent deployments, CI/CD pipelines, and other dependent operations. With Early Success Criteria, you configure the healthy percent - the proportion of desired tasks that must be running and healthy on the target service revision before the deployment is marked succes",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\"&gt;Amazon Elastic Container Service&lt;/a&gt; (Amazon ECS)&amp;nbsp;now supports Early Success Criteria for rolling service deployments, giving you the flexibility to define when a deployment is considered successful based on your confidence level and the operational needs of your workload. This can help you complete deployments sooner and unblock subsequent deployments, CI/CD pipelines, and other dependent operations.&lt;/p&gt; \n&lt;p&gt;With Early Success Criteria, you configure the healthy percent - the proportion of desired tasks that must be running and healthy on the target service revision before the deployment is marked successful. For example, with a desired count of 100 and a healthy percent of 90%, Amazon ECS marks the deployment successful after 90 tasks are healthy and continues launching the remaining tasks through regular service scaling, outside the deployment lifecycle. This can benefit workloads running on specialized or constrained capacity, such as GPU-accelerated inference workloads, where hardware availability can extend task launch times. Early Success Criteria also gives you more control over how long deployment rollback monitoring applies, allowing it to protect the deployment until your configured success criteria are met while subsequent scale-out continues through regular service scaling. You can also choose how Amazon ECS handles source service revision cleanup using BLOCKING or DEFERRED. With BLOCKING, Amazon ECS completes source revision cleanup before declaring success. With DEFERRED, Amazon ECS declares success when the criteria are met and drains source revision tasks asynchronously outside the deployment. This benefits services with active long-lived connections or task scale-in protection, where source revision tasks may need to remain running without holding the deployment open.&lt;/p&gt; \n&lt;p&gt;The feature is available with the rolling deployment strategy in all AWS Commercial and AWS GovCloud (US)&amp;nbsp;&lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\"&gt;Regions&lt;/a&gt;. You can configure Early Success Criteria for new and existing Amazon ECS services using the AWS Management Console, AWS CLI, AWS SDKs, and infrastructure as code (IaC) tools. To learn more, see our &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/early-success-criteria.html\" target=\"_blank\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-deployments-early-success/",
+      "publishedAt": "2026-09-04T17:00:00.000Z",
+      "updatedAt": "2026-09-04T17:00:00.000Z",
+      "categories": [
+        "Containers",
+        "Amazon Ecs",
+        "AWS Govcloud Us",
+        "AWS Fargate",
+        "Serverless"
+      ],
+      "services": [
+        "ECS",
+        "Fargate"
+      ],
+      "tags": [
+        "containers",
+        "amazon ecs",
+        "aws govcloud us",
+        "aws fargate",
+        "serverless",
+        "ecs",
+        "fargate"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ba859f440081749d",
+      "title": "AWS MCP Server adds a serverless capability for AWS Lambda functions",
+      "description": "Today, AWS Model Context Protocol Server (AWS MCP Server) added a serverless capability so that coding agents such as Claude Code and Kiro can efficiently diagnose issues with your Lambda functions. The serverless capability helps you troubleshoot your running Lambda functions and their connected resources. The AWS MCP Server, available through the Agent Toolkit for AWS or as a standalone installation, is a managed service that gives AI coding agents secure access to AWS services. With the new serverless capability in the AWS MCP Server, your coding agent inspects your Lambda function and its ",
+      "descriptionHtml": "&lt;p&gt;Today, &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/mcp-server.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Model Context Protocol Server&lt;/a&gt; (AWS MCP Server) added a serverless capability so that coding agents such as Claude Code and Kiro can efficiently diagnose issues with your Lambda functions. The serverless capability helps you troubleshoot your running Lambda functions and their connected resources.&lt;/p&gt; \n&lt;p&gt;The AWS MCP Server, available through the &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Agent Toolkit for AWS&lt;/a&gt; or as a standalone installation, is a managed service that gives AI coding agents secure access to AWS services. With the new serverless capability in the AWS MCP Server, your coding agent inspects your Lambda function and its connected resources across Amazon API Gateway, Amazon EventBridge, Amazon S3, Amazon DynamoDB, Amazon SNS, Amazon SQS, and AWS Step Functions. The agent can correlate error signals against a 7-day baseline to pinpoint what changed, surface recurring errors to identify trends, retrieve the deployed configuration of your function and connected resources, provide a timeline of recent changes to track what happened, and analyze service latency across connected resources. As the agent gets comprehensive data in a single call, it consumes fewer tokens compared to orchestrating multiple API calls.&lt;/p&gt; \n&lt;p&gt;To get started, configure the &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Agent toolkit for AWS&lt;/a&gt; by running ‘aws configure agent-toolkit’ from the AWS CLI, or enable the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/getting-started-aws-mcp-server.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS MCP Server&lt;/a&gt; directly.&lt;/p&gt; \n&lt;p&gt;The AWS MCP Server can access services in all commercial &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions&lt;/a&gt;, while the AWS MCP Server itself runs in the US East (N. Virginia) and Europe (Frankfurt) Regions. The serverless diagnostic capabilities in the AWS MCP Server are available at no additional cost. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/capabilities.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;user guide&lt;/a&gt;.&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-mcp-server-serverless/",
+      "publishedAt": "2026-09-04T16:31:00.000Z",
+      "updatedAt": "2026-09-04T16:31:00.000Z",
+      "categories": [
+        "Serverless",
+        "AWS Developer Tools"
+      ],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "serverless",
+        "aws developer tools",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "592afb081698c732",
+      "title": "Amazon EC2 C8g instances now available in additional regions",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8g instances are available in AWS Asia Pacific (Taipei, New Zealand), and AWS GovCloud (US-East) regions. These instances are powered by AWS Graviton4 processors and deliver up to 30% better performance compared to AWS Graviton3-based instances. Amazon EC2 C8g instances are built for compute-intensive workloads, such as high performance computing (HPC), batch processing, gaming, video encoding, scientific modeling, distributed analytics, CPU-based machine learning (ML) inference, and ad serving. These instances are built on the AWS Nit",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8g instances are available in AWS Asia Pacific (Taipei, New Zealand), and&amp;nbsp;AWS GovCloud (US-East) regions. These instances are powered by AWS Graviton4 processors and deliver up to 30% better performance compared to AWS Graviton3-based instances. Amazon EC2 C8g instances are built for compute-intensive workloads, such as high performance computing (HPC), batch processing, gaming, video encoding, scientific modeling, distributed analytics, CPU-based machine learning (ML) inference, and ad serving. These instances are built on the &lt;a href=\"https://aws.amazon.com/ec2/nitro/\"&gt;AWS Nitro System&lt;/a&gt;, which oﬄoads CPU virtualization, storage, and networking functions to dedicated hardware and software to enhance the performance and security of your workloads.&lt;br&gt; &lt;br&gt; AWS Graviton4-based Amazon EC2 instances deliver the best performance and energy efficiency for a broad range of workloads running on Amazon EC2. These instances offer larger instance sizes with up to 3x more vCPUs and memory compared to Graviton3-based Amazon C7g instances. AWS Graviton4 processors are up to 40% faster for databases, 30% faster for web applications, and 45% faster for large Java applications than AWS Graviton3 processors. C8g instances are available in 12 different instance sizes, including two bare metal sizes. They offer up to 50 Gbps enhanced networking bandwidth and up to 40 Gbps of bandwidth to the Amazon Elastic Block Store (Amazon EBS).&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://aws.amazon.com/ec2/instance-types/c8g/\"&gt;Amazon EC2 C8g Instances&lt;/a&gt;. To explore how to migrate your workloads to Graviton-based instances, see &lt;a href=\"https://aws.amazon.com/ec2/graviton/fast-start/\"&gt;AWS Graviton Fast Start program&lt;/a&gt; and &lt;a href=\"https://github.com/aws/porting-advisor-for-graviton\"&gt;Porting Advisor for Graviton&lt;/a&gt;.&amp;nbsp;To get started, see the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ec2-c8g-instances-additional-regions/",
+      "publishedAt": "2026-09-04T14:06:00.000Z",
+      "updatedAt": "2026-09-04T14:06:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8ef7c19197b9d52e",
+      "title": "AWS Transfer Family SFTP Connectors now support continuing file transfers during credential rotation",
+      "description": "AWS Transfer Family SFTP Connectors now continue running file transfers while you rotate the credentials used to authenticate with remote SFTP servers. You no longer need to update the connector to point to a new secret version each time a credential rotates, removing a manual step and helping avoid failed transfers during the rotation window. Connectors can now retrieve credentials from an ordered list of AWS Secrets Manager version stages, such as the current and previous versions, during authentication. The connector automatically tries each version in the order you specify and proceeds wit",
+      "descriptionHtml": "&lt;p&gt;AWS Transfer Family SFTP Connectors now continue running file transfers while you rotate the credentials used to authenticate with remote SFTP servers. You no longer need to update the connector to point to a new secret version each time a credential rotates, removing a manual step and helping avoid failed transfers during the rotation window.&lt;/p&gt; \n&lt;p&gt;Connectors can now retrieve credentials from an ordered list of AWS Secrets Manager version stages, such as the current and previous versions, during authentication. The connector automatically tries each version in the order you specify and proceeds with the first that succeeds, so transfers continue uninterrupted as credentials are rotated on either side. You configure this when you create or update a connector, and the connector's credentials must be stored in AWS Secrets Manager.&lt;/p&gt; \n&lt;p&gt;Support for continuing transfers during credential rotation is available in all AWS Regions where AWS Transfer Family SFTP Connectors are supported. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/transfer/latest/userguide/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Transfer Family User Guide&lt;/a&gt;. Get started with AWS Transfer Family in the &lt;a href=\"https://console.aws.amazon.com/transfer/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Transfer Family console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/transfer-family-sftp-credential-rotation/",
+      "publishedAt": "2026-09-04T08:00:00.000Z",
+      "updatedAt": "2026-09-04T08:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Transfer Family"
+      ],
+      "tags": [
+        "transfer family"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "36d6a6a1f4ccc3d8",
+      "title": "Amazon SageMaker AI Batch Transform now supports G6e instances",
+      "description": "Amazon SageMaker AI now supports Amazon EC2 G6e instances for batch transform. Batch Transform enables you to run predictions on datasets stored in Amazon S3 and is suited for large datasets that do not require a persistent inference endpoint. Amazon EC2 G6e instances are powered by up to eight NVIDIA L40S Tensor Core GPUs with 48 GB of memory per GPU and third-generation AMD EPYC processors. G6e instances deliver improved performance for GPU-intensive workloads. With this launch, you can use G6e instances for GPU-intensive offline inference workloads, including large language models and diffu",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker AI now supports &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g6e/\"&gt;Amazon EC2 G6e instances&lt;/a&gt; for batch transform. Batch Transform enables you to run predictions on datasets stored in Amazon S3 and is suited for large datasets that do not require a persistent inference endpoint.&lt;/p&gt;\n&lt;p&gt;Amazon EC2 G6e instances are powered by up to eight NVIDIA L40S Tensor Core GPUs with 48 GB of memory per GPU and third-generation AMD EPYC processors. G6e instances deliver improved performance for GPU-intensive workloads. With this launch, you can use G6e instances for GPU-intensive offline inference workloads, including large language models and diffusion models that generate images, video, and audio. To get started, select a supported ml.g6e instance type when creating a Batch Transform job through AWS SDKs, AWS CLI, or the CreateTransformJob API.&lt;/p&gt;\n&lt;p&gt;G6e support for Batch Transform is available in US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Mumbai), and Asia Pacific (Hyderabad). To learn more, visit the &lt;a href=\"https://aws.amazon.com/sagemaker/ai/deploy/\"&gt;Amazon SageMaker AI&lt;/a&gt; product page and see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html\"&gt;Batch Transform documentation&lt;/a&gt;. For pricing information on these instances, please visit our &lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/sagemaker-batch-transform-g6e-instances/",
+      "publishedAt": "2026-09-04T08:00:00.000Z",
+      "updatedAt": "2026-09-04T08:00:00.000Z",
+      "categories": [
+        "Amazon Sagemaker",
+        "Artificial Intelligence",
+        "Compute",
+        "Amazon Ec2",
+        "Amazon Sagemaker Deploy"
+      ],
+      "services": [
+        "EC2",
+        "Batch",
+        "SageMaker"
+      ],
+      "tags": [
+        "amazon sagemaker",
+        "artificial intelligence",
+        "compute",
+        "amazon ec2",
+        "amazon sagemaker deploy",
+        "ec2",
+        "batch",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e1148fe3ca91ede9",
+      "title": "Amazon EC2 C9g and C9gd instances are now available in Asia Pacific (Tokyo) region",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C9g and C9gd instances, powered by AWS Graviton5 processors, are available in the Asia Pacific (Tokyo) region. AWS Graviton5 processors are the fifth generation of custom-designed CPUs, delivering the best price performance for compute-intensive workloads running on Amazon EC2. C9g and C9gd instances deliver up to 25% better compute performance compared to AWS Graviton4-based C8g and C8gd instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances ",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C9g and C9gd instances, powered by AWS Graviton5 processors, are available in the Asia Pacific (Tokyo) region. AWS Graviton5 processors are the fifth generation of custom-designed CPUs, delivering the best price performance for compute-intensive workloads running on Amazon EC2.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/c9g/\"&gt;C9g and C9gd instances&lt;/a&gt; deliver up to 25% better compute performance compared to AWS Graviton4-based C8g and C8gd instances. They are up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning. These instances are built on the sixth-generation &lt;a href=\"https://aws.amazon.com/ec2/nitro/\"&gt;AWS Nitro System&lt;/a&gt; and are the first to feature the &lt;a href=\"https://aws.amazon.com/blogs/compute/aws-nitro-isolation-engine-formally-verifying-the-hypervisor-in-the-aws-nitro-system/\"&gt;Nitro Isolation Engine&lt;/a&gt;, harnessing formal verification to provide mathematical assurance that customer workloads are isolated from each other and AWS operators, pioneering a new standard for mathematically proven cloud security.&lt;/p&gt; \n&lt;p&gt;C9g instances are ideal for workloads such as high-performance computing (HPC), batch processing, gaming, video encoding, scientific modeling, distributed analytics, CPU-based machine learning (ML) inference, real time analytics, and ad serving. C9gd instances offer local NVMe-based SSD block-level storage for customers running compute-intensive workloads that also require high-speed, low-latency local storage for scratch space, temporary files, and caches.&lt;/p&gt; \n&lt;p&gt;C9g and C9gd instances are available for purchase in Asia Pacific (Tokyo) via Savings Plans, On-Demand, Spot instances, Dedicated instances, or Dedicated hosts. &lt;a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\"&gt;Level up your compute with AWS Graviton&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/ec2/instance-types/c9g/\"&gt;get started today.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-c9g-c9gd-asia-pacific-tokyo/",
+      "publishedAt": "2026-09-03T23:00:00.000Z",
+      "updatedAt": "2026-09-03T23:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2",
+        "AWS Graviton",
+        "Aws"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "aws graviton",
+        "aws",
+        "ec2"
+      ],
+      "isNew": true
+    },
     {
       "id": "c00f139beb2a3efa",
       "title": "Amazon ECS Managed Daemons now support non-critical daemons",
@@ -25,6 +272,30 @@
         "aws fargate",
         "ecs",
         "fargate"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f88bcbc6f882a7a0",
+      "title": "Amazon EC2 M9g and M9gd instances are now available in four additional regions",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9g and M9gd instances, powered by AWS Graviton5 processors, are available in Europe (Ireland) and Asia Pacific (Singapore, Sydney, Tokyo) regions. AWS Graviton5 processors are the fifth generation of custom-designed CPUs, delivering the best price performance for memory-intensive workloads running on Amazon EC2. M9g and M9gd instances deliver up to 25% better performance compared to AWS Graviton4-based M8g and M8gd instances. They are up to 30% faster for databases. These instances are built on the sixth-generation AWS Nitro System and",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M9g and M9gd instances, powered by AWS Graviton5 processors, are available in Europe (Ireland) and Asia Pacific (Singapore, Sydney, Tokyo) regions. AWS Graviton5 processors are the fifth generation of custom-designed CPUs, delivering the best price performance for memory-intensive workloads running on Amazon EC2.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ec2/instance-types/m9g/\"&gt;M9g and M9gd instances&lt;/a&gt; deliver up to 25% better performance compared to AWS Graviton4-based M8g and M8gd instances. They are up to 30% faster for databases. These instances are built on the sixth-generation &lt;a href=\"https://aws.amazon.com/ec2/nitro/\"&gt;AWS Nitro System&lt;/a&gt; and are the first to feature the &lt;a href=\"https://aws.amazon.com/blogs/compute/aws-nitro-isolation-engine-formally-verifying-the-hypervisor-in-the-aws-nitro-system/\"&gt;Nitro Isolation Engine&lt;/a&gt;, harnessing formal verification to provide mathematical assurance that customer workloads are isolated from each other and AWS operators, pioneering a new standard for mathematically proven cloud security.&lt;/p&gt; \n&lt;p&gt;M9g instances are ideal for workloads such as open-source databases, in-memory caches, big data analytics, and memory-intensive applications. M9gd instances offer local NVMe-based SSD block-level storage for customers running memory-intensive workloads that also require high-speed, low-latency local storage for scratch space, temporary files, and caches.&lt;/p&gt; \n&lt;p&gt;M9g and M9gd instances are available for purchase in these four regions via Savings Plans, On-Demand, Spot instances, Dedicated instances, or Dedicated hosts. &lt;a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\"&gt;Level up your compute with AWS Graviton&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/ec2/instance-types/m9g/\"&gt;get started today.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-m9g-m9gd-four-regions/",
+      "publishedAt": "2026-09-03T21:00:00.000Z",
+      "updatedAt": "2026-09-03T21:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2",
+        "AWS Graviton"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "aws graviton",
+        "ec2"
       ],
       "isNew": true
     },
@@ -1401,7 +1672,7 @@
         "s3",
         "kinesis"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7b04fba049cf7a45",
@@ -1420,7 +1691,7 @@
         "s3",
         "kinesis"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "cd237f7b9dddf421",
@@ -1442,7 +1713,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "31ed5a8613a36b3d",
@@ -1462,7 +1733,7 @@
         "artificial intelligence",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c4c1a3c99fdfaf03",
@@ -1482,7 +1753,7 @@
         "artificial intelligence",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9deadf9c0c0b4233",
@@ -1503,7 +1774,7 @@
         "government and public sector",
         "artificial intelligence"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f8764c6ac7624c8f",
@@ -1527,7 +1798,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2a84b92108e71b32",
@@ -1551,7 +1822,7 @@
         "eks",
         "emr"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "90adeec31c9279b7",
@@ -1573,7 +1844,7 @@
         "amazon aurora",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "5ec0550acd86707d",
@@ -1597,7 +1868,7 @@
         "amazon cloudwatch",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1dd8c48d1266e55f",
@@ -1619,7 +1890,7 @@
         "aws govcloud us",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fff1f3f28b4284d7",
@@ -10923,252 +11194,6 @@
         "security identity and compliance",
         "aws security hub",
         "security hub"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6cad7d97f30d759f",
-      "title": "Amazon EC2 M8gd and R8gd instances are now available in additional AWS Regions",
-      "description": "Amazon Elastic Compute Cloud (Amazon EC2) M8gd and R8gd instances are available in additional AWS regions. EC2 M8gd and R8gd instances are available in Europe (Paris) and Asia Pacific (Mumbai). Additionally, EC2 R8gd instances are available in Europe (Stockholm, Milan) and Asia Pacific (Osaka, Melbourne, Singapore, Taipei) Regions. These instances feature up to 11.4 TB of local NVMe-based SSD block-level storage and are powered by AWS Graviton4 processors, delivering up to 30% better performance over Graviton3-based instances. These instances are built on the AWS Nitro System and are a great f",
-      "descriptionHtml": "&lt;p&gt;Amazon Elastic Compute Cloud (Amazon EC2) M8gd and R8gd instances are available in additional AWS regions. EC2 M8gd and R8gd instances are available in Europe (Paris) and Asia Pacific (Mumbai). Additionally, EC2 R8gd instances are available in Europe (Stockholm, Milan) and Asia Pacific (Osaka, Melbourne, Singapore, Taipei) Regions.&lt;br&gt; &lt;br&gt; These instances feature up to 11.4 TB of local NVMe-based SSD block-level storage and are powered by AWS Graviton4 processors, delivering up to 30% better performance over Graviton3-based instances. These instances are built on the AWS Nitro System and are a great fit for applications that need access to high-speed, low latency local storage.&lt;br&gt; &lt;br&gt; Each instance is available in 12 different sizes. They provide up to 50 Gbps of network bandwidth and up to 40 Gbps of bandwidth to the Amazon Elastic Block Store (Amazon EBS). Additionally, customers can now adjust the network and&lt;br&gt; Amazon EBS bandwidth on these instances by 25% using EC2 instance bandwidth weighting conﬁguration, providing greater ﬂexibility with the allocation of bandwidth resources to better optimize workloads. These instances offer Elastic Fabric Adapter (EFA) networking on 24xlarge, 48xlarge, metal-24xl, and metal-48xl sizes.&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8g/\"&gt;M8gd instances&lt;/a&gt; or &lt;a href=\"https://aws.amazon.com/ec2/instance-types/r8g/\"&gt;R8gd instances&lt;/a&gt;. To explore how to migrate your workloads to Graviton-based instances, see &lt;a href=\"https://aws.amazon.com/ec2/graviton/fast-start/\"&gt;AWS Graviton Fast Start program&lt;/a&gt;. To get started, see the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-m8gd-r8gd-aws-regions/",
-      "publishedAt": "2026-07-08T19:29:00.000Z",
-      "updatedAt": "2026-07-08T19:29:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "eec1c7951b251e00",
-      "title": "Amazon Redshift RG instances now available on the trailing track",
-      "description": "Amazon Redshift now supports Graviton-based RG instances on the trailing track . Starting July 7, 2026, rg.4xlarge and rg.xlarge instance types are available for customers running workloads on the trailing track (P201). The trailing track is designed for customers who prioritize stability for production workloads, running on a version already validated through the leading track. With RG instances now available on both tracks, customers can take advantage of AWS Graviton-powered performance - delivering up to 2.4x faster query performance than RA3 instances at 30% lower price per vCPU. To get s",
-      "descriptionHtml": "&lt;p&gt;Amazon Redshift now supports Graviton-based RG instances on the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/tracks.html\"&gt;trailing track&lt;/a&gt;. Starting July 7, 2026, rg.4xlarge and rg.xlarge instance types are available for customers running workloads on the trailing track (P201).&lt;/p&gt; \n&lt;p&gt;The trailing track is designed for customers who prioritize stability for production workloads, running on a version already validated through the leading track. With RG instances now available on both tracks, customers can take advantage of AWS Graviton-powered performance - delivering up to 2.4x faster query performance than RA3 instances at 30% lower price per vCPU.&lt;br&gt; &lt;br&gt; To get started, customers can provision a new cluster or resize an existing cluster to an rg.4xlarge or rg.xlarge instance type on the trailing track (P201) in the AWS Management Console, AWS CLI, or AWS SDKs.&lt;br&gt; &lt;br&gt; For more information, see &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/cluster-versions.html\"&gt;Amazon Redshift cluster versions&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-redshift-graviton-rg-instances-trailing-track",
-      "publishedAt": "2026-07-08T18:12:00.000Z",
-      "updatedAt": "2026-07-08T18:12:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Redshift"
-      ],
-      "services": [
-        "Redshift"
-      ],
-      "tags": [
-        "analytics",
-        "amazon redshift",
-        "redshift"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a2238c9567d733d0",
-      "title": "Amazon Aurora DSQL change data capture (CDC) Is now generally available",
-      "description": "Amazon Aurora DSQL change data capture (CDC) is now generally available, enabling you to stream real-time database changes to Amazon Kinesis Data Streams for event-driven architectures and data integration workflows. Aurora DSQL CDC automatically captures the results of insert, update, and delete operations as change events and delivers them to Kinesis Data Streams with no infrastructure to manage. You can use CDC to synchronize data across microservices, trigger AWS Lambda functions, or deliver changes to Amazon S3, Amazon Redshift, and Amazon OpenSearch Service via Amazon Data Firehose. CDC ",
-      "descriptionHtml": "&lt;p&gt;Amazon Aurora DSQL change data capture (CDC) is now generally available, enabling you to stream real-time database changes to Amazon Kinesis Data Streams for event-driven architectures and data integration workflows.&lt;br&gt; &lt;br&gt; Aurora DSQL CDC automatically captures the results of insert, update, and delete operations as change events and delivers them to Kinesis Data Streams with no infrastructure to manage. You can use CDC to synchronize data across microservices, trigger AWS Lambda functions, or deliver changes to Amazon S3, Amazon Redshift, and Amazon OpenSearch Service via Amazon Data Firehose. CDC streaming is designed to have zero impact on your database workload performance.&lt;br&gt; &lt;br&gt; CDC streaming is available in all AWS Regions where &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Aurora DSQL is available.&lt;/a&gt; Get started with Aurora DSQL for free with the &lt;a href=\"https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank\\&amp;amp;all-free-tier.sort-order=asc\\&amp;amp;awsf.Free%20Tier%20Types=*all\\&amp;amp;awsf.Free%20Tier%20Categories=categories%23databases\"&gt;AWS Free Tier&lt;/a&gt;. To learn more about CDC in Aurora DSQL, visit the &lt;a href=\"https://docs.aws.amazon.com/aurora-dsql/latest/userguide/cdc-setup.html\"&gt;documentation page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-aurora-dsql-cdc-ga/",
-      "publishedAt": "2026-07-08T18:00:00.000Z",
-      "updatedAt": "2026-07-08T18:00:00.000Z",
-      "categories": [
-        "Databases"
-      ],
-      "services": [
-        "Aurora"
-      ],
-      "tags": [
-        "databases",
-        "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f14e7286aabe59cd",
-      "title": "Amazon Connect Customer now supports forecasting, planning, and scheduling for Tasks and Emails",
-      "description": "Amazon Connect Customer now supports forecasting, capacity planning, and scheduling for Tasks and Emails, enabling you to plan and optimize your workforce across all workloads (Voice, Chat, Tasks, Emails). Connect Customer accounts for the unique characteristics of each channel, including concurrent work handling, duration of work from minutes to months, and distinct service level requirements, so your forecasts and schedules reflect how your operation actually runs. For example, if your agents handle email inquiries or tasks such as case processing alongside voice calls, you can now generate ",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now supports forecasting, capacity planning, and scheduling for Tasks and Emails, enabling you to plan and optimize your workforce across all workloads (Voice, Chat, Tasks, Emails). Connect Customer accounts for the unique characteristics of each channel, including concurrent work handling, duration of work from minutes to months, and distinct service level requirements, so your forecasts and schedules reflect how your operation actually runs. For example, if your agents handle email inquiries or tasks such as case processing alongside voice calls, you can now generate a unified forecast that accounts for all of these workloads and create schedules that efficiently allocate agents across channels. Thus enabling end-to-end workforce optimization within a single solution and ensuring consistent service levels across all customer interaction channels.&lt;br&gt; &lt;br&gt; This feature is available in all &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#optimization_region\"&gt;AWS Regions&lt;/a&gt; where Amazon Connect Customer agent scheduling is available. To learn more about Amazon Connect Customer agent scheduling, click &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html\"&gt;here&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-connect-customer-agent-scheduling-tasks/",
-      "publishedAt": "2026-07-08T17:00:00.000Z",
-      "updatedAt": "2026-07-08T17:00:00.000Z",
-      "categories": [
-        "Contact Center",
-        "AWS Govcloud Us",
-        "Amazon Connect",
-        "Business Productivity"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "contact center",
-        "aws govcloud us",
-        "amazon connect",
-        "business productivity",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a63640e7ed111486",
-      "title": "AWS Neuron 2.31.0 now available with NKI 0.5.0 and UltraServer Operator",
-      "description": "AWS Neuron 2.31.0 is now available, introducing NKI 0.5.0 with new MX FP8 scale dtype support, tensor indirection on compute operations for fewer instructions in indexed access patterns, and new NkiTensor view APIs for zero-cost tensor layout transformations. This release also introduces the Neuron UltraServer Operator for Amazon EKS in public beta, automating UltraServer discovery, workload allocation, and resource claim generation for Trainium UltraServer workloads on Amazon EKS. The Neuron Compiler includes a redesigned code generation backend now enabled by default on Trn2 and Trn3, delive",
-      "descriptionHtml": "&lt;p&gt;AWS Neuron 2.31.0 is now available, introducing NKI 0.5.0 with new MX FP8 scale dtype support, tensor indirection on compute operations for fewer instructions in indexed access patterns, and new NkiTensor view APIs for zero-cost tensor layout transformations. This release also introduces the Neuron UltraServer Operator for Amazon EKS in public beta, automating UltraServer discovery, workload allocation, and resource claim generation for Trainium UltraServer workloads on Amazon EKS.&lt;/p&gt; \n&lt;p&gt;The Neuron Compiler includes a redesigned code generation backend now enabled by default on Trn2 and Trn3, delivering improved performance. The Neuron Runtime adds contiguous shared scratchpad support, simplifying device configuration by eliminating the need to manually set scratchpad page sizes. The NKI Library adds 14 new experimental kernels covering MoE training collectives, deformable attention, DeepSeek MLA projection, and ring attention, alongside PyTorch reference implementations. Neuron Explorer adds System Trace Viewer source code linking and updated default grouping for improved workload debugging.&lt;/p&gt; \n&lt;p&gt;To get started, see the following resources:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/about-neuron/whats-new.html\"&gt;AWS Neuron 2.31.0 What's New&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/release-notes/index.html\"&gt;AWS Neuron 2.31.0 Release Notes&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/nki/index.html\"&gt;Neuron Kernel Interface (NKI) Documentation&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;&lt;a href=\"https://awsdocs-neuron.readthedocs-hosted.com/en/latest/tools/neuron-agentic-development/index.html\"&gt;Neuron Agentic Development&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ai/machine-learning/neuron/\"&gt;AWS Neuron Developer Guide&lt;/a&gt;&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-announce-neuron-2-31-0",
-      "publishedAt": "2026-07-08T15:58:00.000Z",
-      "updatedAt": "2026-07-08T15:58:00.000Z",
-      "categories": [
-        "Developer Tools",
-        "Artificial Intelligence"
-      ],
-      "services": [],
-      "tags": [
-        "developer tools",
-        "artificial intelligence"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "344ae7d544dce339",
-      "title": "Amazon EC2 High Memory U7i instances now available in AWS Europe (Zurich) region",
-      "description": "Amazon EC2 High Memory U7i instances with 12TB of memory (u7i-12tb.224xlarge) are now available in the AWS Europe (Zurich) region. U7i instances are part of AWS 7th generation and are powered by custom fourth generation Intel Xeon Scalable Processors (Sapphire Rapids). U7i-12tb instances offer 12TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment. U7i-12tb instances offer 896 vCPUs, support up to 100Gbps Elastic Block Storage (EBS) for faster data loading and backups, deliver up to 100Gbps of network bandwidth, and support ENA Ex",
-      "descriptionHtml": "&lt;p&gt;Amazon EC2 High Memory U7i instances with 12TB of memory (u7i-12tb.224xlarge) are now available in the AWS&amp;nbsp;Europe (Zurich) region. U7i instances are part of AWS 7th generation and are powered by custom fourth generation Intel Xeon Scalable Processors (Sapphire Rapids). U7i-12tb instances offer 12TiB of DDR5 memory, enabling customers to scale transaction processing throughput in a fast-growing data environment.&lt;/p&gt; \n&lt;p&gt;U7i-12tb instances offer 896 vCPUs, support up to 100Gbps Elastic Block Storage (EBS) for faster data loading and backups, deliver up to 100Gbps of network bandwidth, and support ENA Express. U7i instances are ideal for customers using mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server.&lt;br&gt; &lt;br&gt; To learn more about U7i instances, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/u7i/\"&gt;High Memory instances page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-u7i-aws-europe-zurich/",
-      "publishedAt": "2026-07-07T23:30:00.000Z",
-      "updatedAt": "2026-07-07T23:30:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "58858b088ae49688",
-      "title": "Amazon GameLift Streams introduces secure terminal access for stream sessions",
-      "description": "Amazon GameLift Streams now supports Stream Session Admin Shell, a secure terminal connection to the live runtime environment of a stream session for real-time troubleshooting. You can inspect logs, query running processes, check GPU utilization, and examine application state — all without managing SSH keys, open ports, or infrastructure credentials. Stream Session Admin Shell provides a terminal connection with the same level of access as your Amazon GameLift Streams applications. To connect, call the new CreateStreamSessionAdminShell API with your stream group and stream session identifiers,",
-      "descriptionHtml": "&lt;p&gt;Amazon GameLift Streams now supports Stream Session Admin Shell, a secure terminal connection to the live runtime environment of a stream session for real-time troubleshooting. You can inspect logs, query running processes, check GPU utilization, and examine application state — all without managing SSH keys, open ports, or infrastructure credentials.&lt;br&gt; &lt;br&gt; Stream Session Admin Shell provides a terminal connection with the same level of access as your Amazon GameLift Streams applications. To connect, call the new &lt;a href=\"https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_CreateStreamSessionAdminShell.html\"&gt;CreateStreamSessionAdminShell API&lt;/a&gt; with your stream group and stream session identifiers, then use the returned credentials with the SSM Session Manager plugin for the AWS CLI. The feature supports Linux (Ubuntu 22.04), Proton, and Windows Server 2022 runtimes. The terminal connection is scoped to your application environment and automatically closes when the stream session ends.&lt;br&gt; &lt;br&gt; Stream Session Admin Shell is available at no additional cost in all AWS Regions where Amazon GameLift Streams is offered. For a full list of supported Regions, see the &lt;a href=\"https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/regions-quotas-rande.html\"&gt;AWS Region table&lt;/a&gt;.&lt;br&gt; &lt;br&gt; To get started, see the &lt;a href=\"https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/troubleshoot-admin-shell-guide.html\"&gt;Stream Session Admin Shell developer guide&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_CreateStreamSessionAdminShell.html\"&gt;CreateStreamSessionAdminShell API reference&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-gamelift-streams-terminal-access/",
-      "publishedAt": "2026-07-07T21:26:00.000Z",
-      "updatedAt": "2026-07-07T21:26:00.000Z",
-      "categories": [
-        "Amazon Gamelift",
-        "Gaming"
-      ],
-      "services": [],
-      "tags": [
-        "amazon gamelift",
-        "gaming"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b38f6c16bc68c074",
-      "title": "Amazon S3 Vectors is now available in AWS GovCloud (US) Regions",
-      "description": "Amazon S3 Vectors is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West). Amazon S3 Vectors is purpose-built vector storage for AI agents, inference, Retrieval Augmented Generation (RAG), and semantic search at billion-vector scale. S3 Vectors is designed to provide the same elasticity, durability, and availability as Amazon S3, with a dedicated set of APIs that let you store, access, and query vectors without provisioning any infrastructure. For a full list of AWS Regions where Amazon S3 Vectors is available, see AWS Regions and endpoints . To learn more, visit the product page",
-      "descriptionHtml": "&lt;p&gt;Amazon S3 Vectors is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West).&lt;/p&gt; \n&lt;p&gt;Amazon S3 Vectors is purpose-built vector storage for AI agents, inference, Retrieval Augmented Generation (RAG), and semantic search at billion-vector scale. S3 Vectors is designed to provide the same elasticity, durability, and availability as Amazon S3, with a dedicated set of APIs that let you store, access, and query vectors without provisioning any infrastructure.&lt;/p&gt; \n&lt;p&gt;For a full list of AWS Regions where Amazon S3 Vectors is available, see &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors-regions-quotas.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions and endpoints&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/s3/features/vectors/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;product page&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-vectors.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;, and the &lt;a href=\"https://aws.amazon.com/s3/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon S3 pricing page&lt;/a&gt;.&lt;br&gt; &lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/s3-vectors-available-aws-govcloud-regions/",
-      "publishedAt": "2026-07-07T19:00:00.000Z",
-      "updatedAt": "2026-07-07T19:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon S3",
-        "Storage"
-      ],
-      "services": [
-        "S3"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon s3",
-        "storage",
-        "s3"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0b38432dc99bd1b9",
-      "title": "AWS Security Hub extends unified security management to Microsoft Azure",
-      "description": "Today, AWS announces that AWS Security Hub now monitors Microsoft Azure resources, extending risk analytics, cloud security posture management, vulnerability management, and security response management across both clouds. Many AWS customers running workloads in AWS and Azure have had to operate separate security tools for each environment, making it difficult to prioritize risks holistically or respond consistently. Security Hub now provides a single, unified experience to detect and respond to risks across your AWS and Azure environments. Security Hub automatically discovers Azure resources,",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces that AWS Security Hub now monitors Microsoft Azure resources, extending risk analytics, cloud security posture management, vulnerability management, and security response management across both clouds. Many AWS customers running workloads in AWS and Azure have had to operate separate security tools for each environment, making it difficult to prioritize risks holistically or respond consistently. Security Hub now provides a single, unified experience to detect and respond to risks across your AWS and Azure environments.&lt;br&gt; &lt;br&gt; Security Hub automatically discovers Azure resources, including Azure Virtual Machines (VMs), Azure Container Registry (ACR) container images, Azure Function Apps, and Azure identities, and evaluates them for misconfigurations, internet exposure, and software vulnerabilities. You receive posture checks against security standards including the CIS Benchmarks™ for Microsoft Azure Foundations, unified resource inventory, risk and exposure analysis, and automated response through existing EventBridge integrations. AWS and Azure findings appear in the same prioritized view with the same finding formats and automation workflows, so security teams can operate from one console rather than switching between tools.&lt;br&gt; &lt;br&gt; Security Hub includes an independent 30-day free trial to monitor Azure resources that begins once you create your integration with Microsoft Azure. After the trial, you pay the same price for monitoring Azure resources and equivalent AWS resources. You can create an integration to Azure from all AWS Regions where Security Hub is available except Middle East (UAE), Middle East (Bahrain), Asia Pacific (Taipei), and Asia Pacific (New Zealand). You can also create integrations to Microsoft Azure for AWS Security Hub CSPM for posture management checks and Amazon Inspector for vulnerability management independently from AWS Security Hub. To learn more, see &lt;a href=\"https://aws.amazon.com/security-hub/pricing/\"&gt;AWS Security Hub Pricing&lt;/a&gt;&amp;nbsp;and &lt;a href=\"https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub-v2.html\"&gt;AWS Security Hub documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-security-hub-supports-monitoring-microsoft-azure/",
-      "publishedAt": "2026-07-07T18:21:00.000Z",
-      "updatedAt": "2026-07-07T18:21:00.000Z",
-      "categories": [
-        "Security And Compliance",
-        "AWS Security Hub",
-        "Amazon Inspector"
-      ],
-      "services": [
-        "Inspector",
-        "Security Hub"
-      ],
-      "tags": [
-        "security and compliance",
-        "aws security hub",
-        "amazon inspector",
-        "inspector",
-        "security hub"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f6a73cdffd7c71d3",
-      "title": "Amazon ECS Managed Instances reduces GPU management fees by up to 60%",
-      "description": "Amazon Elastic Container Service (Amazon ECS) Managed Instances now offers significantly reduced management fees for GPU and accelerated instance types. Beginning July 1, 2026, G-series ECS management fees are reduced by 35%, and P-series and AWS Trainium fees are reduced by 60%. These reductions apply automatically and no action is required from customers already using GPU instances with ECS Managed Instances. With ECS Managed Instances, you get the application performance you want and the simplicity you need. Simply define your task requirements such as the number of vCPUs, memory size, and ",
-      "descriptionHtml": "&lt;p&gt;Amazon Elastic Container Service (Amazon ECS) Managed Instances now offers significantly reduced management fees for GPU and accelerated instance types. Beginning July 1, 2026, G-series ECS management fees are reduced by 35%, and P-series and AWS Trainium fees are reduced by 60%. These reductions apply automatically and no action is required from customers already using GPU instances with ECS Managed Instances.&lt;br&gt; &lt;br&gt; With ECS Managed Instances, you get the application performance you want and the simplicity you need. Simply define your task requirements such as the number of vCPUs, memory size, and CPU architecture, and Amazon ECS automatically provisions, configures and operates most optimal EC2 instances within your AWS account using AWS-controlled access. You can also specify desired instance types, including GPU-accelerated, network-optimized, and burstable performance, to run your workloads on the instance families you prefer. ECS Managed Instances includes capabilities built specifically for accelerated workloads: GPU metrics (utilization, memory, and temperature) through &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Container-Insights-enhanced-observability-metrics-ECS.html\"&gt;Amazon CloudWatch Container Insights&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-gpu-auto-repair.html\"&gt;automatic health monitoring &lt;/a&gt;that detects GPU-specific hardware failures and replaces unhealthy instances to minimize workload disruption. With today's pricing update, customers running GPU workloads on ECS Managed Instances can now benefit from fully managed infrastructure at lower management fees.&lt;br&gt; &lt;br&gt; This pricing update is available in all AWS Regions where ECS Managed Instances is available. For the complete updated rate table, see &lt;a href=\"https://aws.amazon.com/ecs/managed-instances/pricing/\"&gt;ECS Managed Instances pricing.&lt;/a&gt; Amazon EKS is implementing identical management fee reductions for GPU instances on EKS Auto Mode. See the EKS&amp;nbsp;What's New Post for details. To learn more about ECS Managed Instances, visit the &lt;a href=\"https://aws.amazon.com/ecs/managed-instances/\"&gt;feature page&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ManagedInstances.html\"&gt;documentation&lt;/a&gt;, and &lt;a href=\"https://aws.amazon.com/blogs/aws/announcing-amazon-ecs-managed-instances-for-containerized-applications\"&gt;AWS News launch blog&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ecs-managed-instances-gpu-price/",
-      "publishedAt": "2026-07-07T18:00:00.000Z",
-      "updatedAt": "2026-07-07T18:00:00.000Z",
-      "categories": [
-        "Compute",
-        "Containers",
-        "Amazon Ecs"
-      ],
-      "services": [
-        "ECS"
-      ],
-      "tags": [
-        "compute",
-        "containers",
-        "amazon ecs",
-        "ecs"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7689d98c88f78e68",
-      "title": "Amazon EMR Serverless now supports larger worker sizes to run more compute and memory intensive workloads",
-      "description": "Amazon EMR Serverless now offers larger worker configurations of 32 vCPUs with up to 244 GB of memory, allowing you to run more compute and memory-intensive workloads. Previously, the largest worker configuration available on EMR Serverless was 16 vCPUs with up to 120 GB of memory. Larger workers can help you improve the runtime performance as well as cost profiles for your workloads. For shuffle-heavy workloads, larger workers reduce inefficient data transfers between executors. For jobs with data skew, larger workers reduce the chances of out-of-memory failures. For jobs that need to cache d",
-      "descriptionHtml": "&lt;p&gt;Amazon EMR Serverless now offers larger worker configurations of 32 vCPUs with up to 244 GB of memory, allowing you to run more compute and memory-intensive workloads. Previously, the largest worker configuration available on EMR Serverless was 16 vCPUs with up to 120 GB of memory. Larger workers can help you improve the runtime performance as well as cost profiles for your workloads.&lt;/p&gt; \n&lt;p&gt;For shuffle-heavy workloads, larger workers reduce inefficient data transfers between executors. For jobs&amp;nbsp;with data skew, larger workers reduce the chances of out-of-memory failures. For jobs that need to cache data, larger workers allow holding more data in memory, boosting job performance. To take advantage of these benefits,&amp;nbsp;we recommend using larger workers for your compute and memory-intensive Spark and Hive workloads.&lt;/p&gt; \n&lt;p&gt;To learn more about different worker configurations, please visit EMR Serverless &lt;a href=\"https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/app-behavior.html#worker-configs\"&gt;documentation&lt;/a&gt;. Larger workers are available in all AWS Regions where EMR Serverless is &lt;a href=\"https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/endpoints-quotas.html\"&gt;available&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-emr-serverless/",
-      "publishedAt": "2026-07-07T17:06:00.000Z",
-      "updatedAt": "2026-07-07T17:06:00.000Z",
-      "categories": [
-        "Amazon Emr",
-        "Analytics"
-      ],
-      "services": [
-        "EMR"
-      ],
-      "tags": [
-        "amazon emr",
-        "analytics",
-        "emr"
       ],
       "isNew": false
     }
