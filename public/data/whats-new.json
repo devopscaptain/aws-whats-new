@@ -1,7 +1,292 @@
 {
-  "lastUpdated": "2026-09-09T12:46:46.057Z",
+  "lastUpdated": "2026-09-10T12:44:37.081Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "eacf7208ad7ed10d",
+      "title": "Amazon Connect Customer now lets you set specific capacity limits for different types of Tasks and Emails",
+      "description": "Amazon Connect Customer now gives contact center managers the ability to set specific capacity limits for different kinds of work. Previously, concurrency settings were applied at the channel level so all contacts within a channel were treated the same regardless of complexity or effort required. With this launch, managers can classify Task and Email contacts into workload types based on complexity, priority, or business function, each with its own concurrency and interruption rules. For example, a manager can configure agents to handle up to 3 simple, low-effort Tasks concurrently while limit",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now gives contact center managers the ability to set specific capacity limits for different kinds of work. Previously, concurrency settings were applied at the channel level so all contacts within a channel were treated the same regardless of complexity or effort required. With this launch, managers can classify Task and Email contacts into workload types based on complexity, priority, or business function, each with its own concurrency and interruption rules. For example, a manager can configure agents to handle up to 3 simple, low-effort Tasks concurrently while limiting complex, high-attention Tasks to 1 at a time.&lt;br&gt; &lt;br&gt; Specific capacity limits for Task and Email channels are available in all AWS commercial and AWS GovCloud (US-West) &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#amazonconnect_region\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;regions&lt;/a&gt; where Amazon Connect Customer is offered. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/channels-and-concurrency.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Connect Customer Administrator Guide&lt;/a&gt;. To learn more about Amazon Connect Customer, visit the &lt;a href=\"https://aws.amazon.com/products/connect/customer/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Connect Customer website&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-capacity-limits/",
+      "publishedAt": "2026-09-09T21:00:00.000Z",
+      "updatedAt": "2026-09-09T21:00:00.000Z",
+      "categories": [
+        "Contact Center",
+        "AWS Govcloud Us",
+        "Amazon Connect",
+        "Business Productivity"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "aws govcloud us",
+        "amazon connect",
+        "business productivity",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "59d6d52823d09ef7",
+      "title": "AWS Transform for .NET modernization is now generally available via CLI",
+      "description": "Today, AWS announced the general availability of an AWS-managed transformation for .NET modernization in AWS Transform custom that you can trigger with a single one-line CLI command. You can run this transformation interactively, or script it into any existing pipeline or workflow to run autonomously. The CLI experience complements the existing AWS Transform for .NET experiences: the web application, Visual Studio IDE, Kiro Power, and MCP agents. AWS Transform custom enables organizations to modernize and transform code at scale using AWS-managed and custom transformations. You can upgrade lan",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announced the general availability of an AWS-managed transformation for .NET modernization in AWS Transform custom that you can trigger with a single one-line CLI command. You can run this transformation interactively, or script it into any existing pipeline or workflow to run autonomously. The CLI experience complements the existing AWS Transform for .NET experiences: the web application, Visual Studio IDE, Kiro Power, and MCP agents.&lt;/p&gt; \n&lt;p&gt;AWS Transform custom enables organizations to modernize and transform code at scale using AWS-managed and custom transformations. You can upgrade language versions, migrate frameworks, optimize performance, and analyze code bases using transformations that are ready to use or can be customized to meet your organization's specific requirements. These transformations benefit from continuous improvement, learning from each engagement to deliver more accurate and efficient results.&lt;/p&gt; \n&lt;p&gt;AWS Transform custom and AWS Transform for .NET are available in eight AWS Regions: US East (N. Virginia), Asia Pacific (Mumbai, Tokyo, Seoul, Sydney), Canada (Central), and Europe (Frankfurt, London).&lt;/p&gt; \n&lt;p&gt;The .NET modernization transformation includes 50,000 free agent minutes per month. View AWS Transform Pricing for pricing details and examples. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-aws-customs.html\"&gt;AWS-Managed Transformations&lt;/a&gt; in the AWS Transform User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-transform-dotnet-cli",
+      "publishedAt": "2026-09-09T20:00:00.000Z",
+      "updatedAt": "2026-09-09T20:00:00.000Z",
+      "categories": [
+        "Migration"
+      ],
+      "services": [],
+      "tags": [
+        "migration"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f94a619b068070fb",
+      "title": "AWS Lambda now supports 90-minute function timeout on Lambda Managed Instances",
+      "description": "AWS Lambda now supports a 90-minute function timeout for asynchronous and event source mapping (ESM) invocations on Lambda Managed Instances (LMI) , a 6x increase from the previous 15-minute limit. You can now run data processing, media transcoding, financial calculations, AI inference, and batch workloads on Lambda for jobs that require longer continuous execution, without re-architecting your applications. Customers use Lambda to build serverless applications like event-driven processors, API backends, and data processing pipelines. For data-intensive workloads like media transcoding, financ",
+      "descriptionHtml": "&lt;p&gt;AWS Lambda now supports a 90-minute function timeout for &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html\"&gt;asynchronous&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventsourcemapping.html\"&gt;event source mapping (ESM)&lt;/a&gt; invocations on &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances.html\"&gt;Lambda Managed Instances (LMI)&lt;/a&gt;, a 6x increase from the previous 15-minute limit. You can now run data processing, media transcoding, financial calculations, AI inference, and batch workloads on Lambda for jobs that require longer continuous execution, without re-architecting your applications.&lt;/p&gt; \n&lt;p&gt;Customers use Lambda to build serverless applications like event-driven processors, API backends, and data processing pipelines. For data-intensive workloads like media transcoding, financial calculations (such as Monte Carlo simulations), and AI inference that need longer continuous execution, Lambda's 15-minute function timeout limit required customers to adopt&amp;nbsp;architectural workarounds. With today's launch, you can configure a function timeout of up to 90 minutes for asynchronous and ESM invocations on Lambda Managed Instances. Lambda Managed Instances lets you process multiple concurrent requests per instance, access specialized compute configurations, and drive cost efficiency through EC2 pricing advantages, without managing infrastructure. The increased function timeout also applies to invocations within &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html\"&gt;Lambda durable functions&lt;/a&gt;, which allow you to checkpoint and replay steps for longer-running invocations. When invoked asynchronously, a multi-step durable execution can run for up to 1 year.&lt;/p&gt; \n&lt;p&gt;You can configure up to a 90-minute function timeout for asynchronous and ESM invocations via the AWS Lambda Console, AWS CLI, Lambda APIs, Infrastructure as Code tooling, or the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/agent-setup-guide.html\"&gt;Agent Toolkit for AWS&lt;/a&gt;. Synchronous invocations retain the existing 15-minute maximum timeout. This feature is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where Lambda Managed Instances is available.&lt;/p&gt; \n&lt;p&gt;To learn more about configuring the 90-minute function timeout, see the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances.html\"&gt;Lambda developer guide&lt;/a&gt;. For combining extended timeouts with checkpoint-and-replay resilience, see the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html\"&gt;durable functions documentation&lt;/a&gt;. For pricing details, see &lt;a href=\"https://aws.amazon.com/lambda/pricing/\"&gt;AWS Lambda Pricing&lt;/a&gt;. To learn more about AWS Lambda, visit &lt;a href=\"https://aws.amazon.com/lambda/\"&gt;aws.amazon.com/lambda&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-lambda-90-minute-function/",
+      "publishedAt": "2026-09-09T18:00:00.000Z",
+      "updatedAt": "2026-09-09T18:00:00.000Z",
+      "categories": [
+        "Serverless"
+      ],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "serverless",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d8ff3fea55bd04dd",
+      "title": "AWS Lambda now supports Graviton5-powered EC2 instances on Lambda Managed Instances",
+      "description": "AWS Lambda now supports AWS Graviton5-powered C9g, C9gd, M9g, and M9gd instances on Lambda Managed Instances . You can now run your Lambda functions on the latest generation of Graviton processors, delivering up to 25% better compute performance compared to Graviton4-powered instances. AWS Lambda Managed Instances lets you run Lambda functions on your AWS EC2 instances while maintaining Lambda's operational simplicity. With Lambda Managed Instances, you can access specialized compute configurations and drive cost efficiency through EC2 pricing advantages, without managing infrastructure. Lambd",
+      "descriptionHtml": "&lt;p&gt;AWS Lambda now supports AWS Graviton5-powered C9g, C9gd, M9g, and M9gd instances on &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances.html\"&gt;Lambda Managed Instances&lt;/a&gt;. You can now run your Lambda functions on the latest generation of Graviton processors, delivering up to 25% better compute performance compared to Graviton4-powered instances.&lt;/p&gt; \n&lt;p&gt;AWS Lambda Managed Instances lets you run Lambda functions on your AWS EC2 instances while maintaining Lambda's operational simplicity. With Lambda Managed Instances, you can access specialized compute configurations and drive cost efficiency through EC2 pricing advantages, without managing infrastructure. Lambda Managed Instances fully manages all infrastructure tasks, including instance lifecycle, OS and runtime patching, built-in routing, load balancing, and auto-scaling based on configurable parameters - so you can focus on writing code. Starting today, you can leverage Lambda Managed Instances with the latest Graviton5-powered instances, which deliver up to 25% better compute performance compared to the previous generation Graviton4-powered instances.&lt;/p&gt; \n&lt;p&gt;To get started, you can specify the desired Graviton5 instance type (C9g, C9gd, M9g, or M9gd) when you create a capacity provider. When you set the instance type to default, Lambda automatically includes Graviton5 instances in the list of instances it chooses from, based on your function’s configured architecture, memory size, and memory-to-vCPU ratio.&lt;/p&gt; \n&lt;p&gt;AWS Lambda Managed Instances supports C9g, C9gd, M9g, and M9gd instance types in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where both Lambda Managed Instances and these EC2 instances are available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances.html\"&gt;Lambda Managed Instances documentation&lt;/a&gt;&amp;nbsp;and &lt;a href=\"https://aws.amazon.com/lambda/pricing/\"&gt;AWS Lambda pricing&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-lambda-graviton5-ec2/",
+      "publishedAt": "2026-09-09T18:00:00.000Z",
+      "updatedAt": "2026-09-09T18:00:00.000Z",
+      "categories": [
+        "AWS Lambda"
+      ],
+      "services": [
+        "EC2",
+        "Lambda"
+      ],
+      "tags": [
+        "aws lambda",
+        "ec2",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3dc6b9f1c25be0e7",
+      "title": "Amazon Bedrock Managed Knowledge Base adds APIs and console support for debugging document-level access control",
+      "description": "AWS announces the CheckIngestedDocumentAcl and GetIngestedDocumentAcl APIs for Amazon Bedrock Managed Knowledge Base, giving customers a self-service way to debug document access issues and audit document-level permissions. When a user doesn't see an expected document in retrieval results for ACL-enabled data sources, it can be difficult to determine whether the cause is an access control misconfiguration or something else entirely. These new APIs and the accompanying console experience close that gap, enabling you to quickly diagnose and resolve permission issues without opening a support cas",
+      "descriptionHtml": "&lt;p&gt;AWS announces the CheckIngestedDocumentAcl and GetIngestedDocumentAcl APIs for Amazon Bedrock Managed Knowledge Base, giving customers a self-service way to debug document access issues and audit document-level permissions. When a user doesn't see an expected document in retrieval results for ACL-enabled data sources, it can be difficult to determine whether the cause is an access control misconfiguration or something else entirely. These new APIs and the accompanying console experience close that gap, enabling you to quickly diagnose and resolve permission issues without opening a support case.&lt;/p&gt; \n&lt;p&gt;CheckIngestedDocumentAcl lets you verify whether a specific user has access to a given ingested document, while GetIngestedDocumentAcl returns the full ACL attached to a document so you can audit exactly what permissions are configured and catch misconfigurations. The console also introduces a new Document Access Control section on the data source details page, where you can check access by entering a document ID and user email or retrieve a document's full ACL by document ID. Together, these capabilities give administrators the visibility they need to manage access control at scale across enterprise knowledge bases.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_CheckIngestedDocumentAcl.html\" target=\"_blank\"&gt;CheckIngestedDocumentAcl&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetIngestedDocumentAcl.html\" target=\"_blank\"&gt;GetIngestedDocumentAcl&lt;/a&gt; in the Amazon Bedrock API Reference. For more information about Amazon Bedrock Managed Knowledge Base, visit the &lt;a href=\"https://aws.amazon.com/bedrock/knowledge-bases/\" target=\"_blank\"&gt;Amazon Bedrock Knowledge Bases product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-knowledge-base-debugging-document-access-control/",
+      "publishedAt": "2026-09-09T16:03:00.000Z",
+      "updatedAt": "2026-09-09T16:03:00.000Z",
+      "categories": [
+        "Amazon Quicksight",
+        "Business Productivity",
+        "Aiml",
+        "Artificial Intelligence",
+        "Amazon Q"
+      ],
+      "services": [
+        "Bedrock",
+        "Q",
+        "QuickSight"
+      ],
+      "tags": [
+        "amazon quicksight",
+        "business productivity",
+        "aiml",
+        "artificial intelligence",
+        "amazon q",
+        "bedrock",
+        "q",
+        "quicksight"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "31217302d169dd35",
+      "title": "Amazon Bedrock Managed Knowledge Base now supports Confluence Data Center as a native data source connector",
+      "description": "AWS announces the Confluence Data Center data source connector for Amazon Bedrock Managed Knowledge Base, a fully managed retrieval-augmented generation (RAG) service. Customers running self-hosted Confluence Data Center instances can now crawl blogs and pages from their Confluence spaces directly into their managed knowledge base. Previously, bringing Confluence Data Center content into Bedrock Knowledge Bases required building custom ingestion pipelines—now, you provide your instance credentials, and the connector handles data crawling, metadata extraction, and incremental sync automatically",
+      "descriptionHtml": "&lt;p&gt;AWS announces the Confluence Data Center data source connector for Amazon Bedrock Managed Knowledge Base, a fully managed retrieval-augmented generation (RAG) service. Customers running self-hosted Confluence Data Center instances can now crawl blogs and pages from their Confluence spaces directly into their managed knowledge base. Previously, bringing Confluence Data Center content into Bedrock Knowledge Bases required building custom ingestion pipelines—now, you provide your instance credentials, and the connector handles data crawling, metadata extraction, and incremental sync automatically.&lt;br&gt; The Confluence Data Center connector gives your AI agents access to the institutional knowledge your teams already maintain in Confluence, including wiki pages and blog posts across spaces. You can use filters to scope crawls to specific spaces or content types, ensuring only relevant content is ingested and keeping your knowledge base focused and cost-efficient. This makes it easy to power internal assistants grounded in engineering documentation, runbooks, or team knowledge bases hosted on Confluence Data Center.&lt;br&gt; To learn more, see Confluence Data Center data source connector in the &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-confluence-onprem.html\" target=\"_blank\"&gt;Amazon Bedrock User Guide&lt;/a&gt;. For more information about Amazon Bedrock Managed Knowledge Base, visit the &lt;a href=\"https://aws.amazon.com/bedrock/knowledge-bases/\" target=\"_blank\"&gt;Amazon Bedrock Knowledge Bases product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-confluence-data-center-native-data-source-connector/",
+      "publishedAt": "2026-09-09T14:19:00.000Z",
+      "updatedAt": "2026-09-09T14:19:00.000Z",
+      "categories": [
+        "Aiml",
+        "Amazon Quicksight",
+        "Developer Tools",
+        "Artificial Intelligence",
+        "Business Productivity"
+      ],
+      "services": [
+        "Bedrock",
+        "QuickSight"
+      ],
+      "tags": [
+        "aiml",
+        "amazon quicksight",
+        "developer tools",
+        "artificial intelligence",
+        "business productivity",
+        "bedrock",
+        "quicksight"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b0ec85f2e73938fb",
+      "title": "Amazon EBS Volume Clones now supports copying volumes across accounts",
+      "description": "Amazon Elastic Block Store (Amazon EBS) Volume Clones now supports copying EBS volumes across AWS accounts with re-encryption. You can copy EBS volumes to any AWS account, re-encrypting with an AWS Key Management Service (AWS KMS) key in the target account. This enables organizations that separate production and development workloads into different accounts to copy data across those account boundaries. With cross-account copy, you can clone a production database volume into an isolated development account, giving developers a fresh copy of production data to experiment with safely. This capabi",
+      "descriptionHtml": "&lt;p&gt;Amazon Elastic Block Store (Amazon EBS) Volume Clones now supports copying EBS volumes across AWS accounts with re-encryption. You can copy EBS volumes to any AWS account, re-encrypting with an AWS Key Management Service (AWS KMS) key in the target account. This enables organizations that separate production and development workloads into different accounts to copy data across those account boundaries.&lt;/p&gt; \n&lt;p&gt;With cross-account copy, you can clone a production database volume into an isolated development account, giving developers a fresh copy of production data to experiment with safely. This capability also supports teams that require encryption key separation across environments, such as maintaining separate KMS keys for production and non-production accounts. Cross-account copy is supported for all volume types, including unencrypted volumes and volumes encrypted with customer managed keys.&lt;/p&gt; \n&lt;p&gt;To copy a volume across accounts, you first share the volume with the target account using AWS Resource Access Manager (AWS RAM), and then the target account creates a copy of the shared volume in the same Availability Zone. You can access this capability using the AWS Management Console, AWS Command Line Interface (CLI), and AWS SDKs. It is available in all AWS Regions that support Amazon EBS Volume Clones, including all Commercial Regions, the AWS GovCloud (US) Regions, AWS China Regions, and supported Local Zones.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the Amazon &lt;a href=\"https://docs.aws.amazon.com/ebs/latest/userguide/ebs-copying-volume.html\"&gt;EBS Volume Clones documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ebs-volume-clones-cross-account-copy/",
+      "publishedAt": "2026-09-09T10:00:00.000Z",
+      "updatedAt": "2026-09-09T10:00:00.000Z",
+      "categories": [
+        "Amazon Elastic Block Store",
+        "Storage"
+      ],
+      "services": [
+        "EBS"
+      ],
+      "tags": [
+        "amazon elastic block store",
+        "storage",
+        "ebs"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e3eee9be87e3329f",
+      "title": "AWS Private CA EKS add-on and Connector for AD now available in AWS GovCloud (US)",
+      "description": "AWS Private Certificate Authority (AWS Private CA) announces the availability of the AWS Private CA Connector for Kubernetes as a managed Amazon EKS add-on and the AWS Private CA Connector for Active Directory in AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions. These launches expand certificate automation capabilities available to AWS GovCloud (US) customers managing government workloads. The AWS Private CA Connector for Kubernetes EKS add-on provides simplified installation, configuration, and lifecycle management through the EKS console, CLI, and API. The connector works with cert-",
+      "descriptionHtml": "&lt;p&gt;AWS Private Certificate Authority (AWS Private CA) announces the availability of the AWS Private CA Connector for Kubernetes as a managed Amazon EKS add-on and the AWS Private CA Connector for Active Directory in AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions. These launches expand certificate automation capabilities available to AWS GovCloud (US) customers managing government workloads.&lt;/p&gt;\n&lt;p&gt;The AWS Private CA Connector for Kubernetes EKS add-on provides simplified installation, configuration, and lifecycle management through the EKS console, CLI, and API. The connector works with cert-manager to automate certificate requests, distribution to Kubernetes secrets, and renewal, enabling TLS for ingress controllers and securing service-to-service communication in service meshes such as Istio and Linkerd.&lt;/p&gt;\n&lt;p&gt;The AWS Private CA Connector for Active Directory enables AWS GovCloud (US) customers to use AWS Private CA as their certificate authority for Active Directory-enrolled objects. The connector provides automatic certificate issuance to domain-joined users, computers, and other objects through familiar Microsoft certificate enrollment interfaces, supporting enterprise scenarios including smart card authentication, LDAPS, and network device authentication (802.1x).&lt;/p&gt;\n&lt;p&gt;AWS Private CA secures private key material using FIPS 140-3 Level 3 hardware security modules (HSMs).&lt;/p&gt;\n&lt;p&gt;To get started, see the &lt;a href=\"https://aws.amazon.com/private-ca/\"&gt;AWS Private CA product page&lt;/a&gt;, the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html\"&gt;Amazon EKS add-ons user guide&lt;/a&gt;, and the &lt;a href=\"https://docs.aws.amazon.com/privateca/latest/userguide/connector-for-ad.html\"&gt;AWS Private CA Connector for Active Directory documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/private-ca-eks-addon-ad-govcloud/",
+      "publishedAt": "2026-09-09T08:00:00.000Z",
+      "updatedAt": "2026-09-09T08:00:00.000Z",
+      "categories": [
+        "Containers",
+        "Amazon Eks",
+        "AWS Private Certificate Authority",
+        "AWS Govcloud Us",
+        "AWS Directory Service",
+        "Security Identity And Compliance"
+      ],
+      "services": [
+        "EKS"
+      ],
+      "tags": [
+        "containers",
+        "amazon eks",
+        "aws private certificate authority",
+        "aws govcloud us",
+        "aws directory service",
+        "security identity and compliance",
+        "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2c5b7bd69d66a943",
+      "title": "AWS Systems Manager now diagnoses more issues that cause EC2 instances to be unmanaged",
+      "description": "Today, AWS Systems Manager extends its diagnosis capability to identify six additional categories of issues that can prevent Amazon EC2 instances and hybrid-activated nodes from becoming managed by Systems Manager. An instance must be managed by Systems Manager before you can patch it, run commands, connect with Session Manager, or collect inventory, and when an instance is unmanaged the cause can be difficult to isolate. The diagnosis previously covered network connectivity, and it now also identifies issues with IAM permissions, SSM Agent version, instance status checks, operating system con",
+      "descriptionHtml": "&lt;p&gt;Today, AWS Systems Manager extends its diagnosis capability to identify six additional categories of issues that can prevent Amazon EC2 instances and hybrid-activated nodes from becoming managed by Systems Manager. An instance must be managed by Systems Manager before you can patch it, run commands, connect with Session Manager, or collect inventory, and when an instance is unmanaged the cause can be difficult to isolate. The diagnosis previously covered network connectivity, and it now also identifies issues with IAM permissions, SSM Agent version, instance status checks, operating system configuration, Default Host Management Configuration, and hybrid activation.&lt;/p&gt;\n&lt;p&gt;With this broader coverage, more of your instances return a specific, actionable cause instead of an unidentified result, so you can bring your fleet under management faster. You run a diagnosis across your instances in the Systems Manager unified console experience, and Systems Manager reports the specific issues it finds in each category. Every diagnosed issue comes with step-by-step guidance to help you resolve it, and for some issues you can also run an AWS Systems Manager Automation runbook from the console to remediate the issue directly.&lt;/p&gt;\n&lt;p&gt;AWS Systems Manager diagnosis capability is available in all AWS Regions that are enabled by default. The capability runs as AWS Systems Manager Automation runbooks, so you pay standard Automation usage charges for the runbooks you run; see &lt;a href=\"https://aws.amazon.com/systems-manager/pricing/\"&gt;AWS Systems Manager pricing&lt;/a&gt; for details. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/systems-manager/latest/userguide/diagnosing-ec2-category-types.html\"&gt;AWS Systems Manager User Guide&lt;/a&gt;, or visit the &lt;a href=\"https://aws.amazon.com/systems-manager/\"&gt;AWS Systems Manager product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/systems-manager-diagnoses-ec2-unmanaged/",
+      "publishedAt": "2026-09-09T08:00:00.000Z",
+      "updatedAt": "2026-09-09T08:00:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute",
+        "Management And Governance",
+        "AWS Systems Manager"
+      ],
+      "services": [
+        "EC2",
+        "Systems Manager"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "management and governance",
+        "aws systems manager",
+        "ec2",
+        "systems manager"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "899e424527c313ca",
+      "title": "AWS Entity Resolution adds record-level confidence scores for ML matching",
+      "description": "AWS Entity Resolution now provides record-level confidence scores for Machine Learning (ML) based matching workflows, giving you a per-record signal of how confident the model is in each individual identity match. Previously, all records within a match group carried the same group-level confidence score regardless of actual match quality — making it impossible to distinguish a near-certain match from a borderline one. This forced customers to apply a single confidence threshold across all records, limiting the number of resolved identities that could be activated downstream. With record-level ",
+      "descriptionHtml": "&lt;p&gt;AWS Entity Resolution now provides record-level confidence scores for Machine Learning (ML) based matching workflows, giving you a per-record signal of how confident the model is in each individual identity match. Previously, all records within a match group carried the same group-level confidence score regardless of actual match quality — making it impossible to distinguish a near-certain match from a borderline one. This forced customers to apply a single confidence threshold across all records, limiting the number of resolved identities that could be activated downstream.&lt;/p&gt;\n&lt;p&gt;With record-level confidence scores, each resolved record now carries its own score reflecting actual match quality. This gives you the precision to qualify more records for activation by applying differentiated thresholds — using higher confidence for automated merges and lower thresholds to include additional records that still meet quality standards. The result is larger addressable audiences and improved lead conversions, while maintaining compliance-grade match transparency with audit-ready evidence for each resolved record. For incremental ML workflows, the existing RecordConfidenceLevel column now reflects the actual per-record score with no schema changes required.&lt;/p&gt;\n&lt;p&gt;You can start using record-level confidence scores in all &lt;a href=\"https://aws.amazon.com/entity-resolution/faqs/\"&gt;AWS Regions&lt;/a&gt; where AWS Entity Resolution is available. For more information, see our &lt;a href=\"https://docs.aws.amazon.com/entityresolution/latest/userguide/create-matching-workflow-ml.html\"&gt;user guide&lt;/a&gt;. For more information about AWS Entity Resolution, visit our &lt;a href=\"https://aws.amazon.com/entity-resolution/\"&gt;product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/entity-resolution-record-confidence/",
+      "publishedAt": "2026-09-09T08:00:00.000Z",
+      "updatedAt": "2026-09-09T08:00:00.000Z",
+      "categories": [
+        "Better Performance",
+        "Enterprises",
+        "Aiml",
+        "Analytics",
+        "Artificial Intelligence",
+        "Databases",
+        "AWS Entity Resolution",
+        "Developer"
+      ],
+      "services": [
+        "Entity Resolution"
+      ],
+      "tags": [
+        "better performance",
+        "enterprises",
+        "aiml",
+        "analytics",
+        "artificial intelligence",
+        "databases",
+        "aws entity resolution",
+        "developer",
+        "entity resolution"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b56acf6d1e4e90b3",
+      "title": "Amazon Connect Customer Profiles now sends events when customers enter or exit segments",
+      "description": "Amazon Connect Customer Profiles now sends segment membership events, providing the ability to receive real-time and scheduled notifications when customer profiles enter or exit a segment, such as high-value customers or low-satisfaction customers. Previously, detecting when customer profiles joined or left a segment required exporting entire segments at regular intervals and running custom scripts to identify differences. This manual process consumed resources, introduced errors, and created multi-hour delays between a customer qualifying for a segment and downstream systems acting on it. Wit",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer Profiles now sends segment membership events, providing the ability to receive real-time and scheduled notifications when customer profiles enter or exit a segment, such as high-value customers or low-satisfaction customers. Previously, detecting when customer profiles joined or left a segment required exporting entire segments at regular intervals and running custom scripts to identify differences. This manual process consumed resources, introduced errors, and created multi-hour delays between a customer qualifying for a segment and downstream systems acting on it.&lt;/p&gt;\n&lt;p&gt;With segment membership events, Customer Profiles automatically evaluates and streams membership changes directly to your Amazon Kinesis Data Stream. For segments built with standard conditions, changes are detected in near real-time as profile attributes update. For enhanced segments (using Spark SQL), periodic snapshots evaluate membership at configurable intervals and notify you of changes. Each event includes the profile ID, segment name, operation type (joined or left), and whether the change detected occurred in real-time or during a scheduled run, giving you everything needed to activate outbound campaigns, personalization workflows, or retention actions within seconds instead of hours.&lt;/p&gt;\n&lt;p&gt;You can start using segment membership events in all AWS Regions where Amazon Connect Customer Profiles is available. To get started, configure an Amazon Kinesis Data Stream in your domain settings and subscribe your segments. For more information, see our &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/customer-segments-membership-events.html\"&gt;admin guide&lt;/a&gt;. For more information about Amazon Connect Customer Profiles, visit our &lt;a href=\"https://aws.amazon.com/connect/customer-profiles/\"&gt;product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/connect-customer-profiles-segment-events/",
+      "publishedAt": "2026-09-09T08:00:00.000Z",
+      "updatedAt": "2026-09-09T08:00:00.000Z",
+      "categories": [
+        "Contact Center",
+        "Analytics",
+        "Amazon Connect"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "analytics",
+        "amazon connect",
+        "connect"
+      ],
+      "isNew": true
+    },
     {
       "id": "3b18fcea2c29b53f",
       "title": "OpenAI GPT-6 Astra is now generally available on Amazon Bedrock",
@@ -189,6 +474,28 @@
       "isNew": true
     },
     {
+      "id": "54fd1c9147acadf4",
+      "title": "Dynamic Image Transformation for Amazon CloudFront adds four new features",
+      "description": "Today, AWS announced four new features for Dynamic Image Transformation for Amazon CloudFront (DIT), an AWS supported solution that helps customers transform images in response to their needs. Customers can now use enhanced smart cropping with custom label detection and advanced composition controls that preserve products, text, logos, and custom objects within cropped images. In addition, customers benefit from enhanced automatic image optimization that delivers appropriately sized images across every browser and device type, from phones and tablets to smart TVs, using CloudFront's multi-tier",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announced four new features for Dynamic Image Transformation for Amazon CloudFront (DIT), an AWS supported solution that helps customers transform images in response to their needs.&amp;nbsp;Customers can now use enhanced smart cropping with custom label detection and advanced composition controls that preserve products, text, logos, and custom objects within cropped images. In addition, customers benefit from enhanced automatic image optimization that delivers appropriately sized images across every browser and device type, from phones and tablets to smart TVs, using CloudFront's multi-tier device detection to maximize optimization reach regardless of how users access content. DIT also introduces an interactive image transformation playground for testing and validating transformations, and achieves full feature parity between its ECS and Lambda architectures.&lt;/p&gt; \n&lt;p&gt;DIT's expanded smart cropping enables customers to combine multiple detection methods including faces, labels, text, logos, and custom Amazon Rekognition models, in a single request with configurable aspect ratios, padding, and gravity constraints prioritized by business need. Enhanced automatic optimization now uses a tiered detection approach, layering CloudFront's device classification headers and configurable fallbacks behind Client Hints, to eliminate the browser-support gap that left ~30% of traffic previously served unoptimized and extend right-sized image delivery beyond browsers to all device types. The image transformation playground displays transformed images with extended metrics including original and output dimensions, format, file size, compression ratios, and processing time, enabling customers to validate the performance of their transformation policies.&lt;/p&gt; \n&lt;p&gt;DIT is available in all commercial regions as well as the following four opt-in regions: Asia Pacific (Hong Kong), Middle East (Bahrain), Africa (Cape Town), Europe (Milan).&amp;nbsp;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/solutions/dynamic-image-transformation-for-amazon-cloudfront/\"&gt;DIT solution page.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/dynamic-image-transformation-adds-new-features/",
+      "publishedAt": "2026-09-08T14:32:00.000Z",
+      "updatedAt": "2026-09-08T14:32:00.000Z",
+      "categories": [
+        "Amazon Cloudfront",
+        "Content Delivery"
+      ],
+      "services": [
+        "CloudFront"
+      ],
+      "tags": [
+        "amazon cloudfront",
+        "content delivery",
+        "cloudfront"
+      ],
+      "isNew": true
+    },
+    {
       "id": "5be9cd0f55e5858a",
       "title": "AWS Builder ID adds recovery options and multi-factor authentication for third-party logins",
       "description": "AWS Builder ID, your personal profile for accessing AWS applications including AWS Builder Center, AWS Training and Certification, Amazon Quick and Kiro, now offers new ways to protect and recover your profile. You can add a recovery email and use new self-service options to regain access if you're locked out. You can also register multi-factor authentication (MFA) devices for any sign-in method, including third-party logins such as Google or Apple. With these enhancements, you have more self-service options to recover your AWS Builder ID. Adding a recovery email provides a second verification",
@@ -232,6 +539,30 @@
         "aws",
         "developer tools",
         "serverless"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "227c6138ef777c82",
+      "title": "Amazon EMR extends support at no additional cost for customers migrating off older releases",
+      "description": "Amazon EMR now gives you more time, at no additional cost, to migrate off older releases before they reach end of support. If you are actively migrating, your workloads on eligible releases keep receiving support while you move to a current release, with no opt-in and at no charge. To give you more time to plan and migrate, Amazon EMR provides critical security fixes for releases 5.36 and 6.6 through 6.15 on a best-effort basis through June 30, 2027, and extended Standard Support for 7.0 through 7.10 releases through August 31, 2027. To receive an extension, contact AWS Support with your migra",
+      "descriptionHtml": "&lt;p&gt;Amazon EMR now gives you more time, at no additional cost, to migrate off older releases before they reach end of support. If you are actively migrating, your workloads on eligible releases keep receiving support while you move to a current release, with no opt-in and at no charge.&lt;/p&gt; \n&lt;p&gt;To give you more time to plan and migrate, Amazon EMR provides critical security fixes for releases 5.36 and 6.6 through 6.15 on a best-effort basis through June 30, 2027, and extended Standard Support for 7.0 through 7.10 releases through August 31, 2027. To receive an extension, contact AWS Support with your migration plan and any help you need with the upgrade.&lt;/p&gt; \n&lt;p&gt;This applies to all deployment models of Amazon EMR (EMR on EC2, EMR on EKS, and EMR Serverless), in all AWS Regions where Amazon EMR is available. For the full list of releases and their support dates, see the &lt;a href=\"https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-standard-support.html\"&gt;Amazon EMR standard support policy&lt;/a&gt;. To get the extended support, contact AWS Support with your migration plan, or use the &lt;a href=\"https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-upgrades.html\"&gt;Apache Spark Upgrade Agent&lt;/a&gt; to move your applications to a current release.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/emr-extended-support-migration/",
+      "publishedAt": "2026-09-08T08:00:00.000Z",
+      "updatedAt": "2026-09-08T08:00:00.000Z",
+      "categories": [
+        "Amazon Emr",
+        "Migration",
+        "AWS Support"
+      ],
+      "services": [
+        "EMR"
+      ],
+      "tags": [
+        "amazon emr",
+        "migration",
+        "aws support",
+        "emr"
       ],
       "isNew": true
     },
@@ -907,7 +1238,7 @@
         "security and compliance",
         "ami"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "601827257344bbbf",
@@ -929,7 +1260,7 @@
         "applications",
         "ses"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d22e203e433ef6ab",
@@ -953,7 +1284,7 @@
         "s3",
         "privatelink"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2e9e4c93d0e7813b",
@@ -973,7 +1304,7 @@
         "migration",
         "fsx"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "822f710df2bec56f",
@@ -997,7 +1328,7 @@
         "containers",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "13e650259e5fda18",
@@ -1019,7 +1350,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "efe322ccf45b8f38",
@@ -1042,7 +1373,7 @@
         "developer tools",
         "aws developer tools"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "aa4ce5a4cfc3d180",
@@ -1062,7 +1393,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6d1f457c15a1d7b4",
@@ -1088,7 +1419,7 @@
         "aws outposts",
         "outposts"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "50b2bc4a31e1401f",
@@ -1110,7 +1441,7 @@
         "developer tools",
         "cloudformation"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "11d6a058e5c69feb",
@@ -1132,7 +1463,7 @@
         "aws config",
         "config"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "cd461409e29563f3",
@@ -1156,7 +1487,7 @@
         "memorydb",
         "privatelink"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9ad08f8e1d9d47a6",
@@ -1177,7 +1508,7 @@
         "management and governance",
         "management tools"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6bb3875a98d222de",
@@ -1968,8 +2299,8 @@
     {
       "id": "71cbfca19a1e441c",
       "title": "Automated Security Response on AWS adds AI Toolkit for custom remediations",
-      "description": "Today, AWS announced four new capabilities for Automated Security Response on AWS (ASR). Customers can now use an AI-driven Toolkit that generates custom remediations using any AI assistant with built-in safety guardrails. In addition, customers can automatically remediate findings from Amazon Inspector, Amazon GuardDuty, and Amazon Macie. Customers can also centrally configure and scope automated remediations by account, OU, region, and resource tags through an enhanced web console. Lastly, customers can configure notifications for AWS Security Hub findings with new multi-channel adapters for",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announced four new capabilities for Automated Security Response on AWS (ASR). Customers can now use an AI-driven Toolkit that generates custom remediations using any AI assistant with built-in safety guardrails. In addition, customers can automatically remediate findings from Amazon Inspector, Amazon GuardDuty, and Amazon Macie. Customers can also centrally configure and scope automated remediations by account, OU, region, and resource tags through an enhanced web console. Lastly, customers can configure notifications for AWS Security Hub findings with new multi-channel adapters for Email, Slack, Jira, and ServiceNow with severity-based filtering and configurable deadline enforcement.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; ASR's AI Remediation Toolkit reduces custom remediation development time from weeks to hours using guided prompts with built-in safety guardrails, minimizing misconfigurations and eliminating reliance on deep SSM Automation expertise. Expanded service coverage enables automatic response to credential compromise, unpatched vulnerabilities, and sensitive data exposure with minimal manual triage. The enhanced web console centralizes management of 100+ security controls with built-in validation, replacing error-prone manual DynamoDB and SSM configuration. Configurable multi-channel notifications with remediation links, deadlines, and IaC code snippets help teams fix root causes and ensure timely, accountable response.&lt;/p&gt;",
+      "description": "Today, AWS announced four new capabilities for Automated Security Response on AWS (ASR) solution. Customers can now use an AI-driven Toolkit that generates custom remediations using any AI assistant with built-in safety guardrails. In addition, customers can automatically remediate findings from Amazon Inspector, Amazon GuardDuty, and Amazon Macie. Customers can also centrally configure and scope automated remediations by account, OU, region, and resource tags through an enhanced web console. Lastly, customers can configure notifications for AWS Security Hub findings with new multi-channel ada",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announced four new capabilities for Automated Security Response on AWS (ASR) solution. Customers can now use an AI-driven Toolkit that generates custom remediations using any AI assistant with built-in safety guardrails. In addition, customers can automatically remediate findings from Amazon Inspector, Amazon GuardDuty, and Amazon Macie. Customers can also centrally configure and scope automated remediations by account, OU, region, and resource tags through an enhanced web console. Lastly, customers can configure notifications for AWS Security Hub findings with new multi-channel adapters for Email, Slack, Jira, and ServiceNow with severity-based filtering and configurable deadline enforcement.&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; ASR's AI Remediation Toolkit reduces custom remediation development time from weeks to hours using guided prompts with built-in safety guardrails, minimizing misconfigurations and eliminating reliance on deep SSM Automation expertise. Expanded service coverage enables automatic response to credential compromise, unpatched vulnerabilities, and sensitive data exposure with minimal manual triage. The enhanced web console centralizes management of 100+ security controls with built-in validation, replacing error-prone manual DynamoDB and SSM configuration. Configurable multi-channel notifications with remediation links, deadlines, and IaC code snippets help teams fix root causes and ensure timely, accountable response.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Automated Security Response on AWS is available to deploy in all commercial and opt-in AWS regions, including GovCloud (US) and China regions.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/solutions/automated-security-response-on-aws/\"&gt;ASR solution page.&amp;nbsp;&lt;/a&gt;&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/automated-security-response-adds-AI-toolkit/",
       "publishedAt": "2026-08-31T06:00:00.000Z",
       "updatedAt": "2026-08-31T06:00:00.000Z",
@@ -10882,298 +11213,6 @@
         "amazon redshift",
         "s3",
         "redshift"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b14de779fff02a64",
-      "title": "Amazon SageMaker HyperPod now supports custom AMIs (Amazon Machine Images) for Slurm clusters",
-      "description": "Amazon SageMaker HyperPod now supports custom AMIs for Slurm-orchestrated clusters, enabling customers to deploy clusters with pre-configured, security-hardened environments that meet their specific organizational requirements. Customers deploying AI/ML workloads on HyperPod Slurm clusters need customized environments that meet strict security, compliance, and operational requirements while maintaining fast cluster startup times, but often struggle with complex lifecycle configuration scripts that slow deployment and create inconsistencies across cluster nodes. This capability allows customers",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports custom AMIs for Slurm-orchestrated clusters, enabling customers to deploy clusters with pre-configured, security-hardened environments that meet their specific organizational requirements. Customers deploying AI/ML workloads on HyperPod Slurm clusters need customized environments that meet strict security, compliance, and operational requirements while maintaining fast cluster startup times, but often struggle with complex lifecycle configuration scripts that slow deployment and create inconsistencies across cluster nodes.&lt;br&gt; &lt;br&gt; This capability allows customers to build upon HyperPod's performance-optimized base AMIs while incorporating customized security agents, compliance tools, proprietary libraries, and specialized drivers directly into the image, delivering faster startup times, improved reliability, and enhanced security compliance. Security teams can embed organizational policies directly into base images, allowing AI/ML teams to use pre-approved environments that accelerate time-to-training while meeting enterprise security standards. You can specify custom AMIs when creating new HyperPod Slurm clusters using the CreateCluster API, adding instance groups with the UpdateCluster API, or patching existing clusters with the UpdateClusterSoftware API. Custom AMIs must be built using HyperPod's public base AMIs to maintain compatibility with distributed training libraries and cluster management capabilities.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon SageMaker HyperPod is supported. To learn more about custom AMI support for Slurm clusters, see the Amazon SageMaker HyperPod &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/hyperpod-custom-ami-support.html\" target=\"_blank\"&gt;User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/hyperpod-custom-ami-slurm/",
-      "publishedAt": "2026-07-13T14:31:00.000Z",
-      "updatedAt": "2026-07-13T14:31:00.000Z",
-      "categories": [
-        "Compute",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "compute",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9f4d4b6bd7c7b581",
-      "title": "Amazon EC2 network/EBS instances now available in additional regions",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8in, R8ib, R8idn, and R8idb instances are available in the AWS Asia Pacific (Tokyo) and Europe (Frankfurt, Ireland) regions. These instances are powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS and feature the latest sixth generation AWS Nitro cards. These instances deliver up to 43% better compute performance per vCPU compared to previous generation R6in and R6idn instances. R8in, R8idn instances deliver 600 Gbps network bandwidth, the highest network bandwidth among enhanced networking EC2 inst",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8in, R8ib, R8idn, and R8idb instances are available in the AWS Asia Pacific (Tokyo) and Europe (Frankfurt, Ireland) regions.&amp;nbsp;These instances are powered by custom sixth generation Intel Xeon Scalable processors, available only on AWS and feature the latest sixth generation AWS Nitro cards. These instances deliver up to 43% better compute performance per vCPU compared to previous generation R6in and R6idn instances.&lt;/p&gt; \n&lt;p&gt;R8in, R8idn instances deliver 600 Gbps network bandwidth, the highest network bandwidth among enhanced networking EC2 instances. R8in instances are ideal for workloads such as real-time big data analytics, distributed web scale in-memory caches, caching fleets for AI/ML clusters, and Telco applications such as 5G User Plane Function (UPF). R8idn instances are ideal for network-intensive general purpose workloads requiring local storage, such as distributed compute, data analytics, and high-performance file systems.&lt;br&gt; &lt;br&gt; R8ib, R8idb instances deliver up to 300Gbps EBS bandwidth, the highest among non-accelerated compute EC2 instances. R8ib instances are best suited for workloads that benefit from high block storage performance, such as high-performance file systems and NoSQL databases. R8idb instances are ideal for storage-intensive general purpose workloads such as large commercial databases, data lakes, and NoSQL databases that benefit from both high EBS throughput and low-latency local NVMe storage.&lt;br&gt; &lt;br&gt; R8in, R8ib, R8idn, and R8idb instances support Elastic Fabric Adapter (EFA) networking on 48xlarge, 96xlarge, metal-48xl, and metal-96xl sizes. EFA networking enables lower latency and improved cluster performance for workloads deployed on tightly coupled clusters.&lt;/p&gt; \n&lt;p&gt;Amazon EC2 R8in an R8ib instances are available in US East (N. Virginia, Ohio), US West (Oregon),&amp;nbsp;Asia Pacific (Tokyo), and Europe (Spain, Frankfurt, Ireland) regions, via Savings Plans, On-Demand, and Spot instances. For more information, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/r8i/\"&gt;Amazon EC2 R8i instance&lt;/a&gt; page.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-r8in-r8ib-r8idn-r8idb",
-      "publishedAt": "2026-07-10T20:00:00.000Z",
-      "updatedAt": "2026-07-10T20:00:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2",
-        "EBS"
-      ],
-      "tags": [
-        "amazon ec2",
-        "compute",
-        "ec2",
-        "ebs"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "983a670e1f65ccb7",
-      "title": "Amazon EMR on EKS now supports Apache Spark troubleshooting agent",
-      "description": "Amazon EMR on EKS now supports the Apache Spark troubleshooting agent. Data engineers can now diagnose EMR on EKS job failures through natural language, receiving automated root cause analysis and PySpark code recommendations without manually navigating distributed logs and Spark History Server data. The agent analyzes Spark History Server data, distributed executor logs, and cluster configurations to identify issues such as memory errors, data skew, resource contention, and connectivity failures. With this launch, the Spark troubleshooting agent now covers all EMR deployment options: EMR on E",
-      "descriptionHtml": "&lt;p&gt;Amazon EMR on EKS now supports the Apache Spark troubleshooting agent. Data engineers can now diagnose EMR on EKS job failures through natural language, receiving automated root cause analysis and PySpark code recommendations without manually navigating distributed logs and Spark History Server data.&lt;br&gt; &lt;br&gt; The agent analyzes Spark History Server data, distributed executor logs, and cluster configurations to identify issues such as memory errors, data skew, resource contention, and connectivity failures. With this launch, the Spark troubleshooting agent now covers all EMR deployment options: EMR on EC2, EMR Serverless, and EMR on EKS. The agent is accessible directly from the EMR on EKS console through a \"Troubleshoot with AI\" option on failed jobs. Additionally, the agent is available through MCP (Model Context Protocol) using any compatible AI coding agent, including Kiro, Claude Code, and Cursor. All operations are read-only, authenticated with IAM roles, and logged in AWS CloudTrail.&lt;br&gt; &lt;br&gt; The Spark troubleshooting agent for Amazon EMR on EKS is available in all AWS Regions where the SageMaker Unified Studio is &lt;a href=\"https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-troubleshooting-features.html#available-regions\"&gt;available&lt;/a&gt;. To get started, go to EMR on EKS console, or set up the MCP server in your preferred AI coding agent. For detailed guidance, see the &lt;a href=\"https://docs.aws.amazon.com/emr/latest/ReleaseGuide/spark-troubleshoot.html\"&gt;EMR troubleshooting agent documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-emr-eks-spark-troubleshooting/",
-      "publishedAt": "2026-07-10T18:16:00.000Z",
-      "updatedAt": "2026-07-10T18:16:00.000Z",
-      "categories": [
-        "Amazon Emr",
-        "Analytics"
-      ],
-      "services": [
-        "EKS",
-        "EMR"
-      ],
-      "tags": [
-        "amazon emr",
-        "analytics",
-        "eks",
-        "emr"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9f47e275f722b1d0",
-      "title": "Amazon Location Service enhances Places APIs with new address and search options",
-      "description": "Today, Amazon Location Service announced new enhancements to its Places APIs that give developers greater control over address name formatting, multilingual address, travel-optimized POI search, and drive-through data. These capabilities span the Geocode, ReverseGeocode, GetPlace, Suggest, Autocomplete, SearchNearby, and SearchText APIs. Developers can now control how address component names are returned using the new AddressNamesMode parameter. By default, addresses are returned with normalized (canonical) names; developers can instead request matched names (echoing input) or administrative (",
-      "descriptionHtml": "&lt;p&gt;Today, Amazon Location Service announced new enhancements to its Places APIs that give developers greater control over address name formatting, multilingual address, travel-optimized POI search, and drive-through data. These capabilities span the Geocode, ReverseGeocode, GetPlace, Suggest, Autocomplete, SearchNearby, and SearchText APIs.&lt;/p&gt; \n&lt;p&gt;Developers can now control how address component names are returned using the new AddressNamesMode parameter. By default, addresses are returned with normalized (canonical) names; developers can instead request matched names (echoing input) or administrative (government hierarchy) names. The new AddressTranslations parameter returns place name translations in 50+ languages, making it easier to build multilingual applications. A TravelMode parameter optimizes Suggest and SearchText results for users on the move, improving relevance for navigation and in-vehicle scenarios. Additionally, GetPlace, Suggest, SearchNearby, and SearchText now return a DriveThrough attribute indicating whether a place offers drive-through service — useful for logistics, food delivery, and navigation applications. The Geocode API also now supports a new Parsing.AdditionalInfo response field with additional detail about how the input address was interpreted.&lt;/p&gt; \n&lt;p&gt;Amazon Location Service is available in the following AWS Regions: US East (Ohio), US East (N. Virginia), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Spain), Europe (Stockholm), South America (São Paulo), and AWS GovCloud (US-West).&lt;br&gt; &lt;br&gt; To get started, see the &lt;a href=\"https://docs.aws.amazon.com/location/latest/APIReference/API_Operations_Amazon_Location_Service_Places_V2.html\"&gt;Amazon Location Service Places API reference&lt;/a&gt;, or learn more about &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/places.html\"&gt;Places&lt;/a&gt; in the Amazon Location Service Developer Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-location-service-enhanced-address-search",
-      "publishedAt": "2026-07-10T17:26:00.000Z",
-      "updatedAt": "2026-07-10T17:26:00.000Z",
-      "categories": [
-        "AWS Govcloud Us"
-      ],
-      "services": [],
-      "tags": [
-        "aws govcloud us"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ad2a702952b0d906",
-      "title": "Amazon SageMaker HyperPod now supports AMI-based node lifecycle configuration for Slurm clusters using continuous provisioning",
-      "description": "Amazon SageMaker HyperPod now supports AMI-based configuration for Slurm clusters that use continuous provisioning. Continuous provisioning adds nodes to the cluster as capacity becomes available, and this launch extends AMI-based configuration to clusters using this mode. With this support, clusters using continuous provisioning can be created without downloading, configuring, or uploading lifecycle configuration scripts to Amazon S3. AMI-based configuration provisions nodes with the software and configurations needed for a production-ready environment to run AI/ML training workloads, includi",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports AMI-based configuration for Slurm clusters that use continuous provisioning. Continuous provisioning adds nodes to the cluster as capacity becomes available, and this launch extends AMI-based configuration to clusters using this mode. With this support, clusters using continuous provisioning can be created without downloading, configuring, or uploading lifecycle configuration scripts to Amazon S3.&lt;br&gt; &lt;br&gt; AMI-based configuration provisions nodes with the software and configurations needed for a production-ready environment to run AI/ML training workloads, including required software such as Docker, Enroot, and Pyxis, and configurations such as Slurm accounting, SSH key generation, and log rotation. When using continuous provisioning, each node is configured from the AMI as it is added to the cluster, without the need to manage lifecycle configuration scripts, so nodes become available to schedule jobs sooner. To enable AMI-based configuration, omit the LifeCycleConfig block from the instance group configuration when creating clusters via the API, or select \"None\" under Lifecycle scripts in Custom setup when using the SageMaker AI console. For additional customization on top of the AMI-based configuration baseline, an extension script can be provided by specifying the OnInitComplete parameter and SourceS3Uri in the LifeCycleConfig block via the API, or by providing the S3 URI in the \"Extension script file in S3\" field in Custom setup when using the console. Custom lifecycle configuration scripts remain fully supported for use cases that require full control over provisioning.&lt;br&gt; &lt;br&gt; AMI-based node lifecycle configuration for Slurm clusters using continuous provisioning is available in all AWS Regions where SageMaker HyperPod is available. To get started, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/smcluster-getting-started-slurm-cli.html\" target=\"_blank\"&gt;Getting started with SageMaker HyperPod using the AWS CLI&lt;/a&gt; or &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/smcluster-getting-started-slurm-console.html\" target=\"_blank\"&gt;Getting started with SageMaker HyperPod using the SageMaker AI console&lt;/a&gt; in the SageMaker user guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2025/06/ami-configuration-continuous-slurm/",
-      "publishedAt": "2026-07-10T17:00:00.000Z",
-      "updatedAt": "2026-07-10T17:00:00.000Z",
-      "categories": [
-        "Compute",
-        "Artificial Intelligence",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "compute",
-        "artificial intelligence",
-        "amazon sagemaker",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ee8cac6c72d637c5",
-      "title": "Amazon EKS Auto Mode now supports Application Recovery Controller zonal shift",
-      "description": "Amazon Elastic Kubernetes Service (Amazon EKS) now supports Amazon Application Recovery Controller (ARC) zonal shift and autoshift for clusters using EKS Auto Mode . ARC helps you manage and coordinate recovery across AWS Regions and Availability Zones (AZs). With this launch, EKS Auto Mode automatically protects your compute during a zonal shift at no additional cost or configuration, helping you maintain Kubernetes application availability by shifting in-cluster network traffic away from an impaired AZ. Customers run highly available applications across multiple AZs in Amazon EKS to eliminat",
-      "descriptionHtml": "&lt;p&gt;Amazon Elastic Kubernetes Service (Amazon EKS) now supports &lt;a href=\"https://aws.amazon.com/application-recovery-controller/\"&gt;Amazon Application Recovery Controller&lt;/a&gt; (ARC) zonal shift and autoshift for clusters using &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/automode.html\"&gt;EKS Auto Mode&lt;/a&gt;. ARC helps you manage and coordinate recovery across AWS Regions and Availability Zones (AZs). With this launch, EKS Auto Mode automatically protects your compute during a zonal shift at no additional cost or configuration, helping you maintain Kubernetes application availability by shifting in-cluster network traffic away from an impaired AZ.&lt;/p&gt; \n&lt;p&gt;Customers run highly available applications across multiple AZs in Amazon EKS to eliminate a single point of failure. Because EKS Auto Mode manages compute on your behalf, you get zonal shift support without setting flags, granting permissions, or managing Karpenter versions; simply enable ARC zonal shift on your cluster. When a zonal shift is activated, EKS Auto Mode stops provisioning new capacity in the impaired AZ and halts voluntary disruptions such as consolidation and drift for nodes in that zone. It also prevents voluntary disruptions in healthy zones if they depend on scheduling pods to the impaired zone. When the shift expires or is canceled, normal operations resume. You can start a shift manually, or authorize AWS to manage it using &lt;a href=\"https://docs.aws.amazon.com/r53recovery/latest/dg/arc-zonal-autoshift.html\"&gt;zonal autoshift&lt;/a&gt;, with practice runs to verify your cluster functions with one less AZ.&lt;/p&gt; \n&lt;p&gt;ARC zonal shift support for EKS Auto Mode is available in all AWS Regions where EKS Auto Mode is offered. To learn more, visit the &lt;a href=\"https://aws.amazon.com/eks/\"&gt;Amazon EKS product page&lt;/a&gt;, the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/zone-shift.html\"&gt;ARC zonal shift documentation&lt;/a&gt;, and the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/automode.html\"&gt;Amazon EKS Auto Mode documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/eks-auto-mode-arc-zonal-shift",
-      "publishedAt": "2026-07-10T16:00:00.000Z",
-      "updatedAt": "2026-07-10T16:00:00.000Z",
-      "categories": [
-        "Amazon Eks",
-        "Containers"
-      ],
-      "services": [
-        "EKS"
-      ],
-      "tags": [
-        "amazon eks",
-        "containers",
-        "eks"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "32f53fbf119b6a39",
-      "title": "Amazon EC2 G7 instances are now available in the AWS US East (N. Virginia) Region",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) G7 instances powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs are now available in US East (N. Virginia) Region. G7 instances deliver up to 4.6x AI inference performance and up to 2.1 graphics performance compared to G6 instances. G7 instances also deliver faster performance for GPU-accelerated data analytics workloads. Customers can use G7 instances for deploying AI models for language translation, video and image analysis, and speech recognition. They also accelerate graphics workloads such as creating and rendering real-t",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) G7 instances powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs are now available in US East (N. Virginia) Region.&amp;nbsp;G7 instances deliver up to 4.6x AI inference performance and up to 2.1 graphics performance compared to G6 instances. G7 instances also deliver faster performance for GPU-accelerated data analytics workloads.&lt;/p&gt; \n&lt;p&gt;Customers can use G7 instances for deploying AI models for language translation, video and image analysis, and speech recognition. They also accelerate graphics workloads such as creating and rendering real-time, cinematic-quality graphics and game streaming. Additionally, G7 instances support video transcoding, spatial computing, and data analytics workloads such as recommender systems,&amp;nbsp;Retrieval Augmented Generation (RAG) inference, and real-time data pipelines. G7 instances feature up to 8 NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs with 32 GB of memory per GPU and custom Intel Xeon 6 processors. They support up to 192 virtual CPUs (vCPUs) and up to 700 Gbps of Elastic Fabric Adapter networking bandwidth. They also support up to 768 GiB of system memory, and up to 7.6 TB of local NVMe SSD storage.&lt;/p&gt; \n&lt;p&gt;You can start using Amazon EC2 G7 instances today in three AWS Regions: US East (N. Virginia and Ohio), and US West (Oregon). You can purchase G7 instances as On-Demand Instances, Spot Instances, or as part of Savings Plans.&lt;/p&gt; \n&lt;p&gt;To get started, visit the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface&lt;/a&gt; (CLI), and AWS SDKs. To learn more, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g7/\"&gt;G7 instance page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-g7-available-North-Virginia",
-      "publishedAt": "2026-07-10T15:14:00.000Z",
-      "updatedAt": "2026-07-10T15:14:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Compute",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "amazon ec2",
-        "compute",
-        "artificial intelligence",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "64a8a1caca6633d5",
-      "title": "AWS DMS Schema Conversion now supports offline SQL Server conversion",
-      "description": "AWS Database Migration Service (DMS) Schema Conversion now supports offline source conversion for Microsoft SQL Server, enabling you to convert SQL Server schemas and code without direct connectivity to your source databases. You extract metadata using standard database commands in your own environment, then upload it to DMS Schema Conversion for processing. This eliminates security reviews, firewall changes, and VPN setup that delay migration projects, while delivering the same conversion results as the connected approach. Offline Source is ideal for organizations with security policies that ",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/dms/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Database Migration Service (DMS) Schema Conversion&lt;/a&gt;&amp;nbsp;now supports offline source conversion for Microsoft SQL Server, enabling you to convert SQL Server schemas and code without direct connectivity to your source databases. You extract metadata using standard database commands in your own environment, then upload it to DMS Schema Conversion for processing. This eliminates security reviews, firewall changes, and VPN setup that delay migration projects, while delivering the same conversion results as the connected approach.&lt;/p&gt; \n&lt;p&gt;Offline Source is ideal for organizations with security policies that restrict external tool access to production SQL Server databases. Database administrators generate human-readable metadata files within their existing environment, and security teams can review the commands and output before uploading, making approval straightforward. By removing the connectivity requirement, Offline Source transforms weeks of security reviews into a simple command-and-upload workflow.&lt;/p&gt; \n&lt;p&gt;Offline Source supports all DMS Schema Conversion targets at no additional conversion charge. For regional availability, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/dms/latest/userguide/CHAP_SchemaConversion.html#schema-conversion-supported-regions\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Supported AWS Regions&lt;/a&gt;&amp;nbsp;page. To get started, see&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/dms/latest/userguide/virtual-data-provider.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Using Offline Source&lt;/a&gt;&amp;nbsp;in the DMS Schema Conversion documentation.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-dms-schema-conversion-offline-source/",
-      "publishedAt": "2026-07-10T15:09:00.000Z",
-      "updatedAt": "2026-07-10T15:09:00.000Z",
-      "categories": [
-        "Databases",
-        "AWS Database Migration Service"
-      ],
-      "services": [
-        "DMS"
-      ],
-      "tags": [
-        "databases",
-        "aws database migration service",
-        "dms"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "8e05263916ee5dd3",
-      "title": "Amazon EC2 I7ie instances now available in AWS Asia Pacific (Hyderabad) region",
-      "description": "AWS is announcing starting today, Amazon EC2 I7ie instances are now available in AWS Asia Pacific (Hyderabad) region. Designed for large storage I/O intensive workloads, I7ie instances are powered by 5th Gen Intel Xeon Processors with an all-core turbo frequency of 3.2 GHz, offering up to 40% better compute performance and 20% better price performance over existing I3en instances. I7ie instances offer up to 120TB local NVMe storage density for storage optimized instances and offer up to twice as many vCPUs and memory compared to prior generation instances. Powered by 3rd generation AWS Nitro S",
-      "descriptionHtml": "&lt;p&gt;AWS is announcing starting today, Amazon EC2 I7ie instances are now available in AWS Asia Pacific (Hyderabad) region. Designed for large storage I/O intensive workloads, I7ie instances are powered by 5th Gen Intel Xeon Processors with an all-core turbo frequency of 3.2 GHz, offering up to 40% better compute performance and 20% better price performance over existing I3en instances. I7ie instances offer up to 120TB local NVMe storage density for storage optimized instances and offer up to twice as many vCPUs and memory compared to prior generation instances. Powered by 3rd generation AWS Nitro SSDs, I7ie instances deliver up to 65% better real-time storage performance, up to 50% lower storage I/O latency, and 65% lower storage I/O latency variability compared to I3en instances.&lt;br&gt; &lt;br&gt; I7ie are high density storage optimized instances, ideal for workloads requiring fast local storage with high random read/write performance at very low latency consistency to access large data sets. These instances are available in 9 different virtual sizes and deliver up to 100Gbps of network bandwidth and 60Gbps of bandwidth for Amazon Elastic Block Store (EBS).&lt;br&gt; &lt;br&gt; To learn more, visit the I7ie instances&lt;a href=\"https://aws.amazon.com/ec2/instance-types/i7ie/\"&gt; page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-i7ie-instances-aws-hyd-region/",
-      "publishedAt": "2026-07-10T14:55:00.000Z",
-      "updatedAt": "2026-07-10T14:55:00.000Z",
-      "categories": [
-        "Storage",
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "storage",
-        "amazon ec2",
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5fc705237343fd46",
-      "title": "Amazon DocumentDB (with MongoDB compatibility) now supports R8g.24xlarge and R8g.48xlarge instances",
-      "description": "Amazon DocumentDB (with MongoDB compatibility) now supports R8g.24xlarge and R8g.48xlarge database instances. R8g instances are powered by AWS Graviton4 processors and feature DDR5 memory, enabling customers to achieve higher throughput and support larger working sets in memory. With R8g.24xlarge (96 vCPUs, 768 GiB memory) and R8g.48xlarge (192 vCPUs, 1,536 GiB memory), customers can run more demanding workloads such as high-concurrency transactional applications, large-scale document processing, and memory-intensive operational workloads. Customers can get started with R8g.24xlarge and R8g.48",
-      "descriptionHtml": "&lt;p&gt;Amazon DocumentDB (with MongoDB compatibility) now supports R8g.24xlarge and R8g.48xlarge database instances. R8g instances are powered by AWS Graviton4 processors and feature DDR5 memory, enabling customers to achieve higher throughput and support larger working sets in memory. With R8g.24xlarge (96 vCPUs, 768 GiB memory) and R8g.48xlarge (192 vCPUs, 1,536 GiB memory), customers can run more demanding workloads such as high-concurrency transactional applications, large-scale document processing, and memory-intensive operational workloads.&lt;br&gt; &lt;br&gt; Customers can get started with R8g.24xlarge and R8g.48xlarge instances through the AWS Management Console, CLI, and SDK by modifying their existing Amazon DocumentDB database cluster or creating a new one. R8g instances are available for Amazon DocumentDB 5.0+ on both Standard and IO-Optimized cluster storage configurations. For more information including region availability, visit our &lt;a href=\"https://aws.amazon.com/documentdb/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;pricing page&lt;/a&gt;&amp;nbsp;and &lt;a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/db-instance-classes.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-documentdb-r8g-24xl-48xl/",
-      "publishedAt": "2026-07-10T14:00:00.000Z",
-      "updatedAt": "2026-07-10T14:00:00.000Z",
-      "categories": [
-        "Amazon Documentdb",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "DocumentDB"
-      ],
-      "tags": [
-        "amazon documentdb",
-        "aws govcloud us",
-        "documentdb"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "aa3c5344721a72fe",
-      "title": "AWS DMS Schema Conversion now supports AI agent automation",
-      "description": "AWS Database Migration Service (DMS) Schema Conversion now supports AI agent automation through the AWS MCP Server. You can connect AI coding agents, including Kiro, Claude Code, and Cursor, to DMS Schema Conversion and run complete migration workflows using natural language directly from your IDE. Agents create projects, browse source metadata, convert schemas, generate assessment reports, and export results autonomously. The DMS Schema Conversion skill, dms-schema-conversion , loads on demand and provides agents with predefined procedures, including API patterns, schema exclusions, and opera",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/dms/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Database Migration Service (DMS) Schema Conversion&lt;/a&gt;&amp;nbsp;now supports AI agent automation through the AWS MCP Server. You can connect AI coding agents, including Kiro, Claude Code, and Cursor, to DMS Schema Conversion and run complete migration workflows using natural language directly from your IDE. Agents create projects, browse source metadata, convert schemas, generate assessment reports, and export results autonomously.&lt;/p&gt; \n&lt;p&gt;The DMS Schema Conversion skill,&amp;nbsp;&lt;i&gt;dms-schema-conversion&lt;/i&gt;, loads on demand and provides agents with predefined procedures, including API patterns, schema exclusions, and operational sequencing rules. Agents follow these procedures rather than improvising from general knowledge, reducing trial-and-error loops. They can also help convert remaining code objects such as stored procedures, functions, and triggers, building on the generative AI capabilities launched at re:Invent 2024.&lt;/p&gt; \n&lt;p&gt;AI agent automation is available for all existing DMS Schema Conversion source and target engine pairs at no additional charge. For regional availability, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/dms/latest/userguide/CHAP_SchemaConversion.html#schema-conversion-supported-regions\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Supported AWS Regions&lt;/a&gt;&amp;nbsp;page. To get started, see&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/dms/latest/userguide/sc-genai-agents.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Using AI agents with DMS Schema Conversion&lt;/a&gt;&amp;nbsp;in the documentation.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-dms-sc-ai-agent-automation-mcp-server/",
-      "publishedAt": "2026-07-10T07:00:00.000Z",
-      "updatedAt": "2026-07-10T07:00:00.000Z",
-      "categories": [
-        "AWS Database Migration Service",
-        "Databases"
-      ],
-      "services": [
-        "DMS"
-      ],
-      "tags": [
-        "aws database migration service",
-        "databases",
-        "dms"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a604a8d338fc04b9",
-      "title": "AWS Organizations now applies account departure security controls by default for new organizations created via AWS Organizations console",
-      "description": "AWS Organizations now automatically applies security controls by default when you create a new organization via AWS Organizations console, simplifying initial security configuration by automatically applying core security controls. This approach safeguards multi-account environments by protecting against unintended member account departures from your organization. CloudOps administrators and central security teams get immediate protection in their new organizations from day one. When you create a new organization using the AWS Organizations console, the service automatically applies service co",
-      "descriptionHtml": "&lt;p&gt;AWS Organizations now automatically applies security controls by default when you create a new organization via AWS Organizations console, simplifying initial security configuration by automatically applying core security controls. This approach safeguards multi-account environments by protecting against unintended member account departures from your organization. CloudOps administrators and central security teams get immediate protection in their new organizations from day one.&lt;/p&gt; \n&lt;p&gt;When you create a new organization using the AWS Organizations console, the service automatically applies service control policies (SCPs) that prevent member accounts from leaving the organization or closing themselves. These controls help enterprises migrating to AWS or starting a new organization establish strong governance patterns without requiring deep security expertise. The security defaults are intentionally lightweight to provide protection without impeding legitimate operations. You maintain full control to modify or disable these settings at any time.&lt;/p&gt; \n&lt;p&gt;This feature is available in US East (N. Virginia), AWS GovCloud (US-East), AWS GovCloud (US-West), China (Beijing), and China (Ningxia). To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_org_create.html\"&gt;AWS Organizations documentation&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-organizations-security-controls-new-orgs-console",
-      "publishedAt": "2026-07-10T07:00:00.000Z",
-      "updatedAt": "2026-07-10T07:00:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Security And Compliance",
-        "AWS Organizations"
-      ],
-      "services": [
-        "Organizations"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "security and compliance",
-        "aws organizations",
-        "organizations"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b9eb817f99a2c409",
-      "title": "AWS Partner Central subsidiary connections now support qualification sharing",
-      "description": "AWS Partner Central subsidiary connections now enable partners to share qualifications across their connected partner and seller accounts. Partners connecting newly acquired partner's accounts or regional subsidiary accounts they own can now consolidate their AWS partnership standing across those accounts beyond revenue attribution. Partners with active subsidiary connections can now select Associate qualifications to share specializations, certifications, and select program enrollments across all connected accounts. The subsidiary's display name is automatically updated to reflect its affilia",
-      "descriptionHtml": "&lt;p&gt;AWS Partner Central subsidiary connections now enable partners to share qualifications across their connected partner and seller accounts. Partners connecting newly acquired partner's accounts or regional subsidiary accounts they own can now consolidate their AWS partnership standing across those accounts beyond revenue attribution.&lt;/p&gt; \n&lt;p&gt;Partners with active subsidiary connections can now select Associate qualifications to share specializations, certifications, and select program enrollments across all connected accounts. The subsidiary's display name is automatically updated to reflect its affiliation with the primary account, and tier is recalculated based on combined scorecard metrics. Upon connection, Partner Revenue Measurement (PRM) continues to attribute combined revenue across all connected accounts. With qualification sharing, partners now also benefit from a unified public profile and consolidated scorecard.&lt;/p&gt; \n&lt;p&gt;Subsidiary account connections and qualification sharing are available today in all commercial AWS Regions. Partners can self-service their subsidiary account connections and qualification sharing directly in AWS Partner Central. To get started, log in to AWS Partner Central in the AWS Management Console, navigate to Account Connections, and send a connection request to the accounts you own. To learn more about subsidiary connections and qualification sharing, visit the &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/partner-central/latest/getting-started/manage-subsidiary.html\"&gt;Managing subsidiary account connections guide&amp;nbsp;&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/subsidiary-qualification-sharing/",
-      "publishedAt": "2026-07-10T04:00:00.000Z",
-      "updatedAt": "2026-07-10T04:00:00.000Z",
-      "categories": [
-        "AWS Marketplace",
-        "AWS Marketplace And Partners",
-        "Partner Network"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace",
-        "aws marketplace and partners",
-        "partner network"
       ],
       "isNew": false
     }
