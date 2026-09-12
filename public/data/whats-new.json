@@ -1,7 +1,159 @@
 {
-  "lastUpdated": "2026-09-11T12:39:14.486Z",
+  "lastUpdated": "2026-09-12T11:59:47.344Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "a60364c6fd05dba8",
+      "title": "Amazon EC2 X2idn instances are now available in Asia Pacific (Hong Kong)",
+      "description": "Memory-optimized Amazon Elastic Compute Cloud (Amazon EC2) X2idn instances are now available in Asia Pacific (Hong Kong) Region. These instances, powered by 3rd generation Intel Xeon Scalable Processors and built with AWS Nitro System, are designed for memory-intensive workloads and deliver improvements in performance compared to previous generation X1 instances. These instances are SAP-certified for running Business Suite on HANA, SAP S/4HANA, Data Mart Solutions on HANA, Business Warehouse on HANA, SAP BW/4HANA, and SAP NetWeaver workloads on any database.",
+      "descriptionHtml": "&lt;p&gt;Memory-optimized Amazon Elastic Compute Cloud (Amazon EC2) X2idn instances are now available in Asia Pacific (Hong Kong) Region. These instances, powered by 3rd generation Intel Xeon Scalable Processors and built with AWS Nitro System, are designed for memory-intensive workloads and deliver improvements in performance compared to previous generation X1 instances. These instances are SAP-certified for running Business Suite on HANA, SAP S/4HANA, Data Mart Solutions on HANA, Business Warehouse on HANA, SAP BW/4HANA, and SAP NetWeaver workloads on any database.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-x2idn-asia-pacific-hong-kong/",
+      "publishedAt": "2026-09-11T18:35:00.000Z",
+      "updatedAt": "2026-09-11T18:35:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "da4cc670b70a2f5c",
+      "title": "Amazon SageMaker HyperPod now supports model caching for faster inference autoscaling and reduced cold starts",
+      "description": "Amazon SageMaker HyperPod now supports model caching, an inference optimization that pre-loads model weights and container images onto cluster nodes so pods start in seconds instead of minutes. When running LLM inference at scale for workloads like chat assistants, agentic pipelines, RAG, and document analysis, cold start is a real bottleneck. Deployments and scale-out events spend most of their time downloading container images and model weights. As model size increases, this gets worse, with large models taking tens of minutes before they can serve traffic. Model caching solves this with two",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports model caching, an inference optimization that pre-loads model weights and container images onto cluster nodes so pods start in seconds instead of minutes.&lt;/p&gt; \n&lt;p&gt;When running LLM inference at scale for workloads like chat assistants, agentic pipelines, RAG, and document analysis, cold start is a real bottleneck. Deployments and scale-out events spend most of their time downloading container images and model weights. As model size increases, this gets worse, with large models taking tens of minutes before they can serve traffic.&lt;/p&gt; \n&lt;p&gt;Model caching solves this with two independent capabilities. The weights cache stores model weights on local NVMe so pods read from fast local storage instead of pulling from S3 or FSx over the network. The image cache pre-pulls the container image so pods skip the ECR download entirely. If a pod lands on a node without a warm cache, it falls back to pulling from the original source automatically, so there is no risk of pods getting stuck or failing.&lt;/p&gt; \n&lt;p&gt;Benchmarks across models from 57 GB to 145 GB show around 60% faster scale-out, and the image cache cuts over two minutes of image-pull time (97% reduction). The benefit grows with model size while retaining the reliability of the original source path.&lt;/p&gt; \n&lt;p&gt;Customers enable model caching through the HyperPod Inference Operator by adding a modelCacheConfig section to their InferenceEndpointConfig or JumpStartModel resource. The operator handles the full lifecycle with no manual setup or cleanup.&lt;/p&gt; \n&lt;p&gt;Model caching is now generally available in all regions where SageMaker HyperPod is available. To get started, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-model-deployment-model-caching.html\"&gt;SageMaker HyperPod documentation&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/sgm-hyperpod-model-caching-inf/",
+      "publishedAt": "2026-09-11T18:25:00.000Z",
+      "updatedAt": "2026-09-11T18:25:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon sagemaker",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "047732db8527663f",
+      "title": "AWS Lambda now supports direct read configuration for Amazon S3 Files",
+      "description": "AWS Lambda now supports direct read configuration for Amazon S3 Files, letting you configure which storage your functions read from: S3 Files high-performance storage or your S3 bucket. With this launch, you can optimize the throughput and latency of file reads for your Lambda functions based on your application requirements. Customers use S3 Files with Lambda functions to build scalable data processing pipelines and stateful agentic workloads with the performance and simplicity of a file system, while benefiting from the scalability, durability, and cost-effectiveness of S3. S3 Files serves d",
+      "descriptionHtml": "&lt;p&gt;AWS Lambda now supports &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-performance.html#s3-files-performance-how\"&gt;direct read&lt;/a&gt;&amp;nbsp;configuration for Amazon S3 Files, letting you configure which storage your functions read from: S3 Files high-performance storage or your S3 bucket. With this launch, you can optimize the throughput and latency of file reads for your Lambda functions based on your application requirements.&lt;/p&gt; \n&lt;p&gt;Customers use S3 Files with Lambda functions to build scalable data processing pipelines and stateful agentic workloads with the performance and simplicity of a file system, while benefiting from the scalability, durability, and cost-effectiveness of S3. S3 Files serves data from high-performance storage for low latency or directly from your S3 bucket for high throughput on large reads, automatically routing each operation to the storage best suited for it.&amp;nbsp;By default, Lambda supports direct reads from your S3&amp;nbsp;bucket only for functions configured with 512 MB of memory or higher. However, without control over the direct read configuration, you cannot optimize read performance for your specific application requirements. With this launch, you can explicitly enable or disable direct read for S3 Files on your Lambda functions, independent of function memory size. When you enable direct read, your function reads files 1 MB or larger directly from your S3 bucket for maximum throughput, and smaller files&amp;nbsp;are&amp;nbsp;served through the high-performance storage. When you disable it, all reads are served through the high-performance storage for the lowest latency.&lt;/p&gt; \n&lt;p&gt;This capability is available in all AWS commercial Regions, AWS GovCloud (US-East), and AWS GovCloud (US-West) Regions, except Asia Pacific (New Zealand), Middle East (Bahrain), and Middle East (UAE).&amp;nbsp;You can configure direct read for S3 Files using the AWS Management Console, AWS CLI, AWS SDKs, and AWS CloudFormation. There is no additional charge beyond standard Lambda and S3 Files pricing. To learn more about how to use S3 Files with your Lambda function, visit the AWS Lambda &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/configuration-filesystem-s3files.html\"&gt;developer guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-lambda-direct-read-s3files/",
+      "publishedAt": "2026-09-11T17:00:00.000Z",
+      "updatedAt": "2026-09-11T17:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Lambda",
+        "S3"
+      ],
+      "tags": [
+        "lambda",
+        "s3"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "08ed980cb734f647",
+      "title": "Amazon Bedrock Managed Knowledge Base now supports multimodal embeddings for video, audio, and image content with TwelveLabs Marengo 3.0",
+      "description": "AWS announces the availability of TwelveLabs Marengo 3.0 as an embedding model in Amazon Bedrock Managed Knowledge Base, enabling customers to create multimodal embeddings for video, audio, and image content. Amazon Bedrock Managed Knowledge Base already supports media search by transcribing audio and video to text and generating text-based embeddings—Marengo 3.0 goes further by encoding visual scenes, speech, and video cues directly into multimodal embeddings, capturing meaning that transcription alone cannot. Simply upload your media assets from data sources such as Amazon S3, sync, and sear",
+      "descriptionHtml": "&lt;p&gt;AWS announces the availability of TwelveLabs Marengo 3.0 as an embedding model in Amazon Bedrock Managed Knowledge Base, enabling customers to create multimodal embeddings for video, audio, and image content. Amazon Bedrock Managed Knowledge Base already supports media search by transcribing audio and video to text and generating text-based embeddings—Marengo 3.0 goes further by encoding visual scenes, speech, and video cues directly into multimodal embeddings, capturing meaning that transcription alone cannot. Simply upload your media assets from data sources such as Amazon S3, sync, and search using natural language—with no infrastructure to manage.&lt;br&gt; Marengo 3.0 produces compact 512-dimensional vectors, delivering state-of-the-art retrieval accuracy. Results include segment start and end times, enabling applications to jump directly to the relevant moment in a video. This unlocks use cases across sports analytics, media and entertainment, security, education, and retail—from finding specific plays across seasons of game footage to locating lecture segments by concept rather than keywords. The model offers configurable segmentation options to match your content structure.&lt;br&gt; To learn more, see &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-native-multimodal.html\" target=\"_blank\"&gt;TwelveLabs Marengo 3.0 embedding model integration&lt;/a&gt; in the Amazon Bedrock Knowledge Base User Guide. For more information, visit the &lt;a href=\"https://aws.amazon.com/bedrock/knowledge-bases/\" target=\"_blank\"&gt;Amazon Bedrock Knowledge Bases product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-multimodal-embeddings-twelvelabs-marengo/",
+      "publishedAt": "2026-09-11T15:13:00.000Z",
+      "updatedAt": "2026-09-11T15:13:00.000Z",
+      "categories": [
+        "Amazon Quicksight",
+        "Artificial Intelligence",
+        "Aiml",
+        "Business Productivity"
+      ],
+      "services": [
+        "Bedrock",
+        "QuickSight"
+      ],
+      "tags": [
+        "amazon quicksight",
+        "artificial intelligence",
+        "aiml",
+        "business productivity",
+        "bedrock",
+        "quicksight"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8968fabf53354b5b",
+      "title": "AWS HealthOmics now publishes real-time run metrics to Amazon CloudWatch",
+      "description": "AWS HealthOmics now publishes real-time run metrics to Amazon CloudWatch, giving you visibility into workflow resource utilization as runs execute. The 14 new run metrics span CPU and GPU usage, memory usage, file system usage and I/O metrics, network throughput, and ephemeral storage usage. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows. Real-time run metrics can help you identify CPU or GPU bottlenecks, detect memory or storage exhaustion before a task fails",
+      "descriptionHtml": "&lt;p&gt;AWS HealthOmics now publishes real-time run metrics to Amazon CloudWatch, giving you visibility into workflow resource utilization as runs execute. The 14 new run metrics span CPU and GPU usage, memory usage, file system usage and I/O metrics, network throughput, and ephemeral storage usage. &lt;a href=\"https://aws.amazon.com/healthomics/\"&gt;AWS HealthOmics&lt;/a&gt; is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs at scale with fully managed bioinformatics workflows.&lt;/p&gt; \n&lt;p&gt;Real-time run metrics can help you identify CPU or GPU bottlenecks, detect memory or storage exhaustion before a task fails, and track file system throughput, all without opening a support case. By comparing actual usage against allocated resources, you can right-size the compute and storage configurations for your workflows. These metrics are emitted using the Amazon CloudWatch OpenTelemetry standard, so you can integrate them with third-party observability tools in addition to native CloudWatch dashboards and alarms.&lt;/p&gt; \n&lt;p&gt;Real-time run metrics are now available in the following AWS HealthOmics Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt, Ireland, London), and Asia Pacific (Singapore, Seoul, Tokyo). To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/omics/latest/dev/monitoring-run-metrics.html\"&gt;Monitoring run metrics with CloudWatch&lt;/a&gt; documentation. Amazon CloudWatch charges for these run metrics based on the volume of metric data ingested. For more information on pricing, visit &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;Amazon CloudWatch pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-healthomics-realtime-run-metrics/",
+      "publishedAt": "2026-09-11T15:00:00.000Z",
+      "updatedAt": "2026-09-11T15:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d9ce23f99b14455a",
+      "title": "AWS DevOps Agent adds support for bidirectional Slack communication",
+      "description": "AWS DevOps Agent now enables engineers to manage production operations across AWS, multicloud, and on-premises environments with the complete investigation lifecycle directly within Slack. Previously, on-call engineers and DevOps teams faced fragmented workflows during high-severity incidents, having to context-switch between communication and investigation platforms. This update consolidates both surfaces into a single, unified location where incident response already happens. Engineering teams can now initiate and steer investigations by simply @mentioning AWS DevOps Agent in any connected S",
+      "descriptionHtml": "&lt;p&gt;AWS DevOps Agent now enables engineers to manage&amp;nbsp;production operations&amp;nbsp;across AWS, multicloud, and on-premises environments with the complete investigation lifecycle directly within Slack. Previously, on-call engineers and DevOps teams faced fragmented workflows during high-severity incidents, having to context-switch between communication and investigation platforms. This update consolidates both surfaces into a single, unified location where incident response already happens.&lt;/p&gt; \n&lt;p&gt;Engineering teams can now initiate and steer investigations by simply @mentioning AWS DevOps Agent in any connected Slack private channel. All investigation activity, including team-contributed context, agent findings, and recommended actions, is captured within a single thread. Ask questions about AWS resources, system metrics, alarm status, deployment history, and incident patterns, reducing cognitive load during critical moments and making production operations significantly more efficient.&lt;/p&gt; \n&lt;p&gt;This capability is available in all commercial AWS Regions where AWS DevOps Agent is &lt;a href=\"https://docs.aws.amazon.com/devopsagent/latest/userguide/about-aws-devops-agent-supported-regions.html\"&gt;currently supported&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;To get started, read the &lt;a href=\"https://docs.aws.amazon.com/devopsagent/latest/userguide/connecting-to-ticketing-and-chat-connecting-slack.html#setting-up-bidirectional-communication-in-slack\"&gt;user guide&lt;/a&gt;. See all the latest AWS DevOps Agent features on the &lt;a href=\"https://docs.aws.amazon.com/devopsagent/latest/userguide/whats-new.html\"&gt;release history&lt;/a&gt;&amp;nbsp;page.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-devops-agent-bidirectional-slack-communication",
+      "publishedAt": "2026-09-11T15:00:00.000Z",
+      "updatedAt": "2026-09-11T15:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e4a3d71b8d69cae2",
+      "title": "Amazon RDS for Oracle now supports Supplemental Patch Bundle for July 2026 Release Update",
+      "description": "Amazon Relational Database Service (Amazon RDS) for Oracle now supports the Supplemental Patch Bundle (SPB) for the July 2026 Release Update (RU) for Oracle Database version 19c and 26ai. Starting with April 2026 releases, the Oracle Spatial Patch Bundle has been renamed to Supplemental Patch Bundle (SPB). The SPB includes additional database patches recommended by Oracle for specific use cases, such as Oracle Spatial, Oracle Data Pump, and Oracle GoldenGate. For details, see Release Updates (RUs) and Supplemental Patch Bundles (SPBs). You can apply the Supplemental Patch Bundle update for new",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/oracle/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (Amazon RDS) for Oracle&lt;/a&gt; now supports the Supplemental Patch Bundle (SPB) for the July 2026 Release Update (RU) for Oracle Database version 19c and 26ai.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Starting with April 2026 releases, the Oracle Spatial Patch Bundle has been renamed to Supplemental Patch Bundle (SPB). The SPB includes additional database patches recommended by Oracle for specific use cases, such as Oracle Spatial, Oracle Data Pump, and Oracle GoldenGate. For details, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Oracle.Minor.html#RUs-and-SPBs\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Release Updates (RUs) and Supplemental Patch Bundles (SPBs).&lt;/a&gt;&lt;/p&gt; \n&lt;p&gt;You can apply the Supplemental Patch Bundle update for new database instances, or upgrade existing instances to engine version 19.0.0.0.ru-2026-07.spb-1.r1 or 26.0.0.0.ru-2026-07.spb-1.r1 by selecting the \"Supplemental Patch Bundle Engine Versions\" checkbox in the AWS Console.&amp;nbsp;To learn more about Oracle SPBs supported on Amazon RDS for each engine version, see the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/OracleReleaseNotes/Welcome.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for Oracle Release notes&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;You can also use AWS Organizations upgrade rollout policy to stagger automatic minor version upgrades for your Amazon RDS database instances. This feature allows you to automatically apply updates to non-production environments, validate the updates, and then automatically apply the same update to production environments. For additional details about using AWS Organizations upgrade rollout policy for automatic minor version upgrades, refer to &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Oracle.Minor.html#oracle-minor-version-upgrade-rollout\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for Oracle documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-oracle-supports-spatial-patch-bundle-jul-2026-ru/",
+      "publishedAt": "2026-09-11T07:12:00.000Z",
+      "updatedAt": "2026-09-11T07:12:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds",
+        "aws govcloud us",
+        "rds"
+      ],
+      "isNew": true
+    },
     {
       "id": "52d10ed7b11a286d",
       "title": "AWS Lambda recursive loop detection is now available in Europe Sovereign Cloud",
@@ -322,7 +474,7 @@
       "id": "b6e22eb6d9e7536d",
       "title": "AWS Elemental introduces Dynamic Multiview for live video",
       "description": "AWS Elemental MediaPackage now offers Dynamic Multiview, a server-side capability that composes multiple live video sources into viewer-selected tiled layouts on demand. Content providers can deliver multi-angle, multi-game, and personalized viewing experiences as standard HLS (HTTP Live Streaming) and DASH (Dynamic Adaptive Streaming over HTTP) streams playable on most modern consumer devices, televisions, and set top boxes without custom player development. Dynamic Multiview operates entirely in the compressed domain, combining individually encoded sources without re-encoding or compositing.",
-      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaPackage now offers Dynamic Multiview, a server-side capability that composes multiple live video sources into viewer-selected tiled layouts on demand. Content providers can deliver multi-angle, multi-game, and personalized viewing experiences as standard HLS (HTTP Live Streaming) and DASH (Dynamic Adaptive Streaming over HTTP) streams playable on most modern consumer devices, televisions, and set top boxes without custom player development.&lt;/p&gt; \n&lt;p&gt;Dynamic Multiview operates entirely in the compressed domain, combining individually encoded sources without re-encoding or compositing. Customers encode each source once through AWS Elemental MediaLive, and MediaPackage assembles compositions on demand - only when viewers request them, eliminating the need to pre-encode combinations. Because the output is standard HLS and DASH, it plays natively on existing devices and players with no app changes or SDK integration required. The feature supports AVC and HEVC codecs, DRM encryption, SCTE-35 ad marker passthrough, and full-screen ad replacement.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/medialive/latest/ug/dynamic-multiview-reference.html\"&gt;Elemental Dynamic Multiview Reference Guide&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Dynamic Multiview is available in all AWS Regions where AWS Elemental MediaPackage and MediaLive are available.&lt;/p&gt;",
+      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaPackage now offers Dynamic Multiview, a server-side capability that composes multiple live video sources into viewer-selected tiled layouts on demand. Content providers can deliver multi-angle, multi-game, and personalized viewing experiences as standard HLS (HTTP Live Streaming) and DASH (Dynamic Adaptive Streaming over HTTP) streams playable on most modern consumer devices, televisions, and set top boxes without custom player development.&lt;/p&gt; \n&lt;p&gt;Dynamic Multiview operates entirely in the compressed domain, combining individually encoded sources without re-encoding or compositing. Customers encode each source once through AWS Elemental MediaLive, and MediaPackage assembles compositions on demand - only when viewers request them, eliminating the need to pre-encode combinations. Because the output is standard HLS and DASH, it plays natively on existing devices and players with no app changes or SDK integration required. The feature supports AVC and HEVC codecs, DRM encryption, SCTE-35 ad marker passthrough, and full-screen ad replacement.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/mediapackage/latest/userguide/dynamic-multiview.html\"&gt;Elemental Dynamic Multiview Reference Guide&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Dynamic Multiview is available in all AWS Regions where AWS Elemental MediaPackage and MediaLive are available.&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-elemental-dynamic-multiview-video/",
       "publishedAt": "2026-09-10T08:00:00.000Z",
       "updatedAt": "2026-09-10T08:00:00.000Z",
@@ -383,6 +535,23 @@
       "tags": [
         "compute",
         "migration"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "43e8cc2e4dab73e2",
+      "title": "AWS Marketplace sellers now receive qualified demo and private offer requests in minutes",
+      "description": "AWS Marketplace sellers that activated the request demo or request private offer call-to-action buttons on their listings can now act on customer requests within minutes of submission, while customers are still actively evaluating their products. This happens automatically, with no changes required to their listings or workflows. When a customer submits a request, they can now provide details about their use case, and AWS Marketplace uses an agentic workflow to evaluate those details and create an opportunity for the seller: an active prospect with a defined use case. Each opportunity arrives ",
+      "descriptionHtml": "&lt;p&gt;AWS Marketplace sellers that activated the request demo or request private offer call-to-action buttons on their listings can now act on customer requests within minutes of submission, while customers are still actively evaluating their products. This happens automatically, with no changes required to their listings or workflows.&lt;br&gt; &lt;br&gt; When a customer submits a request, they can now provide details about their use case, and AWS Marketplace uses an agentic workflow to evaluate those details and create an opportunity for the seller: an active prospect with a defined use case. Each opportunity arrives in AWS Partner Central with the customer's contact details and use case, so sellers can reach out directly. Previously, an AWS representative contacted the customer to qualify every request before sharing it, adding days of delay. Now sellers receive every active lead the moment it comes in, without waiting for AWS to manually qualify it first. Even when a customer provides only their contact information without additional information, the seller still receives their details as a lead to follow up on for additional qualification, and can enrich it through AWS lead prospecting workflows.&lt;br&gt; &lt;br&gt; Sellers who have not yet added the request a demo or request private offer buttons to their listings can turn them on by following the steps in the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/creating-private-offer.html#private-offer-requests-demos\"&gt;AWS Marketplace Seller Guide&lt;/a&gt;. Enabling these buttons lets customers request demos and private offers directly from a seller's product listing page, accelerating product evaluations and reducing procurement cycle times.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-marketplace-demo-private-offer-requests-qualification",
+      "publishedAt": "2026-09-09T21:04:00.000Z",
+      "updatedAt": "2026-09-09T21:04:00.000Z",
+      "categories": [
+        "AWS Marketplace"
+      ],
+      "services": [],
+      "tags": [
+        "aws marketplace"
       ],
       "isNew": true
     },
@@ -1102,7 +1271,7 @@
         "analytics",
         "mwaa"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "09ecc39787d399c6",
@@ -1128,7 +1297,7 @@
         "developer tools",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "de4eba1167c2a07b",
@@ -1152,7 +1321,7 @@
         "aiml",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ad51dd5101954569",
@@ -1176,7 +1345,7 @@
         "aiml",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "465d4d97c09f1e02",
@@ -1200,7 +1369,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9e52471093aeec37",
@@ -1224,7 +1393,7 @@
         "aws govcloud us",
         "guardduty"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "950d7b9c7a6a788f",
@@ -1254,7 +1423,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ba859f440081749d",
@@ -1276,7 +1445,7 @@
         "aws developer tools",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "592afb081698c732",
@@ -1298,7 +1467,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8ef7c19197b9d52e",
@@ -11048,182 +11217,6 @@
         "analytics",
         "msk",
         "kafka"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "da694db48a321dcb",
-      "title": "Amazon RDS now supports up to four storage modifications in 24 hours",
-      "description": "Amazon RDS now allows up to four storage modifications per database instance within a rolling 24-hour window. These modifications let you increase the size, change the type, and adjust the performance of your RDS storage volumes. You can start a new modification right after storage optimization for the previous modification is complete without having to wait for the six-hour cool-off period to complete. This enhancement improves operational agility for scaling storage capacity or adjusting performance during sudden data growth or unexpected workload spikes. With RDS storage modifications, you ",
-      "descriptionHtml": "&lt;p&gt;Amazon RDS now allows up to four storage modifications per database instance within a rolling 24-hour window. These modifications let you increase the size, change the type, and adjust the performance of your RDS storage volumes. You can start a new modification right after storage optimization for the previous modification is complete without having to wait for the six-hour cool-off period to complete.&lt;/p&gt; \n&lt;p&gt;This enhancement improves operational agility for scaling storage capacity or adjusting performance during sudden data growth or unexpected workload spikes. With RDS storage modifications, you can modify your volumes without downtime, keeping applications running with minimal performance impact.&lt;/p&gt; \n&lt;p&gt;The feature is automatically enabled on all Amazon RDS for PostgreSQL, Amazon RDS for MariaDB, Amazon RDS for MySQL, Amazon RDS for Db2, Amazon RDS for Oracle, and Amazon RDS for Microsoft SQL Server instances in all commercial AWS Regions and the AWS GovCloud (US) Regions. To learn more, refer the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.StorageTypes.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-upto-four-storage-modifications-24-hours",
-      "publishedAt": "2026-07-15T16:15:00.000Z",
-      "updatedAt": "2026-07-15T16:15:00.000Z",
-      "categories": [
-        "Amazon Rds",
-        "Databases",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "amazon rds",
-        "databases",
-        "aws govcloud us",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "3e5b8390689dd025",
-      "title": "AWS Glue SAP OData connector and zero-ETL integrations are now available in AWS GovCloud (US) regions",
-      "description": "AWS Glue SAP OData connector and zero-ETL integrations are now available in AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions, with support for Amazon DynamoDB, Salesforce, and SAP OData as sources. Customers operating in regulated environments can now replicate data from these sources into Amazon Redshift, Amazon S3, or other supported destinations without building or maintaining custom data pipelines. The SAP OData connector allows you to extract data from SAP systems exposing OData services, eliminating the need for custom extraction logic or third-party middleware. The zero-ETL int",
-      "descriptionHtml": "&lt;p&gt;AWS Glue SAP OData connector and zero-ETL integrations are now available in AWS GovCloud (US-West) and AWS GovCloud (US-East) Regions, with support for Amazon DynamoDB, Salesforce, and SAP OData as sources. Customers operating in regulated environments can now replicate data from these sources into Amazon Redshift, Amazon S3, or other supported destinations without building or maintaining custom data pipelines.&lt;br&gt; &lt;br&gt; The SAP OData connector allows you to extract data from SAP systems exposing OData services, eliminating the need for custom extraction logic or third-party middleware. The zero-ETL integrations are fully managed by AWS and minimize the need to build ETL data pipelines. With this new zero-ETL integration, you can efficiently extract and load valuable data from your Amazon DynamoDB databases or Salesforce and SAP applications into your data lake and data warehouse for analysis. Zero-ETL integration reduces your operational burden and saves the weeks of engineering effort needed to design, build, and test data pipelines. By selecting a few settings in the no-code interface, you can quickly set up your zero-ETL integration to automatically ingest and continually maintain an up-to-date replica of your data in the data lake and data warehouse. Zero-ETL integrations help you focus on deriving insights from your application data, breaking down data silos in your organization and improving operational efficiency.&lt;br&gt; &lt;br&gt; To get started, navigate to the AWS Glue console and create a new zero-ETL integration. For more information, visit the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/zero-etl-using.html\"&gt;AWS Glue zero-ETL integrations documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-glue-sap-zero-etl-govcloud",
-      "publishedAt": "2026-07-15T15:51:00.000Z",
-      "updatedAt": "2026-07-15T15:51:00.000Z",
-      "categories": [
-        "AWS Glue",
-        "AWS Govcloud Us",
-        "Analytics"
-      ],
-      "services": [
-        "Glue"
-      ],
-      "tags": [
-        "aws glue",
-        "aws govcloud us",
-        "analytics",
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "09deffb8c3a90255",
-      "title": "Amazon OpenSearch Service now supports the Agent Toolkit for AWS with a curated skill",
-      "description": "Amazon OpenSearch Service now integrates with the Agent Toolkit for AWS , enabling you to build, manage, and query OpenSearch Service domains and OpenSearch Serverless collections directly from AI coding agents such as Claude Code, Kiro, and Cursor. The integration is powered by the AWS MCP (Model Context Protocol) server, which executes AWS API calls on your behalf, paired with the curated amazon-opensearch-service skill that automatically routes natural-language requests to the right capability. With this skill, you can describe a goal in plain language and the agent handles the rest across ",
-      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now integrates with the &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\"&gt;Agent Toolkit for AWS&lt;/a&gt;, enabling you to build, manage, and query OpenSearch Service domains and OpenSearch Serverless collections directly from AI coding agents such as Claude Code, Kiro, and Cursor. The integration is powered by the AWS MCP (Model Context Protocol) server, which executes AWS API calls on your behalf, paired with the curated &lt;i&gt;amazon-opensearch-service&lt;/i&gt; skill that automatically routes natural-language requests to the right capability.&lt;br&gt; &lt;br&gt; With this skill, you can describe a goal in plain language and the agent handles the rest across five areas. &lt;b&gt;Migration&lt;/b&gt; moves you from self-managed OpenSearch into OpenSearch Service or OpenSearch Serverless. &lt;b&gt;Operations&lt;/b&gt; provisions and manages domains and collections. &lt;b&gt;Search&lt;/b&gt; builds vector, semantic, hybrid, and RAG search. &lt;b&gt;Log analytics&lt;/b&gt; analyzes logs with PPL and OpenSearch Ingestion. &lt;b&gt;Trace analytics&lt;/b&gt; investigates distributed traces with OpenTelemetry. The integration works with both managed domains and collections across all versions, requires no changes to your existing infrastructure, and is available at no additional charge. To learn more about these capabilities, see our &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/amazon-opensearch-service-skill.html\"&gt;documentation&lt;/a&gt;.&lt;br&gt; &lt;br&gt; Support is available in all AWS Regions where Amazon OpenSearch Service and OpenSearch Serverless are offered. To get started, install the aws-data-analytics plugin in your agent — it bundles the AWS MCP Server configuration and the OpenSearch skill in a single step. For setup instructions, see &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/aws-mcp-server.html\"&gt;MCP Server and Agent Skills&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-opensearch-service-agent/",
-      "publishedAt": "2026-07-15T14:44:00.000Z",
-      "updatedAt": "2026-07-15T14:44:00.000Z",
-      "categories": [
-        "Databases",
-        "Analytics",
-        "Amazon Opensearch Service"
-      ],
-      "services": [
-        "OpenSearch"
-      ],
-      "tags": [
-        "databases",
-        "analytics",
-        "amazon opensearch service",
-        "opensearch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6b7b0ef77faf6432",
-      "title": "Amazon RDS for Db2 is now available in additional AWS Commercial regions",
-      "description": "Amazon Relational Database Service (Amazon RDS) for Db2 is now available in the Asia Pacific (Thailand), Asia Pacific (Malaysia), Asia Pacific (Taipei), Mexico (Central), and Canada West (Calgary) Regions. Amazon RDS for Db2 makes it easy to set up, operate, and scale Db2 databases in the cloud. Customers can deploy a Db2 database in minutes with automatically configured parameters for optimal performance. For databases setup with Multi-AZ configuration, Amazon RDS performs synchronous replication to a standby instance in a different Availability Zone to provide high availability. To use Amazo",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/db2/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) for Db2&lt;/a&gt; is now available in the Asia Pacific (Thailand), Asia Pacific (Malaysia), Asia Pacific (Taipei), Mexico (Central), and Canada West (Calgary) Regions. Amazon RDS for Db2 makes it easy to set up, operate, and scale Db2 databases in the cloud. Customers can deploy a Db2 database in minutes with automatically configured parameters for optimal performance. For databases setup with Multi-AZ configuration, Amazon RDS performs synchronous replication to a standby instance in a different Availability Zone to provide high availability. &lt;br&gt; &lt;br&gt; To use Amazon RDS for Db2, customers can purchase a Db2 license from the AWS Marketplace for hourly, pay-as-you-go pricing, or use Bring Your Own License (BYOL). Both hourly and BYOL licensing are available in Standard and Advanced Editions. You can also choose to use the latest Db2 Community Edition that provides all the features available in Standard and Advanced Editions, with no commercial software licensing charges for development and test applications. This allows you to easily start developing and testing Db2 applications with a managed database service without worrying about software licensing. &lt;br&gt; &lt;br&gt; To learn more about Amazon RDS for Db2, refer to &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Db2.html\" target=\"_blank\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/rds/db2/pricing/\" target=\"_blank\"&gt;pricing&lt;/a&gt; pages.&lt;br&gt; &lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-db2-available-additional-aws-commercial-regions",
-      "publishedAt": "2026-07-15T07:39:00.000Z",
-      "updatedAt": "2026-07-15T07:39:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Rds"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "databases",
-        "amazon rds",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "95f2697aaa44c2bb",
-      "title": "AWS Lambda announces self-managed code storage",
-      "description": "AWS Lambda now supports self-managed Amazon S3 buckets for code storage, enabling you to reference source code directly from your own S3 buckets without Lambda creating intermediate copies. This eliminates code storage limits and reduces function activation time after function creates and updates by removing the copy step. AWS Lambda is a serverless compute service that runs your code without requiring you to manage servers. Customers who deploy many functions and additional code as Lambda layers often need more than 75GB of code storage per Region, requiring support tickets to increase this q",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/lambda/\"&gt;AWS Lambda&lt;/a&gt; now supports self-managed Amazon S3 buckets for code storage,&amp;nbsp;enabling you to reference source code directly from your own S3 buckets without Lambda creating intermediate copies. This eliminates code storage limits and reduces function activation time after function creates and updates by removing the copy step.&lt;/p&gt; \n&lt;p&gt;AWS Lambda is a serverless compute service that runs your code without requiring you to manage servers. Customers who deploy many functions and additional code as Lambda layers often need more than 75GB of code storage per Region, requiring support tickets to increase this quota. Previously, Lambda always copied your deployment package to Lambda-managed storage during function and layer creation, counting against this limit. Now, with self-managed code storage, Lambda references your code directly in your Amazon S3 bucket without creating a copy, so you can store as much function and layer code as your bucket allows. You maintain a single source of truth for your deployment packages in your own account. No additional Lambda charges apply for self-managed storage; you only pay for standard Amazon S3 storage and, where applicable, cross-Region data transfer rates. In addition,&amp;nbsp;Lambda has increased the default limit for Lambda-managed code storage from 75GB to 300GB per Region per account.&lt;/p&gt; \n&lt;p&gt;Self-managed Amazon S3 code storage is available in all commercial AWS Regions.&lt;/p&gt; \n&lt;p&gt;To get started, set the `S3ObjectStorageMode` parameter to `REFERENCE` when creating or updating functions and layers through the AWS CLI, AWS CloudFormation, AWS SAM, or AWS SDKs. You must grant the Lambda service principal `s3:GetObject` and `s3:GetObjectVersion` permissions on your S3 bucket. You can also update a function to use self-managed code storage via the Lambda Console. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/configuration-self-managed-storage.html\"&gt;AWS Lambda Developer Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/lambda-self-managed-code-storage/",
-      "publishedAt": "2026-07-15T07:00:00.000Z",
-      "updatedAt": "2026-07-15T07:00:00.000Z",
-      "categories": [
-        "AWS Lambda",
-        "Serverless"
-      ],
-      "services": [
-        "Lambda"
-      ],
-      "tags": [
-        "aws lambda",
-        "serverless",
-        "lambda"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "281889e3e931ac11",
-      "title": "AWS Elastic Disaster Recovery reduces recovery time for AWS-to-AWS workloads",
-      "description": "AWS Elastic Disaster Recovery (AWS DRS) now recovers your AWS-based workloads faster. For source servers running on Amazon EC2, DRS can now skip preparation steps that these workloads no longer need, reducing recovery time by up to 65% for Windows and up to 40% for Linux. During a disaster or a drill, every minute matters. Because workloads already running on AWS come with AWS-compatible drivers and configuration, DRS can launch them with fewer steps — helping you bring applications back online sooner and with greater confidence. Networking, drivers, and licensing are still applied automatical",
-      "descriptionHtml": "&lt;p&gt;AWS Elastic Disaster Recovery (AWS DRS) now recovers your AWS-based workloads faster. For source servers running on Amazon EC2, DRS can now skip preparation steps that these workloads no longer need, reducing recovery time by up to 65% for Windows and up to 40% for Linux.&lt;/p&gt; \n&lt;p&gt;During a disaster or a drill, every minute matters. Because workloads already running on AWS come with AWS-compatible drivers and configuration, DRS can launch them with fewer steps — helping you bring applications back online sooner and with greater confidence. Networking, drivers, and licensing are still applied automatically, so recovery stays simple and hands-off. You remain in control: turn on faster recovery across your whole account or for individual servers and change the setting whenever your needs change.&lt;/p&gt; \n&lt;p&gt;This capability is available in all AWS Regions where AWS DRS is offered, at no additional cost. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/drs/\"&gt;AWS Elastic Disaster Recovery User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-drs-fast-recovery/",
-      "publishedAt": "2026-07-14T22:05:00.000Z",
-      "updatedAt": "2026-07-14T22:05:00.000Z",
-      "categories": [
-        "Storage",
-        "AWS Govcloud Us"
-      ],
-      "services": [],
-      "tags": [
-        "storage",
-        "aws govcloud us"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "c173fe59aec9442c",
-      "title": "AWS Elastic Disaster Recovery now supports Amazon EBS volume initialization rate",
-      "description": "AWS Elastic Disaster Recovery (AWS DRS) now supports the Amazon EBS volume initialization rate, helping recovered volumes reach full performance faster during drills and recoveries. When DRS restores EBS volumes from snapshots, the data loads from Amazon S3 in the background, and I/O to blocks that haven't loaded yet can be slower until initialization finishes. With this launch, you can set a volume initialization rate on your DRS-managed EC2 launch template, and DRS applies it automatically when it creates volumes during recovery — bringing your applications to full storage performance on a p",
-      "descriptionHtml": "&lt;p&gt;AWS Elastic Disaster Recovery (AWS DRS) now supports the Amazon EBS volume initialization rate, helping recovered volumes reach full performance faster during drills and recoveries. When DRS restores EBS volumes from snapshots, the data loads from Amazon S3 in the background, and I/O to blocks that haven't loaded yet can be slower until initialization finishes. With this launch, you can set a volume initialization rate on your DRS-managed EC2 launch template, and DRS applies it automatically when it creates volumes during recovery — bringing your applications to full storage performance on a predictable timeline.&lt;/p&gt; \n&lt;p&gt;This is especially valuable for I/O-intensive workloads such as databases, where fast, consistent storage performance is critical to meeting your recovery time objectives. You set the rate once on the launch template, and DRS preserves it across the updates it makes for rightsizing or disk changes. If the rate cannot be applied for a given recovery, DRS completes recovery without it, so your recovery is never blocked.&lt;/p&gt; \n&lt;p&gt;AWS DRS support for the EBS volume initialization rate is available in all AWS Regions and environments where the EBS volume initialization rate is offered. You are charged per GB based on the full snapshot size and the rate you specify; for details, see &lt;a href=\"https://aws.amazon.com/ebs/pricing/\"&gt;Amazon EBS pricing&lt;/a&gt;. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/drs/\"&gt;AWS Elastic Disaster Recovery User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-drs-fast-hydration/",
-      "publishedAt": "2026-07-14T22:00:56.000Z",
-      "updatedAt": "2026-07-14T22:00:56.000Z",
-      "categories": [
-        "Storage",
-        "AWS Elastic Disaster Recovery",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "EBS"
-      ],
-      "tags": [
-        "storage",
-        "aws elastic disaster recovery",
-        "aws govcloud us",
-        "ebs"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "8f8466e24d8ef4bf",
-      "title": "Amazon CloudWatch announces lookup processor for log enrichment",
-      "description": "Amazon CloudWatch now supports lookup processor, enabling you to enrich log events with additional context by matching fields in your logs against a lookup table directly within your CloudWatch Pipeline. With the lookup processor, you can upload CSV files containing reference data and configure your pipeline to match incoming log fields against this data to add enriched metadata. For example, you can upload a CSV mapping IP addresses to application teams and automatically tag VPC Flow Logs with team ownership information as logs are ingested. The lookup processor matches fields in your log eve",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch now supports lookup processor, enabling you to enrich log events with additional context by matching fields in your logs against a lookup table directly within your&amp;nbsp;CloudWatch Pipeline.&lt;/p&gt; \n&lt;p&gt;With the lookup processor, you can upload CSV files containing reference data and configure your pipeline to match incoming log fields against this data to add enriched metadata. For example, you can upload a CSV mapping IP addresses to application teams and automatically tag VPC Flow Logs with team ownership information as logs are ingested. The lookup processor matches fields in your log events against fields in a lookup table and adds specified fields from matching rows to your log events. This enables data enrichment scenarios such as mapping user IDs to user details, product codes to product information, or error codes to human-readable error descriptions, thereby eliminating the need to build and maintain custom enrichment logic outside of CloudWatch. By enriching logs at ingestion time, your queries, dashboards, and alarms immediately benefit from the added context without any post-processing.&lt;/p&gt; \n&lt;p&gt;The lookup table processor is available in all AWS commercial regions that support Amazon CloudWatch pipelines. You can add a lookup processor to your pipeline using the AWS Management Console, AWS CLI, or AWS SDKs. To get started, see the Amazon CloudWatch Logs &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/transformation-processors.html#lookup-processor\"&gt;documentation.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-cloudwatch-lookup-processor/",
-      "publishedAt": "2026-07-14T22:00:00.000Z",
-      "updatedAt": "2026-07-14T22:00:00.000Z",
-      "categories": [],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "cloudwatch"
       ],
       "isNew": false
     }
