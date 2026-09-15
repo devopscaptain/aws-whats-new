@@ -1,7 +1,159 @@
 {
-  "lastUpdated": "2026-09-14T14:47:15.066Z",
+  "lastUpdated": "2026-09-15T13:12:20.537Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "8732e22c58dc561e",
+      "title": "Qwen3.6-35B-A3B-NVFP4 and Wan2.1-T2V-1.3B-Diffusers models now available on Amazon SageMaker JumpStart",
+      "description": "NVIDIA's Qwen3.6-35B-A3B-NVFP4 and Alibaba's Wan2.1-T2V-1.3B-Diffusers models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models bring specialized capabilities spanning agentic coding with long-context reasoning and lightweight text-to-video generation, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure. These models address different enterprise AI challenges with specialized capabilities: Qwen3.6-35B-A3B-NVFP4 is optimized for agentic coding, multimodal reasoning, an",
+      "descriptionHtml": "&lt;p&gt;NVIDIA's Qwen3.6-35B-A3B-NVFP4 and Alibaba's Wan2.1-T2V-1.3B-Diffusers models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models bring specialized capabilities spanning agentic coding with long-context reasoning and lightweight text-to-video generation, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.&lt;/p&gt; \n&lt;p&gt;These models address different enterprise AI challenges with specialized capabilities:&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Qwen3.6-35B-A3B-NVFP4&lt;/b&gt; is optimized for &lt;b&gt;agentic coding, multimodal reasoning, and long-context understanding&lt;/b&gt; as the NVIDIA-quantized variant of Alibaba's Qwen3.6-35B-A3B. This Mixture-of-Experts model contains 35B total parameters with only 3B activated per token (8 of 256 experts), supporting a 262K-token context window extendable to ~1M via YaRN scaling. Quantized to NVFP4 using NVIDIA's ModelOpt framework, it preserves thinking across conversation turns, multi-token prediction, and tool calling for multi-step agent pipelines—all at a significantly reduced memory footprint.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Wan2.1-T2V-1.3B-Diffusers&lt;/b&gt; excels in &lt;b&gt;text-to-video generation on consumer-grade hardware&lt;/b&gt;. Built on the diffusion transformer paradigm with a novel Video Variational Autoencoder (VAE), this 1.3B-parameter model generates high-quality, physics-consistent video clips from text prompts while requiring only 8.19 GB of VRAM. It can produce a 5-second 480p video on an RTX 4090 in approximately 4 minutes, making it one of the most accessible open-source video generation models available.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt; \n&lt;p&gt;To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/qwen3.6-35b-a3b-nvfp4-wan2.1-t2v-1.3B-diffusers-jumpstart/",
+      "publishedAt": "2026-09-14T17:39:00.000Z",
+      "updatedAt": "2026-09-14T17:39:00.000Z",
+      "categories": [
+        "Aiml",
+        "Amazon Sagemaker Jumpstart",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "aiml",
+        "amazon sagemaker jumpstart",
+        "artificial intelligence",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "327a7b0dd0e4df8f",
+      "title": "Ministral-3-3B-Instruct-2512 and Ministral-3-8B-Instruct-2512 models now available on Amazon SageMaker JumpStart",
+      "description": "Mistral AI's Ministral-3-3B-Instruct-2512 and Ministral-3-8B-Instruct-2512 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models from the Ministral 3 family bring compact, vision-capable language models purpose-built for edge deployment and resource-constrained environments, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure. These models address different enterprise AI challenges with specialized capabilities: Ministral-3-3B-Instruct-2512 is engineered for ultra-",
+      "descriptionHtml": "&lt;p&gt;Mistral AI's Ministral-3-3B-Instruct-2512 and Ministral-3-8B-Instruct-2512 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models from the Ministral 3 family bring compact, vision-capable language models purpose-built for edge deployment and resource-constrained environments, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.&lt;/p&gt; \n&lt;p&gt;These models address different enterprise AI challenges with specialized capabilities:&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Ministral-3-3B-Instruct-2512&lt;/b&gt; is engineered for &lt;b&gt;ultra-lightweight edge deployment with multimodal understanding&lt;/b&gt;. Comprising a 3.4B language model and a 0.4B vision encoder, it fits in just 8GB of VRAM in FP8 while supporting a 256K-token context window. It offers vision analysis, multilingual instruction following across dozens of languages (including English, French, Spanish, German, Chinese, Japanese, Korean, and Arabic), strong system-prompt adherence, and native function calling with structured JSON output—all under the Apache 2.0 license.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Ministral-3-8B-Instruct-2512&lt;/b&gt; delivers &lt;b&gt;frontier-class capabilities comparable to its larger Mistral Small 3.2 24B counterpart&lt;/b&gt; in a compact 8B form factor. Built with an 8.4B language model and a 0.4B vision encoder, it fits in 12GB of VRAM in FP8 and features an interleaved sliding-window attention pattern for faster, memory-efficient inference. It shares the same vision, multilingual, agentic, and function-calling capabilities as its 3B sibling while offering stronger reasoning and generation performance.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt; \n&lt;p&gt;To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/ministral-3-3b-instruct-2512-ministral-3-8B-Instruct-2512-jumpstart/",
+      "publishedAt": "2026-09-14T17:35:00.000Z",
+      "updatedAt": "2026-09-14T17:35:00.000Z",
+      "categories": [
+        "Aiml",
+        "Artificial Intelligence",
+        "Amazon Sagemaker Jumpstart"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "aiml",
+        "artificial intelligence",
+        "amazon sagemaker jumpstart",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "13e94cc65ebb117f",
+      "title": "Gemma-4-31B-it-assistant and Gemma-4-31B-IT-NVFP4 models now available on Amazon SageMaker JumpStart",
+      "description": "Google DeepMind's Gemma-4-31B-it-assistant and NVIDIA's Gemma-4-31B-IT-NVFP4 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models bring the flagship Gemma 4 31B dense architecture to enterprise workloads in both full-precision and optimized quantized variants, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure. These models address different enterprise AI challenges with specialized capabilities: Gemma-4-31B-it-assistant is built for multimodal reasoning, coding,",
+      "descriptionHtml": "&lt;p&gt;Google DeepMind's Gemma-4-31B-it-assistant and NVIDIA's Gemma-4-31B-IT-NVFP4 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models bring the flagship Gemma 4 31B dense architecture to enterprise workloads in both full-precision and optimized quantized variants, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.&lt;/p&gt; \n&lt;p&gt;These models address different enterprise AI challenges with specialized capabilities:&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Gemma-4-31B-it-assistant&lt;/b&gt; is built for &lt;b&gt;multimodal reasoning, coding, and agentic workflows&lt;/b&gt; as the assistant-tuned variant of Google's flagship 31B dense model. It handles text and image inputs (including video as frame sequences) and generates text output, with a 256K-token context window and support for over 140 languages. Ranked #3 among open models on the Arena AI text leaderboard—outcompeting models 20x its size—it features a hybrid attention mechanism interleaving local sliding-window and full global attention with native function calling for building autonomous agents.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;Gemma-4-31B-IT-NVFP4&lt;/b&gt; delivers the &lt;b&gt;same Gemma 4 31B capabilities at a fraction of the memory footprint&lt;/b&gt;. Quantized with NVIDIA's ModelOpt framework to 4-bit FP4 precision, it reduces memory usage to ~18.5 GB (68% smaller than the base model) and achieves approximately 2.5x faster inference while retaining 97–99% of the original model's quality. Ideal for cost-efficient, high-throughput production deployments on NVIDIA RTX, DGX Spark, and data center GPUs.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt; \n&lt;p&gt;To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/gemma-4-31b-it-assistant-gemma-4-31b-it-nvfp4-jumpstart/",
+      "publishedAt": "2026-09-14T17:32:00.000Z",
+      "updatedAt": "2026-09-14T17:32:00.000Z",
+      "categories": [
+        "Amazon Sagemaker Jumpstart",
+        "Aiml",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "amazon sagemaker jumpstart",
+        "aiml",
+        "artificial intelligence",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ab4a968a1915c206",
+      "title": "granite-speech-4.1-2b, kanana-2-30b-a3b-instruct, and OpenFold3 models now available on Amazon SageMaker JumpStart",
+      "description": "BM's granite-speech-4.1-2b, Kakao's kanana-2-30b-a3b-instruct, and the OpenFold Consortium's OpenFold3 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three models bring specialized capabilities spanning multilingual speech recognition, bilingual agentic AI, and biomolecular structure prediction, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure. These models address different enterprise AI challenges with specialized capabilities: granite-speech-4.1-2b is purpose-bui",
+      "descriptionHtml": "&lt;p&gt;BM's granite-speech-4.1-2b, Kakao's kanana-2-30b-a3b-instruct, and the OpenFold Consortium's OpenFold3 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three models bring specialized capabilities spanning multilingual speech recognition, bilingual agentic AI, and biomolecular structure prediction, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.&lt;/p&gt; \n&lt;p&gt;These models address different enterprise AI challenges with specialized capabilities:&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;granite-speech-4.1-2b&lt;/b&gt; is purpose-built for &lt;b&gt;multilingual automatic speech recognition (ASR) and bidirectional speech translation (AST)&lt;/b&gt; across English, French, German, Spanish, Portuguese, and Japanese. This compact 2B-parameter speech-language model delivers a word error rate of 5.33% with a real-time factor of ~231, making it one of the most efficient ASR models in its class. Released under Apache 2.0, it integrates seamlessly into enterprise voice workflows for transcription, translation, and audio processing at scale.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;kanana-2-30b-a3b-instruct&lt;/b&gt; excels in &lt;b&gt;bilingual Korean-English instruction following and agentic AI workflows&lt;/b&gt;. Developed by Kakao, it adopts a cutting-edge architecture featuring Multi-head Latent Attention (MLA) and Mixture-of-Experts (MoE), activating only 3B of its 30B total parameters per forward pass for superior throughput. Post-trained with supervised fine-tuning and reinforcement learning, it supports up to 128K tokens via YaRN scaling and is designed to function as an AI collaborator that understands context and acts proactively.&lt;/p&gt; \n&lt;p&gt;&lt;b&gt;OpenFold3&lt;/b&gt; provides &lt;b&gt;all-atom biomolecular complex structure prediction&lt;/b&gt; for proteins, DNA, RNA, and small-molecule ligands. Developed by the OpenFold Consortium and the AlQuraishi Lab at Columbia University, this diffusion-based model extends structure prediction beyond single proteins to model multi-chain complexes and heterogeneous biomolecular interactions. It supports computer-aided drug design and is applicable across academic and pharmaceutical research labs.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt; \n&lt;p&gt;To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/granite-speech-4.1-2b-edge-kanana-2-30b-a3b-instruct-openfold3-jumpstart/",
+      "publishedAt": "2026-09-14T17:30:00.000Z",
+      "updatedAt": "2026-09-14T17:30:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Sagemaker Jumpstart",
+        "Aiml"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon sagemaker jumpstart",
+        "aiml",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "19c29d32a1b7977a",
+      "title": "AWS Glue zero-ETL adds target table property ownership and conflict detection",
+      "description": "AWS Glue zero-ETL integrations now detect table property conflicts and track integration ownership. When you configure a source table and target catalog, Glue associates the resulting table properties with the owning integration, so two integrations can no longer be pointed at the same target table without your knowledge. This works across Amazon S3 Tables and SageMaker Lakehouse catalogs. Data teams running multiple zero-ETL integrations gain predictable control over where each source table lands. If you attempt to create or modify an integration whose table properties are owned by another in",
+      "descriptionHtml": "&lt;p&gt;AWS Glue zero-ETL integrations now detect table property conflicts and track integration ownership. When you configure a source table and target catalog, Glue associates the resulting table properties with the owning integration, so two integrations can no longer be pointed at the same target table without your knowledge. This works across Amazon S3 Tables and SageMaker Lakehouse catalogs.&lt;/p&gt; \n&lt;p&gt;Data teams running multiple zero-ETL integrations gain predictable control over where each source table lands. If you attempt to create or modify an integration whose table properties are owned by another integration, Glue identifies the owning integration and guides you to choose a different target or update the existing one, so your pipelines stay isolated and your data lands exactly where you intend.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Commercial and AWS GovCloud (US) Regions where AWS Glue zero-ETL integrations are supported.&lt;/p&gt; \n&lt;p&gt;To learn more, refer to the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/zero-etl-target.html\"&gt;AWS Glue Developer Guide&lt;/a&gt; and get started in the &lt;a href=\"https://console.aws.amazon.com/glue/\"&gt;AWS Glue console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/glue-zero-etl-ownership-conflicts/",
+      "publishedAt": "2026-09-14T08:00:00.000Z",
+      "updatedAt": "2026-09-14T08:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Glue"
+      ],
+      "tags": [
+        "glue"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c8a4cb591530d013",
+      "title": "AWS End User Messaging now supports Dynamic Flows in WhatsApp",
+      "description": "AWS End User Messaging now supports dynamic WhatsApp flows so you can turn WhatsApp conversations into rich, interactive experiences that end-users complete directly in WhatsApp. Instead of pushing end-users to a website or a separate form to complete an interactive experience, you can instead guide them through an appointment booking, lead generation, sign-up, survey or a transaction directly in the chat. Customers can start building a flow using one of Meta's stater templates with familiar building blocks like text inputs, date pickers, drop downs, and buttons, or customize the flow from scr",
+      "descriptionHtml": "&lt;p&gt;AWS End User Messaging now supports dynamic WhatsApp flows so you can turn WhatsApp conversations into rich, interactive experiences that end-users complete directly in WhatsApp.&lt;br&gt; &lt;br&gt; Instead of pushing end-users to a website or a separate form to complete an interactive experience, you can instead guide them through an appointment booking, lead generation, sign-up, survey or a transaction directly in the chat. Customers can start building a flow using one of Meta's stater templates with familiar building blocks like text inputs, date pickers, drop downs, and buttons, or customize the flow from scratch. With dynamic flows, each screen can call your own HTTPS endpoint in real time, so you can show live availability, and personalize each step in the flow for your end-users.&lt;br&gt; &lt;br&gt; You build and manage flows entirely in AWS End User Messaging Social, through the console or APIs. Define a flow with a JSON schema, then deliver it with a message template to reach customers where they are.&lt;br&gt; &lt;br&gt; WhatsApp flows are available in all regions where End User Messaging Social is available. To get started, see the &lt;a href=\"https://docs.aws.amazon.com/social-messaging/latest/userguide/what-is-service.html\"&gt;User Guide.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-whatsapp-dynamic-flows",
+      "publishedAt": "2026-09-14T07:00:00.000Z",
+      "updatedAt": "2026-09-14T07:00:00.000Z",
+      "categories": [
+        "Business Productivity"
+      ],
+      "services": [],
+      "tags": [
+        "business productivity"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "51dde609fe26c7ba",
+      "title": "AWS End User Messaging strengthens SMS deliverability with automatic failover",
+      "description": "AWS End User Messaging is advancing its deliverability capabilities in phone pools. Now, customers sending through phone pools automatically benefit from automatic failover to the next best performing number in the pool when SMS delivery is impacted from downstream disruptions. SMS deliverability can be affected by drops or delays when trying to reach the end recipient while it's being routed from AWS to messaging providers and eventually mobile carriers. These disruptions can hit the most important parts of your messaging program, including delivery notifications, one-time passcodes, reminder",
+      "descriptionHtml": "&lt;p&gt;AWS End User Messaging is advancing its deliverability capabilities in phone pools. Now, customers sending through phone pools automatically benefit from automatic failover to the next best performing number in the pool when SMS delivery is impacted from downstream disruptions.&lt;br&gt; &lt;br&gt; SMS deliverability can be affected by drops or delays when trying to reach the end recipient while it's being routed from AWS to messaging providers and eventually mobile carriers. These disruptions can hit the most important parts of your messaging program, including delivery notifications, one-time passcodes, reminders, and other time-sensitive messages. AWS End User Messaging watches for delivery delays, message failures, or drops in conversion and reroutes traffic to a more optimized delivery path.&lt;br&gt; &lt;br&gt; Customers do not need to take any action to receive this benefit for phone pools. If you are not sending through phone pools today, you can create one by following these &lt;a href=\"https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-pool-create.html\"&gt;instructions&lt;/a&gt;. This capability is available in all AWS Regions where AWS End User Messaging is available.&lt;br&gt; &lt;br&gt; To learn more, see the AWS End User Messaging SMS &lt;a href=\"https://docs.aws.amazon.com/sms-voice/latest/userguide/what-is-sms-mms.html\"&gt;User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-improves-deliverability",
+      "publishedAt": "2026-09-14T07:00:00.000Z",
+      "updatedAt": "2026-09-14T07:00:00.000Z",
+      "categories": [
+        "Amazon Pinpoint",
+        "Business Productivity"
+      ],
+      "services": [
+        "Pinpoint"
+      ],
+      "tags": [
+        "amazon pinpoint",
+        "business productivity",
+        "pinpoint"
+      ],
+      "isNew": true
+    },
     {
       "id": "ed901b7c4c2c001e",
       "title": "AWS Elemental MediaLive enables frame-accurate pipeline locking for streams without timecode",
@@ -1178,7 +1330,7 @@
         "security identity and compliance",
         "iam"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "be29eaeaf2d931a4",
@@ -1201,7 +1353,7 @@
         "developer tools",
         "serverless"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "227c6138ef777c82",
@@ -1225,7 +1377,7 @@
         "aws support",
         "emr"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "35b7315cddc0604b",
@@ -1249,7 +1401,7 @@
         "aws govcloud us",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "196640fd5c0ce0b4",
@@ -1271,7 +1423,7 @@
         "storage",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8ef629cf94144695",
@@ -11049,171 +11201,6 @@
       ],
       "tags": [
         "databases",
-        "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "43caf28b348afcd1",
-      "title": "Amazon CloudWatch Logs Insights adds 25 new query commands and functions",
-      "description": "Amazon CloudWatch Logs Insights query language now supports 25 new commands and functions that expand your ability to query, transform, correlate, and analyze logs. Customers analyzing logs in CloudWatch Logs Insights often need to perform statistical aggregation, handle null values in time-series data, compare logs across time windows, detect outliers, and enrich events with lookup data. With this launch, CloudWatch Logs Insights adds type conversion and encoding functions (hexToAscii, hexToDec, decToHex), date and time functions (parseDate, formatDate, queryStartTime, queryEndTime, queryTime",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch Logs Insights query language now supports 25 new commands and functions that expand your ability to query, transform, correlate, and analyze logs. Customers analyzing logs in CloudWatch Logs Insights often need to perform statistical aggregation, handle null values in time-series data, compare logs across time windows, detect outliers, and enrich events with lookup data.&lt;br&gt; &lt;br&gt; With this launch, CloudWatch Logs Insights adds type conversion and encoding functions (hexToAscii, hexToDec, decToHex), date and time functions (parseDate, formatDate, queryStartTime, queryEndTime, queryTimeRange), string functions (messageSize), JSON inspection functions (jsonArraySize, jsonArrayContains), and a conditional validation function (isNumeric). It also introduces statistical commands (variance, topk, countFrequent), row-sequencing and null-handling commands (autoregress, accum, filldown, fillmissing), sessionization and time-comparison commands (sessionize, logcompare), a data analysis command (outlier), query-composition and join commands (where, appendcols), and a lookup enrichment command (cidrlookup).&lt;br&gt; &lt;br&gt; These commands and functions are available today in all commercial AWS Regions. To learn more, see the Amazon CloudWatch Logs &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_AnalyzeLogData_LogsInsights.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/7/amazon-cloudwatch-logs-insights-ql/",
-      "publishedAt": "2026-07-15T21:56:00.000Z",
-      "updatedAt": "2026-07-15T21:56:00.000Z",
-      "categories": [
-        "Amazon Cloudwatch",
-        "Management And Governance",
-        "Amazon Cloudwatch Logs"
-      ],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "amazon cloudwatch",
-        "management and governance",
-        "amazon cloudwatch logs",
-        "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "918c1e12bb9666e3",
-      "title": "Amazon CloudWatch Logs announces intelligent tiering for storage",
-      "description": "Amazon CloudWatch Logs now supports intelligent storage tiering, which automatically classifies your log data across three storage tiers - Standard (existing), Infrequent Access, and Archive Instant Access based on access patterns. This allows you to store logs in Amazon CloudWatch for extended periods at lower-cost tiers without any operational overhead. With today's launch, customers can now retain high-volume verbose logs needed to be stored for longer periods at a lower cost in Amazon CloudWatch. Instead of filtering these logs or exporting them, you can now keep them natively in Amazon Cl",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch Logs now supports intelligent storage tiering, which automatically classifies your log data across three storage tiers - Standard (existing), Infrequent Access, and Archive Instant Access based on access patterns. This allows you to store logs in Amazon CloudWatch for extended periods at lower-cost tiers without any operational overhead.&lt;/p&gt; \n&lt;p&gt;With today's launch, customers can now retain high-volume verbose logs needed to be stored for longer periods at a lower cost in Amazon CloudWatch. Instead of filtering these logs or exporting them, you can now keep them natively in Amazon CloudWatch and benefit from the same query experience regardless of which tier your data resides in. Amazon CloudWatch monitors access patterns and automatically reclassifies data not accessed for 30 days to the Infrequent Access tier, and data not accessed for 90 days to the Archive Instant Access tier. When you access older data, it is automatically promoted back to the Standard tier for 30 days. By consolidating all your logs in CloudWatch, you get full visibility in one tool, thereby eliminating the operational overhead of managing multiple storage solutions and reducing your Mean Time to Resolution (MTTR) by analyzing, and alerting on all your logs in a single place.&lt;/p&gt; \n&lt;p&gt;Amazon CloudWatch Logs Intelligent-Tiering is available in all AWS commercial regions except Middle East (Bahrain) and Middle East (UAE). You can enable intelligent tiering at the account level in the AWS Management Console, AWS SDKs or through AWS CLI. Learn more about CloudWatch Logs intelligent tiering &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;pricing&lt;/a&gt;&amp;nbsp;and &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cwl_intelligent_tier.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-cloudwatch-intelligent-tiering/",
-      "publishedAt": "2026-07-15T20:00:00.000Z",
-      "updatedAt": "2026-07-15T20:00:00.000Z",
-      "categories": [],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b2617d03f91d20b1",
-      "title": "Amazon MQ now supports configurable storage for RabbitMQ brokers",
-      "description": "Amazon MQ now allows you to configure the EBS Disk storage size for RabbitMQ brokers independently of instance type. When creating or updating a broker, you can define a custom storage size, allowing you to right-size storage independently of your instance size to match your specific messaging workload requirements. Configurable storage is available for RabbitMQ M7g brokers on version 4.2 or later using cluster deployments only. With configurable storage, you can choose a storage size from the default value on M7g to the maximum allowed value depending on your instance size in increments of 5 ",
-      "descriptionHtml": "&lt;p&gt;Amazon MQ now allows you to configure the EBS Disk storage size for RabbitMQ brokers independently of instance type. When creating or updating a broker, you can define a custom storage size, allowing you to right-size storage independently of your instance size to match your specific messaging workload requirements. Configurable storage is available for RabbitMQ M7g brokers on version 4.2 or later using cluster deployments only.&lt;/p&gt; \n&lt;p&gt;With configurable storage, you can choose a storage size from the default value on M7g to the maximum allowed value depending on your instance size in increments of 5 GB. You can specify the Storage Size using the using the AWS Console, AWS CloudFormation, AWS Command Line Interface (CLI), or the AWS Cloud Development Kit (CDK). Storage changes are applied during the next broker reboot.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Standard Amazon MQ storage pricing applies based on the disk size as per &lt;a href=\"https://aws.amazon.com/amazon-mq/pricing/\" target=\"_blank\"&gt;Amazon MQ pricing&lt;/a&gt;. Configurable storage is available in all commercial AWS Regions where Amazon MQ for RabbitMQ is offered. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/welcome.html\" target=\"_blank\"&gt;Amazon MQ Developer Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-mq-rabbitmq-configurable-storage/",
-      "publishedAt": "2026-07-15T18:18:00.000Z",
-      "updatedAt": "2026-07-15T18:18:00.000Z",
-      "categories": [
-        "Messaging",
-        "Developers",
-        "Amazon Mq",
-        "Analytics",
-        "Migration"
-      ],
-      "services": [
-        "MQ"
-      ],
-      "tags": [
-        "messaging",
-        "developers",
-        "amazon mq",
-        "analytics",
-        "migration",
-        "mq"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5b0f5672498bcd4b",
-      "title": "Amazon EC2 G7e instances now available in additional regions",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) G7e instances accelerated by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs are now available in the AWS Europe (Frankfurt, Stockholm) and Asia Pacific (Mumbai) Regions. G7e instances offer up to 2.3x inference performance compared to G6e. Customers can use G7e instances to deploy large language models (LLMs), agentic AI models, multimodal generative AI models, and physical AI models. G7e instances offer the highest performance for spatial computing workloads as well as workloads that require both graphics and AI processing capabilit",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon&amp;nbsp;Elastic Compute Cloud (Amazon EC2) G7e instances accelerated by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs are now available in the AWS Europe (Frankfurt, Stockholm) and Asia Pacific (Mumbai) Regions. G7e instances offer up to 2.3x inference performance compared to G6e.&lt;/p&gt; \n&lt;p&gt;Customers can use G7e instances to deploy large language models (LLMs), agentic AI models, multimodal generative AI models, and physical AI models. G7e instances offer the highest performance for spatial computing workloads as well as workloads that require both graphics and AI processing capabilities. G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, with 96 GB of memory per GPU, and 5th Generation Intel Xeon processors. They support up to 192 virtual CPUs (vCPUs) and up to 1600 Gbps of networking bandwidth. G7e instances support NVIDIA GPUDirect Peer to Peer (P2P) that boosts performance for multi-GPU workloads. Multi-GPU G7e instances also support NVIDIA GPUDirect Remote Direct Memory Access (RDMA) with EFA in EC2 UltraClusters, reducing latency for small-scale multi-node workloads.&lt;/p&gt; \n&lt;p&gt;You can use G7e instances for Amazon EC2 in the following AWS Regions: US West (Oregon), US East (N. Virginia, Ohio), Europe (Spain, London, Frankfurt, Stockholm) and Asia Pacific (Tokyo, Seoul, Mumbai). You can purchase G7e instances as On-Demand Instances, Spot Instances, or as part of Savings Plans.&lt;/p&gt; \n&lt;p&gt;To get started, visit the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface&lt;/a&gt; (CLI), and AWS SDKs. To learn more, visit &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g7e/\"&gt;G7e instances&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-g7e-additional-regions/",
-      "publishedAt": "2026-07-15T18:04:00.000Z",
-      "updatedAt": "2026-07-15T18:04:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "amazon ec2",
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a7f58252249e8933",
-      "title": "Amazon Cognito now supports importing users with password hashes",
-      "description": "Amazon Cognito now supports importing users with password hashes in CSV user imports. Previously, users imported from a CSV file had to reset their passwords on first sign-in. Now, you can include password hashes in your CSV file so that imported users can sign in immediately with their existing credentials. When creating a CSV import, you specify the password hashing algorithm used by your source system. Amazon Cognito imports these users and verifies their password against the imported hash on first sign-in. Supported algorithms include bcrypt, scrypt, Argon2id, and PBKDF2 with SHA-256. All ",
-      "descriptionHtml": "&lt;p&gt;Amazon Cognito now supports importing users with password hashes in CSV user imports. Previously, users imported from a CSV file had to reset their passwords on first sign-in. Now, you can include password hashes in your CSV file so that imported users can sign in immediately with their existing credentials.&lt;br&gt; &lt;br&gt; When creating a CSV import, you specify the password hashing algorithm used by your source system. Amazon Cognito imports these users and verifies their password against the imported hash on first sign-in. Supported algorithms include bcrypt, scrypt, Argon2id, and PBKDF2 with SHA-256. All imported hashes receive an additional layer of cryptographic protection before storage.&lt;br&gt; &lt;br&gt; Password hash import is available in all AWS Regions where Amazon Cognito is available. To get started, create a user import using the &lt;a href=\"https://console.aws.amazon.com/cognito/home\"&gt;AWS Management Console&lt;/a&gt;, AWS Command Line Interface (CLI), or AWS Software Development Kits (SDKs). See the &lt;a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-using-import-tool.html\"&gt;developer guide&lt;/a&gt; for instructions.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-cognito-password-hash-import/",
-      "publishedAt": "2026-07-15T17:00:00.000Z",
-      "updatedAt": "2026-07-15T17:00:00.000Z",
-      "categories": [
-        "Amazon Cognito",
-        "AWS Govcloud Us",
-        "Security Identity And Compliance"
-      ],
-      "services": [
-        "Cognito"
-      ],
-      "tags": [
-        "amazon cognito",
-        "aws govcloud us",
-        "security identity and compliance",
-        "cognito"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "e51950829b28e035",
-      "title": "Amazon RDS and Aurora now support R8g and M8g database instances in additional AWS Regions",
-      "description": "AWS Graviton4-based R8g database instances are now generally available for Amazon Aurora (MySQL and PostgreSQL compatibility) and Amazon RDS for PostgreSQL, MySQL, and MariaDB in Asia Pacific (Hyderabad, Melbourne, Malaysia), Europe (London, Paris, Zurich), AWS GovCloud (US-East), South America (Sao Paulo), and Mexico (Central) regions. Additionally, M8g instances are now supported for Amazon RDS for PostgreSQL, MySQL, and MariaDB in US West (N. California), Asia Pacific (Mumbai, Sydney, Hong Kong, Seoul, Malaysia, Singapore), Canada West (Calgary), Europe (Zurich, Milan, Paris), South America",
-      "descriptionHtml": "&lt;p&gt;AWS Graviton4-based R8g database instances are now generally available for Amazon Aurora (MySQL and PostgreSQL compatibility) and Amazon RDS for PostgreSQL, MySQL, and MariaDB in Asia Pacific (Hyderabad, Melbourne, Malaysia), Europe (London, Paris, Zurich), AWS GovCloud (US-East), South America (Sao Paulo), and Mexico (Central) regions. Additionally, M8g instances are now supported for Amazon RDS for PostgreSQL, MySQL, and MariaDB in US West (N. California), Asia Pacific (Mumbai, Sydney, Hong Kong, Seoul, Malaysia, Singapore), Canada West (Calgary), Europe (Zurich, Milan, Paris), South America (Sao Paulo) and Africa (Cape Town) regions.&amp;nbsp;&lt;br&gt; &lt;br&gt; AWS Graviton4-based instances provide up to 40% performance improvement and up to 29% price/performance improvement for on-demand pricing over Graviton3-based instances of equivalent sizes on Amazon Aurora and Amazon RDS databases, depending on database engine, version, and workload. Built on the AWS Nitro System, the new R8g database instances introduce 24xlarge and 48xlarge sizes, delivering up to 192 vCPUs, an 8:1 ratio of memory to vCPU with the latest DDR5 memory, up to 50Gbps enhanced networking bandwidth, and up to 40Gbps of bandwidth to Amazon Elastic Block Store (Amazon EBS).&lt;br&gt; &lt;br&gt; You can easily launch R8g or M8g database instances through the &lt;a href=\"https://console.aws.amazon.com/rds/home?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Management Console&lt;/a&gt; or by using the&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\"&gt; &lt;/a&gt;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Command Line Interface&lt;/a&gt; (CLI). For detailed information about specific engine versions that support these database instance types, please refer to the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.SupportAurora.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Aurora &lt;/a&gt;and &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.Support.html?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;RDS&lt;/a&gt; documentation. For complete information on pricing and regional availability, please refer to the Amazon RDS &lt;a href=\"https://aws.amazon.com/rds/pricing/?refid=35100cff-4aaa-46ac-bc1d-71576bef47be\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;pricing page&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/7/amazon-rds-aurora-r8g-m8g-regions/",
-      "publishedAt": "2026-07-15T17:00:00.000Z",
-      "updatedAt": "2026-07-15T17:00:00.000Z",
-      "categories": [
-        "Amazon Rds",
-        "AWS Govcloud Us",
-        "Databases"
-      ],
-      "services": [
-        "RDS",
-        "Aurora"
-      ],
-      "tags": [
-        "amazon rds",
-        "aws govcloud us",
-        "databases",
-        "rds",
-        "aurora"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "187296da0d1331a4",
-      "title": "Amazon RDS and Aurora expand R8gd and M8gd to additional Regions",
-      "description": "Amazon Relational Database Service (RDS) now supports R8gd database instances in 12 additional regions and and M8gd database instances in 6 additional Regions with Optimized Reads for Amazon Aurora PostgreSQL, RDS for PostgreSQL, RDS for MySQL, and RDS for MariaDB. R8gd and M8gd instances deliver up to 165% better throughput and up to 120% better price-performance over R6g instances for Aurora PostgreSQL. Optimized Reads uses local NVMe-based SSD block storage to store ephemeral data such as temporary tables, reducing network storage access and improving query latency. The result is improved q",
-      "descriptionHtml": "&lt;p&gt;Amazon Relational Database Service (RDS) now supports R8gd database instances in 12 additional regions and and M8gd database instances in 6 additional Regions with Optimized Reads for Amazon Aurora PostgreSQL, RDS for PostgreSQL, RDS for MySQL, and RDS for MariaDB.&lt;br&gt; &lt;br&gt; R8gd and M8gd instances deliver up to 165% better throughput and up to 120% better price-performance over R6g instances for Aurora PostgreSQL. Optimized Reads uses local NVMe-based SSD block storage to store ephemeral data such as temporary tables, reducing network storage access and improving query latency. The result is improved query performance for complex queries and faster index rebuild operations. Aurora PostgreSQL Optimized Reads instances using the I/O-Optimized configuration also use the local storage to extend their caching capacity. Database pages that are evicted from the in-memory buffer cache are cached in local storage to speed subsequent retrieval of that data.&lt;br&gt; &lt;br&gt; Customers can get started with Optimized Reads through the AWS Management Console, CLI, and SDK by modifying their existing Aurora and RDS databases or creating a new database using R8gd or M8gd instances. R8gd instances are available in the following additional regions: Europe (Ireland), Asia Pacific (Seoul), Asia Pacific (Malaysia), Europe (London), US West (N. California), Asia Pacific (Sydney), Canada (Central), Asia Pacific (Jakarta), Africa (Cape Town), Canada West (Calgary),&amp;nbsp;South America (Sao Paulo) and Asia Pacific (Hong Kong). M8gd instances are available in the following additional regions: Europe (Ireland), Asia Pacific (Malaysia), Europe (London), Asia Pacific (Sydney),&amp;nbsp;South America (Sao Paulo) and Canada (Central). For complete information on pricing and regional availability, please refer to the &lt;a href=\"https://aws.amazon.com/rds/pricing/\"&gt;pricing page&lt;/a&gt;. For information on specific engine versions that support these DB instance types, please see the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.SupportAurora.html\"&gt;Aurora&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.Support.html\"&gt;RDS&lt;/a&gt; documentation.&lt;b&gt;&lt;/b&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-aurora-r8gd-m8gd-regions/",
-      "publishedAt": "2026-07-15T17:00:00.000Z",
-      "updatedAt": "2026-07-15T17:00:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Aurora"
-      ],
-      "services": [
-        "RDS",
-        "Aurora"
-      ],
-      "tags": [
-        "databases",
-        "amazon aurora",
-        "rds",
         "aurora"
       ],
       "isNew": false
