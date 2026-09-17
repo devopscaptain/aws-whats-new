@@ -1,7 +1,254 @@
 {
-  "lastUpdated": "2026-09-16T13:12:04.715Z",
+  "lastUpdated": "2026-09-17T13:06:00.326Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "22bfee1956f4a34c",
+      "title": "Amazon Corretto 27 is now generally available",
+      "description": "Amazon Corretto 27, a Feature Release (FR) version, is now available for download. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK . You can download Corretto 27 for Linux, Windows, and macOS from our downloads page . Corretto 27 will be supported through April 2027. Noticeable features: G1 as the Default Garbage Collector in All Environments - Makes G1 the default garbage collector across all environments, delivering more consistent performance and predictable pause times regardless of where your application runs (JEP 523) Post-Quantum Hybrid Key Exchang",
+      "descriptionHtml": "&lt;p&gt;Amazon Corretto 27, a Feature Release (FR) version, is now available for download. &lt;a href=\"https://aws.amazon.com/corretto/\"&gt;Amazon Corretto&lt;/a&gt; is a no-cost, multi-platform, production-ready distribution of &lt;a href=\"https://aws.amazon.com/blogs/opensource/amazon-corretto-no-cost-distribution-openjdk-long-term-support/\"&gt;OpenJDK&lt;/a&gt;. You can download Corretto 27 for Linux, Windows, and macOS from our &lt;a href=\"https://docs.aws.amazon.com/corretto/latest/corretto-27-ug/downloads-list.html\"&gt;downloads page&lt;/a&gt;. Corretto 27 will be supported through April 2027. Noticeable features:&amp;nbsp;&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;b&gt;G1 as the Default Garbage Collector in All Environments&lt;/b&gt; - Makes G1 the default garbage collector across all environments, delivering more consistent performance and predictable pause times regardless of where your application runs (JEP 523)&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Post-Quantum Hybrid Key Exchange for TLS 1.3&lt;/b&gt; - Adds protection against future quantum computing threats by combining classical and post-quantum key exchange algorithms in TLS 1.3 connections (JEP 527)&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Compact Object Headers by Default&lt;/b&gt; - Reduces the memory footprint of Java objects by enabling smaller object headers by default, improving memory efficiency and cache utilization (JEP 534)&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;JFR In-Process Data Redaction&lt;/b&gt; - Allows sensitive data to be redacted from Java Flight Recorder recordings before they leave the JVM, helping protect confidential information during profiling and diagnostics (JEP 536)&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Enhanced Pattern Matching (continued preview)&lt;/b&gt; - Extends support for primitive types in patterns, instanceof, and switch, letting developers write cleaner type and value checks including for types like int and boolean (JEP 532)&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Structured Concurrency (continued preview)&lt;/b&gt; - Refines the API for structured concurrency, treating groups of related tasks running in different threads as single units of work, streamlining error handling and cancellation, improving reliability, and enhancing observability (JEP 533)&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Lazy Constants (continued preview)&lt;/b&gt; - Provides an API to defer initialization of immutable data until it is actually needed, combining the performance benefits of final fields with the flexibility of lazy initialization (JEP 531)&lt;/li&gt; \n &lt;li&gt;&lt;b&gt;Vector API (continued incubator)&lt;/b&gt; - Improves support for high-performance mathematical operations that can take advantage of modern CPU vector capabilities (JEP 537)&lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;A detailed description of these features can be found on the &lt;a href=\"https://openjdk.org/projects/jdk/27/\"&gt;OpenJDK 27 Project page&lt;/a&gt;. Amazon Corretto 27 is distributed by Amazon under an &lt;a href=\"https://openjdk.org/legal/gplv2+ce.html\"&gt;open source license&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-27-generally-available/",
+      "publishedAt": "2026-09-17T00:00:31.000Z",
+      "updatedAt": "2026-09-17T00:00:31.000Z",
+      "categories": [
+        "Amazon Corretto",
+        "Developers"
+      ],
+      "services": [],
+      "tags": [
+        "amazon corretto",
+        "developers"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0a8709b0e4c2757e",
+      "title": "Amazon SageMaker AI now supports serverless model customization for NVIDIA Nemotron 3.5 Lightning",
+      "description": "Amazon SageMaker AI now supports serverless model customization for the NVIDIA Nemotron 3.5 Lightning model using supervised fine-tuning (SFT), Direct Preference Optimization (DPO), and reinforcement fine-tuning (RFT). This is one of the latest open-weight models from NVIDIA and employs a hybrid Mixture-of-Experts architecture with 3B active parameters and 30B parameters in total. In addition to deploying this model on SageMaker AI, you can now adapt it to your specific domains and workflows. Model customization enables you to tailor foundation models with your proprietary data so a smaller, r",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker AI now supports serverless model customization for the NVIDIA Nemotron 3.5 Lightning model using supervised fine-tuning (SFT), Direct Preference Optimization (DPO), and reinforcement fine-tuning (RFT). This is one of the latest open-weight models from NVIDIA and employs a hybrid Mixture-of-Experts architecture with 3B active parameters and 30B parameters in total. In addition to deploying this model on SageMaker AI, you can now adapt it to your specific domains and workflows.&lt;/p&gt; \n&lt;p&gt;Model customization enables you to tailor foundation models with your proprietary data so a smaller, right-sized model can match frontier-model quality on your tasks, reducing cost and latency. You can use labeled data with SFT to improve accuracy on domain-specific tasks, preference data with DPO to align outputs with your organization's tone, or reward signals with RFT to enhance performance on new tasks. With serverless customization, SageMaker AI handles all infrastructure provisioning and training orchestration, so you can focus on your data and evaluation rather than cluster management, and only pay for what you use.&lt;/p&gt; \n&lt;p&gt;Serverless model customization for NVIDIA Nemotron 3.5 Lightning on SageMaker AI is available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and Europe (Ireland). To get started, navigate to the Models page in Amazon SageMaker Studio to launch a customization job, or use the &lt;a href=\"https://sagemaker.readthedocs.io/en/stable/model_customization/index.html\"&gt;SageMaker Python SDK&lt;/a&gt;&amp;nbsp;for programmatic access. To learn more, see the Amazon SageMaker AI &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/customizing-models.html\"&gt;model customization documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-sagemaker-ft-nemotron-3-5-lightning/",
+      "publishedAt": "2026-09-16T22:29:00.000Z",
+      "updatedAt": "2026-09-16T22:29:00.000Z",
+      "categories": [
+        "Aiml",
+        "Amazon Sagemaker Training"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "aiml",
+        "amazon sagemaker training",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "06a56da6b0c577c6",
+      "title": "AWS Client VPN is now supporting MacOS 27 Golden Gate",
+      "description": "AWS Client VPN now supports MacOS 27 Golden Gate client with versions 6.0+ You can now run the AWS supplied VPN client on the latest MacOS versions. AWS Client VPN desktop clients are available free of charge, and can be downloaded here . AWS Client VPN is a managed service that securely connects your remote workforce to AWS or on-premises networks. It supports desktop clients for MacOS, Windows x64, Windows Arm64 and Ubuntu-Linux. With client version 6.0 onwards, Client VPN now supports the latest MacOS Golden Gate 27.0. It already supports Mac OS version 13.0, 14.0, 15.0, and 26.0, Windows 1",
+      "descriptionHtml": "&lt;p&gt;AWS Client VPN now supports MacOS 27 Golden Gate client with versions 6.0+ You can now run the AWS supplied VPN client on the latest MacOS versions. AWS Client VPN desktop clients are available free of charge, and can be downloaded &lt;a href=\"https://aws.amazon.com/vpn/client-vpn-download/\"&gt;here&lt;/a&gt;.&lt;br&gt; &lt;br&gt; AWS Client VPN is a managed service that securely connects your remote workforce to AWS or on-premises networks. It supports desktop clients for MacOS, Windows x64, Windows Arm64 and Ubuntu-Linux. With client version 6.0 onwards, Client VPN now supports the latest MacOS&amp;nbsp; Golden Gate 27.0. It already supports Mac OS version 13.0, 14.0, 15.0, and 26.0, Windows 10 (x64) and Windows 11 (Arm64 and x64), and Ubuntu Linux 22.04 and 24.04 LTS versions.&lt;br&gt; To learn more about Client VPN:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;Visit the AWS Client VPN &lt;a href=\"https://aws.amazon.com/vpn/\"&gt;product page&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;Read the AWS Client VPN &lt;a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html\"&gt;documentation&lt;/a&gt;&lt;/li&gt; \n &lt;li&gt;Read the AWS Client VPN &lt;a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-user-what-is.html\"&gt;user guide&lt;/a&gt;&lt;/li&gt; \n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-client-vpn-macos-golden-gate/",
+      "publishedAt": "2026-09-16T17:56:00.000Z",
+      "updatedAt": "2026-09-16T17:56:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "AWS Client Vpn"
+      ],
+      "services": [],
+      "tags": [
+        "networking and content delivery",
+        "aws client vpn"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "910029d26931fc24",
+      "title": "New AWS experience helps builders get started and ship faster",
+      "description": "Builders can now sign up for a new simplified experience that makes it faster to turn ideas into running code on AWS. AWS services provide an array of configuration options so that the largest enterprises can customize settings for their distinct needs. Until now, builders with a new project idea had to decide among these options and configure their AWS environment before beginning to build. The new experience reduces setup effort by simplifying sign-up and automatically configuring an initial project with sensible defaults so builders can begin implementing their idea immediately. When you si",
+      "descriptionHtml": "&lt;p&gt;Builders can now sign up for a new simplified experience that makes it faster to turn ideas into running code on AWS. AWS services provide an array of configuration options so that the largest enterprises can customize settings for their distinct needs. Until now, builders with a new project idea had to decide among these options and configure their AWS environment before beginning to build. The new experience reduces setup effort by simplifying sign-up and automatically configuring an initial project with sensible defaults so builders can begin implementing their idea immediately.&lt;/p&gt; \n&lt;p&gt;When you sign up, you can use your existing Google, GitHub, Apple, or Amazon credentials. For most new customers, no credit card is required and you will receive up to $200 in free credits as part of the &lt;a href=\"https://aws.amazon.com/free/\"&gt;AWS Free Tier&lt;/a&gt;. Once signup is complete, you can connect your coding agent to AWS with a single prompt that automatically installs the AWS CLI and the &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\"&gt;Agent Toolkit for AWS&lt;/a&gt;. Your coding agent connects to your project and uses built-in guidance to deploy resources using best practices.&lt;/p&gt; \n&lt;p&gt;As your project expands, you can invite team members to collaborate with you by email. When a team member accepts your invitation, their project access is configured automatically. Similarly, many of the AWS resources you create can access resources in other AWS services automatically because the new &lt;a href=\"https://aws.amazon.com/blogs/security/how-aws-iam-role-manager-rethinks-the-starting-point-for-iam-roles/\"&gt;IAM role manager&lt;/a&gt; capability is enabled for your projects. When you're ready to upgrade to a paid plan, you can set a monthly spend limit for your project based on your usage patterns so that you stay within your budget. If a project's usage reaches its spend limit, your project is paused for that month. You can create additional projects with one click, each with its own spend limit and distinct team members. At any time, you can activate advanced features without migration or downtime, enabling you to use additional features such as multiple AWS Regions and custom governance controls.&lt;/p&gt; \n&lt;p&gt;To try the new experience, &lt;a href=\"https://signin.aws.amazon.com/signup?request_type=builderId\"&gt;create a new AWS account&lt;/a&gt;. To learn more, see&amp;nbsp;&lt;a href=\"http://aws.amazon.com/blogs/aws/aws-reimagines-the-getting-started-experience\"&gt;AWS reimagines the getting started experience&lt;/a&gt; on the AWS News Blog.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/New-AWS-Builder-Experience",
+      "publishedAt": "2026-09-16T17:45:00.000Z",
+      "updatedAt": "2026-09-16T17:45:00.000Z",
+      "categories": [
+        "Developers",
+        "Startups",
+        "AWS Iam",
+        "Developer Tools",
+        "AWS Account Billing"
+      ],
+      "services": [
+        "IAM"
+      ],
+      "tags": [
+        "developers",
+        "startups",
+        "aws iam",
+        "developer tools",
+        "aws account billing",
+        "iam"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "227f7203ec3faaf2",
+      "title": "Amazon WorkSpaces adds support for NVIDIA Blackwell GPU instances",
+      "description": "Amazon WorkSpaces Personal and Amazon WorkSpaces Core now support Graphics G7 bundles, built on NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs and Intel Xeon 6 processors. Graphics G7 delivers up to 2.1x better performance for graphics-intensive workloads compared to previous generation Graphics G6 bundles. Four bundle sizes are available, ranging from 8 vCPUs, 32 GB of memory, and one GPU up to 48 vCPUs, 192 GB of memory, and two GPUs. With Graphics G7, you can run demanding professional applications such as CAD/CAM, 3D rendering, scientific visualization, video editing, and AI-assisted de",
+      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces Personal and Amazon WorkSpaces Core now support Graphics G7 bundles, built on NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs and Intel Xeon 6 processors. Graphics G7 delivers up to 2.1x better performance for graphics-intensive workloads compared to previous generation Graphics G6 bundles. Four bundle sizes are available, ranging from 8 vCPUs, 32 GB of memory, and one GPU up to 48 vCPUs, 192 GB of memory, and two GPUs.&lt;/p&gt; \n&lt;p&gt;With Graphics G7, you can run demanding professional applications such as CAD/CAM, 3D rendering, scientific visualization, video editing, and AI-assisted design workflows at higher fidelity and frame rates. Each GPU provides 32 GB of GDDR7 memory, enabling larger and more complex 3D scenes and models. Graphics G7 bundles are available with Windows, including bring-your-own-license, and support both AlwaysOn and AutoStop running modes.&lt;/p&gt; \n&lt;p&gt;Graphics G7 bundles are available for both WorkSpaces Personal and WorkSpaces Core in US East (N. Virginia), US East (Ohio), and US West (Oregon). Additional Regions will be added as availability expands.&lt;/p&gt; \n&lt;p&gt;To get started, select a Graphics G7 bundle when creating a workspace in the &lt;a href=\"https://aws.amazon.com/console/\"&gt;Amazon WorkSpaces console&lt;/a&gt;, or through your Workspaces Core partner solution. For more information on available instance types, see &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/bundle-options.html\"&gt;WorkSpaces&lt;/a&gt;&lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/bundle-options.html\"&gt; Personal Instance &lt;/a&gt;&lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/bundle-options.html\"&gt;Families&lt;/a&gt;. To learn more about G7 GPU capabilities, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g7/\"&gt;EC2 G7 Instance Types page&lt;/a&gt;. For pricing details, see &lt;a href=\"https://aws.amazon.com/workspaces/desktop-as-a-service/pricing/\"&gt;Amazon WorkSpaces Personal Pricing&lt;/a&gt; or &lt;a href=\"https://aws.amazon.com/workspaces/vdi-partners/pricing/\"&gt;Core Bundles Pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-workspaces-nvidia-blackwell-gpu-instances/",
+      "publishedAt": "2026-09-16T17:00:00.000Z",
+      "updatedAt": "2026-09-16T17:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "Desktop And App Streaming",
+        "Business Productivity",
+        "Amazon Workspaces"
+      ],
+      "services": [
+        "WorkSpaces"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "desktop and app streaming",
+        "business productivity",
+        "amazon workspaces",
+        "workspaces"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "66c6148451e9b69f",
+      "title": "Amazon Connect Customer custom metrics now supports tag-based access control",
+      "description": "Amazon Connect Customer now supports tag-based access control for custom metrics, so you can govern which users and roles can view, create, or modify each custom metric. As more teams across your organization adopt custom metrics, they end up editing the same shared library. Without controls, one person can change a metric that other teams count on. The usual fix is to give only a handful of people permissions to custom metrics, but that shuts out every other team that wants to start using them. Now you can tag each metric, then use those tags to set access: a team gets full control of their o",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now supports tag-based access control for custom metrics, so you can govern which users and roles can view, create, or modify each custom metric.&lt;/p&gt; \n&lt;p&gt;As more teams across your organization adopt custom metrics, they end up editing the same shared library. Without controls, one person can change a metric that other teams count on. The usual fix is to give only a handful of people permissions to custom metrics, but that shuts out every other team that wants to start using them. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Now you can tag each metric, then use those tags to set access: a team gets full control of their own metrics, view-only access to another team’s, and no visibility into the metrics you restrict. Search follows the same access rules, so people only see the metrics they’re allowed to view or manage.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/connect-customer-custom-metrics-tag/",
+      "publishedAt": "2026-09-16T17:00:00.000Z",
+      "updatedAt": "2026-09-16T17:00:00.000Z",
+      "categories": [
+        "Contact Center",
+        "Amazon Connect"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "amazon connect",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9db24daa6a336437",
+      "title": "Amazon Connect Customer can now import evaluation form PDFs using AI",
+      "description": "Amazon Connect Customer now lets managers import a PDF of an evaluation form from a third-party quality management application, and automatically recreates it in Connect using AI, making it easier to migrate an existing quality program into Connect. Instead of rebuilding an existing form question by question, you upload the PDF and choose the preferred scoring method, either percentage or points-based, and Connect Customer automatically extracts the sections, questions, answer options, and scoring into a draft evaluation form. You can also provide natural language instructions to import the fo",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now lets managers import a PDF of an evaluation form from a third-party quality management application, and automatically recreates it in Connect using AI, making it easier to migrate an existing quality program into Connect. Instead of rebuilding an existing form question by question, you upload the PDF and choose the preferred scoring method, either percentage or points-based, and Connect Customer automatically extracts the sections, questions, answer options, and scoring into a draft evaluation form. You can also provide natural language instructions to import the form more accurately or to adjust it as it's created — for example, splitting a broad question into simpler ones — minimizing the manual edits needed before you activate the form.&lt;/p&gt; \n&lt;p&gt;This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Europe (Frankfurt). To learn more, please visit our&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/create-evaluation-forms.html#import-form-pdf\"&gt;documentation&lt;/a&gt;&amp;nbsp;and our&amp;nbsp;&lt;a href=\"https://aws.amazon.com/products/connect/customer/conversational-analytics/\"&gt;webpage&lt;/a&gt;. For information about Amazon Connect Customer pricing, please visit our&amp;nbsp;&lt;a href=\"https://aws.amazon.com/products/connect/customer/pricing/?trk=758059ab-77e5-44fc-8a4a-1be845ee42b9&amp;amp;sc_channel=ps\"&gt;pricing&lt;/a&gt;&amp;nbsp;page.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-customer-import-evaluation-form-PDF/",
+      "publishedAt": "2026-09-16T17:00:00.000Z",
+      "updatedAt": "2026-09-16T17:00:00.000Z",
+      "categories": [
+        "Amazon Connect",
+        "Contact Center"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "amazon connect",
+        "contact center",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6e5a0b3adc9982d8",
+      "title": "AWS Elemental MediaTailor Monetization Functions adds ad response hooks",
+      "description": "AWS Elemental MediaTailor now supports two additional lifecycle hooks for monetization functions: post ad decision server (ADS) response, and pre manifest insertion. MediaTailor is a video service that personalizes and inserts ads into live and on-demand streams. Monetization functions run customer-defined logic at defined points in an ad-personalized playback session, removing the need for a middleware tier between MediaTailor and the ADS. The post ADS response hook runs after MediaTailor parses an ADS response and resolves all Video Ad Serving Template (VAST) wrappers, before ads are selecte",
+      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaTailor now supports two additional lifecycle hooks for monetization functions: post ad decision server (ADS) response, and pre manifest insertion. MediaTailor is a video service that personalizes and inserts ads into live and on-demand streams. Monetization functions run customer-defined logic at defined points in an ad-personalized playback session, removing the need for a middleware tier between MediaTailor and the ADS.&lt;/p&gt; \n&lt;p&gt;The post ADS response hook runs after MediaTailor parses an ADS response and resolves all Video Ad Serving Template (VAST) wrappers, before ads are selected and transcoded. Customers use it to call a secondary ad source when the primary ADS returns less demand than the ad break can hold, remove ads that their content or brand policies do not permit, and add house ads or promotions from their own marketing systems. The pre manifest insertion hook runs at the last point before MediaTailor returns the ad pod to the viewer, and receives every newly personalized ad break in a single invocation. Customers use it as a final check on what is about to play, including inserting a personalized slate when a break cannot be filled any other way. Pre-built recipes in the MediaTailor console give customers a starting point for each of these use cases. Both hooks are fail-open: on a timeout, expression error, or resource limit, MediaTailor discards the function output and continues with default ad insertion, so viewer playback is unaffected.&lt;/p&gt; \n&lt;p&gt;The new hooks are available in all AWS Regions where AWS Elemental MediaTailor is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/mediatailor/latest/ug/monetization-functions.html\" target=\"_blank\"&gt;Monetization Functions&lt;/a&gt; in the AWS Elemental MediaTailor User Guide and the &lt;a href=\"https://aws.amazon.com/mediatailor/pricing/\" target=\"_blank\"&gt;MediaTailor pricing page&lt;/a&gt;. To get started, sign in to the &lt;a href=\"https://console.aws.amazon.com/mediatailor/\" target=\"_blank\"&gt;AWS Elemental MediaTailor console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-elemental-mediatailor-functions-ad-response-hooks",
+      "publishedAt": "2026-09-16T16:30:00.000Z",
+      "updatedAt": "2026-09-16T16:30:00.000Z",
+      "categories": [
+        "AWS Elemental Mediatailor",
+        "Media Services"
+      ],
+      "services": [
+        "Elemental",
+        "MediaTailor"
+      ],
+      "tags": [
+        "aws elemental mediatailor",
+        "media services",
+        "elemental",
+        "mediatailor"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7393e4adfaf908f7",
+      "title": "Amazon ECS extends Amazon S3 Files support to the Amazon EC2 compute type",
+      "description": "Amazon Elastic Container Service (Amazon ECS) now supports Amazon S3 Files for tasks running on the Amazon EC2 launch type, enabling customers to connect their containerized applications directly to data in Amazon S3 as a shared file system. With this launch, customers running ECS workloads on EC2 instances can work with their S3 data using standard file system semantics, so file-based applications, AI agents, and data processing workloads run on S3 data with no code changes and without duplicating or staging files first. S3 Files support was previously available for ECS tasks on AWS Fargate a",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\"&gt;Amazon Elastic Container Service&lt;/a&gt; (Amazon ECS) now supports Amazon S3 Files for tasks running on the Amazon EC2 launch type, enabling customers to connect their containerized applications directly to data in Amazon S3 as a shared file system. With this launch, customers running ECS workloads on EC2 instances can work with their S3 data using standard file system semantics, so file-based applications, AI agents, and data processing workloads run on S3 data with no code changes and without duplicating or staging files first. S3 Files support was previously available for ECS tasks on AWS Fargate and ECS Managed Instances, and now extends to the EC2 launch type, giving customers consistent access to S3 Files across all three ECS launch types.&lt;br&gt; &lt;br&gt; Amazon S3 Files, built on Amazon EFS, delivers a shared file system that connects AWS compute resources directly with data in Amazon S3, providing full file system semantics and low-latency performance without data leaving S3. S3 Files works with new and existing data in S3 buckets, with no migration required. Customers can mount an Amazon S3 Files volume in their Amazon ECS tasks to read and write data in an S3 bucket using standard file system operations, with no application code changes and no need to copy or stage data.&lt;br&gt; &lt;br&gt; Amazon S3 Files support is available in all AWS commercial Regions and the AWS GovCloud (US) Regions. To learn more, refer our &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/s3files-volumes.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-s3-files-ec2/",
+      "publishedAt": "2026-09-16T16:25:00.000Z",
+      "updatedAt": "2026-09-16T16:25:00.000Z",
+      "categories": [
+        "Containers"
+      ],
+      "services": [
+        "EC2",
+        "ECS",
+        "S3"
+      ],
+      "tags": [
+        "containers",
+        "ec2",
+        "ecs",
+        "s3"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c9f49161d9b361a1",
+      "title": "Amazon Connect Customer now lets you create, manage, and search custom metrics through APIs",
+      "description": "Amazon Connect Customer provides a library of standard metrics. Custom metrics let you go further; defining the measurements unique to your business. But managing them across various instances manually means definitions slowly drift until the numbers no longer align. A metric you can't trust is worse than no metric at all, because people still make decisions on it. Now you define a metric once and manage it programmatically through seven new API operations (CreateMetric, DeleteMetric, DescribeMetric, ListMetrics, SearchMetrics, UpdateMetricContent, and UpdateMetricMetadata) so your definitions",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer provides a library of standard metrics. Custom metrics let you go further; defining the measurements unique to your business. But managing them across various instances manually means definitions slowly drift until the numbers no longer align. A metric you can't trust is worse than no metric at all, because people still make decisions on it.&lt;/p&gt; \n&lt;p&gt;Now you define a metric once and manage it programmatically through seven new API operations (CreateMetric, DeleteMetric, DescribeMetric, ListMetrics, SearchMetrics, UpdateMetricContent, and UpdateMetricMetadata) so your definitions stay consistent as you scale across queues, teams, and environments. For example, a customer experience leader noticing a drop in self-service completion rates can define a custom metric that tracks the percentage of interactions where customers abandon and request a live agent within 90 seconds. Using the API, an AI-powered operations assistant can automatically create the metric and publish it to a monitoring dashboard — no manual console work, no definition drift across environments.&amp;nbsp;Every change is tracked in AWS CloudTrail, giving you a complete audit trail.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/connect-customer-custom-metrics-apis/",
+      "publishedAt": "2026-09-16T16:00:00.000Z",
+      "updatedAt": "2026-09-16T16:00:00.000Z",
+      "categories": [
+        "Amazon Connect",
+        "Contact Center"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "amazon connect",
+        "contact center",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b1149a4a74de1603",
+      "title": "AWS STS simplifies session token size limits and adds session token size monitoring",
+      "description": "AWS Security Token Service (STS) now enforces a single 4,096-byte size limit on session tokens. Previously, STS enforced separate limits on session token size and passed-in parameters (i.e., inline policies, managed policies, and session tags). STS has removed that separation, providing more flexibility for larger combinations of session policies and session tags. Additionally, STS now returns response elements indicating session token size and percentage utilization relative to the token size limit. STS logs these values in AWS CloudTrail and publishes corresponding metrics in Amazon CloudWat",
+      "descriptionHtml": "&lt;p&gt;AWS Security Token Service (STS) now enforces a single 4,096-byte size limit on session tokens. Previously, STS enforced separate limits on session token size and passed-in parameters (i.e., inline policies, managed policies, and session tags). STS has removed that separation, providing more flexibility for larger combinations of session policies and session tags.&lt;/p&gt; \n&lt;p&gt;Additionally, STS now returns response elements indicating session token size and percentage utilization relative to the token size limit. STS logs these values in AWS CloudTrail and publishes corresponding metrics in Amazon CloudWatch. A new optional API parameter also lets you generate larger session tokens (up to the 4,096-byte limit) to test whether your applications and infrastructure can handle them.&lt;/p&gt; \n&lt;p&gt;These capabilities are available in all commercial AWS Regions, the AWS GovCloud (US) Regions, and the AWS European Sovereign Cloud Region.&lt;/p&gt; \n&lt;p&gt;To learn more, please read the &lt;a href=\"https://aws.amazon.com/blogs/security/aws-sts-simplifies-session-token-size-limits-and-adds-session-token-size-monitoring/\" target=\"_blank\"&gt;AWS Security Blogpost&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_request.html\" target=\"_blank\"&gt;AWS IAM User Guide&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/STS/latest/APIReference/Welcome.html\" target=\"_blank\"&gt;AWS STS API Reference&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-sts/",
+      "publishedAt": "2026-09-15T22:42:00.000Z",
+      "updatedAt": "2026-09-15T22:42:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Security Identity And Compliance"
+      ],
+      "services": [],
+      "tags": [
+        "aws govcloud us",
+        "security identity and compliance"
+      ],
+      "isNew": true
+    },
     {
       "id": "f49ec69593ff8dad",
       "title": "Monitor cost anomalies directly in Billing and Cost Management Dashboards with the new Detected Anomalies widget",
@@ -67,6 +314,30 @@
       "services": [],
       "tags": [
         "cost management"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c4284db6afceda3f",
+      "title": "AWS Step Functions adds new AWS service integrations automatically, starting with AWS Lambda MicroVMs",
+      "description": "AWS Step Functions now automatically adds AWS SDK integrations for new AWS services and capabilities within weeks of their release, starting with AWS Lambda MicroVMs, AWS Lambda Core and others. Now, you can orchestrate the latest AWS services from your workflows without waiting for updates. AWS Step Functions is a visual workflow service capable of orchestrating over 220 AWS services to help customers build distributed applications at scale. With the AWS Lambda Core and AWS Lambda MicroVMs service integrations, you can orchestrate agentic workflows without writing custom coordination code. Yo",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/step-functions/\"&gt;AWS Step Functions&lt;/a&gt; now automatically adds AWS SDK integrations for new AWS services and capabilities within weeks of their release, starting with AWS Lambda MicroVMs, AWS Lambda Core and others. Now, you can orchestrate the latest AWS services from your workflows without waiting for updates.&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; AWS Step Functions is a visual workflow service capable of orchestrating over 220 AWS services to help customers build distributed applications at scale. With the AWS Lambda Core and AWS Lambda MicroVMs service integrations, you can orchestrate agentic workflows without writing custom coordination code. You can use Step Functions to launch Lambda MicroVMs, which provide isolated, secure execution environments for each agent task with built-in retries if an environment fails to start. You can run multiple tasks simultaneously using Step Functions Parallel or Map states and automatically terminate environments when the task completes. You can use Lambda Core to configure the private networking those MicroVM environments need to securely reach your internal databases or APIs in the same workflow.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This expansion also includes AWS Partner Central Revenue Measurement, AWS Resilience Hub V2, AWS Support Authorization and Amazon SageMaker Job Runtime. Going forward, new AWS services will automatically appear as Step Functions integrations within weeks of their release with no additional configuration or action required. As updates will be continuous, we will no longer publish What's New posts to highlight new AWS SDK service integration updates.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;br&gt; These enhancements are now generally available in all AWS Regions where AWS Step Functions is available. Specific services and API actions are subject to the availability of the target service in the AWS Region. To learn more about AWS Step Functions SDK integrations, visit the &lt;a href=\"https://docs.aws.amazon.com/step-functions/latest/dg/integrate-services.html\"&gt;Developer Guide&lt;/a&gt;, or see the full list of supported services at &lt;a href=\"https://docs.aws.amazon.com/step-functions/latest/dg/supported-services-awssdk.html\"&gt;AWS SDK service integrations,&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/step-functions/latest/dg/awssdk-release-history.html\"&gt;integration release history&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-step-functions-integrations/",
+      "publishedAt": "2026-09-15T18:54:00.000Z",
+      "updatedAt": "2026-09-15T18:54:00.000Z",
+      "categories": [
+        "Serverless",
+        "AWS Step Functions"
+      ],
+      "services": [
+        "Lambda",
+        "Step Functions"
+      ],
+      "tags": [
+        "serverless",
+        "aws step functions",
+        "lambda",
+        "step functions"
       ],
       "isNew": true
     },
@@ -527,6 +798,25 @@
       "isNew": true
     },
     {
+      "id": "f3bff99f2bf0db29",
+      "title": "AWS PCS now supports custom GRES, hardware topology, and MIG",
+      "description": "AWS Parallel Computing Service (AWS PCS) now supports custom Generic Resource (GRES) settings and hardware topology, and adds support for Slurm version 26.05. These capabilities give you finer control over how Slurm sees and schedules your cluster hardware, improving task placement for HPC and machine learning workloads. They also enable NVIDIA Multi-Instance GPU (MIG), which partitions a single GPU into isolated instances that Slurm schedules independently. With Slurm 26.05, AWS PCS configures hardware topology by default, treating each node's NUMA domains as Slurm sockets. It also autodetect",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/pcs/\"&gt;AWS Parallel Computing Service (AWS PCS)&lt;/a&gt; now supports custom Generic Resource (GRES) settings and hardware topology, and adds support for Slurm version 26.05. These capabilities give you finer control over how Slurm sees and schedules your cluster hardware, improving task placement for HPC and machine learning workloads. They also enable NVIDIA Multi-Instance GPU (MIG), which partitions a single GPU into isolated instances that Slurm schedules independently.&lt;/p&gt;\n&lt;p&gt;With Slurm 26.05, AWS PCS configures hardware topology by default, treating each node's NUMA domains as Slurm sockets. It also autodetects and configures GPU core affinity and GPU-to-GPU interconnect on GPU nodes. Tightly-coupled MPI jobs can now optimize rank placement using socket affinity, and GPU jobs land on cores local to their allocated GPUs. Custom Slurm and GRES settings add flexibility when you need it. You can declare additional accelerators, partition a GPU with MIG, use L3 cache domains as sockets, or override the AWS PCS defaults.&lt;/p&gt;\n&lt;p&gt;AWS PCS is a managed service that simplifies running and scaling high performance computing (HPC) workloads on AWS using Slurm. You can build complete, elastic environments that integrate compute, storage, networking, and visualization tools, and the service manages cluster updates and provides built-in observability.&lt;/p&gt;\n&lt;p&gt;These capabilities are available in all AWS Regions where AWS PCS is available. Slurm 26.05 also brings broader scheduling and observability improvements, described in the &lt;a href=\"https://slurm.schedmd.com/release_notes.html\"&gt;Slurm 26.05 release notes&lt;/a&gt;. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/pcs/latest/userguide/gres-custom-settings.html\"&gt;Configuring custom GRES settings&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/pcs/latest/userguide/hardware-topology.html\"&gt;Configuring hardware topology&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/pcs/latest/userguide/mig-configuration.html\"&gt;Configuring Multi-Instance GPU (MIG)&lt;/a&gt; in the AWS PCS User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-pcs-gres-hardware-topology-mig/",
+      "publishedAt": "2026-09-11T08:00:00.000Z",
+      "updatedAt": "2026-09-11T08:00:00.000Z",
+      "categories": [
+        "High Performance Computing",
+        "Compute"
+      ],
+      "services": [],
+      "tags": [
+        "high performance computing",
+        "compute"
+      ],
+      "isNew": true
+    },
+    {
       "id": "e4a3d71b8d69cae2",
       "title": "Amazon RDS for Oracle now supports Supplemental Patch Bundle for July 2026 Release Update",
       "description": "Amazon Relational Database Service (Amazon RDS) for Oracle now supports the Supplemental Patch Bundle (SPB) for the July 2026 Release Update (RU) for Oracle Database version 19c and 26ai. Starting with April 2026 releases, the Oracle Spatial Patch Bundle has been renamed to Supplemental Patch Bundle (SPB). The SPB includes additional database patches recommended by Oracle for specific use cases, such as Oracle Spatial, Oracle Data Pump, and Oracle GoldenGate. For details, see Release Updates (RUs) and Supplemental Patch Bundles (SPBs). You can apply the Supplemental Patch Bundle update for new",
@@ -770,7 +1060,7 @@
         "cloudwatch",
         "health"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "4d8528112df89769",
@@ -802,7 +1092,7 @@
         "medialive",
         "mediatailor"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f7a196ff2d32ef73",
@@ -821,7 +1111,7 @@
         "elemental",
         "mediatailor"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "42d846ca2ebcd8cb",
@@ -840,7 +1130,7 @@
         "elemental",
         "medialive"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ec0a4d16a2fec7f7",
@@ -864,7 +1154,7 @@
         "elemental",
         "mediatailor"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b6e22eb6d9e7536d",
@@ -881,7 +1171,7 @@
       "tags": [
         "elemental"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "211a7ee82aaf4e9d",
@@ -913,7 +1203,7 @@
         "storage gateway",
         "privatelink"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "17b7191b2f286917",
@@ -932,7 +1222,7 @@
         "compute",
         "migration"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "43e8cc2e4dab73e2",
@@ -949,7 +1239,7 @@
       "tags": [
         "aws marketplace"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "eacf7208ad7ed10d",
@@ -975,7 +1265,7 @@
         "business productivity",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "59d6d52823d09ef7",
@@ -992,7 +1282,7 @@
       "tags": [
         "migration"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f94a619b068070fb",
@@ -1012,7 +1302,7 @@
         "serverless",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d8ff3fea55bd04dd",
@@ -1034,7 +1324,7 @@
         "ec2",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3dc6b9f1c25be0e7",
@@ -1066,7 +1356,7 @@
         "q",
         "quicksight"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "4b1efca9e592943c",
@@ -1096,7 +1386,7 @@
         "q",
         "quicksight"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1de01574615a60c9",
@@ -1122,7 +1412,7 @@
         "artificial intelligence",
         "quicksight"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9537135dd1b71fc7",
@@ -1150,7 +1440,7 @@
         "artificial intelligence",
         "quicksight"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "31217302d169dd35",
@@ -1180,7 +1470,7 @@
         "bedrock",
         "quicksight"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b0ec85f2e73938fb",
@@ -10964,271 +11254,6 @@
         "aws govcloud us",
         "workspaces",
         "appstream"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "3115cbdaae3f00c0",
-      "title": "Amazon Managed Service for Apache Flink now supports Apache Flink 2.3",
-      "description": "Amazon Managed Service for Apache Flink now supports Apache Flink version 2.3. This release includes adaptive partition selection for improved backpressure handling, so applications run more smoothly under uneven load. It also introduces better handling of out-of-order updates in change data capture (CDC) pipelines that improves data correctness, and new SQL functions make it easier to convert between changelog and standard streams. For a full list of improvements, see the Amazon Managed Service for Apache Flink release notes . Amazon Managed Service for Apache Flink makes it easier to transfo",
-      "descriptionHtml": "&lt;p&gt;Amazon Managed Service for Apache Flink now supports Apache Flink version 2.3. This release includes adaptive partition selection for improved backpressure handling, so applications run more smoothly under uneven load. It also introduces better handling of out-of-order updates in change data capture (CDC) pipelines that improves data correctness, and new SQL functions make it easier to convert between changelog and standard streams. For a full list of improvements, see the Amazon Managed Service for Apache Flink &lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/flink-2-3.html\"&gt;release notes&lt;/a&gt;.&lt;br&gt; &lt;br&gt; Amazon Managed Service for Apache Flink makes it easier to transform and analyze streaming data in real time, by simplifying the setup, operation, and scaling of Apache Flink applications. Developers and data engineers can focus on building and running their streaming applications without managing the underlying infrastructure.&lt;br&gt; &lt;br&gt; To get started, &lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/how-creating-apps.html\"&gt;create a new application&lt;/a&gt; on Apache Flink 2.3, or use &lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/how-in-place-version-upgrades.html\"&gt;in-place version upgrades &lt;/a&gt;to move compatible applications to the Flink 2.3 runtime for a simpler and faster upgrade. Apache Flink 2.3 is available across all AWS Regions where Amazon Managed Service for Apache Flink is offered. To learn more, see the Amazon Managed Service for Apache Flink &lt;a href=\"https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html\"&gt;Developer Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-managed-service-flink-2-3/",
-      "publishedAt": "2026-07-20T15:00:00.000Z",
-      "updatedAt": "2026-07-20T15:00:00.000Z",
-      "categories": [
-        "Amazon Managed Service For Apache Flink",
-        "Analytics"
-      ],
-      "services": [],
-      "tags": [
-        "amazon managed service for apache flink",
-        "analytics"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "08f3589a60f87392",
-      "title": "Announcing the general availability of a new AWS Local Zone in Athens, Greece",
-      "description": "Today, AWS announces the general availability of a new Local Zone in Athens, Greece. The Athens Local Zone is the second Local Zone in EMEA with support for Amazon Simple Storage Service (Amazon S3) and Amazon Elastic Block Store (Amazon EBS) Local Snapshots, enabling customers to store and process data within Greece to help meet local data residency requirements. The Athens Local Zone supports Amazon Elastic Compute Cloud (Amazon EC2) with C7i, M7i, and R7i instances, Amazon S3 with the One Zone-Infrequent Access storage class, Amazon EBS with Local Snapshots and volume types gp3, gp2, io1, s",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of a new Local Zone in Athens, Greece. The Athens Local Zone is the second Local Zone in EMEA with support for Amazon Simple Storage Service (Amazon S3) and Amazon Elastic Block Store (Amazon EBS) Local Snapshots, enabling customers to store and process data within Greece to help meet local data residency requirements.&lt;/p&gt; \n&lt;p&gt;The Athens Local Zone supports Amazon Elastic Compute Cloud (Amazon EC2) with C7i, M7i, and R7i instances, Amazon S3 with the One Zone-Infrequent Access storage class, Amazon EBS with Local Snapshots and volume types gp3, gp2, io1, sc1, and st1, Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), Amazon Virtual Private Cloud (Amazon VPC), AWS Direct Connect, and Application Load Balancer.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Use cases include public sector services that need to meet strict data residency requirements, financial applications that require in-country data processing, and real-time gaming and interactive experiences that benefit from single-digit millisecond latency. Customers use the same APIs, tools, and security features available in AWS Regions, with no minimum commitment and pay-as-you-go pricing including On-Demand, Savings Plans, and Spot Instances.&lt;/p&gt; \n&lt;p&gt;The Athens Local Zone is part of AWS Global Infrastructure, with Local Zones now available in more than 30 metropolitan areas worldwide. To get started, enable the Athens Local Zone (eu-central-1-ath-1a) from the &lt;a href=\"https://us-east-1.console.aws.amazon.com/ec2globalview/home\"&gt;Regions and Zones&lt;/a&gt; tab in the AWS Global View or by using the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyAvailabilityZoneGroup.html?refid=769a1a2b-8c19-4976-9c45-b6b1226c7d20\"&gt;ModifyAvailabilityZoneGroup&lt;/a&gt; API. For pricing information, visit the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/pricing/?nc=sn&amp;amp;loc=4\"&gt;AWS Local Zones pricing page&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/localzones/\"&gt;AWS Local Zones overview page&lt;/a&gt;. &amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-local-zone-athens-greece/",
-      "publishedAt": "2026-07-20T14:00:00.000Z",
-      "updatedAt": "2026-07-20T14:00:00.000Z",
-      "categories": [
-        "AWS Local Zones",
-        "Global Infrastructure",
-        "Compute"
-      ],
-      "services": [],
-      "tags": [
-        "aws local zones",
-        "global infrastructure",
-        "compute"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "995923cef4254453",
-      "title": "Amazon CloudWatch announces coding agent insights",
-      "description": "Amazon CloudWatch announces the launch of coding agent insights, giving engineering leaders visibility into how AI coding tools are driving value across their organization. Coding Agent Insights integrates with Claude apps gateway for AWS to collect telemetry from Claude Code without additional instrumentation. Other supported coding agents include Codex and GitHub Copilot. As organizations scale AI coding agent adoption, they need to understand return on investment. Coding agent insights is built on OpenTelemetry metrics emitted by your coding agents and presents them alongside your existing ",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch announces the launch of coding agent insights, giving engineering leaders visibility into how AI coding tools are driving value across their organization. Coding Agent Insights integrates with &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/introducing-claude-apps-gateway-for-aws/\"&gt;Claude apps gateway for AWS&lt;/a&gt; to collect telemetry from Claude Code without additional instrumentation. Other supported coding agents include Codex and GitHub Copilot.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;As organizations scale AI coding agent adoption, they need to understand return on investment. Coding agent insights is built on OpenTelemetry metrics emitted by your coding agents and presents them alongside your existing CloudWatch operational data. This helps you answer questions like which teams would benefit from expanded access, where are agents accelerating delivery, and how can you right-size token budgets across departments. You can track spend trends, set proactive token billing alerts, correlate agent adoption with improvements in commit throughput and pull request velocity, or identify the models delivering the best cost-to-output ratio for your workloads.&lt;/p&gt; \n&lt;p&gt;CloudWatch coding agent insights is available in all AWS commercial regions except Middle East (UAE), Middle East (Bahrain), and Israel (Tel Aviv). Configure your Claude apps gateway to emit telemetry to CloudWatch using the &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/coding-agents-claude-code-gateway.html\"&gt;setup guide&lt;/a&gt; and view the Coding Agent Insights dashboard in the CloudWatch console. Standard CloudWatch OpenTelemetry metric ingestion pricing applies — see metrics&amp;nbsp;&lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;pricing&lt;/a&gt; for details. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/coding-agents-insights.html\"&gt;the documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-coding-agent-insights/",
-      "publishedAt": "2026-07-20T09:51:00.000Z",
-      "updatedAt": "2026-07-20T09:51:00.000Z",
-      "categories": [],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "c0399a3beb8f69f9",
-      "title": "Introducing KNFSD File Cache - Now in Preview",
-      "description": "Today, AWS announces the availability of KNFSD File Cache, an open-source, Apache-2.0 licensed solution for deploying a scalable, high-speed Network File System (NFS) cache on AWS. KNFSD File Cache mounts exports from one or more source NFS servers, whether on-premises, in another AWS Availability Zone or Region, or in another cloud over AWS Interconnect - multicloud, and re-exports them to NFS clients in AWS. You can front multiple on-premises filers, in-cloud file systems such as Amazon FSx for OpenZFS and Amazon FSx for NetApp ONTAP, and any other NFS v3, v4.1, or v4.2 compliant filer. Freq",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the availability of KNFSD File Cache, an open-source, Apache-2.0 licensed solution for deploying a scalable, high-speed Network File System (NFS) cache on AWS. KNFSD File Cache mounts exports from one or more source NFS servers, whether on-premises, in another AWS Availability Zone or Region, or in another cloud over AWS Interconnect - multicloud, and re-exports them to NFS clients in AWS. You can front multiple on-premises filers, in-cloud file systems such as Amazon FSx for OpenZFS and Amazon FSx for NetApp ONTAP, and any other NFS v3, v4.1, or v4.2 compliant filer. Frequently read data is cached in memory and on local NVMe storage, so files cross the high-latency link to the source once and are then served to large compute fleets at local VPC speed. The solution is designed for read-heavy burst compute workloads such as visual effects rendering, simulation, financial services, health and life sciences, microprocessor design, weather forecasting, and energy.&lt;/p&gt; \n&lt;p&gt;KNFSD File Cache builds on standard Linux kernel technology: nfs-kernel-server provides NFS re-export, and FS-Cache provides the persistent disk cache. Because it uses the native NFS stack, it fully supports the NFS client-server protocol, including byte-range reads and writes, synchronous and asynchronous writes, and both write-through and write-around modes. You build the cache Amazon Machine Image (AMI) with Packer, then deploy the cluster with the included Terraform module. Cache nodes run in an Amazon Elastic Compute Cloud (Amazon EC2) Auto Scaling group on AMD, Intel, or AWS Graviton instances, with client traffic distributed by DNS round-robin or a Network Load Balancer, and optional automatic scaling based on the number of active NFS client connections. An Amazon CloudWatch dashboard provides more than 70 metrics through an OpenTelemetry-based agent, which can also publish to third-party tools such as Prometheus and Grafana.&lt;/p&gt; \n&lt;p&gt;KNFSD File Cache (preview) is available in all AWS Regions. There are no licensing costs; you pay only for the AWS resources you consume.&lt;/p&gt; \n&lt;p&gt;To get started, visit the KNFSD File Cache GitHub &lt;a href=\"https://github.com/awslabs/knfsd-file-cache\"&gt;repository&lt;/a&gt;, launch &lt;a href=\"https://aws.amazon.com/blogs/media/introducing-knfsd-file-cache-extending-your-nfs-storage-into-the-cloud/\"&gt;blog&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/solutions/knfsd-file-cache-on-aws\"&gt;AWS Solutions Guidance&lt;/a&gt;. For detailed deployment and configuration guidance, see the GitHub &lt;a href=\"https://github.com/awslabs/knfsd-file-cache/blob/main/docs/index.md\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/knfsd-file-cache/",
-      "publishedAt": "2026-07-20T08:00:00.000Z",
-      "updatedAt": "2026-07-20T08:00:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "366c05759cc82169",
-      "title": "Amazon SageMaker Unified Studio adds custom visual transforms",
-      "description": "With Amazon SageMaker Unified Studio, you can now create, share, and reuse custom visual transforms in visual ETL flows. This capability enables data engineers to build reusable, business-specific transformation logic and make it available to their teams without requiring coding expertise. With custom visual transforms, you can build your own transforms and publish them to a shared library that other team members can discover and use directly from the visual ETL interface. For example, you can create a transform that standardizes customer phone numbers, masks personally identifiable informatio",
-      "descriptionHtml": "&lt;p&gt;With Amazon SageMaker Unified Studio, you can now create, share, and reuse custom visual transforms in visual ETL flows. This capability enables data engineers to build reusable, business-specific transformation logic and make it available to their teams without requiring coding expertise.&lt;/p&gt; \n&lt;p&gt;With custom visual transforms, you can build your own transforms and publish them to a shared library that other team members can discover and use directly from the visual ETL interface. For example, you can create a transform that standardizes customer phone numbers, masks personally identifiable information, or applies your organization’s standard data-quality checks. Team members can then reuse the same logic across multiple ETL jobs, reducing duplicated effort and helping ensure consistent results.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where Amazon SageMaker Unified Studio is available.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/custom-visual-transform.html\"&gt;custom visual tranform&lt;/a&gt; in the &lt;i&gt;Amazon SageMaker Unified Studio User Guide&lt;/i&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-sagemaker-unified-studio",
-      "publishedAt": "2026-07-17T21:40:00.000Z",
-      "updatedAt": "2026-07-17T21:40:00.000Z",
-      "categories": [
-        "Amazon Sagemaker",
-        "Analytics"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker",
-        "analytics",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a48a59efd1a555b5",
-      "title": "Amazon GameLift Streams now supports IAM role credentials for stream sessions",
-      "description": "Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables. With this launch, you can pass a RoleArn parameter when starting a stream session, and your application automatically receives short-lived, auto-refreshing AWS credentials through the standard AWS SDK credential resolution chain — no application code changes required. Previously, customers who needed their streamed applications to access AWS services had to embed long-lived access keys in appli",
-      "descriptionHtml": "&lt;p&gt;Amazon GameLift Streams now supports assigning an IAM role to a stream session, enabling your application to securely access resources in your AWS account, such as Amazon S3 buckets and DynamoDB tables. With this launch, you can pass a RoleArn parameter when starting a stream session, and your application automatically receives short-lived, auto-refreshing AWS credentials through the standard AWS SDK credential resolution chain — no application code changes required.&lt;/p&gt; \n&lt;p&gt;Previously, customers who needed their streamed applications to access AWS services had to embed long-lived access keys in application bundles or pass them as environment variables, creating security and operational challenges. Now, Amazon GameLift Streams handles credential vending and automatic refresh using the same container credential provider mechanism trusted by Amazon ECS task roles and Amazon EKS Pod Identity. Role misconfigurations are validated at session start, surfacing clear errors immediately rather than during runtime.&lt;/p&gt; \n&lt;p&gt;You can also configure IAM roles directly in the Amazon GameLift Streams console, which provides a pre-filled trust policy template to simplify role setup.&lt;/p&gt; \n&lt;p&gt;IAM role support for stream sessions is available in all AWS Regions where Amazon GameLift Streams is available.&lt;/p&gt; \n&lt;p&gt;To learn more, see Session Credentials Setup in the Amazon GameLift Streams Developer Guide:&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/session-credentials-setup.html\"&gt;https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/session-credentials-setup.html&lt;/a&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-gamelift-streams-iam/",
-      "publishedAt": "2026-07-17T17:29:00.000Z",
-      "updatedAt": "2026-07-17T17:29:00.000Z",
-      "categories": [],
-      "services": [
-        "IAM"
-      ],
-      "tags": [
-        "iam"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "2d03802ecbc54d46",
-      "title": "Amazon OpenSearch UI now supports one-click dashboard migration",
-      "description": "Amazon OpenSearch Service now supports one-click migration from legacy OpenSearch Dashboards to OpenSearch UI, for both OpenSearch domains and serverless collections. OpenSearch UI is the new, zero-downtime, serverless interface for search and unified observability across multiple data sources. With this launch, the multiple tenants and thousands of saved objects you created in legacy OpenSearch Dashboards become reusable in your OpenSearch UI applications, reducing the operational complexity of moving between interfaces. With one-click migration, you can move your existing tenants and saved o",
-      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now supports one-click migration from legacy OpenSearch Dashboards to OpenSearch UI, for both OpenSearch domains and serverless collections. OpenSearch UI is the new, zero-downtime, serverless interface for search and unified observability across multiple data sources. With this launch, the multiple tenants and thousands of saved objects you created in legacy OpenSearch Dashboards become reusable in your OpenSearch UI applications, reducing the operational complexity of moving between interfaces.&lt;/p&gt; \n&lt;p&gt;With one-click migration, you can move your existing tenants and saved objects into OpenSearch UI workspaces without recreating them manually. The mechanism works for OpenSearch Dashboards created under Amazon OpenSearch Service domains and serverless collections. You can migrate everything into a new workspace or into an existing one. If you have created multiple tenants in your OpenSearch Dashboard, you have the option to either convert them into a single workspace or keep them separate for different teams. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where OpenSearch UI is available. To get started, see &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/opensearch-ui.html\"&gt;Using OpenSearch UI&lt;/a&gt; in the Amazon OpenSearch Service Developer Guide. Visit the &lt;a href=\"https://help.os.aws.dev/getting-started/in-app-migration/\"&gt;OpenSearch UI Help&lt;/a&gt; page for detailed feature tutorials. To learn more about the service, see the &lt;a href=\"https://aws.amazon.com/opensearch-service/\"&gt;Amazon OpenSearch Service product page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-opensearch-ui-one-click-dashboard-migration",
-      "publishedAt": "2026-07-17T17:23:00.000Z",
-      "updatedAt": "2026-07-17T17:23:00.000Z",
-      "categories": [
-        "Amazon Opensearch Service",
-        "Analytics"
-      ],
-      "services": [
-        "OpenSearch"
-      ],
-      "tags": [
-        "amazon opensearch service",
-        "analytics",
-        "opensearch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "c5580916a7b645ae",
-      "title": "Amazon SageMaker HyperPod now supports partition-level topology for Slurm orchestrated clusters",
-      "description": "Amazon SageMaker HyperPod now supports network topology configuration at the partition level for Slurm orchestrated clusters. A single cluster can now run tree topology in one partition and block topology in another, with each partition using the topology best suited to its instance types. This improves distributed training performance by keeping job placement aligned with the interconnect characteristics of each instance type, so GPU-to-GPU communication is faster, NCCL collective operations are more efficient, and training throughput improves. HyperPod determines the topology for each partit",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports network topology configuration at the partition level for Slurm orchestrated clusters. A single cluster can now run tree topology in one partition and block topology in another, with each partition using the topology best suited to its instance types. This improves distributed training performance by keeping job placement aligned with the interconnect characteristics of each instance type, so GPU-to-GPU communication is faster, NCCL collective operations are more efficient, and training throughput improves.&lt;br&gt; &lt;br&gt; HyperPod determines the topology for each partition based on the instance types of its compute instance groups. Partitions with Amazon EC2 UltraServer instance types such as ml.p6e-gb200.36xlarge use block topology, and those with hierarchical-interconnect instance types such as ml.p5.48xlarge, ml.p5e.48xlarge, and ml.p5en.48xlarge use tree topology, while partitions with instance types that don't provide network topology information remain fully schedulable. HyperPod maintains this configuration automatically as the cluster changes through scale-up, scale-down, and node replacement events, so each partition's topology always reflects the current state of the cluster.&lt;br&gt; &lt;br&gt; To get started, create or update a SageMaker HyperPod Slurm cluster running Slurm 25.11 or later with supported GPU instance types. Topology-aware scheduling is enabled by default and requires no configuration. This feature is available in all AWS Regions where Amazon SageMaker HyperPod is supported. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-topology.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Using topology-aware scheduling in Amazon SageMaker HyperPod&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/hyperpod-partition-topology-slurm/",
-      "publishedAt": "2026-07-17T15:16:00.000Z",
-      "updatedAt": "2026-07-17T15:16:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Compute"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "compute",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f3eec9f9a4357994",
-      "title": "Amazon CloudWatch Synthetics now supports customer managed encryption keys",
-      "description": "Amazon CloudWatch Synthetics now supports customer managed AWS Key Management Service (KMS) keys for encrypting canary environment variables, giving you full control over the encryption of sensitive configuration data such as API keys, credentials, and tokens. Previously, environment variables were encrypted at rest using only an AWS owned key. Now, in addition to the default AWS owned key, you can specify your own symmetric KMS key for encryption at rest, and you can also encrypt individual values client-side before they are stored. With encryption at rest, you specify a customer managed KMS ",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch Synthetics now supports customer managed AWS Key Management Service (KMS) keys for encrypting canary environment variables, giving you full control over the encryption of sensitive configuration data such as API keys, credentials, and tokens. Previously, environment variables were encrypted at rest using only an AWS owned key. Now, in addition to the default AWS owned key, you can specify your own symmetric KMS key for encryption at rest, and you can also encrypt individual values client-side before they are stored.&lt;/p&gt; \n&lt;p&gt;With encryption at rest, you specify a customer managed KMS key when creating or updating a canary, and CloudWatch Synthetics uses a grant on the key to handle encryption and decryption transparently. With client-side encryption, you encrypt values before storage, and your canary script decrypts them at runtime using the AWS KMS Decrypt API. This benefits teams in regulated industries that require organizational key management policies, auditability, or key rotation controls across all services.&lt;/p&gt; \n&lt;p&gt;Amazon CloudWatch Synthetics customer managed key encryption is available in all commercial AWS Regions. Multi-location canaries can use a different KMS key per replica Region.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_CommonFeatures.html#CloudWatch_Synthetics_function_encryption\"&gt;Encrypting environment variables&lt;/a&gt; in the Amazon CloudWatch User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/synthetics-customer-managed-keys/",
-      "publishedAt": "2026-07-16T20:34:00.000Z",
-      "updatedAt": "2026-07-16T20:34:00.000Z",
-      "categories": [
-        "Amazon Cloudwatch",
-        "Management And Governance"
-      ],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "amazon cloudwatch",
-        "management and governance",
-        "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b49b9f9513bc502c",
-      "title": "Amazon Managed Grafana achieves FedRAMP High authorization in AWS GovCloud (US)",
-      "description": "Amazon Managed Grafana is now a FedRAMP High authorized service in the AWS GovCloud (US-East) and AWS GovCloud (US-West) regions. Federal agencies, public sector organizations, and other enterprises with FedRAMP High compliance requirements can now use Amazon Managed Grafana to visualize, query, and alert on operational metrics across their AWS and hybrid environments while meeting their strict security and compliance requirements. Amazon Managed Grafana is a fully managed service based on open-source Grafana that makes it easier for you to visualize and analyze your operational data at scale.",
-      "descriptionHtml": "&lt;p&gt;Amazon Managed Grafana is now a&amp;nbsp;&lt;a href=\"https://aws.amazon.com/compliance/fedramp/\"&gt;FedRAMP&lt;/a&gt; High authorized service in the AWS GovCloud (US-East) and AWS GovCloud (US-West) regions. Federal agencies, public sector organizations, and other enterprises with FedRAMP High compliance requirements can now use Amazon Managed Grafana to visualize, query, and alert on operational metrics across their AWS and hybrid environments while meeting their strict security and compliance requirements.&lt;/p&gt; \n&lt;p&gt;Amazon Managed Grafana is a fully managed service based on open-source Grafana that makes it easier for you to visualize and analyze your operational data at scale. The Federal Risk and Authorization Management Program (FedRAMP) is a US government-wide program that delivers a standard approach to the security assessment, authorization, and continuous monitoring for cloud products and services.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;For more details about Amazon Managed Grafana in AWS GovCloud (US), visit the &lt;a href=\"https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/grafana.html\"&gt;Amazon Managed Grafana GovCloud documentation&lt;/a&gt; or contact your AWS account team for more information. To learn more, visit the Amazon Managed Grafana &lt;a href=\"https://aws.amazon.com/grafana/\"&gt;product page.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-managed-grafana-fedramp-high/",
-      "publishedAt": "2026-07-16T19:31:00.000Z",
-      "updatedAt": "2026-07-16T19:31:00.000Z",
-      "categories": [
-        "Amazon Managed Service For Grafana",
-        "Management And Governance"
-      ],
-      "services": [],
-      "tags": [
-        "amazon managed service for grafana",
-        "management and governance"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5c0ce1620e841744",
-      "title": "Track cost efficiency trends directly in Billing and Cost Management Dashboards with the new Cost Efficiency widget",
-      "description": "Today, AWS Billing and Cost Management (BCM) announces support for Cost Efficiency widget in BCM Dashboards. You can now view cost efficiency trends alongside Cost Explorer, Budgets, and reports for Savings Plans and Reserved Instance coverage and utilization reports. This provides a unified view of your spending, commitments, and optimization performance in a single, tailored dashboard. The Cost Efficiency widget displays your efficiency score over time, showing how your efficiency across your AWS environment changes over time. You can view efficiency by AWS account, region, or overall, and a",
-      "descriptionHtml": "&lt;p&gt;Today, AWS Billing and Cost Management (BCM) announces support for Cost Efficiency widget in BCM Dashboards. You can now view cost efficiency trends alongside Cost Explorer, Budgets, and reports for Savings Plans and Reserved Instance coverage and utilization reports. This provides a unified view of your spending, commitments, and optimization performance in a single, tailored dashboard.&lt;/p&gt; \n&lt;p&gt;The Cost Efficiency widget displays your efficiency score over time, showing how your efficiency across your AWS environment changes over time. You can view efficiency by AWS account, region, or overall, and adjust granularity to analyze trends at the level that matters most to your team. By adding one or more Cost Efficiency widget to a BCM Dashboard, you can monitor your optimization performance from your existing cost management workflows. The widget links directly to the Cost Optimization Hub console so you can easily take actions when you have recommendations for savings opportunities.&lt;/p&gt; \n&lt;p&gt;With the Cost Efficiency widget, you can create a unified view of your spending, commitments, budgets, and optimization performance. The widget is fully integrated with dashboard exports and can be included in scheduled email reports or downloaded as a CSV or PDF for offline analysis. They are also included with cross-account dashboard sharing.&lt;/p&gt; \n&lt;p&gt;The Cost Efficiency widget for BCM Dashboards is available in all AWS commercial Regions at no additional charge. To learn more, visit our &lt;a href=\"https://docs.aws.amazon.com/cost-management/latest/userguide/dashboards.html\"&gt;User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/monitor-cost-efficiency-using-dashboards",
-      "publishedAt": "2026-07-16T18:56:00.000Z",
-      "updatedAt": "2026-07-16T18:56:00.000Z",
-      "categories": [
-        "Cost Management",
-        "Business Productivity",
-        "Cloud Financial Management",
-        "Artificial Intelligence"
-      ],
-      "services": [],
-      "tags": [
-        "cost management",
-        "business productivity",
-        "cloud financial management",
-        "artificial intelligence"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ab0aec585bf023ae",
-      "title": "Amazon EC2 now surfaces the public SSM parameters associated with public AMIs",
-      "description": "Amazon EC2 now surfaces the AWS Systems Manager (SSM) Parameter Store parameters associated with public AMIs directly in the AMI metadata. When you describe a public AMI, the response includes the associated public SSM parameter, making it easy to discover and reference in your configurations. Previously, finding the SSM parameter associated with a public AMI required searching through SSM parameter namespaces manually. Now, when you describe a public AMI, the response includes the public SSM parameter it is associated with. This allows you to discover the SSM parameter for a public AMI easily",
-      "descriptionHtml": "&lt;p&gt;Amazon EC2 now surfaces the AWS Systems Manager (SSM) Parameter Store parameters associated with public AMIs directly in the AMI metadata. When you describe a public AMI, the response includes the associated public SSM parameter,&amp;nbsp;making it easy to discover and reference in your configurations.&lt;/p&gt; \n&lt;p&gt;Previously, finding the SSM parameter associated with a public AMI required searching through SSM parameter namespaces manually. Now, when you describe a public AMI, the response includes the public SSM parameter it is associated with. This allows you to discover the SSM parameter for a public AMI easily and use it as an alias that always resolves to the latest version, simplifying AMI updates across your infrastructure.&lt;br&gt; &lt;br&gt; This capability is available to all customers at no additional cost in all AWS regions including AWS China (Beijing) Region, operated by Sinnet, and AWS China (Ningxia) Region, operated by NWCD, and AWS GovCloud (US) Regions. To learn more, please visit the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/finding-an-ami-parameter-store.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/ec2-public-images-ssm-parameters",
-      "publishedAt": "2026-07-16T18:20:00.000Z",
-      "updatedAt": "2026-07-16T18:20:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2",
-        "SSM"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "amazon ec2",
-        "compute",
-        "ec2",
-        "ssm"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a1632b251b9f29d5",
-      "title": "Amazon S3 Event Notifications now include system-generated tags",
-      "description": "Amazon S3 Event Notifications now include system-generated tags in events delivered to all destinations including Amazon EventBridge, Amazon SQS, Amazon SNS, and AWS Lambda. System-generated tags are metadata labels attached to your bucket by AWS services. You can use these tags to filter events from thousands of buckets with a single EventBridge rule, instead of listing each bucket name individually. To get started, enable S3 Event Notifications on your general purpose buckets through the AWS Management Console, AWS SDK, or AWS CLI. If AWS services like AWS CloudFormation have already applied",
-      "descriptionHtml": "&lt;p&gt;Amazon S3 Event Notifications now include system-generated tags in events delivered to all destinations including Amazon EventBridge, Amazon SQS, Amazon SNS, and AWS Lambda. System-generated tags are metadata labels attached to your bucket by AWS services. You can use these tags to filter events from thousands of buckets with a single EventBridge rule, instead of listing each bucket name individually.&lt;br&gt; &lt;br&gt; To get started, enable S3 Event Notifications on your general purpose buckets through the AWS Management Console, AWS SDK, or AWS CLI. If AWS services like AWS CloudFormation have already applied system-generated tags to your buckets, S3 automatically includes them in new event notifications. System-generated tags in S3 Event Notifications are available at no additional cost in all AWS Regions and require no changes to existing configurations. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/notification-content-structure.html\"&gt;S3 Event Notifications documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-s3-event-notifications-system-generated-tags/",
-      "publishedAt": "2026-07-16T18:00:00.000Z",
-      "updatedAt": "2026-07-16T18:00:00.000Z",
-      "categories": [
-        "Storage",
-        "Amazon Simple Storage Service"
-      ],
-      "services": [
-        "S3"
-      ],
-      "tags": [
-        "storage",
-        "amazon simple storage service",
-        "s3"
       ],
       "isNew": false
     }
