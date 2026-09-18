@@ -1,7 +1,169 @@
 {
-  "lastUpdated": "2026-09-17T13:06:00.326Z",
+  "lastUpdated": "2026-09-18T12:45:44.780Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "73e5cb63d0511541",
+      "title": "AWS Transfer Family now supports source IP preservation for SFTP servers behind a Network Load Balancer (NLB)",
+      "description": "AWS Transfer Family now preserves the client's source IP address using Proxy Protocol v2 (PPv2) when you place a Network Load Balancer (NLB) in front of your SFTP server that uses a VPC-hosted endpoint. You can now retain visibility of the client's source IP for IP-based auditing, access controls, and compliance when you use your own NLB. Previously, an NLB replaced the client's source IP with its own private IP address, so your Transfer Family logs and events recorded the NLB's address instead of the client's source IP. Because the NLB's private IP was the address presented to your custom ide",
+      "descriptionHtml": "&lt;p&gt;AWS Transfer Family now preserves the client's source IP address using Proxy Protocol v2 (PPv2) when you place a Network Load Balancer (NLB) in front of your SFTP server that uses a VPC-hosted endpoint. You can now retain visibility of the client's source IP for IP-based auditing, access controls, and compliance when you use your own NLB.&lt;/p&gt; \n&lt;p&gt;Previously, an NLB replaced the client's source IP with its own private IP address, so your Transfer Family logs and events recorded the NLB's address instead of the client's source IP. Because the NLB's private IP was the address presented to your custom identity provider during authentication, you couldn't authorize users based on their true source IP. With this launch, you can enable source IP preservation on your SFTP server so that the client's source IP is preserved. The preserved source IP is recorded in your logs and events and presented to your custom identity provider during authentication. You can enable the feature on each Transfer Family server individually through the console, CLI, or API.&lt;/p&gt; \n&lt;p&gt;Source IP preservation for SFTP servers is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions where AWS Transfer Family is available&lt;/a&gt;. To get started, visit the AWS Transfer Family console or use the AWS CLI/SDK. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/transfer/latest/userguide/working-with-nlb.html#nlb-sftp-source-ip\"&gt;Transfer Family User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/transfer-family-sftp-source-ip-nlb/",
+      "publishedAt": "2026-09-17T19:00:00.000Z",
+      "updatedAt": "2026-09-17T19:00:00.000Z",
+      "categories": [
+        "Amazon Elastic Load Balancing",
+        "Storage",
+        "AWS Transfer Family",
+        "Migration"
+      ],
+      "services": [
+        "NLB",
+        "Transfer Family"
+      ],
+      "tags": [
+        "amazon elastic load balancing",
+        "storage",
+        "aws transfer family",
+        "migration",
+        "nlb",
+        "transfer family"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3d6073ee4d1cf1c4",
+      "title": "AWS HealthOmics now supports IAM session policies",
+      "description": "AWS HealthOmics now supports IAM session policies, enabling you to restrict permissions for individual runs without creating and managing multiple IAM roles. Until now, there was no way to dynamically scope down permissions for a single run, requiring you to create a separate IAM role for each tenant or run. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs with fully managed bioinformatics workflows. An IAM session policy is an inline policy that limits the maximum permissions of a run without modifying the underl",
+      "descriptionHtml": "&lt;p&gt;AWS HealthOmics now supports IAM session policies, enabling you to restrict permissions for individual runs without creating and managing multiple IAM roles. Until now, there was no way to dynamically scope down permissions for a single run, requiring you to create a separate IAM role for each tenant or run. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs with fully managed bioinformatics workflows.&lt;/p&gt; \n&lt;p&gt;An IAM session policy is an inline policy that limits the maximum permissions of a run without modifying the underlying service role. Your effective permissions during a run are the intersection of permissions allowed by both the underlying identity-based policy and the temporary session policy. For example, if you operate a multi-tenant application, you can pass a session policy that limits a run's access to only that tenant's Amazon S3 buckets, without provisioning a dedicated IAM role for that tenant. You can also use IAM session policies to grant temporary access to specific Amazon S3 objects for a single run, and isolate access to sensitive resources on a per-run basis.&lt;/p&gt; \n&lt;p&gt;IAM session policy support is available in all AWS Regions where AWS HealthOmics is available: US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Tokyo, Singapore, Seoul). To learn how to configure IAM session policies for your runs, visit the Permissions section of the &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/omics/latest/dev/permissions-service.html\"&gt;AWS HealthOmics User Guide&lt;/a&gt;. To learn more about the service, visit &amp;nbsp;&lt;a href=\"https://aws.amazon.com/healthomics/\"&gt;AWS HealthOmics&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/omics-iam-session-policy/",
+      "publishedAt": "2026-09-17T18:32:00.000Z",
+      "updatedAt": "2026-09-17T18:32:00.000Z",
+      "categories": [
+        "Serverless",
+        "Artificial Intelligence",
+        "Containers",
+        "Amazon Omics"
+      ],
+      "services": [
+        "IAM"
+      ],
+      "tags": [
+        "serverless",
+        "artificial intelligence",
+        "containers",
+        "amazon omics",
+        "iam"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ab8136cc0fbe15bd",
+      "title": "AWS Batch now supports bulk job cancellation and termination",
+      "description": "AWS Batch now supports bulk job cancellation and termination, enabling you to cancel or terminate up to 50 jobs with a single API call. The new CancelJobs, TerminateJobs, and TerminateServiceJobs APIs reduce the operational complexity of managing large-scale batch workloads, letting you act on groups of jobs at once and receive per-job results in a single response. Additionally, ListJobs now returns isCancelled and isTerminated fields, and ListServiceJobs returns isTerminated, making it easier to track the lifecycle state of your jobs. To get started, call CancelJobs for jobs in SUBMITTED, PEN",
+      "descriptionHtml": "&lt;p&gt;AWS Batch now supports bulk job cancellation and termination, enabling you to cancel or terminate up to 50 jobs with a single API call. The new CancelJobs, TerminateJobs, and TerminateServiceJobs APIs reduce the operational complexity of managing large-scale batch workloads, letting you act on groups of jobs at once and receive per-job results in a single response. Additionally, ListJobs now returns isCancelled and isTerminated fields, and ListServiceJobs returns isTerminated, making it easier to track the lifecycle state of your jobs.&lt;/p&gt; \n&lt;p&gt;To get started, call CancelJobs for jobs in SUBMITTED, PENDING, or RUNNABLE states, or TerminateJobs and TerminateServiceJobs for jobs in any state, including STARTING and RUNNING. All three APIs accept up to 50 job IDs and work with individual and array jobs. You can access them through the AWS CLI or AWS SDKs.&lt;/p&gt; \n&lt;p&gt;Bulk job cancellation and termination is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where AWS Batch is available. For more information, see &lt;a href=\"https://docs.aws.amazon.com/batch/latest/APIReference/API_CancelJobs.html\"&gt;CancelJobs&lt;/a&gt;,&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateJobs.html\"&gt;TerminateJobs&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateServiceJobs.html\"&gt;TerminateServiceJobs&lt;/a&gt; pages in the AWS Batch API Reference Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-batch-bulk-cancellation/",
+      "publishedAt": "2026-09-17T17:23:00.000Z",
+      "updatedAt": "2026-09-17T17:23:00.000Z",
+      "categories": [],
+      "services": [
+        "Batch"
+      ],
+      "tags": [
+        "batch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e2b4f8f0dd2a821f",
+      "title": "Introducing Amazon EC2 T8i instances",
+      "description": "AWS is announcing the general availability of new low-cost burstable Amazon EC2 T8i instances. These instances are powered by custom sixth generation Intel Xeon 6 processors, available exclusively on AWS, and built on the latest sixth generation AWS Nitro cards. T8i instances deliver up to 30% better price performance compared to previous generation T3 instances, and offer four sizes: nano, micro, small, and medium. These instances are designed for workloads requiring low to moderate CPU utilization, including data processing, login gateways, small databases, batch processing, event driven fun",
+      "descriptionHtml": "&lt;p&gt;AWS is announcing the general availability of new low-cost burstable Amazon EC2 T8i instances. These instances are powered by custom sixth generation Intel Xeon 6 processors, available exclusively on AWS, and built on the latest sixth generation AWS Nitro cards. T8i instances deliver up to 30% better price performance compared to previous generation T3 instances, and offer four sizes: nano, micro, small, and medium. These instances are designed for workloads requiring low to moderate CPU utilization, including data processing, login gateways, small databases, batch processing, event driven functions, CI/CD pipelines, microservices, and low traffic websites. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;T8i instances deliver up to 70% higher compute performance, 1.25x higher network bandwidth, and 2.4x higher EBS bandwidth compared to T3 instances. They use the same CPU credit system as T3 with Standard and Unlimited modes, so existing T3 customers can upgrade to T8i and immediately benefit from better price performance, enabling them to lower their TCO. For customers new to AWS or migrating from on-premises, T8i instances provide one of the most cost-effective entry points to run a variety of workloads.&lt;/p&gt; \n&lt;p&gt;T8i.micro and T8i.small are available under the &lt;a href=\"https://aws.amazon.com/free/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Free Tier&lt;/a&gt;.&amp;nbsp;T8i instances are available in US East (N. Virginia, Ohio), US West (Oregon, N. California), Europe (Frankfurt, Ireland, London, Paris), Asia Pacific (Hyderabad, Malaysia, Mumbai, Seoul, Singapore, Sydney, Tokyo), and Canada (Central) regions.&amp;nbsp;T8i instances are available to purchase via On-Demand instances, and Spot instances with Savings Plan option coming soon. To learn more, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/t8i/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon EC2 T8i instances page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-t8i-instances-ga/",
+      "publishedAt": "2026-09-17T15:00:00.000Z",
+      "updatedAt": "2026-09-17T15:00:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c61cc46213142ac3",
+      "title": "AWS Elastic Beanstalk introduces Cluster Mode to run multiple applications on shared infrastructure",
+      "description": "AWS Elastic Beanstalk introduces Cluster Mode, a new deployment mode that lets you run and manage multiple applications on shared infrastructure in your account. Provide your source code, a Dockerfile, or a container image in Amazon ECR, and Elastic Beanstalk handles containerization, provisioning, and ongoing operations through the console, CLI, and APIs you already use. A new Elastic Beanstalk GitHub Action deploys your application directly from your repository as part of your CI/CD pipeline. AWS Elastic Beanstalk deploys, scales, and manages your applications for their full lifecycle while ",
+      "descriptionHtml": "&lt;p&gt;AWS Elastic Beanstalk introduces Cluster Mode, a new deployment mode that lets you run and manage multiple applications on shared infrastructure in your account. Provide your source code, a Dockerfile, or a container image in Amazon ECR, and Elastic Beanstalk handles containerization, provisioning, and ongoing operations through the console, CLI, and APIs you already use. A new Elastic Beanstalk GitHub Action deploys your application directly from your repository as part of your CI/CD pipeline.&lt;/p&gt; \n&lt;p&gt;AWS Elastic Beanstalk deploys, scales, and manages your applications for their full lifecycle while handling the infrastructure, so you can focus on your code. It now offers two deployment modes. Standard Mode is the existing Elastic Beanstalk experience and continues to support all currently available platforms, including .NET, Node.js, and Python. Cluster Mode runs multiple applications on pooled infrastructure in your account, powered by Amazon EKS, instead of a dedicated environment per application. This can lower your per-application compute cost as your applications scale or your application count grows. Cluster Mode supports event-driven autoscaling, OpenTelemetry-based observability to Amazon CloudWatch and third-party providers, AWS Secrets Manager integration, and HTTPS by default via AWS Certificate Manager.&lt;/p&gt; \n&lt;p&gt;To get started, create an environment in the Elastic Beanstalk console and select Cluster Mode. You can also deploy with the AWS CLI, the GitHub Action, or the agent skills.&lt;/p&gt; \n&lt;p&gt;Cluster Mode is available in all commercial AWS Regions where Elastic Beanstalk is available. Elastic Beanstalk is HIPAA eligible and in scope for programs including PCI DSS, SOC, FedRAMP, and IRAP. There is no additional charge for Cluster Mode. You pay for the AWS resources your applications consume, including the EKS cluster and EKS Auto Mode charges for the infrastructure Elastic Beanstalk provisions on your behalf. See the Elastic Beanstalk and EKS pricing pages for details.&lt;/p&gt; \n&lt;p&gt;To learn more, see the &lt;a href=\"https://aws.amazon.com/blogs/aws/aws-elastic-beanstalk-introduces-cluster-mode/\"&gt;AWS News blog&lt;/a&gt;, the &lt;a href=\"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/\"&gt;Elastic Beanstalk Developer Guide&lt;/a&gt;, and the &lt;a href=\"https://aws.amazon.com/elasticbeanstalk/\"&gt;Elastic Beanstalk product page&lt;/a&gt;, or download the &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws/blob/main/skills/core-skills/aws-containers/SKILL.md\"&gt;agent skills&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/elastic-beanstalk-cluster-mode/",
+      "publishedAt": "2026-09-17T08:00:00.000Z",
+      "updatedAt": "2026-09-17T08:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Elastic Beanstalk"
+      ],
+      "tags": [
+        "elastic beanstalk"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b2750751743fc4ed",
+      "title": "Amazon S3 Express One Zone is now available in 7 additional AWS Regions",
+      "description": "The Amazon S3 Express One Zone storage class is now available in 7 additional AWS Regions: Asia Pacific (Singapore), South America (Sao Paulo), US West (N. California), Canada (Central), Europe (Paris), Asia Pacific (Sydney), and Asia Pacific (Seoul). Amazon S3 Express One Zone is a high-performance, single-Availability Zone storage class purpose-built to deliver consistent single-digit millisecond data access for your most frequently accessed data and latency-sensitive applications. S3 Express One Zone delivers data access speed up to 10x faster and request costs up to 80% lower than S3 Stand",
+      "descriptionHtml": "&lt;p&gt;The Amazon S3 Express One Zone storage class is now available in 7 additional AWS Regions: Asia Pacific (Singapore), South America (Sao Paulo), US West (N. California), Canada (Central), Europe (Paris), Asia Pacific (Sydney), and Asia Pacific (Seoul).&lt;/p&gt; \n&lt;p&gt;Amazon S3 Express One Zone is a high-performance, single-Availability Zone storage class purpose-built to deliver consistent single-digit millisecond data access for your most frequently accessed data and latency-sensitive applications. S3 Express One Zone delivers data access speed up to 10x faster and request costs up to 80% lower than S3 Standard. It enables workloads such as machine learning training, interactive analytics, and key-value caching in AI search engines to achieve fast data access with high durability and availability.&lt;/p&gt; \n&lt;p&gt;With this expansion, S3 Express One Zone is now available in 15 &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-Endpoints.html\"&gt;AWS Regions&lt;/a&gt;. For pricing details, visit the &lt;a href=\"https://aws.amazon.com/s3/pricing/\"&gt;S3 pricing page&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/s3/storage-classes/express-one-zone/\"&gt;product page&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-getting-started.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/s3-express-one-zone-7-regions/",
+      "publishedAt": "2026-09-17T08:00:00.000Z",
+      "updatedAt": "2026-09-17T08:00:00.000Z",
+      "categories": [
+        "Amazon S3",
+        "Storage"
+      ],
+      "services": [
+        "S3"
+      ],
+      "tags": [
+        "amazon s3",
+        "storage",
+        "s3"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8d01b89fb9b208f0",
+      "title": "AWS Builder Center now available as mobile app on iOS and Android",
+      "description": "AWS Builder Center is a platform that brings together the global builder community, offering articles, workshops, sandbox environments, events, and learning resources in one place. Previously limited to desktop and web access, the experience is now available as a mobile app on iOS and Android. Builders worldwide can stay connected and engaged with the community from anywhere, using their AWS Builder ID to remain signed in across sessions. The AWS Builder Center mobile app enables builders to browse trending articles, access 600+ AWS Skill Builder courses, and manage hands-on workshops with fre",
+      "descriptionHtml": "&lt;p&gt;AWS Builder Center is a platform that brings together the global builder community, offering articles, workshops, sandbox environments, events, and learning resources in one place. Previously limited to desktop and web access, the experience is now available as a mobile app on iOS and Android. Builders worldwide can stay connected and engaged with the community from anywhere, using their AWS Builder ID to remain signed in across sessions.&lt;/p&gt; \n&lt;p&gt;The AWS Builder Center mobile app enables builders to browse trending articles, access 600+ AWS Skill Builder courses, and manage hands-on workshops with free sandbox environments directly from their mobile devices. Builders can follow AWS Heroes, Community Builders, and User Group Leaders, check Builder Loft event calendars on the go, and receive push notifications for subscribed topics and communities. The app also supports the Wishlist feature, allowing builders to submit and manage product feedback directly to AWS teams.&lt;/p&gt; \n&lt;p&gt;The AWS Builder Center mobile app is available worldwide on the Apple App Store and Google Play Store.&lt;/p&gt; \n&lt;p&gt;To learn more about the AWS Builder Center mobile app, visit the &lt;a href=\"https://builder.aws.com/mobile\"&gt;AWS Builder Center mobile page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-builder-center-now-available-as-mobile-app/",
+      "publishedAt": "2026-09-17T07:09:00.000Z",
+      "updatedAt": "2026-09-17T07:09:00.000Z",
+      "categories": [
+        "Mobile Services"
+      ],
+      "services": [],
+      "tags": [
+        "mobile services"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f391573b3b67c4c8",
+      "title": "Amazon Quick now generates individual sheets and builds analyses from an image",
+      "description": "Amazon Quick now expands Generate Analysis with two new ways to create dashboards faster. You can generate a single sheet inside an existing analysis by describing it in natural language, and you can generate a new analysis from an image of an existing dashboard. With Generate Sheet, you describe the sheet you want and Amazon Quick adds it to your current analysis with visuals selected for your data, filter controls, and calculated fields such as year-over-year growth and month-over-month comparisons. You can extend an analysis without building each visual by hand. With generate an analysis fr",
+      "descriptionHtml": "&lt;p&gt;Amazon Quick now expands Generate Analysis with two new ways to create dashboards faster. You can generate a single sheet inside an existing analysis by describing it in natural language, and you can generate a new analysis from an image of an existing dashboard.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;With Generate Sheet, you describe the sheet you want and Amazon Quick adds it to your current analysis with visuals selected for your data, filter controls, and calculated fields such as year-over-year growth and month-over-month comparisons. You can extend an analysis without building each visual by hand.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;With generate an analysis from an image, you attach an image of a dashboard, including dashboards from other BI tools, to your prompt when you generate an analysis. Amazon Quick recreates it as an editable analysis, building what is supported in Amazon Quick. Both capabilities work with existing publishing workflows, embedding, CI/CD pipelines, and point-and-click editing.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;At launch, Generate Sheet and generate analysis from an image are available to Enterprise subscription/Author Pro users. Authors also have promotional access to this capability through December 2026 as part of Amazon Quick Enterprise, provided their organization has not restricted access.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a title=\"Generating an analysis with natural language prompts in the Amazon Quick User Guide\" href=\"https://docs.aws.amazon.com/quick/latest/userguide/generating-an-analysis.html\"&gt;Generating an analysis with natural language prompts&lt;/a&gt; in the Amazon Quick User Guide. To get started, open an analysis and choose Generate Sheet, or attach an image to your prompt and choose Generate analysis.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/generate-sheet-and-generate-analysis-from-an-image/",
+      "publishedAt": "2026-09-17T02:37:00.000Z",
+      "updatedAt": "2026-09-17T02:37:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
     {
       "id": "22bfee1956f4a34c",
       "title": "Amazon Corretto 27 is now generally available",
@@ -40,6 +202,28 @@
         "aiml",
         "amazon sagemaker training",
         "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b3526131d57ff679",
+      "title": "Amazon ECS deployment observability for Amazon ECS Managed Daemons in AWS Management Console",
+      "description": "Amazon Elastic Container Service (Amazon ECS) now provides a consolidated deployment view for Amazon ECS Managed Daemons, giving you a single place to see how far a deployment has progressed, what is failing, and what could stop it. This helps you monitor Managed Daemon deployments at a glance and resolve issues faster, whether a rollout is in progress or you are reviewing what happened after it completed, eliminating the need to piece together deployment status from multiple sources. The deployment view presents a lifecycle timeline with timestamps at each step and the total deployment durati",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\"&gt;Amazon Elastic Container Service&lt;/a&gt; (Amazon ECS) now provides a consolidated deployment view for Amazon ECS Managed Daemons, giving you a single place to see how far a deployment has progressed, what is failing, and what could stop it. This helps you monitor Managed Daemon deployments at a glance and resolve issues faster, whether a rollout is in progress or you are reviewing what happened after it completed, eliminating the need to piece together deployment status from multiple sources.&lt;br&gt; &lt;br&gt; The deployment view presents a lifecycle timeline with timestamps at each step and the total deployment duration, including the rollback path if a deployment is interrupted. Progress bars for each capacity provider track instances completed, in progress, and remaining, as well as instances draining and being replaced when a capacity provider is removed. A monitoring panel shows deployment circuit breaker, deployment alarm, and container health check state, each with live Amazon CloudWatch alarm detail and whether it can stop the deployment. If a daemon task fails, the affected capacity provider shows the stop reason with links to the task, its logs, and the matching troubleshooting guide, including the failure that caused a rollback. The view also displays target and source revisions with instance counts, drain percentage, and bake time.&lt;br&gt; &lt;br&gt; This enhancement is available as a console-only view in all AWS Commercial Regions at no additional cost. To get started with Amazon ECS Managed Daemons, refer to our &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-daemon-deployment-console/",
+      "publishedAt": "2026-09-16T22:01:00.000Z",
+      "updatedAt": "2026-09-16T22:01:00.000Z",
+      "categories": [
+        "Containers",
+        "Containers And Deployment"
+      ],
+      "services": [
+        "ECS"
+      ],
+      "tags": [
+        "containers",
+        "containers and deployment",
+        "ecs"
       ],
       "isNew": true
     },
@@ -226,6 +410,54 @@
       "tags": [
         "amazon connect",
         "contact center",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "af57df6dc725d731",
+      "title": "Amazon Keyspaces (for Apache Cassandra) is now generally available in 11 additional Regions",
+      "description": "Amazon Keyspaces (for Apache Cassandra) is now generally available in 11 additional Regions, allowing customers in those Regions to build Cassandra-compatible applications with lower latency while keeping their data within the Region to meet data residency requirements.. Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. Amazon Keyspaces is serverless, so you pay for only the resources that you use and you can build applications that serve thousands of requests per second with virtually unlimited throughput and sto",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/keyspaces/\"&gt;Amazon Keyspaces (for Apache Cassandra)&lt;/a&gt; is now generally available in 11 additional Regions,&amp;nbsp;allowing customers in those Regions to build Cassandra-compatible applications with lower latency while keeping their data within the Region to meet data residency requirements..&amp;nbsp;&lt;br&gt; &lt;br&gt; Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. Amazon Keyspaces is serverless, so you pay for only the resources that you use and you can build applications that serve thousands of requests per second with virtually unlimited throughput and storage.&amp;nbsp;&lt;br&gt; &lt;br&gt; To find the list of new available Regions, see the following resources: &lt;a href=\"https://builder.aws.com/build/capabilities\"&gt;AWS Capabilities by Region&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-keyspaces/",
+      "publishedAt": "2026-09-16T16:00:00.000Z",
+      "updatedAt": "2026-09-16T16:00:00.000Z",
+      "categories": [
+        "Serverless",
+        "Databases",
+        "Amazon Keyspaces"
+      ],
+      "services": [
+        "Keyspaces"
+      ],
+      "tags": [
+        "serverless",
+        "databases",
+        "amazon keyspaces",
+        "keyspaces"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ef0734230b04ac8b",
+      "title": "Amazon Connect Talent is now generally available",
+      "description": "Amazon Connect Talent is now generally available, giving talent acquisition leaders an AI-powered hiring solution that accelerates candidate selection at scale. Informed by decades of Amazon's hiring science, Amazon Connect Talent uses AI agents to conduct structured voice interviews, administer evidence based assessments, and score candidates consistently, freeing recruiters to focus on strategic decisions. Candidates interview 24/7 from any device. Recruiters review scores, transcripts, and detailed candidate evaluations generated by their AI teammate, empowering them to make faster hiring d",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Talent is now generally available, giving talent acquisition leaders an AI-powered hiring solution that accelerates candidate selection at scale. Informed by decades of Amazon's hiring science, Amazon Connect Talent uses AI agents to conduct structured voice interviews, administer evidence based assessments, and score candidates consistently, freeing recruiters to focus on strategic decisions. Candidates interview 24/7 from any device. Recruiters review scores, transcripts, and detailed candidate evaluations generated by their AI teammate, empowering them to make faster hiring decisions with consistent objectivity.&lt;/p&gt; \n&lt;p&gt;GA capabilities include competency based assessments, AI-led voice interviews with adaptive questioning, a brand-customizable mobile-first candidate portal, and system admin onboarding tools for easy deployment. Amazon Connect Talent scales to handle hiring surges, evaluating hundreds of candidates simultaneously. Amazon Connect Talent is now available in AWS US East (N. Virginia) and US West (Oregon) regions. To learn more, visit the &lt;a href=\"https://aws.amazon.com/products/connect/talent/\"&gt;Amazon Connect Talent page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-talent/",
+      "publishedAt": "2026-09-16T12:22:00.000Z",
+      "updatedAt": "2026-09-16T12:22:00.000Z",
+      "categories": [
+        "Aiml",
+        "General:Products",
+        "Amazon Connect"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "aiml",
+        "general:products",
+        "amazon connect",
         "connect"
       ],
       "isNew": true
@@ -795,7 +1027,7 @@
         "sagemaker",
         "athena"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f3bff99f2bf0db29",
@@ -814,7 +1046,7 @@
         "high performance computing",
         "compute"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e4a3d71b8d69cae2",
@@ -838,7 +1070,7 @@
         "aws govcloud us",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "52d10ed7b11a286d",
@@ -860,7 +1092,7 @@
         "aws lambda",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7350f13f35f6faa0",
@@ -877,7 +1109,7 @@
       "tags": [
         "migration"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f8666b813f39318d",
@@ -899,7 +1131,7 @@
         "networking and content delivery",
         "api gateway"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f376e824d666d507",
@@ -921,7 +1153,7 @@
         "aws lambda",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6b9e6f7c8ea0d481",
@@ -949,7 +1181,7 @@
         "messaging",
         "mq"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a9b71fde0798d5b5",
@@ -973,7 +1205,7 @@
         "compute",
         "outposts"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c935ee5e7f02c5b6",
@@ -997,7 +1229,7 @@
         "analytics",
         "opensearch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "4be49af9477a3ad3",
@@ -1019,7 +1251,7 @@
         "ecs",
         "iam"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "bc1f1a52e6aca9b7",
@@ -1041,7 +1273,7 @@
         "amazon redshift",
         "redshift"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3aa5b7dac8bc0881",
@@ -11007,253 +11239,6 @@
       "services": [],
       "tags": [
         "management and governance"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "00983218b37a8652",
-      "title": "AWS Marketplace now supports self-service seller signature management for India-based sellers",
-      "description": "AWS Marketplace now enables India-based sellers to upload and manage their seller signatures directly through AWS Partner Central, eliminating the previous manual, email-based submission process. Sellers located in India are required to provide a valid seller signature for tax invoicing and regulatory compliance. This launch consolidates Goods and Services Tax Identification Number (GSTIN) registration and seller signature management into a single, centralized location purpose-built for India-based sellers transacting on AWS Marketplace. Once uploaded, AWS Marketplace securely stores your sign",
-      "descriptionHtml": "&lt;p&gt;AWS Marketplace now enables India-based sellers to upload and manage their seller signatures directly through AWS Partner Central, eliminating the previous manual, email-based submission process. Sellers located in India are required to provide a valid seller signature for tax invoicing and regulatory compliance. This launch consolidates Goods and Services Tax Identification Number (GSTIN) registration and seller signature management into a single, centralized location purpose-built for India-based sellers transacting on AWS Marketplace.&lt;br&gt; &lt;br&gt; Once uploaded, AWS Marketplace securely stores your signature and uses it for applicable buyer tax invoices generated on your behalf for transactions in India. This launch introduces automated real-time validation and a new tax summary container providing at-a-glance visibility into GSTIN registration and seller signature verification status. Sellers are notified by email when their signature is verified or rejected, and can resolve rejections independently by resubmitting directly in the console using the displayed rejection reason, ensuring real-time compliance visibility.&lt;br&gt; &lt;br&gt; To learn more about managing your tax compliance and seller signature in AWS Partner Central, visit the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/getting-started-seller-india.html\"&gt;AWS Marketplace Seller Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-marketplace-india/",
-      "publishedAt": "2026-07-21T07:18:00.000Z",
-      "updatedAt": "2026-07-21T07:18:00.000Z",
-      "categories": [
-        "AWS Marketplace And Partners",
-        "Partner Network"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace and partners",
-        "partner network"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d7c3faa5fb21b770",
-      "title": "Amazon RDS for SQL Server now supports Microsoft SQL Server 2025",
-      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports Microsoft SQL Server 2025 for Enterprise, Standard, and Developer editions. SQL Server 2025 brings AI integration directly into the database engine, enabling customers to invoke external REST endpoints from T-SQL without additional middleware. Customers running RDS for SQL Server can use this capability to integrate existing database workloads securely with AWS services such as Amazon Bedrock, Amazon SageMaker, Amazon S3, and AWS Lambda, without re-architecting applications. This enables scenarios such as AI-powered qu",
-      "descriptionHtml": "&lt;p&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server now supports Microsoft SQL Server 2025 for Enterprise, Standard, and Developer editions.&lt;br&gt; &lt;br&gt; SQL Server 2025 brings AI integration directly into the database engine, enabling customers to invoke external REST endpoints from T-SQL without additional middleware. Customers running RDS for SQL Server can use this capability to integrate existing database workloads securely with AWS services such as Amazon Bedrock, Amazon SageMaker, Amazon S3, and AWS Lambda, without re-architecting applications. This enables scenarios such as AI-powered query advisor, automated performance analysis, event-driven workflows, and calling custom web services on Amazon EC2.&lt;br&gt; &lt;br&gt; SQL Server 2025 introduces a new free edition for development and testing without licensing costs (Standard Developer Edition, or Dev-SE), and significant Standard Edition capacity increases up to 32 cores and 256 GB buffer pool memory. Standard Edition also gains Resource Governor, previously exclusive to Enterprise Edition. SQL Server 2025 also introduces a native vector data type for storing and querying vector embeddings directly within the database.&lt;br&gt; &lt;br&gt; Customers running earlier SQL Server versions on RDS can &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.SQLServer.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;upgrade&lt;/a&gt; to SQL Server 2025 by modifying the DB engine version, and customers running SQL Server on premises can migrate to take advantage of these capabilities with fully managed infrastructure. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SQLServer.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for SQL Server User Guide&lt;/a&gt;. See &lt;a href=\"https://aws.amazon.com/rds/sqlserver/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for SQL Server Pricing&lt;/a&gt; for up-to-date pricing and regional availability.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/rds-sqlserver-supports-sqlserver-2025",
-      "publishedAt": "2026-07-21T07:00:00.000Z",
-      "updatedAt": "2026-07-21T07:00:00.000Z",
-      "categories": [
-        "Databases"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "databases",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "2895d16558093927",
-      "title": "AWS Partner Central agents expand funding guidance to all programs",
-      "description": "AWS Partner Central agents now support all AWS Partner funding programs. AWS Partners can get guidance on eligibility requirements, application processes, and program details for any funding program and receive documentation-backed answers in seconds. The agents already automate the full funding lifecycle for four funding programs, supported since the March 2026 launch. This expansion adds Strategic Collaboration Agreement (SCA) and AWS Growth Initiative (AGI) funding programs, eliminating manual data entry and reducing eligibility errors. The agents validate eligibility against opportunity an",
-      "descriptionHtml": "&lt;p&gt;AWS Partner Central agents now support all AWS Partner funding programs. AWS Partners can get guidance on eligibility requirements, application processes, and program details for any funding program and receive documentation-backed answers in seconds.&lt;/p&gt; \n&lt;p&gt; &lt;/p&gt; \n&lt;p&gt;The agents already automate the full funding lifecycle for four funding programs, supported since the March 2026 launch. This expansion adds Strategic Collaboration Agreement (SCA) and AWS Growth Initiative (AGI) funding programs, eliminating manual data entry and reducing eligibility errors. The agents validate eligibility against opportunity and partner data, review uploaded documentation against program requirements, and draft fund requests with auto-populated fields.&lt;/p&gt; \n&lt;p&gt; &lt;/p&gt; \n&lt;p&gt;AWS Partner Central agents are available in all commercial AWS Regions. To get started, open an opportunity in &lt;a href=\"https://console.aws.amazon.com/partnercentral\"&gt;AWS Partner Central&lt;/a&gt; to receive funding recommendations, or review &lt;a href=\"https://docs.aws.amazon.com/partner-central/latest/getting-started/partner-funding-agent.html\"&gt;the agents guide&lt;/a&gt; for more details.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-partner-central/",
-      "publishedAt": "2026-07-20T20:08:00.000Z",
-      "updatedAt": "2026-07-20T20:08:00.000Z",
-      "categories": [
-        "Partner Network",
-        "AWS Marketplace And Partners"
-      ],
-      "services": [],
-      "tags": [
-        "partner network",
-        "aws marketplace and partners"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "27a76818a97e2888",
-      "title": "AWS HealthOmics now available in two additional AWS Regions",
-      "description": "AWS HealthOmics private workflows are now available in the Asia Pacific (Tokyo) and US East (Ohio) Regions, expanding access to fully-managed bioinformatics workflows for research, drug discovery, and agriculture science initiatives with regional compliance requirements. AWS HealthOmics is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs with fully managed bioinformatics workflows. With HealthOmics private workflows, customers can build and scale genomics data analysis pipelines using familiar domain-specific languages including Nex",
-      "descriptionHtml": "&lt;p&gt;AWS HealthOmics private workflows are now available in the&amp;nbsp;Asia Pacific (Tokyo) and US East (Ohio) Regions, expanding access to fully-managed bioinformatics workflows&amp;nbsp;for research, drug discovery, and agriculture science initiatives with regional compliance requirements. &lt;a href=\"https://aws.amazon.com/healthomics/\"&gt;AWS HealthOmics&lt;/a&gt;&amp;nbsp;is a HIPAA-eligible service that helps healthcare and life sciences customers accelerate scientific breakthroughs with fully managed bioinformatics workflows.&lt;/p&gt; \n&lt;p&gt;With HealthOmics private workflows, customers can build and scale genomics data analysis pipelines using familiar domain-specific languages including Nextflow, WDL, and CWL, enabling healthcare and life sciences customers to focus on scientific discovery rather than infrastructure management.&amp;nbsp;HealthOmics provides built-in features, such as Git integrations for version-controlled workflow development and third-party container registry support through Amazon ECR, to make it easy to migrate existing pipelines and accelerate development of new genomics workflows while maintaining full data provenance and compliance requirements. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Private workflows are now available in the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt, Ireland, London), Israel (Tel Aviv), and Asia Pacific (Seoul, Singapore, Tokyo). To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/omics/latest/dev/what-is-healthomics.html\"&gt;AWS HealthOmics User Guide&lt;/a&gt;. For more information on pricing, visit &lt;a href=\"https://aws.amazon.com/healthomics/pricing/\"&gt;AWS HealthOmics pricing&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/healthomics-tokyo-ohio/",
-      "publishedAt": "2026-07-20T18:54:00.000Z",
-      "updatedAt": "2026-07-20T18:54:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Omics",
-        "Containers",
-        "Serverless"
-      ],
-      "services": [],
-      "tags": [
-        "artificial intelligence",
-        "amazon omics",
-        "containers",
-        "serverless"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "772bbaf1d12e9404",
-      "title": "AWS Data Exports now provides standardized Amazon Bedrock product metadata",
-      "description": "Today, AWS announces standardized product metadata for Amazon Bedrock in AWS Data Exports (Cost and Usage Report), giving FinOps teams and cloud administrators consistent, structured attributes to understand Bedrock costs. AWS Data Exports lets you create customized exports of your AWS cost and usage data and deliver them to Amazon S3 for querying with Amazon Athena or loading into your data warehouse. With these attributes, you can attribute Bedrock spend without building custom logic to parse various product metadata in CUR 2.0. The standardized attributes include model provider, model name,",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces standardized product metadata for Amazon Bedrock in AWS Data Exports (Cost and Usage Report), giving FinOps teams and cloud administrators consistent, structured attributes to understand &amp;nbsp;Bedrock costs. AWS Data Exports lets you create customized exports of your AWS cost and usage data and deliver them to Amazon S3 for querying with Amazon Athena or loading into your data warehouse. With these attributes, you can attribute Bedrock spend without building custom logic to parse various product metadata in CUR 2.0.&lt;/p&gt; \n&lt;p&gt;The standardized attributes include model provider, model name, pricing unit, inference type (such as input tokens or output tokens), and feature (the inference serving mode, such as On-Demand or Batch), along with a unified \"Amazon Bedrock\" product family name that consolidates all Bedrock costs. In CUR 2.0, the model provider, model name, inference type, and feature attributes are available in the product map column, and pricing unit is available as a column. The standardized fields are available by default, at no additional cost, to Amazon Bedrock customers using AWS Data Exports.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://aws.amazon.com/bedrock/\"&gt;Amazon Bedrock&lt;/a&gt; product page, and see &lt;a href=\"https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2-product.html\"&gt;Product columns&lt;/a&gt; in the AWS Data Exports User Guide for the standardized product attributes.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-data-exports-amazon-bedrock-product-metadata/",
-      "publishedAt": "2026-07-20T18:29:00.000Z",
-      "updatedAt": "2026-07-20T18:29:00.000Z",
-      "categories": [
-        "Amazon Bedrock",
-        "Cost Management"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "amazon bedrock",
-        "cost management",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7260d5e9d3c50604",
-      "title": "Amazon EC2 R8i and R8i-flex instances are now available in additional regions",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the Europe (Stockholm, Zurich) regions. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) R8i and R8i-flex instances are available in the Europe (Stockholm, Zurich) regions. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The R8i and R8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver 20% higher performance than R7i instances, with even higher gains for specific workloads. They are up to 30% faster for PostgreSQL databases, up to 60% faster for NGINX web applications, and up to 40% faster for AI deep learning recommendation models compared to R7i.&lt;br&gt; &lt;br&gt; R8i-flex, our first memory-optimized Flex instances, are the easiest way to get price performance benefits for a majority of memory-intensive workloads. They offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources.&lt;br&gt; &lt;br&gt; R8i instances are a great choice for all memory-intensive workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. R8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications. &lt;a href=\"https://docs.aws.amazon.com/sap/latest/general/sap-hana-aws-ec2.html\" target=\"_blank\"&gt;R8i instances are SAP-certified &lt;/a&gt;and deliver 142,100 aSAPS, delivering exceptional performance for mission-critical SAP workloads.&lt;br&gt; &lt;br&gt; To get started, sign in to the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\"&gt;AWS Management Console&lt;/a&gt;. For more information about the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/r8i\" target=\"_blank\"&gt;R8i and R8i-flex &lt;/a&gt;instances visit the AWS News &lt;a href=\"https://aws.amazon.com/blogs/aws/best-performance-and-fastest-memory-with-the-new-amazon-ec2-r8i-and-r8i-flex-instances/\" target=\"_blank\"&gt;blog&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-r8i-r8i-flex-instances-in-stockholm-zurich-regions/",
-      "publishedAt": "2026-07-20T17:37:00.000Z",
-      "updatedAt": "2026-07-20T17:37:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "202a3111b0d939a2",
-      "title": "Selectively log network activity events by identity in AWS CloudTrail",
-      "description": "Today, AWS launches enhanced event filtering for network activity events for VPC end points, a CloudTrail event type that captures actions transmitted through a Virtual Private Cloud Endpoint . Customers can now control which network activity events are logged based on the IAM user identity making the API call. For example, you can configure selectors to log only access denied events when the calling user identity is not on a known safe list. This lets you capture unauthorized access attempts while excluding routine traffic from trusted identities, reducing both logging costs and noise. With U",
-      "descriptionHtml": "&lt;p&gt;Today, AWS launches enhanced event filtering for network activity events for VPC end points, a CloudTrail event type that captures actions transmitted through a&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html\"&gt;Virtual Private Cloud Endpoint&lt;/a&gt;.&amp;nbsp;Customers can now control which network activity events are logged based on the IAM user identity making the API call. For example, you can configure selectors to log only access denied events when the calling user identity is not on a known safe list. This lets you capture unauthorized access attempts while excluding routine traffic from trusted identities, reducing both logging costs and noise.&lt;/p&gt; \n&lt;p&gt;With UserIdentity filtering, customers building a data perimeter strategy can focus on network activity event logging for scenarios that matter most in security. You can configure selectors to log only VpceAccessDenied events from identities outside a trusted set of IAM roles. This enables detection of potential data exfiltration attempts through VPC endpoints without the cost of logging every successful API call from approved principals. You can combine UserIdentity conditions with existing fields like eventName or vpcEndpointId for fine-grained control over what gets recorded.&lt;/p&gt; \n&lt;p&gt;You can use this feature via the AWS Management Console, AWS Command Line Interface, and AWS SDKs. This feature is available in all AWS Regions where CloudTrail network activity events are supported. To learn more about Network Activity events, visit the &lt;a href=\"https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html\"&gt;AWS CloudTrail user guide&lt;/a&gt; or read &lt;a href=\"https://aws.amazon.com/blogs/mt/announcing-aws-cloudtrail-network-activity-events-for-vpc-endpoints/\"&gt;AWS Blog on how to enable Network Activity Events&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-cloudtrail-filter-useridentity-advance-selectors/",
-      "publishedAt": "2026-07-20T17:34:00.000Z",
-      "updatedAt": "2026-07-20T17:34:00.000Z",
-      "categories": [
-        "Management And Governance",
-        "AWS Cloudtrail",
-        "Security Identity And Compliance"
-      ],
-      "services": [
-        "CloudTrail"
-      ],
-      "tags": [
-        "management and governance",
-        "aws cloudtrail",
-        "security identity and compliance",
-        "cloudtrail"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7cda18667f9a9a65",
-      "title": "Amazon Connect delivers more natural agentic voice experiences with expanded language support and speech controls",
-      "description": "Amazon Connect customers can now deliver more natural, human-sounding agentic voice experiences with expanded support across 50+ languages including Spanish, French, Italian, Japanese, Korean, Portuguese, and Thai, over 100 new voice options, and conversational improvements that make AI interactions sound more fluid and responsive. Amazon Connect's agentic self-service capabilities enable AI agents to understand, reason, and take action across voice and digital channels, adapting responses to match customer tone and sentiment while maintaining natural conversational pace. With this launch, you",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect customers can now deliver more natural, human-sounding agentic voice experiences with expanded support across 50+ languages including Spanish, French, Italian, Japanese, Korean, Portuguese, and Thai, over 100 new voice options, and conversational improvements that make AI interactions sound more fluid and responsive.&lt;/p&gt; \n&lt;p&gt;Amazon Connect's agentic self-service capabilities enable AI agents to understand, reason, and take action across voice and digital channels, adapting responses to match customer tone and sentiment while maintaining natural conversational pace. With this launch, you can deliver smoother conversations with seamless response pacing that fills natural pauses so interactions feel immediate rather than halting, more accurate turn-taking so agents and customers don't talk over each other, and speech controls that let you adjust speed, volume, and emotion to match your brand's tone.&lt;/p&gt; \n&lt;p&gt;To learn more about this feature, see the Amazon Connect Customer &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/agentic-voice.html\"&gt;Administrator Guide&lt;/a&gt;. For the full list of supported languages and voices, see &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/supported-languages.html\"&gt;Supported Languages&lt;/a&gt;. For region availability, please see the availability of &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#gv_region\"&gt;Amazon Connect Customer features by Region&lt;/a&gt;. To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences visit the Amazon Connect Customer &lt;a href=\"https://aws.amazon.com/connect/\"&gt;website&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-connect-agentic-voice/",
-      "publishedAt": "2026-07-20T16:16:00.000Z",
-      "updatedAt": "2026-07-20T16:16:00.000Z",
-      "categories": [
-        "Contact Center",
-        "Amazon Connect"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "contact center",
-        "amazon connect",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "821d6abc0ea7b794",
-      "title": "Amazon EC2 I8ge instances are now available in AWS GovCloud (US) Regions",
-      "description": "Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in AWS GovCloud (US-East, US-West) regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn instances. They offer up to 60% lower storage I/O latency and up to 75% lower storage I/O l",
-      "descriptionHtml": "&lt;p&gt;Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in AWS GovCloud (US-East, US-West) regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn instances. They offer up to 60% lower storage I/O latency and up to 75% lower storage I/O latency variability compared to Im4gn instances.&lt;/p&gt; \n&lt;p&gt;I8ge instances are storage-optimized instances, and offer up to 120TB of local NVMe storage. They are ideal for workloads that demand rapid local storage with high random read/write performance and consistently low latency for accessing large datasets. These versatile instances are offered in eleven different sizes including two metal sizes, providing flexibility to match customers' computational needs. They deliver up to 180 Gbps of network performance bandwidth and 60 Gbps of dedicated bandwidth for Amazon Elastic Block Store (EBS), ensuring fast and efficient data transfer for the most demanding applications.&lt;/p&gt; \n&lt;p&gt;To begin your Graviton journey, visit the &lt;a&gt;Level up your compute with AWS Graviton page&lt;/a&gt;. To get started, see &lt;a&gt;AWS Management Console&lt;/a&gt;, &lt;a&gt;AWS Command Line Interface (AWS CLI)&lt;/a&gt;, and &lt;a&gt;AWS SDKs&lt;/a&gt;. To learn more, visit the &lt;a&gt;I8ge instances page&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-i8ge-instances-aws-govcloud-us-regions/",
-      "publishedAt": "2026-07-20T16:00:00.000Z",
-      "updatedAt": "2026-07-20T16:00:00.000Z",
-      "categories": [
-        "Storage",
-        "AWS Govcloud Us",
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "storage",
-        "aws govcloud us",
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6faa7d6e70c385b7",
-      "title": "Amazon Connect Customer launches metrics for agent queues on analytics dashboards",
-      "description": "Amazon Connect Customer dashboards now display real-time and historical metrics for agent queues. Agent queues are used to directly route contacts to a specific agent. Now, supervisors can track how these agents perform in their own queues. For example, a supervisor notices a spike in contacts queued to a specific agent queue following a series of scheduled callbacks, and reassigns them to avoid long wait times. Agent queue metrics are available in all AWS commercial and AWS GovCloud (US-West) regions where Amazon Connect Customer is offered. To learn more about analytics dashboards, see the A",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer dashboards now display real-time and historical metrics for agent queues. Agent queues are used to directly route contacts to a specific agent. Now, supervisors can track how these agents perform in their own queues. For example, a supervisor notices a spike in contacts queued to a specific agent queue following a series of scheduled callbacks, and reassigns them to avoid long wait times.&lt;br&gt; &lt;br&gt; Agent queue metrics are available in all AWS commercial and AWS GovCloud (US-West) &lt;a&gt;regions&lt;/a&gt; where Amazon Connect Customer is offered. To learn more about analytics dashboards, see the &lt;a&gt;Amazon Connect Customer Administrator Guide&lt;/a&gt;. To learn more about Amazon Connect Customer, the AWS cloud-based contact center, please visit the &lt;a&gt;Amazon Connect Customer website&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-connect/",
-      "publishedAt": "2026-07-20T15:28:00.000Z",
-      "updatedAt": "2026-07-20T15:28:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Contact Center",
-        "Amazon Connect",
-        "Business Productivity"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "contact center",
-        "amazon connect",
-        "business productivity",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "40200905f0e1d03f",
-      "title": "Amazon WorkSpaces Applications now supports Microsoft OneDrive and Google Drive on Multi-Session fleets",
-      "description": "Amazon WorkSpaces Applications now supports Microsoft OneDrive for Business and Google Drive as persistent storage options on multi-session fleets. Users streaming on multi-session fleets can now connect their OneDrive or Google Drive accounts and access, save, and sync their cloud-based files directly within their streaming sessions, in addition to the existing home folder backed by Amazon S3. Multi-session fleets allow multiple users to share a single fleet instance, enabling organizations to achieve cost efficiencies by increasing session density across their infrastructure. With the additi",
-      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces Applications now supports Microsoft OneDrive for Business and Google Drive as persistent storage options on multi-session fleets. Users streaming on multi-session fleets can now connect their OneDrive or Google Drive accounts and access, save, and sync their cloud-based files directly within their streaming sessions, in addition to the existing home folder backed by Amazon S3.&lt;br&gt; &lt;br&gt; Multi-session fleets allow multiple users to share a single fleet instance, enabling organizations to achieve cost efficiencies by increasing session density across their infrastructure. With the addition of OneDrive and Google Drive support, customers can now take full advantage of the cost savings offered by multi-session fleets while providing their users with familiar, enterprise-grade cloud storage experiences. Users can browse, upload, and download files from their connected storage accounts without disruption, enabling seamless collaboration and continuity across streaming sessions.&lt;br&gt; &lt;br&gt; Microsoft OneDrive for Business and Google Drive support on multi-session fleets is available in all AWS Regions where Amazon WorkSpaces Applications is offered. Standard usage &lt;a href=\"https://aws.amazon.com/workspaces/applications/pricing/\"&gt;pricing&lt;/a&gt; applies for WorkSpaces Applications streaming sessions; there is no additional charge for enabling OneDrive or Google Drive storage connectors.&lt;br&gt; &lt;br&gt; To enable this feature for your users, you must use a WorkSpaces Applications image that uses a&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/base-images-agent.html\"&gt;WorkSpaces Applications agent&lt;/a&gt; released on or after June 29, 2026 or your image uses&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/keep-image-updated-managed-image-updates.html\"&gt;Managed WorkSpaces Applications image updates&lt;/a&gt;&amp;nbsp;released on or after June 29, 2026. To learn more about WorkSpaces Applications refer to the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/workspaces/applications/faqs/\"&gt;FAQs&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/storage-multi-session-fleets/",
-      "publishedAt": "2026-07-20T15:00:00.000Z",
-      "updatedAt": "2026-07-20T15:00:00.000Z",
-      "categories": [
-        "Amazon Appstream 2 0",
-        "Desktop And App Streaming",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "WorkSpaces",
-        "AppStream"
-      ],
-      "tags": [
-        "amazon appstream 2 0",
-        "desktop and app streaming",
-        "aws govcloud us",
-        "workspaces",
-        "appstream"
       ],
       "isNew": false
     }
