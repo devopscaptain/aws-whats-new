@@ -1,7 +1,133 @@
 {
-  "lastUpdated": "2026-09-23T13:24:38.079Z",
+  "lastUpdated": "2026-09-24T13:18:41.948Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "a1dd445ae9bdfa24",
+      "title": "Amazon Kinesis Data Streams announces Service-Managed Partition Keys for simplified data ingestion",
+      "description": "Amazon Kinesis Data Streams now supports service-managed partition keys for On-Demand Standard and On-Demand Advantage streams, automatically distributing records across shards without requiring customers to specify partition keys to publish data. This capability simplifies data ingestion for workloads where record ordering is not required, eliminating hot partition keys and reducing time to production for streaming workloads. Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale. Many streaming use cases ",
+      "descriptionHtml": "&lt;p&gt;Amazon Kinesis Data Streams now supports service-managed partition keys for On-Demand Standard and On-Demand Advantage streams, automatically distributing records across shards without requiring customers to specify partition keys to publish data. This capability simplifies data ingestion for workloads where record ordering is not required, eliminating hot partition keys and reducing time to production for streaming workloads.&lt;/p&gt;\n&lt;p&gt;Amazon Kinesis Data Streams is a serverless streaming data service that makes it easy to capture, process, and store data streams at any scale. Many streaming use cases such as log aggregation, metrics collection, and IoT telemetry do not require ordering guarantees and benefit from prewarmed capacity for instant scaling. Previously, customers generated random partition keys (such as UUIDs) to distribute data, but random partitioning can still produce uneven throughput across shards, causing throttling for some partition keys even when the stream has sufficient aggregate capacity. By opting into service-managed partition keys, customers no longer need to specify partition keys when publishing data to streams in on-demand mode. The service automatically distributes records based on available warm capacity, allowing customers to scale to gigabytes per second without maintaining any distribution logic. Customers who want to send records without specifying a partition key can simply upgrade to the latest AWS SDK or Kinesis Producer Library (KPL) version to benefit from this capability.&lt;/p&gt;\n&lt;p&gt;Service-managed partition keys for Amazon Kinesis Data Streams is available today in all AWS commercial regions at no additional cost. To get started, visit the Amazon Kinesis Data Streams documentation (&lt;a href=\"https://aws.amazon.com/kinesis\"&gt;https://aws.amazon.com/kinesis&lt;/a&gt;).&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/kinesis/service-managed-partition-keys",
+      "publishedAt": "2026-09-23T22:51:00.000Z",
+      "updatedAt": "2026-09-23T22:51:00.000Z",
+      "categories": [
+        "Amazon Kinesis"
+      ],
+      "services": [
+        "Kinesis"
+      ],
+      "tags": [
+        "amazon kinesis",
+        "kinesis"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8cbd6ab9ff823f88",
+      "title": "Amazon Bedrock Managed Knowledge Base now supports Salesforce and Zendesk as native data source connectors",
+      "description": "AWS announces Salesforce and Zendesk data source connectors for Amazon Bedrock Managed Knowledge Base, a fully managed retrieval-augmented generation (RAG) service. Customers can now sync Salesforce knowledge articles and Zendesk articles and community posts directly into their managed knowledge base. Previously, bringing content from these platforms into Bedrock Knowledge Bases required building custom ingestion pipelines—now, you provide your instance credentials, and the connectors handle data crawling, metadata extraction, and incremental sync automatically. These connectors make it easy t",
+      "descriptionHtml": "&lt;p&gt;AWS announces Salesforce and Zendesk data source connectors for Amazon Bedrock Managed Knowledge Base, a fully managed retrieval-augmented generation (RAG) service. Customers can now sync Salesforce knowledge articles and Zendesk articles and community posts directly into their managed knowledge base.\n &lt;br&gt;\n Previously, bringing content from these platforms into Bedrock Knowledge Bases required building custom ingestion pipelines—now, you provide your instance credentials, and the connectors handle data crawling, metadata extraction, and incremental sync automatically.\n &lt;br&gt;\n These connectors make it easy to build AI agents and assistants grounded in the support and product knowledge your teams already maintain in Salesforce and Zendesk. For example, power a customer-facing support bot with up-to-date Zendesk help center articles and community answers, or build an internal sales enablement assistant that retrieves relevant Salesforce knowledge articles during deal preparation. By keeping your knowledge base in sync with these platforms, your retrieval-augmented generation applications always reflect the latest content without manual intervention.\n &lt;br&gt;\n To learn more, see &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-salesforce.html\"&gt;Salesforce data source connector&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/kb-managed-ds-zendesk.html\"&gt;Zendesk data source connector &lt;/a&gt;in the Amazon Bedrock User Guide. For more information about Amazon Bedrock Managed Knowledge Base, visit the &lt;a href=\"https://aws.amazon.com/bedrock/knowledge-bases/\"&gt;Amazon Bedrock Knowledge Bases product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-salesforce-zendesk-native-data-source-connectors/",
+      "publishedAt": "2026-09-23T17:41:00.000Z",
+      "updatedAt": "2026-09-23T17:41:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Bedrock",
+        "Business Productivity",
+        "Aiml"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon bedrock",
+        "business productivity",
+        "aiml",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "1a2591c4b9d1e21c",
+      "title": "Amazon Connect Customer now provides routing step data in the analytics data lake",
+      "description": "Amazon Connect Customer now provides routing step data in the analytics data lake, making it easier for customers to generate insights from routing decisions. Using the data lake, customers can leverage Amazon Athena and Amazon Quick to analyze trends, such as contacts queued and contacts joined at each routing step, without complex data pipelines. For example, an analyst can now report on how contacts progressed through each routing step, identify where agent matching criteria were relaxed, and measure the impact of routing step configurations on wait times and agent utilization. Routing step",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now provides routing step data in the analytics data lake, making it easier for customers to generate insights from routing decisions. Using the data lake, customers can leverage Amazon Athena and Amazon Quick to analyze trends, such as contacts queued and contacts joined at each routing step, without complex data pipelines. For example,&amp;nbsp;an analyst can now report on how contacts progressed through each routing step, identify where agent matching criteria were relaxed, and measure the impact of routing step configurations on wait times and agent utilization.&lt;/p&gt;\n&lt;p&gt;Routing step data is available in all AWS &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#analytics_datalake_region\"&gt;regions&lt;/a&gt; where Amazon Connect Customer data lake is offered. To learn more about Amazon Connect Customer data lake, see the &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/data-lake-contact-data.html\"&gt;Amazon Connect Customer Administrator Guide&lt;/a&gt;.&amp;nbsp; To learn more about Amazon Connect Customer, visit the &lt;a href=\"https://aws.amazon.com/connect/\"&gt;Amazon Connect Customer website&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-routing-step-data/",
+      "publishedAt": "2026-09-23T16:00:00.000Z",
+      "updatedAt": "2026-09-23T16:00:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Contact Center",
+        "Amazon Connect",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "business productivity",
+        "contact center",
+        "amazon connect",
+        "aws govcloud us",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6f0d31ce36d224ef",
+      "title": "Amazon EMR on EKS now supports IPv6 Amazon EKS clusters",
+      "description": "Today, AWS announces that Amazon EMR on EKS now supports running workloads on IPv6 Amazon Elastic Kubernetes Service (Amazon EKS) clusters. Amazon EMR on EKS enables data platform and analytics teams to run open-source big data frameworks such as Apache Spark and Apache Flink on Amazon EKS. With IPv6 support, teams operating at scale can now run these workloads on IPv6 Amazon EKS clusters, giving them access to the vastly larger address space of IPv6 as their analytics workloads grow. You can now scale large Spark and Flink workloads using the expanded IPv6 address space, which removes the nee",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces that Amazon EMR on EKS now supports running workloads on IPv6 Amazon Elastic Kubernetes Service (Amazon EKS) clusters. Amazon EMR on EKS enables data platform and analytics teams to run open-source big data frameworks such as Apache Spark and Apache Flink on Amazon EKS. With IPv6 support, teams operating at scale can now run these workloads on IPv6 Amazon EKS clusters, giving them access to the vastly larger address space of IPv6 as their analytics workloads grow.&lt;/p&gt;\n&lt;p&gt;You can now scale large Spark and Flink workloads using the expanded IPv6 address space, which removes the need for IPv4 conservation workarounds such as secondary CIDR ranges or prefix delegation. High-executor jobs, such as 500-executor Spark jobs, can run concurrently without planning around address limits. To submit workloads, use StartJobRun, Spark Connect Interactive Endpoints, and Amazon SageMaker Unified Studio with no additional configuration, while the Flink, Livy, and Spark Operators are also supported. This capability is available at no additional cost, starting with Amazon EMR releases emr-7.14.0 and emr-spark-8.0.0.&lt;/p&gt;\n&lt;p&gt;IPv6 cluster support is available in all AWS Regions where Amazon EMR on EKS and IPv6 Amazon EKS clusters are available.&lt;/p&gt;\n&lt;p&gt;Amazon EMR on EKS IPv6 cluster support includes detailed setup instructions and documentation on supported submission models. Visit the &lt;a href=\"https://aws.amazon.com/emr/features/eks/\"&gt;Amazon EMR on EKS product page&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks-ipv6.html\"&gt;IPv6 documentation&lt;/a&gt; to learn more.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-emr-eks-ipv6-support",
+      "publishedAt": "2026-09-23T15:00:00.000Z",
+      "updatedAt": "2026-09-23T15:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Emr",
+        "Networking"
+      ],
+      "services": [
+        "EKS",
+        "EMR"
+      ],
+      "tags": [
+        "analytics",
+        "amazon emr",
+        "networking",
+        "eks",
+        "emr"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2a6d2d6cc35bf1ca",
+      "title": "Amazon DynamoDB global tables with multi-Region strong consistency now supports additional AWS Regions and cross-continent configurations",
+      "description": "Starting today, Amazon DynamoDB global tables with multi-Region strong consistency (MRSC) is available in five additional AWS Regions: Canada (Central), Europe (Stockholm), Europe (Spain), Asia Pacific (Mumbai), and Asia Pacific (Singapore), bringing the total number of supported Regions to 15. You can now create an MRSC global table in any three-Region configuration across the 15 supported AWS Regions, configured with either three replicas or two replicas and one witness Region. This includes configurations that span North America, Europe, and Asia Pacific. MRSC lets you build highly availabl",
+      "descriptionHtml": "&lt;p&gt;Starting today, Amazon DynamoDB global tables with multi-Region strong consistency (MRSC) is available in five additional AWS Regions: Canada (Central), Europe (Stockholm), Europe (Spain), Asia Pacific (Mumbai), and Asia Pacific (Singapore), bringing the total number of supported Regions to 15. You can now create an MRSC global table in any three-Region configuration across the 15 supported AWS Regions, configured with either three replicas or two replicas and one witness Region. This includes configurations that span North America, Europe, and Asia Pacific.&lt;/p&gt;\n&lt;p&gt;MRSC lets you build highly available multi-Region applications with a recovery point objective (RPO) of zero. By choosing replica Regions closer to your users in more geographies, you can route applications to nearby DynamoDB endpoints for strongly consistent reads while keeping your application available during Regional impairments. MRSC is ideal for global applications with strict consistency requirements, such as user profile management, inventory tracking, order state, and entitlement management.&lt;/p&gt;\n&lt;p&gt;To get started and view the complete list of supported Regions and configuration options, see the &lt;a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html#V2globaltables_HowItWorks.consistency-modes.mrsc\"&gt;DynamoDB Developer Guide&lt;/a&gt;. To learn more about building resilient multi-Region applications, visit the &lt;a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables.tutorial.html#create-gt-mrsc\"&gt;DynamoDB global tables page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/dynamodb-mrsc-additional-regions/",
+      "publishedAt": "2026-09-23T08:00:00.000Z",
+      "updatedAt": "2026-09-23T08:00:00.000Z",
+      "categories": [
+        "Better Performance",
+        "Amazon Dynamodb",
+        "Global Infrastructure",
+        "Databases",
+        "Availabililty"
+      ],
+      "services": [
+        "DynamoDB"
+      ],
+      "tags": [
+        "better performance",
+        "amazon dynamodb",
+        "global infrastructure",
+        "databases",
+        "availabililty",
+        "dynamodb"
+      ],
+      "isNew": true
+    },
     {
       "id": "743ac592cc3256ab",
       "title": "Amazon CloudWatch Omni: AI-first observability for agents and applications",
@@ -261,6 +387,23 @@
       "tags": [
         "amazon rds for sql server",
         "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "146f98798c94f2c4",
+      "title": "Amazon Connect Customer launches agent-to-agent collaboration",
+      "description": "Amazon Connect Customer now supports agent-to-agent collaboration, giving customers the choice to bring in specialized AI agents during a live interaction to resolve a customer request. With this launch, Connect Customer AI agents can collaborate with each other, and with AI agents outside Connect Customer, over the open agent-to-agent (A2A) protocol through text or bidirectional voice. For example, a bank's frontline AI agent handling a customer call can delegate a fraud risk assessment to a specialist scoring AI agent, use the result to approve the transaction on the spot, and then transfer ",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now supports agent-to-agent collaboration, giving customers the choice to bring in specialized AI agents during a live interaction to resolve a customer request. With this launch, Connect Customer AI agents can collaborate with each other, and with AI agents outside Connect Customer, over the open agent-to-agent (A2A) protocol through text or bidirectional voice. For example, a bank's frontline AI agent handling a customer call can delegate a fraud risk assessment to a specialist scoring AI agent, use the result to approve the transaction on the spot, and then transfer a complex dispute to another AI agent that resolves it directly with the customer.&lt;/p&gt;\n&lt;p&gt;Working with the A2A Technical Steering Committee at the Linux Foundation, AWS expanded the protocol to support voice streaming and interaction-level session continuity required for customer engagement. When using A2A, Connect Customer coordinates context passing between the AI agents so customers get a consistent experience, with unified observability, guardrails, and escalation controls across all the AI agents in an interaction. Administrators see one contact record showing what each agent said, which tools it called, and how long each step took, all captured as a single interaction for analytics, AI quality management, and to drive continual improvement.&lt;/p&gt;\n&lt;p&gt;For a full list of supported Regions, see &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html\"&gt;region availability.&lt;/a&gt; To learn more about this feature, see the &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/a2a-collaboration.html\"&gt;administrator guide&lt;/a&gt;. To learn more about Amazon Connect Customer, an AI solution that helps enterprises deliver exceptional customer experiences at every touchpoint, visit the &lt;a href=\"https://aws.amazon.com/products/connect/customer/?trk=25b81a8c-c9b1-4866-9ba5-f9cb1c5e792a&amp;amp;sc_channel=ps&amp;amp;ef_id=Cj0KCQjwzsjVBhC3ARIsALnMv4mYHhNN7YyGvP3737bRuQVACCUn8CuHCDu-_WonDUC1SXGIaqzCB2oaAjYSEALw_wcB:G:s&amp;amp;gclid=Cj0KCQjwzsjVBhC3ARIsALnMv4mYHhNN7YyGvP3737bRuQVACCUn8CuHCDu-_WonDUC1SXGIaqzCB2oaAjYSEALw_wcB\"&gt;Amazon Connect Customer website&lt;/a&gt;. For information about pricing, please visit our &lt;a href=\"https://aws.amazon.com/products/connect/customer/pricing/appendix/?refid=25b81a8c-c9b1-4866-9ba5-f9cb1c5e792a\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/Amazon-Connect-Customer-A2A",
+      "publishedAt": "2026-09-22T04:00:00.000Z",
+      "updatedAt": "2026-09-22T04:00:00.000Z",
+      "categories": [],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "connect"
       ],
       "isNew": true
     },
@@ -634,7 +777,7 @@
       "tags": [
         "elastic beanstalk"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b2750751743fc4ed",
@@ -656,7 +799,7 @@
         "storage",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8d01b89fb9b208f0",
@@ -673,7 +816,7 @@
       "tags": [
         "mobile services"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "86d84b4b93d32b95",
@@ -695,7 +838,7 @@
         "amazon simple email service",
         "ses"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f391573b3b67c4c8",
@@ -708,7 +851,7 @@
       "categories": [],
       "services": [],
       "tags": [],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "22bfee1956f4a34c",
@@ -727,7 +870,7 @@
         "amazon corretto",
         "developers"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0a8709b0e4c2757e",
@@ -749,7 +892,7 @@
         "amazon sagemaker training",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b3526131d57ff679",
@@ -771,7 +914,7 @@
         "containers and deployment",
         "ecs"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "06a56da6b0c577c6",
@@ -790,7 +933,7 @@
         "networking and content delivery",
         "aws client vpn"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "910029d26931fc24",
@@ -818,7 +961,7 @@
         "aws account billing",
         "iam"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "227f7203ec3faaf2",
@@ -844,7 +987,7 @@
         "amazon workspaces",
         "workspaces"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "66c6148451e9b69f",
@@ -866,7 +1009,7 @@
         "amazon connect",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9db24daa6a336437",
@@ -888,7 +1031,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6e5a0b3adc9982d8",
@@ -912,7 +1055,7 @@
         "elemental",
         "mediatailor"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7393e4adfaf908f7",
@@ -936,7 +1079,7 @@
         "ecs",
         "s3"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c9f49161d9b361a1",
@@ -958,7 +1101,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "af57df6dc725d731",
@@ -982,7 +1125,7 @@
         "serverless",
         "keyspaces"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ef0734230b04ac8b",
@@ -11104,144 +11247,6 @@
         "networking and content delivery",
         "amazon cloudwatch logs",
         "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "2652adf9be834a7a",
-      "title": "Amazon EC2 I8ge instances are now generally available in additional AWS regions",
-      "description": "Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in AWS Europe (London) and Canada (Central) regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn instances . They offer up to 60% lower storage I/O latency and up to 75% lower sto",
-      "descriptionHtml": "&lt;p&gt;Amazon Web Services (AWS) announces the availability of Amazon EC2 I8ge instances in AWS Europe (London) and Canada (Central)&amp;nbsp; regions. I8ge instances are powered by AWS Graviton4 processors and deliver up to 60% better compute performance compared to previous generation Graviton2-based storage optimized Amazon EC2 instances. I8ge instances use the third generation AWS Nitro SSDs, local NVMe storage, and deliver up to 55% better real-time storage performance per TB compared to previous generation Amazon EC2 Im4gn instances . They offer up to 60% lower storage I/O latency and up to 75% lower storage I/O latency variability compared to Im4gn instances.&lt;b&gt;&lt;i&gt; &lt;/i&gt;&lt;/b&gt;&lt;br&gt; &lt;br&gt; I8ge instances are storage-optimized instances, and offer up to 120TB of local NVMe storage. They are ideal for workloads that demand rapid local storage with high random read/write performance and consistently low latency for accessing large datasets. These versatile instances are offered in eleven different sizes including two metal sizes, providing flexibility to match customers’ computational needs. They deliver up to 180 Gbps of network performance bandwidth and 60 Gbps of dedicated bandwidth for Amazon Elastic Block Store (EBS), ensuring fast and efficient data transfer for the most demanding applications.&lt;br&gt; &lt;br&gt; To begin your Graviton journey, visit the &lt;a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\"&gt;Level up your compute with AWS Graviton page&lt;/a&gt;. To get started, see &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\"&gt;AWS Command Line Interface (AWS CLI)&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html\"&gt;AWS SDKs&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/ec2/instance-types/i8g/\"&gt;I8ge instances page.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-i8ge-additional-regions/",
-      "publishedAt": "2026-07-23T17:00:00.000Z",
-      "updatedAt": "2026-07-23T17:00:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "amazon ec2",
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "e4d3a57bb96c2b30",
-      "title": "Amazon EVS is now available in additional Regions",
-      "description": "Today, we're announcing that Amazon Elastic VMware Service (Amazon EVS) is now available in the Asia Pacific (Seoul), Europe (Zurich), and Europe (Stockholm) Regions. This expansion provides more options to leverage the scale and flexibility of AWS for running your VMware workloads in the cloud. Amazon EVS lets you run VMware Cloud Foundation (VCF) directly within your Amazon Virtual Private Cloud (VPC) on EC2 bare-metal instances, powered by AWS Nitro. You can set up a complete VCF environment in just a few hours, enabling rapid workload migration to AWS to help you eliminate aging infrastruc",
-      "descriptionHtml": "&lt;p&gt;Today, we're announcing that Amazon Elastic VMware Service (Amazon EVS) is now available in the Asia Pacific (Seoul), Europe (Zurich), and Europe (Stockholm)&amp;nbsp;Regions. This expansion provides more options to leverage the scale and flexibility of AWS for running your VMware workloads in the cloud.&lt;br&gt; &lt;br&gt; Amazon EVS lets you run VMware Cloud Foundation (VCF) directly within your Amazon Virtual Private Cloud (VPC) on EC2 bare-metal instances, powered by AWS Nitro. You can set up a complete VCF environment in just a few hours, enabling rapid workload migration to AWS to help you eliminate aging infrastructure, reduce operational risks, and meet critical timelines for exiting your data center. This launch supports all existing Amazon EVS features, including &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-evs-vcf9/\"&gt;VCF 9.0 and 9.1 support&lt;/a&gt; to take advantage of the latest VMware features, such as memory tiering.&lt;br&gt; &lt;br&gt; The added availability in these Regions gives your VMware workloads lower latency through closer proximity to your end users, compliance with data residency or sovereignty requirements, and additional high availability and resiliency options for your enhanced redundancy strategy.&lt;br&gt; &lt;br&gt; To get started, visit the Amazon EVS &lt;a href=\"https://aws.amazon.com/evs/\"&gt;product detail page&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/evs/latest/userguide/what-is-evs.html\"&gt;user guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-evs-available-in-additional-regions/",
-      "publishedAt": "2026-07-23T16:24:00.000Z",
-      "updatedAt": "2026-07-23T16:24:00.000Z",
-      "categories": [
-        "Migration",
-        "Compute"
-      ],
-      "services": [],
-      "tags": [
-        "migration",
-        "compute"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "57b799122179163e",
-      "title": "Claude Sonnet 5 is now available on Amazon Bedrock in AWS GovCloud (US)",
-      "description": "AWS GovCloud (US) now offers Claude Sonnet 5 on Amazon Bedrock. Claude Sonnet 5 delivers strong performance across coding, professional work, and agentic tasks while maintaining the balance of capability, cost, and speed. For coding, it navigates large codebases, lands multi-file changes, and carries debugging and refactoring tasks through to completion with fewer rounds of correction. For agents, it calls tools precisely, holds state across many steps, and recovers from errors so more runs finish correctly the first time. For knowledge work, it builds spreadsheets, drafts documents, and turns",
-      "descriptionHtml": "&lt;p&gt;AWS GovCloud (US) now offers Claude Sonnet 5 on Amazon Bedrock. Claude Sonnet 5 delivers strong performance across coding, professional work, and agentic tasks while maintaining the balance of capability, cost, and speed. For coding, it navigates large codebases, lands multi-file changes, and carries debugging and refactoring tasks through to completion with fewer rounds of correction. For agents, it calls tools precisely, holds state across many steps, and recovers from errors so more runs finish correctly the first time. For knowledge work, it builds spreadsheets, drafts documents, and turns unstructured material into structured analysis. &lt;/p&gt; \n&lt;p&gt;With this launch, &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/05/claude-opus-4.8-aws-govcloud-us/\"&gt;Claude Opus 4.8&lt;/a&gt; and Claude Sonnet 5 are available on bedrock-runtime endpoints in AWS GovCloud (US-West and US-East) and bedrock-mantle endpoints in AWS GovCloud (US-West) for performing inference. Bedrock Mantle, Amazon's next-generation inference engine, supports the Anthropic Messages API. Amazon Bedrock keeps your data within AWS infrastructure and provides access to Claude Sonnet 5 through a unified service with AWS-managed features like Guardrails, Knowledge Bases, and regional data residency. To learn more, see the Amazon Bedrock &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5.html\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html#model-regions-anthropic\"&gt;regional availability&lt;/a&gt;. &lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/claude-sonnet-5-govcloud/",
-      "publishedAt": "2026-07-23T16:02:00.000Z",
-      "updatedAt": "2026-07-23T16:02:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock",
-        "Claude"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "amazon bedrock",
-        "bedrock",
-        "claude"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "29fc2fa99e44a645",
-      "title": "Announcing region expansion of G7e instances on SageMaker AI inference",
-      "description": "We are pleased to announce the availability of Amazon EC2 G7e instances in Asia Pacific (Seoul), Europe (London), and Asia Pacific (Tokyo) on Amazon SageMaker AI inference. G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs with 96 GB of memory per GPU, 5th Generation Intel Xeon processors, and up to 1,600 Gbps of Elastic Fabric Adapter networking bandwidth, delivering up to 2.3x inference performance compared to previous-generation G6e instances. With this region expansion, you can now deploy inference endpoints on G7e instances closer to your end users in Asia an",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce the availability of &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g7e/\"&gt;Amazon EC2 G7e instances &lt;/a&gt;in Asia Pacific (Seoul), Europe (London), and Asia Pacific (Tokyo) on Amazon SageMaker AI inference. G7e instances feature up to 8 NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs with 96 GB of memory per GPU, 5th Generation Intel Xeon processors, and up to 1,600 Gbps of Elastic Fabric Adapter networking bandwidth, delivering up to 2.3x inference performance compared to previous-generation G6e instances.&lt;br&gt; &lt;br&gt; With this region expansion, you can now deploy inference endpoints on G7e instances closer to your end users in Asia and Europe, reducing latency for generative AI workloads. G7e instances provide up to 768 GB of total GPU memory on a single instance, enabling you to serve medium-to-large language models of up to 70B parameters with FP8 precision without multi-node configurations. These instances are well suited for LLM inference, image and video generation, spatial computing, and scientific computing workloads that require high GPU memory capacity and bandwidth.&lt;br&gt; &lt;br&gt; G7e instances for SageMaker AI inference are now available in Asia Pacific (Seoul), Europe (London), and Asia Pacific (Tokyo), in addition to previously supported regions. For pricing information on these instances, please visit our &lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;&lt;u&gt;pricing page&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/g7e-sagemaker-ai/",
-      "publishedAt": "2026-07-23T15:04:00.000Z",
-      "updatedAt": "2026-07-23T15:04:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Sagemaker Deploy",
-        "Amazon Sagemaker",
-        "Compute",
-        "Global Infrastructure"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon sagemaker deploy",
-        "amazon sagemaker",
-        "compute",
-        "global infrastructure",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "fc69a7e874e89b9d",
-      "title": "Announcing region expansion of G6 instances on SageMaker AI Inference",
-      "description": "We are pleased to announce the availability of Amazon EC2 G6 instances in the AWS GovCloud (US-East) region on Amazon SageMaker AI inference. G6 instances are powered by up to 8 NVIDIA L4 Tensor Core GPUs, each with 24 GB of memory, and third-generation AMD EPYC processors, delivering up to 2x the deep learning inference performance compared to G4dn instances. With this region expansion, government agencies and organizations operating in GovCloud can deploy inference endpoints on G6 instances to serve generative AI workloads—including small-to-medium language models, image generation, and comp",
-      "descriptionHtml": "&lt;p&gt;We are pleased to announce the availability of &lt;a href=\"https://aws.amazon.com/ec2/instance-types/g6/\"&gt;Amazon EC2 G6 &lt;/a&gt;instances in the AWS GovCloud (US-East) region on Amazon SageMaker AI inference. G6 instances are powered by up to 8 NVIDIA L4 Tensor Core GPUs, each with 24 GB of memory, and third-generation AMD EPYC processors, delivering up to 2x the deep learning inference performance compared to G4dn instances.&lt;br&gt; &lt;br&gt; With this region expansion, government agencies and organizations operating in GovCloud can deploy inference endpoints on G6 instances to serve generative AI workloads—including small-to-medium language models, image generation, and computer vision tasks—while meeting strict compliance and data residency requirements. G6 instances offer strong price-performance for production inference workloads that fit within 24 GB of GPU memory.&lt;br&gt; &lt;br&gt; G6 instances for SageMaker AI inference are now available in AWS GovCloud (US-East), in addition to previously supported regions. For pricing information on these instances, please visit our &lt;a href=\"https://aws.amazon.com/sagemaker/ai/pricing/?refid=ft_sagemaker\"&gt;&lt;u&gt;pricing page&lt;/u&gt;&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/g6-sagemaker-ai-inference/",
-      "publishedAt": "2026-07-23T14:51:00.000Z",
-      "updatedAt": "2026-07-23T14:51:00.000Z",
-      "categories": [
-        "Global Infrastructure",
-        "Compute",
-        "Artificial Intelligence",
-        "Amazon Sagemaker Deploy",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "global infrastructure",
-        "compute",
-        "artificial intelligence",
-        "amazon sagemaker deploy",
-        "amazon sagemaker",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "8007086d5234ef18",
-      "title": "AWS Parallel Computing Service now supports node lifecycle actions",
-      "description": "Today, AWS announces the general availability of node lifecycle actions in AWS Parallel Computing Service (PCS). With node lifecycle actions, you can run custom scripts automatically at defined points in a compute node's lifecycle. You can use them to prepare your nodes for work. For example, you can mount shared storage, join a directory service, install software, or set up monitoring. You define node lifecycle actions in your PCS compute node group configuration when you create or update the group, and you can reuse the same script across multiple compute node groups and clusters. For each s",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of node lifecycle actions in AWS Parallel Computing Service (PCS). With node lifecycle actions, you can run custom scripts automatically at defined points in a compute node's lifecycle. You can use them to prepare your nodes for work. For example, you can mount shared storage, join a directory service, install software, or set up monitoring.&lt;/p&gt; \n&lt;p&gt;You define node lifecycle actions in your PCS compute node group configuration when you create or update the group, and you can reuse the same script across multiple compute node groups and clusters. For each script, you set its location as an Amazon S3 or HTTPS URI, the arguments to pass, which lifecycle stage it runs in, whether it re-runs on reboot, and its error-handling behavior. AWS PCS writes the output to a dedicated log file, giving you visibility into what ran.&lt;/p&gt; \n&lt;p&gt;AWS PCS is a managed service that simplifies running and scaling high performance computing (HPC) workloads on AWS using Slurm. You can build complete, elastic environments that integrate compute, storage, networking, and visualization tools, and the service manages cluster updates and provides built-in observability.&lt;/p&gt; \n&lt;p&gt;Node lifecycle actions are available in all AWS Regions that support AWS PCS. To learn more, see the &lt;a title=\"Run custom scripts with node lifecycle actions in AWS PCS\" href=\"https://docs.aws.amazon.com/pcs/latest/userguide/cng-node-lifecycle-actions.html\"&gt;AWS PCS User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-pcs-node-lifecycle-actions/",
-      "publishedAt": "2026-07-23T12:28:00.000Z",
-      "updatedAt": "2026-07-23T12:28:00.000Z",
-      "categories": [
-        "Compute"
-      ],
-      "services": [],
-      "tags": [
-        "compute"
       ],
       "isNew": false
     }
