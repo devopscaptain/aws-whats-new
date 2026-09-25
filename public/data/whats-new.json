@@ -1,7 +1,291 @@
 {
-  "lastUpdated": "2026-09-24T13:18:41.948Z",
+  "lastUpdated": "2026-09-25T13:18:58.446Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "2bf7eb806336388d",
+      "title": "AWS Billing and Cost Management now provides billing context for your account through a new API",
+      "description": "AWS Billing and Cost Management now offers the ListBillingViewSegments API, which returns the billing context of your account over a time period you specify. You can use the API to retrieve information about how your accounts are positioned in the billing hierarchy, such as management accounts, member accounts, or billing group primary accounts. You can also identify which accounts managed your billing relationship and the rate settings, either billable or pro forma, applied to your cost data. The API returns billing context only, not cost and usage data. You can call the API directly or throu",
+      "descriptionHtml": "&lt;p&gt;AWS Billing and Cost Management now offers the ListBillingViewSegments API, which returns the billing context of your account over a time period you specify.&lt;/p&gt;\n&lt;p&gt;You can use the API to retrieve information about how your accounts are positioned in the billing hierarchy, such as management accounts, member accounts, or billing group primary accounts. You can also identify which accounts managed your billing relationship and the rate settings, either billable or pro forma, applied to your cost data. The API returns billing context only, not cost and usage data. You can call the API directly or through an AI agent.&lt;/p&gt;\n&lt;p&gt;Your billing context can change mid-period. The API therefore divides the requested period into time segments, each with its effective date range. For example, an account starts as its own payer, then moves under another organization as a member account, and in a later month has its new payer manage its billing through AWS Billing Conductor. A request covering all three periods returns three segments, each identifying the accounts and billing settings that were in effect.&lt;/p&gt;\n&lt;p&gt;ListBillingViewSegments is available in all commercial AWS Regions at no additional charge and supports primary billing views. To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_ListBillingViewSegments.html\"&gt;AWS Billing API Reference&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-billing-and-cost-management-billing-context-api/",
+      "publishedAt": "2026-09-25T00:58:00.000Z",
+      "updatedAt": "2026-09-25T00:58:00.000Z",
+      "categories": [
+        "AWS Account Billing",
+        "Business Productivity",
+        "Cloud Financial Management",
+        "Cost Management"
+      ],
+      "services": [],
+      "tags": [
+        "aws account billing",
+        "business productivity",
+        "cloud financial management",
+        "cost management"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "62e8486faf85bfa0",
+      "title": "Amazon EventBridge relaunches event buses for enterprise scale",
+      "description": "Amazon EventBridge relaunches event buses with a new enhanced Custom event bus that lets you build event-driven applications that decouple teams and can scale with your organization. Create a custom event bus, share it across accounts, and now teams can publish and consume events with strict ordering, open event formats, built-in retention, and support for advanced event transformations. The EventBridge Custom event bus is a serverless event broker that enables you to create scalable event-driven applications by routing events between your applications, SaaS integrations, and AWS services. It ",
+      "descriptionHtml": "&lt;p&gt;Amazon EventBridge relaunches event buses with a new enhanced Custom event bus that lets you build event-driven applications that decouple teams and can scale with your organization. Create a custom event bus, share it across accounts, and now teams can publish and consume events with strict ordering, open event formats, built-in retention, and support for advanced event transformations.&lt;/p&gt;\n&lt;p&gt;The EventBridge Custom event bus is a serverless event broker that enables you to create scalable event-driven applications by routing events between your applications, SaaS integrations, and AWS services. It can now be shared with one or more accounts through AWS Resource Access Manager allowing publishers to send events directly to the central event bus. With a new event publishing API, you can now publish events in popular JSON based event formats like CloudEvents and preserve their schema without modification. Custom event buses include 24 hours of built-in retention that can be extended for up to one year allowing you to recover from application errors or hydrate new components from historical data. A new Subscriber resource allows you to filter events and deliver them to over 250 AWS services. Now with native support for strictly ordered use cases, customers can ensure events are processed in the exact order they were received and new event evaluations allow automatic content based deduplication.&lt;/p&gt;\n&lt;p&gt;To get started, you can create and share the new Custom event bus using the AWS Management Console, AWS CLI, AWS SDKs, Serverless Agent skill, and AWS CloudFormation. To help you separate the existing Custom event bus experience from the new enhanced Custom event bus, we have renamed the existing bus to Custom event bus - classic. All existing APIs remain unchanged.&lt;/p&gt;\n&lt;p&gt;The enhanced Custom event bus is available at launch in fourteen AWS Regions: United States (N. Virginia, Ohio, Oregon), Europe (Ireland, Frankfurt, Stockholm, Spain), and Asia Pacific (Tokyo, Singapore, Sydney, Malaysia, Thailand, Mumbai, Hong Kong). We have introduced a new pricing model that charges for data transferred rather than events, and rewards you with lower costs as your workloads scale. To learn more, visit &lt;a href=\"https://aws.amazon.com/eventbridge\"&gt;Amazon EventBridge&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;To learn more, see the &lt;a href=\"http://aws.amazon.com/blogs/aws/introducing-enhanced-custom-event-buses-in-amazon-eventbridge-for-enterprise-scale-event-driven-applications\"&gt;AWS News blog&lt;/a&gt;, the &lt;a href=\"https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html\"&gt;EventBridge user guide&lt;/a&gt;, and the &lt;a href=\"https://aws.amazon.com/eventbridge/\"&gt;EventBridge product page&lt;/a&gt;, or download the &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/core-skills/aws-serverless\"&gt;agent skills&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/eventbridge-relaunches-custom-event-buses/",
+      "publishedAt": "2026-09-24T21:00:00.000Z",
+      "updatedAt": "2026-09-24T21:00:00.000Z",
+      "categories": [
+        "Application Services"
+      ],
+      "services": [
+        "EventBridge"
+      ],
+      "tags": [
+        "application services",
+        "eventbridge"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e9adc1d1a2fd854a",
+      "title": "AWS Lambda durable functions are now available in AWS European Sovereign Cloud region",
+      "description": "AWS Lambda durable functions are now available in the AWS European Sovereign Cloud. Lambda durable functions enable developers to build reliable multi-step applications and AI workflows within the Lambda developer experience. Lambda durable functions extend the Lambda programming model with new primitives in your event handler, such as \"step\" and \"wait\", allowing you to checkpoint progress, automatically recover from failures, and pause executions without incurring compute charges for on-demand functions. With availability in the AWS European Sovereign Cloud region, customers can orchestrate c",
+      "descriptionHtml": "&lt;p&gt;AWS Lambda durable functions are now available in the AWS European Sovereign Cloud. Lambda durable functions enable developers to build reliable multi-step applications and AI workflows within the Lambda developer experience.&lt;/p&gt;\n&lt;p&gt;Lambda durable functions extend the Lambda programming model with new primitives in your event handler, such as \"step\" and \"wait\", allowing you to checkpoint progress, automatically recover from failures, and pause executions without incurring compute charges for on-demand functions. With availability in the AWS European Sovereign Cloud region, customers can orchestrate complex processes such as order workflows, user onboarding, and AI-assisted tasks while meeting compliance and security requirements.&lt;/p&gt;\n&lt;p&gt;You can activate durable functions for new Python (versions 3.13 and 3.14), Node.js (versions 22 and 24), or Java (17+) based Lambda functions using the AWS Lambda API, AWS Management Console, or AWS SDK. You can also use infrastructure as code tools such as AWS CloudFormation, AWS Serverless Application Model (AWS SAM), and the AWS Cloud Development Kit (AWS CDK).&lt;/p&gt;\n&lt;p&gt;For more information on durable functions, visit the &lt;a href=\"https://aws.amazon.com/lambda/lambda-durable-functions/\"&gt;AWS Lambda durable functions product page&lt;/a&gt; or the &lt;a href=\"https://docs.aws.eu/lambda/latest/dg/durable-functions.html#\"&gt;AWS Lambda Developer Guide&lt;/a&gt;. To learn about pricing, visit &lt;a href=\"https://aws.amazon.com/lambda/pricing/\"&gt;AWS Lambda pricing&lt;/a&gt;. &amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/durablefunctions-european-sovereign-cloud/",
+      "publishedAt": "2026-09-24T18:29:00.000Z",
+      "updatedAt": "2026-09-24T18:29:00.000Z",
+      "categories": [
+        "AWS Lambda",
+        "Serverless"
+      ],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "aws lambda",
+        "serverless",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3cce10f4d1ed9ad1",
+      "title": "Amazon RDS for MySQL announces Extended Support minor versions 5.7.44-rds.20260902 and 8.0.46-rds.20260908",
+      "description": "Amazon Relational Database Service (RDS) for MySQL announces Amazon RDS Extended Support minor versions 5.7.44-rds.20260902 and 8.0.46-rds.20260908. Amazon RDS Extended Support provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVE) and bugs beyond a major version's end of standard support date, giving you more time to upgrade to a new major version. You can upgrade your database using Amazon RDS Blue/Green Deployments , in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the Amazon RDS for MySQL User Guid",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/mysql/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (RDS) for MySQL&lt;/a&gt; announces Amazon RDS Extended Support minor versions 5.7.44-rds.20260902 and 8.0.46-rds.20260908.&lt;/p&gt;\n&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Extended Support&lt;/a&gt; provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVE) and bugs beyond a major version's end of standard support date, giving you more time to upgrade to a new major version.\n &lt;br&gt;\n &lt;br&gt;\n You can upgrade your database using &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/blue-green-deployments.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Blue/Green Deployments&lt;/a&gt;, in-place upgrade, or restore from a snapshot. Learn more about performing version upgrades in the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.MySQL.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for MySQL User Guide&lt;/a&gt;. You can also migrate to MySQL 8.4 from external MySQL sources using &lt;a href=\"https://aws.amazon.com/dms/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Database Migration Service&lt;/a&gt;. Learn more about pricing details and regional availability at &lt;a href=\"https://aws.amazon.com/rds/mysql/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for MySQL&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt;Amazon RDS for MySQL makes it simple to set up, operate, and scale MySQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the &lt;a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Management Console&lt;/a&gt; or by using the AWS Command Line Interface (AWS CLI).&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-mysql-extended-support-minor-5744-8046-rds/",
+      "publishedAt": "2026-09-24T16:00:00.000Z",
+      "updatedAt": "2026-09-24T16:00:00.000Z",
+      "categories": [
+        "Amazon Rds",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "amazon rds",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6b501a66cefb32cd",
+      "title": "Amazon RDS for PostgreSQL now supports PostgreSQL 19 Beta 4 in the Amazon RDS Database Preview Environment",
+      "description": "Starting today, Amazon RDS for PostgreSQL 19 Beta 4 is available in the Amazon RDS Database Preview Environment , allowing you to evaluate the pre-release of PostgreSQL 19 on Amazon RDS for PostgreSQL. PostgreSQL 19 Beta 4 refines the query performance and autovacuum management capabilities introduced in earlier releases and includes bug fixes and stability improvements since Beta 3. Fixes include pg_stat_autovacuum_scores view reporting for TOAST tables and corrected freeze-score scaling so you can tune autovaccum prioritization effectively. Parallel autovacuum now shares a rebalanced cost li",
+      "descriptionHtml": "&lt;p&gt;Starting today, &lt;a href=\"https://aws.amazon.com/rds/postgresql/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for PostgreSQL&lt;/a&gt; 19 Beta 4 is available in the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/create-db-instance-in-preview-environment.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Database Preview Environment&lt;/a&gt;, allowing you to evaluate the pre-release of PostgreSQL 19 on Amazon RDS for PostgreSQL.&lt;/p&gt;\n&lt;p&gt;PostgreSQL 19 Beta 4 refines the query performance and autovacuum management capabilities introduced in earlier releases and includes bug fixes and stability improvements since Beta 3. Fixes include pg_stat_autovacuum_scores view reporting for TOAST tables and corrected freeze-score scaling so you can tune autovaccum prioritization effectively. Parallel autovacuum now shares a rebalanced cost limit across its workers to keep maintenance on large tables within your configured limits. Refer to the &lt;a href=\"https://www.postgresql.org/about/news/postgresql-19-beta-4-released-3386/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;PostgreSQL community announcement&lt;/a&gt; for more details.&lt;/p&gt;\n&lt;p&gt;Amazon RDS Database Preview Environment database instances are retained for a maximum period of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots that are created in the Preview Environment can only be used to create or restore database instances within the Preview Environment. You can use the PostgreSQL dump and load functionality to import or export your databases from the Preview Environment. Amazon RDS Database Preview Environment database instances are priced as per the &lt;a href=\"https://aws.amazon.com/rds/postgresql/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;pricing&lt;/a&gt; in the US East (Ohio) Region.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/postgresql-19-beta-4-amazon-rds-database-preview-environment/",
+      "publishedAt": "2026-09-24T16:00:00.000Z",
+      "updatedAt": "2026-09-24T16:00:00.000Z",
+      "categories": [
+        "Amazon Rds",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "amazon rds",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8b76865fa426bdae",
+      "title": "Amazon RDS for PostgreSQL now supports post-quantum TLS key exchange",
+      "description": "Starting today, Amazon RDS for PostgreSQL introduces support for post-quantum TLS (PQ-TLS) key exchange, providing you with post-quantum cryptography options for encrypting your data in-transit. RDS for PostgreSQL versions 18 and higher support modification of the ssl_groups parameter. You can select cryptographic groups from the RDS for PostgreSQL allow list to align with your organization's security standards. Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the Amazon RDS Mana",
+      "descriptionHtml": "&lt;p&gt;Starting today, &lt;a href=\"https://aws.amazon.com/rds/postgresql/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for PostgreSQL&lt;/a&gt; introduces support for post-quantum TLS (PQ-TLS) key exchange, providing you with post-quantum cryptography options for encrypting your data in-transit.&lt;/p&gt;\n&lt;p&gt;RDS for PostgreSQL versions 18 and higher support modification of the ssl_groups parameter. You can &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Concepts.General.SSL.html#PostgreSQL.Concepts.General.SSL.Groups\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;select cryptographic groups&lt;/a&gt; from the RDS for PostgreSQL allow list to align with your organization's security standards.&lt;/p&gt;\n&lt;p&gt;Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. Create or update a fully managed Amazon RDS database in the &lt;a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Management Console&lt;/a&gt; or by using the AWS Command Line Interface (AWS CLI).&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/postgresql-post-quantum-tls-key-exchange/",
+      "publishedAt": "2026-09-24T16:00:00.000Z",
+      "updatedAt": "2026-09-24T16:00:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "dd1ff0be079b4ca3",
+      "title": "AWS Network Security Manager is now generally available in US East (N. Virginia) Region",
+      "description": "Today, AWS announces the general availability of AWS Network Security Manager, a comprehensive network security management solution designed to simplify security policy deployment and enforcement at scale. Network Security Manager supports AWS WAF and AWS Shield Advanced, with support for AWS Network Firewall soon to follow. AWS Network Security Manager enables security teams to consistently enforce firewall and DDoS protection configurations across their entire AWS organization. Network Security Manager features always-on security deployment automation that applies AWS WAD and AWS Sheild Adva",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of AWS Network Security Manager, a comprehensive network security management solution designed to simplify security policy deployment and enforcement at scale. Network Security Manager supports AWS WAF and AWS Shield Advanced, with support for AWS Network Firewall soon to follow. AWS Network Security Manager enables security teams to consistently enforce firewall and DDoS protection configurations across their entire AWS organization.&lt;/p&gt;\n&lt;p&gt;Network Security Manager features always-on security deployment automation that applies AWS WAD and AWS Sheild Advanced security protection to Internet facing assets like AWS Application Load Balancer and Amazon CloudFront. This automated approach helps security teams deploy and manage WAF rules and Shield Advanced protections efficiently, ensuring consistent security posture across targeted accounts and resources. Teams can centrally manage security policies, automatically detect configuration drift, and apply remediation reducing the operational overhead of manual security management while maintaining comprehensive protection.&lt;/p&gt;\n&lt;p&gt;AWS Network Security Manager is generally available in US East (N. Virginia). For pricing information, visit the &lt;a href=\"https://aws.amazon.com/network-security-manager/pricing/\"&gt;AWS Network Security Manager Pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/network-security-manager-us-east-va/",
+      "publishedAt": "2026-09-24T15:00:00.000Z",
+      "updatedAt": "2026-09-24T15:00:00.000Z",
+      "categories": [
+        "AWS Firewall Manager",
+        "Networking And Content Delivery",
+        "AWS Waf",
+        "AWS Shield",
+        "Security Identity And Compliance",
+        "New Service"
+      ],
+      "services": [
+        "Shield",
+        "WAF"
+      ],
+      "tags": [
+        "aws firewall manager",
+        "networking and content delivery",
+        "aws waf",
+        "aws shield",
+        "security identity and compliance",
+        "new service",
+        "shield",
+        "waf"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6696aba600af7ac4",
+      "title": "Amazon SageMaker HyperPod Inference Gateway for scalable LLM inference",
+      "description": "Amazon SageMaker HyperPod Inference Gateway is a Kubernetes-native, GPU-aware routing system that deploys as a single EKS managed add-on on existing SageMaker HyperPod infrastructure with zero application changes. By replacing unintelligent round-robin load balancing with real-time inference-signal-driven routing, it reduces first-token latency by up to 82% and p99 TTFT reductions of 97–98% in mixed-hardware and burst traffic scenarios. The Gateway is built around 3 core components. The Envoy Endpoint terminates HTTPS traffic and exposes a single private endpoint per cluster. The Body-Based Ro",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod Inference Gateway is a Kubernetes-native, GPU-aware routing system that deploys as a single EKS managed add-on on existing SageMaker HyperPod infrastructure with zero application changes. By replacing unintelligent round-robin load balancing with real-time inference-signal-driven routing, it reduces first-token latency by up to 82% and p99 TTFT reductions of 97–98% in mixed-hardware and burst traffic scenarios.&lt;/p&gt;\n&lt;p&gt;The Gateway is built around 3 core components. The Envoy Endpoint terminates HTTPS traffic and exposes a single private endpoint per cluster. The Body-Based Router reads the model name directly from each incoming request and routes it to the correct GPU pool - enabling one gateway to serve many models from a single endpoint URL with no client-side changes required. The Endpoint Picker continuously scores every model server pod in real time across 6 inference-level signals - KV cache utilization, queue depth, LoRA adapter residency, prefix cache hit rate, predicted latency and running requests - selecting the optimal pod for each individual request.&lt;/p&gt;\n&lt;p&gt;The gateway works with any OpenAI-compatible model server, including vLLM and SGLang, requiring no application code changes.&lt;/p&gt;\n&lt;p&gt;Per-cluster routing is available today in all AWS Regions where the SageMaker HyperPod inference add-on is supported. Coming soon - cross-cluster and cross-region routing with a centralized fleet gateway, global rate limiting, and cost-tier-aware traffic shaping.&lt;/p&gt;\n&lt;p&gt;To learn more, read the &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-inference-gateway/\"&gt;launch blog&lt;/a&gt; and explore the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-model-deployment-inference-gateway.html\"&gt;documentation&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/sagemaker-hyperpod-inference-gateway/",
+      "publishedAt": "2026-09-24T08:00:00.000Z",
+      "updatedAt": "2026-09-24T08:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Eks",
+        "Compute"
+      ],
+      "services": [
+        "EKS",
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon eks",
+        "compute",
+        "eks",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "cf77c6efb7b1b071",
+      "title": "Run interactive workloads on Amazon EMR on EKS with Spark Connect",
+      "description": "Amazon EMR on EKS now supports interactive Apache Spark sessions with Spark Connect. Data engineers and data scientists can develop and debug Apache Spark applications interactively from managed notebooks in Amazon SageMaker Unified Studio and their own IDEs, such as Jupyter and Visual Studio Code, with Spark running on the Amazon EKS clusters they already operate. An interactive session provides a persistent Spark context that spans across cells and scripts, letting you blend local Python code execution with remote Spark operations. Spark Connect's client-server architecture decouples your ap",
+      "descriptionHtml": "&lt;p&gt;Amazon EMR on EKS now supports interactive Apache Spark sessions with Spark Connect. Data engineers and data scientists can develop and debug Apache Spark applications interactively from managed notebooks in Amazon SageMaker Unified Studio and their own IDEs, such as Jupyter and Visual Studio Code, with Spark running on the Amazon EKS clusters they already operate. &amp;nbsp;&lt;/p&gt;\n&lt;p&gt;An interactive session provides a persistent Spark context that spans across cells and scripts, letting you blend local Python code execution with remote Spark operations. Spark Connect's client-server architecture decouples your application client from the Spark driver and allows you to maintain your preferred development environment and tooling while Spark runs on your Amazon EKS cluster. This architecture supports workflows including ad hoc data exploration and incremental PySpark job development before deploying to production. Each session runs as pods on a virtual cluster, secured with your AWS Identity and Access Management (IAM) execution role and tagged by project and user.&lt;/p&gt;\n&lt;p&gt;Spark Connect on Amazon EMR on EKS is available with EMR release 7.14 (Apache Spark 3.5) and emr-spark-8.1.0 (Apache Spark 4.1), in all AWS Commercial Regions. The Amazon SageMaker Unified Studio experience is available in &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;supported AWS Regions&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt;To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks-spark-connect.html\"&gt;Spark Connect on Amazon EMR on EKS documentation&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/notebooks-spark-connect.html#spark-connect-emr-eks\"&gt;Amazon SageMaker Unified Studio Getting Started guide.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/emr-eks-spark-connect-interactive/",
+      "publishedAt": "2026-09-24T08:00:00.000Z",
+      "updatedAt": "2026-09-24T08:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Emr",
+        "Amazon Sagemaker",
+        "Amazon Eks"
+      ],
+      "services": [
+        "EKS",
+        "SageMaker",
+        "EMR",
+        "Connect"
+      ],
+      "tags": [
+        "analytics",
+        "amazon emr",
+        "amazon sagemaker",
+        "amazon eks",
+        "eks",
+        "sagemaker",
+        "emr",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "afda35d2b22faf65",
+      "title": "Amazon GameLift Servers now available in 5 new regions and 8 Local Zones",
+      "description": "Amazon GameLift Servers is a fully managed service for deploying, operating, and scaling dedicated game servers for multiplayer games. High latency caused by geographic distance between players and servers remains one of the most common challenges in multiplayer game development. This expansion helps game developers and studios address that challenge by bringing Amazon GameLift Servers to 5 new AWS Regions and 8 AWS Local Zones worldwide. With this expansion, customers can deploy game server fleets closer to players across Latin America, Southeast Asia, Europe, the Middle East, and South Asia,",
+      "descriptionHtml": "&lt;p&gt;Amazon GameLift Servers is a fully managed service for deploying, operating, and scaling dedicated game servers for multiplayer games. High latency caused by geographic distance between players and servers remains one of the most common challenges in multiplayer game development. This expansion helps game developers and studios address that challenge by bringing Amazon GameLift Servers to 5 new AWS Regions and 8 AWS Local Zones worldwide.&lt;/p&gt;\n&lt;p&gt;With this expansion, customers can deploy game server fleets closer to players across Latin America, Southeast Asia, Europe, the Middle East, and South Asia, reducing latency and improving gameplay responsiveness.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;The 5 new AWS Regions are il-central-1 (Tel Aviv), mx-central-1 (Mexico/Queretaro), eu-south-2 (Spain/Zaragoza), ap-south-2 (Hyderabad), and ap-southeast-3 (Jakarta). The 8 new AWS Local Zones are us-east-1-atl-2 (Atlanta), us-east-1-chi-2 (Chicago), us-east-1-iah-2 (Houston), us-east-1-mia-2 (Miami), us-west-2-phx-2 (Phoenix), sa-east-1-bue-1 (Buenos Aires), us-east-1-nyc-2 (NYC) and sa-east-1-lim-1 (Lima).\n &lt;br&gt;\n &lt;br&gt;\n To learn more about Amazon GameLift Servers and supported locations, or to deploy fleets in these new Regions and Local Zones, visit the Amazon GameLift Servers &lt;a href=\"https://docs.aws.amazon.com/gameliftservers/latest/developerguide/release-notes.html\" target=\"_blank\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-gamelift-servers-region-expansion-2026",
+      "publishedAt": "2026-09-24T08:00:00.000Z",
+      "updatedAt": "2026-09-24T08:00:00.000Z",
+      "categories": [
+        "Game Development",
+        "Amazon Gamelift"
+      ],
+      "services": [
+        "Local Zones"
+      ],
+      "tags": [
+        "game development",
+        "amazon gamelift",
+        "local zones"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d1f5b5458a78540e",
+      "title": "Amazon RDS supports Multi-AZ for SQL Server Developer Edition",
+      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports Multi-AZ deployments using Always On Availability Groups for SQL Server Developer Edition. Multi-AZ deployments maintain a synchronous standby replica in a different Availability Zone and provide automatic failover during infrastructure failure. You can use this capability to build and test high availability configurations in non-production environments using Developer Edition, which includes all the functionality of Enterprise Edition at no license cost. You can use this feature to validate your high availability arch",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server&lt;/a&gt; now supports Multi-AZ deployments using Always On Availability Groups for SQL Server Developer Edition. Multi-AZ deployments maintain a synchronous standby replica in a different Availability Zone and provide automatic failover during infrastructure failure. You can use this capability to build and test high availability configurations in non-production environments using Developer Edition, which includes all the functionality of Enterprise Edition at no license cost.\n &lt;br&gt;\n &lt;br&gt;\n You can use this feature to validate your high availability architecture, test failover behavior, and develop against production-equivalent configurations without incurring Enterprise Edition licensing costs. Multi-AZ with Always On Availability Groups is available on SQL Server Developer Edition major versions 2019 and 2022, and on SQL Server 2025 Enterprise Developer Edition. SQL Server 2025 Standard Developer Edition does not support this feature.\n &lt;br&gt;\n &lt;br&gt;\n For more information about the AWS Regions where this feature is available, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/sqlserver-dev-edition.html\" target=\"_blank\"&gt;Working with SQL Server Developer Edition on RDS for SQL Server&lt;/a&gt;. For pricing details, see &lt;a href=\"https://aws.amazon.com/rds/sqlserver/pricing/\" target=\"_blank\"&gt;Amazon RDS for SQL Server Pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-sql-server-multi-az-developer-edition/",
+      "publishedAt": "2026-09-24T07:00:00.000Z",
+      "updatedAt": "2026-09-24T07:00:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Amazon Rds For Sql Server",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "amazon rds for sql server",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "657a4f483d456edd",
+      "title": "Amazon ElastiCache Global Datastore now supports tagging and tag-based access control",
+      "description": "Amazon ElastiCache now supports resource tagging and tag-based access control (TBAC) for Global Datastore. Previously, ElastiCache supported tagging on all resources except Global Datastore, which prevented customers from applying a single, consistent permission and cost-allocation model across their ElastiCache fleet. With this launch, you can use AddTagsToResource, RemoveTagsFromResource, and ListTagsForResource on a Global Datastore, and reference those tags as conditions in IAM policies and Service Control Policies (SCPs) to grant permissions based on tag attributes rather than enumerating",
+      "descriptionHtml": "&lt;p&gt;Amazon ElastiCache now supports resource tagging and tag-based access control (TBAC) for Global Datastore. Previously, ElastiCache supported tagging on all resources except Global Datastore, which prevented customers from applying a single, consistent permission and cost-allocation model across their ElastiCache fleet.&lt;/p&gt;\n&lt;p&gt;With this launch, you can use AddTagsToResource, RemoveTagsFromResource, and ListTagsForResource on a Global Datastore, and reference those tags as conditions in IAM policies and Service Control Policies (SCPs) to grant permissions based on tag attributes rather than enumerating individual resources. Tag changes on a Global Datastore propagate automatically to every Region it spans, so access-control and cost-allocation policies stay consistent without per-Region operations.&lt;/p&gt;\n&lt;p&gt;There is no additional cost for this feature, and no change to how you create or manage Global Datastores. This feature is available in all AWS Regions where ElastiCache Global Datastore is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/Tagging-Resources.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Tagging your ElastiCache resources&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/IAM.ConditionKeys.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Using condition keys with ElastiCache&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-elasticache-global-datastore-tagging/",
+      "publishedAt": "2026-09-24T07:00:00.000Z",
+      "updatedAt": "2026-09-24T07:00:00.000Z",
+      "categories": [],
+      "services": [
+        "ElastiCache"
+      ],
+      "tags": [
+        "elasticache"
+      ],
+      "isNew": true
+    },
     {
       "id": "a1dd445ae9bdfa24",
       "title": "Amazon Kinesis Data Streams announces Service-Managed Partition Keys for simplified data ingestion",
@@ -667,7 +951,7 @@
         "networking and content delivery",
         "privatelink"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "73e5cb63d0511541",
@@ -695,7 +979,7 @@
         "nlb",
         "transfer family"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3d6073ee4d1cf1c4",
@@ -721,7 +1005,7 @@
         "amazon omics",
         "iam"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ab8136cc0fbe15bd",
@@ -738,7 +1022,7 @@
       "tags": [
         "batch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e2b4f8f0dd2a821f",
@@ -760,7 +1044,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "c61cc46213142ac3",
@@ -10983,270 +11267,6 @@
       ],
       "tags": [
         "lambda"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "183672c51e35b1da",
-      "title": "Amazon SES simplifies sending emails over SMTP using Mail Manager",
-      "description": "Amazon Simple Email Service (SES) now offers a simplified console experience for sending emails over SMTP using Mail Manager. Mail Manager is a capability within SES for managing email flow, but configuring its resources individually to set up SMTP sending requires multiple steps. The new guided setup creates and configures these resources automatically, so developers can get started in just a few clicks. The guided setup gives developers a working SMTP endpoint and downloadable credentials they can plug into any application or framework that supports SMTP. This is ideal for teams building app",
-      "descriptionHtml": "&lt;p&gt;Amazon Simple Email Service (SES) now offers a simplified console experience for sending emails over SMTP using Mail Manager. Mail Manager is a capability within SES for managing email flow, but configuring its resources individually to set up SMTP sending requires multiple steps. The new guided setup creates and configures these resources automatically, so developers can get started in just a few clicks.&lt;/p&gt; \n&lt;p&gt;The guided setup gives developers a working SMTP endpoint and downloadable credentials they can plug into any application or framework that supports SMTP. This is ideal for teams building applications that send email notifications, password resets, or transactional messages and need a fast path to a production-ready SMTP configuration.&lt;/p&gt; \n&lt;p&gt;This experience is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where &lt;a href=\"https://aws.amazon.com/ses/\"&gt;Amazon SES&lt;/a&gt; is available.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://console.aws.amazon.com/ses/\"&gt;Amazon SES console&lt;/a&gt; or refer to the &lt;a href=\"https://docs.aws.amazon.com/ses/latest/dg/smtp-credentials-mail-manager.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ses-simplified-smtp-mail-manager",
-      "publishedAt": "2026-07-24T15:03:00.000Z",
-      "updatedAt": "2026-07-24T15:03:00.000Z",
-      "categories": [
-        "Amazon Simple Email Service"
-      ],
-      "services": [
-        "SES"
-      ],
-      "tags": [
-        "amazon simple email service",
-        "ses"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "97ec98d5c6d61cff",
-      "title": "Claude Opus 5 is now available on AWS",
-      "description": "AWS now offers Claude Opus 5 — the most advanced Opus model yet, and compatible with zero data retention (ZDR) — bringing a step-change in coding, long-running agents, and complex professional work to teams building at the highest level. Claude Opus 5 delivers advances in coding, understanding and navigating codebases like an experienced engineer and writing production-quality code while adapting its strategy as it works. It powers dependable agents that run for hours and even overnight, finding paths around obstacles, recovering from errors, and reaching their objectives. And it brings deeper",
-      "descriptionHtml": "&lt;p&gt;AWS now offers Claude Opus 5 — the most advanced Opus model yet, and compatible with zero data retention (ZDR) — bringing a step-change in coding, long-running agents, and complex professional work to teams building at the highest level.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Claude Opus 5 delivers advances in coding, understanding and navigating codebases like an experienced engineer and writing production-quality code while adapting its strategy as it works. It powers dependable agents that run for hours and even overnight, finding paths around obstacles, recovering from errors, and reaching their objectives. And it brings deeper reasoning to long documents and higher accuracy to complex analysis, with the largest gains on document-heavy enterprise work.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Customers have two ways to access Claude Opus 5: Amazon Bedrock and Claude Platform on AWS.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Amazon Bedrock offers Claude Opus 5 with zero data retention (ZDR) enabled by default, giving you Opus' top-tier intelligence while meeting your data governance requirements. It keeps your data within AWS infrastructure with regional data residency, and provides access through a unified service with AWS-managed features like Guardrails and Knowledge Bases. To learn more, see the Amazon Bedrock &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html#model-regions-anthropic\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;regional availability.&lt;/a&gt;&lt;/p&gt; \n&lt;p&gt;Claude Platform on AWS gives you direct access to Anthropic's native platform experience and capabilities via the AWS Console, with support for zero data retention (ZDR) available on request. Build, test, and deploy with the same APIs, features, and console experience you'd get working with Anthropic directly, unified with AWS billing and authentication. To get started, see the Claude Platform on AWS &lt;a href=\"https://docs.aws.amazon.com/claude-platform/latest/userguide/setup.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/claude-opus-5-aws/",
-      "publishedAt": "2026-07-24T15:00:00.000Z",
-      "updatedAt": "2026-07-24T15:00:00.000Z",
-      "categories": [
-        "Amazon Bedrock",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "Bedrock",
-        "Claude"
-      ],
-      "tags": [
-        "amazon bedrock",
-        "artificial intelligence",
-        "bedrock",
-        "claude"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "013e897f63854430",
-      "title": "Amazon Redshift Serverless now offers All Upfront pricing for 3-year Serverless Reservations",
-      "description": "Amazon Redshift announces the availability of All Upfront payment option for 3-year Serverless Reservations, providing up to 50% savings over on-demand rates. With All Upfront pricing, you pay for the full reservation term at the start and receive the maximum discount on your Amazon Redshift Serverless compute costs. This new payment option joins the existing 1-year No Upfront, 1-year All Upfront, and 3-year No Upfront options, giving you greater flexibility to optimize costs based on your financial preferences Amazon Redshift Serverless allows you to run and scale analytics without having to ",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/redshift/\"&gt;Amazon Redshift&lt;/a&gt; announces the availability of All Upfront payment option for 3-year Serverless Reservations, providing up to 50% savings over on-demand rates. With All Upfront pricing, you pay for the full reservation term at the start and receive the maximum discount on your Amazon Redshift Serverless compute costs. This new payment option joins the existing 1-year No Upfront, 1-year All Upfront, and 3-year No Upfront options, giving you greater flexibility to optimize costs based on your financial preferences&lt;br&gt; &lt;br&gt; Amazon Redshift Serverless allows you to run and scale analytics without having to provision and manage clusters. Serverless Reservations help you further optimize compute costs and improve cost predictability by committing to a specific number of Redshift Processing Units (RPUs). Managed at the AWS payer account level, Serverless Reservations can be shared between multiple AWS accounts, reducing compute costs across all Amazon Redshift Serverless workloads in your organization. Any usage exceeding the reserved RPU level is charged at standard on-demand rates.&lt;br&gt; &lt;br&gt; This pricing option is available in all AWS commercial and AWS GovCloud (US) Regions where Amazon Redshift Serverless is available. You can purchase Serverless Reservations via the Amazon Redshift console or by invoking the Serverless Reservations API. To learn more, see the &lt;a href=\"https://aws.amazon.com/redshift/pricing/\"&gt;Amazon Redshift pricing page&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/working-with-serverless.html\"&gt;Amazon Redshift Management Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/redshift-serverless-three-year-auri/",
-      "publishedAt": "2026-07-24T15:00:00.000Z",
-      "updatedAt": "2026-07-24T15:00:00.000Z",
-      "categories": [
-        "Lower Cost",
-        "Cost Management",
-        "Analytics",
-        "Amazon Redshift",
-        "Serverless"
-      ],
-      "services": [
-        "Redshift"
-      ],
-      "tags": [
-        "lower cost",
-        "cost management",
-        "analytics",
-        "amazon redshift",
-        "serverless",
-        "redshift"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f5fbb5d8b4b96666",
-      "title": "Opus 4.8, Sonnet 5, and User Activity Monitoring now available on Kiro in AWS GovCloud (US)",
-      "description": "Two new models are now available in the Kiro IDE and CLI for the AWS GovCloud (US) Regions. Claude Opus 4.8 is the most intelligent Opus model, delivering stronger self-verification, more efficient tool calling, and better follow-through on long-horizon projects. It plans before it edits, catches its own mistakes, and finds creative paths around obstacles instead of stalling, making it well suited for complex multi-step tasks that previously required close supervision. Available with a 1M context window and 2.2x credit multiplier. Claude Sonnet 5 is the most agentic Sonnet model, bringing stro",
-      "descriptionHtml": "&lt;p&gt;Two new models are now available in the Kiro IDE and CLI for the AWS GovCloud (US) Regions.&lt;br&gt; &lt;br&gt; Claude Opus 4.8 is the most intelligent Opus model, delivering stronger self-verification, more efficient tool calling, and better follow-through on long-horizon projects. It plans before it edits, catches its own mistakes, and finds creative paths around obstacles instead of stalling, making it well suited for complex multi-step tasks that previously required close supervision. Available with a 1M context window and 2.2x credit multiplier.&lt;br&gt; &lt;br&gt; Claude Sonnet 5 is the most agentic Sonnet model, bringing stronger reasoning, tool use, and coding at Sonnet-class pricing. It approaches Opus 4.8 on reasoning and agentic coding benchmarks while running at meaningfully lower cost, giving developers a cost-performance dial between maximum accuracy and higher throughput. Available with &lt;a href=\"https://kiro.dev/docs/privacy-and-security/data-protection/#global-cross-region-inference-for-experimental-features\"&gt;experimental support&lt;/a&gt;, a 1M context window, and 1.3x credit multiplier.&lt;br&gt; &lt;br&gt; Kiro enterprise administrators now have full visibility into organizational usage through built-in monitoring and tracking. A usage dashboard provides aggregate metrics at a glance, per-user activity reports deliver daily CSV telemetry (credits, model usage, and more) to your S3 bucket for license optimization and audit, and optional prompt logging captures user prompts and Kiro responses for compliance and debugging. All data is stored in your own account with no additional charge beyond S3 storage.&lt;br&gt; &lt;br&gt; Ensure your IDE or CLI is updated to the latest version, then restart it to access the new models from the model selector. For more details, visit the &lt;a href=\"https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-kiro.html\"&gt;GovCloud documentation&lt;/a&gt;, the &lt;a href=\"https://kiro.dev/docs/enterprise/monitor-and-track/\"&gt;monitoring and tracking guide&lt;/a&gt;, or contact your AWS account team. To learn more about Kiro, visit the &lt;a href=\"https://kiro.dev/\"&gt;Kiro product page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/kiro-opus-sonnet-monitoring-launch-aws-govcloud-us/",
-      "publishedAt": "2026-07-24T14:00:00.000Z",
-      "updatedAt": "2026-07-24T14:00:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Developer Tools",
-        "Artificial Intelligence"
-      ],
-      "services": [],
-      "tags": [
-        "aws govcloud us",
-        "developer tools",
-        "artificial intelligence"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d2d6ed49d9fc4f19",
-      "title": "AWS announces aws-bench, an open-source benchmark for AI agents on AWS",
-      "description": "Today, AWS announces a research preview of aws-bench, an open-source benchmark that measures how accurately and efficiently AI agents complete real-world AWS tasks. Model providers and AI researchers building agents that operate on AWS infrastructure need an objective, reproducible way to measure performance and diagnose failures. aws-bench provides a public suite of test cases derived from analysis of real AWS usage, including investigation, troubleshooting, and infrastructure creation tasks. Each test case pairs a natural-language query with a defined cloud resource state and a ground-truth ",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces a research preview of aws-bench, an open-source benchmark that measures how accurately and efficiently AI agents complete real-world AWS tasks. Model providers and AI researchers building agents that operate on AWS infrastructure need an objective, reproducible way to measure performance and diagnose failures. aws-bench provides a public suite of test cases derived from analysis of real AWS usage, including investigation, troubleshooting, and infrastructure creation tasks.&lt;br&gt; &lt;br&gt; Each test case pairs a natural-language query with a defined cloud resource state and a ground-truth answer, so you can score any agent or model on a consistent, verifiable basis. Researchers and model providers can use aws-bench to improve foundation model performance on AWS tasks, improve agent harnesses, and track improvement progress. The release includes an easy-to-use CLI tool to instantiate testing environments, execute and score evaluation runs, and reset resource state.&lt;br&gt; &lt;br&gt; aws-bench is available now on &lt;a href=\"https://github.com/aws-bench/aws-bench\"&gt;GitHub&lt;/a&gt;. To get started, follow the setup instructions on the README.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-bench/",
-      "publishedAt": "2026-07-24T13:00:00.000Z",
-      "updatedAt": "2026-07-24T13:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "AWS Developer Tools",
-        "Developer Tools"
-      ],
-      "services": [],
-      "tags": [
-        "artificial intelligence",
-        "aws developer tools",
-        "developer tools"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7d21c8f32c3cf16d",
-      "title": "AWS Clean Rooms supports larger worker types up to 32 vCPUs for SQL",
-      "description": "AWS Clean Rooms now supports larger worker types of 32 vCPUs with 244 GB of memory for SQL analyses, allowing you to run more compute and memory-intensive workloads. Previously, the largest worker type available was 16 vCPUs with 120 GB of memory. Larger workers can help improve performance for complex queries on large datasets, optimizing costs for customers. For example, an advertiser collaborating with a publisher can use larger workers to run complex feature engineering across billions of records to train their multi-touch attribution model, accelerating time-to-value and optimizing costs.",
-      "descriptionHtml": "&lt;p&gt;AWS Clean Rooms now supports &lt;a href=\"https://docs.aws.amazon.com/clean-rooms/latest/userguide/use-sql-editor.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;larger worker types&lt;/a&gt; of 32 vCPUs with 244 GB of memory for SQL analyses, allowing you to run more compute and memory-intensive workloads. Previously, the largest worker type available was 16 vCPUs with 120 GB of memory. Larger workers can help improve performance for complex queries on large datasets, optimizing costs for customers. For example, an advertiser collaborating with a publisher can use larger workers to run complex feature engineering across billions of records to train their multi-touch attribution model, accelerating time-to-value and optimizing costs.&lt;/p&gt; \n&lt;p&gt;AWS Clean Rooms helps companies and their partners easily analyze and collaborate on their collective datasets without revealing or copying one another’s underlying data. For more information about the AWS Regions where AWS Clean Rooms is available, see the &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/clean-rooms.html#clean-rooms_region\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions&lt;/a&gt; table. To learn more about collaborating with AWS Clean Rooms, visit &lt;a href=\"https://aws.amazon.com/clean-rooms/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Clean Rooms&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-clean-rooms-32-vcpu-worker-types-sql",
-      "publishedAt": "2026-07-24T12:00:00.000Z",
-      "updatedAt": "2026-07-24T12:00:00.000Z",
-      "categories": [],
-      "services": [
-        "Clean Rooms"
-      ],
-      "tags": [
-        "clean rooms"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "cfdaf7b1fbfcb3be",
-      "title": "Amazon ECS Service Connect now supports Zone-Aware routing",
-      "description": "Amazon Elastic Container Service (Amazon ECS) introduces zone-aware routing for ECS Service Connect, enabling customers to reduce cross Availability Zone (AZ) data transfer costs and latency by automatically prioritizing service-to-service traffic within the same AZ. With this launch, ECS Service Connect preferentially routes requests to endpoints in the same AZ as the originating task while dynamically adjusting traffic weights as endpoints scale to maintain balanced load across target services. Previously, as customers distributed their applications across AZs for resiliency, service-to-serv",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\"&gt;Amazon Elastic Container Service&lt;/a&gt; (Amazon ECS)&amp;nbsp;introduces zone-aware routing for ECS Service Connect, enabling customers to reduce cross Availability Zone (AZ) data transfer costs and latency by automatically prioritizing service-to-service traffic within the same AZ.&lt;/p&gt; \n&lt;p&gt;With this launch, ECS Service Connect preferentially routes requests to endpoints in the same AZ as the originating task while dynamically adjusting traffic weights as endpoints scale to maintain balanced load across target services. Previously, as customers distributed their applications across AZs for resiliency, service-to-service traffic led to significant cross-zone data transfer, requiring trade-offs between cost and resilience. Zone-aware routing eliminates this trade-off, and when local endpoints become unhealthy or fall below capacity thresholds, traffic automatically redistributes across healthy AZs to maintain availability without overloading any single zones.&lt;/p&gt; \n&lt;p&gt;Zone-aware routing is enabled by default for all new and existing services and requires no additional infrastructure or application code changes. Existing services require a one-time redeployment to enable the new routing behavior. You can use Amazon VPC Flow Logs with AZ metadata to monitor cross-AZ traffic patterns and validate routing effectiveness. This feature is available in all AWS commercial and AWS GovCloud (US) &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;Regions&lt;/a&gt;, where ECS Service Connect is supported at no additional cost. For more details, refer to our &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-zone-aware-routing.html\"&gt;documentation&lt;/a&gt; and launch &lt;a href=\"https://aws.amazon.com/blogs/containers/announcing-zone-aware-routing-in-amazon-ecs-service-connect/\"&gt;blog post&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/ecs-service-connect-zone-aware/",
-      "publishedAt": "2026-07-23T23:46:00.000Z",
-      "updatedAt": "2026-07-23T23:46:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Containers",
-        "AWS Fargate",
-        "Amazon Ecs"
-      ],
-      "services": [
-        "ECS",
-        "Fargate",
-        "Connect"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "containers",
-        "aws fargate",
-        "amazon ecs",
-        "ecs",
-        "fargate",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "efab03bad6012ea9",
-      "title": "AWS now supports automatic credit memo application preferences",
-      "description": "AWS now enables customers who pay through electronic funds transfer to configure preferences for how credit memos are automatically applied to outstanding invoices. Customers can choose from different application preferences directly on the Billing and Cost Management console to match their internal payment processes. These options include combinations of applying credit memos to the original invoice, next eligible invoice, and oldest unpaid invoice. By default, credit memos are applied to the original invoice first, then to future invoices, unless a different preference is selected. Automatic",
-      "descriptionHtml": "&lt;p&gt;AWS now enables customers who pay through electronic funds transfer to configure preferences for how credit memos are automatically applied to outstanding invoices. Customers can choose from different application preferences directly on the Billing and Cost Management console to match their internal payment processes. These options include combinations of applying credit memos to the original invoice, next eligible invoice, and oldest unpaid invoice. By default,&amp;nbsp;credit memos are applied to the original invoice first, then to future invoices, unless a different preference is selected.&lt;br&gt; &lt;br&gt; Automatic credit memo application preferences are available in all commercial AWS Regions. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/billing/home#/paymentpreferences/balanceapplications\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Payment Preferences&lt;/a&gt; page in the AWS Billing and Cost Management console. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-balance-application-preferences.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Managing balance application preferences&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/credit-memo-applications/",
-      "publishedAt": "2026-07-23T18:16:00.000Z",
-      "updatedAt": "2026-07-23T18:16:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "d90670faf5ed394a",
-      "title": "Amazon RDS for MySQL supports MySQL 9.7 in Amazon RDS Database Preview Environment",
-      "description": "Amazon RDS for MySQL now supports version community MySQL 9.7 in the Amazon RDS Database Preview Environment , allowing you to evaluate the latest Release on Amazon RDS for MySQL. This preview environment provides a sandbox where you can test applications and explore new MySQL 9.7 capabilities before they become generally available. MySQL 9.7 is the latest Long-Term Support release for community MySQL. MySQL Long-Term Support releases include bug fixes, security patches, as well as new features. Please refer to the MySQL 9.7 release notes for more details about this release. Amazon RDS Databas",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/mysql/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for MySQL&lt;/a&gt;&amp;nbsp;now supports version community MySQL 9.7 in the&amp;nbsp;&lt;a href=\"https://aws.amazon.com/rds/databasepreview/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Database Preview Environment&lt;/a&gt;, allowing you to evaluate the latest Release on Amazon RDS for MySQL. This preview environment provides a sandbox where you can test applications and explore new MySQL 9.7 capabilities before they become generally available.&lt;br&gt; &lt;br&gt; MySQL 9.7 is the latest Long-Term Support release for community MySQL. MySQL Long-Term Support releases include bug fixes, security patches, as well as new features. Please refer to the&amp;nbsp;&lt;a href=\"https://dev.mysql.com/doc/refman/9.7/en/mysql-nutshell.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;MySQL 9.7 release notes&lt;/a&gt;&amp;nbsp;for more details about this release.&lt;br&gt; &lt;br&gt; Amazon RDS Database Preview Environment database instances are retained for a maximum of 60 days and are automatically deleted after the retention period. Amazon RDS database snapshots created in the preview environment can only be used to create or restore database instances within the preview environment. Amazon RDS Database Preview Environment database instances are&amp;nbsp;&lt;a href=\"https://aws.amazon.com/rds/mysql/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;priced the same as production RDS instances created in the US East (Ohio) Region&lt;/a&gt;. For further information, see&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Previewenvironment.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Working with the Database Preview Environment&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-mysql-long-term-9-7-rds-database-preview/",
-      "publishedAt": "2026-07-23T18:05:00.000Z",
-      "updatedAt": "2026-07-23T18:05:00.000Z",
-      "categories": [
-        "Amazon Rds For Mysql",
-        "Databases"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "amazon rds for mysql",
-        "databases",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5a107150f4f80f92",
-      "title": "AWS Lambda durable execution SDK for .NET is now generally available",
-      "description": "Today, AWS announces the general availability of the AWS Lambda Durable Execution SDK for .NET, empowering C# developers to build resilient, long-running workflows using Lambda durable functions. With this SDK, developers can create multi-step applications like payment processing pipelines, AI agent orchestration, and human-in-the-loop approvals directly in their applications without implementing custom progress tracking or integrating external orchestration services. Lambda durable functions extend Lambda's event-driven programming model with operations that checkpoint progress automatically ",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of the AWS Lambda Durable Execution SDK for .NET, empowering C# developers to build resilient, long-running workflows using Lambda durable functions. With this SDK, developers can create multi-step applications like payment processing pipelines, AI agent orchestration, and human-in-the-loop approvals directly in their applications without implementing custom progress tracking or integrating external orchestration services.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Lambda durable functions extend Lambda's event-driven programming model with operations that checkpoint progress automatically and pause execution for up to a year when waiting on external events. The AWS Lambda Durable Execution SDK for .NET provides an idiomatic C# experience for building with Lambda durable functions. It includes steps for progress tracking, callback integration for human and agent-in-the-loop workflows, durable invocation for reliable function chaining, and waits for efficient suspension. The SDK installs from NuGet into the .NET toolchain you use today. The &lt;a href=\"https://www.nuget.org/packages/Amazon.Lambda.DurableExecution.Testing/\"&gt;local testing emulator&lt;/a&gt; in the SDK enables developers to build and debug locally before deploying to production.&lt;/p&gt; \n&lt;p&gt;To get started, see the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/durable-functions.html\"&gt;Lambda durable functions developer guide&lt;/a&gt; and the &lt;a href=\"https://www.nuget.org/packages/Amazon.Lambda.DurableExecution\"&gt;AWS Lambda Durable Execution SDK&lt;/a&gt; for .NET on NuGet. For Regional availability and pricing details, see the &lt;a href=\"https://builder.aws.com/build/capabilities\"&gt;AWS Regional Services List&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/lambda/pricing/\"&gt;AWS Lambda Pricing.&lt;/a&gt;&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/lambdadf-dotnet/",
-      "publishedAt": "2026-07-23T18:00:00.000Z",
-      "updatedAt": "2026-07-23T18:00:00.000Z",
-      "categories": [
-        "Serverless",
-        "AWS Lambda"
-      ],
-      "services": [
-        "Lambda"
-      ],
-      "tags": [
-        "serverless",
-        "aws lambda",
-        "lambda"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6a9075f5b08e6a36",
-      "title": "Amazon Bedrock AgentCore now delivers unified observability with traces and logs in a single log group",
-      "description": "Amazon Bedrock AgentCore now delivers agent traces and prompts to the same log group as your agent's logs, giving you unified observability for AI agents in a single Amazon CloudWatch log group. Previously, AgentCore split agent telemetry across multiple destinations trace spans went to the shared `aws/spans` log group while event logs containing prompts, inputs, and outputs went to a separate resource-specific log group. This meant debugging an agent invocation required searching across multiple log groups, and customers could not apply fine-grained access control or customer-managed key (CMK",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore now delivers agent traces and prompts to the same log group as your agent's logs, giving you unified observability for AI agents in a single Amazon CloudWatch log group.&lt;/p&gt; \n&lt;p&gt;Previously, AgentCore split agent telemetry across multiple destinations trace spans went to the shared `aws/spans` log group while event logs containing prompts, inputs, and outputs went to a separate resource-specific log group. This meant debugging an agent invocation required searching across multiple log groups, and customers could not apply fine-grained access control or customer-managed key (CMK) encryption at the individual agent level. With today's launch, all of an agent's telemetry traces, prompts, structured logs, and standard output is delivered to a single per-agent log group (`/aws/bedrock-agentcore/runtimes/&amp;lt;agent_id&amp;gt;-&amp;lt;endpoint_name&amp;gt;`). You can now correlate traces and logs in one place, scope IAM policies and CMK encryption to individual agents, and export all telemetry by subscribing to a single log group. For multi-agent systems, each agent's complete execution history stays together, making end-to-end debugging straightforward.&lt;/p&gt; \n&lt;p&gt;All newly created agents starting July 20, 2026 in supported AWS Regions use unified observability by default starting no configuration needed. For existing agents, set the `UNIFIED_TRACES_DESTINATION_ENABLED=true` environment variable on your agent runtime and upgrade ADOT to version 0.17.1 or later. This feature is available in all AWS commercial regions where AgentCore runtime is supported. Learn more in the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/observability-configure.html\"&gt;AgentCore Developer Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-bedrock-agentcore-unified-observability-single-log-group/",
-      "publishedAt": "2026-07-23T17:00:00.000Z",
-      "updatedAt": "2026-07-23T17:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5cb74ec85608a316",
-      "title": "Amazon CloudWatch Logs now supports Application Load Balancer logs",
-      "description": "Amazon CloudWatch Logs now supports Application Load Balancer (ALB) logs as vended logs, improving observability and simplifying debugging for network traffic patterns. You can now analyze ALB access, connection and health check logs directly in CloudWatch to gain insights into client connections, traffic distribution, connection status and target health, helping you identify and troubleshoot network issues faster. Additionally, you can set up CloudWatch telemetry enablement rules to automatically configure logging of both existing and newly created ALB resources, for your organization, specif",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch Logs now supports Application Load Balancer (ALB) logs as vended logs, improving observability and simplifying debugging for network traffic patterns. You can now analyze ALB access, connection and health check logs directly in CloudWatch to gain insights into client connections, traffic distribution, connection status and target health, helping you identify and troubleshoot network issues faster. Additionally, you can set up &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/telemetry-config-rules.html\"&gt;CloudWatch telemetry enablement rules&lt;/a&gt; to automatically configure logging of both existing and newly created ALB resources, for your organization, specific accounts, or specific resources, ensuring consistent monitoring coverage without manual setup.&lt;br&gt; &lt;br&gt; With this CloudWatch Logs integration, you can track detailed access patterns using CloudWatch Logs Insights queries, create metric filters for monitoring and alarming, and review traffic patterns in real time using Live Tail. ALB logs can be configured through the integrations tab of your application load balancer in AWS Management Console, AWS CLI, or SDKs. You can also configure delivery of ALB logs to Amazon Data Firehose or Amazon S3 with support for Apache Parquet format.&lt;br&gt; &lt;br&gt; ALB logs delivery to CloudWatch is available in all AWS Commercial and GovCloud regions where Application Load Balancer and CloudWatch are available. ALB logs are charged as vended logs when delivered to CloudWatch Logs and Data Firehose, while delivery to Amazon S3 is free (Parquet conversion is charged at $0.035/GB - N. Virginia).&lt;br&gt; &lt;br&gt; To learn more about configuring ALB logs in CloudWatch Logs, &lt;a href=\"https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-logs.html\"&gt;please visit our documentation&lt;/a&gt;. For pricing information, see &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;CloudWatch pricing page.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-cloudwatch-logs/",
-      "publishedAt": "2026-07-23T17:00:00.000Z",
-      "updatedAt": "2026-07-23T17:00:00.000Z",
-      "categories": [
-        "Amazon Elastic Load Balancing",
-        "Networking And Content Delivery",
-        "Amazon Cloudwatch Logs"
-      ],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "amazon elastic load balancing",
-        "networking and content delivery",
-        "amazon cloudwatch logs",
-        "cloudwatch"
       ],
       "isNew": false
     }
