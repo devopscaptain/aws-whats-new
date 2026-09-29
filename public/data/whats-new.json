@@ -1,7 +1,210 @@
 {
-  "lastUpdated": "2026-09-28T16:30:56.701Z",
+  "lastUpdated": "2026-09-29T14:39:59.526Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "0860418c6f256720",
+      "title": "Amazon EC2 Future-dated Capacity Reservations Now Supports Postponing Start Dates",
+      "description": "Amazon EC2 Future-dated Capacity Reservations let you secure capacity up to 120 days in advance by specifying the capacity you need, the start date, and a commitment duration. If your plans change before delivery, you can now postpone your start date to match your new timeline. When you postpone your start date, EC2 presents a quote that shows the new start date and the required commitment duration. The commitment duration can increase, depending on when you postpone the start date. After you review and accept the quote, EC2 updates your reservation with the new start date. This feature is ava",
+      "descriptionHtml": "&lt;p&gt;Amazon EC2 Future-dated Capacity Reservations let you secure capacity up to 120 days in advance by specifying the capacity you need, the start date, and a commitment duration. If your plans change before delivery, you can now postpone your start date to match your new timeline.&lt;/p&gt;\n&lt;p&gt;When you postpone your start date, EC2 presents a quote that shows the new start date and the required commitment duration. The commitment duration can increase, depending on when you postpone the start date. After you review and accept the quote, EC2 updates your reservation with the new start date.&lt;/p&gt;\n&lt;p&gt;This feature is available to all Future-dated Capacity Reservation customers. Refer to the &lt;a href=\"https://builder.aws.com/build/capabilities/explore\"&gt;AWS Capabilities by Region&lt;/a&gt; website for the feature's regional availability. For more details, refer to the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-modify.html\"&gt;Capacity Reservation user guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-fcr-postpone-start-date/",
+      "publishedAt": "2026-09-28T21:17:00.000Z",
+      "updatedAt": "2026-09-28T21:17:00.000Z",
+      "categories": [
+        "Amazon Ec2",
+        "Compute"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2",
+        "compute",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2513dd5a1ca3c547",
+      "title": "Amazon Rekognition Face Liveness now returns Feedback Codes",
+      "description": "Amazon Rekognition Face Liveness now returns Feedback Codes that help customers understand why a liveness check received a low score and how users could retry successfully. The codes are returned in the GetFaceLivenessSessionResults API response, and they identify the specific conditions that contributed to the low score, such as poor lighting, face obstruction, closed eyes, or low video quality. Customers can surface these codes to their end users who can then make targeted corrections and retry with confidence. A single session can return multiple Feedback Codes at once, allowing users to re",
+      "descriptionHtml": "&lt;p&gt;Amazon Rekognition Face Liveness now returns Feedback Codes that help customers understand why a liveness check&amp;nbsp;received a low score and how users could retry successfully. The codes are returned in the GetFaceLivenessSessionResults API response, and they identify the specific conditions that contributed to the low score, such as poor lighting, face obstruction, closed eyes, or low video quality. Customers can surface these codes to their end users who can then make targeted corrections and retry with confidence. A single session can return multiple Feedback Codes at once, allowing users to resolve all contributing issues in one retry.&amp;nbsp;This feature is especially useful in identity verification onboarding, re-authentication flows, and accessibility scenarios.&lt;/p&gt;\n&lt;p&gt;Amazon Rekognition Face Liveness verifies that the person in front of the camera is a real, live human (instead of a photo, video replay, mask, or deepfake) through a short, guided selfie-video check. It returns a confidence score, a reference image for face matching, and session audit images.&amp;nbsp;\n &lt;br&gt;\n &lt;br&gt;\n Rekognition Face Liveness is available in US East (N. Virginia), US West (Oregon), Europe (Ireland), Asia Pacific (Tokyo, Mumbai, Malaysia, Thailand), and South America (São Paulo). To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-programming-api.html\"&gt;Amazon Rekognition Face Liveness API documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/rekognition/latest/dg/face-liveness-faq.html\"&gt;Face Liveness FAQ&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/rekognition-liveness-feedback-codes/",
+      "publishedAt": "2026-09-28T20:41:00.000Z",
+      "updatedAt": "2026-09-28T20:41:00.000Z",
+      "categories": [
+        "Amazon Rekognition",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "Rekognition"
+      ],
+      "tags": [
+        "amazon rekognition",
+        "artificial intelligence",
+        "rekognition"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b5f5b34e2ab19a91",
+      "title": "Grok 4.7 is now available on Amazon Bedrock",
+      "description": "Amazon Bedrock now supports SpaceXAI Grok 4.7, a frontier model built for coding, agentic tasks, and knowledge work, with US Geo and Global cross-Region inference. Grok 4.7 builds on Grok 4.6 with better mixed-document handling, more dependable repo-scale coding with planning and error recovery, and enhanced browser-use agents for form fills and portal navigation. Get started with Grok 4.7 in the Amazon Bedrock console or programmatically through supported Amazon Bedrock APIs. For information about supported AWS Regions , endpoints, APIs, features, inference profiles and pricing, see the Amazo",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock now supports SpaceXAI Grok 4.7, a frontier model built for coding, agentic tasks, and knowledge work, with US Geo and Global cross-Region inference. &amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Grok 4.7 builds on Grok 4.6 with better mixed-document handling, more dependable repo-scale coding with planning and error recovery, and enhanced browser-use agents for form fills and portal navigation. &amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Get started with Grok 4.7 in the&lt;a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/\"&gt; Amazon Bedrock console&lt;/a&gt; or programmatically through supported Amazon Bedrock APIs. For information about supported&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\"&gt; AWS Regions&lt;/a&gt;, endpoints, APIs, features, inference profiles and pricing, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-grok-4-7.html\"&gt;Amazon Bedrock documentation&lt;/a&gt;. To learn more, read the launch &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/\"&gt;blog post&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-grok-4-7/",
+      "publishedAt": "2026-09-28T18:29:00.000Z",
+      "updatedAt": "2026-09-28T18:29:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "b1c2af3fd05e6169",
+      "title": "Claude Sonnet 5.5 now available on AWS",
+      "description": "AWS now offers Claude Sonnet 5.5, a smarter and more efficient Sonnet that delivers a clear leap forward on coding and knowledge work with at a lower cost per task for most work at faster speed. Claude Sonnet 5.5 is a smarter, more efficient Sonnet and a step up from Sonnet 5, making it a natural upgrade for teams already building on Sonnet. It's stronger for coding, completing well-scoped tasks as part of a larger coding strategy such as building and fixing features with Claude in the same session or verifying output against requirements. And it produces ready-to-share knowledge work, from 1-",
+      "descriptionHtml": "&lt;p&gt;AWS now offers Claude Sonnet 5.5, a smarter and more efficient Sonnet that delivers a clear leap forward on coding and knowledge work with at a lower cost per task for most work at faster speed.&lt;/p&gt;\n&lt;p&gt;Claude Sonnet 5.5 is a smarter, more efficient Sonnet and a step up from Sonnet 5, making it a natural upgrade for teams already building on Sonnet. It's stronger for coding, completing well-scoped tasks as part of a larger coding strategy such as building and fixing features with Claude in the same session or verifying output against requirements. And it produces ready-to-share knowledge work, from 1-pagers, diagrams, and summary slides to document edits and spreadsheet cleanup.&lt;/p&gt;\n&lt;p&gt;Customers have two ways to access Claude Sonnet 5.5: Amazon Bedrock and Claude Platform on AWS.&lt;/p&gt;\n&lt;p&gt;Amazon Bedrock gives you Sonnet's capabilities while keeping your data within AWS infrastructure with regional data residency and provides access through a unified service with AWS-managed features like Guardrails and Knowledge Bases. To learn more, see the Amazon Bedrock &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5-5.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html?refid=7ecf60df-6136-414c-a7c3-6aa4d2d6019f#model-regions-anthropic\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;regional availability&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Claude Platform on AWS gives you direct access to Anthropic's native platform experience and capabilities via the AWS Console. Build, test, and deploy with the same APIs, features, and console experience you'd get working with Anthropic directly, unified with AWS billing and authentication. To get started, see the Claude Platform on AWS &lt;a href=\"https://docs.aws.amazon.com/claude-platform/latest/userguide/setup.html?refid=7ecf60df-6136-414c-a7c3-6aa4d2d6019f\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws/",
+      "publishedAt": "2026-09-28T15:00:00.000Z",
+      "updatedAt": "2026-09-28T15:00:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock",
+        "Claude"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon bedrock",
+        "bedrock",
+        "claude"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2172b58785cf0f74",
+      "title": "Claude Sonnet 5.5 now available on AWS GovCloud (US)",
+      "description": "AWS GovCloud (US) now offers Claude Sonnet 5.5, a smarter and more efficient Sonnet that delivers a clear leap forward on coding and knowledge work with at a lower cost per task for most work ag faster speed. Claude Sonnet 5.5 is a smarter, more efficient Sonnet and a step up from Sonnet 5, making it a natural upgrade for teams already building on Sonnet. It's stronger for coding, completing well-scoped tasks as part of a larger coding strategy such as building and fixing features with Claude in the same session or verifying output against requirements. And it produces ready-to-share knowledge",
+      "descriptionHtml": "&lt;p&gt;AWS GovCloud (US) now offers Claude Sonnet 5.5, a smarter and more efficient Sonnet that delivers a clear leap forward on coding and knowledge work with at a lower cost per task for most work ag faster speed.&lt;/p&gt;\n&lt;p&gt;Claude Sonnet 5.5 is a smarter, more efficient Sonnet and a step up from Sonnet 5, making it a natural upgrade for teams already building on Sonnet. It's stronger for coding, completing well-scoped tasks as part of a larger coding strategy such as building and fixing features with Claude in the same session or verifying output against requirements. And it produces ready-to-share knowledge work, from 1-pagers, diagrams, and summary slides to document edits and spreadsheet cleanup.&lt;/p&gt;\n&lt;p&gt;Amazon Bedrock gives you Sonnet's capabilities while keeping your data within AWS infrastructure with regional data residency and provides access through a unified service with AWS-managed features like Guardrails and Knowledge Bases. To learn more, see the Amazon Bedrock &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5-5.html\"&gt;documentation&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html?refid=7ecf60df-6136-414c-a7c3-6aa4d2d6019f#model-regions-anthropic\"&gt;regional availability&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws-govcloud-us/",
+      "publishedAt": "2026-09-28T15:00:00.000Z",
+      "updatedAt": "2026-09-28T15:00:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock",
+        "Claude"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "amazon bedrock",
+        "bedrock",
+        "claude"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "83286fe7bea978ec",
+      "title": "Amazon Corretto September 2026 Patch Updates",
+      "description": "On September 25, 2026, Amazon announced a patch update for the following Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK: Corretto 25.0.4.10.1, 21.0.12.11.1, 17.0.20.12.1, and 11.0.32.12.1 are now available for download . Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK. This patch includes the latest tzdata 2026d updates. Visit Corretto home page to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a Corretto Apt, Yu",
+      "descriptionHtml": "&lt;p&gt;On September 25, 2026, Amazon announced a patch update for the following Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK: Corretto 25.0.4.10.1, 21.0.12.11.1, 17.0.20.12.1, and 11.0.32.12.1 are now available for &lt;a href=\"https://aws.amazon.com/corretto/\"&gt;download&lt;/a&gt;. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK. This patch includes the latest&amp;nbsp;tzdata 2026d updates.&lt;/p&gt;\n&lt;p&gt;Visit Corretto &lt;a href=\"https://aws.amazon.com/corretto\"&gt;home page&lt;/a&gt; to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a &lt;a href=\"https://docs.aws.amazon.com/corretto/latest/corretto-26-ug/generic-linux-install.html\"&gt;Corretto Apt, Yum, or Apk repo&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt;Feedback is &lt;a href=\"https://github.com/corretto\"&gt;welcomed&lt;/a&gt;!&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-sept-2026-updates/",
+      "publishedAt": "2026-09-28T14:00:00.000Z",
+      "updatedAt": "2026-09-28T14:00:00.000Z",
+      "categories": [
+        "Amazon Corretto",
+        "Developer Tools",
+        "AWS Govcloud Us"
+      ],
+      "services": [],
+      "tags": [
+        "amazon corretto",
+        "developer tools",
+        "aws govcloud us"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "324aecd31ca16023",
+      "title": "Amazon DocumentDB (with MongoDB compatibility) adds support for 5 MongoDB aggregation stages and change stream capabilities in version 8.0.2",
+      "description": "Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes, 5 new aggregation stages, and change stream enhancements starting from minor version 8.0.2. This release expands MongoDB API compatibility and improves query performance, making it easier to migrate MongoDB workloads to Amazon DocumentDB without application code changes. Key new capabilities in version 8.0.2 include: - Retryable Writes — insert, update, and delete operations automatically retry on transient network errors, improving application resilience during failovers. - New aggregation stages — $setWindowFields ",
+      "descriptionHtml": "&lt;p&gt;Amazon DocumentDB (with MongoDB compatibility) now supports&amp;nbsp;retryable writes, 5 new aggregation stages, and change stream enhancements starting from minor version 8.0.2. This release expands MongoDB API compatibility and improves query performance, making it easier to migrate MongoDB workloads to Amazon DocumentDB without application code changes.&lt;/p&gt;\n&lt;p&gt;Key new capabilities in version 8.0.2 include:&lt;/p&gt;\n&lt;p&gt;- Retryable Writes — insert, update, and delete operations automatically retry on transient network errors, improving application resilience during failovers.\n &lt;br&gt;\n - New aggregation stages — $setWindowFields (with its full set of window operators), $bucketAuto, $facet, $graphLookup, and correlated $lookup, enabling advanced analytics, faceted search, and hierarchical queries.\n &lt;br&gt;\n - Change stream enhancements — the $changeStreamSplitLargeEvent stage splits change events larger than the 16 MB limit into fragments, and change streams now emit events for createCollection and createIndex operations.\n &lt;br&gt;\n - Query performance improvements — enhancements to the query planner add index-only scans for find and aggregation queries, index scans on $expr predicates, incremental sort, and faster count and countDocuments() operations.\n &lt;br&gt;\n - Index management — support for the reIndex command on partial indexes.&lt;/p&gt;\n&lt;p&gt;These capabilities are available starting from Amazon DocumentDB 8.0.2 in all regions where Amazon DocumentDB is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/mongo-apis.html\"&gt;Supported MongoDB APIs, operations, and data types&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/release-notes.html\"&gt;Amazon DocumentDB release notes&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-8-0-2/",
+      "publishedAt": "2026-09-28T08:00:00.000Z",
+      "updatedAt": "2026-09-28T08:00:00.000Z",
+      "categories": [
+        "Amazon Documentdb"
+      ],
+      "services": [
+        "DocumentDB"
+      ],
+      "tags": [
+        "amazon documentdb",
+        "documentdb"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "823133e656668191",
+      "title": "Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes",
+      "description": "For developers building MongoDB-compatible applications, retryable writes improve application resilience during transient errors such as network interruptions or primary failovers. Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes starting with engine version 8.0.2, eliminating the need for additional code changes when enabling this capability. With retryable writes, the MongoDB driver automatically retries certain write operations one time if a transient error occurs. Most current MongoDB-compatible drivers enable retryable writes by default. With this release, appl",
+      "descriptionHtml": "&lt;p&gt;For developers building MongoDB-compatible applications, retryable writes improve application resilience during transient errors such as network interruptions or primary failovers. Amazon DocumentDB (with MongoDB compatibility) now supports retryable writes starting with engine version 8.0.2, eliminating the need for additional code changes when enabling this capability.&lt;/p&gt;\n&lt;p&gt;With retryable writes, the MongoDB driver automatically retries certain write operations one time if a transient error occurs. Most current MongoDB-compatible drivers enable retryable writes by default. With this release, applications connecting to Amazon DocumentDB 8.0.2 no longer need to set retryWrites=false in the connection string to avoid errors. Retryable writes are supported for all write commands except updateMany and deleteMany, as well as transaction commit and abort commands. On engine versions earlier than 8.0.2, retryable writes remain unsupported and must be disabled.&lt;/p&gt;\n&lt;p&gt;Retryable writes are available on Amazon DocumentDB 8.0.2 instance-based and serverless clusters in all regions where Amazon DocumentDB 8.0 is available. To get started with retryable writes, see the &lt;a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/retryable-writes.html\"&gt;Amazon DocumentDB developer guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-documentdb-retryable-writes/",
+      "publishedAt": "2026-09-28T08:00:00.000Z",
+      "updatedAt": "2026-09-28T08:00:00.000Z",
+      "categories": [
+        "Amazon Documentdb",
+        "Databases"
+      ],
+      "services": [
+        "DocumentDB"
+      ],
+      "tags": [
+        "amazon documentdb",
+        "databases",
+        "documentdb"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "22bd5c1da8c3969b",
+      "title": "AWS Backup adds logically air-gapped vault support for Amazon FSx for NetApp ONTAP",
+      "description": "AWS Backup logically air-gapped vault now supports Amazon FSx for NetApp ONTAP. Logically air-gapped vaults are a type of AWS Backup vault that allows secure sharing of backups across accounts and AWS Organizations, supporting direct restore to reduce recovery time from a data loss event. You can now protect your Amazon FSx for NetApp ONTAP volumes in logically air-gapped vaults. A logically air-gapped vault stores immutable backups that are locked by default, and isolated with encryption using AWS owned keys or customer-managed keys. You can store your FSx for NetApp ONTAP backups in a logica",
+      "descriptionHtml": "&lt;p&gt;AWS Backup logically air-gapped vault now supports Amazon FSx for NetApp ONTAP. Logically air-gapped vaults are a type of AWS Backup vault that allows secure sharing of backups across accounts and AWS Organizations, supporting direct restore to reduce recovery time from a data loss event.&lt;/p&gt;\n&lt;p&gt;You can now protect your Amazon FSx for NetApp ONTAP volumes in logically air-gapped vaults. A logically air-gapped vault stores immutable backups that are locked by default, and isolated with encryption using AWS owned keys or customer-managed keys. You can store your FSx for NetApp ONTAP backups in a logically air-gapped vault in the same account or across other accounts and Regions. This helps reduce the risk of downtime, ensure business continuity, and meet compliance and disaster recovery requirements.&lt;/p&gt;\n&lt;p&gt;You can get started using the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. Target FSx for NetApp ONTAP backups to a logically air-gapped vault by specifying it as the primary target or copy destination in your backup plan. Share the vault for recovery or restore testing with other accounts using AWS Resource Access Manager (RAM), or safeguard vault access during account compromise using &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/multipartyapproval.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Multi-party approval&lt;/a&gt;. Once available, you can initiate direct restore jobs from that account, eliminating the overhead of copying backups first.&lt;/p&gt;\n&lt;p&gt;This support is available in all AWS Regions where both logically air-gapped vault and Amazon FSx for NetApp ONTAP are available. For more information and detailed regional availability, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Backup documentation&lt;/a&gt;. To learn more about logically air-gapped vaults, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairgappedvault.html\"&gt;feature documentation&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/backup/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-backup-air-gapped-vault-fsx-ontap/",
+      "publishedAt": "2026-09-28T08:00:00.000Z",
+      "updatedAt": "2026-09-28T08:00:00.000Z",
+      "categories": [
+        "Storage",
+        "Amazon Fsx Netapp Ontap",
+        "AWS Backup"
+      ],
+      "services": [
+        "FSx",
+        "Backup"
+      ],
+      "tags": [
+        "storage",
+        "amazon fsx netapp ontap",
+        "aws backup",
+        "fsx",
+        "backup"
+      ],
+      "isNew": true
+    },
     {
       "id": "455d2a9bcc71df81",
       "title": "Amazon Transcribe adds customer-managed KMS keys for custom resources",
@@ -748,7 +951,7 @@
         "amazon emr",
         "emr"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0cd12c531cf740c1",
@@ -774,7 +977,7 @@
         "outposts",
         "route 53"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "611338a9caf67955",
@@ -802,7 +1005,7 @@
         "aiml",
         "security hub"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "15ffe01630076003",
@@ -824,7 +1027,7 @@
         "analytics",
         "glue"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "46282a577d1bef3e",
@@ -848,7 +1051,7 @@
         "compute",
         "emr"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "63f004ff2c250a1a",
@@ -868,7 +1071,7 @@
         "amazon rds for sql server",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "146f98798c94f2c4",
@@ -885,7 +1088,7 @@
       "tags": [
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "3799e5d9f621a1a8",
@@ -913,7 +1116,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7e98d17a5b9eb995",
@@ -932,7 +1135,7 @@
         "compute",
         "migration"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "213bc32494d2bbc8",
@@ -11062,206 +11265,6 @@
         "storage",
         "compute",
         "outposts"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "3e5b63617049e0a5",
-      "title": "AWS Console Home now supports the Cost and Usage widget in the AWS European Sovereign Cloud (Germany) Region",
-      "description": "AWS Console Home now supports the Cost and Usage widget in the AWS European Sovereign Cloud (Germany) Region, allowing customers to surface insights from Cost Explorer and Cost Optimization Hub on their Console Home dashboard. With the Cost and Usage widget, customers can track month-to-date and forecasted costs, identify savings opportunities, and see how their spend breaks down by service over time. To get started, sign in to the AWS Management Console , select Add widgets, and drag the Cost and Usage widget onto your Console Home dashboard. To learn more, see Working with widgets in AWS Con",
-      "descriptionHtml": "&lt;p&gt;AWS Console Home now supports the Cost and Usage widget in the AWS European Sovereign Cloud (Germany) Region, allowing customers to surface insights from Cost Explorer and Cost Optimization Hub on their Console Home dashboard.&lt;/p&gt; \n&lt;p&gt;With the Cost and Usage widget, customers can track month-to-date and forecasted costs, identify savings opportunities, and see how their spend breaks down by service over time.&lt;/p&gt; \n&lt;p&gt;To get started, sign in to the &lt;a href=\"https://console.amazonaws-eusc.eu/\"&gt;AWS Management Console&lt;/a&gt;, select Add widgets, and drag the Cost and Usage widget onto your Console Home dashboard. To learn more, see &lt;a href=\"https://docs.aws.eu/awsconsolehelpdocs/latest/gsg/work-with-widgets.html\"&gt;Working with widgets in AWS Console Home documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-console-home-cost-and-usage-eu-sovereign-cloud",
-      "publishedAt": "2026-07-28T16:00:00.000Z",
-      "updatedAt": "2026-07-28T16:00:00.000Z",
-      "categories": [
-        "AWS Management Console",
-        "Cost Management"
-      ],
-      "services": [],
-      "tags": [
-        "aws management console",
-        "cost management"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b8f6979d16a1826d",
-      "title": "AWS DataSync Enhanced mode now supports Amazon EFS and Amazon FSx for Lustre",
-      "description": "AWS DataSync Enhanced mode now supports Amazon EFS and Amazon FSx for Lustre as source or destination locations. AWS DataSync is a secure, high-speed data transfer service that simplifies moving data over a network. Enhanced mode processes data in parallel, removes file count limitations, and provides detailed transfer metrics. Previously, customers who wanted to move data to or from EFS or FSx for Lustre were limited to Basic mode. Now customers can use Enhanced mode for these locations, simplifying workflows for large-scale migrations, agentic AI and machine learning training, high-performan",
-      "descriptionHtml": "&lt;p&gt;AWS DataSync Enhanced mode now supports Amazon EFS and Amazon FSx for Lustre as source or destination locations.&lt;/p&gt; \n&lt;p&gt;AWS DataSync is a secure, high-speed data transfer service that simplifies moving data over a network. Enhanced mode processes data in parallel, removes file count limitations, and provides detailed transfer metrics. Previously, customers who wanted to move data to or from EFS or FSx for Lustre were limited to Basic mode. Now customers can use Enhanced mode for these locations, simplifying workflows for large-scale migrations, agentic AI and machine learning training, high-performance computing, genomics processing, and media rendering.&lt;/p&gt; \n&lt;p&gt;This capability is available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where AWS DataSync is offered. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/datasync/home\"&gt;AWS DataSync console&lt;/a&gt;. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html\"&gt;AWS DataSync documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-datasync-amazon-efs-fsx-lustre/",
-      "publishedAt": "2026-07-28T10:00:00.000Z",
-      "updatedAt": "2026-07-28T10:00:00.000Z",
-      "categories": [
-        "AWS Datasync",
-        "Amazon Fsx For Lustre",
-        "Migration",
-        "Amazon Elastic File System"
-      ],
-      "services": [
-        "EFS",
-        "FSx",
-        "DataSync"
-      ],
-      "tags": [
-        "aws datasync",
-        "amazon fsx for lustre",
-        "migration",
-        "amazon elastic file system",
-        "efs",
-        "fsx",
-        "datasync"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "1d14f1fbfca7af5f",
-      "title": "AWS DataSync Enhanced mode adds HDFS, Azure Blob, and object storage locations with Hyper-V agent support",
-      "description": "AWS DataSync Enhanced mode now supports agent-based data transfers with Hadoop Distributed File Systems (HDFS), Microsoft Azure Blob Storage, and self-managed object storage. Additionally, Enhanced mode agents can now be deployed on Microsoft Hyper-V. Using a DataSync agent, customers can transfer data to and from these locations with the parallelism, unlimited file counts, and detailed metrics that Enhanced mode provides. Enhanced mode HDFS support includes multiple NameNode configurations for high availability and Transparent Data Encryption (TDE) with Kerberos authentication, enabling organ",
-      "descriptionHtml": "&lt;p&gt;AWS DataSync Enhanced mode now supports agent-based data transfers with Hadoop Distributed File Systems (HDFS), Microsoft Azure Blob Storage, and self-managed object storage. Additionally, Enhanced mode agents can now be deployed on Microsoft Hyper-V. Using a DataSync agent, customers can transfer data to and from these locations with the parallelism, unlimited file counts, and detailed metrics that Enhanced mode provides.&lt;/p&gt; \n&lt;p&gt;Enhanced mode HDFS support includes multiple NameNode configurations for high availability and Transparent Data Encryption (TDE) with Kerberos authentication, enabling organizations in regulated industries to securely migrate petabyte-scale encrypted Hadoop data without sacrificing availability.&lt;/p&gt; \n&lt;p&gt;This capability is available in all AWS Regions where AWS DataSync is offered. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/datasync/home\"&gt;AWS DataSync console&lt;/a&gt;. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html\"&gt;AWS DataSync documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-datasync-hdfs-azure-blob-hyper-v/",
-      "publishedAt": "2026-07-28T10:00:00.000Z",
-      "updatedAt": "2026-07-28T10:00:00.000Z",
-      "categories": [
-        "AWS Datasync",
-        "Migration"
-      ],
-      "services": [
-        "DataSync"
-      ],
-      "tags": [
-        "aws datasync",
-        "migration",
-        "datasync"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0f9a6403f6eb841c",
-      "title": "Amazon S3 Tables now support the Variant data type for Apache Iceberg V3",
-      "description": "Amazon S3 Tables now support the Variant data type as defined in the Apache Iceberg Version 3 (V3) specification. You can now write semi-structured data like JSON directly to S3 Tables without defining a fixed schema in advance, allowing you to land data faster while still getting efficient analytical query performance. With the Variant data type, Apache Iceberg V3-compatible engines shred your semi-structured data into hidden columns as you write it, generating Parquet column statistics that query engines use for optimizations like file pruning, which reduces the data your analytical queries ",
-      "descriptionHtml": "&lt;p&gt;Amazon S3 Tables now support the Variant data type as defined in the Apache Iceberg Version 3 (V3) specification. You can now write semi-structured data like JSON directly to S3 Tables without defining a fixed schema in advance, allowing you to land data faster while still getting efficient analytical query performance.&lt;br&gt; &lt;br&gt; With the Variant data type, Apache Iceberg V3-compatible engines shred your semi-structured data into hidden columns as you write it, generating Parquet column statistics that query engines use for optimizations like file pruning, which reduces the data your analytical queries scan. S3 Tables also provide ongoing table maintenance, including compaction, for Variant columns, so you can consolidate data from small files into large files that Iceberg engines can read.&lt;br&gt; &lt;br&gt; Variant support in S3 Tables is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm), and South America (São Paulo).&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://aws.amazon.com/s3/features/tables/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon S3 Tables&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/prescriptive-guidance/latest/apache-iceberg-on-aws/table-spec-v3.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Prescriptive Guidance for working with Iceberg table format specification version 3&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-s3-tables-variant-iceberg-v3/",
-      "publishedAt": "2026-07-28T07:00:00.000Z",
-      "updatedAt": "2026-07-28T07:00:00.000Z",
-      "categories": [
-        "Storage",
-        "Amazon Simple Storage Service"
-      ],
-      "services": [
-        "S3"
-      ],
-      "tags": [
-        "storage",
-        "amazon simple storage service",
-        "s3"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ab912f00f77e7e53",
-      "title": "Amazon Neptune now supports tag-based access control for IAM",
-      "description": "Amazon Neptune Database now supports tag-based access control (TBAC) for IAM, enabling customers to use AWS resource tags and IAM principal tags as conditions in IAM policies and Service Control Policies (SCPs) to control access to Neptune data-plane operations. Neptune already provides robust security through VPC isolation, TLS encryption, and IAM authentication, but customers managing multiple clusters at scale needed a dynamic, attribute-based mechanism to enforce organizational access boundaries. TBAC addresses this by allowing administrators to govern cluster access without enumerating sp",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/neptune/\" target=\"_blank\"&gt;Amazon Neptune&lt;/a&gt; Database now supports tag-based access control (TBAC) for IAM, enabling customers to use AWS resource tags and IAM principal tags as conditions in IAM policies and Service Control Policies (SCPs) to control access to Neptune data-plane operations. Neptune already provides robust security through VPC isolation, TLS encryption, and IAM authentication, but customers managing multiple clusters at scale needed a dynamic, attribute-based mechanism to enforce organizational access boundaries. TBAC addresses this by allowing administrators to govern cluster access without enumerating specific cluster ARNs in every policy.&lt;br&gt; &lt;br&gt; With TBAC, IAM principals can only perform `neptune-db:*` actions against Neptune clusters whose tags match their own — for example, a principal tagged `Project=FraudDetection` is automatically restricted to clusters sharing that same tag. This eliminates lateral access risk within shared VPC environments, enforces team and environment-level isolation across projects, and supports federated identity workflows using SAML or OIDC session tags from external identity providers. Granular permissions like neptune-db:QueryLanguage can be used alongside TBAC for more fine-grained access control.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon Neptune is available and requires Neptune engine version 1.2.0.0 or later with IAM authentication enabled.&lt;br&gt; &lt;br&gt; To learn more about configuring tag-based access control for Amazon Neptune, including how to tag your DB clusters and IAM principals and deploy organization-wide guardrails using SCPs, visit the &lt;a href=\"https://docs.aws.amazon.com/neptune/latest/userguide/iam-data-tbac.html\" target=\"_blank\"&gt;Amazon Neptune documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-neptune-tbac/",
-      "publishedAt": "2026-07-27T22:00:00.000Z",
-      "updatedAt": "2026-07-27T22:00:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Neptune"
-      ],
-      "services": [
-        "Neptune",
-        "IAM"
-      ],
-      "tags": [
-        "databases",
-        "amazon neptune",
-        "neptune",
-        "iam"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0022cf9272a07002",
-      "title": "AWS Glue Data Quality now supports anomaly detection and writing results to the AWS Glue Data Catalog",
-      "description": "AWS Glue Data Quality now supports anomaly detection for Catalog-based data quality evaluations and the ability to write evaluation results to AWS Glue Data Catalog (GDC) tables. These capabilities work across both ETL jobs and Catalog evaluations, giving you a consistent data quality experience regardless of workflow type. With anomaly detection support for GDC, you can identify unexpected changes in data statistics such as sudden drops in distinct values or row count spikes in your GDC tables using ML-powered time-series forecasting, without writing rules with explicit thresholds. This is es",
-      "descriptionHtml": "&lt;p&gt;AWS Glue Data Quality now supports anomaly detection for Catalog-based data quality evaluations and the ability to write evaluation results to AWS Glue Data Catalog (GDC) tables. These capabilities work across both ETL jobs and Catalog evaluations, giving you a consistent data quality experience regardless of workflow type.&lt;br&gt; &lt;br&gt; With anomaly detection support for GDC, you can identify unexpected changes in data statistics such as sudden drops in distinct values or row count spikes in your GDC tables using ML-powered time-series forecasting, without writing rules with explicit thresholds. This is especially valuable for data engineers monitoring hundreds of tables in the GDC who need to surface issues automatically.&lt;br&gt; &lt;br&gt; With results storage&lt;b&gt; &lt;/b&gt;in GDC, Data Quality rule outcomes, profiling metrics, and anomaly predictions (with confidence bounds) are written back to GDC tables, creating a queryable record of all quality evaluations. Whether the evaluation runs in an ETL job or directly on a Catalog table, results can be queried at any time using standard SQL.&lt;br&gt; &lt;br&gt; AWS Glue Data Quality anomaly detection and Catalog results storage are available in all AWS commercial regions and AWS GovCloud (US) regions.&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/data-quality.html\"&gt;AWS Glue Data Quality documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-glue-data-quality-catalog-anomaly-detection-write-results",
-      "publishedAt": "2026-07-27T20:45:00.000Z",
-      "updatedAt": "2026-07-27T20:45:00.000Z",
-      "categories": [
-        "Analytics",
-        "AWS Glue"
-      ],
-      "services": [
-        "Glue"
-      ],
-      "tags": [
-        "analytics",
-        "aws glue",
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "6b5f40432fe6a57c",
-      "title": "AWS Glue Data Quality now supports distribution statistics for data profiling",
-      "description": "AWS Glue Data Quality now supports a new Distribution Analyzer that generates frequency distribution profiles for your data. Using this new Distribution Analyzer in the Data Quality Definition Language (DQDL), you can generate histograms for numeric columns and value distributions for categorical, date, and boolean columns. With support for custom bin counts, you can explore the shape and patterns of your data at the granularity that matters most to your use case. Understanding how data is distributed is foundational to building reliable data pipelines. Distribution statistics help you quickly",
-      "descriptionHtml": "&lt;p&gt;AWS Glue Data Quality now supports a new Distribution Analyzer that generates frequency distribution profiles for your data. Using this new Distribution Analyzer in the Data Quality Definition Language (DQDL), you can generate histograms for numeric columns and value distributions for categorical, date, and boolean columns. With support for custom bin counts, you can explore the shape and patterns of your data at the granularity that matters most to your use case.&lt;br&gt; &lt;br&gt; Understanding how data is distributed is foundational to building reliable data pipelines. Distribution statistics help you quickly identify skewness, outliers, and unexpected patterns across your datasets, without writing custom code. The capability integrates directly with your existing DQDL rulesets, so you can add distribution profiling alongside your current data quality checks in a single evaluation run. Distribution statistics are stored in Amazon S3 for future querying through services like Amazon Athena, and are also surfaced through APIs, making it easy to integrate distribution insights into monitoring workflows and visualization tools, including SageMaker Unified Studio.&lt;br&gt; &lt;br&gt; AWS Glue Data Quality distribution statistics are available in all AWS commercial regions and AWS GovCloud (US) regions.&lt;br&gt; &lt;br&gt; To learn more about Glue Data Quality, visit the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/glue-data-quality.html\"&gt;AWS Glue Data Quality documentation&lt;/a&gt;. To get started with using Distribution Analyzer, visit the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/dqdl.html#dqdl-analyzers\"&gt;Analyzers documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-glue-data-quality-distribution-profiling",
-      "publishedAt": "2026-07-27T20:23:00.000Z",
-      "updatedAt": "2026-07-27T20:23:00.000Z",
-      "categories": [
-        "AWS Glue",
-        "Analytics"
-      ],
-      "services": [
-        "Glue"
-      ],
-      "tags": [
-        "aws glue",
-        "analytics",
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "cb63fbe532f7212a",
-      "title": "Amazon GameLift Streams now supports Custom Aspect Ratio and Dynamic Resolution",
-      "description": "Amazon GameLift Streams now supports Custom Aspect Ratio and Dynamic Resolution, giving you greater control over the streaming experience across diverse player devices and network conditions. With Custom Aspect Ratio, you can configure a specific resolution per stream session to match your player's device — including portrait, landscape, ultra-wide, and square aspect ratios. This eliminates letterboxing or pillarboxing, delivering native full-screen experiences on mobile phones, tablets, and non-standard displays. Specify any resolution from 320 to 4096 pixels per dimension (up to 1080p total ",
-      "descriptionHtml": "&lt;p&gt;Amazon GameLift Streams now supports Custom Aspect Ratio and Dynamic Resolution, giving you greater control over the streaming experience across diverse player devices and network conditions.&lt;/p&gt; \n&lt;p&gt;With Custom Aspect Ratio, you can configure a specific resolution per stream session to match your player's device — including portrait, landscape, ultra-wide, and square aspect ratios. This eliminates letterboxing or pillarboxing, delivering native full-screen experiences on mobile phones, tablets, and non-standard displays. Specify any resolution from 320 to 4096 pixels per dimension (up to 1080p total pixel budget) using the DisplayConfiguration parameter in the StartStreamSession API. You can also try custom resolution from the AWS Console.&lt;/p&gt; \n&lt;p&gt;Dynamic Resolution automatically adapts stream quality when a player's network bandwidth fluctuates. When bandwidth drops, the stream gracefully reduces resolution to maintain smooth playback without frame drops or disconnections — and automatically recovers to full quality when conditions improve. Dynamic Resolution is enabled by default for all new stream groups with no configuration required. Customers will need to download the new Web SDK.&lt;/p&gt; \n&lt;p&gt;Both features are available in all AWS Regions where Amazon GameLift Streams is offered. To learn more, see Custom stream resolution in the Amazon GameLift Streams Developer Guide.&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; &lt;a href=\"https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/custom-stream-resolution.html\"&gt;https://docs.aws.amazon.com/gameliftstreams/latest/developerguide/custom-stream-resolution.html&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-gamelift-streams/",
-      "publishedAt": "2026-07-27T18:58:00.000Z",
-      "updatedAt": "2026-07-27T18:58:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "91f4cb211f1717f1",
-      "title": "Amazon EKS now supports AWS PrivateLink for the cluster OIDC endpoint",
-      "description": "Amazon Elastic Kubernetes Service (Amazon EKS) now supports AWS PrivateLink for the cluster OIDC discovery and JWKS endpoint . You can now reach the endpoint used by IAM roles for service accounts (IRSA) privately from your VPC without requiring internet egress. Each EKS cluster publishes public signing keys at its OIDC endpoint for IRSA. With AWS PrivateLink for the cluster OIDC endpoint, tools running inside your VPC, such as eksctl, Terraform, or custom token validators, can now reach the OIDC discovery document and JWKS privately by creating an interface VPC endpoint for the com.amazonaws.",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/eks/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Elastic Kubernetes Service&lt;/a&gt; (Amazon EKS) now supports &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/vpc-interface-endpoints.html#oidc-vpc-interface-endpoints\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS PrivateLink for the cluster OIDC discovery and JWKS endpoint&lt;/a&gt;. You can now reach the endpoint used by &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;IAM roles for service accounts (IRSA)&lt;/a&gt; privately from your VPC without requiring internet egress.&lt;br&gt; &lt;br&gt; Each EKS cluster publishes public signing keys at its OIDC endpoint for IRSA. With AWS PrivateLink for the cluster OIDC endpoint, tools running inside your VPC, such as eksctl, Terraform, or custom token validators, can now reach the OIDC discovery document and JWKS privately by creating an interface VPC endpoint for the com.amazonaws.&amp;lt;region&amp;gt;.oidc-eks service. This enables IRSA setup and token validation in VPCs without internet egress and ensures correct DNS resolution when the EKS management VPC endpoint is enabled with private DNS.&lt;br&gt; &lt;br&gt; AWS PrivateLink for the cluster OIDC endpoint is available at no additional cost beyond standard &lt;a href=\"https://aws.amazon.com/privatelink/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS PrivateLink pricing&lt;/a&gt; in all AWS Regions where Amazon EKS is available. To get started, see &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/vpc-interface-endpoints.html#oidc-vpc-interface-endpoints\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Access the cluster OIDC endpoint using AWS PrivateLink&lt;/a&gt; in the Amazon EKS User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-eks-oidc-endpoint-privatelink",
-      "publishedAt": "2026-07-27T18:00:00.000Z",
-      "updatedAt": "2026-07-27T18:00:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Containers",
-        "Amazon Eks"
-      ],
-      "services": [
-        "EKS",
-        "PrivateLink"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "containers",
-        "amazon eks",
-        "eks",
-        "privatelink"
       ],
       "isNew": false
     }
