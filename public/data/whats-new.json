@@ -1,7 +1,179 @@
 {
-  "lastUpdated": "2026-10-02T14:30:28.380Z",
+  "lastUpdated": "2026-10-03T13:06:35.955Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "49e0bd1a32097a2c",
+      "title": "Amazon ECS adds Amazon VPC Lattice support for blue/green, linear, and canary deployments",
+      "description": "Amazon Elastic Container Service (Amazon ECS) now supports built-in blue/green, linear, and canary deployment strategies for ECS services using Amazon VPC Lattice . Applications that use VPC Lattice for service-to-service communication across VPCs and AWS accounts can now take advantage of managed traffic shifting natively from Amazon ECS when rolling out updates. With this launch, ECS customers using VPC Lattice can shift traffic in a controlled manner during deployments, choosing how quickly traffic moves based on their confidence in each release: all at once with blue/green, in equal increm",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Elastic Container Service&lt;/a&gt; (Amazon ECS) now supports built-in blue/green, linear, and canary deployment strategies for ECS services using &lt;a href=\"https://aws.amazon.com/vpc/lattice/\" target=\"_blank\"&gt;Amazon VPC Lattice&lt;/a&gt;. Applications that use VPC Lattice for service-to-service communication across VPCs and AWS accounts can now take advantage of managed traffic shifting natively from Amazon ECS when rolling out updates.&lt;/p&gt;\n&lt;p&gt;With this launch, ECS customers using VPC Lattice can shift traffic in a controlled manner during deployments, choosing how quickly traffic moves based on their confidence in each release: all at once with blue/green, in equal increments with linear, or starting with a small percentage with canary. Teams can validate new versions with test traffic before shifting production traffic, and run custom validation steps or manual approvals with deployment lifecycle hooks, including Lambda and pause hooks. These services can also use Amazon CloudWatch alarms and the Amazon ECS deployment circuit breaker to automatically roll back deployments if issues are detected, with bake time keeping the previous version ready for a quick rollback without downtime.&lt;/p&gt;\n&lt;p&gt;To get started, select your VPC Lattice target groups, listener rule, and preferred deployment strategy in the ECS service configuration using the AWS Management Console, AWS CLI, AWS SDKs, or Infrastructure-as-Code tools. This functionality can be enabled for both new and existing ECS services in all AWS &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Regions&lt;/a&gt; where VPC Lattice is available. For more information, see &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/vpc-lattice-resources-for-blue-green.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon ECS deployments with VPC Lattice&lt;/a&gt;.\n &lt;br&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-vpc-lattice-blue-green-deployments",
+      "publishedAt": "2026-10-02T20:18:00.000Z",
+      "updatedAt": "2026-10-02T20:18:00.000Z",
+      "categories": [
+        "AWS Fargate",
+        "Containers",
+        "Amazon Ecs",
+        "Serverless"
+      ],
+      "services": [
+        "ECS",
+        "Fargate",
+        "VPC"
+      ],
+      "tags": [
+        "aws fargate",
+        "containers",
+        "amazon ecs",
+        "serverless",
+        "ecs",
+        "fargate",
+        "vpc"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "09375ddb03aeb69d",
+      "title": "AWS Health introduces the version catalog for software lifecycle management",
+      "description": "Today, AWS Health introduces the version catalog which provides a centralized source of lifecycle information for software versions across AWS services. The version catalog helps customers move from reactive to proactive management of version upgrades and end-of-support risk. It is available in the AWS Health Dashboard, and customers on Business Support Plus, Enterprise Support, or Unified Operations can use the AWS Health API to integrate lifecycle data into their operational workflows. Customers running applications on AWS need to stay current with software versions to maintain a strong secu",
+      "descriptionHtml": "&lt;p&gt;Today, AWS Health introduces the version catalog which provides a centralized source of lifecycle information for software versions across AWS services. The version catalog helps customers move from reactive to proactive management of version upgrades and end-of-support risk. It is available in the AWS Health Dashboard, and customers on Business Support Plus, Enterprise Support, or Unified Operations can use the AWS Health API to integrate lifecycle data into their operational workflows.&lt;/p&gt;\n&lt;p&gt;Customers running applications on AWS need to stay current with software versions to maintain a strong security and operational posture. AWS Health already sends account and resource-specific Planned Lifecycle Events well in advance for major version end-of-support milestones. The version catalog adds service-wide view of supported versions and their timelines, so customers can build upgrade schedules, governance controls, and move to newer supported versions before receiving an account-specific Planned Lifecycle Event.&lt;/p&gt;\n&lt;p&gt;At launch, the version catalog covers multiple AWS services including Amazon RDS, Amazon EKS, and AWS Lambda with more services being added over time. The version catalog is available across all AWS Commercial Regions.&lt;/p&gt;\n&lt;p&gt;To get started, visit the version catalog in the &lt;a href=\"https://health.console.aws.amazon.com/health/home?region=us-east-1#/account/version-catalog\"&gt;AWS Health Dashboard&lt;/a&gt; or read the &lt;a href=\"https://docs.aws.amazon.com/health/latest/ug/aws-health-version-catalog.html\"&gt;documentation&lt;/a&gt; to learn more.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-health-introduces-version-catalog-software-lifecycle-management",
+      "publishedAt": "2026-10-02T18:09:00.000Z",
+      "updatedAt": "2026-10-02T18:09:00.000Z",
+      "categories": [
+        "AWS Health",
+        "Management And Governance",
+        "AWS Support"
+      ],
+      "services": [
+        "Health"
+      ],
+      "tags": [
+        "aws health",
+        "management and governance",
+        "aws support",
+        "health"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f977b0fc85e17e05",
+      "title": "Amazon Aurora DSQL now supports partial indexes",
+      "description": "Amazon Aurora DSQL now lets you build an index over a specific subset of a table, storing only qualifying rows rather than every row in the entire table, which improves query performance and lowers index storage cost. Many tables hold a small working set alongside a much larger history, such as open orders among years of completed ones. Add a WHERE clause to CREATE INDEX to index just that working set. The index stays small as the table grows, and queries that target those rows read less data. Aurora DSQL uses a partial index for any query whose filter falls within the index's condition. Parti",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/aurora/dsql/\"&gt;Amazon Aurora DSQL&lt;/a&gt; now lets you build an index over a specific subset of a table, storing only qualifying rows rather than every row in the entire table, which improves query performance and lowers index storage cost.&lt;/p&gt;\n&lt;p&gt;Many tables hold a small working set alongside a much larger history, such as open orders among years of completed ones. Add a WHERE clause to CREATE INDEX to index just that working set. The index stays small as the table grows, and queries that target those rows read less data. Aurora DSQL uses a partial index for any query whose filter falls within the index's condition.&lt;/p&gt;\n&lt;p&gt;Partial indexes are available in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where Aurora DSQL is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/aurora-dsql/latest/userguide/create-index-syntax-support.html\"&gt;CREATE INDEX&lt;/a&gt; in the Aurora DSQL User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-dsql-partial-indexes/",
+      "publishedAt": "2026-10-02T17:30:00.000Z",
+      "updatedAt": "2026-10-02T17:30:00.000Z",
+      "categories": [
+        "Databases"
+      ],
+      "services": [
+        "Aurora"
+      ],
+      "tags": [
+        "databases",
+        "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "48fe2d4e1794fa8b",
+      "title": "Amazon EKS and Amazon EKS Distro now support Kubernetes version 1.37",
+      "description": "Kubernetes version 1.37 introduced several new features and bug fixes, and AWS is excited to announce that you can now use Amazon Elastic Kubernetes Service (EKS) and Amazon EKS Distro to run Kubernetes version 1.37. Starting today, you can create new EKS clusters using version 1.37 and upgrade existing clusters to version 1.37 using the EKS console, the eksctl command line interface, or through an infrastructure-as-code tool. Kubernetes version 1.37 introduces several key improvements, promoting the Metrics API to general availability as metrics.k8s.io/v1 . This API provides Pod and node CPU ",
+      "descriptionHtml": "&lt;p&gt;Kubernetes version 1.37 introduced several new features and bug fixes, and AWS is excited to announce that you can now use &lt;a href=\"https://aws.amazon.com/eks/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Elastic Kubernetes Service&lt;/a&gt; (EKS) and &lt;a href=\"https://aws.amazon.com/eks/eks-distro/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon EKS Distro&lt;/a&gt; to run Kubernetes version 1.37. Starting today, you can create new EKS clusters using version 1.37 and upgrade existing clusters to version 1.37 using the EKS console, the eksctl command line interface, or through an infrastructure-as-code tool.&lt;/p&gt;\n&lt;p&gt;Kubernetes version 1.37 introduces several key improvements, promoting the Metrics API to general availability as &lt;i&gt;metrics.k8s.io/v1&lt;/i&gt;. This API provides Pod and node CPU and memory usage for the Horizontal Pod Autoscaler and &lt;i&gt;kubectl top&lt;/i&gt;. Dynamic Resource Allocation (DRA) device taints and tolerations also graduate to general availability, letting DRA drivers and administrators taint devices such as GPUs so the scheduler avoids them unless tolerated. Horizontal Pod Autoscaler scale-to-zero graduates to beta and is enabled by default, allowing autoscalers with &lt;i&gt;minReplicas: 0&lt;/i&gt; that use object or external metrics to scale workloads to zero Pods when idle and back up when demand returns. To learn more about Kubernetes version 1.37, see our &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions-standard.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt; and the Kubernetes project &lt;a href=\"https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;release notes.&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;EKS now supports Kubernetes version 1.37 in all the AWS Regions where EKS is available, including the AWS GovCloud (US) Regions.&lt;/p&gt;\n&lt;p&gt;You can learn more about the Kubernetes versions available on EKS and instructions to update your cluster to version 1.37 by visiting EKS documentation. You can use &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/cluster-insights.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;EKS cluster insights&lt;/a&gt; to check if there are any issues that can impact your Kubernetes cluster upgrades. EKS Distro builds of Kubernetes version 1.37 are available through ECR Public Gallery and GitHub. Learn more about the EKS version lifecycle policies in the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/kubernetes-versions.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-distro-kubernetes-version-1-37",
+      "publishedAt": "2026-10-02T17:30:00.000Z",
+      "updatedAt": "2026-10-02T17:30:00.000Z",
+      "categories": [
+        "Containers",
+        "AWS Govcloud Us",
+        "Amazon Eks"
+      ],
+      "services": [
+        "EKS"
+      ],
+      "tags": [
+        "containers",
+        "aws govcloud us",
+        "amazon eks",
+        "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9527aeff89630720",
+      "title": "AWS Brazil automates distribution of non-Brazilian software product licenses to Brazilian customers",
+      "description": "AWS Brazil now provides an automated distribution workflow through the AWS Brazil 2P Distribution Program. Eligible non-Brazilian independent software vendors (ISVs) grant AWS Brazil the right to distribute their Software-as-a-Service (SaaS) product licenses, and AWS Brazil distributes them to customers in Brazil. AWS Brazil is the seller of record, invoicing Brazilian customers in Brazilian Reais (BRL) with applicable Brazilian taxes. The distribution authorizations, seller disbursements, withholding tax calculation, invoicing, and seller reporting are automated. Eligible ISVs agree to the ap",
+      "descriptionHtml": "&lt;p&gt;AWS Brazil now provides an automated distribution workflow through the AWS Brazil 2P Distribution Program. Eligible non-Brazilian independent software vendors (ISVs) grant AWS Brazil the right to distribute their Software-as-a-Service (SaaS) product licenses, and AWS Brazil distributes them to customers in Brazil. AWS Brazil is the seller of record, invoicing Brazilian customers in Brazilian Reais (BRL) with applicable Brazilian taxes. The distribution authorizations, seller disbursements, withholding tax calculation, invoicing, and seller reporting are automated.&lt;/p&gt;\n&lt;p&gt;Eligible ISVs agree to the applicable Brazil 2P distribution terms to grant AWS Brazil the right to distribute SaaS product licenses locally by creating distribution authorizations through AWS Partner Central or public APIs. AWS Brazil, as the seller of record, creates private offers for Brazilian buyers, determines the buyer-facing price, and automatically generates invoices, calculates and withholds taxes, and disburses payments. ISVs track transactions and payment status through the Seller Insights dashboard.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Buyers in Brazil see private offers priced in USD and invoiced in BRL by AWS Brazil, using the exchange rate on the invoice date. Buyers can pay by credit card (Visa, Mastercard, American Express) or Pay by Invoice (PBI), add a purchase order number, and access invoices in the AWS Billing Console.&lt;/p&gt;\n&lt;p&gt;To learn more about the AWS Brazil 2P Distribution Program, visit the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/brazil-2p-getting-started.html\"&gt;AWS Marketplace Seller Guide&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/buyerguide/brazil-2p-buyer-faq.html\"&gt;AWS Marketplace Buyer Guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-brazil-software-license-distribution/",
+      "publishedAt": "2026-10-02T16:30:00.000Z",
+      "updatedAt": "2026-10-02T16:30:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
+    {
+      "id": "9cc727417f4828a2",
+      "title": "The AWS MCP Server is now available in six additional AWS Regions",
+      "description": "The AWS MCP Server is now available in six additional AWS Regions: Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Ireland), Europe (London), and US West (Oregon). The AWS MCP Server, part of the Agent Toolkit for AWS , is a managed Model Context Protocol server that gives AI coding agents a single interface to AWS APIs, so agents can discover and call AWS services without building and maintaining per-service integrations. With this expansion, customers in these Regions can run the AWS MCP Server closer to their developers with lower latency, and keep request dat",
+      "descriptionHtml": "&lt;p&gt;The AWS MCP Server is now available in six additional AWS Regions: Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Ireland), Europe (London), and US West (Oregon). The AWS MCP Server, part of the &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws\" data-pdffiller-skip=\"1\"&gt;Agent Toolkit for AWS&lt;/a&gt;, is a managed Model Context Protocol server that gives AI coding agents a single interface to AWS APIs, so agents can discover and call AWS services without building and maintaining per-service integrations.&lt;/p&gt;\n&lt;p&gt;With this expansion, customers in these Regions can run the AWS MCP Server closer to their developers with lower latency, and keep request data within the Region to meet data residency requirements. For example, a development team in London can point its coding agents at a local endpoint to provision infrastructure, inspect running workloads, and debug failures without routing requests to another geography. The AWS MCP Server can access services in all commercial AWS Regions, while the AWS MCP Server itself runs in the Regions listed below.&lt;/p&gt;\n&lt;p&gt;You can use AWS MCP Server in the following AWS Regions: US East (N. Virginia), US West (Oregon), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), and Europe (London).&lt;/p&gt;\n&lt;p&gt;To get started, see the following resources:&lt;/p&gt;\n&lt;p&gt;- &lt;a href=\"https://docs.aws.amazon.com/aws-mcp/latest/userguide/getting-started-aws-mcp-server.html\" data-pdffiller-skip=\"1\"&gt;Getting started with the AWS MCP Server&lt;/a&gt;&lt;/p&gt;\n&lt;p&gt;- &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/aws-mcp.html\" data-pdffiller-skip=\"1\"&gt;AWS MCP Server endpoints and quotas&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-mcp-server-six-additional-regions/",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "updatedAt": "2026-10-02T08:00:00.000Z",
+      "categories": [
+        "Developer Tools"
+      ],
+      "services": [],
+      "tags": [
+        "developer tools"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e15d1053d32652a5",
+      "title": "AgentCore Gateway supports private TLS certificates for VPC endpoints",
+      "description": "Amazon Bedrock AgentCore Gateway now supports TLS certificates signed by private certificate authorities (CAs) on MCP, OpenAPI, and HTTP proxy targets. This feature enables you to connect securely to gateway targets that use TLS certificates issued by your own private certificate authority. With this feature, you can establish native connections to private endpoints in your VPC without requiring an intermediate Application Load Balancer. You can register a private CA certificate with gateway targets that use private endpoints powered by Amazon VPC Lattice. The gateway fetches your PEM-encoded ",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore Gateway now supports TLS certificates signed by private certificate authorities (CAs) on MCP, OpenAPI, and HTTP proxy targets. This feature enables you to connect securely to gateway targets that use TLS certificates issued by your own private certificate authority. With this feature, you can establish native connections to private endpoints in your VPC without requiring an intermediate Application Load Balancer.&lt;/p&gt;\n&lt;p&gt;You can register a private CA certificate with gateway targets that use private endpoints powered by Amazon VPC Lattice. The gateway fetches your PEM-encoded CA certificate from Amazon S3 or AWS Secrets Manager and uses it as the trust anchor for outbound TLS connections. Private CA support is available for MCP server targets, OpenAPI targets, and HTTP proxy (passthrough) targets.&lt;/p&gt;\n&lt;p&gt;Support for private certificates on AgentCore Gateway is available in all Regions where both AgentCore Gateway and Amazon VPC Lattice are available. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-vpc-egress.html#gateway-private-certificate\"&gt;AgentCore Developer Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-gateway-private-tls-vpc/",
+      "publishedAt": "2026-10-02T08:00:00.000Z",
+      "updatedAt": "2026-10-02T08:00:00.000Z",
+      "categories": [
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "VPC",
+        "Bedrock"
+      ],
+      "tags": [
+        "amazon bedrock",
+        "vpc",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f30e21eb0a319aa8",
+      "title": "Amazon ElastiCache for Valkey now supports OpenTelemetry metrics and detailed monitoring",
+      "description": "Amazon ElastiCache for Valkey now publishes OpenTelemetry metrics to Amazon CloudWatch for your node-based clusters, and each metric carries attributes you can filter and aggregate on with Prometheus Query Language (PromQL) expressions. ElastiCache now offers two monitoring modes. Standard monitoring, the existing experience, continues to publish CloudWatch Metrics (Classic) every 60 seconds and now also publishes a core set of OpenTelemetry metrics at the same interval at no additional charge. Detailed monitoring, the new mode, lets you select from the full set of OpenTelemetry metrics and pu",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/elasticache/\"&gt;Amazon ElastiCache&lt;/a&gt; for Valkey now publishes OpenTelemetry metrics to Amazon CloudWatch for your node-based clusters, and each metric carries attributes you can filter and aggregate on with Prometheus Query Language (PromQL) expressions. ElastiCache now offers two monitoring modes. Standard monitoring, the existing experience, continues to publish CloudWatch Metrics (Classic) every 60 seconds and now also publishes a core set of OpenTelemetry metrics at the same interval at no additional charge. Detailed monitoring, the new mode, lets you select from the full set of OpenTelemetry metrics and publish them every 15 seconds.&lt;/p&gt;\n&lt;p&gt;With OpenTelemetry metrics, you can detect any node in a cluster nearing its connection limit, break errors down by type during an incident, or forecast if a node will run out of memory. You can run these queries in CloudWatch and Grafana, keeping PromQL skills your team already has. With detailed monitoring, you can balance diagnostic depth and cost, with 15-second metrics enabling detection of short-lived events like latency spikes. The core set of OpenTelemetry metrics also powers &lt;a href=\"https://console.aws.amazon.com/cloudwatch/home#dashboards/insights/elasticache\"&gt;ElastiCache Insights&lt;/a&gt;, a pre-built dashboard in Amazon CloudWatch.&lt;/p&gt;\n&lt;p&gt;To get started, open the Metrics tab for a cluster in the &lt;a href=\"https://console.aws.amazon.com/elasticache/\"&gt;Amazon ElastiCache console&lt;/a&gt;, select Detailed, and choose Configure detailed metrics.&lt;/p&gt;\n&lt;p&gt;OpenTelemetry metrics and detailed monitoring are available for node-based Valkey clusters in all AWS Regions where Amazon CloudWatch supports OpenTelemetry metrics. There is no additional charge from ElastiCache for detailed monitoring. &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;CloudWatch pricing for OpenTelemetry metrics&lt;/a&gt; applies to the detailed monitoring metrics you select, alarms you create, and PromQL API queries you run.&lt;/p&gt;\n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/otel-metrics.html\"&gt;Monitoring ElastiCache with OpenTelemetry metrics&lt;/a&gt; in the Amazon ElastiCache User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-elasticache-valkey-opentelemetry-metrics-detailed-monitoring",
+      "publishedAt": "2026-10-02T07:00:00.000Z",
+      "updatedAt": "2026-10-02T07:00:00.000Z",
+      "categories": [
+        "Amazon Elasticache",
+        "Databases"
+      ],
+      "services": [
+        "ElastiCache"
+      ],
+      "tags": [
+        "amazon elasticache",
+        "databases",
+        "elasticache"
+      ],
+      "isNew": true
+    },
     {
       "id": "cf5559b9d733f525",
       "title": "GuardDuty Runtime Monitoring is now included in the AWS Security Hub Threat Analytics plan",
@@ -1623,7 +1795,7 @@
         "kms",
         "transcribe"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "994f5731ce861b2a",
@@ -1645,7 +1817,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ed5cc3d7b6a446f2",
@@ -1667,7 +1839,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e7ca39c1319899cb",
@@ -1689,7 +1861,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a73f02bf9d972686",
@@ -1715,7 +1887,7 @@
         "vpc",
         "iam"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b2a7b19f0d48a529",
@@ -1732,7 +1904,7 @@
       "tags": [
         "datasync"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "27847447baac6e7c",
@@ -11104,165 +11276,6 @@
         "amazon neptune",
         "backup",
         "neptune"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d637626e1b757fe8",
-      "title": "Amazon Quick supports multi-dataset analytical capabiity",
-      "description": "Today, Amazon Quick announces supporting multi-dataset topics, enabling users to model relationships across multiple datasets in a single topic and use that model to build dashboards and answer questions in natural language. Previously, answering a question in a Quick Sight visual that spanned datasets required pre-joining the data into a single dataset—adding manual JOIN logic in the data preparation, consuming extra SPICE capacity, and users have to rebuild multiple datasets based on different use cases or when the model changed. With multi-dataset topics, a topic becomes a reusable relation",
-      "descriptionHtml": "&lt;p&gt;Today, Amazon Quick announces supporting multi-dataset topics, enabling users to model relationships across multiple datasets in a single topic and use that model to build dashboards and answer questions in natural language. Previously, answering a question in a Quick Sight visual that spanned datasets required pre-joining the data into a single dataset—adding manual JOIN logic in the data preparation, consuming extra SPICE capacity, and users have to rebuild multiple datasets based on different use cases or when the model changed. With multi-dataset topics, a topic becomes a reusable relational data model: users add multiple datasets, define the relationships once, and Quick performs the joins at runtime.&lt;/p&gt; \n&lt;p&gt;The new capability applies for both dashboard building and natural-language Q&amp;amp;A. For dashboard building, the topic acts as the data model, so a single visual can draw fields from multiple datasets and Quick generates the underlying join automatically—users author the semantic model once and reuse it across every visual in the dashboard. For natural-language analytics, users can point a chat agent directly at a topic and ask questions; the agent reads the relationships defined in the topic and performs runtime joins across datasets to answer, with no need to pre-join tables or prepare data first. Because both experiences query toward the same topic, one governed semantic model serves as the single source of truth for people and agents alike. Multi-dataset topics reuse existing dataset permissions and support row-level and column-level security (RLS/CLS), so established governance carries through every cross-dataset visual and every answer.&lt;/p&gt; \n&lt;p&gt;Multi-dataset topics are now generally available in all AWS Regions &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html#regions-qs\"&gt;where Amazon Quick is available&lt;/a&gt;. To get started, see this &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/build-a-unified-semantic-layer-across-datasets-with-multi-dataset-topics-in-amazon-quick/\"&gt;blog post&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick/",
-      "publishedAt": "2026-08-06T06:54:00.000Z",
-      "updatedAt": "2026-08-06T06:54:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "30a9d1304887c0dd",
-      "title": "Announcing temporal policies and rate limiting in Amazon Bedrock AgentCore",
-      "description": "Amazon Bedrock AgentCore announces two new controls: temporal policies for stateful agent authorization and rate limiting for AI traffic. Temporal policies let you define stateful authorization rules that evaluate each request in the context of an agent's prior actions within a session, because a single tool call can be safe in isolation yet harmful given what preceded it. With temporal policies you can enforce workflow sequencing, require that a tool argument exactly matches the output of a prior call, require human approval before taking privileged actions, and enforce data freshness. Rate l",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore announces two new controls: temporal policies for stateful agent authorization and rate limiting for AI traffic.&lt;/p&gt; \n&lt;p&gt;Temporal policies let you define stateful authorization rules that evaluate each request in the context of an agent's prior actions within a session, because a single tool call can be safe in isolation yet harmful given what preceded it. With temporal policies you can enforce workflow sequencing, require that a tool argument exactly matches the output of a prior call, require human approval before taking privileged actions, and enforce data freshness.&lt;/p&gt; \n&lt;p&gt;Rate limiting enables per-user or per-group controls over how much traffic flows to the tools, models, and agents connected to your gateway. Using rules scoped by OAuth or AWS IAM, you can set rate limits on requests across all target types, tokens for inference targets, and concurrent connections to cap long-lived concurrent sessions, aiding downstream service availability and enforcing fair limit distribution.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;For regional availability and to learn more, see the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html\"&gt;documentation&lt;/a&gt;, read the &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/control-agent-behaviors-and-cost-beyond-a-single-action-new-capabilities-in-amazon-bedrock-agentcore/\"&gt;announcement blog,&lt;/a&gt; and explore the &lt;a href=\"https://github.com/dogwood-policy\"&gt;Dogwood reference implementation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/temporal-policies-agentcore/",
-      "publishedAt": "2026-08-06T04:00:00.000Z",
-      "updatedAt": "2026-08-06T04:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a0435dbae7c904b8",
-      "title": "Amazon EC2 M8g instances now available in additional regions",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M8g instances are available in AWS Asia Pacific (Taipei), and AWS Mexico (Central) regions. These instances are powered by AWS Graviton4 processors and deliver up to 30% better performance compared to AWS Graviton3-based instances. Amazon EC2 M8g instances are built for general-purpose workloads, such as application servers, microservices, gaming servers, midsize data stores, and caching fleets. These instances are built on the AWS Nitro System , which oﬄoads CPU virtualization, storage, and networking functions to dedicated hardware an",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) M8g instances are available in AWS Asia Pacific (Taipei), and AWS Mexico (Central) regions. These instances are powered by AWS Graviton4 processors and deliver up to 30% better performance compared to AWS Graviton3-based instances. Amazon EC2 M8g instances are built for general-purpose workloads, such as application servers, microservices, gaming servers, midsize data stores, and caching fleets. These instances are built on the &lt;a href=\"https://aws.amazon.com/ec2/nitro/\"&gt;AWS Nitro System&lt;/a&gt;, which oﬄoads CPU virtualization, storage, and networking functions to dedicated hardware and software to enhance the performance and security of your workloads.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;AWS Graviton4-based Amazon EC2 instances deliver the best performance and energy efficiency for a broad range of workloads running on Amazon EC2. These instances offer larger instance sizes with up to 3x more vCPUs and memory compared to Graviton3-based Amazon M7g instances. AWS Graviton4 processors are up to 40% faster for databases, 30% faster for web applications, and 45% faster for large Java applications than AWS Graviton3 processors. M8g instances are available in 12 different instance sizes, including two bare metal sizes. They offer up to 50 Gbps enhanced networking bandwidth and up to 40 Gbps of bandwidth to the Amazon Elastic Block Store (Amazon EBS).&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8g/\"&gt;Amazon EC2 M8g Instances&lt;/a&gt;. To explore how to migrate your workloads to Graviton-based instances, see &lt;a href=\"https://aws.amazon.com/ec2/graviton/fast-start/\"&gt;AWS Graviton Fast Start program&lt;/a&gt; and &lt;a href=\"https://github.com/aws/porting-advisor-for-graviton\"&gt;Porting Advisor for Graviton&lt;/a&gt;. To get started, see the &lt;a href=\"https://console.aws.amazon.com/\"&gt;AWS Management Console&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-m8g-instances-additional-regions/",
-      "publishedAt": "2026-08-06T00:27:00.000Z",
-      "updatedAt": "2026-08-06T00:27:00.000Z",
-      "categories": [
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f35dd44b08e3f7aa",
-      "title": "AWS Lambda announces scalable network bandwidth up to 3,000 Mbps for functions outside a VPC",
-      "description": "AWS Lambda now supports scalable network bandwidth for Lambda functions, enabling faster data transfer to and from your execution environment for latency-sensitive workloads. This feature enables functions outside a VPC configured with 2 GB of memory or more to access network bandwidth that scales proportionally, from 625 Mbps at 2 GB up to 3,000 Mbps at 10 GB. Customers use Lambda to build latency-sensitive data processing workloads, which need to transfer large volumes of data - up to several terabytes - from external data sources into the function’s execution environment for processing. As ",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/lambda/\"&gt;AWS Lambda&lt;/a&gt; now supports scalable network bandwidth for Lambda functions, enabling faster data transfer to and from your execution environment for latency-sensitive workloads. This feature enables functions outside a VPC configured with 2 GB of memory or more to access network bandwidth that scales proportionally, from 625 Mbps at 2 GB up to 3,000 Mbps at 10 GB.&lt;br&gt; &lt;br&gt; Customers use Lambda to build latency-sensitive data processing workloads, which need to transfer large volumes of data - up to several terabytes - from external data sources into the function’s execution environment for processing. As data volume and performance requirements grow, the existing limit of 625 Mbps can constrain data transfer speeds to and from an execution environment.&amp;nbsp;With this launch, network throughput increases proportionally from 625 Mbps at 2 GB up to 3,000 Mbps at 10 GB, helping reduce function execution times and per-invocation costs while improving end-user experience.&lt;br&gt; &lt;br&gt; To get started, submit a request through &lt;a href=\"https://console.aws.amazon.com/servicequotas/home/services/lambda/quotas\"&gt;AWS Service Quotas&lt;/a&gt; under the Network bandwidth per execution environment quota to enable scalable network bandwidth on your account. Once enabled, bandwidth will scale automatically based on your function's memory configuration for all functions outside a VPC in your account.&lt;br&gt; &lt;br&gt; Scalable network bandwidth for functions outside a VPC is available at no additional charge in all commercial &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regions_az/\"&gt;AWS Regions&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html\"&gt;Lambda quotas&lt;/a&gt; page.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-lambda-network-bandwidth/",
-      "publishedAt": "2026-08-05T21:35:00.000Z",
-      "updatedAt": "2026-08-05T21:35:00.000Z",
-      "categories": [
-        "Serverless",
-        "AWS Lambda"
-      ],
-      "services": [
-        "Lambda",
-        "VPC"
-      ],
-      "tags": [
-        "serverless",
-        "aws lambda",
-        "lambda",
-        "vpc"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "29c090ffa55d8e5a",
-      "title": "Amazon Keyspaces (for Apache Cassandra) is now available in the Canada West (Calgary) Region (ca-west-1)",
-      "description": "Amazon Keyspaces (for Apache Cassandra) is now available in the Canada West (Calgary) Region (ca-west-1), allowing customers in the Canada West Region to build Cassandra-compatible applications with lower latency while keeping their data within the Region to meet data residency requirements. Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. Amazon Keyspaces is serverless, so you pay for only the resources that you use and you can build applications that serve thousands of requests per second with virtually unlimit",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/keyspaces/\"&gt;Amazon Keyspaces (for Apache Cassandra)&lt;/a&gt; is now available in the Canada West (Calgary) Region (ca-west-1), allowing customers in the Canada West Region to build Cassandra-compatible applications with lower latency while keeping their data within the Region to meet data residency requirements. &lt;/p&gt; \n&lt;p&gt;Amazon Keyspaces (for Apache Cassandra) is a scalable, highly available, and managed Apache Cassandra–compatible database service. Amazon Keyspaces is serverless, so you pay for only the resources that you use and you can build applications that serve thousands of requests per second with virtually unlimited throughput and storage.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This regional expansion enables organizations in Canada to build highly scalable, low-latency applications using familiar Cassandra Query Language (CQL) without the operational burden of managing Cassandra clusters.&lt;/p&gt; \n&lt;p&gt;To learn more about on Keyspaces, visit the &lt;a href=\"https://docs.aws.amazon.com/keyspaces/latest/devguide/what-is-keyspaces.html\"&gt;Amazon Keyspaces documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2025/11/amazon-keyspaces-apache-cassandra-canada-west/",
-      "publishedAt": "2026-08-05T20:06:00.000Z",
-      "updatedAt": "2026-08-05T20:06:00.000Z",
-      "categories": [
-        "Amazon Keyspaces",
-        "Databases"
-      ],
-      "services": [
-        "Keyspaces"
-      ],
-      "tags": [
-        "amazon keyspaces",
-        "databases",
-        "keyspaces"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d69c7caae5cd68b7",
-      "title": "AWS Glue Data Quality makes ETL anomaly detection free and improves anomaly predictions",
-      "description": "AWS Glue Data Quality now offers improved anomaly detection with a new observation mode that reduces detection of false anomalies and removes pricing for anomaly detection in ETL jobs. Customers using notebook-based or exploratory workflows now benefit from smarter anomaly detection that gracefully handles irregular data arrival intervals. This new capability avoids over-extrapolating trends by using a constant baseline instead of a linear trend, delivering more accurate alerts and reducing noise so teams can focus on genuine anomalies. The new anomaly detection observation mode is particularl",
-      "descriptionHtml": "&lt;p&gt;AWS Glue Data Quality now offers improved anomaly detection with a new observation mode that reduces detection of false anomalies and removes pricing for anomaly detection in ETL jobs.&amp;nbsp;Customers using notebook-based or exploratory workflows now benefit from smarter anomaly detection that gracefully handles irregular data arrival intervals. This new capability avoids over-extrapolating trends by using a constant baseline instead of a linear trend, delivering more accurate alerts and reducing noise so teams can focus on genuine anomalies.&lt;br&gt; &lt;br&gt; The new anomaly detection observation mode is particularly useful for exploratory data analysis, datasets with flat or random patterns, workloads without predictable trends and cases where you run data quality checks on varying schedules or in interactive environments like notebooks. Additionally, anomaly detection for AWS Glue ETL jobs is now available at no additional cost, so you can monitor data quality anomalies across all your Glue pipelines without worrying about pricing.&lt;br&gt; &lt;br&gt; These improvements are available in all AWS commercial regions and AWS GovCloud (US) regions.&lt;br&gt; &lt;br&gt; To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/data-quality.html\"&gt;AWS Glue Data Quality documentation&lt;/a&gt;. To learn more about pricing, see the &lt;a href=\"https://aws.amazon.com/glue/pricing/\"&gt;AWS Glue pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-glue-data-quality-anomaly-detection-free",
-      "publishedAt": "2026-08-05T18:25:00.000Z",
-      "updatedAt": "2026-08-05T18:25:00.000Z",
-      "categories": [
-        "AWS Glue",
-        "Analytics"
-      ],
-      "services": [
-        "Glue"
-      ],
-      "tags": [
-        "aws glue",
-        "analytics",
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "8731df1fdd246513",
-      "title": "AWS Marketplace adds AI Insights so buyers can understand pricing before they buy",
-      "description": "You can now understand how a product's pricing works before you buy it. Available in the pricing section of the listing in AWS Marketplace, AI Insights explains each product's pricing in plain language: what a pricing unit maps to, how your bill changes as usage scales, how multiple pricing dimensions combine into one cost, and what is and isn't included. Answering these questions used to mean having to visit multiple websites and piecing together pricing details on your own. Now the context sits on the listing, so you can evaluate pricing and move to purchase without switching tabs. AI Insigh",
-      "descriptionHtml": "&lt;p&gt;You can now understand how a product's pricing works before you buy it. Available in the pricing section of the listing in AWS Marketplace, AI Insights explains each product's pricing in plain language: what a pricing unit maps to, how your bill changes as usage scales, how multiple pricing dimensions combine into one cost, and what is and isn't included. Answering these questions used to mean having to visit multiple websites and piecing together pricing details on your own. Now the context sits on the listing, so you can evaluate pricing and move to purchase without switching tabs.&lt;/p&gt; \n&lt;p&gt;AI Insights cites sources so you can see where the explanations come from. AI Insights draws from the pricing the seller publishes on the Marketplace listing, and additional pricing context on the seller's public website.&lt;/p&gt; \n&lt;p&gt;AI Insights is live today on most listings where external pricing context is available. It is available in all commercial AWS Regions where AWS Marketplace is available. To see it, open any product listing on the &lt;a href=\"https://aws.amazon.com/marketplace/\"&gt;AWS Marketplace&lt;/a&gt; website and scroll to the pricing section. Sellers can review what appears on their listing and request edits at any time through the Contact Us form linked in the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/ai-insights.html\"&gt;AI Insights&lt;/a&gt; page on the AWS Marketplace Seller Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-ai-insights/",
-      "publishedAt": "2026-08-05T17:00:00.000Z",
-      "updatedAt": "2026-08-05T17:00:00.000Z",
-      "categories": [
-        "AWS Marketplace",
-        "AWS Marketplace And Partners"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace",
-        "aws marketplace and partners"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0cb796ddcf8d1b9a",
-      "title": "Amazon DynamoDB now supports real-time vector search",
-      "description": "Today, AWS announces the general availability of vector search for Amazon DynamoDB, a new feature to index and search vectors in real time. As vector datasets grow into the billions or trillions, vector search at scale traditionally trades off search speed, scale, and accuracy: latency climbs with vector count unless you accept lower recall or throughput. DynamoDB now supports native vector search with single-digit millisecond latency at 99%+ recall and is designed for any scale, even trillions of vectors. With DynamoDB vector search, you store vector embeddings alongside your other attributes",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of vector search for Amazon DynamoDB, a new feature to index and search vectors in real time. As vector datasets grow into the billions or trillions, vector search at scale traditionally trades off search speed, scale, and accuracy: latency climbs with vector count unless you accept lower recall or throughput. DynamoDB now supports native vector search with single-digit millisecond latency at 99%+ recall and is designed for any scale, even trillions of vectors.&lt;br&gt; &lt;br&gt; With DynamoDB vector search, you store vector embeddings alongside your other attributes and generate them using a model of your choice, including models available on Amazon Bedrock. You create a vector index and run approximate nearest neighbor searches, pick the vector index partition key to scale, and filter on attributes to scope results. You get the same serverless benefits you rely on today: zero infrastructure management, zero downtime, zero maintenance windows, and pay for only what you use. You can already use DynamoDB to store memory for AI agents, and with vector search you can now add semantic retrieval over that memory for agentic grounding, along with product similarity search, personalized advertising, retrieval augmented generation, and recommendation systems, with predictable performance.&lt;br&gt; &lt;br&gt; To learn more, visit the &lt;a&gt;&lt;/a&gt;&lt;a href=\"https://aws.amazon.com/blogs/aws/amazon-dynamodb-now-supports-real-time-vector-search-at-any-scale\"&gt;AWS News Blog&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/dynamodb\"&gt;&lt;/a&gt;&lt;a&gt;&lt;/a&gt;&lt;a href=\"https://aws.amazon.com/dynamodb/\"&gt;Amazon DynamoDB product page&lt;/a&gt;, and &lt;a&gt;&lt;/a&gt;&lt;a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearch.html\"&gt;Amazon DynamoDB Developer Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-dynamodb-vector-search",
-      "publishedAt": "2026-08-05T16:59:00.000Z",
-      "updatedAt": "2026-08-05T16:59:00.000Z",
-      "categories": [],
-      "services": [
-        "DynamoDB"
-      ],
-      "tags": [
-        "dynamodb"
       ],
       "isNew": false
     }
