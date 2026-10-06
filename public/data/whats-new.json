@@ -1,7 +1,197 @@
 {
-  "lastUpdated": "2026-10-05T16:51:57.808Z",
+  "lastUpdated": "2026-10-06T14:47:36.751Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "ebc1d13f56f9f674",
+      "title": "Amazon Redshift adds support for creating and refreshing Apache Iceberg materialized views",
+      "description": "Amazon Redshift now supports the creation and refresh of Apache Iceberg materialized views. Materialized views pre-compute expensive joins and aggregations once and store the results in an Apache Iceberg table in Amazon S3 or Amazon S3 table buckets, registered in the AWS Glue Data Catalog. Materialized views are created using familiar SQL — CREATE MATERIALIZED VIEW ... USING ICEBERG and the results are instantly queryable by any Iceberg-compatible engine, including Amazon Athena, Apache Spark on Amazon EMR and AWS Glue, and third-party engines such as Trino, or Snowflake. Redshift keeps them ",
+      "descriptionHtml": "&lt;p&gt;Amazon Redshift now supports the creation and refresh of Apache Iceberg materialized views. Materialized views pre-compute expensive joins and aggregations once and store the results in an Apache Iceberg table in Amazon S3 or Amazon S3 table buckets, registered in the AWS Glue Data Catalog. Materialized views are created using familiar SQL — CREATE MATERIALIZED VIEW ... USING ICEBERG and the results are instantly queryable by any Iceberg-compatible engine, including Amazon Athena, Apache Spark on Amazon EMR and AWS Glue, and third-party engines such as Trino, or Snowflake. Redshift keeps them current by recomputing only what has changed with manual incremental refresh, and because the results are Iceberg tables in the Glue Data Catalog, they are governed and discovered like any other catalog table.&lt;/p&gt;\n&lt;p&gt;Data teams often build analytics in stages, stitching together different engines to clean and transform raw data before serving it. This adds pipeline orchestration overhead and can introduce semantic differences between engines. Iceberg materialized views deliver value in two ways. First, instead of hundreds of users and teams re-running the same expensive joins and aggregations, and re-scanning source tables on every query, you compute the result once and everyone reads the precomputed table. Second, you can run an end-to-end pipeline using a single engine like Apache Spark and now Amazon Redshift, and every downstream consumer shares the same open result without the overhead of orchestrating multiple engines. Either way, the output is an open Iceberg table that any engine can read without copies or conversion. You can still load these tables into Redshift Managed Storage (RMS) as native RMS materialized views for your most performance-sensitive dashboards.&lt;/p&gt;\n&lt;p&gt;You can create Iceberg Materialized Views in any region where Redshift Serverless and provisioned Graviton instances are supported. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-iceberg.html\"&gt;Materialized views stored as Apache Iceberg tables&lt;/a&gt; in the Amazon Redshift Database Developer Guide, the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-create-sql-command.html\"&gt;CREATE MATERIALIZED VIEW&lt;/a&gt; command reference, and the &lt;a href=\"https://aws.amazon.com/blogs/big-data/materialize-once-query-anywhere-introducing-iceberg-materialized-views-in-amazon-redshift/\"&gt;Materialize once, query anywhere&lt;/a&gt; blog post.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-iceberg-materialized-views",
+      "publishedAt": "2026-10-05T21:57:18.000Z",
+      "updatedAt": "2026-10-05T21:57:18.000Z",
+      "categories": [
+        "Amazon Redshift",
+        "Analytics"
+      ],
+      "services": [
+        "Redshift"
+      ],
+      "tags": [
+        "amazon redshift",
+        "analytics",
+        "redshift"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2031db561396c5ca",
+      "title": "GLM 5.3 by Z.ai is now generally available on Amazon Bedrock",
+      "description": "Amazon Bedrock now supports GLM 5.3 from Z.ai, giving you a powerful new option for agentic coding and long-horizon software engineering work. Customers using GLM 5.3 on Amazon Bedrock have access to the latest open weight model with the AWS security and compliance posture. GLM 5.3 is Z.ai’s flagship model, a mixture-of-experts architecture with 753B total parameters and roughly 40B active per token, built on the same base model as GLM 5.2 with all improvements driven by scaled post-training. It combines a 1-million-token context window with up to 128K output tokens, and reasoning is always en",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock now supports GLM 5.3 from Z.ai, giving you a powerful new option for agentic coding and long-horizon software engineering work. Customers using GLM 5.3 on Amazon Bedrock have access to the latest open weight model with the AWS security and compliance posture.&lt;/p&gt;\n&lt;p&gt;GLM 5.3 is Z.ai’s flagship model, a mixture-of-experts architecture with 753B total parameters and roughly 40B active per token, built on the same base model as GLM 5.2 with all improvements driven by scaled post-training. It combines a 1-million-token context window with up to 128K output tokens, and reasoning is always enabled with selectable effort levels so you can trade latency and token consumption against task performance.&lt;/p&gt;\n&lt;p&gt;Bedrock support for GLM 5.3 includes explicit prompt caching with cache points on system prompts and messages, helping you reduce latency and input costs when reusing context across model calls.&lt;/p&gt;\n&lt;p&gt;GLM 5.3 is available to eligible enterprise customers, and is accessible through the US and Global cross-Region inference profiles. To get started with GLM 5.3, you can access the model in the&lt;a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/\"&gt; Amazon Bedrock console&lt;/a&gt; or programmatically through supported Amazon Bedrock APIs. For information about supported&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\"&gt; AWS Regions&lt;/a&gt;, endpoints, APIs, features, inference profiles and pricing, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-5-3.html\"&gt;Amazon Bedrock documentation&lt;/a&gt;. To learn more, read the launch &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/introducing-glm-5-3-on-amazon-bedrock/\"&gt;blog post&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-glm-5-3/",
+      "publishedAt": "2026-10-05T21:42:00.000Z",
+      "updatedAt": "2026-10-05T21:42:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5ac6b976ead214d5",
+      "title": "AWS IAM Identity Center now supports network access controls for Identity Store",
+      "description": "AWS IAM Identity Center helps you configure the single sign-on experience for your workforce to AWS accounts and applications. IAM Identity Center now supports network access controls for Identity Store, which stores your users and groups. You can restrict access to the Identity Store API and the SCIM API based on the network that requests originate from. Your custom applications and user provisioning workflows use the Identity Store API to manage and look up users and groups, and your external identity provider uses the SCIM API to synchronize users and groups. For the Identity Store API, you",
+      "descriptionHtml": "&lt;p&gt;AWS IAM Identity Center helps you configure the single sign-on experience for your workforce to AWS accounts and applications. IAM Identity Center now supports network access controls for Identity Store, which stores your users and groups. You can restrict access to the Identity Store API and the SCIM API based on the network that requests originate from. Your custom applications and user provisioning workflows use the Identity Store API to manage and look up users and groups, and your external identity provider uses the SCIM API to synchronize users and groups.&lt;/p&gt;\n&lt;p&gt;For the Identity Store API, you can require that requests arrive only through allowed VPC endpoints in your account or organization, or from specific source VPCs. For both APIs, you can allow requests only from specific IP ranges. Within the same configuration, you can apply different restrictions to each API. For example, you can require that Identity Store API requests arrive only through VPC endpoints, while allowing SCIM requests from your external identity provider's published IP ranges.&lt;/p&gt;\n&lt;p&gt;Network access controls are optional and turned off by default. Requests that AWS services make on your behalf are exempt. You configure network access controls by using the Identity Store API through the AWS SDKs and AWS CLI. This capability is available in all AWS Regions where IAM Identity Center is offered.&lt;/p&gt;\n&lt;p&gt;To learn more about IAM Identity Center, visit the &lt;a href=\"https://aws.amazon.com/iam/identity-center/\"&gt;product detail page&lt;/a&gt;. To get started with network access controls, see the &lt;a href=\"https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateIdentityStore.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Identity Store API Reference&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-identity-store-network-controls/",
+      "publishedAt": "2026-10-05T21:00:00.000Z",
+      "updatedAt": "2026-10-05T21:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "AWS Iam Identity Center"
+      ],
+      "services": [
+        "IAM",
+        "IAM Identity Center"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "aws iam identity center",
+        "iam",
+        "iam identity center"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7e067d20acc3b3a9",
+      "title": "AWS Continuum for Penetration Testing now supports continuous penetration testing integrated directly into your CI/CD pipeline",
+      "description": "AWS Continuum for Penetration Testing now integrates continuous penetration testing directly into your CI/CD pipeline (public preview) AWS Continuum for Penetration Testing (formerly AWS Security Agent) already provides continuous, on-demand penetration testing without the need to contract third-party pentest vendors. Now, in public preview, Continuum for Penetration Testing shifts security testing even further left by integrating directly into your existing CI/CD systems, making penetration testing a deploy-time event. Development teams ship code daily, but even with on-demand penetration tes",
+      "descriptionHtml": "&lt;p&gt;AWS Continuum for Penetration Testing now integrates continuous penetration testing directly into your CI/CD pipeline (public preview)&lt;/p&gt;\n&lt;p&gt;AWS Continuum for Penetration Testing (formerly AWS Security Agent) already provides continuous, on-demand penetration testing without the need to contract third-party pentest vendors. Now, in public preview, Continuum for Penetration Testing shifts security testing even further left by integrating directly into your existing CI/CD systems, making penetration testing a deploy-time event.&lt;/p&gt;\n&lt;p&gt;Development teams ship code daily, but even with on-demand penetration testing available, security validation often happens outside the deployment workflow. CI/CD integration closes this gap. Developers receive findings, including severity, affected endpoints, and remediation guidance, directly in pipeline output. Non-security changes complete with no meaningful delay, and the pipeline automatically re-tests and verifies fixes after remediation without requiring manual re-triggers.&lt;/p&gt;\n&lt;p&gt;Getting started requires no security expertise. An auto-generated pipeline snippet can be pasted into any existing pipeline and is completable in under five minutes. Application context bootstraps automatically on the first run, with no prior full penetration test required.&lt;/p&gt;\n&lt;p&gt;Continuous penetration testing is available today. To get started, visit our &lt;a href=\"https://docs.aws.amazon.com/securityagent/latest/userguide/cicd-pentest.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-penetration-testing/",
+      "publishedAt": "2026-10-05T18:32:00.000Z",
+      "updatedAt": "2026-10-05T18:32:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
+    {
+      "id": "22ad99f25da66114",
+      "title": "AWS Advanced Ruby Driver Wrapper is generally available",
+      "description": "The Amazon Web Services (AWS) Advanced Ruby Driver Wrapper is now generally available for use with Amazon RDS and Amazon Aurora PostgreSQL and MySQL-compatible databases. This advanced database driver reduces RDS Blue/Green switchover, Aurora Global database switchover and database failover times, improving application availability. Additionally, it supports multiple authentication mechanisms for your database, including AWS Secrets Manager authentication, and token-based authentication with AWS Identity and Access Management (IAM). The AWS Advanced Ruby Driver Wrapper builds on top of the com",
+      "descriptionHtml": "&lt;p&gt;The Amazon Web Services (AWS) Advanced Ruby Driver Wrapper is now generally available for use with &lt;a href=\"https://aws.amazon.com/rds/\" target=\"_blank\"&gt;Amazon RDS&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/rds/aurora/\" target=\"_blank\"&gt;Amazon Aurora&lt;/a&gt; PostgreSQL and MySQL-compatible databases. This advanced database driver reduces RDS Blue/Green switchover, Aurora Global database switchover and database failover times, improving application availability. Additionally, it supports multiple authentication mechanisms for your database, including AWS Secrets Manager authentication, and token-based authentication with AWS Identity and Access Management (IAM).&lt;/p&gt;\n&lt;p&gt;The AWS Advanced Ruby Driver Wrapper builds on top of the community &lt;a href=\"https://rubygems.org/gems/pg\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;pg&lt;/a&gt; (PostgreSQL), and the &lt;a href=\"https://rubygems.org/gems/mysql2\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;mysql2&lt;/a&gt; (MySQL) drivers to provide enhanced functionality beyond standard database connectivity. The wrapper is natively integrated with Aurora and RDS databases, enabling it to monitor database cluster status and quickly connect to newly promoted writers during unexpected failures that trigger database failovers. Furthermore, the wrapper seamlessly integrates with the ActiveRecord through provided aws_postgresql and aws_mysql2 adapters, so you can enable it without changing your application code.&lt;/p&gt;\n&lt;p&gt;The driver is available as an open-source project under the Apache 2.0 license. Refer to the instructions on the &lt;a href=\"https://github.com/aws/aws-advanced-ruby-driver-wrapper\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;GitHub repository&lt;/a&gt; to get started.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ruby-driver-wrapper-available/",
+      "publishedAt": "2026-10-05T17:00:00.000Z",
+      "updatedAt": "2026-10-05T17:00:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds",
+        "Amazon Aurora"
+      ],
+      "services": [
+        "RDS",
+        "Aurora"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds",
+        "amazon aurora",
+        "rds",
+        "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "bb12278ed7739567",
+      "title": "AWS Client VPN now supports device posture assessment",
+      "description": "AWS Client VPN now supports device posture assessment, allowing you to verify that connecting user devices meet your security and compliance requirements before granting network access. This feature integrates with your existing device posture providers, so only trusted, compliant devices can access your AWS resources through Client VPN. Previously, Client VPN authenticated users through certificates, SAML, or Active Directory. With device posture assessment, you can now also integrate CrowdStrike , Jamf , or JumpCloud with Client VPN to automatically evaluate device security signals such as c",
+      "descriptionHtml": "&lt;p&gt;AWS Client VPN now supports device posture assessment, allowing you to verify that connecting user devices meet your security and compliance requirements before granting network access. This feature integrates with your existing device posture providers, so only trusted, compliant devices can access your AWS resources through Client VPN.&lt;/p&gt;\n&lt;p&gt;Previously, Client VPN authenticated users through certificates, SAML, or Active Directory. With device posture assessment, you can now also integrate &amp;nbsp;&lt;a href=\"https://www.crowdstrike.com/\"&gt;CrowdStrike&amp;nbsp;&lt;/a&gt;, &amp;nbsp;&lt;a href=\"https://www.jamf.com/\"&gt;Jamf&amp;nbsp;&lt;/a&gt;, or &amp;nbsp;&lt;a href=\"https://jumpcloud.com/\"&gt;JumpCloud&amp;nbsp;&lt;/a&gt; with Client VPN to automatically evaluate device security signals such as compliance scores, encryption status, and risk level before allowing a connection. You define these requirements using &amp;nbsp;&lt;a href=\"https://cedarpolicy.com/\"&gt;Cedar policies&amp;nbsp;&lt;/a&gt;, giving you fine-grained control over which devices can connect. To help you author and validate these policies, Client VPN provides you a Test Policy tool that guides you through creating Cedar policies for your device posture requirements.&lt;/p&gt;\n&lt;p&gt;This feature continuously re-evaluates device compliance during active sessions, and automatically disconnects a session if a device falls out of compliance, such as when risk score or security settings change. You can also use this feature in monitoring-only mode, which logs posture evaluation results without disconnecting sessions, so you can assess the impact of your policies before enforcing them. Device posture assessment works alongside your existing authorization rules to provide defense in depth.&lt;/p&gt;\n&lt;p&gt;This feature is available in all AWS Regions where AWS Client VPN is available, at no additional cost. This feature requires AWS VPN Client version 6.2.0 or later.&lt;/p&gt;\n&lt;p&gt;To learn more about Client VPN:&lt;/p&gt;\n&lt;ul&gt;\n &lt;li&gt;Visit the AWS Client VPN &amp;nbsp;&lt;a href=\"https://aws.amazon.com/vpn/client-vpn/\"&gt;product page&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;ul&gt;\n &lt;li&gt;Download the &amp;nbsp;&lt;a href=\"https://aws.amazon.com/vpn/client-vpn-download/\"&gt;AWS VPN Client&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;ul&gt;\n &lt;li&gt;Read the AWS Client VPN &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html\"&gt;administrator guide&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;ul&gt;\n &lt;li&gt;Read the AWS Client VPN &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-user-what-is.html\"&gt;user guide&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-client-vpn-device-posture/",
+      "publishedAt": "2026-10-05T17:00:00.000Z",
+      "updatedAt": "2026-10-05T17:00:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "AWS Client Vpn"
+      ],
+      "services": [],
+      "tags": [
+        "networking and content delivery",
+        "aws client vpn"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2e75da0fd5722d00",
+      "title": "AWS Batch now supports Amazon EKS access entry authentication",
+      "description": "AWS Batch now supports Amazon EKS access entry authentication for compute environments. EKS access entries provide an API-driven approach to granting IAM principals access to Kubernetes clusters, complementing the existing aws-auth ConfigMap . AWS Batch can now authenticate to your cluster through the access entry mechanism, simplifying cluster setup and authentication lifecycle management. To get started, use the CreateComputeEnvironment or UpdateComputeEnvironment APIs to set accessEntry.desiredState to ENABLED on all AWS Batch compute environments targeting your cluster. AWS Batch creates o",
+      "descriptionHtml": "&lt;p&gt;AWS Batch now supports Amazon EKS access entry authentication for compute environments. EKS access entries provide an API-driven approach to granting IAM principals access to Kubernetes clusters, complementing the existing &lt;i&gt;aws-auth&lt;/i&gt; &lt;i&gt;ConfigMap&lt;/i&gt;. AWS Batch can now authenticate to your cluster through the access entry mechanism, simplifying cluster setup and authentication lifecycle management.\n &lt;br&gt;\n &lt;br&gt;\n To get started, use the &lt;i&gt;CreateComputeEnvironment&lt;/i&gt; or &lt;i&gt;UpdateComputeEnvironment&lt;/i&gt; APIs to set &lt;i&gt;accessEntry.desiredState&lt;/i&gt; to ENABLED on all AWS Batch compute environments targeting your cluster. AWS Batch creates one access entry per cluster and associates the &lt;i&gt;AWSBatchClusterPolicy&lt;/i&gt; with it. You can configure access entries through the AWS CLI, AWS SDKs, or AWS Management Console.\n &lt;br&gt;\n &lt;br&gt;\n Access entry authentication for AWS Batch on Amazon EKS is now supported in all &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Regions&lt;/a&gt; where AWS Batch is available. For more information, see Amazon EKS access entry authentication in the &lt;a href=\"https://docs.aws.amazon.com/batch/latest/userguide/eks-access-entries.html\"&gt;AWS Batch User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-access-entries/",
+      "publishedAt": "2026-10-05T15:31:00.000Z",
+      "updatedAt": "2026-10-05T15:31:00.000Z",
+      "categories": [],
+      "services": [
+        "Batch",
+        "EKS"
+      ],
+      "tags": [
+        "batch",
+        "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "fcce66777be03a40",
+      "title": "AWS Private CA now provides detailed certificate issuance logs",
+      "description": "AWS Private CA announces detailed certificate issuance logs, a new AWS CloudTrail service event that records the complete certificate content, issuing CA information, requester identity, and signing status for every issuance. You can use these events for compliance auditing, certificate inventory, algorithm migration tracking, and failed-issuance monitoring. Previously, the CloudTrail management event for the IssueCertificate API confirmed that the API call succeeded by providing a certificate ARN but did not capture the certificate content, information about the CA that signed it, or issuance",
+      "descriptionHtml": "&lt;p&gt;AWS Private CA announces detailed certificate issuance logs, a new AWS CloudTrail service event that records the complete certificate content, issuing CA information, requester identity, and signing status for every issuance. You can use these events for compliance auditing, certificate inventory, algorithm migration tracking, and failed-issuance monitoring. Previously, the CloudTrail management event for the IssueCertificate API confirmed that the API call succeeded by providing a certificate ARN but did not capture the certificate content, information about the CA that signed it, or issuances that failed before signing.&lt;/p&gt;\n&lt;p&gt;The new IssueCertificateDetails event captures the complete to-be-signed (TBS) certificate with all X.509 fields and extensions, plus convenience fields for the subject, issuer, serial number, validity period, template, and signing algorithm. Events are emitted for both successful and failed issuance, so pre-signing failures such as name constraints violations now produce a record with a failure explanation. Each event identifies the requester: the account and IAM principal for direct API callers, or the service principal for certificates issued through AWS Private CA connectors or integrated AWS services. In cross-account configurations, the event is delivered to the CA owner account.&lt;/p&gt;\n&lt;p&gt;The event is delivered automatically as a CloudTrail management event, with no configuration or opt-in required and no additional cost beyond standard AWS CloudTrail pricing. Because it flows through CloudTrail, you can act on it in real time with Amazon EventBridge or query it in batch with Amazon Athena for certificate auditing, inventory, tracking, and monitoring.&amp;nbsp;This feature is available in all AWS Regions where AWS Private CA is offered. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/privateca/latest/userguide/logging-using-cloudtrail-pca.html#pca-service-events\" style=\"background-color: rgb(255,255,255);\"&gt;AWS Private CA User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-private-ca-certificate-issuance-logs/",
+      "publishedAt": "2026-10-05T09:00:00.000Z",
+      "updatedAt": "2026-10-05T09:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "AWS Cloudtrail",
+        "Amazon Athena",
+        "AWS Private Certificate Authority"
+      ],
+      "services": [
+        "CloudTrail",
+        "Athena"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "aws cloudtrail",
+        "amazon athena",
+        "aws private certificate authority",
+        "cloudtrail",
+        "athena"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6ec3de306e25c58c",
+      "title": "Announcing Amazon Nova 2.5 Sonic with improved reasoning for voice agents",
+      "description": "Today, we announce the general availability of Amazon Nova 2.5 Sonic, our latest speech-to-speech model for natural, real-time voice agents. This release brings improved reasoning, instruction following, and tool-calling accuracy to real-time voice applications. The model also delivers lower latency, enabling faster, more natural interactions. Nova 2.5 Sonic helps voice agents maintain context, follow multi-step instructions, and use connected tools to complete customer tasks. For example, a customer-service agent can look up an order, check return eligibility, and initiate a return within a c",
+      "descriptionHtml": "&lt;p&gt;Today, we announce the general availability of Amazon Nova 2.5 Sonic, our latest speech-to-speech model for natural, real-time voice agents. This release brings improved reasoning, instruction following, and tool-calling accuracy to real-time voice applications. The model also delivers lower latency, enabling faster, more natural interactions.&lt;/p&gt;\n&lt;p&gt;Nova 2.5 Sonic helps voice agents maintain context, follow multi-step instructions, and use connected tools to complete customer tasks. For example, a customer-service agent can look up an order, check return eligibility, and initiate a return within a conversation. These improvements help developers build more capable voice agents for customer service, personal AI assistants, and real-time conversational applications.&lt;/p&gt;\n&lt;p&gt;Nova 2.5 Sonic builds on existing capabilities, including robust speech understanding, expressive voices in seven languages, and controllable turn-taking, alongside support for voice and text in the same session, asynchronous tool calling, and a 256K context window. Developers can also use Nova 2.5 Sonic with Strands Bidi Agents, now generally available, to build production voice agents in a few lines of code, with longer conversations and connections to other agents.&lt;/p&gt;\n&lt;p&gt;Nova 2.5 Sonic is available in Amazon Bedrock in the US East (N. Virginia), US West (Oregon), Europe (Stockholm), and Asia Pacific (Tokyo) AWS Regions, at the same pricing as Nova 2 Sonic. To learn more, visit the &lt;a href=\"https://aws.amazon.com/nova/models/\"&gt;Amazon Nova models page&lt;/a&gt;. To get started, see the &lt;a href=\"https://docs.aws.amazon.com/nova/latest/nova2-userguide/what-is-nova-2.html\"&gt;Amazon Nova user guide&lt;/a&gt;, and&lt;a href=\"https://strandsagents.com/blog/bidi-agents-now-ga/\"&gt;&amp;nbsp;blog on building voice agents with Nova 2.5 Sonic and Strands Bidi Agents&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-nova-2.5-sonic/",
+      "publishedAt": "2026-10-05T08:10:00.000Z",
+      "updatedAt": "2026-10-05T08:10:00.000Z",
+      "categories": [],
+      "services": [
+        "Nova"
+      ],
+      "tags": [
+        "nova"
+      ],
+      "isNew": true
+    },
     {
       "id": "49e0bd1a32097a2c",
       "title": "Amazon ECS adds Amazon VPC Lattice support for blue/green, linear, and canary deployments",
@@ -201,33 +391,33 @@
     {
       "id": "954382e6cfd850f2",
       "title": "AWS Well-Architected Agent is now available in preview",
-      "description": "AWS announces the preview of AWS Well-Architected Agent, a AI-powered service that is the next-gen evolution of AWS Trusted Advisor and the AWS Well-Architected Tool. The agent analyzes and optimizes AWS infrastructure across cost, security, performance, and reliability, delivering contextualized recommendations prioritized by business goals. It automatically correlates key metrics and application topology against Well-Architected best practices and analyzes Terraform, CDK templates and CloudFormation templates to deliver automation-ready fixes where applicable. With AWS Well-Architected Agent",
-      "descriptionHtml": "&lt;p&gt;AWS announces the preview of AWS Well-Architected Agent, a AI-powered service that is the next-gen evolution of AWS Trusted Advisor and the AWS Well-Architected Tool. The agent analyzes and optimizes AWS infrastructure across cost, security, performance, and reliability, delivering contextualized recommendations prioritized by business goals. It automatically correlates key metrics and application topology against Well-Architected best practices and analyzes Terraform, CDK templates and CloudFormation templates to deliver automation-ready fixes where applicable.&lt;/p&gt;\n&lt;p&gt;With AWS Well-Architected Agent, teams can define their business goals and get prioritized recommendations prioritized by impact and effort at the resource, application, and architecture levels. For example, a team prioritizing reliability can receive recommendations to add multi-AZ failover to a critical database, complete with an SSM runbook that automates the configuration change and a cross-pillar analysis showing how this change affects cost and performance before you commit. Where applicable, recommendations are delivered with SSM runbooks, prescriptive CLI scripts, and guided console walkthroughs so teams can move quickly. The agent can also conduct automated reviews of your IaC templates that include Terraform, CloudFormation, or CDK templates, identifying&amp;nbsp;gaps, and returning the IaC code changes needed to align with Well-Architected best practices.&lt;/p&gt;\n&lt;p&gt;Access to the AWS Well-Architected Agent and its recommendations is available in US East (N. Virginia), US East (Ohio), and US West (Oregon). You can onboard workloads from any AWS commercial Region. AWS Well-Architected Agent is delivered by AWS Support and available to AWS customers with an AWS Support plan.&lt;/p&gt;\n&lt;p&gt;Learn more about AWS Well-Architected Agent in the &lt;a href=\"https://docs.aws.amazon.com/wellarchitected/latest/userguide/wa-agent.html\"&gt;User Guide&lt;/a&gt;. Get started &lt;a href=\"https://us-east-1.console.aws.amazon.com/wellarchitected/home?region=us-east-1#/\"&gt;here&lt;/a&gt;.&lt;/p&gt;",
+      "description": "AWS announces the preview of AWS Well-Architected Agent, an AI-powered service that is the next-gen evolution of AWS Trusted Advisor and the AWS Well-Architected Tool. The agent analyzes and optimizes AWS infrastructure across cost, security, performance, and reliability, delivering contextualized recommendations prioritized by business goals. It automatically correlates key metrics and application topology against Well-Architected best practices and analyzes Terraform, CDK templates and CloudFormation templates to deliver automation-ready fixes where applicable. With AWS Well-Architected Agen",
+      "descriptionHtml": "&lt;p&gt;AWS announces the preview of AWS Well-Architected Agent, an AI-powered service that is the next-gen evolution of AWS Trusted Advisor and the AWS Well-Architected Tool. The agent analyzes and optimizes AWS infrastructure across cost, security, performance, and reliability, delivering contextualized recommendations prioritized by business goals. It automatically correlates key metrics and application topology against Well-Architected best practices and analyzes Terraform, CDK templates and CloudFormation templates to deliver automation-ready fixes where applicable.&lt;/p&gt;\n&lt;p&gt;With AWS Well-Architected Agent, teams can define their business goals and get recommendations prioritized by impact and effort at the resource, application, and architecture levels. For example, a team prioritizing reliability can receive recommendations to add multi-AZ failover to a critical database, complete with an SSM runbook that automates the configuration change and a cross-pillar analysis showing how this change affects cost and performance before you commit. Where applicable, recommendations are delivered with SSM runbooks, prescriptive CLI scripts, and guided console walkthroughs so teams can move quickly. The agent can also conduct automated reviews of your IaC templates that include Terraform, CloudFormation, or CDK templates, identifying&amp;nbsp;gaps, and returning the IaC code changes needed to align with Well-Architected best practices.&lt;/p&gt;\n&lt;p&gt;Access to the AWS Well-Architected Agent and its recommendations is available in US East (N. Virginia), US East (Ohio), and US West (Oregon). You can onboard workloads from any AWS commercial Region. AWS Well-Architected Agent is delivered by AWS Support and available to AWS customers with an AWS Support plan.&lt;/p&gt;\n&lt;p&gt;Learn more about AWS Well-Architected Agent in the &lt;a href=\"https://docs.aws.amazon.com/wellarchitected/latest/userguide/agent.html\"&gt;User Guide&lt;/a&gt;. Get started &lt;a href=\"https://us-east-1.console.aws.amazon.com/wellarchitected/home?region=us-east-1#/\"&gt;here&lt;/a&gt;.&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-well-architected-agent/",
       "publishedAt": "2026-10-01T20:00:00.000Z",
       "updatedAt": "2026-10-01T20:00:00.000Z",
       "categories": [
-        "AWS Support",
-        "AWS Cloudformation",
         "Management And Governance",
-        "Cost Management",
-        "AWS Cloud Development Kit",
-        "AWS Trusted Advisor",
         "AWS Systems Manager",
-        "AWS Well Architected Tool"
+        "AWS Cloudformation",
+        "AWS Cloud Development Kit",
+        "AWS Well Architected Tool",
+        "AWS Support",
+        "Cost Management",
+        "AWS Trusted Advisor"
       ],
       "services": [
         "CloudFormation"
       ],
       "tags": [
-        "aws support",
-        "aws cloudformation",
         "management and governance",
-        "cost management",
-        "aws cloud development kit",
-        "aws trusted advisor",
         "aws systems manager",
+        "aws cloudformation",
+        "aws cloud development kit",
         "aws well architected tool",
+        "aws support",
+        "cost management",
+        "aws trusted advisor",
         "cloudformation"
       ],
       "isNew": true
@@ -251,6 +441,23 @@
         "analytics",
         "amazon redshift",
         "redshift"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8d1afa31069e8cd6",
+      "title": "Amazon Q Developer now delivers enhanced visualizations in the AWS Management Console",
+      "description": "Today, AWS announces enhanced visualization for Amazon Q Developer in the AWS Management Console. Amazon Q now reasons across hundreds of AWS APIs to answer complex questions and deliver complete answers about your entire account—across all regions and services. Beyond the resource tables and cost charts introduced earlier this year, Amazon Q now renders health dashboards with status indicators, time-series charts with trend and anomaly detection, troubleshooting diagnostics, and resource detail views. Previously, asking “Show me the health of my production environment” returned a text summary",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces enhanced visualization for Amazon Q Developer in the AWS Management Console. Amazon Q now reasons across hundreds of AWS APIs to answer complex questions and deliver complete answers about your entire account—across all regions and services. Beyond the resource tables and cost charts introduced earlier this year, Amazon Q now renders health dashboards with status indicators, time-series charts with trend and anomaly detection, troubleshooting diagnostics, and resource detail views.&lt;/p&gt;\n&lt;p&gt;Previously, asking “Show me the health of my production environment” returned a text summary that customers had to read line by line. Today, Amazon Q orchestrates calls across multiple services, gathers health data, and renders a dashboard with status indicators—giving customers a complete picture at a glance. Similarly, “Graph network utilization for my EC2 instances over 12 hours” now generates an interactive time-series chart with trend lines and anomaly highlighting —making it faster to spot issues and take action. These responses are also noticeably faster, so customers get complete answers in seconds rather than waiting on multi-step, text-only replies.&lt;/p&gt;\n&lt;p&gt;To use Amazon Q in the AWS Management Console, click on the Q icon on the top left after you sign-in to the AWS Management Console. Enhanced visualization features for Amazon Q Developer are available in all AWS Regions where Amazon Q Developer is &lt;a href=\"https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/regions.html\"&gt;available&lt;/a&gt;. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/chat-artifacts.html\"&gt;Amazon Q Developer documentation.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-q-developer-enhanced-visualizations-aws-management-console",
+      "publishedAt": "2026-10-01T17:43:00.000Z",
+      "updatedAt": "2026-10-01T17:43:00.000Z",
+      "categories": [],
+      "services": [
+        "Q"
+      ],
+      "tags": [
+        "q"
       ],
       "isNew": true
     },
@@ -508,6 +715,28 @@
         "amazon cloudwatch",
         "route 53",
         "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "cebd265e8c573de8",
+      "title": "Amazon EKS Auto Mode now supports advanced compute configuration",
+      "description": "Amazon Elastic Kubernetes Service (EKS) Auto Mode now lets you tune kubelet settings, Linux kernel sysctls, and hugepages directly in the NodeClass Kubernetes resource. You can now run workloads that require specific node tuning on EKS Auto Mode, which automates node provisioning, scaling, patching, and upgrades for you. With the new advancedCompute field in NodeClass, you can configure user namespaces for rootless container builds in CI/CD pipelines, tune eviction thresholds and container log rotation to protect nodes from disk and memory pressure, raise network and ARP cache limits for large",
+      "descriptionHtml": "&lt;p&gt;Amazon Elastic Kubernetes Service (EKS) Auto Mode now lets you tune kubelet settings, Linux kernel sysctls, and hugepages directly in the NodeClass Kubernetes resource. You can now run workloads that require specific node tuning on EKS Auto Mode, which automates node provisioning, scaling, patching, and upgrades for you.&lt;/p&gt;\n&lt;p&gt;With the new advancedCompute field in NodeClass, you can configure user namespaces for rootless container builds in CI/CD pipelines, tune eviction thresholds and container log rotation to protect nodes from disk and memory pressure, raise network and ARP cache limits for large clusters, and pre-allocate 2Mi or 1Gi hugepages for HPC, database, and latency-sensitive workloads. You apply these settings declaratively using the Kubernetes API. EKS Auto Mode validates them, applies them at node boot, and preserves them through scaling and upgrade events, so your workloads get the tuning they need while EKS Auto Mode continues to manage the underlying infrastructure, with no EC2 launch templates, custom AMIs, or privileged DaemonSets to maintain.&lt;/p&gt;\n&lt;p&gt;Amazon EKS Auto Mode advanced compute configuration is available in all AWS Regions where EKS Auto Mode is available.&lt;/p&gt;\n&lt;p&gt;To get started, see the &lt;a href=\"https://aws.amazon.com/eks/auto-mode/\"&gt;Amazon EKS Auto Mode&lt;/a&gt; product page, and see &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/create-node-class.html#kubelet-config\"&gt;Create a Node Class for Amazon EKS&lt;/a&gt; in the Amazon EKS documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/eks-auto-mode-advanced-compute-config/",
+      "publishedAt": "2026-10-01T08:00:00.000Z",
+      "updatedAt": "2026-10-01T08:00:00.000Z",
+      "categories": [
+        "Containers",
+        "Amazon Eks"
+      ],
+      "services": [
+        "EKS"
+      ],
+      "tags": [
+        "containers",
+        "amazon eks",
+        "eks"
       ],
       "isNew": true
     },
@@ -1408,7 +1637,7 @@
         "aws resource access manager",
         "systems manager"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8cf01c27cfc9c9e6",
@@ -1440,7 +1669,7 @@
         "privatelink",
         "datasync"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9290a9808eb81604",
@@ -1457,7 +1686,7 @@
       "tags": [
         "transfer family"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f2a50aebc577743f",
@@ -1477,7 +1706,7 @@
         "amazon cloudwatch logs",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ed801afe3fa05e75",
@@ -1499,7 +1728,7 @@
         "amazon cloudwatch",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "04a58867ce2a83cd",
@@ -1516,7 +1745,7 @@
       "tags": [
         "elasticache"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8eff05a3eef8a7b5",
@@ -1540,7 +1769,7 @@
         "security identity and compliance",
         "route 53"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0860418c6f256720",
@@ -1562,7 +1791,7 @@
         "compute",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2513dd5a1ca3c547",
@@ -1584,7 +1813,7 @@
         "artificial intelligence",
         "rekognition"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b5f5b34e2ab19a91",
@@ -1606,7 +1835,7 @@
         "amazon bedrock",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b1c2af3fd05e6169",
@@ -11025,257 +11254,6 @@
         "analytics",
         "glue",
         "msk"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "02c202947dbb6565",
-      "title": "Amazon OpenSearch UI now supports Network Access Control",
-      "description": "Amazon OpenSearch Service now supports network access controls for OpenSearch UI applications. OpenSearch UI is the fully managed web service for search, analytics, and unified observability across multiple AWS data sources. With network access controls, you can restrict access to your OpenSearch UI applications to approved networks using the same IAM condition keys (aws:SourceVpce, aws:SourceVpc, and aws:SourceIp) that you already use elsewhere in AWS, helping you establish a consistent data perimeter across your environment. You can enforce network restrictions at three levels: identity-base",
-      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now supports network access controls for OpenSearch UI applications. OpenSearch UI is the fully managed web service for search, analytics, and unified observability across multiple AWS data sources. With network access controls, you can restrict access to your OpenSearch UI applications to approved networks using the same IAM condition keys (aws:SourceVpce, aws:SourceVpc, and aws:SourceIp) that you already use elsewhere in AWS, helping you establish a consistent data perimeter across your environment.&lt;/p&gt; \n&lt;p&gt;You can enforce network restrictions at three levels: identity-based policies for specific principals, VPC endpoint policies to control which applications users reach through an endpoint, and resource control policies (RCPs) to enforce access uniformly across every account in your AWS organization. With RCPs, you can block off-network users before they authenticate, preventing anyone outside your corporate network or VPC from reaching the login page.&lt;/p&gt; \n&lt;p&gt;Network access controls are available in all AWS Regions where OpenSearch UI is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/application-network-access.html\"&gt;Restricting network access to OpenSearch UI applications&lt;/a&gt; in the &lt;i&gt;Amazon OpenSearch Service Developer Guide&lt;/i&gt;. For more information about Amazon OpenSearch Service, see the &lt;a href=\"https://aws.amazon.com/opensearch-service/\"&gt;Amazon OpenSearch Service&lt;/a&gt; product page.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/opensearch-ui-network-access-control",
-      "publishedAt": "2026-08-06T18:16:00.000Z",
-      "updatedAt": "2026-08-06T18:16:00.000Z",
-      "categories": [
-        "Amazon Opensearch Service",
-        "Analytics"
-      ],
-      "services": [
-        "OpenSearch"
-      ],
-      "tags": [
-        "amazon opensearch service",
-        "analytics",
-        "opensearch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d5ef659f32ede609",
-      "title": "AWS Transform for migrations automates post-launch actions",
-      "description": "AWS Transform now automates the configuration and execution of post-launch actions through the migration workflow. Define actions at the account level and apply them automatically to each source server across your target accounts, including multi-account migrations. Automating these actions removes the slow, error-prone work of configuring them server by server, so your team moves more servers with less hands-on effort. Post-launch actions run through AWS Systems Manager (SSM) immediately after test or cutover launch. You can use predefined actions or bring your own SSM document. For source se",
-      "descriptionHtml": "&lt;p&gt;AWS Transform now automates the configuration and execution of post-launch actions through the migration workflow. Define actions at the account level and apply them automatically to each source server across your target accounts, including multi-account migrations. Automating these actions removes the slow, error-prone work of configuring them server by server, so your team moves more servers with less hands-on effort.&lt;/p&gt; \n&lt;p&gt;Post-launch actions run through AWS Systems Manager (SSM) immediately after test or cutover launch. You can use predefined actions or bring your own SSM document. For source server bulk configurations, the migration inventory file now includes a new structure for post-launch actions, making it easier to review and modify actions per source server.&lt;/p&gt; \n&lt;p&gt;The AWS Transform for migrations agent automates your migration configuration end to end, including replication templates, EC2 launch templates, EC2 right-sizing, and post-launch actions, with the flexibility to create and edit any of these at the source server level.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;This new capability is available in all AWS Regions where &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html\"&gt;AWS Transform is offered&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;To learn more, please visit the &lt;a href=\"https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-migrate-servers.html#transform-vmware-ms-prereqs-and-defaults\"&gt;AWS Transform User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-transform-for-migrations-automates-post-launch-actions",
-      "publishedAt": "2026-08-06T17:00:00.000Z",
-      "updatedAt": "2026-08-06T17:00:00.000Z",
-      "categories": [
-        "Migration"
-      ],
-      "services": [],
-      "tags": [
-        "migration"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "bb7e0bcc901338e1",
-      "title": "Amazon Connect Customer adds one-click drill-down on real-time metrics dashboards",
-      "description": "Amazon Connect Customer dashboards now support drilling down into real-time queue and routing profile performance. With a single click, supervisors can drill from a summary view into pre-filtered routing profile, queue, agent, or routing step widgets. For example, a supervisor who sees a spike in queue wait times can immediately drill down to agent activity for a specific queue and reassign agents to reduce the backlog. One-click drill-down on real-time metrics dashboards is available in all AWS commercial and AWS GovCloud (US-West) regions where Amazon Connect Customer is offered. To learn mo",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer dashboards now support drilling down into real-time queue and routing profile performance. With a single click, supervisors can drill from a summary view into pre-filtered routing profile, queue, agent, or routing step widgets. For example, a supervisor who sees a spike in queue wait times can immediately drill down to agent activity for a specific queue and reassign agents to reduce the backlog.&lt;br&gt; &lt;br&gt; One-click drill-down on real-time metrics dashboards is available in all AWS commercial and AWS GovCloud (US-West) &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#amazonconnect_region\"&gt;regions&lt;/a&gt; where Amazon Connect Customer is offered. To learn more about Amazon Connect Customer analytics dashboards, see the &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/dashboards.html\"&gt;Amazon Connect Customer Administrator Guide&lt;/a&gt;. To learn more about Amazon Connect Customer, the AWS cloud-based contact center, please visit the &lt;a href=\"https://aws.amazon.com/connect/\"&gt;Amazon Connect Customer website&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-drill-down-metrics/",
-      "publishedAt": "2026-08-06T17:00:00.000Z",
-      "updatedAt": "2026-08-06T17:00:00.000Z",
-      "categories": [
-        "Contact Center",
-        "Business Productivity",
-        "Amazon Connect",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "contact center",
-        "business productivity",
-        "amazon connect",
-        "aws govcloud us",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "173cfec947c0f867",
-      "title": "AWS Security Agent now supports email-based MFA for penetration testing",
-      "description": "AWS Security Agent (now part of AWS Continuum ) now enables penetration testing of applications that use email-based multi-factor authentication (MFA) as part of their login flow. Previously, applications requiring one-time codes or verification links sent by email were out of scope for automated pentesting because the agent had no mechanism to intercept those messages. This launch expands coverage for penetration testing customers whose target applications rely on email-based authentication. To use this feature, AWS Security Agent generates a unique forwarding address per credential, allowing",
-      "descriptionHtml": "&lt;p&gt;AWS Security Agent (now part of &lt;a href=\"http://aws.amazon.com/continuum?refid=77f1fbea-4ad5-4c1d-b16e-e5634ca5086e\"&gt;AWS Continuum&lt;/a&gt;) now enables penetration testing of applications that use email-based multi-factor authentication (MFA) as part of their login flow. Previously, applications requiring one-time codes or verification links sent by email were out of scope for automated pentesting because the agent had no mechanism to intercept those messages. This launch expands coverage for penetration testing customers whose target applications rely on email-based authentication.&lt;/p&gt; \n&lt;p&gt;To use this feature, AWS Security Agent generates a unique forwarding address per credential, allowing you to route your application's MFA emails directly to the agent using a forwarding rule in your existing email provider. During a pentest, the agent automatically reads the forwarded message and submits the code or link to complete authentication — no email account credentials are stored, preserving a strong privacy posture. This capability complements existing TOTP support, giving customers a unified solution for testing applications across multiple MFA methods.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where AWS Security Agent is supported.&lt;/p&gt; \n&lt;p&gt;To learn more, visit the &lt;a href=\"https://aws.amazon.com/security-agent/?trk=77f1fbea-4ad5-4c1d-b16e-e5634ca5086e&amp;amp;sc_channel=ps&amp;amp;ef_id=CjwKCAjw4dDTBhAqEiwAkHYmSuBZ_V1zxJ29F9CUMF-dw-2pVhe8YC2_92NoHZwMhMknYw6nqMHbUhoCvjwQAvD_BwE&amp;amp;gads_camp=23532472972&amp;amp;gads_ag=200881312961&amp;amp;gads_ad=812204788708&amp;amp;gads_kw=aws%20security%20agent&amp;amp;gads_matchtype=e&amp;amp;gads_network=g&amp;amp;gads_device=c&amp;amp;gads_geo=9193254&amp;amp;gad_campaignid=23532472972&amp;amp;gbraid=0AAAAADjHtp8JMRwV7qBFDei1P9Woz23HE&amp;amp;gclid=CjwKCAjw4dDTBhAqEiwAkHYmSuBZ_V1zxJ29F9CUMF-dw-2pVhe8YC2_92NoHZwMhMknYw6nqMHbUhoCvjwQAvD_BwE\"&gt;AWS Security Agent product page&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/securityagent/latest/userguide/what-is.html?trk=77f1fbea-4ad5-4c1d-b16e-e5634ca5086e&amp;amp;sc_channel=ps\"&gt;AWS Security Agent User Guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-security-agent-mfa/",
-      "publishedAt": "2026-08-06T16:54:00.000Z",
-      "updatedAt": "2026-08-06T16:54:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "864575aeb0708809",
-      "title": "Amazon RDS now provides visibility into storage volume initialization status",
-      "description": "Amazon RDS now provides visibility into the initialization status of database storage volumes created from snapshots. You can use this status to determine when your storage is fully initialized after a restore and is ready to support latency-sensitive database workloads at fully provisioned performance. When you restore a database instance to a point-in-time, or create a read replica creation, or convert from Single-AZ to Multi-AZ conversion, Amazon RDS creates storage volumes from a snapshot. These volumes undergo initialization, during which storage blocks are downloaded from Amazon S3 and w",
-      "descriptionHtml": "&lt;p&gt;Amazon RDS now provides visibility into the initialization status of database storage volumes created from snapshots. You can use this status to determine when your storage is fully initialized after a restore and is ready to support latency-sensitive database workloads at fully provisioned performance.&lt;br&gt; &lt;br&gt; When you restore a database instance to a point-in-time, or create a read replica creation, or convert from Single-AZ to Multi-AZ conversion, Amazon RDS creates storage volumes from a snapshot. These volumes undergo initialization, during which storage blocks are downloaded from Amazon S3 and written to the volume before they can be accessed. The initialization rate varies depending on the workload and which blocks are accessed and during this period you may notice increased I/O latency. Previously, Amazon RDS reported the instance as available throughout initialization, giving you no direct signal for when performance would stabilize. The new StorageOperationStatus and StorageOperationPercentProgress fields on the RDS Console and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBInstances.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;DescribeDBInstances&lt;/a&gt; API let you monitor your storage initialization progress in real time, so you can validate when all blocks have been written. You can use the information to time your workloads to align with its completion. The fields also report storage optimization progress so you can plan for full provisioned performance after a storage modification.&lt;br&gt; &lt;br&gt; Storage volume initialization status is accessible by default for all Amazon RDS database instances in all commercial AWS Regions and US GovCloud Regions. You can start using it today through the Amazon RDS Management Console, the AWS Command Line Interface (CLI), or the AWS SDKs. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Storage.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS storage&lt;/a&gt; in the Amazon RDS User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-rds-storage-volume-initialization-visibility",
-      "publishedAt": "2026-08-06T16:00:00.000Z",
-      "updatedAt": "2026-08-06T16:00:00.000Z",
-      "categories": [
-        "Databases",
-        "Amazon Rds"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "databases",
-        "amazon rds",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "17fdd089c934caa7",
-      "title": "Amazon WorkSpaces Applications now publishes enhanced observability metrics",
-      "description": "Amazon WorkSpaces Applications now publishes additional performance and session health metrics to Amazon CloudWatch, enabling IT administrators to gain deeper visibility into their application streaming workloads. These new metrics span network performance, compute resource utilization, and session lifecycle events — all available at no additional cost. With these metrics, administrators can proactively identify and troubleshoot issues that impact end-user experience. For example, metrics such as TCP retransmission rate and congestion window help pinpoint network degradation, while GPU utiliza",
-      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces Applications now publishes additional performance and session health metrics to Amazon CloudWatch, enabling IT administrators to gain deeper visibility into their application streaming workloads. These new metrics span network performance, compute resource utilization, and session lifecycle events — all available at no additional cost.&lt;br&gt; &lt;br&gt; With these metrics, administrators can proactively identify and troubleshoot issues that impact end-user experience. For example, metrics such as TCP retransmission rate and congestion window help pinpoint network degradation, while GPU utilization and memory page hard faults surface resource bottlenecks before they affect session quality. Session lifecycle metrics like connection failures and connection duration enable teams to set CloudWatch alarms for rapid detection of connectivity issues, build custom dashboards for fleet-wide visibility, and reduce mean time to resolution.&lt;br&gt; &lt;br&gt; These metrics are available in all AWS Regions where Amazon WorkSpaces Applications is supported.&lt;br&gt; &lt;br&gt; To get started, navigate to the Amazon CloudWatch console and observe these metrics or update your &lt;a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/custom-cloudwatch-dashboards.html\"&gt;WorkSpaces Applications custom dashboards&lt;/a&gt;. You can also monitor these metrics through &lt;a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/cloudwatch-automatic-dashboard.html\"&gt;WorkSpaces Applications automatic dashboard&lt;/a&gt;. To learn more about metric availability by operating system, visit the &lt;a href=\"https://docs.aws.amazon.com/appstream2/\"&gt;Amazon WorkSpaces Applications documentation&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/appstream2/latest/developerguide/monitoring.html\"&gt;CloudWatch metrics reference&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-workspaces-applications-observability-metrics",
-      "publishedAt": "2026-08-06T15:00:00.000Z",
-      "updatedAt": "2026-08-06T15:00:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Desktop And App Streaming",
-        "Amazon Appstream 2 0"
-      ],
-      "services": [
-        "WorkSpaces",
-        "AppStream"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "desktop and app streaming",
-        "amazon appstream 2 0",
-        "workspaces",
-        "appstream"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "feb54ec9dced7ed2",
-      "title": "Amazon WorkSpaces now publishes enhanced observability metrics",
-      "description": "Amazon WorkSpaces now publishes additional performance and session health metrics to Amazon CloudWatch, enabling IT administrators to gain deeper visibility into their virtual desktop workloads. These new metrics span network performance, compute and storage resource utilization, and session lifecycle events — all available at no additional cost. With these metrics, administrators can proactively identify and troubleshoot issues that impact end-user experience. For example, TCP retransmission rate and congestion window help pinpoint network degradation, GPU usage and CPU queue length surface c",
-      "descriptionHtml": "&lt;p&gt;Amazon WorkSpaces now publishes additional performance and session health metrics to Amazon CloudWatch, enabling IT administrators to gain deeper visibility into their virtual desktop workloads. These new metrics span network performance, compute and storage resource utilization, and session lifecycle events — all available at no additional cost.&lt;br&gt; &lt;br&gt; With these metrics, administrators can proactively identify and troubleshoot issues that impact end-user experience. For example, TCP retransmission rate and congestion window help pinpoint network degradation, GPU usage and CPU queue length surface compute bottlenecks, and storage metrics like disk I/O queue lengths and memory page hard faults provide visibility into disk saturation and memory pressure. Administrators can set CloudWatch alarms for rapid detection of performance issues, build custom dashboards for fleet-wide visibility, and reduce mean time to resolution.&lt;br&gt; &lt;br&gt; These metrics are available in all AWS Regions where Amazon WorkSpaces is supported.&lt;br&gt; &lt;br&gt; To get started, navigate to the Amazon CloudWatch console and observe these metrics or update your &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/cloudformation-templates.html\"&gt;WorkSpaces custom dashboards&lt;/a&gt;. You can also monitor these metrics through &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/cloudwatch-dashboard.html\"&gt;WorkSpaces automatic dashboard&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html\"&gt;Amazon WorkSpaces documentation&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/workspaces/latest/adminguide/cloudwatch-metrics.html\"&gt;CloudWatch metrics reference&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-workspaces-observability-metrics",
-      "publishedAt": "2026-08-06T15:00:00.000Z",
-      "updatedAt": "2026-08-06T15:00:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Amazon Workspaces",
-        "Desktop And App Streaming"
-      ],
-      "services": [
-        "WorkSpaces"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "amazon workspaces",
-        "desktop and app streaming",
-        "workspaces"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "3611a5e9f783a929",
-      "title": "AWS Marketplace now lets sellers configure net payment terms on private offers",
-      "description": "AWS Marketplace now supports configurable net payment terms on private offers, with options including Net 30, Net 45, Net 60, or Net 90. Prior to this launch, net payment terms were uniform across all AWS Marketplace purchases, based on the buyer's payment terms with AWS. This new feature allows sellers to configure when payment is due, so invoice due dates match what buyers and sellers negotiate. This gives buyers upfront clarity on payment due dates, allows them to take advantage of more favorable payment terms, and gives sellers better cash flow predictability by setting net payment terms d",
-      "descriptionHtml": "&lt;p&gt;AWS Marketplace now supports configurable net payment terms on private offers, with options including Net 30, Net 45, Net 60, or Net 90. Prior to this launch, net payment terms were uniform across all AWS Marketplace purchases, based on the buyer's payment terms with AWS. This new feature allows sellers to configure when payment is due, so invoice due dates match what buyers and sellers negotiate. This gives buyers upfront clarity on payment due dates, allows them to take advantage of more favorable payment terms, and gives sellers better cash flow predictability by setting net payment terms during private offer creation.&lt;br&gt; &lt;br&gt; Buyers see the configured payment terms on the procurement page before accepting a private offer. The net payment terms apply uniformly to all AWS Marketplace charges within a private offer, including upfront fees, scheduled payments, and usage-based charges. For Channel Partner Private Offers (CPPO), ISVs set maximum payment terms and channel partners can offer terms at or below that ceiling.&lt;br&gt; &lt;br&gt; This capability is generally available in all commercial AWS Regions for sellers creating private offers. No additional setup or onboarding is required. Flexible net payment terms apply to buyers who pay by invoice. The default behavior remains unchanged. If no custom payment terms are set, the buyer's standard AWS payment terms continue to apply.&lt;br&gt; &lt;br&gt; To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/userguide/seller-net-payment-terms.html\"&gt;AWS Marketplace Seller Guide&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-net-payment-terms.html\"&gt;AWS Marketplace Buyer Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-net-payment-terms-for-private-offers",
-      "publishedAt": "2026-08-06T14:49:00.000Z",
-      "updatedAt": "2026-08-06T14:49:00.000Z",
-      "categories": [
-        "AWS Marketplace And Partners",
-        "AWS Marketplace",
-        "Cost Management",
-        "Partner Network"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace and partners",
-        "aws marketplace",
-        "cost management",
-        "partner network"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "976b9e49b5a9873b",
-      "title": "Amazon MSK now delivers Kafka Authorizer Logs to customers",
-      "description": "Amazon Managed Streaming for Apache Kafka (MSK) now supports Authorizer Log Delivery for Provisioned clusters, including both Standard and Express brokers, at no additional cost. With authorizer logs, you get detailed visibility into user and application access, identify and address client authorization issues, and meet your organization's security requirements. Each denied authorization request is captured with the client's IP address and the API it attempted, so you can pinpoint the root cause. You can deliver logs to Amazon CloudWatch Logs, Amazon S3, or Amazon Data Firehose. Authorizer Log",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/msk/\"&gt;Amazon Managed Streaming for Apache Kafka (MSK)&lt;/a&gt; now supports Authorizer Log Delivery for Provisioned clusters, including both Standard and Express brokers, at no additional cost. With authorizer logs, you get detailed visibility into user and application access, identify and address client authorization issues, and meet your organization's security requirements. Each denied authorization request is captured with the client's IP address and the API it attempted, so you can pinpoint the root cause. You can deliver logs to Amazon CloudWatch Logs, Amazon S3, or Amazon Data Firehose. Authorizer Log Delivery is available for both new and existing Provisioned clusters. You can enable it from the Amazon MSK console or AWS CLI. To learn how to set up Authorizer Log Delivery, see the &lt;a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/msk-logging.html\"&gt;Amazon MSK Authorizer Logs documentation&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Amazon MSK is a fully managed service for Apache Kafka that makes it easy to ingest and process streaming data in real time. Authorizer Log Delivery is supported in all AWS Regions where Amazon MSK Provisioned clusters are available, except for AWS&amp;nbsp;European Sovereign Cloud (eusc-de-east-1) region. With Amazon MSK, you spend more time innovating on applications and less time managing clusters. To get started, visit the &lt;a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/what-is-msk.html\"&gt;Amazon MSK Developer Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-msk-kafka-authorizer-logs/",
-      "publishedAt": "2026-08-06T14:00:00.000Z",
-      "updatedAt": "2026-08-06T14:00:00.000Z",
-      "categories": [
-        "Amazon Msk",
-        "Analytics",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "MSK",
-        "Kafka"
-      ],
-      "tags": [
-        "amazon msk",
-        "analytics",
-        "aws govcloud us",
-        "msk",
-        "kafka"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "c122c33cdb9b5db6",
-      "title": "AWS Backup for Amazon S3 now supports direct access to backup data",
-      "description": "AWS Backup for Amazon S3 now supports creating S3 Access Points, providing immediate read-only access to backup data using standard S3 APIs without initiating a restore. This enables targeted file recovery, data validation, compliance auditing, and forensic investigation while your backup data remains protected in your backup vault. You can create an access point for an S3 recovery point and read backup data using standard S3 operations such as GetObject, HeadObject, and ListObjectsV2. Access points work with both snapshot and continuous (point-in-time) recovery points stored in standard backu",
-      "descriptionHtml": "&lt;p&gt;AWS Backup for Amazon S3 now supports creating S3 Access Points, providing immediate read-only access to backup data using standard S3 APIs without initiating a restore. This enables targeted file recovery, data validation, compliance auditing, and forensic investigation while your backup data remains protected in your backup vault.&lt;/p&gt; \n&lt;p&gt;You can create an access point for an S3 recovery point and read backup data using standard S3 operations such as GetObject, HeadObject, and ListObjectsV2. Access points work with both snapshot and continuous (point-in-time) recovery points stored in standard backup vaults or logically air-gapped vaults, including recovery points shared across accounts through AWS Resource Access Manager or Multi-party approval. While an access point is active, the associated recovery point is protected from deletion.&lt;/p&gt; \n&lt;p&gt;Get started with this capability by creating access points for your S3 recovery points using the AWS Backup console, API, or CLI. This capability is available in &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\"&gt;select AWS Regions&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-access-points.html\"&gt;Access points&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/s3-backups.html\"&gt;Amazon S3 backups&lt;/a&gt; in the AWS Backup Developer Guide and read the &lt;a href=\"https://aws.amazon.com/blogs/storage/access-amazon-s3-backup-data-directly-using-s3-access-points-in-aws-backup/\"&gt;launch blog&lt;/a&gt;. For pricing information, see &lt;a href=\"https://aws.amazon.com/backup/pricing/\"&gt;AWS Backup pricing&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-backup-amazon-s3-direct-access/",
-      "publishedAt": "2026-08-06T10:00:00.000Z",
-      "updatedAt": "2026-08-06T10:00:00.000Z",
-      "categories": [
-        "Amazon S3",
-        "Storage",
-        "AWS Backup"
-      ],
-      "services": [
-        "S3",
-        "Backup"
-      ],
-      "tags": [
-        "amazon s3",
-        "storage",
-        "aws backup",
-        "s3",
-        "backup"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "05a4ae6c4bf5bdaa",
-      "title": "AWS Backup extends logically air-gapped vault support for Amazon Neptune to three additional AWS Regions",
-      "description": "AWS Backup logically air-gapped vault support for Amazon Neptune is now available in three additional AWS Regions: Asia Pacific (Melbourne), Europe (Spain), and Europe (Zurich). With this expansion, you can store Neptune backups in logically air-gapped vaults in these Regions. Logically air-gapped vaults are immutable, locked by default, and encrypted using AWS owned keys or customer-managed keys. You can copy backups across accounts and Regions, share vaults for recovery using AWS Resource Access Manager (RAM), and protect vault access during account compromise with Multi-party approval. This",
-      "descriptionHtml": "&lt;p&gt;AWS Backup logically air-gapped vault support for Amazon Neptune is now available in three additional AWS Regions: Asia Pacific (Melbourne), Europe (Spain), and Europe (Zurich).&lt;/p&gt; \n&lt;p&gt;With this expansion, you can store Neptune backups in logically air-gapped vaults in these Regions. Logically air-gapped vaults are immutable, locked by default, and encrypted using AWS owned keys or customer-managed keys. You can copy backups across accounts and Regions, share vaults for recovery using AWS Resource Access Manager (RAM), and protect vault access during account compromise with Multi-party approval. This helps reduce recovery time and meet your disaster recovery and compliance requirements.&lt;/p&gt; \n&lt;p&gt;To get started, visit the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. For a complete list of supported Regions and features, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\"&gt;AWS Backup documentation&lt;/a&gt;. To learn more about logically air-gapped vaults, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/logicallyairgappedvault.html\"&gt;product page&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/backup/pricing/\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-backup-logically-air-gapped-vault-neptune-regions/",
-      "publishedAt": "2026-08-06T07:00:00.000Z",
-      "updatedAt": "2026-08-06T07:00:00.000Z",
-      "categories": [
-        "AWS Backup",
-        "Storage",
-        "Amazon Neptune"
-      ],
-      "services": [
-        "Backup",
-        "Neptune"
-      ],
-      "tags": [
-        "aws backup",
-        "storage",
-        "amazon neptune",
-        "backup",
-        "neptune"
       ],
       "isNew": false
     }
