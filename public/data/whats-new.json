@@ -1,7 +1,142 @@
 {
-  "lastUpdated": "2026-10-08T15:16:24.032Z",
+  "lastUpdated": "2026-10-09T15:01:25.361Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "6a57ab554bced622",
+      "title": "OpenAI GPT-6.1 Sol now supports Ultrafast mode on Amazon Bedrock",
+      "description": "Today, AWS announces the availability of Ultrafast mode for GPT-6.1 Sol from OpenAI on Amazon Bedrock. Ultrafast mode provides faster inference for workloads where speed matters most. The Amazon Bedrock inference engine delivers the performance, security, and reliability required for production workloads. Use GPT-6.1 Sol Ultrafast for latency-sensitive applications such as real-time coding assistants, interactive agents, and customer-facing experiences that require fast, high-quality responses. GPT-6.1 Sol helps developers build features, debug issues, investigate complex codebases, and comple",
+      "descriptionHtml": "&lt;p&gt;Today, AWS announces the availability of Ultrafast mode for GPT-6.1 Sol from OpenAI on Amazon Bedrock.&amp;nbsp;Ultrafast mode provides faster inference for workloads where speed matters most. The Amazon Bedrock inference engine delivers the performance, security, and reliability required for production workloads.&lt;/p&gt;\n&lt;p&gt;Use GPT-6.1 Sol&amp;nbsp;Ultrafast for latency-sensitive applications such as real-time coding assistants, interactive agents, and customer-facing experiences that require fast, high-quality responses. GPT-6.1 Sol helps developers build features, debug issues, investigate complex codebases, and complete multistep workflows. Established AWS controls help you secure workloads, govern access, and audit model invocation activity.&lt;/p&gt;\n&lt;p&gt;You can get started in the &lt;a href=\"https://us-east-1.console.aws.amazon.com/bedrock/home?region=us-east-1#/\"&gt;Amazon Bedrock console&lt;/a&gt; or programmatically through supported Amazon Bedrock APIs. For information about supported AWS Regions, endpoints, APIs, features, inference profiles, and pricing, see the &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-1-sol.html\"&gt;Amazon Bedrock documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-sol-ultrafast-amazon/",
+      "publishedAt": "2026-10-08T19:41:00.000Z",
+      "updatedAt": "2026-10-08T19:41:00.000Z",
+      "categories": [],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6e28a735e8d9c369",
+      "title": "AWS Cost Explorer, Budgets, and Dashboards now support Amazon Bedrock product attributes",
+      "description": "AWS Cost Explorer, AWS Budgets, and AWS Cost Management Dashboards now let you analyze Amazon Bedrock costs by product attributes, a new dimension that breaks down Bedrock cost by model, model provider, inference type, and feature. In Cost Explorer and Dashboards, you can group and filter costs by these attributes. In Budgets, you can filter budgets by the same attributes. With this launch, finance and platform teams get a direct view of which models and workloads drive their Bedrock spend, and can act on it in the billing tools they already use. The attributes include model (such as Claude So",
+      "descriptionHtml": "&lt;p&gt;AWS Cost Explorer, AWS Budgets, and AWS Cost Management Dashboards now let you analyze Amazon Bedrock costs by product attributes, a new dimension that breaks down Bedrock cost by model, model provider, inference type, and feature. In Cost Explorer and Dashboards, you can group and filter costs by these attributes. In Budgets, you can filter budgets by the same attributes.&lt;/p&gt;\n&lt;p&gt;With this launch, finance and platform teams get a direct view of which models and workloads drive their Bedrock spend, and can act on it in the billing tools they already use. The attributes include model (such as Claude Sonnet 5 or Claude Haiku 4.5), model provider (such as Anthropic or Cohere), inference type (such as input tokens or output tokens), and feature (such as on-demand inference or reranker). You can combine product attributes with cost allocation tags on application inference profiles, projects, or workspaces to see which applications drive spend on each model, and with IAM principal tags to see which users or roles drive it. Group a month of Bedrock spend by model in Cost Explorer to find your most expensive models, build a dashboard widget that tracks cost per provider, or set a budget that alerts on spend for a single model.&lt;/p&gt;\n&lt;p&gt;The Amazon Bedrock product attribute dimension is available today at no additional charge in all AWS Regions, excluding the AWS GovCloud (US) Regions and the China (Beijing) and China (Ningxia) Regions. To learn more, see the user guides for&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html\"&gt;Cost Explorer&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html\"&gt;Budgets&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/cost-management/latest/userguide/dashboards.html\"&gt;Dashboards&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-bedrock-attributes-in-cost-explorer/",
+      "publishedAt": "2026-10-08T18:51:00.000Z",
+      "updatedAt": "2026-10-08T18:51:00.000Z",
+      "categories": [
+        "AWS Cost Explorer",
+        "Cost Management",
+        "Amazon Bedrock",
+        "AWS Budgets"
+      ],
+      "services": [
+        "Bedrock",
+        "Cost Explorer",
+        "Budgets"
+      ],
+      "tags": [
+        "aws cost explorer",
+        "cost management",
+        "amazon bedrock",
+        "aws budgets",
+        "bedrock",
+        "cost explorer",
+        "budgets"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0fcb44809e61d4c6",
+      "title": "Amazon RDS for Oracle now supports minor version upgrade prechecks and a new RDS event to help reduce patching downtime",
+      "description": "Amazon Relational Database Service (Amazon RDS) for Oracle now lets you run a minor version upgrade precheck yourself, before you start an upgrade or before your scheduled maintenance window. RDS for Oracle now also emits a new event during patching that tells you when your DB instance is accepting connections again. With this event, you can bring your applications back while the remaining maintenance tasks are still in progress, which can reduce your application downtime during patching. At the start of every minor version upgrade, RDS for Oracle checks for conditions that would prevent the u",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/oracle/\"&gt;Amazon Relational Database Service (Amazon RDS) for Oracle&lt;/a&gt; now lets you run a minor version upgrade precheck yourself, before you start an upgrade or before your scheduled maintenance window. RDS for Oracle now also emits a new event during patching that tells you when your DB instance is accepting connections again. With this event, you can bring your applications back while the remaining maintenance tasks are still in progress, which can reduce your application downtime during patching.&lt;/p&gt;\n&lt;p&gt;At the start of every minor version upgrade, RDS for Oracle checks for conditions that would prevent the upgrade from completing, such as insufficient free storage, invalid Oracle-maintained objects, or invalid triggers. If a check finds a problem, the upgrade stops, and you must fix the problem and schedule the upgrade again. Previously, these checks ran only as part of the upgrade itself. With the new rdsadmin.rdsadmin_precheck_tasks.precheck_minor_upgrade procedure, you can run the checks at any time. The precheck is read-only and doesn't affect your workload. It reports every issue it finds in a single log so you can fix them and run the precheck again until it passes before your maintenance window.&lt;/p&gt;\n&lt;p&gt;During a minor version upgrade or an operating system update, RDS for Oracle now emits RDS-EVENT-0596 as soon as your DB instance is accepting connections. Any remaining maintenance tasks then complete while your database is online. You can subscribe to this event through Amazon RDS event notifications or Amazon EventBridge to automate application reconnection or notify your teams that the database is back online.&lt;/p&gt;\n&lt;p&gt;These capabilities are available in all AWS commercial and AWS GovCloud (US) Regions where Amazon RDS for Oracle is available. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Oracle.Precheck.html\"&gt;Running minor version upgrade prechecks in Amazon RDS for Oracle&lt;/a&gt;, &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Events.Messages.html\"&gt;Amazon RDS event categories and event messages&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/working-with-events.html\"&gt;Monitoring Amazon RDS events&lt;/a&gt; in the Amazon RDS User Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-minor-version-upgrade-precheck-new-patching-rds-event/",
+      "publishedAt": "2026-10-08T18:00:00.000Z",
+      "updatedAt": "2026-10-08T18:00:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds For Oracle"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds for oracle",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e5069e533e093a02",
+      "title": "AWS Network Firewall adds wildcard support for container attribute filters",
+      "description": "AWS Network Firewall now supports wildcard matching in container attribute-based inspection filters for Amazon Elastic Kubernetes Service (Amazon EKS) and Amazon Elastic Container Service (Amazon ECS). This enhancement allows you to define attribute filters using wildcard patterns to match multiple container workloads in a single rule, eliminating the need to create individual container associations for each variant. With wildcard support, you can use patterns like app=payments-* to automatically cover all variants of an application, such as payments-api, payments-worker, and payments-cron. Th",
+      "descriptionHtml": "&lt;p&gt;AWS Network Firewall now supports wildcard matching in container attribute-based inspection filters for Amazon Elastic Kubernetes Service (Amazon EKS) and Amazon Elastic Container Service (Amazon ECS). This enhancement allows you to define attribute filters using wildcard patterns to match multiple container workloads in a single rule, eliminating the need to create individual container associations for each variant.&lt;/p&gt;\n&lt;p&gt;With wildcard support, you can use patterns like app=payments-* to automatically cover all variants of an application, such as payments-api, payments-worker, and payments-cron. This simplifies firewall rule management for dynamic container environments where new application variants are frequently deployed, reducing operational overhead and ensuring consistent security coverage across your containerized workloads.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Wildcard support for container attribute filters is available in all AWS Regions where AWS Network Firewall container attribute-based inspection is supported. For a full list of supported Regions, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Region Table&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt;To get started, visit AWS Network Firewall &lt;a href=\"https://aws.amazon.com/network-firewall/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;product page&lt;/a&gt; and service &lt;a href=\"https://docs.aws.amazon.com/network-firewall/latest/developerguide/container-associations.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-network-firewall-container-attributes-wildcard",
+      "publishedAt": "2026-10-08T16:00:00.000Z",
+      "updatedAt": "2026-10-08T16:00:00.000Z",
+      "categories": [
+        "AWS Network Firewall",
+        "Networking And Content Delivery",
+        "Security Identity And Compliance",
+        "Containers And Deployment"
+      ],
+      "services": [
+        "AWS Network Firewall"
+      ],
+      "tags": [
+        "aws network firewall",
+        "networking and content delivery",
+        "security identity and compliance",
+        "containers and deployment"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3d60798aedee644e",
+      "title": "Amazon GameLift Servers adds CPU burstability for container fleets",
+      "description": "Amazon GameLift Servers now supports CPU burstability for container fleets, giving game developers greater flexibility in how compute resources are allocated and consumed at runtime. Previously, container fleets relied on a fixed CPU value that simultaneously controlled both container packing density and imposed a hard runtime cap. This dual constraint forced developers to choose between efficient resource utilization and maintaining performance headroom for their game server workloads. Game server workloads are inherently bursty, CPU demand stays low during most of a match but spikes sharply ",
+      "descriptionHtml": "&lt;p&gt;Amazon GameLift Servers now supports CPU burstability for container fleets, giving game developers greater flexibility in how compute resources are allocated and consumed at runtime. Previously, container fleets relied on a fixed CPU value that simultaneously controlled both container packing density and imposed a hard runtime cap. This dual constraint forced developers to choose between efficient resource utilization and maintaining performance headroom for their game server workloads.&lt;/p&gt;\n&lt;p&gt;Game server workloads are inherently bursty, CPU demand stays low during most of a match but spikes sharply during physics calculations, AI processing, or collision detection. With CPU burstability, developers can now pack containers based on typical CPU needs while still allowing game server processes to burst into available idle instance CPU during peak demand moments. This opt-in feature is configured per container group definition, supports high-density deployments without sacrificing peak performance, and is included at no additional cost as part of standard container fleet pricing.&lt;/p&gt;\n&lt;p&gt;CPU burstability for Amazon GameLift Servers container fleets is available in all AWS Regions where container fleets are supported, excluding China Regions.&lt;/p&gt;\n&lt;p&gt;To learn more about CPU burstability for Amazon GameLift Servers container fleets, visit the &lt;a href=\"https://docs.aws.amazon.com/gameliftservers/latest/developerguide/release-notes.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon GameLift Servers Developer Guide&lt;/a&gt; or explore the &lt;a href=\"https://aws.amazon.com/gamelift/servers/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon GameLift Servers product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-gamelift-servers-cpu-burstability",
+      "publishedAt": "2026-10-08T08:00:00.000Z",
+      "updatedAt": "2026-10-08T08:00:00.000Z",
+      "categories": [
+        "Amazon Gamelift",
+        "Game Development"
+      ],
+      "services": [],
+      "tags": [
+        "amazon gamelift",
+        "game development"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "302e3cafa3afcc74",
+      "title": "Amazon EC2 C8gb instances now generally available in additional regions",
+      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8gb instances, powered by the latest-generation AWS Graviton4 processors, are available in the US East (Ohio), US West (N. California), EU (Frankfurt, Ireland, Paris, Stockholm), and Africa (Cape Town) regions. The new instances provide up to 30% better compute performance than AWS Graviton3-based EC2 instances. At up to 300 Gbps EBS bandwidth and 1600K IOPS, C8gb instances offer higher EBS performance compared to same-sized equivalent Graviton4-based instances. Take advantage of the higher block storage performance offered by these ne",
+      "descriptionHtml": "&lt;p style=\"text-align: left;\"&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) C8gb instances, powered by the latest-generation AWS Graviton4 processors, are available in the US East (Ohio), US West (N. California), EU (Frankfurt, Ireland, Paris, Stockholm), and Africa (Cape Town) regions. The new instances provide up to 30% better compute performance than AWS Graviton3-based EC2 instances. At up to 300 Gbps EBS bandwidth and 1600K IOPS, C8gb instances offer higher EBS performance compared to same-sized equivalent Graviton4-based instances.&lt;/p&gt;\n&lt;p style=\"text-align: left;\"&gt;Take advantage of the higher block storage performance offered by these new EBS optimized EC2 instances to scale the performance and throughput of workloads such as high-performance file systems, while optimizing the cost of running your workloads.&lt;/p&gt;\n&lt;p style=\"text-align: left;\"&gt;For increased scalability, these instances offer instance sizes up to 48xlarge, up to 384 GiB of memory, up to 300 Gbps of EBS bandwidth, up to 400 Gbps of networking bandwidth. These instances support Elastic Fabric Adapter (EFA) networking on the 16xlarge, 24xlarge, 48xlarge sizes, which enables lower latency and improved cluster performance for workloads deployed on tightly coupled clusters.&lt;/p&gt;\n&lt;p style=\"text-align: left;\"&gt;C8gb instances are available in the following AWS Regions: US East (N. Virginia, Ohio), US West (N.California, Oregon), EU (Frankfurt, Ireland, Paris, Stockholm), and Africa (Cape Town).&lt;/p&gt;\n&lt;p style=\"text-align: left;\"&gt;To learn more, see &lt;a href=\"https://aws.amazon.com/ec2/instance-types/c8g/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon EC2 C8gb Instances&lt;/a&gt;. To begin your Graviton journey, visit the &lt;a href=\"https://aws.amazon.com/ec2/graviton/level-up-with-graviton/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Level up your compute with AWS Graviton page&lt;/a&gt;. To get started, see &lt;a href=\"https://console.aws.amazon.com/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Management Console&lt;/a&gt;, &lt;a href=\"https://aws.amazon.com/cli/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Command Line Interface (AWS CLI)&lt;/a&gt;, and &lt;a href=\"https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/EC2.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS SDKs&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ec2-c8gb/",
+      "publishedAt": "2026-10-07T18:26:00.000Z",
+      "updatedAt": "2026-10-07T18:26:00.000Z",
+      "categories": [
+        "Compute",
+        "Amazon Ec2"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "compute",
+        "amazon ec2",
+        "ec2"
+      ],
+      "isNew": true
+    },
     {
       "id": "15c7cbb99663dbe5",
       "title": "AWS Capabilities by Region now offers availability notifications for individual features and advanced filters",
@@ -500,6 +635,30 @@
       "isNew": true
     },
     {
+      "id": "fcdd8e4e91d6b07e",
+      "title": "Amazon OpenSearch Service introduces validation advisory for domain configuration changes",
+      "description": "Amazon OpenSearch Service now provides validation advisory for domain configuration changes, which helps you make informed decisions about changes that carry risk but can still be applied. Each configuration validation is now classified as either Critical, which blocks the change, or Warning, which gives advisory guidance that you can acknowledge before you proceed. Previously, validation results were limited to pass or block. There was no way to flag changes that would succeed but carry risk. Validation advisory helps you find potential issues without blocking deployments. Examples include de",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now provides validation advisory for domain configuration changes, which helps you make informed decisions about changes that carry risk but can still be applied. Each configuration validation is now classified as either Critical, which blocks the change, or Warning, which gives advisory guidance that you can acknowledge before you proceed.&lt;/p&gt;\n&lt;p&gt;Previously, validation results were limited to pass or block. There was no way to flag changes that would succeed but carry risk. Validation advisory helps you find potential issues without blocking deployments. Examples include dedicated coordinator nodes that may be too small for the data node configuration, or a shard count that exceeds the recommended limit for the cluster. You can acknowledge warnings when you first submit a change, review severity in dry-run results before applying changes, set acknowledgments directly in AWS CloudFormation templates, and see severity in API responses and Amazon EventBridge notifications.&lt;/p&gt;\n&lt;p&gt;Validation advisory supports all Amazon OpenSearch Service domains running either OpenSearch or Elasticsearch versions. It is available in all AWS Regions where Amazon OpenSearch Service is available. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/managedomains-configuration-changes.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/opensearch-validation-advisory/",
+      "publishedAt": "2026-10-02T09:35:00.000Z",
+      "updatedAt": "2026-10-02T09:35:00.000Z",
+      "categories": [
+        "Databases",
+        "Analytics",
+        "Amazon Opensearch Service"
+      ],
+      "services": [
+        "OpenSearch"
+      ],
+      "tags": [
+        "databases",
+        "analytics",
+        "amazon opensearch service",
+        "opensearch"
+      ],
+      "isNew": false
+    },
+    {
       "id": "9cc727417f4828a2",
       "title": "The AWS MCP Server is now available in six additional AWS Regions",
       "description": "The AWS MCP Server is now available in six additional AWS Regions: Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Ireland), Europe (London), and US West (Oregon). The AWS MCP Server, part of the Agent Toolkit for AWS , is a managed Model Context Protocol server that gives AI coding agents a single interface to AWS APIs, so agents can discover and call AWS services without building and maintaining per-service integrations. With this expansion, customers in these Regions can run the AWS MCP Server closer to their developers with lower latency, and keep request dat",
@@ -514,7 +673,7 @@
       "tags": [
         "developer tools"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e15d1053d32652a5",
@@ -536,7 +695,7 @@
         "vpc",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f30e21eb0a319aa8",
@@ -558,7 +717,7 @@
         "databases",
         "elasticache"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "cf5559b9d733f525",
@@ -582,7 +741,7 @@
         "guardduty",
         "security hub"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "954382e6cfd850f2",
@@ -616,7 +775,7 @@
         "aws trusted advisor",
         "cloudformation"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b1062b9b28e32ad5",
@@ -638,7 +797,7 @@
         "amazon redshift",
         "redshift"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8d1afa31069e8cd6",
@@ -655,7 +814,7 @@
       "tags": [
         "q"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "63b8a1fa44f7e578",
@@ -679,7 +838,7 @@
         "s3",
         "dynamodb"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "7a313636ba38bd3f",
@@ -701,7 +860,7 @@
         "databases",
         "dynamodb"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "1749ede0e6842232",
@@ -727,7 +886,7 @@
         "guardduty",
         "organizations"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6ce5a781ee7c21e7",
@@ -11087,164 +11246,6 @@
         "amazon cognito",
         "security identity and compliance",
         "cognito"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d3bb530d488782a3",
-      "title": "AWS IAM Identity Center supports one-click multi-Region option for new organization instances",
-      "description": "AWS IAM Identity Center now makes it easier to enable multi-Region support when creating a new organization instance. Previously, enabling multi-Region support required multiple steps including creating a customer managed KMS key, configuring key policies, and manually adding Regions. Now, customers creating a new IAM Identity Center instance in supported Regions can enable multi-Region in one click. When enabling a new organization instance, you can choose from three instance configuration options: single-Region instance, multi-Region instance, or custom instance. The multi-Region instance op",
-      "descriptionHtml": "&lt;p&gt;AWS IAM Identity Center now makes it easier to enable multi-Region support when creating a new organization instance. Previously, enabling multi-Region support required multiple steps including creating a customer managed KMS key, configuring key policies, and manually adding Regions. Now, customers creating a new IAM Identity Center instance in supported Regions can enable multi-Region in one click.&lt;/p&gt; \n&lt;p&gt;When enabling a new organization instance, you can choose from three instance configuration options: single-Region instance, multi-Region instance, or custom instance. The multi-Region instance option automatically creates a customer managed multi-Region KMS key in your account and replicates your instance to an additional Region. This enables resilient AWS account and application access — your workforce can continue to access their AWS accounts even if IAM Identity Center experiences a disruption in the primary Region. The custom instance option lets you configure your Region settings individually, including the ability to use an existing customer managed KMS key from your account.&lt;/p&gt; \n&lt;p&gt;Instance configuration options are available in &lt;a href=\"https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html?refid=6e78b6f1-dfd8-49b4-ae84-4527ca1881cb#manage-acct-regions-regional-availability\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;17 enabled-by-default commercial AWS Regions&lt;/a&gt; for organization instances of IAM Identity Center. Standard AWS KMS charges apply for the customer managed key created with the multi-Region instance option. IAM Identity Center is provided at no additional cost.&lt;/p&gt; \n&lt;p&gt;To get started, see the &lt;a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-identity-center.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;IAM Identity Center User Guide&lt;/a&gt;. To learn more about multi-Region support, see &lt;a href=\"https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-region-iam-identity-center.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Using IAM Identity Center across multiple AWS Regions&lt;/a&gt;. To learn more about IAM Identity Center, visit the &lt;a href=\"https://aws.amazon.com/iam/identity-center/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;product detail page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-iam-identity-center-supports-one-click-multi-region-option-new-organization-instances",
-      "publishedAt": "2026-08-07T16:00:00.000Z",
-      "updatedAt": "2026-08-07T16:00:00.000Z",
-      "categories": [
-        "AWS Iam Identity Center",
-        "Security Identity And Compliance"
-      ],
-      "services": [
-        "IAM",
-        "IAM Identity Center"
-      ],
-      "tags": [
-        "aws iam identity center",
-        "security identity and compliance",
-        "iam",
-        "iam identity center"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "532fa11d8ea9c463",
-      "title": "Amazon VPC IPAM now supports BGP route protection monitoring and delegated RPKI for BYOIP prefixes",
-      "description": "Amazon Virtual Private Cloud (VPC) IP Address Manager (IPAM) now supports BGP route protection monitoring and delegated Resource Public Key Infrastructure (RPKI) management for Bring Your Own IP (BYOIP) prefixes. Network administrators can centrally monitor BGP route protection and automate Route Origin Authorization (ROA) management across their organization. Using BGP route monitoring, you can view RPKI validity status, ROA strength, and route overlap detection for all BYOIP prefixes across accounts and regions from a single dashboard. Administrators can identify prefixes with invalid or mis",
-      "descriptionHtml": "&lt;p&gt;Amazon Virtual Private Cloud (VPC) IP Address Manager (IPAM) now supports BGP route protection monitoring and delegated Resource Public Key Infrastructure (RPKI) management for Bring Your Own IP (BYOIP) prefixes. Network administrators can centrally monitor BGP route protection and automate Route Origin Authorization (ROA) management across their organization.&lt;/p&gt; \n&lt;p&gt;Using BGP route monitoring, you can view RPKI validity status, ROA strength, and route overlap detection for all BYOIP prefixes across accounts and regions from a single dashboard. Administrators can identify prefixes with invalid or missing ROAs, detect route overlaps that may indicate hijacking, and distinguish between strict and permissive ROA configurations. With Delegated RPKI, administrators perform a one-time setup with their Regional Internet Registry (ARIN, RIPE, APNIC, or LACNIC), after which IPAM automatically creates ROAs during BYOIP provisioning, renews them before expiration, and manages ROAs for on-premises prefixes. Before this feature, customers had to manually create and renew ROAs at their Regional Internet Registry (RIR), validate ownership through WHOIS or DNS records, and rely on third-party tools to monitor route security.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;The feature is available within Amazon VPC IPAM in all commercial AWS Regions, excluding the AWS GovCloud (US) Regions, and China (Beijing, operated by Sinnet) and China (Ningxia, operated by NWCD). To get started, please see the &lt;a href=\"https://docs.aws.amazon.com/vpc/latest/ipam/monitor-bgp-route-security.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;BGP route protection documentation&lt;/a&gt;. To learn more about IPAM, view the &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;IPAM documentation&amp;nbsp;&lt;/a&gt;. For details on pricing, refer to the IPAM tab on the &amp;nbsp;&lt;a href=\"https://aws.amazon.com/vpc/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon VPC Pricing Page&amp;nbsp;&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-vpc-ipam-bgp-rpki-byoip/",
-      "publishedAt": "2026-08-07T16:00:00.000Z",
-      "updatedAt": "2026-08-07T16:00:00.000Z",
-      "categories": [
-        "Networking And Content Delivery",
-        "Amazon Vpc"
-      ],
-      "services": [
-        "VPC"
-      ],
-      "tags": [
-        "networking and content delivery",
-        "amazon vpc",
-        "vpc"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9520278531ee11ec",
-      "title": "Amazon Bedrock AgentCore adds memory, policy, and harness in AWS GovCloud (US-West)",
-      "description": "Today, Amazon Bedrock AgentCore introduces new capabilities in AWS GovCloud (US-West). AgentCore is the platform to build, connect, and optimize agents. With these capabilities, teams operating in regulated environments can build context-aware agents and take them from prototype to production faster, with the controls needed to scale across their organization. AgentCore memory gives agents short-term memory for immediate conversation context and long-term memory that extracts persistent insights and preferences across sessions. Agents deliver more intelligent, personalized experiences without ",
-      "descriptionHtml": "&lt;p&gt;Today, Amazon Bedrock AgentCore introduces new capabilities in AWS GovCloud (US-West). AgentCore is the platform to build, connect, and optimize agents. With these capabilities, teams operating in regulated environments can build context-aware agents and take them from prototype to production faster, with the controls needed to scale across their organization.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;AgentCore memory gives agents short-term memory for immediate conversation context and long-term memory that extracts persistent insights and preferences across sessions. Agents deliver more intelligent, personalized experiences without teams needing to manage complex memory infrastructure.&lt;/p&gt; \n&lt;p&gt;Policy in AgentCore provides centralized, fine-grained controls for agent-tool interactions that operate outside agent code. Teams author policies in natural language that automatically convert to Cedar, the AWS open-source policy language. Policies attach them to an AgentCore gateway that evaluates each request before allowing or denying tool access.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;The managed harness lets developers declare an agent's model, tools, and instructions through configuration and run it in just a few API calls without writing orchestration code, while AgentCore handles the environment, compute, memory, identity, and observability.&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; To learn more about AgentCore capabilities, visit the &lt;a href=\"https://aws.amazon.com/bedrock/agentcore/?trk=f7596381-283b-40e2-90fe-22e22b18daf5&amp;amp;sc_channel=ps&amp;amp;ef_id=CjwKCAjwvsvTBhBaEiwAmf-3niL0_BL-F8aPK5N9EXC66KLf4e2JBdor5IkcUSJ2nRSQGOzEy8zoXxoCvWIQAvD_BwE&amp;amp;gads_camp=23527793912&amp;amp;gads_ag=197228065909&amp;amp;gads_ad=813189298265&amp;amp;gads_kw=agentcore&amp;amp;gads_matchtype=p&amp;amp;gads_network=g&amp;amp;gads_device=c&amp;amp;gads_geo=9007584&amp;amp;gad_campaignid=23527793912&amp;amp;gclid=CjwKCAjwvsvTBhBaEiwAmf-3niL0_BL-F8aPK5N9EXC66KLf4e2JBdor5IkcUSJ2nRSQGOzEy8zoXxoCvWIQAvD_BwE\"&gt;AgentCore product page&lt;/a&gt;. For a deeper walkthrough of AgentCore concepts and best practices, see the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html\"&gt;AgentCore Documentation&lt;/a&gt; to get started.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/agentcore-memory-policy-harness-govcloud/",
-      "publishedAt": "2026-08-07T15:52:00.000Z",
-      "updatedAt": "2026-08-07T15:52:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0332d20685a8b75e",
-      "title": "Amazon GameLift Servers now supports 21 new EC2 instance types",
-      "description": "Amazon GameLift Servers now supports 21 additional Amazon EC2 instance types for managed EC2 fleets and managed container fleets. Amazon GameLift Servers is a fully managed service that enables game developers and studios to deploy, operate, and scale dedicated game servers in the cloud. This expansion gives customer access to the latest compute-optimized and general-purpose instance families. The newly supported instance types span six families across two series: compute-optimized C-series (C8a, C8i, C9g) and general-purpose M-series (M8a, M8i, M9g). Customers can now choose between x86 and A",
-      "descriptionHtml": "&lt;p&gt;Amazon GameLift Servers now supports 21 additional Amazon EC2 instance types for managed EC2 fleets and managed container fleets. Amazon GameLift Servers is a fully managed service that enables game developers and studios to deploy, operate, and scale dedicated game servers in the cloud. This expansion gives customer access to the latest compute-optimized and general-purpose instance families.&lt;/p&gt; \n&lt;p&gt;The newly supported instance types span six families across two series: compute-optimized C-series (C8a, C8i, C9g) and general-purpose M-series (M8a, M8i, M9g). Customers can now choose between x86 and Arm architectures, selecting from 5th-generation AMD EPYC, custom Intel Xeon 6, or AWS Graviton5 processors to optimize game server workloads for performance, cost, and engine compatibility. Use cases include running CPU-intensive multiplayer game server logic on C-series instances and scaling general-purpose fleets cost-effectively using Graviton5-powered M9g instances.&lt;/p&gt; \n&lt;p&gt;These instance types are available in Amazon GameLift Servers supported regions, except AWS China. For more information on launching fleets with these EC2 instances, visit the &lt;a href=\"https://docs.aws.amazon.com/gameliftservers/latest/developerguide/release-notes.html\"&gt;Amazon GameLift Servers documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/gamelift-ec2-instance-expansion/",
-      "publishedAt": "2026-08-07T08:00:00.000Z",
-      "updatedAt": "2026-08-07T08:00:00.000Z",
-      "categories": [
-        "Game Development",
-        "Amazon Gamelift"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "game development",
-        "amazon gamelift",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "de7b7438598c1bf5",
-      "title": "Amazon CloudWatch Alarms now supports wall clock evaluation windows",
-      "description": "Today, Amazon CloudWatch announces wall clock evaluation windows for metric alarms, enabling customers to align alarm evaluations to fixed calendar boundaries such as the top of the hour, midnight, or the start of the week. This new option complements the existing sliding window behavior and is designed for customers who monitor scheduled or business-aligned workloads. With wall clock evaluation windows, customers can avoid false alarms that occur when events cross rolling window boundaries. For example, a daily backup alarm using a sliding window can trigger incorrectly if consecutive backups",
-      "descriptionHtml": "&lt;p&gt;Today, Amazon CloudWatch announces wall clock evaluation windows for metric alarms, enabling customers to align alarm evaluations to fixed calendar boundaries such as the top of the hour, midnight, or the start of the week. This new option complements the existing sliding window behavior and is designed for customers who monitor scheduled or business-aligned workloads.&lt;br&gt; &lt;br&gt; With wall clock evaluation windows, customers can avoid false alarms that occur when events cross rolling window boundaries. For example, a daily backup alarm using a sliding window can trigger incorrectly if consecutive backups are slightly more than 24 hours apart, even though each calendar day had a successful backup. A wall clock window evaluates each calendar day independently, eliminating this issue. Customers can also specify a time zone so that daily alarms align to their local business day, with daylight saving time transitions handled automatically.&lt;br&gt; &lt;br&gt; Wall clock evaluation windows for CloudWatch Alarms are available in all AWS Regions where Amazon CloudWatch is available, except the Middle East (UAE) and Middle East (Bahrain) Regions.&lt;br&gt; &lt;br&gt; To get started, see &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/alarm-evaluation-window.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Alarm evaluation window&lt;/a&gt; in the Amazon CloudWatch User Guide. To learn more about Amazon CloudWatch Alarms, visit the &lt;a href=\"https://aws.amazon.com/cloudwatch/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon CloudWatch&lt;/a&gt; product page.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/07/cloudwatch-alarms-wallclock-evaluation",
-      "publishedAt": "2026-08-07T08:00:00.000Z",
-      "updatedAt": "2026-08-07T08:00:00.000Z",
-      "categories": [
-        "Management And Governance",
-        "Amazon Cloudwatch"
-      ],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "management and governance",
-        "amazon cloudwatch",
-        "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "02091a27cfd5eaf6",
-      "title": "Amazon SES now helps identify automated open and click events in event notifications",
-      "description": "Amazon Simple Email Service (SES) now helps you identify automated email interactions. Open and Click event notifications now include an isBotEvent field that indicates whether the event was likely triggered by an automated system or a human recipient. Customers who publish Open or Click events through a configuration set event destination will now see an isBotEvent field with a value of Likely or Unlikely in event notifications. You can use this field as a signal to help you better understand how much of your engagement is driven by human recipients versus automated systems. This feature is a",
-      "descriptionHtml": "&lt;p&gt;Amazon Simple Email Service (SES) now helps you identify automated email interactions. Open and Click event notifications now include an isBotEvent field that indicates whether the event was likely triggered by an automated system or a human recipient.&lt;br&gt; &lt;br&gt; Customers who publish Open or Click events through a configuration set event destination will now see an isBotEvent field with a value of Likely or Unlikely in event notifications. You can use this field as a signal to help you better understand how much of your engagement is driven by human recipients versus automated systems.&lt;br&gt; &lt;br&gt; This feature is available in all AWS Regions where Amazon SES is available. If you already publish Open or Click events to an event destination, the isBotEvent field is automatically included, no additional configuration is needed.&lt;br&gt; &lt;br&gt; To learn more, see &lt;a href=\"https://docs.aws.amazon.com/ses/latest/dg/event-publishing-retrieving-sns-contents.html\"&gt;Contents of event data that Amazon SES publishes to Amazon SNS&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/ses/latest/dg/event-publishing-retrieving-firehose-contents.html\"&gt;Contents of event data that Amazon SES publishes to Firehose&lt;/a&gt; in the Amazon SES Developer Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ses-automated-email-interactions/",
-      "publishedAt": "2026-08-07T07:00:00.000Z",
-      "updatedAt": "2026-08-07T07:00:00.000Z",
-      "categories": [
-        "Amazon Simple Email Service",
-        "Applications"
-      ],
-      "services": [
-        "SES"
-      ],
-      "tags": [
-        "amazon simple email service",
-        "applications",
-        "ses"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d6eb5a6af8b8dfcf",
-      "title": "Amazon OpenSearch Service announces additional upgrade runway for existing domains and support dates for additional versions",
-      "description": "In November 2024, Amazon OpenSearch Service announced Extended Support for legacy Elasticsearch and OpenSearch engine versions (see also the detailed blog post ). Since that announcement, many customers have upgraded to newer versions. However, some customers need more time to plan and complete their migrations. To provide this flexibility, we are continuing security and operating system patch coverage for these versions for an additional 12 months, through November 7, 2027, at an updated support rate. Continuing security and operating system patch coverage for version presently on Extended Su",
-      "descriptionHtml": "&lt;p&gt;In November 2024, Amazon OpenSearch Service &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2024/11/amazon-opensearch-service-support-engine-versions/\"&gt;announced Extended Support for legacy Elasticsearch and OpenSearch engine versions&lt;/a&gt; (see also the &lt;a href=\"https://aws.amazon.com/blogs/big-data/amazon-opensearch-service-announces-standard-and-extended-support-dates-for-elasticsearch-and-opensearch-versions/\"&gt;detailed blog post&lt;/a&gt;). Since that announcement, many customers have upgraded to newer versions. However, some customers need more time to plan and complete their migrations. To provide this flexibility, we are continuing security and operating system patch coverage for these versions for an additional 12 months, through November 7, 2027, at an updated support rate.&lt;/p&gt; \n&lt;p&gt;Continuing security and operating system patch coverage for version presently on Extended Support: Security and operating system patch coverage for Elasticsearch versions 1.5 to&amp;nbsp;7.8 (less Elasticsearch version 5.6 which already has extended support till November 7, 2028), OpenSearch versions 1.0 to 1.2, and OpenSearch versions 2.3 to&amp;nbsp;2.9 is being continued for an additional 12 months through November 7, 2027. Domains on these versions will not be isolated. From November 7, 2026, the Extended Support surcharge will be equal to your instance pricing for these versions. Storage costs are not affected. For Elasticsearch version 5.6, the existing extended support charges will continue.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Extended Support dates for additional versions: Amazon OpenSearch Service now announces Standard and Extended Support dates for Elasticsearch versions 6.8, 7.9, and 7.10, OpenSearch version 1.3, and OpenSearch versions 2.11 to&amp;nbsp;2.19. Elasticsearch versions 6.8 and 7.10 and OpenSearch versions 1.3 and 2.19 will receive 3 years of Extended Support. Elasticsearch version 7.9 and OpenSearch versions 2.11 to 2.17 will receive 1 year of Extended Support. The Extended Support charge for these versions is $0.0065 per Normalized Instance Hour (NIH) in US East (N. Virginia). For exact region pricing see &lt;a href=\"https://aws.amazon.com/opensearch-service/pricing/#Extended_support_costs\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;We recommend that customers upgrade to the latest available OpenSearch version for improved performance, security, and new features. For more details, see the &lt;a href=\"https://aws.amazon.com/blogs/big-data/amazon-opensearch-service-extends-version-lifecycle-support-timelines/\"&gt;blog post&lt;/a&gt; , &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is.html#choosing-version\"&gt;Extended Support documentation&lt;/a&gt;, and &lt;a href=\"https://aws.amazon.com/opensearch-service/pricing/#Extended_support_costs\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-opensearch-service-additional-upgrade-runway-support-dates",
-      "publishedAt": "2026-08-07T07:00:00.000Z",
-      "updatedAt": "2026-08-07T07:00:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Analytics",
-        "Amazon Opensearch Service"
-      ],
-      "services": [
-        "OpenSearch"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "analytics",
-        "amazon opensearch service",
-        "opensearch"
       ],
       "isNew": false
     }
