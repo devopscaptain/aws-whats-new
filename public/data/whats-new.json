@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-10-11T14:42:38.130Z",
+  "lastUpdated": "2026-10-12T17:27:46.984Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "728201e777dc9f81",
+      "title": "Amazon OpenSearch Service now supports index-level encryption",
+      "description": "Amazon OpenSearch Service now supports index-level encryption, letting you encrypt each index at rest with its own AWS Key Management Service (AWS KMS) customer managed key. This helps you protect data with different ownership or sensitivity under separate keys on the same domain. For example, you can encrypt each tenant's data with its own key in a multi-tenant application. Index-level encryption builds on the existing encryption at rest capability in Amazon OpenSearch Service. To enable it, set the encryption mode to Native and specify a customer managed AWS KMS key when you create a new dom",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now supports index-level encryption, letting you encrypt each index at rest with its own AWS Key Management Service (AWS KMS) customer managed key.&amp;nbsp;This helps you protect data with different ownership or sensitivity under separate keys on the same domain. For example, you can encrypt each tenant's data with its own key in a multi-tenant application.&lt;/p&gt;\n&lt;p&gt;Index-level encryption builds on the existing encryption at rest capability in Amazon OpenSearch Service. To enable it, set the encryption mode to Native and specify a customer managed AWS KMS key when you create a new domain using the AWS Management Console or the AWS CLI. You can then register additional keys with the domain and use them to encrypt individual indexes.&lt;/p&gt;\n&lt;p&gt;Index-level encryption is available for domains running OpenSearch version 3.3 or later in 14 AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai, Seoul, Singapore, Sydney, Tokyo), Europe (Frankfurt, Ireland, London, Paris), and South America (São Paulo).&amp;nbsp;There is no additional charge for the feature. Standard AWS KMS and OpenSearch Service charges apply.&lt;/p&gt;\n&lt;p&gt;To get started, see &lt;a title=\" Index-level encryption\" href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/index-level-encryption.html\" target=\"_blank\"&gt;Index-level encryption&lt;/a&gt; in the Amazon OpenSearch Service Developer Guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/opensearch-index-level-encryption",
+      "publishedAt": "2026-10-12T02:30:00.000Z",
+      "updatedAt": "2026-10-12T02:30:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Opensearch Service"
+      ],
+      "services": [
+        "OpenSearch"
+      ],
+      "tags": [
+        "analytics",
+        "amazon opensearch service",
+        "opensearch"
+      ],
+      "isNew": true
+    },
     {
       "id": "1732e12ede815fcb",
       "title": "AWS Security Hub now exports findings to S3 in CSV or JSON format",
@@ -701,7 +723,7 @@
         "rds",
         "aurora"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "bb12278ed7739567",
@@ -720,7 +742,7 @@
         "networking and content delivery",
         "aws client vpn"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2e75da0fd5722d00",
@@ -739,7 +761,7 @@
         "batch",
         "eks"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fcce66777be03a40",
@@ -767,7 +789,7 @@
         "cloudtrail",
         "athena"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "6ec3de306e25c58c",
@@ -784,7 +806,7 @@
       "tags": [
         "nova"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "49e0bd1a32097a2c",
@@ -11220,30 +11242,6 @@
         "artificial intelligence",
         "aiml",
         "amazon sagemaker jumpstart",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "64a83f0fd59cd2aa",
-      "title": "langcache-embed-v3-small, Mellum2-12B-A2.5B-Thinking, and LightOnOCR-2-1B models now available on Amazon SageMaker JumpStart",
-      "description": "Redis's langcache-embed-v3-small, JetBrains' Mellum2-12B-A2.5B-Thinking, and LightOn's LightOnOCR-2-1B models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three models bring specialized capabilities spanning semantic caching optimization, code-focused reasoning, and end-to-end document OCR, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure. langcache-embed-v3-small is optimized for semantic caching in LLM applications. It maps sentences and paragraphs into a dense vector ",
-      "descriptionHtml": "&lt;p&gt;Redis's langcache-embed-v3-small, JetBrains' Mellum2-12B-A2.5B-Thinking, and LightOn's LightOnOCR-2-1B models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three models bring specialized capabilities spanning semantic caching optimization, code-focused reasoning, and end-to-end document OCR, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.&lt;/p&gt; \n&lt;p&gt;langcache-embed-v3-small is optimized for semantic caching in LLM applications. It maps sentences and paragraphs into a dense vector space purpose-built for identifying semantically equivalent queries regardless of phrasing, enabling intelligent cache hits that reduce redundant LLM calls and accelerate response times in high-volume inference workloads.&lt;/p&gt; \n&lt;p&gt;Mellum2-12B-A2.5B-Thinking excels in code generation, debugging, multi-step reasoning, and agentic coding workflows. It uses a Mixture-of-Experts architecture (64 experts, 8 activated per token), activating only 2.5B of its 12B total parameters per forward pass with a 131,072-token context length. It emits explicit chain-of-thought reasoning traces before final answers, delivering high-throughput, low-latency inference ideal for routing, RAG, sub-agents, and private deployments.&lt;/p&gt; \n&lt;p&gt;LightOnOCR-2-1B provides end-to-end multilingual document-to-text conversion for PDFs, scans, and images without brittle OCR pipelines. This 1B-parameter vision-language model directly transduces page images into clean, naturally ordered text, achieving state-of-the-art performance on OlmOCR-Bench while being ~9× smaller and significantly faster than competing approaches.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;br&gt; &lt;br&gt; To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/langcache-embed-v3-small-mellum2-12B-A2.5B-thinking-lightOnOCR-2-1B-on-sagemaker-jumpstart/",
-      "publishedAt": "2026-08-10T23:05:00.000Z",
-      "updatedAt": "2026-08-10T23:05:00.000Z",
-      "categories": [
-        "Aiml",
-        "Amazon Sagemaker Jumpstart",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "aiml",
-        "amazon sagemaker jumpstart",
-        "artificial intelligence",
         "sagemaker"
       ],
       "isNew": false
