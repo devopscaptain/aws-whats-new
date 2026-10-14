@@ -1,7 +1,212 @@
 {
-  "lastUpdated": "2026-10-13T15:38:03.348Z",
+  "lastUpdated": "2026-10-14T13:22:09.199Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "b05252c2ca6f40fd",
+      "title": "AWS Security Hub now supports resource criticality for prioritization",
+      "description": "Today, AWS Security Hub adds resource criticality to exposure prioritization, helping central security teams focus on the exposures that threaten their most business-critical resources. You can set criticality with an automation rule, for example marking every compute resource in a specific account as Very High. The rule applies to resources already in your inventory and to new resources as Security Hub discovers them. Security Hub also infers criticality from resource tags and resource names, with no configuration required, and records which source determined the value. Criticality appears as",
+      "descriptionHtml": "&lt;p&gt;Today, AWS Security Hub adds resource criticality to exposure prioritization, helping central security teams focus on the exposures that threaten their most business-critical resources.&lt;/p&gt;\n&lt;p&gt;You can set criticality with an automation rule, for example marking every compute resource in a specific account as Very High. The rule applies to resources already in your inventory and to new resources as Security Hub discovers them. Security Hub also infers criticality from resource tags and resource names, with no configuration required, and records which source determined the value. Criticality appears as a column on the Resources page for sorting, filtering, and grouping, and on the Impact assessment tab of an exposure finding. Resource criticality is included with Security Hub Essentials at no additional cost and is always on for all customers.&lt;/p&gt;\n&lt;p&gt;Resource criticality is included with Security Hub Essentials at no additional cost and requires no new enablement. To learn more, see&amp;nbsp; &lt;a href=\"https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub-v2.html\"&gt;AWS Security Hub User Guide&lt;/a&gt; and the &lt;a href=\"https://aws.amazon.com/security-hub/\"&gt;AWS Security Hub product page&lt;/a&gt;.&amp;nbsp;For a list of AWS Regions where Security Hub is available, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Region table&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-resource-criticality/",
+      "publishedAt": "2026-10-14T01:00:00.000Z",
+      "updatedAt": "2026-10-14T01:00:00.000Z",
+      "categories": [
+        "AWS Security Hub",
+        "Security Identity And Compliance"
+      ],
+      "services": [
+        "Security Hub"
+      ],
+      "tags": [
+        "aws security hub",
+        "security identity and compliance",
+        "security hub"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "bc8e15b7e4fd61cf",
+      "title": "Amazon ECS adds LiveTaskCount and removes the charge for RunningTaskCount metric",
+      "description": "Today, Amazon Elastic Container Service (Amazon ECS) announces LiveTaskCount, a new ECS service metric that reports how many tasks are actively running in your service, available to all customers at no additional charge. Additionally, the existing RunningTaskCount metric in Amazon CloudWatch Container Insights no longer incurs a charge. LiveTaskCount reports the number of actively running ECS tasks across all desired states (ACTIVATING, RUNNING, and DEACTIVATING), including tasks still running while transitioning to a stopped state, for example, tasks undergoing connection draining during a sc",
+      "descriptionHtml": "&lt;p&gt;Today, Amazon Elastic Container Service (Amazon ECS) announces LiveTaskCount, a new ECS service metric that reports how many tasks are actively running in your service, available to all customers at no additional charge. Additionally, the existing RunningTaskCount metric in Amazon CloudWatch Container Insights no longer incurs a charge.&lt;/p&gt;\n&lt;p&gt;LiveTaskCount reports the number of actively running ECS tasks across all desired states (ACTIVATING, RUNNING, and DEACTIVATING), including tasks still running while transitioning to a stopped state, for example, tasks undergoing connection draining during a scale-in event. This comprehensive state coverage makes LiveTaskCount well suited for autoscaling policies and capacity planning where a complete view of active, metric-generating tasks is required. It is available at no charge as part of ECS service utilization metrics and does not require opting in to CloudWatch Container Insights. The existing CloudWatch Container Insights RunningTaskCount metric tracks tasks where both the current and desired state are RUNNING, and continues to serve as a health and stability signal for customers who depend on it. With today's update, RunningTaskCount is now available at no additional charge for all CloudWatch Container Insights users.&lt;/p&gt;\n&lt;p&gt;These updates are available in all AWS Regions where Amazon ECS is available. No action is required, and the pricing change for RunningTaskCount takes effect beginning October 1, 2026, and applies automatically. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_utilization.html#cw_live_task_count\"&gt;ECS CloudWatch metrics&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudwatch-container-insights.html\"&gt;ECS Container Insights metrics&lt;/a&gt;. For a pricing example, see &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\"&gt;Amazon CloudWatch pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ecs-service-metrics/",
+      "publishedAt": "2026-10-13T22:00:00.000Z",
+      "updatedAt": "2026-10-13T22:00:00.000Z",
+      "categories": [
+        "Amazon Ecs",
+        "Containers",
+        "Amazon Cloudwatch"
+      ],
+      "services": [
+        "ECS",
+        "CloudWatch"
+      ],
+      "tags": [
+        "amazon ecs",
+        "containers",
+        "amazon cloudwatch",
+        "ecs",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ea07bc9e1fc479af",
+      "title": "AWS Agent Registry now supports custom metadata for registry records",
+      "description": "AWS Agent Registry is the centralized, governed catalog for agents, MCP servers, agent skills, gateways, and custom resources within your organization. As organizations scale to hundreds of such resources, a name and description alone are insufficient for effective governance and discovery. Custom metadata lets you extend every registry record with your organization's own structured fields, so both people and automated systems can find and govern resources consistently. With custom metadata, publishers can record fields like team ownership, data classification, or review status directly on eac",
+      "descriptionHtml": "&lt;p&gt;AWS Agent Registry is the centralized, governed catalog for agents, MCP servers, agent skills, gateways, and custom resources within your organization. As organizations scale to hundreds of such resources, a name and description alone are insufficient for effective governance and discovery. Custom metadata lets you extend every registry record with your organization's own structured fields, so both people and automated systems can find and govern resources consistently.\n &lt;br&gt;\n &lt;br&gt;\n With custom metadata, publishers can record fields like team ownership, data classification, or review status directly on each registry record. You define a schema once per registry with common attributes, then extend it with type-specific fields — such as a model family for agent records. Each field supports free text, a URL, a Boolean, or a choice from a list of allowed values, and the registry validates required fields and values on every record creation or update. You can then filter search results on any custom metadata field from the AWS Management Console, the AWS CLI, the AWS SDKs, or the registry's MCP endpoint.\n &lt;br&gt;\n &lt;br&gt;\n Custom metadata is available in all AWS Regions where AWS Agent Registry is available: US East (N. Virginia), US West (Oregon), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Europe (Ireland).\n &lt;br&gt;\n &lt;br&gt;\n To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry.html\"&gt;AWS Agent Registry documentation&lt;/a&gt;. For detailed setup guidance, see &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-custom-metadata-schema.html\"&gt;Define a custom metadata schema&lt;/a&gt; and&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/registry-custom-metadata-values.html\"&gt;Set custom metadata values on a record&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-custom-metadata-registry-records",
+      "publishedAt": "2026-10-13T21:00:00.000Z",
+      "updatedAt": "2026-10-13T21:00:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
+    {
+      "id": "1f076240946adff9",
+      "title": "Amazon DCV releases version 2026.0 with RHEL 10 support and new clients",
+      "description": "Amazon DCV 2026.0 is now available, adding support for RHEL 10, Rocky Linux 10, CentOS 10, and Ubuntu 26.04 along with a new macOS client and updated Windows and Linux clients. Amazon DCV is a high-performance remote display protocol that enables customers to securely access remote desktops and application sessions across Windows, Linux, and macOS. Amazon DCV 2026.0 includes the following key features and improvements: Support for RHEL 10, Rocky Linux 10, CentOS 10, and Ubuntu 26.04, with Linux hosts and sessions running on the modern Wayland display server A new macOS client with gamepad supp",
+      "descriptionHtml": "&lt;p&gt;Amazon DCV 2026.0 is now available, adding support for RHEL 10, Rocky Linux 10, CentOS 10, and Ubuntu 26.04 along with a new macOS client and updated Windows and Linux clients. Amazon DCV is a high-performance remote display protocol that enables customers to securely access remote desktops and application sessions across Windows, Linux, and macOS.&lt;/p&gt;\n&lt;p&gt;Amazon DCV 2026.0 includes the following key features and improvements:&lt;/p&gt;\n&lt;ul&gt;\n &lt;li&gt;\n  &lt;p&gt;Support for RHEL 10, Rocky Linux 10, CentOS 10, and Ubuntu 26.04, with Linux hosts and sessions running on the modern Wayland display server&lt;/p&gt;\n &lt;/li&gt;\n &lt;li&gt;\n  &lt;p&gt;A new macOS client with gamepad support, and updated Windows and Linux clients&lt;/p&gt;\n &lt;/li&gt;\n &lt;li&gt;\n  &lt;p&gt;URL redirection on Windows hosts, so configured links opened in a remote session launch in the local browser on the client device&lt;/p&gt;\n &lt;/li&gt;\n &lt;li&gt;\n  &lt;p&gt;Printer preferences redirection on Windows, giving remote sessions access to client-side printer settings&lt;/p&gt;\n &lt;/li&gt;\n &lt;li&gt;\n  &lt;p&gt;Performance improvements, including H.264 frame slice support and slice-based multithreaded decoding on the Linux and macOS clients for lower latency&lt;/p&gt;\n &lt;/li&gt;\n &lt;li&gt;\n  &lt;p&gt;Support for new macOS server versions on Amazon EC2&lt;/p&gt;\n &lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;For more information about the new features and enhancements in Amazon DCV 2026.0, see the &lt;a href=\"https://docs.aws.amazon.com/dcv/latest/adminguide/doc-history-release-notes.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;release notes&lt;/a&gt; or visit the &lt;a href=\"https://aws.amazon.com/hpc/dcv/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon DCV webpage&lt;/a&gt; to learn more and get started.&lt;/p&gt;\n&lt;h2&gt;&amp;nbsp;&lt;/h2&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dcv-2026-0/",
+      "publishedAt": "2026-10-13T19:35:00.000Z",
+      "updatedAt": "2026-10-13T19:35:00.000Z",
+      "categories": [
+        "Marketing:Marchitecture"
+      ],
+      "services": [],
+      "tags": [
+        "marketing:marchitecture"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "55a7a484e5b4c0a1",
+      "title": "AWS Deadline Cloud now helps users find their accessible resources in the Deadline Cloud monitor",
+      "description": "AWS Deadline Cloud now lets users who have access to specific queues, fleets, or jobs, rather than an entire farm, find the resources they can reach directly from the Deadline Cloud monitor. Deadline Cloud is a fully managed service that helps teams run compute-intensive workloads for visual effects, animation, product design, simulation, and gaming. Previously, a user with access to only one queue had to get the farm ID from an administrator before they could reach their work. With this launch, the Deadline Cloud monitor displays to users queues they have access to, the parent IDs needed to r",
+      "descriptionHtml": "&lt;p&gt;AWS Deadline Cloud now lets users who have access to specific queues, fleets, or jobs, rather than an entire farm, find the resources they can reach directly from the Deadline Cloud monitor. Deadline Cloud is a fully managed service that helps teams run compute-intensive workloads for visual effects, animation, product design, simulation, and gaming.&lt;/p&gt;\n&lt;p&gt;Previously, a user with access to only one queue had to get the farm ID from an administrator before they could reach their work. With this launch, the Deadline Cloud monitor displays to users queues they have access to, the parent IDs needed to reach them, and their level of access, covering both direct and group-inherited permissions. Teams now can share a single monitor entry point (URL) across different permission levels without additional coordination.&lt;/p&gt;\n&lt;p&gt;Resource discovery is available in all AWS Regions where Deadline Cloud is available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/userguide/view-member-resource-access.html\"&gt;AWS Deadline Cloud user guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/deadline-cloud/resources",
+      "publishedAt": "2026-10-13T18:54:00.000Z",
+      "updatedAt": "2026-10-13T18:54:00.000Z",
+      "categories": [
+        "Media Services",
+        "AWS Deadline Cloud"
+      ],
+      "services": [],
+      "tags": [
+        "media services",
+        "aws deadline cloud"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9f9a2b2ac15f3335",
+      "title": "Amazon Location Service launches an interactive API Playground featuring Places, Routes and Maps APIs",
+      "description": "Amazon Location Service now offers a complete, interactive API Playground that lets developers explore and test every Places, Routes, and Maps API visually without writing code. With this release, all 14 Amazon Location Service Places, Maps and Routes APIs are available in an interactive API Playground, where developers can make real API calls, see results rendered on an interactive map, adjust parameters, and copy ready-to-use request snippets directly into their applications. The API Playground covers Amazon Location Service's Places, Routes, and Maps APIs: search and geocoding (Geocode, Rev",
+      "descriptionHtml": "&lt;p&gt;Amazon Location Service now offers a complete, interactive API Playground that lets developers explore and test every Places, Routes, and Maps API visually without writing code. With this release, all 14 Amazon Location Service Places, Maps and Routes APIs are available in an interactive API Playground, where developers can make real API calls, see results rendered on an interactive map, adjust parameters, and copy ready-to-use request snippets directly into their applications.&lt;/p&gt;\n&lt;p&gt;The API Playground covers Amazon Location Service's Places, Routes, and Maps APIs: search and geocoding (Geocode, ReverseGeocode, Autocomplete, Suggest, SearchText, SearchNearby, and GetPlace), route planning and optimization (CalculateRoutes, CalculateRouteMatrix, CalculateIsolines, OptimizeWaypoints, and SnapToRoads), and mapping (Dynamic Map and GetStaticMap). Customers can simulate validating delivery addresses, planning truck-safe multi-stop routes, visualizing drive-time service areas, or embedding maps into their apps — with no SDK setup or test scripts required.&lt;/p&gt;\n&lt;p&gt;The API Playground is available in the following AWS Regions: US East (Ohio), US East (N. Virginia), US West (Oregon), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Malaysia), Asia Pacific (Tokyo), Canada (Central), Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Spain), Europe (Stockholm), and South America (São Paulo).&lt;/p&gt;\n&lt;p&gt;To get started, visit the &lt;a href=\"https://console.aws.amazon.com/location/api-playground\"&gt;Amazon Location Service API Playground&lt;/a&gt; in the AWS Console, or learn more in the &lt;a href=\"https://docs.aws.amazon.com/location/latest/developerguide/api-playground.html\"&gt;Developer Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-location-service-api-playground",
+      "publishedAt": "2026-10-13T18:46:00.000Z",
+      "updatedAt": "2026-10-13T18:46:00.000Z",
+      "categories": [],
+      "services": [],
+      "tags": [],
+      "isNew": true
+    },
+    {
+      "id": "349234644a70ac9c",
+      "title": "Bring deep SageMaker AI expertise to your coding agent with the AWS AI/ML skill in the Agent Toolkit for AWS",
+      "description": "Your coding agent can select, train, optimize and deploy models on Amazon SageMaker AI while working across the rest of your AWS environment in a single natural-language workflow. The AWS AI/ML skill is now a core skill in the Agent Toolkit for AWS , so it works alongside the toolkit's other AWS skills like EC2, Bedrock, and more. We released the new AWS AI/ML skill on the Agent Toolkit for AWS. The toolkit is now the single, supported integration point, replacing the previous AWS Labs skills and plugins, with a consistent and easy install and update path. The skill is also pre-installed into ",
+      "descriptionHtml": "&lt;p&gt;Your coding agent can select, train, optimize and deploy models on Amazon SageMaker AI while working across the rest of your AWS environment in a single natural-language workflow. The AWS AI/ML skill is now a core skill in the &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main\"&gt;Agent Toolkit for AWS&lt;/a&gt;, so it works alongside the toolkit's other AWS skills like EC2, Bedrock, and more.&lt;/p&gt;\n&lt;p&gt;We released the new AWS AI/ML skill on the Agent Toolkit for AWS. The toolkit is now the single, supported integration point, replacing the previous AWS Labs skills and plugins, with a consistent and easy install and update path. The skill is also pre-installed into SageMaker Studio JupyterLab for use with Kiro or your coding agent of choice.&lt;/p&gt;\n&lt;p&gt;Moreover, we extended the SageMaker AI capability areas supported by skills.&lt;/p&gt;\n&lt;ul&gt;\n &lt;li&gt;\n  &lt;p&gt;&lt;a href=\"https://aws.amazon.com/blogs/machine-learning/new-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent/\"&gt;Inference optimization&lt;/a&gt;: optimize deployed models for latency, throughput, and cost&lt;/p&gt;\n &lt;/li&gt;\n &lt;li&gt;\n  &lt;p&gt;&lt;a href=\"https://builder.aws.com/content/3BRdZnv6dY63soyl4qn7FJMQdqd/agentic-model-customization-simplifying-fine-tuning-with-ai-guided-workflows-in-amazon-sagemaker-ai\"&gt;Model customization&lt;/a&gt;: end-to-end guided fine-tuning workflows, from use case definition through training, evaluation and deployment&lt;/p&gt;\n &lt;/li&gt;\n &lt;li&gt;\n  &lt;p&gt;Serverful training for both traditional ML and generative AI&lt;/p&gt;\n &lt;/li&gt;\n &lt;li&gt;\n  &lt;p&gt;MLflow: experiment tracking and model lifecycle management&lt;/p&gt;\n &lt;/li&gt;\n &lt;li&gt;\n  &lt;p&gt;JumpStart model deployment and model recommendations: deploy pre-built JumpStart models and get guided recommendations on the right model for the use case&lt;/p&gt;\n &lt;/li&gt;\n &lt;li&gt;\n  &lt;p&gt;Processing jobs: data preparation and ETL on managed compute&lt;/p&gt;\n &lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;The AWS AI/ML skill is available at no additional charge; you pay only for the AWS resources your agents use. To get started, install the skill from the &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main\"&gt;Agent Toolkit for AWS&lt;/a&gt; on GitHub, or use it pre-installed in SageMaker Studio JupyterLab. To learn more about &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-updated-jl-coding-assistant.html\"&gt;using a coding assistant with your SageMaker AI workflows&lt;/a&gt;, see the Amazon SageMaker AI documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bring-sagemaker-ai-expertise-to-your-coding-agent/",
+      "publishedAt": "2026-10-13T14:00:00.000Z",
+      "updatedAt": "2026-10-13T14:00:00.000Z",
+      "categories": [],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "cccd319aa659940c",
+      "title": "AWS DataSync Enhanced mode now supports FSx for OpenZFS, NFS 4.2, and object metadata controls",
+      "description": "AWS DataSync Enhanced mode now supports Amazon FSx for OpenZFS as a source or destination location, NFS version 4.2 for on-premises NFS servers and FSx for OpenZFS file systems, and a new ObjectMetadata option for object storage transfers. Previously, customers transferring data to or from FSx for OpenZFS were limited to Basic mode. NFS 4.2 lets you transfer data from NFS servers on the latest version without reconfiguring them to an older protocol version. The ObjectMetadata option gives you control over whether an object's user metadata is copied to the destination, which helps when destinat",
+      "descriptionHtml": "&lt;p&gt;AWS DataSync Enhanced mode now supports Amazon FSx for OpenZFS as a source or destination location, NFS version 4.2 for on-premises NFS servers and FSx for OpenZFS file systems, and a new ObjectMetadata option for object storage transfers. Previously, customers transferring data to or from FSx for OpenZFS were limited to Basic mode.&lt;/p&gt;\n&lt;p&gt;NFS 4.2 lets you transfer data from NFS servers on the latest version without reconfiguring them to an older protocol version. The ObjectMetadata option gives you control over whether an object's user metadata is copied to the destination, which helps when destination metadata must stay intact, such as buckets served by AWS Storage Gateway, or when source metadata keys are not compatible with the destination, such as Azure Blob Storage. Existing tasks remain unaffected and continue to run as scheduled.&lt;/p&gt;\n&lt;p&gt;These capabilities are available for Enhanced mode tasks in all AWS Regions where AWS DataSync Enhanced mode is supported. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/datasync/latest/userguide/what-is-datasync.html\"&gt;AWS DataSync documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/datasync-enhanced-openzfs-nfs42-metadata/",
+      "publishedAt": "2026-10-13T08:00:00.000Z",
+      "updatedAt": "2026-10-13T08:00:00.000Z",
+      "categories": [
+        "Storage",
+        "Amazon Fsx For Openzfs",
+        "AWS Datasync",
+        "Migration"
+      ],
+      "services": [
+        "FSx",
+        "DataSync"
+      ],
+      "tags": [
+        "storage",
+        "amazon fsx for openzfs",
+        "aws datasync",
+        "migration",
+        "fsx",
+        "datasync"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "33522f952861b1a0",
+      "title": "Amazon Route 53 now supports registrations, transfers, and renewals for Premium Domains",
+      "description": "Amazon Route 53 Domains now supports Premium Domain Names. Customers can now search for, register, transfer, renew, and restore registry premium names directly through Route 53. Most domain registries set aside a selection of \"premium\" domains - names that are short, memorable, or in high demand. Previously, Route 53 Domains did not support these premium names, which meant customers who wanted them had to register and manage them through other registrars, fragmenting their portfolios across multiple providers. With this launch, customers can now discover and acquire premium domains directly in",
+      "descriptionHtml": "&lt;p&gt;Amazon Route 53 Domains now supports Premium Domain Names. Customers can now search for, register, transfer, renew, and restore registry premium names directly through Route 53.&lt;/p&gt;\n&lt;p&gt;Most domain registries set aside a selection of \"premium\" domains - names that are short, memorable, or in high demand. Previously, Route 53 Domains did not support these premium names, which meant customers who wanted them had to register and manage them through other registrars, fragmenting their portfolios across multiple providers. With this launch, customers can now discover and acquire premium domains directly in Route 53 Domains, consolidate their existing premium domains from other registrars, and manage premium and standard domains together through a single, unified experience. Finding and registering a premium domain works just like it does for standard domains. Premium domains appear automatically in domain search and availability results, with pricing shown upfront, so customers know the cost before they commit.&lt;/p&gt;\n&lt;p&gt;To learn more about Amazon Route 53 Domains and start registering premium domains, visit the &lt;a href=\"https://aws.amazon.com/route53/domains/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Route 53 Domains page&lt;/a&gt;. For a complete list of supported top-level domains, see the &lt;a href=\"https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/registrar-tld-list.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Route 53 TLD list&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/route-53-premium-domains/",
+      "publishedAt": "2026-10-13T08:00:00.000Z",
+      "updatedAt": "2026-10-13T08:00:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "Partner",
+        "General:Products",
+        "Amazon Route 53"
+      ],
+      "services": [
+        "Route 53"
+      ],
+      "tags": [
+        "networking and content delivery",
+        "partner",
+        "general:products",
+        "amazon route 53",
+        "route 53"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0656dbeb9c2f4bd4",
+      "title": "Amazon RDS now supports the latest CU for Microsoft SQL Server",
+      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports the latest Cumulative Updates (CU) for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2025 CU8 KB5104822 (RDS version 17.00.4075.5.v1). For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5104822. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the Ama",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server &lt;/a&gt;now supports the latest Cumulative Updates (CU) for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2025 CU8 &lt;a href=\"https://support.microsoft.com/en-us/servicing/sql/sql-server-2025/cumulative-update/kb5104822-cu8\" target=\"_blank\"&gt;KB5104822&lt;/a&gt; (RDS version 17.00.4075.5.v1).\n &lt;br&gt;\n &lt;br&gt;\n For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5104822. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.SQLServer.html\" target=\"_blank\"&gt;Amazon RDS SQL Server User Guide for upgrading your RDS Microsoft SQL Server DB engine&lt;/a&gt;.\n &lt;br&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-supports-latest-cu-microsoft-sql-server/",
+      "publishedAt": "2026-10-13T07:30:00.000Z",
+      "updatedAt": "2026-10-13T07:30:00.000Z",
+      "categories": [
+        "Databases",
+        "AWS Govcloud Us",
+        "Amazon Rds For Sql Server"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "databases",
+        "aws govcloud us",
+        "amazon rds for sql server",
+        "rds"
+      ],
+      "isNew": true
+    },
     {
       "id": "cff4147567d643c0",
       "title": "Amazon CloudFront now supports AWS Lambda Web Functions as an origin",
@@ -766,7 +971,7 @@
         "batch",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "48c6f555f6a5d80c",
@@ -11021,224 +11226,6 @@
         "aws clean rooms",
         "analytics",
         "clean rooms"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "bcc4652a40b27cb1",
-      "title": "Amazon Quick now supports approval policies for sharing",
-      "description": "Amazon Quick now offers approval policies, giving administrators governance controls over how assets are shared within their organization. With approval policies, administrators can require designated approvers to review and approve share requests before access is granted, helping organizations ensure that sharing of sensitive assets is deliberate, compliant, and auditable. Administrators can create approval policies scoped to specific asset types, including knowledge bases, spaces, and custom chat agents. When a user submits a share request for an asset covered by a policy, it is routed to th",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick now offers approval policies, giving administrators governance controls over how assets are shared within their organization. With approval policies, administrators can require designated approvers to review and approve share requests before access is granted, helping organizations ensure that sharing of sensitive assets is deliberate, compliant, and auditable.&lt;/p&gt; \n&lt;p&gt;Administrators can create approval policies scoped to specific asset types, including knowledge bases, spaces, and custom chat agents. When a user submits a share request for an asset covered by a policy, it is routed to the assigned approver group for review. Approvers can evaluate the asset directly before approving or denying the request, and all workflow events are captured in AWS CloudTrail for full auditability. For custom chat agents, approvers can review and act on the entire dependency package in a single request.&lt;/p&gt; \n&lt;p&gt;This feature is available for Professional and Enterprise plans, in all AWS Regions where Amazon Quick agentic capabilities are supported. For more information, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Region table&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Learn more about Amazon Quick by visiting the &lt;a href=\"https://aws.amazon.com/quick\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Quick website&lt;/a&gt;. To learn more about approval policies, see Approval policies in the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/data-loss-prevention.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Quick User Guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/whats-new/2026/08/amazon-quick-approval-policies-sharing/",
-      "publishedAt": "2026-08-12T22:22:00.000Z",
-      "updatedAt": "2026-08-12T22:22:00.000Z",
-      "categories": [
-        "Aiml",
-        "Artificial Intelligence",
-        "Business Productivity"
-      ],
-      "services": [],
-      "tags": [
-        "aiml",
-        "artificial intelligence",
-        "business productivity"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "3946d3a2248776ae",
-      "title": "Amazon Quick now supports per-user resource limits",
-      "description": "Amazon Quick now enables administrators to set per-user limits on index storage and agent hours, giving them direct control over subscription costs. With limits management, administrators can create limit profiles that cap per-user consumption, helping prevent unexpected overage charges and ensuring subscription entitlements are used efficiently across their organization. For example, an organization deploying Quick enterprise-wide to thousands of users can set account-level limit profiles to establish cost-predictable baselines, then assign higher limits to specific roles that require more ag",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick now enables administrators to set per-user limits on index storage and agent hours, giving them direct control over subscription costs. With limits management, administrators can create limit profiles that cap per-user consumption, helping prevent unexpected overage charges and ensuring subscription entitlements are used efficiently across their organization.&lt;/p&gt; \n&lt;p&gt;For example, an organization deploying Quick enterprise-wide to thousands of users can set account-level limit profiles to establish cost-predictable baselines, then assign higher limits to specific roles that require more agent hours. Administrators can create and assign limit profiles at the user, role, or account level, with a priority hierarchy that ensures the right users get the right capacity. When a user reaches their limit, new consumption is blocked while existing content is preserved.&lt;/p&gt; \n&lt;p&gt;This feature is available for Professional and Enterprise plans, in all AWS Regions where Amazon Quick agentic capabilities are supported. For more information, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Region table&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Learn more about Amazon Quick by visiting the &lt;a href=\"https://aws.amazon.com/quick\"&gt;Quick website&lt;/a&gt;. To learn more about limit profiles, see Limits management in the &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/limit-profiles.html\" target=\"_blank\"&gt;Amazon Quick User Guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/whats-new/2026/08/amazon-quick-per-user-resource-limits/",
-      "publishedAt": "2026-08-12T22:17:00.000Z",
-      "updatedAt": "2026-08-12T22:17:00.000Z",
-      "categories": [
-        "Business Productivity",
-        "Artificial Intelligence"
-      ],
-      "services": [],
-      "tags": [
-        "business productivity",
-        "artificial intelligence"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "ad44211b89765116",
-      "title": "AWS Global View now offers an interactive map view for AWS Regions and AWS Local Zones",
-      "description": "Today, AWS announces the addition of an interactive map view to AWS Global View in the AWS Management Console, providing a visual way to explore AWS Global Infrastructure. Previously, customers had to scan through a list of AWS locations in AWS Global View. With this new capability, customers can toggle between the interactive map view and the existing list view, making it easier to visualize their global AWS infrastructure footprint. When customers select the map view, they will see all AWS Regions and AWS Local Zones plotted on an interactive map. This capability helps customers make informe",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the addition of an interactive map view to AWS Global View in the AWS Management Console, providing a visual way to explore AWS Global Infrastructure.&lt;/p&gt; \n&lt;p&gt;Previously, customers had to scan through a list of AWS locations in AWS Global View. With this new capability, customers can toggle between the interactive map view and the existing list view, making it easier to visualize their global AWS infrastructure footprint.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;When customers select the map view, they will see all AWS Regions and AWS Local Zones plotted on an interactive map. This capability helps customers make informed infrastructure planning decisions by visualizing already enabled AWS locations and the full range of AWS locations available to them, all in a single glance.&lt;/p&gt; \n&lt;p&gt;This capability is available across all public AWS Regions. To get started, navigate to the Regions and Zones page in &lt;a href=\"https://us-east-1.console.aws.amazon.com/ec2globalview/home#RegionsAndZones\"&gt;AWS Global View&lt;/a&gt; console. For more information, see the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/global-view.html\"&gt;AWS Global View&lt;/a&gt; documentation.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-global-view-map-view/",
-      "publishedAt": "2026-08-12T22:00:00.000Z",
-      "updatedAt": "2026-08-12T22:00:00.000Z",
-      "categories": [
-        "AWS Local Zones",
-        "Compute",
-        "Global Infrastructure",
-        "AWS Management Console"
-      ],
-      "services": [
-        "Local Zones"
-      ],
-      "tags": [
-        "aws local zones",
-        "compute",
-        "global infrastructure",
-        "aws management console",
-        "local zones"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "896ba0afeaa46f93",
-      "title": "AWS IAM now provides role manager to set up IAM roles automatically",
-      "description": "Today, AWS announces the general availability of role manager, a capability in AWS Identity and Access Management (IAM) that automatically sets up the IAM roles your AWS services need. When you set up a supported service in the console, role manager creates a default role on your behalf, or reuses one that already exists in your account if it already matches the required permissions. You can enable or disable role manager at any time, as well as inspect the AWS-managed templates that role manager deploys on your behalf. Role manager supports 6 AWS service consoles at launch, including AWS Lamb",
-      "descriptionHtml": "&lt;p&gt;Today, AWS announces the general availability of role manager, a capability in AWS Identity and Access Management (IAM) that automatically sets up the IAM roles your AWS services need. When you set up a supported service in the console, role manager creates a default role on your behalf, or reuses one that already exists in your account if it already matches the required permissions. You can enable or disable role manager at any time, as well as inspect the AWS-managed templates that role manager deploys on your behalf.&lt;/p&gt; \n&lt;p&gt;Role manager supports 6 AWS service consoles at launch, including AWS Lambda and Amazon EventBridge. For example, when you create an AWS Lambda function, role manager applies the AWS-managed template for that workflow. Roles created via role manager appear in the IAM console as standard IAM roles that you fully control, and you can identify the ones role manager created. When you are ready to tighten permissions, you can disable role manager and use IAM Access Analyzer to refine each role to only the permissions it needs.&lt;/p&gt; \n&lt;p&gt;Role manager is available in all AWS Regions, except the AWS GovCloud (US) Regions and the China Regions.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://aws.amazon.com/blogs/security/how-aws-iam-role-manager-rethinks-the-starting-point-for-iam-roles/\"&gt;How AWS IAM role manager rethinks the starting point for IAM roles&lt;/a&gt; on the AWS Security Blog, or &lt;a href=\"https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_role-manager.html\"&gt;Create roles automatically with role manager&lt;/a&gt; in the IAM User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-iam-role-manager",
-      "publishedAt": "2026-08-12T18:00:00.000Z",
-      "updatedAt": "2026-08-12T18:00:00.000Z",
-      "categories": [
-        "AWS Iam",
-        "Security Identity And Compliance",
-        "Management Tools"
-      ],
-      "services": [
-        "IAM"
-      ],
-      "tags": [
-        "aws iam",
-        "security identity and compliance",
-        "management tools",
-        "iam"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "cdb919911f629731",
-      "title": "Amazon EKS now supports advanced Kubernetes control plane configuration parameters",
-      "description": "Amazon Elastic Kubernetes Service (Amazon EKS) now supports configuring parameters for Kubernetes control plane components including the scheduler, controller manager, and API server. You can tune pod placement strategies to improve resource utilization, adjust how quickly horizontal pod autoscaling responds to changes in demand, set resource lifecycle parameters such as event retention duration, and more. Cluster administrators now have more control over Kubernetes control plane parameters beyond the defaults. For example, you can set the scheduler's node resource fit strategy parameter to Mo",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/pm/eks/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Elastic Kubernetes Service (Amazon EKS)&lt;/a&gt; now supports configuring parameters for Kubernetes control plane components including the scheduler, controller manager, and API server. You can tune pod placement strategies to improve resource utilization, adjust how quickly horizontal pod autoscaling responds to changes in demand, set resource lifecycle parameters such as event retention duration, and more.&lt;br&gt; &lt;br&gt; Cluster administrators now have more control over Kubernetes control plane parameters beyond the defaults. For example, you can set the scheduler's node resource fit strategy parameter to &lt;i&gt;MostAllocated&lt;/i&gt;, which packs pods onto nodes that are already well utilized and helps you run the same workloads on fewer nodes. The default &lt;i&gt;LeastAllocated&lt;/i&gt; strategy spreads pods across nodes, and you can keep it where headroom matters more than density.&lt;br&gt; &lt;br&gt; You can configure Kubernetes control plane parameters in any AWS Region where Amazon EKS is available. For the full list of configurable parameters and to learn more, see Control plane configuration in the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/control-plane-configuration.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon EKS User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-eks-control-plane-configuration-parameters",
-      "publishedAt": "2026-08-12T18:00:00.000Z",
-      "updatedAt": "2026-08-12T18:00:00.000Z",
-      "categories": [
-        "Containers",
-        "AWS Govcloud Us",
-        "Amazon Eks"
-      ],
-      "services": [
-        "EKS"
-      ],
-      "tags": [
-        "containers",
-        "aws govcloud us",
-        "amazon eks",
-        "eks"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "cf60343c482a71ba",
-      "title": "Amazon Quick adds deny by default for custom permissions",
-      "description": "Amazon Quick custom permissions now include deny by default, a governance setting that automatically restricts new AI capabilities before they reach users. Previously, new AI capabilities were available to all users on release, requiring administrators to react after the fact. With deny by default, administrators restrict the AI capability category in a custom permissions profile and assign it to users, roles, or the entire account. Quick then denies any new AI capability at launch for those users. Restricting a category also restricts existing capabilities in it. Administrators explicitly all",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick custom permissions now include deny by default, a governance setting that automatically restricts new AI capabilities before they reach users.&lt;br&gt; &lt;br&gt; Previously, new AI capabilities were available to all users on release, requiring administrators to react after the fact. With deny by default, administrators restrict the AI capability category in a custom permissions profile and assign it to users, roles, or the entire account. Quick then denies any new AI capability at launch for those users. Restricting a category also restricts existing capabilities in it. Administrators explicitly allow each capability when ready. The restriction applies only to the profile you configure.&lt;br&gt; &lt;br&gt; Configure deny by default in Manage account in Amazon Quick or through the AWS CLI. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/custom-permissions-governance.html\"&gt;Custom permissions deny by default&lt;/a&gt;. Deny by default is available in all AWS Regions where &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html\"&gt;Amazon Quick is available&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/whats-new/2026/08/amazon-quick-deny-by-default-permissions/",
-      "publishedAt": "2026-08-12T17:15:00.000Z",
-      "updatedAt": "2026-08-12T17:15:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Business Productivity"
-      ],
-      "services": [],
-      "tags": [
-        "artificial intelligence",
-        "business productivity"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "27a9c0160a22ce04",
-      "title": "Amazon Connect Customer supports manual assignment of queued agent-first callbacks",
-      "description": "Amazon Connect Customer now lets agents view and self-assign queued agent-first callbacks alongside emails, tasks, and chats. This gives agents the option to prioritize work that needs immediate follow-up or for which they already have relevant context. For example, an agent familiar with a customer’s issue can assign the callback to themselves, avoiding another handoff and helping resolve the issue faster. This feature is available in all AWS Regions where Amazon Connect Customer is available. To learn more about how to use queued callbacks, refer to our documentation Access the Worklist app ",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now lets agents view and self-assign queued agent-first callbacks alongside emails, tasks, and chats. This gives agents the option to prioritize work that needs immediate follow-up or for which they already have relevant context. For example, an agent familiar with a customer’s issue can assign the callback to themselves, avoiding another handoff and helping resolve the issue faster.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where Amazon Connect Customer is available. To learn more about how to use queued callbacks, refer to our documentation &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/worklist-app.html\"&gt;Access the Worklist app&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/setup-queued-cb.html\"&gt;Set up queued callbacks&lt;/a&gt;. For more information about Amazon Connect Customer, visit our &lt;a href=\"https://aws.amazon.com/connect/\"&gt;product page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-agent-callbacks/",
-      "publishedAt": "2026-08-12T17:15:00.000Z",
-      "updatedAt": "2026-08-12T17:15:00.000Z",
-      "categories": [
-        "Amazon Connect"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "amazon connect",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "58bb881535c93228",
-      "title": "Amazon Quick now supports data loss prevention with Microsoft Purview",
-      "description": "Amazon Quick now integrates with Microsoft Purview to enforce data loss prevention (DLP) policies across your Quick environment. Organizations need to ensure that sensitive files aren't shared outside approved channels. With this integration, IT administrators and security teams can apply their existing Purview sensitivity labels to automatically control how files are handled in Quick capabilities such as chat, spaces, and knowledge bases. Administrators can configure enforcement actions (block, warn, or allow) for each sensitivity label, giving organizations granular control over sensitive fi",
-      "descriptionHtml": "&lt;p&gt;Amazon Quick now integrates with Microsoft Purview to enforce data loss prevention (DLP) policies across your Quick environment. Organizations need to ensure that sensitive files aren't shared outside approved channels. With this integration, IT administrators and security teams can apply their existing Purview sensitivity labels to automatically control how files are handled in Quick capabilities such as chat, spaces, and knowledge bases.&lt;/p&gt; \n&lt;p&gt;Administrators can configure enforcement actions (block, warn, or allow) for each sensitivity label, giving organizations granular control over sensitive file sharing across Quick. For example, a financial services company can block files labeled \"Highly Confidential\" from being uploaded to shared spaces while allowing \"Internal\" files with a warning notification. With this integration, customers can extend their existing Microsoft Purview governance policies into Quick without additional tools.&lt;/p&gt; \n&lt;p&gt;This feature is available in &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/regions.html\"&gt;all AWS Regions where Amazon Quick agentic capabilities are supported&lt;/a&gt;. For more information, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Region table&lt;/a&gt;. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/data-loss-prevention.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Data loss prevention&lt;/a&gt; in the &lt;i&gt;Amazon Quick User Guide&lt;/i&gt;.&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/whats-new/2026/08/amazon-quick-dlp-purview/",
-      "publishedAt": "2026-08-12T17:09:00.000Z",
-      "updatedAt": "2026-08-12T17:09:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Business Productivity",
-        "Aiml"
-      ],
-      "services": [],
-      "tags": [
-        "artificial intelligence",
-        "business productivity",
-        "aiml"
-      ],
-      "isNew": true
-    },
-    {
-      "id": "446d8a541c6eefd0",
-      "title": "AWS Deadline Cloud Now Supports EBS Persistent Volume Cost Tracking",
-      "description": "AWS Deadline Cloud now surfaces costs related to Amazon Elastic Block Store (Amazon EBS) persistent volumes in the Usage Explorer in the Deadline Cloud Monitor app. AWS Deadline Cloud is a fully managed service that helps teams run compute-intensive workloads in the cloud for visual effects, animation, product design, simulation, and gaming. Customers have historically been able to see compute and license costs related to Deadline Cloud. With the recent release of support for persistent EBS volumes, customers needed a way to see storage costs as well. Now, Deadline Cloud tracks the cost for ea",
-      "descriptionHtml": "&lt;p&gt;AWS Deadline Cloud now surfaces costs related to Amazon Elastic Block Store (Amazon EBS) persistent volumes in the Usage Explorer in the Deadline Cloud Monitor app. AWS Deadline Cloud is a fully managed service that helps teams run compute-intensive workloads in the cloud for visual effects, animation, product design, simulation, and gaming.&lt;/p&gt; \n&lt;p&gt;Customers have historically been able to see compute and license costs related to Deadline Cloud. With the recent release of support for persistent EBS volumes, customers needed a way to see storage costs as well. Now, Deadline Cloud tracks the cost for each EBS volume from creation until deletion, independent of any job or session. These costs appear as a new persistent volume usage type in Usage Explorer and the statistics APIs. These are attributed to the fleet that owns the volume so customers can aggregate spend by fleet, farm, or time period. This helps customers spot idle volumes and decide whether to adjust a time-to-live or let it expire. Cost tracking is enabled automatically, so no action is required.&lt;/p&gt; \n&lt;p&gt;Persistent volume cost tracking is available in all AWS Regions where Deadline Cloud is offered. Cost tracking introduces no additional charges. To learn more, visit the &lt;a href=\"https://aws.amazon.com/deadline-cloud/\"&gt;AWS Deadline Cloud product page&lt;/a&gt; or our &lt;a href=\"https://docs.aws.amazon.com/deadline-cloud/latest/userguide/\"&gt;user guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-deadline-cloud-now-supports-ebs-persistent-volume-cost-tracking/",
-      "publishedAt": "2026-08-12T16:00:00.000Z",
-      "updatedAt": "2026-08-12T16:00:00.000Z",
-      "categories": [
-        "AWS Deadline Cloud"
-      ],
-      "services": [
-        "EBS"
-      ],
-      "tags": [
-        "aws deadline cloud",
-        "ebs"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0799d0b5d90182e5",
-      "title": "Amazon Nova Multimodal Embeddings is now available in AWS GovCloud (US-West)",
-      "description": "We are excited to announce the general availability of Amazon Nova Multimodal Embeddings, a state-of-the-art embedding model for agentic RAG and semantic search, in AWS GovCloud (US-West). It is the first unified embedding model that supports text, documents, images, video, and audio through a single model, to enable cross-modal retrieval with leading accuracy. Managing and searching across different content types traditionally required multiple specialized embedding models, leading to complexity, higher costs, and data silos. Amazon Nova Multimodal Embeddings maps diverse content types into a",
-      "descriptionHtml": "&lt;p&gt;We are excited to announce the general availability of Amazon Nova Multimodal Embeddings, a state-of-the-art embedding model for agentic RAG and semantic search, in AWS GovCloud (US-West). It is the first unified embedding model that supports text, documents, images, video, and audio through a single model, to enable cross-modal retrieval with leading accuracy.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Managing and searching across different content types traditionally required multiple specialized embedding models, leading to complexity, higher costs, and data silos. Amazon Nova Multimodal Embeddings maps diverse content types into a unified space with leading accuracy, helping break down these silos. Developers can build cross-modal applications that search video archives using complex queries, find relevant product images based on customer questions, or search financial documentation that contain both infographics and text explanations, all using a single embedding model.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;The model supports inputs of up to 8K tokens in length and video/audio segments up to 30 seconds, with the capability to segment larger files. Multiple output embedding dimensions allow organizations to balance accuracy and performance with storage and computation costs. Organizations can choose between synchronous API for near real-time applications and asynchronous API for efficient processing of larger files, enabling them to optimize for both latency-sensitive and high-volume workloads.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html\"&gt;user guide&lt;/a&gt;. To get started with Nova Multimodal Embeddings in Amazon Bedrock, visit the &lt;a href=\"https://console.amazonaws-us-gov.com/bedrock/\"&gt;Amazon Bedrock console&lt;/a&gt; in AWS GovCloud (US-West).&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-nova-mme-govcloud/",
-      "publishedAt": "2026-08-12T14:34:00.000Z",
-      "updatedAt": "2026-08-12T14:34:00.000Z",
-      "categories": [
-        "Amazon Bedrock",
-        "AWS Govcloud Us"
-      ],
-      "services": [
-        "Bedrock",
-        "Nova"
-      ],
-      "tags": [
-        "amazon bedrock",
-        "aws govcloud us",
-        "bedrock",
-        "nova"
       ],
       "isNew": false
     }
