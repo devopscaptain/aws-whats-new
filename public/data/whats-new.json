@@ -1,7 +1,234 @@
 {
-  "lastUpdated": "2026-10-19T15:19:17.794Z",
+  "lastUpdated": "2026-10-20T13:22:52.476Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "ab36696889f15d06",
+      "title": "Amazon Connect Customer Global Resiliency now provides business users visibility into resiliency readiness across linked Regions",
+      "description": "Amazon Connect Customer Global Resiliency now provides a Global Resiliency page in the admin website, giving administrators a single place to review their Region switch readiness. The page shows an overall readiness status and lists the resources that Global Resiliency natively replicates, including which resource types are in sync, which are still pending synchronization, and which need action. For example, if a phone number or user is not associated with a traffic distribution group, the page flags it and lets the administrator associate the affected resources directly from the page. With th",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer Global Resiliency now provides a Global Resiliency page in the admin website, giving administrators a single place to review their Region switch readiness. The page shows an overall readiness status and lists the resources that Global Resiliency natively replicates, including which resource types are in sync, which are still pending synchronization, and which need action. For example, if a phone number or user is not associated with a traffic distribution group, the page flags it and lets the administrator associate the affected resources directly from the page. With this readiness overview, administrators can review their resiliency posture at any time and verify that their instance is ready for a Region switch.&lt;/p&gt;\n&lt;p&gt;This feature is available in all AWS Regions where &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/get-started-connect-global-resiliency.html\"&gt;Amazon Connect Customer Global Resiliency is supported&lt;/a&gt;. To learn more, see &lt;a href=\"https://aws.amazon.com/products/connect/customer\"&gt;Amazon Connect Customer&lt;/a&gt; admin guide.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-readiness-overview",
+      "publishedAt": "2026-10-19T21:45:00.000Z",
+      "updatedAt": "2026-10-19T21:45:00.000Z",
+      "categories": [
+        "Amazon Connect",
+        "Contact Center"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "amazon connect",
+        "contact center",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9783ae584175c795",
+      "title": "Amazon CloudWatch Omni is now available in additional AWS Regions",
+      "description": "AWS announces that Amazon CloudWatch Omni is now available in eight additional AWS Regions. CloudWatch Omni is an AI-powered observability experience, organized around your teams and the applications they run, that helps you observe and troubleshoot your applications and agents in one place. It combines the interoperability of OpenTelemetry with the scale and reliability of CloudWatch, and meets you where you work — a standalone web experience with single sign-on (SSO), or a local IDE extension. With CloudWatch Omni, You create spaces in your central accounts to see telemetry across your AWS a",
+      "descriptionHtml": "&lt;p&gt;AWS announces that Amazon CloudWatch Omni is now available in eight additional AWS Regions. CloudWatch Omni is an AI-powered observability experience, organized around your teams and the applications they run, that helps you observe and troubleshoot your applications and agents in one place. It combines the interoperability of OpenTelemetry with the scale and reliability of CloudWatch, and meets you where you work — a standalone web experience with single sign-on (SSO), or a local IDE extension.&lt;/p&gt;\n&lt;p&gt;With CloudWatch Omni, You create spaces in your central accounts to see telemetry across your AWS accounts, Regions, and other clouds, including Azure and GCP. Omni discovers services, maps dependencies, and surfaces golden metrics automatically and you can interact with telemetry through chat, point-and-click, or your own tool via Agent Toolkit for AWS to find signals, build dynamic views, and reach root cause powered by AWS DevOps Agent. A dedicated agent observability experience adds an evaluation-driven workflow for frameworks including LangGraph, CrewAI, OpenAI Agents SDK, Vercel AI SDK, and Strands.&lt;/p&gt;\n&lt;p&gt;With this expansion, CloudWatch Omni is now available in Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (London), and South America (São Paulo), in addition to US East (N. Virginia), US West (Oregon), and Europe (Ireland).&lt;/p&gt;\n&lt;p&gt;To get started, create your Omni space from the CloudWatch console, configure SSO, and sign in. Agent developers can install the free &lt;a href=\"https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.amazon-cloudwatch-omni\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;CloudWatch Omni extension for VS Code&lt;/a&gt;, Cursor, and Kiro. To learn more, see the &lt;a href=\"https://aws.amazon.com/cloudwatch/omni/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon CloudWatch Omni product page&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch-omni.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;documentation&lt;/a&gt;. For pricing, see the &lt;a href=\"https://aws.amazon.com/cloudwatch/omni/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;CloudWatch Omni pricing page.&lt;/a&gt;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-cloudwatch-omni-8-regions/",
+      "publishedAt": "2026-10-19T19:10:00.000Z",
+      "updatedAt": "2026-10-19T19:10:00.000Z",
+      "categories": [
+        "Management And Governance",
+        "Amazon Cloudwatch"
+      ],
+      "services": [
+        "CloudWatch"
+      ],
+      "tags": [
+        "management and governance",
+        "amazon cloudwatch",
+        "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "11f3a0e23abd07c4",
+      "title": "EC2 Image Builder now integrates with ASG for faster image builds",
+      "description": "EC2 Image Builder now supports using existing instances from an Auto Scaling Group (ASG) for building images, enabling faster builds by eliminating the time spent in launching and bootstrapping new instances and reusing already running EC2 instances. With this feature, you can provide an ASG in your Image Builder infrastructure configuration. Instead of launching a new instance at the build time, Image Builder selects an already-running instance from this ASG, applies your build components, and creates the image. The ASG continuously replenishes the pool as instances are used for builds, ensur",
+      "descriptionHtml": "&lt;p&gt;EC2 Image Builder now supports using existing instances from an Auto Scaling Group (ASG) for building images, enabling faster builds by eliminating the time spent in launching and bootstrapping new instances and reusing already running EC2 instances.&lt;/p&gt;\n&lt;p&gt;With this feature, you can provide an ASG in your Image Builder infrastructure configuration. Instead of launching a new instance at the build time, Image Builder selects an already-running instance from this ASG, applies your build components, and creates the image. The ASG continuously replenishes the pool as instances are used for builds, ensuring instances are always available for subsequent pipeline runs.&lt;/p&gt;\n&lt;p&gt;This feature is fully opt-in and does not affect existing pipelines. Pipelines without an ASG configured continue to use the default launch path with no behavior change.&lt;/p&gt;\n&lt;p&gt;This feature is available in all AWS Regions at no additional cost. To configure ASG integration in your Image Builder pipelines, see the &lt;a href=\"https://docs.aws.amazon.com/imagebuilder/latest/userguide/infra-config-parent-instance.html\"&gt;EC2 Image Builder documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-image-builder-asg-faster-builds/",
+      "publishedAt": "2026-10-19T17:30:00.000Z",
+      "updatedAt": "2026-10-19T17:30:00.000Z",
+      "categories": [
+        "Amazon Ec2 Auto Scaling",
+        "Amazon Ec2",
+        "Compute",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "EC2"
+      ],
+      "tags": [
+        "amazon ec2 auto scaling",
+        "amazon ec2",
+        "compute",
+        "aws govcloud us",
+        "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "46985b6ae0481004",
+      "title": "Amazon GuardDuty adds optional threat detection rules for Runtime Monitoring",
+      "description": "Amazon GuardDuty now supports optional detection rules for Runtime Monitoring. You can enable more than 50 Runtime Monitoring rules that help detect process, file, and network activity that might be routine in one environment but a sign of compromise in another, such as modifying sudoers files or disabling audit logging. The new rules provide detections for Amazon EC2 instances, Amazon EKS, and Amazon ECS on both EC2 and AWS Fargate, and span 13 finding types mapped to MITRE ATT&amp;CK® tactics including persistence, privilege escalation, execution, defense evasion, discovery, exfiltration, an",
+      "descriptionHtml": "&lt;p&gt;Amazon GuardDuty now supports optional detection rules for Runtime Monitoring. You can enable more than 50 Runtime Monitoring rules that help detect process, file, and network activity that might be routine in one environment but a sign of compromise in another, such as modifying sudoers files or disabling audit logging.&lt;/p&gt;\n&lt;p&gt;The new rules provide detections for Amazon EC2 instances, Amazon EKS, and Amazon ECS on both EC2 and AWS Fargate, and span 13 finding types mapped to MITRE ATT&amp;amp;CK® tactics including persistence, privilege escalation, execution, defense evasion, discovery, exfiltration, and command and control. This release introduces four new finding types: CommandAndControl:Runtime/SuspiciousCommand, CredentialAccess:Runtime/SensitiveFileRead, Discovery:Runtime/SensitiveFileRead, and Exfiltration:Runtime/SuspiciousCommand.&lt;/p&gt;\n&lt;p&gt;To get started, visit the GuardDuty console. You can enable rules in dry-run mode to evaluate detection efficacy before enabling live detection.&lt;/p&gt;\n&lt;p&gt;Custom Detection Rules for Runtime Monitoring is available in all AWS commercial Regions and the AWS GovCloud (US) Regions. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/guardduty/latest/ug/custom-detection-rules.html\"&gt;Amazon GuardDuty Custom Detection Rules&lt;/a&gt;. To receive programmatic updates on new Amazon GuardDuty features and threat detections, subscribe to the &lt;a href=\"https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_sns.html\"&gt;Amazon GuardDuty SNS topic&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/guardduty-runtime-optional-detection-rules/",
+      "publishedAt": "2026-10-19T16:01:00.000Z",
+      "updatedAt": "2026-10-19T16:01:00.000Z",
+      "categories": [
+        "AWS Govcloud Us",
+        "Amazon Guardduty",
+        "Security Identity And Compliance"
+      ],
+      "services": [
+        "GuardDuty"
+      ],
+      "tags": [
+        "aws govcloud us",
+        "amazon guardduty",
+        "security identity and compliance",
+        "guardduty"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8af7eccb0c0fbece",
+      "title": "Grok 4.7 is now available on Amazon Bedrock in AWS GovCloud (US)",
+      "description": "Amazon Bedrock now supports SpaceXAI Grok 4.7, a frontier model built for coding, agentic tasks, and knowledge work in AWS GovCloud (US). Grok 4.7 builds on Grok 4.6 with better mixed-document handling, more dependable repo-scale coding with planning and error recovery, and enhanced browser-use agents for form fills and portal navigation. Get started with Grok 4.7 in the Amazon Bedrock console or programmatically through supported Amazon Bedrock APIs. For information about supported AWS Regions , endpoints, APIs, features, inference profiles and pricing, see the Amazon Bedrock documentation . ",
+      "descriptionHtml": "&lt;p&gt;Amazon Bedrock now supports SpaceXAI Grok 4.7, a frontier model built for coding, agentic tasks, and knowledge work in AWS GovCloud (US).&lt;/p&gt;\n&lt;p&gt;Grok 4.7 builds on Grok 4.6 with better mixed-document handling, more dependable repo-scale coding with planning and error recovery, and enhanced browser-use agents for form fills and portal navigation. &amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Get started with Grok 4.7 in the&lt;a href=\"https://console.amazonaws-us-gov.com/bedrock/\"&gt; Amazon Bedrock console&lt;/a&gt; or programmatically through supported Amazon Bedrock APIs. For information about supported&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html\"&gt; AWS Regions&lt;/a&gt;, endpoints, APIs, features, inference profiles and pricing, see the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-grok-4-7.html\"&gt;Amazon Bedrock documentation&lt;/a&gt;. To learn more, read the launch &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/grok-4-7-is-now-available-on-amazon-bedrock/\"&gt;blog post&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-grok-4-7-govcloud/",
+      "publishedAt": "2026-10-19T13:00:00.000Z",
+      "updatedAt": "2026-10-19T13:00:00.000Z",
+      "categories": [
+        "Amazon Bedrock",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "amazon bedrock",
+        "aws govcloud us",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "00c1783181daa4d2",
+      "title": "AWS IAM Identity Center now supports optimistic locking for users and groups in its identity store",
+      "description": "IAM Identity Center helps you configure the single sign-on experience of your workforce to AWS accounts and applications. You can now use optimistic locking for users and groups in the identity store, so that update and delete requests succeed only if the user or group hasn't changed since you last read it. This helps when multiple administrators or automated workflows modify the same user or group at nearly the same time, where previously one write could silently overwrite another. Each user and group now has a Revision value that changes every time the user's or group's attributes are modifi",
+      "descriptionHtml": "&lt;p&gt;IAM Identity Center helps you configure the single sign-on experience of your workforce to AWS accounts and applications. You can now use optimistic locking for users and groups in the identity store, so that update and delete requests succeed only if the user or group hasn't changed since you last read it. This helps when multiple administrators or automated workflows modify the same user or group at nearly the same time, where previously one write could silently overwrite another.\n &lt;br&gt;\n &lt;br&gt;\n Each user and group now has a Revision value that changes every time the user's or group's attributes are modified, including through SCIM provisioning, Active Directory sync, or the IAM Identity Center console. Create, describe, update, and list operations return the current Revision, and you can pass it on a later UpdateUser, UpdateGroup, DeleteUser, or DeleteGroup request. The request succeeds only if the supplied Revision matches the current Revision. Otherwise, it returns a ConflictException, so your workflow can re-read the user or group and retry with the latest values.\n &lt;br&gt;\n &lt;br&gt;\n Providing a Revision is optional. Requests that omit it behave as before, so existing integrations continue to work without changes. Conditional requests are supported through the Identity Store API, not the SCIM endpoint. Group membership operations don't accept a Revision, and adding or removing members doesn't change the Revision of the user or the group. This capability is available in all AWS Regions where IAM Identity Center is available. IAM Identity Center is provided at no additional cost.\n &lt;br&gt;\n &lt;br&gt;\n To learn more about IAM Identity Center, visit the product detail page. To get started, see UpdateUser in the &lt;a title=\"identity store update user API\" href=\"https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_UpdateUser.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Identity Store API Reference&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/iam-identity-store-optimistic-locking/",
+      "publishedAt": "2026-10-19T08:00:00.000Z",
+      "updatedAt": "2026-10-19T08:00:00.000Z",
+      "categories": [
+        "AWS Iam Identity Center",
+        "Security Identity And Compliance"
+      ],
+      "services": [
+        "IAM",
+        "IAM Identity Center"
+      ],
+      "tags": [
+        "aws iam identity center",
+        "security identity and compliance",
+        "iam",
+        "iam identity center"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "943bc063452e7181",
+      "title": "AWS Elemental MediaConnect Router now supports high bitrate mode",
+      "description": "AWS Elemental MediaConnect Router now supports high bitrate modes with two new tiers: 250 Mbps and 500 Mbps. This allows professional broadcasters that need higher bitrates to transport high-value content without compromising quality or reliability. This enhancement enables industry-standard workflows such as VSF TR-07 compliant transport stream distribution for broadcast contribution, content distribution, and remote production. High bitrate mode supports up to two redundant sources for reliability and includes data plane optimizations that reduce jitter for improved performance. To learn mor",
+      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaConnect Router now supports high bitrate modes with two new tiers: 250 Mbps and 500 Mbps. This allows professional broadcasters that need higher bitrates to transport high-value content without compromising quality or reliability.&lt;/p&gt;\n&lt;p&gt;This enhancement enables industry-standard workflows such as VSF TR-07 compliant transport stream distribution for broadcast contribution, content distribution, and remote production. High bitrate mode supports up to two redundant sources for reliability and includes data plane optimizations that reduce jitter for improved performance.&lt;/p&gt;\n&lt;p&gt;To learn more, visit the &lt;a href=\"https://aws.amazon.com/mediaconnect/\"&gt;AWS Elemental MediaConnect product page&lt;/a&gt; and the &lt;a href=\"https://aws.amazon.com/mediaconnect/pricing/\"&gt;MediaConnect pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/mediaconnect-router-high-bitrate/",
+      "publishedAt": "2026-10-19T08:00:00.000Z",
+      "updatedAt": "2026-10-19T08:00:00.000Z",
+      "categories": [
+        "Media Services",
+        "AWS Elemental Mediaconnect"
+      ],
+      "services": [
+        "Elemental"
+      ],
+      "tags": [
+        "media services",
+        "aws elemental mediaconnect",
+        "elemental"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "6d074f62899ca1c9",
+      "title": "Amazon RDS Custom now supports the latest Cumulative Update and GDR updates for Microsoft SQL Server",
+      "description": "Amazon Relational Database Service (Amazon RDS) Custom for SQL Server now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for SQL Server 2019 CU32+GDR KB5122772 (RDS version 15.00.4490.9.v1) and SQL Server 2022 CU26 + GDR KB5122768 (RDS version 16.00.4275.2.v1). For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5122772 and KB5122768. You can upgrade your Amazon RDS Custom for SQL Server instances to apply these recommended update",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/custom/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) Custom for SQL Server&lt;/a&gt; now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server. This release includes support for SQL Server 2019 CU32+GDR &lt;a href=\"https://support.microsoft.com/en-us/servicing/sql/sql-server-2019/cumulative-update/kb5122772-cu32-gdr-september-2026\" target=\"_blank\"&gt;KB5122772&lt;/a&gt;(RDS version 15.00.4490.9.v1) and SQL Server 2022 CU26 + GDR &lt;a href=\"https://support.microsoft.com/en-us/servicing/sql/sql-server-2022/cumulative-update/kb5122768-cu26-gdr-september-2026\" target=\"_blank\"&gt;KB5122768&lt;/a&gt; (RDS version 16.00.4275.2.v1).\n &lt;br&gt;\n &lt;br&gt;\n For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5122772 and KB5122768. You can upgrade your Amazon RDS Custom for SQL Server instances to apply these recommended updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. To learn more about upgrading your database instances, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/custom-upgrading-sqlserver.html\" target=\"_blank\"&gt;Amazon RDS Custom User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-custom-supports-latest-cumulative-update-gdr-microsoft-sql-server/",
+      "publishedAt": "2026-10-19T07:30:00.000Z",
+      "updatedAt": "2026-10-19T07:30:00.000Z",
+      "categories": [
+        "Amazon Rds For Sql Server",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "amazon rds for sql server",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "17c27779ad2e56c5",
+      "title": "Amazon RDS for SQL Server now supports snapshots on read replicas",
+      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports creating DB snapshots directly on read replica instances. Previously, you could create snapshots only on standalone and primary DB instances. You can now snapshot a read replica without promoting it first, giving you more flexibility in your backup and disaster recovery (DR) workflows. Previously, enabling Multi-AZ on a promoted read replica meant waiting for an initial full snapshot to finish before the conversion could begin. On larger storage configurations—such as io2 volumes up to 64 TiB—that first snapshot could ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server&lt;/a&gt; now supports creating DB snapshots directly on read replica instances. Previously, you could create snapshots only on standalone and primary DB instances. You can now snapshot a read replica without promoting it first, giving you more flexibility in your backup and disaster recovery (DR) workflows.&lt;/p&gt;\n&lt;p&gt;Previously, enabling Multi-AZ on a promoted read replica meant waiting for an initial full snapshot to finish before the conversion could begin. On larger storage configurations—such as io2 volumes up to 64 TiB—that first snapshot could take a long time, making DR timelines hard to predict. Now, Amazon RDS for SQL Server maintains snapshot data on the read replica throughout its lifecycle, so the first snapshot after promotion completes faster. This shortens the time to enable Multi-AZ and helps you plan DR exercises with more predictable recovery timelines. You can take manual snapshots of a read replica, turn on automated backups by setting a backup retention period greater than zero, and retain automated backups when you delete the replica; however, point-in-time recovery (PITR) from a read replica isn't supported.&lt;/p&gt;\n&lt;p&gt;This feature works for both in-region and cross-region read replicas. It's available for SQL Server Enterprise Edition on all SQL Server versions that support read replicas, in all AWS Regions where Amazon RDS for SQL Server read replicas are available, including the AWS GovCloud (US) Regions.&lt;/p&gt;\n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/SQLServer.ReadReplicas.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Working with read replicas for Microsoft SQL Server&lt;/a&gt;. For pricing details, see &lt;a href=\"https://aws.amazon.com/rds/sqlserver/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for SQL Server Pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/rds-sqlserver-supports-snapshots-on-read-replicas",
+      "publishedAt": "2026-10-19T07:01:00.000Z",
+      "updatedAt": "2026-10-19T07:01:00.000Z",
+      "categories": [
+        "Databases",
+        "Amazon Rds For Sql Server",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "databases",
+        "amazon rds for sql server",
+        "aws govcloud us",
+        "rds"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0acbe1c926b95a7f",
+      "title": "AWS Partner Central adds Solution Matching Engine performance insights",
+      "description": "AWS Partner Central now gives AWS Partners more visibility into how the Solution Matching Engine (SME) contributes to their co-sell pipeline. The Solution Matching Engine performance section in Partner Analytics helps partners understand how SME performs for their company and AWS Marketplace listings. Partners can view recommendations, SME-attributed opportunities, their share of AWS-originated opportunities, stall rate, and pipeline attributed to SME. They can filter by recommendation type or AWS Marketplace listing and explore top customer profiles by Region, industry, and segment. These ins",
+      "descriptionHtml": "&lt;p&gt;AWS Partner Central now gives AWS Partners more visibility into how the Solution Matching Engine (SME) contributes to their co-sell pipeline. The Solution Matching Engine performance section in Partner Analytics helps partners understand how SME performs for their company and AWS Marketplace listings.&lt;/p&gt;\n&lt;p&gt;Partners can view recommendations, SME-attributed opportunities, their share of AWS-originated opportunities, stall rate, and pipeline attributed to SME. They can filter by recommendation type or AWS Marketplace listing and explore top customer profiles by Region, industry, and segment. These insights help partners assess their visibility and decide where to improve their listings and opportunity information.&lt;/p&gt;\n&lt;p&gt;All partners eligible for &lt;a href=\"https://aws.amazon.com/partners/programs/ace/\"&gt;APN Customer Engagements (ACE)&lt;/a&gt; can find the section on the Opportunity pipeline analysis page under Partner Analytics in &lt;a title=\"Link to AWS Partner Central\" href=\"https://aws.amazon.com/partners/partner-central/\"&gt;AWS Partner Central&lt;/a&gt;.&amp;nbsp;To learn more about SME and how to strengthen your visibility with AWS sellers, read &lt;a href=\"https://aws.amazon.com/blogs/apn/solution-matching-engine-your-gateway-to-aws-sellers/\"&gt;Solution Matching Engine: Your Gateway to AWS Sellers&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/solution-matching-engine-performance",
+      "publishedAt": "2026-10-17T03:00:00.000Z",
+      "updatedAt": "2026-10-17T03:00:00.000Z",
+      "categories": [
+        "AWS Marketplace And Partners",
+        "AWS Marketplace"
+      ],
+      "services": [],
+      "tags": [
+        "aws marketplace and partners",
+        "aws marketplace"
+      ],
+      "isNew": true
+    },
     {
       "id": "70347720ff6f1e9a",
       "title": "Amazon CloudWatch log centralization now available in AWS GovCloud and additional commercial Regions",
@@ -21,6 +248,28 @@
         "management and governance",
         "amazon cloudwatch logs",
         "cloudwatch"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ed5ad04bed3ca04a",
+      "title": "Amazon EMR Serverless now supports IPv6 and dual-stack connectivity",
+      "description": "Amazon EMR Serverless now supports IPv6 and dual-stack connectivity, expanding beyond the IPv4-only connectivity that was previously available. You can now run your Apache Spark and Apache Hive jobs over IPv6 in your Amazon Virtual Private Cloud (VPC) by supplying dual-stack (IPv4 and IPv6) or IPv6-only subnets. This gives you greater flexibility in how your applications connect to data stores and services, while maintaining full backward compatibility with your existing IPv4 workloads. As Spark and Hive workloads scale to many workers, the IPv4 address space in your VPCs and subnets can becom",
+      "descriptionHtml": "&lt;p&gt;Amazon EMR Serverless now supports IPv6 and dual-stack connectivity, expanding beyond the IPv4-only connectivity that was previously available. You can now run your Apache Spark and Apache Hive jobs over IPv6 in your Amazon Virtual Private Cloud (VPC) by supplying dual-stack (IPv4 and IPv6) or IPv6-only subnets. This gives you greater flexibility in how your applications connect to data stores and services, while maintaining full backward compatibility with your existing IPv4 workloads.&lt;/p&gt;\n&lt;p&gt;As Spark and Hive workloads scale to many workers, the IPv4 address space in your VPCs and subnets can become a constraint, and a growing number of organizations face compliance mandates that require IPv6 adoption. With dual-stack connectivity, your EMR Serverless applications accept both IPv4 and IPv6, making it easy to adopt IPv6 gradually while maintaining backward compatibility with your existing IPv4 workloads. With IPv6-only subnets, you can eliminate the need for IPv4 addresses entirely, overcoming IPv4 address exhaustion and meeting the networking standards and compliance requirements that call for IPv6, while your jobs reach IPv6 endpoints and services both inside and outside your VPC.&lt;/p&gt;\n&lt;p&gt;IPv6 and dual-stack connectivity for Amazon EMR Serverless is available at no additional cost in all AWS Regions where Amazon EMR Serverless is available. IPv6 and dual-stack subnets are supported on all EMR Serverless release versions. To get started, see &lt;a href=\"https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/ipv6-subnets.html\"&gt;Configure IPv6 subnets for EMR Serverless applications&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/vpc-access.html\"&gt;Configuring VPC access for EMR Serverless applications&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-emr-serverless/",
+      "publishedAt": "2026-10-16T19:20:00.000Z",
+      "updatedAt": "2026-10-16T19:20:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Emr"
+      ],
+      "services": [
+        "EMR"
+      ],
+      "tags": [
+        "analytics",
+        "amazon emr",
+        "emr"
       ],
       "isNew": true
     },
@@ -1149,7 +1398,7 @@
         "fsx",
         "datasync"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "33522f952861b1a0",
@@ -1175,7 +1424,7 @@
         "amazon route 53",
         "route 53"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "0656dbeb9c2f4bd4",
@@ -1223,7 +1472,7 @@
         "databases",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "cff4147567d643c0",
@@ -1247,7 +1496,7 @@
         "lambda",
         "cloudfront"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "cf845e8fa106e070",
@@ -1269,7 +1518,7 @@
         "amazon ec2",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "802a47b8f0aebc22",
@@ -1291,7 +1540,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b91671942e88f409",
@@ -1308,7 +1557,7 @@
       "tags": [
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "078866cbb248657e",
@@ -1328,7 +1577,7 @@
         "artificial intelligence",
         "bedrock"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "e5204051e51d25a1",
@@ -11025,231 +11274,6 @@
         "general:products",
         "aws marketplace",
         "management and governance"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d7257dae22ba5d52",
-      "title": "Launching External Web Access for Web Search on Amazon Bedrock",
-      "description": "Earlier this month, we announced Web Search on Amazon Bedrock , a built-in server-side tool that allows you to ground model responses with current web knowledge, while maintaining data within your secured AWS environment with zero data egress. Today, we are expanding Web Search to enable the external_web_access parameter allowing Web Search to retrieve content directly from the public web so models can ground responses in the latest information. To enable external_web_access, grant the bedrock-websearch:ExternalWebAccess IAM permission to the request identity and leave the external_web_access ",
-      "descriptionHtml": "&lt;p&gt;Earlier this month, we announced &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-web/\" style=\"background-color: rgb(255,255,255);\"&gt;Web Search on Amazon Bedrock&lt;/a&gt;, a built-in server-side tool that allows you to ground model responses with current web knowledge, while maintaining data within your secured AWS environment with zero data egress. Today, we are expanding Web Search to enable the external_web_access parameter allowing Web Search to retrieve content directly from the public web so models can ground responses in the latest information.&lt;/p&gt; \n&lt;p&gt;To enable external_web_access, grant the bedrock-websearch:ExternalWebAccess IAM permission to the request identity and leave the external_web_access parameter at its default of true. &amp;nbsp;In doing so, Web Search can then fetch content live from the public web for use cases that need the freshest possible information, such as latest sports score, live pricing, or newly released documentation. If handling sensitive data, to keep retrieval entirely within your AWS boundary, set external_web_access: false. By setting it false, Web Search serves results only from Amazon's in-AWS web index and knowledge graph, with no request data leaving the AWS boundary. &amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Enabling External Web Access is available in the following AWS Regions: US East (N. Virginia), US East (Ohio), and US West (Oregon). To learn more, read our blog post &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-for-foundation-model-grounding/\"&gt;Introducing Web Search on Amazon Bedrock for foundation model grounding,&lt;/a&gt; review &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/web-search.html#web-search-controlling-external\"&gt;Controlling external web access&lt;/a&gt; in the Amazon Bedrock User Guide, and visit the &lt;a href=\"https://aws.amazon.com/bedrock/pricing/\"&gt;Amazon Bedrock pricing page&lt;/a&gt; for cost details.&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-bedrock-web-access-web-search/",
-      "publishedAt": "2026-08-19T23:00:00.000Z",
-      "updatedAt": "2026-08-19T23:00:00.000Z",
-      "categories": [],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0db41eed0e504d64",
-      "title": "Web Search in Amazon Bedrock AgentCore adds domain and published date filtering, expands to Europe and Asia Pacific",
-      "description": "Web Search in Amazon Bedrock AgentCore now supports domain filtering and published-date filtering, giving agents per-request control over which web sources and time windows they search. Amazon Bedrock AgentCore provides the infrastructure to build, connect, and optimize AI agents, and Web Search enables those agents to ground responses in current web data. With runtime domain filtering, agents can narrow search results to trusted sources or block unwanted domains on a per-call basis without requiring admin reconfiguration. Published-date filtering allows agents to constrain results to a specif",
-      "descriptionHtml": "&lt;p&gt;Web Search in Amazon Bedrock AgentCore now supports domain filtering and published-date filtering, giving agents per-request control over which web sources and time windows they search. Amazon Bedrock AgentCore provides the infrastructure to build, connect, and optimize AI agents, and Web Search enables those agents to ground responses in current web data.&lt;br&gt; &lt;br&gt; With runtime domain filtering, agents can narrow search results to trusted sources or block unwanted domains on a per-call basis without requiring admin reconfiguration. Published-date filtering allows agents to constrain results to a specific time window using inclusive from and to date bounds, ensuring responses reflect only timely, relevant content.&lt;br&gt; &lt;br&gt; With this launch, agents can pass include and exclude domain lists and a published-date range directly in each tool call, while admins gain new gateway-level allowlist support and an increased domain cap of up to 100 domains per list. These capabilities are ideal for regulated industries, research workflows, and applications that require strict control over information sources and recency.&lt;br&gt; &lt;br&gt; The Web Search Tool is also expanding to Europe (Ireland) (eu-west-1) and Asia Pacific (Tokyo) (ap-northeast-1), joining the existing US East (N. Virginia) (us-east-1) availability. To learn more, read the &lt;a href=\"https://aws.amazon.com/blogs/machine-learning/domain-and-publish-date-filters-for-web-search-on-agentcore/\"&gt;technical blog&lt;/a&gt; about domain and published date filters , and review the Amazon Bedrock AgentCore &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-connector-web-search-tool.html\"&gt;product documentation&lt;/a&gt;.&lt;br&gt; &lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/web-search-amazon-bedrock/",
-      "publishedAt": "2026-08-19T22:55:00.000Z",
-      "updatedAt": "2026-08-19T22:55:00.000Z",
-      "categories": [
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d2f66c5184d2cd69",
-      "title": "Amazon EC2 enables AMI creation with local snapshots from instances on Outposts",
-      "description": "Amazon EC2 now supports creating Amazon Machine Images (AMIs) with local snapshots from instances running on AWS Outposts. This capability makes it easier for customers to create AMIs while storing snapshots directly on the Outpost to meet data residency requirements. Customers can now create AMIs with snapshots stored either on the Outpost itself or in the parent AWS Region. When keeping data local, EC2 automatically determines the target Outpost from the instance's location — no need to manually specify an Outpost ARN. This also enables customers to integrate AMI creation into their existing",
-      "descriptionHtml": "&lt;p&gt;Amazon EC2 now supports creating Amazon Machine Images (AMIs) with local snapshots from instances running on AWS Outposts. This capability makes it easier for customers to create AMIs while storing snapshots directly on the Outpost to meet data residency requirements.&lt;/p&gt; \n&lt;p&gt;Customers can now create AMIs with snapshots stored either on the Outpost itself or in the parent AWS Region. When keeping data local, EC2 automatically determines the target Outpost from the instance's location — no need to manually specify an Outpost ARN. This also enables customers to integrate AMI creation into their existing backup and lifecycle workflows for instances on Outposts while ensuring data residency requirements are met.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions in which AWS Outposts supports local snapshot storage. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/ebs/latest/userguide/snapshots-outposts.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/ec2-create-image-local-snapshot-outpost",
-      "publishedAt": "2026-08-19T21:30:00.000Z",
-      "updatedAt": "2026-08-19T21:30:00.000Z",
-      "categories": [
-        "Compute",
-        "AWS Govcloud Us",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2",
-        "Outposts"
-      ],
-      "tags": [
-        "compute",
-        "aws govcloud us",
-        "amazon ec2",
-        "ec2",
-        "outposts"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a68ac6fe1607beea",
-      "title": "Amazon CloudWatch log Centralization now supports log group tag propagation",
-      "description": "Amazon CloudWatch Centralization now copies log group tags from source accounts to the destination log groups created by centralization rules. CloudWatch Centralization aggregates log data from multiple accounts and Regions into one destination account. With tag propagation, the cost, ownership, and compliance tags you maintain at the source now apply to the copied log groups. With today's launch, CloudWatch copies the tags of each source log group to its destination log group and keeps them in sync based on the tag propogation behaviour selected as part of the centralization rule setup. For e",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch Centralization now copies log group tags from source accounts to the destination log groups created by centralization rules. CloudWatch Centralization aggregates log data from multiple accounts and Regions into one destination account. With tag propagation, the cost, ownership, and compliance tags you maintain at the source now apply to the copied log groups.&lt;/p&gt; \n&lt;p&gt;With today's launch, CloudWatch copies the tags of each source log group to its destination log group and keeps them in sync based on the tag propogation behaviour selected as part of the centralization rule setup. For example, a platform team can preserve Application and CostCenter tags on centralized log groups, then use those tags to scope access with IAM conditions and report centralized log spend by team in AWS Cost Explorer.&lt;/p&gt; \n&lt;p&gt;Tag propagation is available in all AWS Regions where CloudWatch Centralization is available. For a list of Regions, see the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Regions table&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;To get started, turn on tag propagation for a centralization rule in the Amazon CloudWatch console, or by using the AWS CLI or AWS SDKs. To learn more about centralizing logs while preserving their tags, see &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogs_Centralization.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Log Centralization User Guide&lt;/a&gt;. For Centralization pricing, see &lt;a href=\"https://aws.amazon.com/cloudwatch/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon CloudWatch pricing&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-cloudwatch-centralization-tag-propogation/",
-      "publishedAt": "2026-08-19T21:06:00.000Z",
-      "updatedAt": "2026-08-19T21:06:00.000Z",
-      "categories": [
-        "Amazon Cloudwatch",
-        "Management And Governance"
-      ],
-      "services": [
-        "CloudWatch"
-      ],
-      "tags": [
-        "amazon cloudwatch",
-        "management and governance",
-        "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "5bdcde417c01b8b1",
-      "title": "Amazon DynamoDB Streams now supports attribute-based access control",
-      "description": "Amazon DynamoDB Streams now supports attribute-based access control (ABAC), enabling you to use tag-based conditions in your Identity and Access Management (IAM) policies to control access to your data streams. ABAC is an authorization strategy that simplifies access management by allowing you to enforce different access levels for multiple teams and applications using fewer IAM policies. This capability is built for teams that manage DynamoDB Streams access across multiple applications and environments and need finer-grained, scalable access control. With ABAC for DynamoDB Streams, you can at",
-      "descriptionHtml": "&lt;p&gt;Amazon DynamoDB Streams now supports attribute-based access control (ABAC), enabling you to use tag-based conditions in your Identity and Access Management (IAM) policies to control access to your data streams. ABAC is an authorization strategy that simplifies access management by allowing you to enforce different access levels for multiple teams and applications using fewer IAM policies. This capability is built for teams that manage DynamoDB Streams access across multiple applications and environments and need finer-grained, scalable access control.&lt;/p&gt; \n&lt;p&gt;With ABAC for DynamoDB Streams, you can attach up to 50 tags to each stream and use these tags in IAM policy conditions to grant or deny access to specific actions. For example, you can allow users to read records only from streams tagged with \"environment:production\" while restricting access to other environments. Stream tags are managed independently from their parent table tags, giving you flexibility to implement environment segregation, team-based isolation, and compliance requirements without creating numerous individual IAM policies.&lt;/p&gt; \n&lt;p&gt;ABAC for DynamoDB Streams is in all commercial AWS Regions and AWS GovCloud (US) Regions where Amazon DynamoDB Streams is available. There is no additional cost to use ABAC for DynamoDB Streams. To learn more, visit the &lt;a href=\"https://aws.amazon.com/dynamodb\"&gt;Amazon DynamoDB&lt;/a&gt; page and see the &lt;a href=\"https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-streams.html\"&gt;Amazon DynamoDB Streams ABAC&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-dynamodb-streams-abac/",
-      "publishedAt": "2026-08-19T21:03:00.000Z",
-      "updatedAt": "2026-08-19T21:03:00.000Z",
-      "categories": [
-        "Amazon Dynamodb"
-      ],
-      "services": [
-        "DynamoDB"
-      ],
-      "tags": [
-        "amazon dynamodb",
-        "dynamodb"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "b0c3c3a215d5a4c0",
-      "title": "Amazon SageMaker notebooks now support trusted identity propagation",
-      "description": "Amazon SageMaker Notebooks now support Trusted Identity Propagation (TIP) with Amazon Athena, Amazon Redshift, and Amazon EMR Serverless, enabling per-user access control for data analytics. When connected to a TIP-enabled compute in a TIP-enabled Project, each notebook user's IAM Identity Center identity flows through to AWS Lake Formation, ensuring they see only the tables, columns, and rows their permissions allow, without sharing a single broad execution role. With TIP, enterprises get per-user data boundaries enforced based on who is running the query, full audit attribution with CloudTra",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker Notebooks now support Trusted Identity Propagation (TIP) with Amazon Athena, Amazon Redshift, and Amazon EMR Serverless, enabling per-user access control for data analytics.&lt;/p&gt; \n&lt;p&gt;When connected to a TIP-enabled compute in a TIP-enabled Project, each notebook user's IAM Identity Center identity flows through to AWS Lake Formation, ensuring they see only the tables, columns, and rows their permissions allow, without sharing a single broad execution role. With TIP, enterprises get per-user data boundaries enforced based on who is running the query, full audit attribution with CloudTrail recording which user accessed data, and reduced admin friction since identity propagates automatically through the existing compute connection with no extra login, token, or role management required.&lt;/p&gt; \n&lt;p&gt;To get started, use a notebook in a TIP enabled Project with the supported engines.&amp;nbsp;&amp;nbsp;This feature is available in &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/supported-regions.html\"&gt;all AWS Regions where Amazon SageMaker Unified Studio is available&lt;/a&gt;.&amp;nbsp;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/trusted-identity-propagation.html\"&gt;Trusted identity propagation&lt;/a&gt; in the Amazon SageMaker Unified Studio Administrator Guide and &lt;a href=\"https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/notebooks.html\"&gt;Notebooks&lt;/a&gt; in the Amazon SageMaker Unified Studio User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-sagemaker/",
-      "publishedAt": "2026-08-19T20:25:00.000Z",
-      "updatedAt": "2026-08-19T20:25:00.000Z",
-      "categories": [
-        "Analytics",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "analytics",
-        "amazon sagemaker",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f401b91a21270283",
-      "title": "Amazon CloudWatch pipelines adds GeoIP, RDS, and XML processors",
-      "description": "Amazon CloudWatch pipelines now includes three new processors that parse and enrich log data as it's ingested: an Amazon RDS log parser, an XML parser and a GeoIP enrichment processor. CloudWatch pipelines is a fully managed service that ingests, transforms, and routes telemetry to CloudWatch without managing infrastructure. Log sources often produce data that isn't immediately queryable without reprocessing the data. RDS Aurora logs arrive in their native engine format, application logs carry embedded XML, and IP addresses lack location context. The new processors address each case. The Amazo",
-      "descriptionHtml": "&lt;p&gt;Amazon CloudWatch pipelines now includes three new processors that parse and enrich log data as it's ingested: an Amazon RDS log parser, an XML parser and a GeoIP enrichment processor. CloudWatch pipelines is a fully managed service that ingests, transforms, and routes telemetry to CloudWatch without managing infrastructure.&lt;/p&gt; \n&lt;p&gt;Log sources often produce data that isn't immediately queryable without reprocessing the data. RDS Aurora logs arrive in their native engine format, application logs carry embedded XML, and IP addresses lack location context. The new processors address each case. The Amazon RDS processor parses Aurora audit and error logs into structured fields, the XML parser converts a field containing an XML string into JSON, and the GeoIP processor enriches any IP address field with geographic context such as city, country, and coordinates. For example, you can parse an Aurora audit log into structured fields for compliance reporting. In a separate pipeline, you can extract the XML payload from a Windows Event Log into JSON and resolve its source IP to a city and country for security analysis. You can use these processors independently or combine them in one pipeline.&lt;/p&gt; \n&lt;p&gt;These processors are available at no additional cost in all AWS Regions where CloudWatch pipelines is generally available. CloudWatch logs ingestion and storage rates apply. You can add these processors to your pipelines using the AWS Management Console, AWS CLI, or AWS SDKs. To get started, see the Amazon &lt;a href=\"https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/pipeline-processors.html\"&gt;CloudWatch pipelines documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/cloudwatch-geoip-rds-xml/",
-      "publishedAt": "2026-08-19T20:13:00.000Z",
-      "updatedAt": "2026-08-19T20:13:00.000Z",
-      "categories": [
-        "Amazon Cloudwatch",
-        "Management And Governance"
-      ],
-      "services": [
-        "RDS",
-        "CloudWatch"
-      ],
-      "tags": [
-        "amazon cloudwatch",
-        "management and governance",
-        "rds",
-        "cloudwatch"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "c3571f1ff4a7a86a",
-      "title": "AWS Security Agent (now part of AWS Continuum) now supports budget controls and finding revalidation",
-      "description": "AWS Security Agent (now part of AWS Continuum) has a on-demand penetration testing service that uses an AI agent to autonomously test web applications for vulnerabilities, billing based on cumulative task hours consumed across parallel testing tasks. Security teams and DevSecOps engineers previously had no built-in way to cap test costs or efficiently confirm that a remediated vulnerability had been resolved. These two new capabilities address these use cases. You can now set a maximum task-hours limit on any penetration test, choosing a preset value (for example, 20 or 30 hours), a custom val",
-      "descriptionHtml": "&lt;p&gt;AWS Security Agent (now part of AWS Continuum) has a on-demand penetration testing service that uses an AI agent to autonomously test web applications for vulnerabilities, billing based on cumulative task hours consumed across parallel testing tasks. Security teams and DevSecOps engineers previously had no built-in way to cap test costs or efficiently confirm that a remediated vulnerability had been resolved. These two new capabilities address these use cases.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;You can now set a maximum task-hours limit on any penetration test, choosing a preset value (for example, 20 or 30 hours), a custom value, or no limit at all. When the limit is reached, the test stops gracefully and preserves all findings discovered up to that point and because billing reflects only task hours actually used, a higher limit does not increase cost unless the test requires that additional time. You can also revalidate individual findings after deploying a fix, without re-running a full penetration test. Select one or more findings from a completed run and AWS Security Agent re-tests only those specific findings against your live application, returning a clear Active (still exploitable) or Resolved (fix confirmed) status with full revalidation history linked to the original finding.&lt;/p&gt; \n&lt;p&gt;To learn more about revalidating findings, visit the &lt;a href=\"https://docs.aws.amazon.com/securityagent/latest/userguide/revalidate-findings.html\"&gt;AWS Security Agent Revalidation documentation&lt;/a&gt;. To learn more about setting a maximum task-hours limit, visit the &lt;a href=\"https://docs.aws.amazon.com/securityagent/latest/userguide/perform-penetration-test.html#_set_a_maximum_task_hours_limit\"&gt;AWS Security Agent Penetration Test documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-security-agent/",
-      "publishedAt": "2026-08-19T18:27:00.000Z",
-      "updatedAt": "2026-08-19T18:27:00.000Z",
-      "categories": [],
-      "services": [],
-      "tags": [],
-      "isNew": false
-    },
-    {
-      "id": "691131ca5e76c62e",
-      "title": "AWS Elemental MediaConnect Router now supports configurable recovery latency modes",
-      "description": "AWS Elemental MediaConnect Router now enables customers to configure latency settings, providing control over the internal connection latency between inputs and outputs within the router. Previously, the protocol latency inside the router was set automatically by the service and could not be adjusted. MediaConnect Router now offers two latency configuration options on router outputs: balanced mode and low-latency mode. The balanced mode maintains the existing behavior for general use cases, while the low-latency mode optimizes the internal connection recovery time for latency-sensitive workflo",
-      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaConnect Router now enables customers to configure latency settings, providing control over the internal connection latency between inputs and outputs within the router. Previously, the protocol latency inside the router was set automatically by the service and could not be adjusted.&lt;/p&gt; \n&lt;p&gt;MediaConnect Router now offers two latency configuration options on router outputs: balanced mode and low-latency mode. The balanced mode maintains the existing behavior for general use cases, while the low-latency mode optimizes the internal connection recovery time for latency-sensitive workflows. The appropriate mode is configured per router output, allowing the same input to feed multiple outputs with different latency requirements. A new CloudWatch metric, RouteFabricRecoveryLatency, provides visibility into the configured recovery latency for each route.&lt;/p&gt; \n&lt;p&gt;Customers can configure and view the latency setting using the MediaConnect API or AWS Management Console and AWS CLI.&lt;/p&gt; \n&lt;p&gt;Configurable recovery latency is available in all regions where MediaConnect Router is currently deployed. To learn more about latency modes, visit the &lt;a href=\"https://docs.aws.amazon.com/mediaconnect/latest/ug/creating-router-io.html\"&gt;AWS Elemental MediaConnect documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/mediaconnect-router-latency-modes/",
-      "publishedAt": "2026-08-19T18:00:00.000Z",
-      "updatedAt": "2026-08-19T18:00:00.000Z",
-      "categories": [],
-      "services": [
-        "Elemental"
-      ],
-      "tags": [
-        "elemental"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d47b1ce1b6bd4111",
-      "title": "AWS Cost Anomaly Detection supports third-party models on Amazon Bedrock",
-      "description": "AWS Cost Anomaly Detection now monitors spend on third-party foundation models running on Amazon Bedrock, such as Anthropic Claude and other provider-hosted models. Cost Anomaly Detection uses machine learning to detect and alert on unusual spend, and this launch extends that coverage to third-party model usage on Amazon Bedrock. Teams running production generative AI workloads now get automatic anomaly detection on their Amazon Bedrock model spend alongside the rest of their AWS costs. With this launch, Cost Anomaly Detection automatically evaluates your third-party Amazon Bedrock model costs",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/aws-cost-management/aws-cost-anomaly-detection/\"&gt;AWS Cost Anomaly Detection&lt;/a&gt; now monitors spend on third-party foundation models running on Amazon Bedrock, such as Anthropic Claude and other provider-hosted models. Cost Anomaly Detection uses machine learning to detect and alert on unusual spend, and this launch extends that coverage to third-party model usage on Amazon Bedrock. Teams running production generative AI workloads now get automatic anomaly detection on their Amazon Bedrock model spend alongside the rest of their AWS costs.&lt;/p&gt; \n&lt;p&gt;With this launch, Cost Anomaly Detection automatically evaluates your third-party Amazon Bedrock model costs through your AWS managed service monitor, with no setup required. When spend on a model changes unexpectedly, you receive an alert and a root-cause breakdown ranked by dollar impact across AWS service, account, Region, and usage type, so you can understand and act on generative AI cost changes as quickly as you do for any other AWS spend.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS commercial regions, except the AWS GovCloud and the China Regions.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/cost-management/latest/userguide/manage-ad.html\"&gt;Detecting unusual spend with AWS Cost Anomaly Detection&lt;/a&gt; in the AWS Billing and Cost Management User Guide.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-cost-anomaly-detection-bedrock-3P/",
-      "publishedAt": "2026-08-19T17:57:00.000Z",
-      "updatedAt": "2026-08-19T17:57:00.000Z",
-      "categories": [
-        "Cloud Financial Management",
-        "Cost Management"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "cloud financial management",
-        "cost management",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "57ad8625a0ec71a2",
-      "title": "Amazon OpenSearch Ingestion is now available in GovCloud Regions",
-      "description": "Starting today, customers can use Amazon OpenSearch Ingestion in AWS GovCloud (US-East) and AWS GovCloud (US-West), for ingesting data into their Amazon OpenSearch Service managed clusters or serverless collections. Amazon OpenSearch Ingestion is a fully managed data ingestion tier that allows you to ingest and process data before indexing it in Amazon OpenSearch managed clusters or serverless collections. Amazon OpenSearch Ingestion provides a no-code experience to filter, transform, redact, and route data into Amazon OpenSearch Service. Amazon OpenSearch Ingestion automatically provisions an",
-      "descriptionHtml": "&lt;p&gt;Starting today, customers can use Amazon OpenSearch Ingestion in AWS GovCloud (US-East) and AWS GovCloud (US-West), for ingesting data into their Amazon OpenSearch Service managed clusters or serverless collections.&lt;br&gt; &lt;br&gt; Amazon OpenSearch Ingestion is a fully managed data ingestion tier that allows you to ingest and process data before indexing it in Amazon OpenSearch managed clusters or serverless collections. Amazon OpenSearch Ingestion provides a no-code experience to filter, transform, redact, and route data into Amazon OpenSearch Service. Amazon OpenSearch Ingestion automatically provisions and scales the underlying resources to meet the fluctuating demands of your workloads.&lt;br&gt; &lt;br&gt; With this launch, Amazon OpenSearch Ingestion is now generally available in 19 AWS regions: US East (Ohio), US East (N. Virginia), US West (Oregon), US West (N. California), Europe (Ireland), Europe (London), Europe (Frankfurt), Europe (Spain), Europe (Paris), Asia Pacific (Tokyo), Asia Pacific (Sydney), Asia Pacific (Singapore), Asia Pacific (Mumbai), Asia Pacific (Seoul), Canada (Central), South America (Sao Paulo), Europe (Stockholm), GovCloud (US-East) and GovCloud (US-West).&lt;br&gt; &lt;br&gt; To learn more, see the &lt;a href=\"https://aws.amazon.com/opensearch-service/features/ingestion/\"&gt;Amazon OpenSearch Ingestion&lt;/a&gt; webpage and the &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ingestion.html\"&gt;Amazon OpenSearch Ingestion Developer Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/opensearch-ingestion-available-govcloud-regions",
-      "publishedAt": "2026-08-19T17:54:00.000Z",
-      "updatedAt": "2026-08-19T17:54:00.000Z",
-      "categories": [
-        "Amazon Opensearch Service",
-        "Analytics"
-      ],
-      "services": [
-        "OpenSearch"
-      ],
-      "tags": [
-        "amazon opensearch service",
-        "analytics",
-        "opensearch"
       ],
       "isNew": false
     }
