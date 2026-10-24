@@ -1,7 +1,148 @@
 {
-  "lastUpdated": "2026-10-23T13:08:09.764Z",
+  "lastUpdated": "2026-10-24T12:28:44.457Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "5767ee5c982d745e",
+      "title": "Web Search on AWS Bedrock now supports domain filtering and user location controls",
+      "description": "Web Search on AWS Bedrock now supports two new controls that give you more precision over the results that ground a model's response: domain filtering and user location. Both are configured directly on the web_search tool in your existing OpenAI Responses API request. With domain filtering, you can restrict Web Search results to a set of domains you choose. Using the filters parameter, you specify up to 100 allowed_domains to limit results to trusted sources, or up to 100 blocked_domains to exclude sources you don't want. This is useful when you want responses grounded only in specific sites, ",
+      "descriptionHtml": "&lt;p&gt;Web Search on AWS Bedrock now supports two new controls that give you more precision over the results that ground a model's response: domain filtering and user location. Both are configured directly on the web_search tool in your existing OpenAI Responses API request.&lt;/p&gt; \n&lt;p&gt;With domain filtering, you can restrict Web Search results to a set of domains you choose. Using the filters parameter, you specify up to 100 allowed_domains to limit results to trusted sources, or up to 100 blocked_domains to exclude sources you don't want. This is useful when you want responses grounded only in specific sites, or when you need to keep certain domains out of results.&lt;/p&gt; \n&lt;p&gt;With user location, you can optionally specify location parameters so that Web Search can return results relevant to that geography. This helps with location-dependent questions, such as regional availability or local services.&lt;/p&gt; \n&lt;p&gt;Domain filtering and user location are available in all AWS Regions where Web Search is supported: US East (N. Virginia), US East (Ohio), US West (Oregon), and AWS GovCloud (US-West). To get started, see the Web Search section in the &lt;a href=\"https://docs.aws.amazon.com/bedrock/latest/userguide/web-search.html\"&gt;AWS Bedrock User Guide&lt;/a&gt;. For pricing, see the &lt;a href=\"https://aws.amazon.com/bedrock/pricing/\"&gt;AWS Bedrock pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-web-search-domain-user-location/",
+      "publishedAt": "2026-10-23T21:04:00.000Z",
+      "updatedAt": "2026-10-23T21:04:00.000Z",
+      "categories": [
+        "Amazon Bedrock"
+      ],
+      "services": [
+        "Bedrock"
+      ],
+      "tags": [
+        "amazon bedrock",
+        "bedrock"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "f8afc739c8009e27",
+      "title": "Amazon Connect Customer Global Resiliency now supports persistent chat across linked AWS Regions",
+      "description": "Amazon Connect Customer Global Resiliency now provides customers a mechanism to deliver long, persistent chat experiences across linked AWS Regions. With this capability, end users can resume previous conversations with full context, metadata, and transcripts carried over across Regions, eliminating the need for end users to repeat information and allowing agents to provide personalized service with access to the entire conversation history across AWS Regions. For example, an end user can start a chat in US-East (N. Virginia) and later come back to it in the linked US-West (Oregon) Region, con",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer Global Resiliency now provides customers a mechanism to deliver long, persistent chat experiences across linked AWS Regions. With this capability, end users can resume previous conversations with full context, metadata, and transcripts carried over across Regions, eliminating the need for end users to repeat information and allowing agents to provide personalized service with access to the entire conversation history across AWS Regions.&lt;/p&gt; \n&lt;p&gt;For example, an end user can start a chat in US-East (N. Virginia) and later come back to it in the linked US-West (Oregon) Region, continuing the same conversation with an agent with full conversation history&amp;nbsp;and&amp;nbsp;chat attachment. To adopt this capability, onboard to &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/global-routing-across-acgr-regions.html\"&gt;Global routing&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/get-started-connect-global-resiliency.html\"&gt;Amazon Connect Customer Global Resiliency&lt;/a&gt; is supported. To learn more, visit &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/setup-connect-global-resiliency.html\"&gt;Amazon Connect Customer Admin Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-persistent-chat",
+      "publishedAt": "2026-10-23T17:00:00.000Z",
+      "updatedAt": "2026-10-23T17:00:00.000Z",
+      "categories": [
+        "Contact Center",
+        "Amazon Connect"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "amazon connect",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "45b518017fb4d467",
+      "title": "AWS Transit Gateway and AWS Cloud WAN now support 1:1 NAT",
+      "description": "AWS Transit Gateway and AWS Cloud WAN now provide managed one-to-one network address translation (NAT) directly on their attachments, through integration with Regional Private NAT Gateway. This enables customers to connect private networks that share the same IP address ranges without renumbering either network, deploying a NAT appliance, or writing return-traffic rules. Networks with overlapping Classless Inter-Domain Routing (CIDR) blocks have long been unable to communicate, a common blocker during mergers and acquisitions, when connecting partner networks over AWS Site-to-Site VPN, in mult",
+      "descriptionHtml": "&lt;p&gt;AWS Transit Gateway and AWS Cloud WAN now provide managed one-to-one network address translation (NAT) directly on their attachments, through integration with Regional Private NAT Gateway. This enables customers to connect private networks that share the same IP address ranges without renumbering either network, deploying a NAT appliance, or writing return-traffic rules.&lt;/p&gt; \n&lt;p&gt;Networks with overlapping Classless Inter-Domain Routing (CIDR) blocks have long been unable to communicate, a common blocker during mergers and acquisitions, when connecting partner networks over AWS Site-to-Site VPN, in multicloud connectivity, and when independently provisioned VPCs need to interconnect. Using this capability, customers can define address-translation rules on a AWS Transit Gateway or AWS Cloud WAN attachment, specifying the private IP range each source CIDR translates to, across Amazon VPC, AWS Site-to-Site VPN, AWS Direct Connect, and SD-WAN appliances connected through Transit Gateway Connect. Both services apply translation automatically in both directions, with no separate return-traffic rule and no NAT appliance to deploy. AWS operates, scales, and manages the NAT capability as part of the attachment. For example, if a customer acquires a business and both VPCs use 10.0.0.0/16, they translate one VPC's addresses to a non-overlapping range on its attachment and connect the networks immediately. Customers set it up in minutes using the AWS Management Console, AWS Command Line Interface (AWS CLI), AWS SDKs, and AWS CloudFormation, and monitor translated traffic through Amazon CloudWatch metrics and Amazon EventBridge events.&lt;/p&gt; \n&lt;p&gt;AWS Transit Gateway and AWS Cloud WAN offer 1:1 NAT through Regional Private NAT Gateway in all AWS commercial&amp;nbsp;regions where they operate. For full pricing details, see &amp;nbsp;&lt;a href=\"https://aws.amazon.com/vpc/pricing/\"&gt;Amazon VPC pricing&amp;nbsp;&lt;/a&gt;. To learn more, see the &amp;nbsp;&lt;a href=\"https://aws.amazon.com/transit-gateway/\"&gt;AWS Transit Gateway&amp;nbsp;&lt;/a&gt; and &amp;nbsp;&lt;a href=\"https://aws.amazon.com/cloud-wan/\"&gt;AWS Cloud WAN&amp;nbsp;&lt;/a&gt; product pages, and the &lt;a href=\"https://docs.aws.amazon.com/vpc/latest/tgw/\"&gt;AWS Transit Gateway&amp;nbsp;&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/network-manager/latest/cloudwan/what-is-cloudwan.html\"&gt;AWS Cloud WAN&amp;nbsp;&lt;/a&gt; documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transit-gateway-cloud-wan-1-1-nat/",
+      "publishedAt": "2026-10-23T15:43:00.000Z",
+      "updatedAt": "2026-10-23T15:43:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "Amazon Vpc",
+        "AWS Cloud Wan",
+        "AWS Transit Gateway"
+      ],
+      "services": [
+        "VPC",
+        "Transit Gateway"
+      ],
+      "tags": [
+        "networking and content delivery",
+        "amazon vpc",
+        "aws cloud wan",
+        "aws transit gateway",
+        "vpc",
+        "transit gateway"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "723f7e9eaf9dadf7",
+      "title": "Amazon Corretto October 2026 Quarterly Updates",
+      "description": "On October 22, 2026 Amazon announced quarterly security and critical updates for Amazon Corretto Long-Term Supported (LTS) versions of OpenJDK. Corretto 27.0.1.0.10, 25.0.5.0.9, 21.0.13.0.10, 17.0.21.0.10, 11.0.33.0.9, and 8u512 are now available for download . Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK. Visit the Corretto home page to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a Corretto Apt, Yum, or Apk repo . Feedback is welcomed !",
+      "descriptionHtml": "&lt;p&gt;On October 22, 2026 Amazon announced quarterly security and critical updates for Amazon Corretto Long-Term Supported (LTS) versions of OpenJDK. Corretto 27.0.1.0.10, 25.0.5.0.9, 21.0.13.0.10, 17.0.21.0.10, 11.0.33.0.9, and 8u512 are now available for &lt;a href=\"https://aws.amazon.com/corretto/\"&gt;download&lt;/a&gt;. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.&lt;/p&gt; \n&lt;p&gt;Visit the Corretto &lt;a href=\"https://aws.amazon.com/corretto\"&gt;home page&lt;/a&gt; to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a &lt;a href=\"https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/generic-linux-install.html\"&gt;Corretto Apt, Yum, or Apk repo&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Feedback is &lt;a href=\"https://github.com/corretto\"&gt;welcomed&lt;/a&gt;!&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-october-2026-quarterly-updates",
+      "publishedAt": "2026-10-23T14:00:00.000Z",
+      "updatedAt": "2026-10-23T14:00:00.000Z",
+      "categories": [
+        "Developer Tools",
+        "AWS Govcloud Us",
+        "Amazon Corretto"
+      ],
+      "services": [],
+      "tags": [
+        "developer tools",
+        "aws govcloud us",
+        "amazon corretto"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "a8e1a3d39593bd1c",
+      "title": "Amazon MWAA now available in Mexico (Central) Region",
+      "description": "Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Provisioned environments are now available in the Mexico (Central) Region (mx-central-1). Amazon MWAA Serverless was already available in this Region, and customers can now also use Amazon MWAA Provisioned environments for their Apache Airflow workflows. Amazon MWAA is a managed orchestration service for Apache Airflow that makes it easier for customers to set up and operate end-to-end data pipelines in the cloud at scale. Customers can create Amazon MWAA Provisioned environments using the AWS Management Console, the AWS CLI, the AWS SD",
+      "descriptionHtml": "&lt;p&gt;Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Provisioned environments are now available in the Mexico (Central) Region (mx-central-1). Amazon MWAA Serverless was already available in this Region, and customers can now also use Amazon MWAA Provisioned environments for their Apache Airflow workflows. Amazon MWAA is a managed orchestration service for Apache Airflow that makes it easier for customers to set up and operate end-to-end data pipelines in the cloud at scale.&lt;/p&gt;\n&lt;p&gt;Customers can create Amazon MWAA Provisioned environments using the AWS Management Console, the AWS CLI, the AWS SDKs, or AWS CloudFormation. Customers in Mexico (Central) can now run their Amazon MWAA Provisioned workflows closer to their data sources and end users, reducing latency and helping meet data residency requirements. To learn more, visit the &lt;a href=\"https://aws.amazon.com/managed-workflows-for-apache-airflow/\"&gt;Amazon MWAA product page&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html#regions-mwaa\"&gt;Amazon MWAA supported Regions documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-mexico-central/",
+      "publishedAt": "2026-10-23T08:00:00.000Z",
+      "updatedAt": "2026-10-23T08:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Mwaa"
+      ],
+      "services": [
+        "MWAA"
+      ],
+      "tags": [
+        "analytics",
+        "amazon mwaa",
+        "mwaa"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2311e6702e26573b",
+      "title": "Amazon EMR on EKS reduces EMR charge by 30 percent",
+      "description": "Amazon EMR announces a reduction of 30 percent in the EMR charge added to EKS when running EMR on EKS. This price decrease applies to both the per-vCPU-hour charge and the per-GB-hour charge, while the underlying Amazon EKS charges remain unchanged. All EMR workloads running on the EKS deployment option benefit from this change. Now, you can run Apache Spark workloads on Amazon Elastic Kubernetes Service (EKS) at a lower cost, and the new price automatically applies to your EMR on EKS workloads with no additional action required on your end. The 30% reduction in EMR on EKS pricing is available",
+      "descriptionHtml": "&lt;p&gt;Amazon EMR announces a reduction of 30 percent in the EMR charge added to EKS when running EMR on EKS. This price decrease applies to both the per-vCPU-hour charge and the per-GB-hour charge, while the underlying Amazon EKS charges remain unchanged. All EMR workloads running on the EKS deployment option benefit from this change. Now, you can run Apache Spark workloads on Amazon Elastic Kubernetes Service (EKS) at a lower cost, and the new price automatically applies to your EMR on EKS workloads with no additional action required on your end.&lt;/p&gt;\n&lt;p&gt;The 30% reduction in EMR on EKS pricing is available in all AWS Regions where Amazon EMR on EKS is available. To learn more about EMR on EKS, visit the &lt;a href=\"https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks.html\"&gt;Amazon EMR on EKS documentation&lt;/a&gt; and the &lt;a href=\"https://aws.amazon.com/emr/pricing/\"&gt;Amazon EMR pricing page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/",
+      "publishedAt": "2026-10-23T08:00:00.000Z",
+      "updatedAt": "2026-10-23T08:00:00.000Z",
+      "categories": [
+        "Lower Cost",
+        "Amazon Emr",
+        "Analytics",
+        "Amazon Eks"
+      ],
+      "services": [
+        "EKS",
+        "EMR"
+      ],
+      "tags": [
+        "lower cost",
+        "amazon emr",
+        "analytics",
+        "amazon eks",
+        "eks",
+        "emr"
+      ],
+      "isNew": true
+    },
     {
       "id": "2d1f51137b859c87",
       "title": "Amazon Connect Customer now supports customizing the Customer Profiles app on the agent workspace",
@@ -42,6 +183,30 @@
       "isNew": true
     },
     {
+      "id": "a85aeda09785999f",
+      "title": "Amazon OpenSearch Service introduces intelligent ingestion for logs and documents in Amazon S3",
+      "description": "Amazon OpenSearch Serverless now offers intelligent ingestion, a fully managed feature that turns logs and documents stored in Amazon S3 into searchable content in Amazon OpenSearch Serverless (NextGen) collections . With intelligent ingestion, you can set up ingestion with a few clicks in the AWS Management Console or a single API call, with no ingestion infrastructure to manage. Intelligent ingestion supports observability logs and structured data in JSON, NDJSON, and JSON array formats, and unstructured files in PDF, Word, plain text, and Markdown formats. You choose an S3 source and a coll",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Serverless now offers intelligent ingestion, a fully managed feature that turns logs and documents stored in Amazon S3 into searchable content in Amazon OpenSearch Serverless (NextGen) collections . With intelligent ingestion, you can set up ingestion with a few clicks in the AWS Management Console or a single API call, with no ingestion infrastructure to manage. Intelligent ingestion supports observability logs and structured data in JSON, NDJSON, and JSON array formats, and unstructured files in PDF, Word, plain text, and Markdown formats.&lt;/p&gt; \n&lt;p&gt;You choose an S3 source and a collection index, and intelligent ingestion handles the rest. It automatically detects data types, parses documents, describes images, chunks text, generates vector embeddings, and indexes the results. You don't need to manage ingestion or document-processing infrastructure, or size capacity in advance. Use ingestion jobs for one-time loads such as migrations and backfills, or ingestion streams to keep an index in sync as new objects arrive in your bucket. Capacity scales with your workload up to the collection's configured limit, and you pay only for active processing. Source S3 buckets can be in the same AWS account as the collection or in a different account.&lt;/p&gt; \n&lt;p&gt;For logs and structured data, intelligent ingestion applies transformations and optionally adds embeddings, with no pipeline code. For unstructured data, it parses PDF, Word, plain text, and Markdown files while keeping headings, reading order, and tables intact, so the content lands in an index ready for semantic and hybrid search. When documents contain charts, diagrams, screenshots, or photos, a vision-language model generates text descriptions that are indexed with the surrounding content, making visual information searchable too.&lt;/p&gt; \n&lt;p&gt;Intelligent ingestion is available today for Amazon OpenSearch Serverless (NextGen) collections, with Amazon S3 as the source, in seven AWS Regions. To get started, open the Amazon OpenSearch Service console, choose your collection, and select the Ingestion tab. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-intelligent-ingestion.html\"&gt;Intelligent ingestion&lt;/a&gt; in the Amazon OpenSearch Service Developer Guide. For pricing, see &lt;a href=\"https://aws.amazon.com/opensearch-service/pricing/\"&gt;Amazon OpenSearch Service pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-intelligent-ingestion-logs-documents-s3",
+      "publishedAt": "2026-10-22T20:54:00.000Z",
+      "updatedAt": "2026-10-22T20:54:00.000Z",
+      "categories": [
+        "Amazon Opensearch Service",
+        "Analytics"
+      ],
+      "services": [
+        "S3",
+        "OpenSearch"
+      ],
+      "tags": [
+        "amazon opensearch service",
+        "analytics",
+        "s3",
+        "opensearch"
+      ],
+      "isNew": true
+    },
+    {
       "id": "8e3fe4f2728b4af9",
       "title": "Amazon OpenSearch Serverless now supports a 5-second default refresh interval",
       "description": "Starting today, Amazon OpenSearch Serverless reduces the default refresh interval to 5 seconds for both search and vector collections. The refresh interval controls how quickly newly ingested documents become available for search. By lowering the default from 10 seconds to 5 seconds, newly written data becomes searchable faster, giving applications quicker read-after-write visibility automatically, with no configuration changes and no action required on your part. This improvement applies to the next generation of Amazon OpenSearch Serverless and takes effect by default on both search and vect",
@@ -68,8 +233,8 @@
     {
       "id": "4b4a00d962dd24dd",
       "title": "AWS CloudFormation now simplifies stack update rollback operations",
-      "description": "AWS CloudFormation now makes it simpler to complete an update rollback and get back to deploying. An update rollback returns your stack to a known good state. Starting today, if some resources cannot roll back automatically, force rollback enables you to complete the rollback it in a single operation. It works across every CloudFormation workflow, from the AWS CLI , and SDKs to AWS CDK and AI agents. With force rollback, CloudFormation completes the update rollback and returns your stack to a deployable state in a single operation, instead of requiring you to identify, list, and retry the oper",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/cloudformation/\"&gt;AWS CloudFormation&lt;/a&gt;&amp;nbsp;now makes it simpler to complete an update rollback and get back to deploying. An update rollback returns your stack to a known good state. Starting today, if some resources cannot roll back automatically, force rollback enables you to complete the rollback it in a single operation. It works across every CloudFormation workflow, from the &lt;a href=\"https://docs.aws.amazon.com/cli/latest/reference/cloudformation/\"&gt;AWS CLI&lt;/a&gt;, and SDKs to &lt;a href=\"https://docs.aws.amazon.com/cdk/v2/guide/\"&gt;AWS CDK&lt;/a&gt;&amp;nbsp;and AI agents.&lt;/p&gt; \n&lt;p&gt;With force rollback, CloudFormation completes the update rollback and returns your stack to a deployable state in a single operation, instead of requiring you to identify, list, and retry the operation for each affected resource. Any resource that still needs attention, such as one affected a change outside CloudFormation, is recorded for you to review and resolve it before your next deployment.&lt;/p&gt; \n&lt;p&gt;To get started, run continue update rollback with the force rollback option, then create a &lt;a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/drift-aware-change-sets.html\"&gt;drift-aware change set&lt;/a&gt; to review any configuration differences before your next deployment. To learn more, see &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-continueupdaterollback.html\"&gt;Continue rolling back an update&amp;nbsp;&lt;/a&gt; in the AWS CloudFormation User Guide.&lt;/p&gt; \n&lt;p&gt;Force rollback is available in all Regions at no additional cost. Refer to the &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/cfn.html#cfn_region\"&gt;AWS Region table&amp;nbsp;&lt;/a&gt; for service availability details.&lt;/p&gt;",
+      "description": "AWS CloudFormation now makes it simpler to complete an update rollback and get back to deploying. An update rollback returns your stack to a known good state. Starting today, if some resources cannot roll back automatically, force rollback enables you to complete the rollback in a single operation. It works across every CloudFormation workflow, from the AWS CLI , and SDKs to AWS CDK and AI agents. With force rollback, CloudFormation completes the update rollback and returns your stack to a deployable state in a single operation, instead of requiring you to identify, list, and retry the operati",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://docs.aws.amazon.com/cloudformation/\"&gt;AWS CloudFormation&lt;/a&gt;&amp;nbsp;now makes it simpler to complete an update rollback and get back to deploying. An update rollback returns your stack to a known good state. Starting today, if some resources cannot roll back automatically, force rollback enables you to complete the rollback in a single operation. It works across every CloudFormation workflow, from the &lt;a href=\"https://docs.aws.amazon.com/cli/latest/reference/cloudformation/\"&gt;AWS CLI&lt;/a&gt;, and SDKs to &lt;a href=\"https://docs.aws.amazon.com/cdk/v2/guide/\"&gt;AWS CDK&lt;/a&gt;&amp;nbsp;and AI agents.&lt;/p&gt; \n&lt;p&gt;With force rollback, CloudFormation completes the update rollback and returns your stack to a deployable state in a single operation, instead of requiring you to identify, list, and retry the operation for each affected resource. Any resource that still needs attention, such as one affected by a change outside CloudFormation, is recorded for you to review and resolve it before your next deployment.&lt;/p&gt; \n&lt;p&gt;To get started, run continue update rollback with the force rollback option, then create a &lt;a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/drift-aware-change-sets.html\"&gt;drift-aware change set&lt;/a&gt; to review any configuration differences before your next deployment. To learn more, see &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-continueupdaterollback.html\"&gt;Continue rolling back an update&amp;nbsp;&lt;/a&gt; in the AWS CloudFormation User Guide.&lt;/p&gt; \n&lt;p&gt;Force rollback is available in all Regions at no additional cost. Refer to the &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/cfn.html#cfn_region\"&gt;AWS Region table&amp;nbsp;&lt;/a&gt; for service availability details.&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-cloudformation-cdk/",
       "publishedAt": "2026-10-22T17:30:00.000Z",
       "updatedAt": "2026-10-22T17:30:00.000Z",
@@ -126,6 +291,30 @@
         "aws direct connect",
         "networking and content delivery",
         "direct connect",
+        "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "dd435ca53f5cddb1",
+      "title": "Amazon MSK Connect now supports pausing and resuming connectors",
+      "description": "Amazon MSK Connect (Amazon Managed Streaming for Apache Kafka Connect) now supports pausing and resuming connectors, letting you temporarily pause a connector from processing records and resume it later. This is useful when you need to stop data flow during maintenance on a source database or a sink target, or to pause processing while you investigate an upstream or downstream issue. Amazon MSK Connect is a fully managed service that allows you to deploy, monitor, and scale Apache Kafka Connect connectors with Amazon MSK (Managed Streaming for Apache Kafka). Previously, pausing a connector mea",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/msk/features/msk-connect/\"&gt;Amazon MSK Connect&lt;/a&gt; (Amazon Managed Streaming for Apache Kafka Connect) now supports pausing and resuming connectors, letting you temporarily pause a connector from processing records and resume it later. This is useful when you need to stop data flow during maintenance on a source database or a sink target, or to pause processing while you investigate an upstream or downstream issue.&lt;/p&gt; \n&lt;p&gt;Amazon MSK Connect is a fully managed service that allows you to deploy, monitor, and scale Apache Kafka Connect connectors with &lt;a href=\"https://aws.amazon.com/msk/\"&gt;Amazon MSK&lt;/a&gt; (Managed Streaming for Apache Kafka). Previously, pausing a connector meant deleting it and recreating it - a more disruptive operation, adding risk and operational overhead. With this launch, you can pause a running connector and resume it in place when you are ready — a paused connector keeps its configuration, capacity settings, and committed offsets, and its tasks continue processing from the offsets they last committed when you resume.&lt;/p&gt; \n&lt;p&gt;This capability is available at no additional cost through the Amazon MSK Console, AWS CLI, AWS SDK, and AWS CDK in all AWS Regions where Amazon MSK Connect is available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/msk/latest/developerguide/mskconnect.html\"&gt;Amazon MSK Connect documentation&lt;/a&gt;. To get started, visit the &lt;a href=\"https://console.aws.amazon.com/msk\"&gt;Amazon MSK Console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-connect-pause-resume",
+      "publishedAt": "2026-10-22T15:00:00.000Z",
+      "updatedAt": "2026-10-22T15:00:00.000Z",
+      "categories": [
+        "Amazon Msk",
+        "Analytics"
+      ],
+      "services": [
+        "MSK",
+        "Connect"
+      ],
+      "tags": [
+        "amazon msk",
+        "analytics",
+        "msk",
         "connect"
       ],
       "isNew": true
@@ -1061,7 +1250,7 @@
         "aws marketplace and partners",
         "aws marketplace"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "70347720ff6f1e9a",
@@ -1083,7 +1272,7 @@
         "amazon cloudwatch logs",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ed5ad04bed3ca04a",
@@ -1105,7 +1294,7 @@
         "amazon emr",
         "emr"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "26f6db8a2690736e",
@@ -1127,7 +1316,7 @@
         "serverless",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a47f3181e834dbae",
@@ -1153,7 +1342,7 @@
         "amazon sagemaker deploy",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "755bcc9a933a9514",
@@ -1166,7 +1355,7 @@
       "categories": [],
       "services": [],
       "tags": [],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2d3813cd947b216b",
@@ -11075,200 +11264,6 @@
       "tags": [
         "batch",
         "ecs"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "28f98711cd0b3879",
-      "title": "Capacity Reservation Resource Groups now support Amazon EC2 Capacity Blocks and interruptible Capacity Reservations",
-      "description": "Starting today, you can add Amazon EC2 Capacity Blocks for ML and interruptible Capacity Reservations to Capacity Reservation Resource Groups. Amazon EC2 offers different reservation offerings such as On-Demand Capacity Reservations (ODCRs), interruptible Capacity Reservations, and Capacity Blocks for ML. Previously, a Capacity Reservation Resource Group could only include ODCRs. Now you can add any type of Capacity Reservation to a Capacity Reservation Resource Group, making it easier to launch EC2 instances across your entire portfolio of reserved capacity. To use this feature, create a Capa",
-      "descriptionHtml": "&lt;p&gt;Starting today, you can add Amazon EC2 Capacity Blocks for ML and interruptible Capacity Reservations to Capacity Reservation Resource Groups. Amazon EC2 offers different reservation offerings such as On-Demand Capacity Reservations (ODCRs), interruptible Capacity Reservations, and Capacity Blocks for ML. Previously, a Capacity Reservation Resource Group could only include ODCRs. Now you can add any type of Capacity Reservation to a Capacity Reservation Resource Group, making it easier to launch EC2 instances across your entire portfolio of reserved capacity.&lt;/p&gt; \n&lt;p&gt;To use this feature, create a Capacity Reservation Resource Group, add any Capacity Reservation to it, and then target the group in your launch request. When using EC2 Fleet and EC2 Auto Scaling groups, you can also specify your prioritization preferences across reservation types, and configure automatic fall back to EC2 On-Demand capacity when there is no capacity remaining across your reservations.&lt;/p&gt; \n&lt;p&gt;There are no additional charges for using this feature. This feature is available in all AWS Regions where Capacity Blocks for ML and interruptible ODCRs are supported, excluding AWS GovCloud (US) and China Regions.&amp;nbsp;To get started, see &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/cr-groups.html\"&gt;Capacity Reservation Resource Groups&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html\"&gt;Capacity Reservations user guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/capacity-reservation-resource-groups-ec2",
-      "publishedAt": "2026-08-25T18:00:00.000Z",
-      "updatedAt": "2026-08-25T18:00:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Artificial Intelligence",
-        "Aiml"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "amazon ec2",
-        "artificial intelligence",
-        "aiml",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "18fa30a12e1052bd",
-      "title": "AWS Lambda MicroVMs now supports AWS PrivateLink",
-      "description": "AWS Lambda MicroVMs now supports AWS PrivateLink, enabling private connectivity to Lambda MicroVMs directly from Amazon Virtual Private Cloud (VPC) resources without exposing traffic to the public internet. This launch helps regulated workloads in financial services, healthcare, and government meet strict network isolation requirements when building with Lambda MicroVMs. PrivateLink VPC Endpoints deliver private connectivity to AWS services from your VPC, ensuring that your traffic does not travel over the public internet when communicating with AWS services. Today's launch extends this capabi",
-      "descriptionHtml": "&lt;p&gt;AWS Lambda MicroVMs now supports AWS PrivateLink, enabling private connectivity to Lambda MicroVMs directly from Amazon Virtual Private Cloud (VPC) resources without exposing traffic to the public internet. This launch helps regulated workloads in financial services, healthcare, and government meet strict network isolation requirements when building with Lambda MicroVMs.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;PrivateLink VPC Endpoints deliver private connectivity to AWS services from your VPC, ensuring that your traffic does not travel over the public internet when communicating with AWS services. Today's launch extends this capability to Lambda MicroVMs. Developers and IT teams needing private connectivity to Lambda MicroVMs can now create PrivateLink VPC Endpoints in their VPC to call MicroVM APIs (for example, to create MicroVM images or launch MicroVMs) and to connect to each MicroVM’s HTTP endpoint.&lt;/p&gt; \n&lt;p&gt;PrivateLink VPC Endpoints for Lambda MicroVMs can be created using the AWS Management Console, AWS CLI, AWS CloudFormation, or the AWS SDKs. This feature is supported in all Regions where Lambda MicroVMs is available. Visit the &lt;a href=\"https://builder.aws.com/build/capabilities\"&gt;AWS Capabilities by Region page&lt;/a&gt; for the latest region availability.&amp;nbsp;&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To learn more about using PrivateLink with Lambda MicroVMs, see the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/microvms-networking.html\"&gt;developer guide&lt;/a&gt;.&amp;nbsp;For pricing details, see &lt;a href=\"https://aws.amazon.com/privatelink/pricing/\"&gt;AWS PrivateLink Pricing&lt;/a&gt;. To learn more about configuring private connectivity for AWS services, visit the&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/vpc/latest/privatelink/interface-endpoints.html\"&gt;AWS PrivateLink developer guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/lambda-microvms-supports-privatelink",
-      "publishedAt": "2026-08-25T16:34:00.000Z",
-      "updatedAt": "2026-08-25T16:34:00.000Z",
-      "categories": [
-        "AWS Lambda",
-        "Networking",
-        "Serverless",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "Lambda",
-        "PrivateLink"
-      ],
-      "tags": [
-        "aws lambda",
-        "networking",
-        "serverless",
-        "artificial intelligence",
-        "lambda",
-        "privatelink"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9a0e90cf251eeed7",
-      "title": "Amazon RDS for PostgreSQL supports minor versions 18.6, 17.11, 16.15, 15.19, and 14.24",
-      "description": "Amazon Relational Database Service (RDS) for PostgreSQL now supports the latest minor versions 18.6, 17.11, 16.15, 15.19, and 14.24. We recommend that you upgrade to the latest minor versions to address Common Vulnerabilities and Exposures (CVEs) in prior versions of PostgreSQL, and to benefit from the bug fixes and improvements added by the PostgreSQL community. You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable automatic minor version upgrades and use the AWS Organizations Upgrade Rollout Policy ",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/postgresql/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (RDS) for PostgreSQL&lt;/a&gt; now supports the latest minor versions 18.6, 17.11, 16.15, 15.19, and 14.24. We recommend that you upgrade to the latest minor versions to address Common Vulnerabilities and Exposures (CVEs) in prior versions of PostgreSQL, and to benefit from the bug fixes and improvements added by the PostgreSQL community.&lt;/p&gt; \n&lt;p&gt;You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable automatic minor version upgrades and use the AWS Organizations &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS.Maintenance.AMVU.UpgradeRollout.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Upgrade Rollout Policy&lt;/a&gt; to orchestrate multiple upgrades in phases, validating on lower-priority environments before upgrading your most critical ones. You can also use Amazon RDS Blue/Green deployments to minimize downtime for minor version upgrades. For more information, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.PostgreSQL.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Upgrading RDS for PostgreSQL DB engine&lt;/a&gt;.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. See &lt;a href=\"https://aws.amazon.com/rds/postgresql/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for PostgreSQL Pricing&lt;/a&gt; for pricing details and regional availability. Create or update a fully managed Amazon RDS database in the &lt;a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Management Console&lt;/a&gt; or by using the AWS Command Line Interface (CLI).&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-rds-postgresql-18-6-17-11-16-15-15-19-14-24/",
-      "publishedAt": "2026-08-25T16:00:00.000Z",
-      "updatedAt": "2026-08-25T16:00:00.000Z",
-      "categories": [
-        "Amazon Rds",
-        "Databases"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "amazon rds",
-        "databases",
-        "rds"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "1120c43a1a914d0c",
-      "title": "Amazon Connect Customer now lets you update the customer profile on a case or add a profile after a case is opened",
-      "description": "Amazon Connect Customer now lets agents change the profile on a case or choose a profile after the case is opened. If a case is linked to the wrong customer, agents can update the profile to keep case histories accurate. Agents can also add a profile later when the customer is not identified at case creation, such as for calls from a shared phone number or issues that require identity verification. Amazon Connect Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Si",
-      "descriptionHtml": "&lt;p&gt;&lt;span style=\"font-weight: normal;\"&gt;Amazon Connect Customer now lets agents change the profile on a case or choose a profile after the case is opened. If a case is linked to the wrong customer, agents can update the profile to keep case histories accurate. Agents can also add a profile later when the customer is not identified at case creation, such as for calls from a shared phone number or issues that require identity verification.&lt;/span&gt;&lt;/p&gt; \n&lt;p&gt;&lt;span style=\"font-weight: normal;\"&gt;Amazon Connect Cases is available in the following AWS regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt), Europe (London), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Africa (Cape Town). To learn more and get started, visit the Amazon Connect Cases &lt;a href=\"https://aws.amazon.com/products/connect/customer/cases/\"&gt;webpage&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/cases.html\"&gt;documentation&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-cases-flexible-profiles/",
-      "publishedAt": "2026-08-25T16:00:00.000Z",
-      "updatedAt": "2026-08-25T16:00:00.000Z",
-      "categories": [
-        "Messaging",
-        "Business Productivity",
-        "Contact Center",
-        "Amazon Connect"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "messaging",
-        "business productivity",
-        "contact center",
-        "amazon connect",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a8f0fba04c78b231",
-      "title": "IAM Roles Anywhere now provides a Java plugin for the AWS SDK",
-      "description": "AWS Identity and Access Management (IAM) Roles Anywhere now provides a plugin for the AWS SDK for Java v2 that enables workloads running outside of AWS to obtain temporary AWS credentials directly within the Java application process. The plugin runs in the same Java Virtual Machine (JVM) as your application, removing the need to run the IAM Roles Anywhere credential helper as a separate process or configure credential_process in your AWS profile. You configure the plugin on your AWS SDK for Java v2 service client builder to automatically resolve temporary credentials without writing credential",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/iam/roles-anywhere/\"&gt;AWS Identity and Access Management (IAM) Roles Anywhere&lt;/a&gt; now provides a plugin for the &lt;a href=\"https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html\"&gt;AWS SDK for Java v2&lt;/a&gt; that enables workloads running outside of AWS to obtain temporary AWS credentials directly within the Java application process. The plugin runs in the same Java Virtual Machine (JVM) as your application, removing the need to run the IAM Roles Anywhere credential helper as a separate process or configure credential_process in your AWS profile.&lt;br&gt; &lt;br&gt; You configure the plugin on your AWS SDK for Java v2 service client builder to automatically resolve temporary credentials without writing credential-fetching logic. The plugin handles calling CreateSession and automatically refreshing credentials before they expire. It supports RSA, Elliptic Curve (EC), and ML-DSA key types and requires Java 8 or higher. There is no additional charge for using the plugin.&lt;br&gt; &lt;br&gt; IAM Roles Anywhere is available in all &lt;a href=\"https://docs.aws.amazon.com/general/latest/gr/rolesanywhere.html\"&gt;AWS Regions&lt;/a&gt;, including the AWS GovCloud (US) Regions, AWS European Sovereign Cloud (Germany) Region, and China Regions. To get started with the Java plugin, see the &lt;a href=\"https://docs.aws.amazon.com/rolesanywhere/latest/userguide/java-plugin.html\"&gt;IAM Roles Anywhere Java plugin documentation&lt;/a&gt;. For the current version, release notes, and signature verification instructions, see the &lt;a href=\"https://central.sonatype.com/artifact/software.amazon.rolesanywhere.plugin/roles-anywhere-java\"&gt;plugin's page&lt;/a&gt; on the Maven Central website and the &lt;a href=\"https://github.com/aws-sdk-plugin/roles-anywhere-java\"&gt;roles-anywhere-java repository&lt;/a&gt; on GitHub.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/iam-roles-anywhere-java/",
-      "publishedAt": "2026-08-25T13:18:00.000Z",
-      "updatedAt": "2026-08-25T13:18:00.000Z",
-      "categories": [
-        "AWS Identity And Access Management",
-        "AWS Iam",
-        "Security Identity And Compliance"
-      ],
-      "services": [
-        "IAM"
-      ],
-      "tags": [
-        "aws identity and access management",
-        "aws iam",
-        "security identity and compliance",
-        "iam"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "372f7f0da61b0e8d",
-      "title": "AWS Lambda introduces managed runtimes in public preview for Node.js 26 and Python 3.15",
-      "description": "Today, AWS Lambda introduces managed runtimes in public preview, starting with Node.js 26 and Python 3.15. This gives customers, partners and upstream language communities the opportunity to try upcoming managed runtimes before their general availability (GA) release and to share their feedback with the Lambda team. Previously, Lambda managed runtimes were launched directly as GA releases. Since the runtimes could immediately be used by production workloads, the Lambda team couldn’t make changes post-GA that might impact existing functions. Managed runtimes in public preview give you a chance ",
-      "descriptionHtml": "&lt;p&gt;Today, AWS Lambda introduces managed runtimes in public preview, starting with Node.js 26 and Python 3.15. This gives customers, partners and upstream language communities the opportunity to try upcoming managed runtimes before their general availability (GA) release and to share their feedback with the Lambda team.&lt;/p&gt; \n&lt;p&gt;Previously, Lambda managed runtimes were launched directly as GA releases. Since the runtimes could immediately be used by production workloads, the Lambda team couldn’t make changes post-GA that might impact existing functions. Managed runtimes in public preview give you a chance to test your workloads and report issues before GA—while breaking changes are still possible, so we can act on your feedback. Third-party observability providers, infrastructure-as-code tools and deployment frameworks also get time to validate compatibility before GA. Because public preview managed runtimes may receive breaking changes during the preview period, they are not covered by the &lt;a href=\"https://aws.amazon.com/lambda/sla/\" target=\"_blank\"&gt;Lambda SLA&lt;/a&gt; or AWS Technical Support plans and should not be used for production workloads. Managed runtimes in public preview use the same runtime identifier as the eventual GA runtime, so your functions graduate automatically when the runtime reaches GA with no action required.&lt;/p&gt; \n&lt;p&gt;To get started, select \"Node.js 26 (Preview)\" or \"Python 3.15 (Preview)\" from the runtime dropdown in the Lambda console, or specify nodejs26.x or python3.15 as the runtime identifier in the AWS CLI, CloudFormation, AWS SAM, or AWS CDK.&lt;/p&gt; \n&lt;p&gt;Node.js 26 and Python 3.15 managed runtimes in public preview are available in all AWS commercial Regions, AWS GovCloud (US) Regions, and China Regions. There is no additional cost—functions using preview runtimes are billed at standard Lambda rates.&amp;nbsp;&amp;nbsp;To learn more, see our &lt;a title=\"Blog post link\" href=\"https://aws.amazon.com/blogs/compute/introducing-public-preview-runtimes-on-aws-lambda-starting-with-node-js-26-and-python-3-15/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"background-color: rgb(255, 255, 255);\"&gt;blog post&lt;/a&gt;. To share feedback, visit the dedicated GitHub issues for &lt;a title=\"Node.js 26 feedback on GitHub\" href=\"https://github.com/aws/aws-lambda-nodejs-runtime-interface-client/issues/198\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"background-color: rgb(255, 255, 255);\"&gt;Node.js 26&lt;/a&gt; and &lt;a title=\"Python 3.15 feedback on GitHub\" href=\"https://github.com/aws/aws-lambda-python-runtime-interface-client/issues/216\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"background-color: rgb(255, 255, 255);\"&gt;Python 3.15&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-lambda-node-js-python-public-preview/",
-      "publishedAt": "2026-08-25T13:00:00.000Z",
-      "updatedAt": "2026-08-25T13:00:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Serverless",
-        "AWS Lambda"
-      ],
-      "services": [
-        "Lambda"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "serverless",
-        "aws lambda",
-        "lambda"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ac06b21e651097d8",
-      "title": "Amazon EC2 M8i and M8i-flex instances are now available in Canada West (Calgary) region",
-      "description": "Starting today, Amazon EC2 M8i and M8i-flex instances are now available in Canada West (Calgary) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and M8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up to 20% better performance than M7i and M7i-flex instances, with even higher gains for specific workloads. The M8i and M8i-",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon EC2 M8i and M8i-flex instances are now available in Canada West (Calgary) region. These instances are powered by custom Intel Xeon 6 processors, available only on AWS, delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. The M8i and M8i-flex instances offer up to 15% better price-performance, and 2.5x more memory bandwidth compared to previous generation Intel-based instances. They deliver up to 20% better performance than M7i and M7i-flex instances, with even higher gains for specific workloads. The M8i and M8i-flex instances are up to 30% faster for PostgreSQL databases, up to 60% faster for NGINX web applications, and up to 40% faster for AI deep learning recommendation models compared to M7i and M7i-flex instances.&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; M8i-flex instances are the easiest way to get price performance benefits for a majority of general-purpose workloads like web and application servers, microservices, small and medium data stores, virtual desktops, and enterprise applications. They offer the most common sizes, from large to 16xlarge, and are a great first choice for applications that don't fully utilize all compute resources.&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; M8i instances are a great choice for all general-purpose workloads, especially for workloads that need the largest instance sizes or continuous high CPU usage. The SAP-certified M8i instances offer 13 sizes including 2 bare metal sizes and the new 96xlarge size for the largest applications.&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; To get started, sign in to the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Management Console&lt;/a&gt;. For more information about the new instances, visit the&lt;a href=\"https://aws.amazon.com/ec2/instance-types/m8i/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt; M8i and M8i-flex instance page&lt;/a&gt; or visit the AWS News &lt;a href=\"https://aws.amazon.com/blogs/aws/new-general-purpose-amazon-ec2-m8i-and-m8i-flex-instances-are-now-available/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;blog&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/ec2-m8i-m8i-flex-canada-west/",
-      "publishedAt": "2026-08-25T13:00:00.000Z",
-      "updatedAt": "2026-08-25T13:00:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "amazon ec2",
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "9eda7faf36f12e25",
-      "title": "Amazon RDS now supports the latest CU for Microsoft SQL Server",
-      "description": "Amazon Relational Database Service (Amazon RDS) for SQL Server now supports the latest Cumulative Updates (CU) for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2025 CU6 KB5093421 (RDS version 17.00.4055.5.v1). For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5093421. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the Ama",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/sqlserver/\" target=\"_blank\"&gt;Amazon Relational Database Service (Amazon RDS) for SQL Server &lt;/a&gt;now supports the latest Cumulative Updates (CU) for Microsoft SQL Server. This release includes support for Microsoft SQL Server 2025 CU6 &lt;a href=\"https://learn.microsoft.com/en-us/troubleshoot/sql/releases/sqlserver-2025/cumulativeupdate6\" target=\"_blank\"&gt;KB5093421&lt;/a&gt; (RDS version 17.00.4055.5.v1).&lt;br&gt; &lt;br&gt; For additional information on the improvements and fixes included in these updates, see Microsoft documentation for KB5093421. We recommend that you upgrade your Amazon RDS for SQL Server instances to apply these updates using Amazon RDS Management Console, or by using the AWS SDK or CLI. You can learn more about upgrading your database instance in the &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.SQLServer.html\" target=\"_blank\"&gt;Amazon RDS SQL Server User Guide for upgrading your RDS Microsoft SQL Server DB engine&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-rds-supports-latest-cu-microsoft-sql-server/",
-      "publishedAt": "2026-08-25T07:30:00.000Z",
-      "updatedAt": "2026-08-25T07:30:00.000Z",
-      "categories": [
-        "AWS Govcloud Us",
-        "Databases",
-        "Amazon Rds For Sql Server"
-      ],
-      "services": [
-        "RDS"
-      ],
-      "tags": [
-        "aws govcloud us",
-        "databases",
-        "amazon rds for sql server",
-        "rds"
       ],
       "isNew": false
     }
