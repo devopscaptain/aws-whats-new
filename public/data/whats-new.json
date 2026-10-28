@@ -1,12 +1,153 @@
 {
-  "lastUpdated": "2026-10-27T14:03:34.225Z",
+  "lastUpdated": "2026-10-28T14:53:53.695Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "60560e6b53c51050",
+      "title": "Amazon ECS now supports GPU sharing with NVIDIA Multi-Process Service (MPS)",
+      "description": "Amazon Elastic Container Service (Amazon ECS) now supports GPU sharing with NVIDIA Multi-Process Service (MPS), enabling you to run multiple Amazon ECS tasks concurrently on a single NVIDIA GPU. GPU sharing helps you increase GPU utilization and reduce infrastructure costs for workloads that use only part of a GPU's capacity, such as small-model inference, AV/ADAS simulations, embedding generation, and multi-model serving. With GPU sharing, you can pack more workloads onto each GPU instance without changing your application code. You define the GPU memory each container needs and can optionall",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ecs/\" target=\"_blank\"&gt;Amazon Elastic Container Service&lt;/a&gt; (Amazon ECS) now supports GPU sharing with NVIDIA Multi-Process Service (MPS), enabling you to run multiple Amazon ECS tasks concurrently on a single NVIDIA GPU. GPU sharing helps you increase GPU utilization and reduce infrastructure costs for workloads that use only part of a GPU's capacity, such as small-model inference, AV/ADAS simulations, embedding generation, and multi-model serving.&lt;/p&gt; \n&lt;p&gt;With GPU sharing, you can pack more workloads onto each GPU instance without changing your application code. You define the GPU memory each container needs and can optionally set a maximum share of GPU compute, and Amazon ECS places tasks on GPUs with available capacity as your services scale and deploy. GPU sharing is supported on Amazon ECS Managed Instances and Amazon ECS on Amazon EC2. On Amazon ECS Managed Instances, Amazon ECS also monitors the MPS control daemon that enables sharing on each instance. If the daemon stops or becomes unhealthy, Amazon ECS automatically replaces the instance and moves your tasks to healthy capacity, so your GPU workloads keep running without manual intervention.&lt;/p&gt; \n&lt;p&gt;To get started, use the AWS Management Console, AWS CLI, AWS SDKs, AWS CloudFormation, or other infrastructure-as-code tools to create a capacity provider with NVIDIA GPU instances, set the GPU sharing strategy and memory in the container definition of your task definition, and create a service on that capacity provider. This capability is available in all AWS commercial and AWS GovCloud (US) &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\" target=\"_blank\"&gt;Regions&lt;/a&gt;. To learn more, visit the Amazon ECS GPU sharing &lt;a href=\"https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu-sharing.html\" target=\"_blank\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-gpu-sharing-nvidia-mps/",
+      "publishedAt": "2026-10-27T23:31:00.000Z",
+      "updatedAt": "2026-10-27T23:31:00.000Z",
+      "categories": [
+        "Containers",
+        "Serverless",
+        "AWS Fargate",
+        "Amazon Ecs",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "ECS",
+        "Fargate"
+      ],
+      "tags": [
+        "containers",
+        "serverless",
+        "aws fargate",
+        "amazon ecs",
+        "aws govcloud us",
+        "ecs",
+        "fargate"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "2f3d201d50bf5430",
+      "title": "SageMaker MLflow Apps now support MLflow 3.16",
+      "description": "Amazon SageMaker AI MLflow Apps now support MLflow 3.16, bringing a redesigned tracing experience and faster experiment tracking to your generative AI and machine learning workflows. MLflow 3.16 improves debugging and analysis of generative AI applications and agents. The redesigned trace explorer is now the default, with adjustable row height, reorderable columns, custom columns from any trace tag or metadata field. This release also accelerates metric charts for experiments with large metric histories. New MLflow Apps are created on MLflow 3.16 by default. Existing MLflow Apps will be upgrad",
+      "descriptionHtml": "&lt;p&gt;Amazon SageMaker AI MLflow Apps now support MLflow 3.16, bringing a redesigned tracing experience and faster experiment tracking to your generative AI and machine learning workflows.&lt;/p&gt; \n&lt;p&gt;MLflow 3.16 improves debugging and analysis of generative AI applications and agents. The redesigned trace explorer is now the default, with adjustable row height, reorderable columns, custom columns from any trace tag or metadata field. This release also accelerates metric charts for experiments with large metric histories.&lt;/p&gt; \n&lt;p&gt;New MLflow Apps are created on MLflow 3.16 by default. Existing MLflow Apps will be upgraded to MLflow 3.16 during an upcoming maintenance window, with no action required.&lt;/p&gt; \n&lt;p&gt;MLflow 3.16 is available in all AWS Regions where MLflow Apps are available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/mlflow.html\"&gt;SageMaker AI MLflow developer guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/mflow-version-3-16/",
+      "publishedAt": "2026-10-27T20:40:00.000Z",
+      "updatedAt": "2026-10-27T20:40:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Sagemaker"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon sagemaker",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "901e806b4b8d9c07",
+      "title": "Amazon Aurora serverless now supports up to 384 ACUs",
+      "description": "Amazon Aurora serverless now supports database capacity of up to 384 Aurora Capacity Units (ACUs) for Aurora PostgreSQL-Compatible Edition, a 50% increase from the previous maximum of 256 ACUs. Each ACU provides approximately 2 gibibytes (GiB) of memory with corresponding CPU and networking, so a single Aurora serverless database can now scale up to 768 GiB of memory. When the workload completes, Aurora serverless automatically scales down to zero. This makes Aurora serverless especially well-suited for agentic AI applications, which typically have bursts of activity, long idle windows, and un",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/aurora/serverless/\" target=\"_blank\"&gt;Amazon Aurora serverless&lt;/a&gt; now supports database capacity of up to 384 Aurora Capacity Units (ACUs) for Aurora PostgreSQL-Compatible Edition, a 50% increase from the previous maximum of 256 ACUs. Each ACU provides approximately 2 gibibytes (GiB) of memory with corresponding CPU and networking, so a single Aurora serverless database can now scale up to 768 GiB of memory. When the workload completes, Aurora serverless automatically scales down to zero. This makes Aurora serverless especially well-suited for agentic AI applications, which typically have bursts of activity, long idle windows, and unpredictable traffic patterns. Aurora serverless handles all of it automatically, scaling capacity with your agents, so you only pay for what you use.&lt;/p&gt; \n&lt;p&gt;With 384 ACU support, customers can now use Aurora serverless for even more demanding workloads while continuing to scale down to zero when not in use, paying only for the capacity consumed. For new clusters, select a supported Aurora PostgreSQL engine version and set your maximum capacity up to 384 ACUs. For existing clusters on Platform Version 4, simply modify the cluster to update the maximum capacity setting (and the engine version if needed). There will be no downtime if your database is already on Platform Version 4. For existing clusters on older platform versions, upgrade to Platform Version 4 through a pending maintenance action. 384 ACU support is available for Aurora PostgreSQL versions 18.4, 17.10, 16.14, 15.18, and 14.23, running on Platform Version 4.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v2.how-it-works.html#aurora-serverless-v2.how-it-works.capacity\" target=\"_blank\"&gt;Aurora serverless capacity&lt;/a&gt; in the Amazon Aurora User Guide. For pricing details and Region availability, visit &lt;a href=\"https://aws.amazon.com/rds/aurora/pricing/\" target=\"_blank\"&gt;Amazon Aurora Pricing&lt;/a&gt;. &amp;nbsp;To get started, create or modify an Aurora serverless database in the &lt;a href=\"https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3FhashArgs%3D%2523%26isauthcode%3Dtrue%26state%3DhashArgsFromTB_us-east-2_a53ff6382623e9a3&amp;amp;client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fcanvas&amp;amp;forceMobileApp=0&amp;amp;code_challenge=SCavOinSDkGpz8021yaDgWGy_E5aIbgB7HoRsIR47N0&amp;amp;code_challenge_method=SHA-256\" target=\"_blank\"&gt;AWS Management Console&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/",
+      "publishedAt": "2026-10-27T16:00:00.000Z",
+      "updatedAt": "2026-10-27T16:00:00.000Z",
+      "categories": [
+        "Amazon Aurora",
+        "Databases"
+      ],
+      "services": [
+        "Aurora"
+      ],
+      "tags": [
+        "amazon aurora",
+        "databases",
+        "aurora"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "ec4053628a648a22",
+      "title": "Amazon ElastiCache for Valkey now supports changing durability on existing clusters",
+      "description": "Amazon ElastiCache for Valkey now lets you enable or disable durability on your existing node-based clusters without creating a new cluster. Previously, you couldn't change the durability configuration of an existing cluster in place. This made it harder to move from caching to persistent data store use cases, or to adapt as your application requirements change. Now you can change durability at any point in your application's lifecycle. You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before responding t",
+      "descriptionHtml": "&lt;p&gt;Amazon ElastiCache for Valkey now lets you enable or disable durability on your existing node-based clusters without creating a new cluster. Previously, you couldn't change the durability configuration of an existing cluster in place. This made it harder to move from caching to persistent data store use cases, or to adapt as your application requirements change. Now you can change durability at any point in your application's lifecycle.&lt;/p&gt; \n&lt;p&gt;You can choose between two durability options: synchronous and asynchronous writes. Synchronous writes persist data across at least two AZs before responding to the client, designed for zero data loss at single-digit millisecond write latency. Asynchronous writes persist data after responding to the client, maintaining microsecond write latency at no additional cost. However, up to 10 seconds of uncommitted data could be lost in the rare event of a failure. Both options maintain microsecond read latency. You can now use ElastiCache for a broader set of use cases beyond caching where data loss is unacceptable such as AI agent long-term memory, AI agent workflow state, knowledge bases for RAG applications, payment tokenization, and real-time inventory management.&lt;/p&gt; \n&lt;p&gt;This feature is available in all AWS Regions where ElastiCache for Valkey 9.0 and later is available. To get started, use the AWS Management Console, AWS SDK, or AWS CLI. For pricing, see the &amp;nbsp;&lt;a href=\"https://aws.amazon.com/elasticache/pricing/\"&gt;Amazon ElastiCache pricing page&amp;nbsp;&lt;/a&gt;. To learn more, see &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/\"&gt;Durability&amp;nbsp;&lt;/a&gt; in the ElastiCache documentation.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/elasticache-changing-durability/",
+      "publishedAt": "2026-10-27T15:21:00.000Z",
+      "updatedAt": "2026-10-27T15:21:00.000Z",
+      "categories": [
+        "Amazon Elasticache",
+        "Databases"
+      ],
+      "services": [
+        "ElastiCache"
+      ],
+      "tags": [
+        "amazon elasticache",
+        "databases",
+        "elasticache"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "eccfb5bc764d6d06",
+      "title": "Amazon Corretto October 2026 Patch Updates",
+      "description": "On October 26, 2026 Amazon announced a patch update for the following Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto 27.0.1.0.11, 25.0.5.0.10, 21.0.13.0.11, 17.0.21.0.11, 11.0.33.0.10, and 8u512 are now available for download . Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK. Visit the Corretto home page to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a Corretto Apt, Yum, or Apk repo . Feedback is wel",
+      "descriptionHtml": "&lt;p&gt;On October 26, 2026 Amazon announced a patch update for the following Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto 27.0.1.0.11, 25.0.5.0.10, 21.0.13.0.11, 17.0.21.0.11, 11.0.33.0.10, and 8u512 are now available for &lt;a href=\"https://aws.amazon.com/corretto/\"&gt;download&lt;/a&gt;. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.&lt;/p&gt; \n&lt;p&gt;Visit the Corretto &lt;a href=\"https://aws.amazon.com/corretto\"&gt;home page&lt;/a&gt; to download Corretto 27, Corretto 25, Corretto 21, Corretto 17, Corretto 11, or Corretto 8. You can also get the updates on your Linux system by configuring a &lt;a href=\"https://docs.aws.amazon.com/corretto/latest/corretto-25-ug/generic-linux-install.html\"&gt;Corretto Apt, Yum, or Apk repo&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Feedback is &lt;a href=\"https://github.com/corretto\"&gt;welcomed&lt;/a&gt;!&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-oct-2026-patch-updates",
+      "publishedAt": "2026-10-27T14:00:00.000Z",
+      "updatedAt": "2026-10-27T14:00:00.000Z",
+      "categories": [
+        "Developer Tools",
+        "AWS Govcloud Us",
+        "Amazon Corretto"
+      ],
+      "services": [],
+      "tags": [
+        "developer tools",
+        "aws govcloud us",
+        "amazon corretto"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "04a65119b46ef4b0",
+      "title": "Amazon Neptune now supports online index rebuild to reclaim storage",
+      "description": "Amazon Neptune Database now supports online index rebuild, a new capability that helps database administrators and application teams defragment Neptune indexes and reclaim unused storage space without taking their database offline. Over time, insert, update, and delete operations create gaps of unused space within data pages, keeping the VolumeBytesUsed metric artificially elevated even after data is deleted. This fragmentation increases I/O costs and degrades query performance for teams running Gremlin, openCypher, or SPARQL workloads at scale. With online index rebuild, read and write querie",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/neptune/\"&gt;Amazon Neptune&lt;/a&gt; Database now supports online index rebuild, a new capability that helps database administrators and application teams defragment Neptune indexes and reclaim unused storage space without taking their database offline. Over time, insert, update, and delete operations create gaps of unused space within data pages, keeping the &lt;code&gt;VolumeBytesUsed&lt;/code&gt; metric artificially elevated even after data is deleted. This fragmentation increases I/O costs and degrades query performance for teams running Gremlin, openCypher, or SPARQL workloads at scale.&lt;/p&gt;\n&lt;p&gt;With online index rebuild, read and write queries continue uninterrupted on both the writer instance and read replicas throughout the entire rebuild process. You can target all indexes, only quad indexes, or only dictionary indexes, making this feature well-suited for post-deletion cleanup, periodic maintenance, storage limit management, and performance tuning on heavily fragmented databases. Tunable concurrency and write buffer size settings let you balance rebuild speed against workload impact, while built-in storage safety mechanisms protect against storage exhaustion during the operation.&lt;/p&gt;\n&lt;p&gt;Online index rebuild is available starting with Amazon Neptune engine release 1.5.0.0 on provisioned writer instances, in all regions where Amazon Neptune Database is supported. To learn more about configuring and running online index rebuild, including API references and tuning guidance, visit the &lt;a href=\"https://docs.aws.amazon.com/neptune/latest/userguide/storage-index-rebuild.html\"&gt;Amazon Neptune documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/neptune-online-index-rebuild/",
+      "publishedAt": "2026-10-27T08:00:00.000Z",
+      "updatedAt": "2026-10-27T08:00:00.000Z",
+      "categories": [
+        "Storage",
+        "Amazon Neptune",
+        "Databases"
+      ],
+      "services": [
+        "Neptune"
+      ],
+      "tags": [
+        "storage",
+        "amazon neptune",
+        "databases",
+        "neptune"
+      ],
+      "isNew": true
+    },
     {
       "id": "0b5e0e34b5f4a94c",
       "title": "Amazon ECR now supports replication backfill for existing container images",
       "description": "Amazon Elastic Container Registry (Amazon ECR) now supports replication backfill, enabling you to replicate existing images in your private registry to your configured replication registry destinations. Previously, replication only applied to images pushed after the replication configuration was enabled, requiring customers to manually retag images to trigger replication of preexisting images. With replication backfill, you can now replicate your full image catalog to new or existing destinations with a single API call. Replication backfill is useful when expanding to a new AWS Region, validat",
-      "descriptionHtml": "&lt;p&gt;Amazon Elastic Container Registry (Amazon ECR) now supports replication backfill, enabling you to replicate existing images in your private registry to your configured replication registry destinations. Previously, replication only applied to images pushed after the replication configuration was enabled, requiring customers to manually retag images to trigger replication of preexisting images. With replication backfill, you can now replicate your full image catalog to new or existing destinations with a single API call.&lt;/p&gt; \n&lt;p&gt;Replication backfill is useful when expanding to a new AWS Region, validating disaster recovery readiness, updating replication rules, or ensuring complete image catalogs exist across Regions for compliance purposes. You can run up to ten backfill jobs concurrently, monitor progress and per-image results through new APIs, and stop a job at any time without deleting images that have already been replicated.&lt;/p&gt; \n&lt;p&gt;Replication backfill is available in all AWS Regions where Amazon ECR is available. To learn more, refer to the &lt;a href=\"https://docs.aws.amazon.com/AmazonECR/latest/userguide/\"&gt;Amazon ECR user guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
+      "descriptionHtml": "&lt;p&gt;Amazon Elastic Container Registry (Amazon ECR) now supports replication backfill, enabling you to replicate existing images in your private registry to your configured replication registry destinations. Previously, replication only applied to images pushed after the replication configuration was enabled, requiring customers to manually retag images to trigger replication of preexisting images. With replication backfill, you can now replicate your full image catalog to new or existing destinations with a single API call.&lt;/p&gt; \n&lt;p&gt;Replication backfill is useful when expanding to a new AWS Region, validating disaster recovery readiness, updating replication rules, or ensuring complete image catalogs exist across Regions for compliance purposes. You can run up to ten backfill jobs concurrently, monitor progress and per-image results through new APIs, and stop a job at any time without deleting images that have already been replicated.&lt;/p&gt; \n&lt;p&gt;Replication backfill is available in all AWS Regions where Amazon ECR is available. To learn more, refer to the &lt;a href=\"https://docs.aws.amazon.com/AmazonECR/latest/userguide/replication-backfill.html\"&gt;Amazon ECR user guide&lt;/a&gt;.&amp;nbsp;&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/replication-backfill-amazon-ecr",
       "publishedAt": "2026-10-26T20:24:00.000Z",
       "updatedAt": "2026-10-26T20:24:00.000Z",
@@ -60,6 +201,26 @@
       ],
       "tags": [
         "workspaces"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "c2e2a44268ff72e2",
+      "title": "Amazon IVS Low-Latency Streaming now provides a failover slate",
+      "description": "Amazon Interactive Video Service (Amazon IVS) Low-Latency Streaming now provides a failover slate, an animated image that IVS displays to viewers when a broadcaster's stream is unexpectedly interrupted. Instead of a buffering wheel or frozen frame, viewers see the slate until the broadcaster reconnects. Live playback then resumes automatically, without viewers needing to refresh their player. The failover slate helps you retain your audience during momentary disruptions and is ideal for broadcasters streaming from mobile devices or from locations with unreliable connectivity. You can enable th",
+      "descriptionHtml": "&lt;p&gt;Amazon Interactive Video Service (Amazon IVS) Low-Latency Streaming now provides a failover slate, an animated image that IVS displays to viewers when a broadcaster's stream is unexpectedly interrupted. Instead of a buffering wheel or frozen frame, viewers see the slate until the broadcaster reconnects. Live playback then resumes automatically, without viewers needing to refresh their player.&lt;/p&gt; \n&lt;p&gt;The failover slate helps you retain your audience during momentary disruptions and is ideal for broadcasters streaming from mobile devices or from locations with unreliable connectivity. You can enable the failover slate on new or existing channels and monitor slate activity with Amazon EventBridge events and Amazon CloudWatch metrics.&lt;/p&gt; \n&lt;p&gt;&lt;a href=\"https://aws.amazon.com/ivs/\"&gt;Amazon IVS&lt;/a&gt; is a managed live streaming solution designed to make low-latency or real-time video available to viewers around the world. Visit the &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Region table&lt;/a&gt; for a full list of AWS Regions where the Amazon IVS console and APIs for control and creation of video streams are available.&lt;/p&gt; \n&lt;p&gt;To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/failover-slate.html\"&gt;Amazon IVS Failover Slate documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ivs-low-latency-streaming-failover-slate",
+      "publishedAt": "2026-10-26T15:40:00.000Z",
+      "updatedAt": "2026-10-26T15:40:00.000Z",
+      "categories": [
+        "Amazon Ivs"
+      ],
+      "services": [
+        "IVS"
+      ],
+      "tags": [
+        "amazon ivs",
+        "ivs"
       ],
       "isNew": true
     },
@@ -228,6 +389,32 @@
         "amazon ec2",
         "amazon ec2 auto scaling",
         "ec2"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "0dc7a5542f714b71",
+      "title": "AWS Elemental MediaConnect Router now supports endpoint connection management",
+      "description": "AWS Elemental MediaConnect Router now supports managing external connections through a new endpoint registry. The registry provides a centralized interface to register and manage both standard endpoints—devices or software outside the service, such as cameras, sources, monitors, and other destinations—and connections to other AWS accounts. You can share registered endpoints directly with other AWS accounts, streamlining cross-account live video workflows. Cross-account endpoint sharing lowers costs by reducing required compute instances and decreases latency through fewer network hops when sha",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/mediaconnect/features/router/\"&gt;AWS Elemental MediaConnect Router&lt;/a&gt; now supports managing external connections through a new endpoint registry. The registry provides a centralized interface to register and manage both standard endpoints—devices or software outside the service, such as cameras, sources, monitors, and other destinations—and connections to other AWS accounts. You can share registered endpoints directly with other AWS accounts, streamlining cross-account live video workflows.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;Cross-account endpoint sharing lowers costs by reducing required compute instances and decreases latency through fewer network hops when sharing live content across AWS accounts.. It also eliminates the need to manually chain router inputs and outputs, coordinate IP addresses out of band, and manage connection security. The endpoint registry gives you a single interface to manage all external connections to MediaConnect for seamless integration with your existing infrastructure. You get cross-account sharing through AWS Resource Access Manager (AWS RAM), transparent verification of encryption and protocol controls, and built-in connection management with Connection Manager. Use cases include content distributors sharing live feeds with downstream partners, broadcasters collaborating across organizational boundaries, and media workflows that require secure cross-account video transport.&lt;/p&gt; \n&lt;p&gt;MediaConnect endpoint registry is available in all AWS Regions where AWS Elemental MediaConnect Router is available, at no additional cost. For more information, see the AWS Elemental MediaConnect &lt;a href=\"https://docs.aws.amazon.com/mediaconnect/latest/ug/working-with-endpoints.html\"&gt;User Guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/mediaconnect-cross-account-endpoints/",
+      "publishedAt": "2026-10-26T08:00:00.000Z",
+      "updatedAt": "2026-10-26T08:00:00.000Z",
+      "categories": [
+        "AWS Resource Access Manager",
+        "AWS Elemental Mediaconnect",
+        "Lower Cost",
+        "Media Services"
+      ],
+      "services": [
+        "Elemental"
+      ],
+      "tags": [
+        "aws resource access manager",
+        "aws elemental mediaconnect",
+        "lower cost",
+        "media services",
+        "elemental"
       ],
       "isNew": true
     },
@@ -898,7 +1085,7 @@
         "amazon connect",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "a5744af7e9df73d1",
@@ -922,7 +1109,7 @@
         "s3",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "dccaec21a473442e",
@@ -944,7 +1131,7 @@
         "amazon sagemaker",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ca777b929ae510f1",
@@ -971,7 +1158,7 @@
         "aws network firewall",
         "route 53"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d52a14a1f86c555b",
@@ -997,7 +1184,7 @@
         "networking",
         "vpc"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "bbcb78be34041e7f",
@@ -1023,7 +1210,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2245a2e3e50ea948",
@@ -1043,7 +1230,7 @@
         "amazon dynamodb",
         "dynamodb"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "cb73a985eeb8fd07",
@@ -1065,7 +1252,7 @@
         "amazon workspaces",
         "workspaces"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ae9b88747265af9a",
@@ -1082,7 +1269,7 @@
       "tags": [
         "polly"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "8afb583c311c8278",
@@ -1106,7 +1293,7 @@
         "artificial intelligence",
         "ec2"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ed2532f18a87f3b3",
@@ -1616,6 +1803,26 @@
         "artificial intelligence",
         "amazon sagemaker deploy",
         "sagemaker"
+      ],
+      "isNew": false
+    },
+    {
+      "id": "46d3bfbc91ea701b",
+      "title": "Amazon Connect Customer now enables you to use flow modules in agentic CX designer",
+      "description": "Amazon Connect Customer now enables you to use flow modules as data requests in agentic CX designer, so you can build and apply reusable logic across your customer experience flows. You can run a flow module at a fixed step in a conversation with a Data request node, or give it to a Generative journey as a tool to call when the conversation needs it. With this launch, you can use flow modules to update customer profiles and cases, create tasks, look up data tables, send an SMS confirmation, or check hours of operation and staffing before escalating to a human agent. You can also retrieve data ",
+      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now enables you to use flow modules as data requests in agentic CX designer, so you can build and apply reusable logic across your customer experience flows. You can run a flow module at a fixed step in a conversation with a Data request node, or give it to a Generative journey as a tool to call when the conversation needs it.&lt;/p&gt; \n&lt;p&gt;With this launch, you can use flow modules to update customer profiles and cases, create tasks, look up data tables, send an SMS confirmation, or check hours of operation and staffing before escalating to a human agent. You can also retrieve data that sits inside a private network, such as core banking, policy, or claims systems. For example, a flow module can invoke an AWS Lambda function in your VPC to return an account balance or claim status in the middle of an interaction.&lt;/p&gt; \n&lt;p&gt;This feature is available in the following AWS Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Asia Pacific (Tokyo), Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Europe (Frankfurt), and Europe (London). To learn more, refer to &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/acxd-data-requests.html\"&gt;Data requests&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/contact-flow-modules.html\"&gt;Flow modules&lt;/a&gt; in the Connect Customer documentation. To learn more about Amazon Connect Customer, an agentic AI solution that helps enterprises deliver exceptional customer experiences, visit the Amazon Connect Customer &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/acxd.html\"&gt;website&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentic-cx-designer-flow-modules/",
+      "publishedAt": "2026-10-16T16:19:00.000Z",
+      "updatedAt": "2026-10-16T16:19:00.000Z",
+      "categories": [
+        "Contact Center"
+      ],
+      "services": [
+        "Connect"
+      ],
+      "tags": [
+        "contact center",
+        "connect"
       ],
       "isNew": false
     },
@@ -11052,215 +11259,6 @@
         "aiml",
         "amazon sagemaker jumpstart",
         "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "3158445e526611bd",
-      "title": "Amazon Redshift streaming can now ingest 10MiB records from Amazon Kinesis Data Streams",
-      "description": "Amazon Redshift now supports Amazon Kinesis Data Streams (KDS) record sizes up to 10 MiB—a 10x increase from the previous 1 MiB limit—fully matching the expanded maximum record size in Amazon KDS. This means you can stream significantly larger payloads directly into Amazon Redshift without splitting records, simplifying your ingestion pipelines and unlocking new use cases for high-volume, large-record workloads. Amazon Redshift support for 10MiB record size in Amazon KDS streams is now available in all commercial AWS regions where Amazon Redshift is available. For more information on direct st",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/redshift/\"&gt;Amazon Redshift &lt;/a&gt;&amp;nbsp;now supports Amazon Kinesis Data Streams (KDS) record sizes up to 10 MiB—a 10x increase from the previous 1 MiB limit—fully matching the expanded maximum record size in Amazon KDS. This means you can stream significantly larger payloads directly into Amazon Redshift without splitting records, simplifying your ingestion pipelines and unlocking new use cases for high-volume, large-record workloads.&lt;/p&gt; \n&lt;p&gt;Amazon Redshift support for 10MiB record size in Amazon KDS streams is now available in all commercial AWS regions where Amazon Redshift is available. For more information on direct streaming ingestion into Amazon Redshift, see the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-streaming-ingestion.html\"&gt;Amazon Redshift streaming documentation&lt;/a&gt;. For more information on 10MiB record support in Amazon KDS, see the &lt;a href=\"https://docs.aws.amazon.com/streams/latest/dev/large-records.html\"&gt;Amazon KDS documentation&lt;/a&gt;. &amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/redshift-streaming-supports-kds-10mib-records",
-      "publishedAt": "2026-08-27T21:41:00.000Z",
-      "updatedAt": "2026-08-27T21:41:00.000Z",
-      "categories": [
-        "Amazon Redshift",
-        "Analytics"
-      ],
-      "services": [
-        "Redshift",
-        "Kinesis"
-      ],
-      "tags": [
-        "amazon redshift",
-        "analytics",
-        "redshift",
-        "kinesis"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "10a85bf78052a714",
-      "title": "Amazon Redshift integrates with Agent Toolkit for AWS for AI-assisted data warehouse management",
-      "description": "Amazon Redshift now integrates with the Agent Toolkit for AWS , enabling you to build, query, troubleshoot, and migrate to Amazon Redshift data warehouses and data lakes directly from AI agents such as Claude Code, Kiro, and Cursor. The integration pairs the AWS MCP (Model Context Protocol) server , which provides authenticated AWS API execution on your behalf — with Redshift skills : curated packages of tested procedures and reference material that help AI agents complete Redshift tasks more effectively. The Redshift skills cover SQL syntax references to reduce query generation errors, metada",
-      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/redshift/\"&gt;Amazon Redshift&lt;/a&gt; now integrates with the &lt;a href=\"https://aws.amazon.com/products/developer-tools/agent-toolkit-for-aws/\"&gt;Agent Toolkit for AWS&lt;/a&gt;, enabling you to build, query, troubleshoot, and migrate to Amazon Redshift data warehouses and data lakes directly from AI agents such as Claude Code, Kiro, and Cursor. The integration pairs the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/mcp-server.html\"&gt;AWS MCP (Model Context Protocol) server&lt;/a&gt;, which provides authenticated AWS API execution on your behalf — with &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/analytics-skills/redshift-guide\"&gt;Redshift skills&lt;/a&gt;: curated packages of tested procedures and reference material that help AI agents complete Redshift tasks more effectively.&lt;/p&gt; \n&lt;p&gt;The &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/1799aae50f30a8e97bab4faf38f2eadbd665028b/skills/specialized-skills/analytics-skills/redshift-guide\"&gt;Redshift skills&lt;/a&gt; cover SQL syntax references to reduce query generation errors, metadata discovery to explore schemas and data without writing SQL by hand, data loading patterns, materialized view best practices, function and data type guidance, and extensions such as Qualify, Pivot, and Super. It also guides end-to-end data warehouse migrations to Amazon Redshift, including discovery, schema and SQL conversion, data movement, validation, and performance comparison. We will continue to expand these skills with additional capabilities over time.&lt;/p&gt; \n&lt;p&gt;The skills work with provisioned clusters and &lt;a href=\"https://aws.amazon.com/redshift/redshift-serverless/\"&gt;Serverless&lt;/a&gt; workgroups, require no changes to existing infrastructure, and are available at no additional charge in all AWS Regions where Amazon Redshift and the AWS MCP Server are offered.&lt;/p&gt; \n&lt;p&gt;To get started, install the &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/1799aae50f30a8e97bab4faf38f2eadbd665028b/plugins/aws-data-analytics\"&gt;aws-data-analytics plugin&lt;/a&gt; in your agent, which bundles the MCP Server configuration and Redshift skills in a single step. Agents with MCP Server access can also discover and load skills at runtime without pre-installation. For setup instructions, see the &lt;a href=\"https://docs.aws.amazon.com/agent-toolkit/latest/userguide/quick-start.html\"&gt;Agent Toolkit documentation&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/redshift/latest/mgmt/agent-skills.html\"&gt;Amazon Redshift skills documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/redshift-agenttoolkit-for-ai-assisted-datawarehouse-mgmt",
-      "publishedAt": "2026-08-27T20:07:00.000Z",
-      "updatedAt": "2026-08-27T20:07:00.000Z",
-      "categories": [
-        "Amazon Redshift",
-        "Analytics"
-      ],
-      "services": [
-        "Redshift"
-      ],
-      "tags": [
-        "amazon redshift",
-        "analytics",
-        "redshift"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "aef702962f4cf2b7",
-      "title": "Amazon EC2 X8i instances are now available in additional regions",
-      "description": "Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Europe (Milan) and Europe (Spain) regions. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances. X8i instances are designed for memory-intensive workloads like SAP HANA, l",
-      "descriptionHtml": "&lt;p&gt;Starting today, Amazon Elastic Compute Cloud (Amazon EC2) X8i instances are available in the Europe (Milan) and Europe (Spain) regions. These instances are powered by custom Intel Xeon 6 processors available only on AWS. X8i instances are SAP-certified and deliver the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud. They deliver up to 43% higher performance, 1.5x more memory capacity (up to 6TB), and 3.3x more memory bandwidth compared to previous generation X2i instances.&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; X8i instances are designed for memory-intensive workloads like SAP HANA, large databases, data analytics, and Electronic Design Automation (EDA). Compared to X2i instances, X8i instances offer up to 50% higher SAPS performance, up to 47% faster PostgreSQL performance, 88% faster Memcached performance, and 46% faster AI inference performance. X8i instances come in 14 sizes, from large to 96xlarge, including two bare metal options.&amp;nbsp;&lt;br&gt; &amp;nbsp;&lt;br&gt; To get started, visit the &lt;a href=\"https://aws.amazon.com/console/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;AWS Management Console&lt;/a&gt;. X8i instances can be purchased via Savings Plans, On-Demand instances, and Spot instances. For more information visit &lt;a href=\"https://aws.amazon.com/ec2/instance-types/x8i/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;X8i instances page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-x8i-europe-milan-spain/",
-      "publishedAt": "2026-08-27T18:40:00.000Z",
-      "updatedAt": "2026-08-27T18:40:00.000Z",
-      "categories": [
-        "Compute",
-        "Amazon Ec2"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "compute",
-        "amazon ec2",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "463ea43f10b2c8cb",
-      "title": "AWS Elastic Disaster Recovery introduces Recovery Plans for orchestrated application recovery",
-      "description": "AWS Elastic Disaster Recovery (AWS DRS) now offers Recovery Plans, a capability that automates the sequential launch of multi-server applications during recovery and drills. Instead of launching servers one at a time and tracking dependencies manually, you define the recovery sequence once and run it with a single action when you need it. This addresses a common challenge for customers running applications made up of databases, application tiers, and supporting services that must come up in a specific order. Recovery Plans let you group servers into sequential steps with configurable wait time",
-      "descriptionHtml": "&lt;p&gt;AWS Elastic Disaster Recovery (AWS DRS) now offers Recovery Plans, a capability that automates the sequential launch of multi-server applications during recovery and drills. Instead of launching servers one at a time and tracking dependencies manually, you define the recovery sequence once and run it with a single action when you need it. This addresses a common challenge for customers running applications made up of databases, application tiers, and supporting services that must come up in a specific order.&lt;/p&gt; \n&lt;p&gt;Recovery Plans let you group servers into sequential steps with configurable wait times between them, so your application recovers predictably and consistently every time. You can run plans in a non-disruptive drill mode to validate your procedures, add approval steps where you want a person in the loop, and monitor progress in real time. This automation reduces recovery time and eliminates common errors that occur when coordinating server launch order during high-stress disaster scenarios.&lt;/p&gt; \n&lt;p&gt;Recovery Plans are available in all AWS Regions where AWS DRS is offered, at no additional cost beyond standard DRS usage. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/drs/latest/userguide/recovery-plans.html\"&gt;AWS Elastic Disaster Recovery User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/elastic-disaster-recovery-plans/",
-      "publishedAt": "2026-08-27T18:00:00.000Z",
-      "updatedAt": "2026-08-27T18:00:00.000Z",
-      "categories": [
-        "Storage",
-        "Management And Governance",
-        "AWS Elastic Disaster Recovery",
-        "Disaster Recovery"
-      ],
-      "services": [],
-      "tags": [
-        "storage",
-        "management and governance",
-        "aws elastic disaster recovery",
-        "disaster recovery"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "0b61061de3bcc0c7",
-      "title": "Amazon Bedrock AgentCore expands to two new regions",
-      "description": "Amazon Bedrock AgentCore is now available in two additional AWS Regions: US West (N. California) and Asia Pacific (Hyderabad). Amazon Bedrock AgentCore is the platform to build, connect, and optimize agents. It helps engineers ship agents fast with any framework and any model, connect them to enterprise systems and tools, and optimize them continuously, with security enforced at the infrastructure layer that agents can't bypass. With this expansion, customers in these regions can build and run agents closer to their end users with lower latency. AgentCore capabilities including agent runtime, ",
-      "descriptionHtml": "&lt;p&gt;Amazon Bedrock AgentCore is now available in two additional AWS Regions: US West (N. California) and Asia Pacific (Hyderabad). Amazon Bedrock AgentCore is the platform to build, connect, and optimize agents. It helps engineers ship agents fast with any framework and any model, connect them to enterprise systems and tools, and optimize them continuously, with security enforced at the infrastructure layer that agents can't bypass.&lt;/p&gt;\n&lt;p&gt;With this expansion, customers in these regions can build and run agents closer to their end users with lower latency. AgentCore capabilities including agent runtime, identity and access control, policy management, session persistence, tool connectivity, evaluations and observability are available in these regions at launch.&lt;/p&gt;\n&lt;p&gt;For more information on AgentCore, visit the &lt;a href=\"https://aws.amazon.com/bedrock/agentcore/\"&gt;AgentCore product page&lt;/a&gt; or the &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/\"&gt;AgentCore Developer Guide&lt;/a&gt;. To learn about pricing, visit &lt;a href=\"https://aws.amazon.com/bedrock/agentcore/pricing/\"&gt;AgentCore pricing&lt;/a&gt;. For region availability, visit &lt;a href=\"https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-regions.html\"&gt;Supported AWS Regions&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/bedrock-agentcore-two-new-regions/",
-      "publishedAt": "2026-08-27T18:00:00.000Z",
-      "updatedAt": "2026-08-27T18:00:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Bedrock"
-      ],
-      "services": [
-        "Bedrock"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon bedrock",
-        "bedrock"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a880d59a364f61dc",
-      "title": "Amazon Connect Customer expands conversational analytics capabilities in the Africa (Cape Town) Region",
-      "description": "Amazon Connect Customer now supports generative AI-powered summaries, real-time call analytics, and real-time rules in the Africa (Cape Town) Region. These capabilities extend the post-contact conversational analytics already available in the Region, giving companies access to AI-powered insights that help them improve customer experience, agent performance, and operational efficiency. With generative AI-powered summaries, supervisors and human-agents receive concise, AI-generated summaries of customer interactions immediately after a contact ends, eliminating the need for manual note-taking a",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now supports generative AI-powered summaries, real-time call analytics, and real-time rules in the Africa (Cape Town) Region. These capabilities extend the post-contact conversational analytics already available in the Region, giving companies access to AI-powered insights that help them improve customer experience, agent performance, and operational efficiency.&lt;/p&gt; \n&lt;p&gt;With generative AI-powered summaries, supervisors and human-agents receive concise, AI-generated summaries of customer interactions immediately after a contact ends, eliminating the need for manual note-taking and reducing after-contact work. Real-time call analytics provide live transcription enabling supervisors to monitor interactions as they happen and intervene when needed to improve outcomes. Real-time rules automatically categorize contacts and alert supervisors based on keywords, sentiment, and other criteria detected during a live interaction, enabling immediate action such as sending notifications or generating tasks.&lt;/p&gt; \n&lt;p&gt;To learn more about Connect Customer conversational analytics capabilities, refer to the &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/analyze-conversations.html\"&gt;Amazon Connect Customer Administrator Guide&lt;/a&gt; or visit the &lt;a href=\"https://aws.amazon.com/connect/\"&gt;Amazon Connect Customer website&lt;/a&gt;. For a complete list of conversational analytics features available by Region, refer to &lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#contactlens_region\"&gt;Availability of Connect Customer features by Region&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/connect-customer-analytics-cape-town/",
-      "publishedAt": "2026-08-27T18:00:00.000Z",
-      "updatedAt": "2026-08-27T18:00:00.000Z",
-      "categories": [
-        "Contact Center",
-        "Amazon Connect",
-        "Analytics",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "contact center",
-        "amazon connect",
-        "analytics",
-        "artificial intelligence",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "7f24d025d608652b",
-      "title": "Amazon Connect Customer now automatically refreshes scheduling metrics",
-      "description": "Amazon Connect Customer now automatically refreshes schedule metrics on the scheduling page, giving managers immediate visibility into the impact of schedule updates. For example, when a new team meeting is added for 10 agents from 10 AM – 11 AM, metrics such as net available headcount and projected service level are automatically updated. This gives workforce managers up-to-date visibility into how schedule changes affect staffing coverage, so they can make faster, more informed decisions throughout the day. This feature is available in all AWS Regions where Amazon Connect Customer agent sche",
-      "descriptionHtml": "&lt;p&gt;Amazon Connect Customer now automatically refreshes schedule metrics on the scheduling page, giving managers immediate visibility into the impact of schedule updates. For example, when a new team meeting is added for 10 agents from 10 AM – 11 AM, metrics such as net available headcount and projected service level are automatically updated. This gives workforce managers up-to-date visibility into how schedule changes affect staffing coverage, so they can make faster, more informed decisions throughout the day.&lt;/p&gt; \n&lt;p&gt; &lt;/p&gt; \n&lt;p&gt;This feature is available in all &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/regions.html#optimization_region\"&gt;AWS Regions&amp;nbsp;&lt;/a&gt; where Amazon Connect Customer agent scheduling is available. To learn more about Amazon Connect Customer agent scheduling, click &amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html\"&gt;here&amp;nbsp;&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-customer-scheduling-metrics/",
-      "publishedAt": "2026-08-27T17:59:00.000Z",
-      "updatedAt": "2026-08-27T17:59:00.000Z",
-      "categories": [
-        "Business Productivity",
-        "Amazon Connect"
-      ],
-      "services": [
-        "Connect"
-      ],
-      "tags": [
-        "business productivity",
-        "amazon connect",
-        "connect"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "4521db14be447313",
-      "title": "Amazon FSx for NetApp ONTAP now supports copying backups across AWS Regions and accounts",
-      "description": "Amazon FSx for NetApp ONTAP, a fully managed shared storage service built on NetApp's popular ONTAP file system, now supports copying backups within and across AWS Regions, and across trusted accounts in your AWS organization. You can now provide an additional layer of protection for your data by storing secondary backup copies in a different Region or account than your primary copies, making it easier to meet your business continuity, data protection, and compliance requirements. Amazon FSx offers secure, highly durable, and incremental backups designed to support your data retention, archiva",
-      "descriptionHtml": "&lt;p&gt;Amazon FSx for NetApp ONTAP, a fully managed shared storage service built on NetApp's popular ONTAP file system, now supports copying backups within and across AWS Regions, and across trusted accounts in your AWS organization. You can now provide an additional layer of protection for your data by storing secondary backup copies in a different Region or account than your primary copies, making it easier to meet your business continuity, data protection, and compliance requirements.&lt;/p&gt; \n&lt;p&gt;Amazon FSx offers secure, highly durable, and incremental backups designed to support your data retention, archival, and compliance needs. Backups are point-in-time offline copies of your volumes, stored redundantly across multiple Availability Zones in the same Region as your file system. Previously, you could create and restore backups in the same Region and account as your file system.&amp;nbsp;Starting today, you can copy backup data to multiple Regions and accounts for enhanced resilience, data isolation, and operational flexibility.&lt;/p&gt; \n&lt;p&gt;You can copy new and existing backups in &lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;all AWS Regions&lt;/a&gt; where Amazon FSx for NetApp ONTAP is available. To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started.html\"&gt;FSx for NetApp ONTAP user guide&lt;/a&gt; and the &lt;a href=\"https://aws.amazon.com/fsx/netapp-ontap/\"&gt;Amazon FSx for NetApp ONTAP product page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/fsx-ontap-cross-region-backup-copy/",
-      "publishedAt": "2026-08-27T17:37:00.000Z",
-      "updatedAt": "2026-08-27T17:37:00.000Z",
-      "categories": [
-        "Amazon Fsx Netapp Ontap",
-        "Storage"
-      ],
-      "services": [
-        "FSx"
-      ],
-      "tags": [
-        "amazon fsx netapp ontap",
-        "storage",
-        "fsx"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "d06c75f42f2252cf",
-      "title": "AWS Backup adds cross-Region and cross-account backup support for Amazon FSx for NetApp ONTAP",
-      "description": "AWS Backup now supports copying Amazon FSx for NetApp ONTAP backups across AWS Regions and accounts. You can copy your FSx for NetApp ONTAP backups to another AWS Region, another AWS account, or both, using policy-based backup plans or on-demand copy jobs. Copying backups to a separate Region helps you meet cross-Region disaster recovery and business continuity goals, while copying to a separate account helps protect your backups from accidental deletion, operational error, or account compromise. AWS Backup manages these copies centrally, and you can automate them across your organization usin",
-      "descriptionHtml": "&lt;p&gt;AWS Backup now supports copying Amazon FSx for NetApp ONTAP backups across AWS Regions and accounts. You can copy your FSx for NetApp ONTAP backups to another AWS Region, another AWS account, or both, using policy-based backup plans or on-demand copy jobs.&lt;/p&gt; \n&lt;p&gt;Copying backups to a separate Region helps you meet cross-Region disaster recovery and business continuity goals, while copying to a separate account helps protect your backups from accidental deletion, operational error, or account compromise. AWS Backup manages these copies centrally, and you can automate them across your organization using AWS Organizations.&lt;/p&gt; \n&lt;p&gt;This capability is available in all commercial AWS Regions where both Amazon FSx for NetApp ONTAP and AWS Backup are available. To get started, visit the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. For a complete list of supported Regions and features, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#supported-services-by-region\" target=\"_blank\"&gt;AWS Backup documentation&lt;/a&gt;. To learn more, visit the &lt;a href=\"https://aws.amazon.com/backup/\" target=\"_blank\"&gt;product page&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/backup/pricing/\" target=\"_blank\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-backup-amazon-fsx-netapp-cross-account-region/",
-      "publishedAt": "2026-08-27T17:25:00.000Z",
-      "updatedAt": "2026-08-27T17:25:00.000Z",
-      "categories": [
-        "AWS Backup",
-        "Storage",
-        "Amazon Fsx Netapp Ontap"
-      ],
-      "services": [
-        "FSx",
-        "Backup"
-      ],
-      "tags": [
-        "aws backup",
-        "storage",
-        "amazon fsx netapp ontap",
-        "fsx",
-        "backup"
       ],
       "isNew": false
     }
