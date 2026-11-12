@@ -1,7 +1,263 @@
 {
-  "lastUpdated": "2026-11-11T15:54:09.166Z",
+  "lastUpdated": "2026-11-12T16:37:44.162Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "1f5e80ecd028db80",
+      "title": "Ornith-1.0-9B and Ornith-1.0-35B models now available on Amazon SageMaker JumpStart",
+      "description": "DeepReinforce AI's Ornith-1.0-9B and Ornith-1.0-35B models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models are part of the Ornith 1.0 family of open-source, self-scaffolding agentic coding models released under the MIT license, achieving state-of-the-art performance among open-source models of comparable size on coding benchmarks such as Terminal-Bench 2.1, SWE-Bench, NL2Repo, and OpenClaw. These models address different agentic coding challenges with specialized capabilities: Ornith-1.0-9B is a lightwei",
+      "descriptionHtml": "&lt;p&gt;DeepReinforce AI's Ornith-1.0-9B and Ornith-1.0-35B models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models are part of the Ornith 1.0 family of open-source, self-scaffolding agentic coding models released under the MIT license, achieving state-of-the-art performance among open-source models of comparable size on coding benchmarks such as Terminal-Bench 2.1, SWE-Bench, NL2Repo, and OpenClaw.&lt;/p&gt; \n&lt;p&gt;These models address different agentic coding challenges with specialized capabilities:&lt;/p&gt; \n&lt;p&gt;Ornith-1.0-9B is a lightweight 9B-parameter dense model post-trained on Qwen 3.5 9B, designed for efficient single-GPU deployment. With a 256K-token context window and 32 decoder layers, it is well-suited for individual developers and small teams running agentic coding workflows on a single GPU — including laptops with consumer-grade hardware. Its self-improving training framework uses reinforcement learning to jointly optimize scaffold generation and solution rollouts, enabling the model to discover better search trajectories and generate higher-quality code solutions.&lt;/p&gt; \n&lt;p&gt;Ornith-1.0-35B is a 35B-parameter Mixture-of-Experts (MoE) model post-trained on Qwen 3.5, delivering stronger agentic coding performance while remaining deployable on a single 24GB consumer GPU. Like its smaller sibling, it employs reinforcement learning to jointly optimize the scaffolds that drive coding tasks and the resulting solution rollouts, discovering superior code trajectories. Its MoE architecture activates only a subset of parameters per token, providing a strong balance of quality and efficiency for production agentic coding workloads.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt; \n&lt;p&gt;To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/ornith-1-0-9b-ornith-1-0-35b-on-sagemaker-jumpstart/",
+      "publishedAt": "2026-11-11T23:36:00.000Z",
+      "updatedAt": "2026-11-11T23:36:00.000Z",
+      "categories": [
+        "Aiml",
+        "Artificial Intelligence",
+        "Amazon Sagemaker Jumpstart"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "aiml",
+        "artificial intelligence",
+        "amazon sagemaker jumpstart",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "8fb2921730aed5b7",
+      "title": "DeepSeek-V4-Pro, DeepSeek-V4-Flash, and DeepSeek-V4.1-Flash models now available on Amazon SageMaker JumpStart",
+      "description": "DeepSeek's DeepSeek-V4-Pro, DeepSeek-V4-Flash, and DeepSeek-V4.1-Flash models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three open-weight Mixture-of-Experts (MoE) language models, released under the MIT license, deliver frontier-class performance across reasoning, coding, and agentic workloads while activating only a fraction of their total parameters per token, enabling high efficiency at scale. These models address different AI challenges with specialized capabilities: DeepSeek-V4-Pro is designed for comple",
+      "descriptionHtml": "&lt;p&gt;DeepSeek's DeepSeek-V4-Pro, DeepSeek-V4-Flash, and DeepSeek-V4.1-Flash models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three open-weight Mixture-of-Experts (MoE) language models, released under the MIT license, deliver frontier-class performance across reasoning, coding, and agentic workloads while activating only a fraction of their total parameters per token, enabling high efficiency at scale.&lt;/p&gt; \n&lt;p&gt;These models address different AI challenges with specialized capabilities:&lt;/p&gt; \n&lt;p&gt;DeepSeek-V4-Pro is designed for complex reasoning and high-quality text generation at flagship scale. This 1.6T-parameter MoE model activates 49B parameters per token and supports a 1M-token context window, making it well-suited for long-document analysis, multi-step reasoning, and demanding generation tasks that require maximum model capacity.&lt;/p&gt; \n&lt;p&gt;DeepSeek-V4-Flash delivers strong performance at significantly lower compute cost as an efficient 284B-parameter MoE model activating 13B parameters per token. It supports the same 1M-token context window as V4-Pro, making it ideal for latency-sensitive and cost-conscious production deployments across a wide range of language tasks.&lt;/p&gt; \n&lt;p&gt;DeepSeek-V4.1-Flash provides next-generation agentic efficiency with native multimodal support. Built on a novel Causal Encoder-Decoder (CED) architecture with a 552B-parameter backbone, it activates just 8B parameters during prefill and 16B during decode, supporting a 1M-token context window and 384K max output tokens. Its Compressed Sparse Attention 2 (CSA2) and FP4 KV caching reduce the global KV cache footprint to roughly 1/4 of V4-Flash, delivering substantially improved cost efficiency for agentic workloads, coding, and vision tasks.&lt;/p&gt; \n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt; \n&lt;p&gt;To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/deepseek-v4-pro-v4-flash-v4.1-flash-on-sagemaker-jumpstart/",
+      "publishedAt": "2026-11-11T23:18:00.000Z",
+      "updatedAt": "2026-11-11T23:18:00.000Z",
+      "categories": [
+        "Artificial Intelligence",
+        "Amazon Sagemaker Jumpstart",
+        "Aiml"
+      ],
+      "services": [
+        "SageMaker"
+      ],
+      "tags": [
+        "artificial intelligence",
+        "amazon sagemaker jumpstart",
+        "aiml",
+        "sagemaker"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "7d8cc8220b67c747",
+      "title": "AWS Network Security Manager now available in AWS European Sovereign Cloud and Additional New Regions",
+      "description": "AWS Network Security Manager is now available in AWS European Sovereign Cloud Region and Thirty-One new Regions Today, AWS announces the general availability of AWS Network Security Manager in the AWS European Sovereign Cloud Region and additional regions. Network Security Manager is a comprehensive network security management solution designed to simplify security policy deployment and enforcement at scale. Network Security Manager supports AWS WAF and AWS Shield in AWS European Sovereign Cloud Region. The additional regions are: US East (Ohio); US West (N. California); US West (Oregon); Asia",
+      "descriptionHtml": "&lt;p&gt;AWS Network Security Manager is now available in AWS European Sovereign Cloud Region and Thirty-One new Regions&lt;br&gt; &lt;br&gt; Today, AWS announces the general availability of AWS Network Security Manager in the AWS European Sovereign Cloud Region and additional regions. Network Security Manager is a comprehensive network security management solution designed to simplify security policy deployment and enforcement at scale. Network Security Manager supports AWS WAF and AWS Shield in AWS European Sovereign Cloud Region.&amp;nbsp;The additional regions are: US East (Ohio);&amp;nbsp; US West (N. California); US West (Oregon); Asia Pacific (Mumbai); Asia Pacific (Hong Kong); Asia Pacific (Taipei); Asia Pacific (Seoul); Asia Pacific (Osaka); Asia Pacific (Hyderabad); Asia Pacific (Singapore); Asia Pacific (Sydney); Asia Pacific (Melbourne); Asia Pacific (Malaysia); Asia Pacific (New Zealand); Asia Pacific (Thailand); Asia Pacific (Johor); Asia Pacific (Tokyo); Canada (Central);&amp;nbsp; Canada West (Calgary); Mexico (Central); Europe (Frankfurt); Europe (Zurich); Europe (Stockholm); Europe (Ireland); Europe (Milan); Europe (Spain); Europe (London); Europe (Paris); Israel (Tel Aviv); South America (São Paulo), Africa (Cape Town).&lt;br&gt; &lt;br&gt; Network Security Manager features always-on security deployment automation that applies AWS WAF security protection to Internet facing assets like AWS Application Load Balancer. This automated approach helps security teams deploy and manage WAF rules and AWS Shield Advanced protections efficiently, ensuring consistent security posture across targeted accounts and resources. Teams can centrally manage security policies, automatically detect configuration drift, and apply remediation by reducing the operational overhead of manual security management while maintaining comprehensive protection.&lt;br&gt; &lt;br&gt; To see which regions AWS Network Security Manager is available in, visit the &lt;u&gt;&lt;a href=\"https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/\"&gt;AWS Region Table&lt;/a&gt;&lt;/u&gt;. For pricing information, visit the &lt;u&gt;&lt;a href=\"https://aws.amazon.com/network-security-manager/pricing/\"&gt;AWS Network Security Manager Pricing page&lt;/a&gt;&lt;/u&gt;. for standard regions, and the&amp;nbsp;&lt;u&gt;&lt;a href=\"https://aws.eu/network-security-manager/pricing/\"&gt;European Sovereign Cloud Pricing&lt;/a&gt;&lt;/u&gt;&amp;nbsp;page.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-security-mgr-eu-sovereign-cloud/",
+      "publishedAt": "2026-11-11T21:00:00.000Z",
+      "updatedAt": "2026-11-11T21:00:00.000Z",
+      "categories": [
+        "AWS Shield",
+        "AWS Waf"
+      ],
+      "services": [
+        "Shield",
+        "WAF"
+      ],
+      "tags": [
+        "aws shield",
+        "aws waf",
+        "shield",
+        "waf"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "d595528fc5aea5dc",
+      "title": "AWS Cloud WAN now supports Flow Logs",
+      "description": "AWS Cloud WAN now supports VPC Flow Logs, giving you central visibility into IP traffic across your global network. Flow Logs capture detailed information for each flow, so you can understand how traffic moves across your core network without leaving your AWS Cloud WAN account. Until now, network administrators had to stitch together VPC Flow Logs from many VPCs, accounts, and Regions to see traffic across their global network. They often depended on other teams for access to those logs. Cloud WAN Flow Logs give core network owners one consolidated view of traffic between VPCs, Regions, and on",
+      "descriptionHtml": "&lt;p&gt;AWS Cloud WAN now supports VPC Flow Logs, giving you central visibility into IP traffic across your global network. Flow Logs capture detailed information for each flow, so you can understand how traffic moves across your core network without leaving your AWS Cloud WAN account.&lt;/p&gt; \n&lt;p&gt;Until now, network administrators had to stitch together VPC Flow Logs from many VPCs, accounts, and Regions to see traffic across their global network. They often depended on other teams for access to those logs. Cloud WAN Flow Logs give core network owners one consolidated view of traffic between VPCs, Regions, and on-premises networks connected over AWS Direct Connect, AWS Site-to-Site VPN, or SD-WAN. You can use this data to troubleshoot connectivity and performance problems, plan capacity from historical bandwidth trends, find unusual traffic patterns, and keep records for security and compliance. Flow log records include IP addresses, ports, protocol, traffic volume, and packet-loss counters, along with Cloud WAN metadata such as segment, Region, service insertion hops and attachment details. You can turn on Flow Logs for an entire core network, a single core network edge, or individual attachments. You can publish them to Amazon CloudWatch Logs, Amazon Simple Storage Service (Amazon S3), or Amazon Data Firehose. Cloud WAN adds no charge for Flow Logs. Standard charges apply for each destination.&lt;/p&gt; \n&lt;p&gt;Cloud WAN Flow Logs are available in all AWS Regions where AWS Cloud WAN is available. You can get started with the AWS Management Console, AWS CLI, or API. To learn more, see AWS Cloud WAN Flow Logs&amp;nbsp;&lt;a href=\"https://docs.aws.amazon.com/network-manager/latest/cloudwan/cwan-flow-logs\"&gt;user guide&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cloud-wan-flow-logs/",
+      "publishedAt": "2026-11-11T20:05:00.000Z",
+      "updatedAt": "2026-11-11T20:05:00.000Z",
+      "categories": [
+        "Networking And Content Delivery",
+        "AWS Cloud Wan",
+        "Amazon Vpc"
+      ],
+      "services": [
+        "VPC"
+      ],
+      "tags": [
+        "networking and content delivery",
+        "aws cloud wan",
+        "amazon vpc",
+        "vpc"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3058c03ad6f30a9c",
+      "title": "Amazon EKS Provisioned Control Plane now offers a 24 GB etcd database on 4XL and 8XL tiers",
+      "description": "Amazon Elastic Kubernetes Service (Amazon EKS) now offers a larger 24 GB etcd database, up from 16 GB, for 4XL and 8XL Provisioned Control Plane clusters. etcd is the key-value store in the Kubernetes control plane that holds your cluster state, so its size limits how many Kubernetes objects your cluster can store. With 50% more capacity, you can run bigger clusters with more pods, jobs, events, and custom resources. The larger database gives more headroom to workloads that create and update many Kubernetes objects, such as large-scale AI/ML training and inference, batch processing, and CI/CD ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/pm/eks/\"&gt;Amazon Elastic Kubernetes Service (Amazon EKS)&lt;/a&gt; now offers a larger 24 GB etcd database, up from 16 GB, for 4XL and 8XL &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/eks-provisioned-control-plane.html\"&gt;Provisioned Control Plane&lt;/a&gt; clusters. etcd is the key-value store in the Kubernetes control plane that holds your cluster state, so its size limits how many Kubernetes objects your cluster can store. With 50% more capacity, you can run bigger clusters with more pods, jobs, events, and custom resources.&lt;/p&gt; \n&lt;p&gt;The larger database gives more headroom to workloads that create and update many Kubernetes objects, such as large-scale AI/ML training and inference, batch processing, and CI/CD pipelines. When the etcd database fills up, you can’t add or change objects in your cluster, so the extra headroom helps keep these workloads running as they scale.&lt;/p&gt; \n&lt;p&gt;To get the larger database,&amp;nbsp;choose the 4XL or 8XL tier of Provisioned Control Plane on a cluster running EKS version 1.34 or later. Existing clusters on the 4XL and 8XL tiers running these versions get the larger database automatically, with no action required. The 24 GB etcd database is available in all commercial AWS Regions where Provisioned Control Plane is available. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/eks-provisioned-control-plane.html\"&gt;Amazon EKS Provisioned Control Plane user guide&lt;/a&gt;.&amp;nbsp;&lt;br&gt; &lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-provisioned-control-plane-larger-etcd-database/",
+      "publishedAt": "2026-11-11T19:45:00.000Z",
+      "updatedAt": "2026-11-11T19:45:00.000Z",
+      "categories": [
+        "Containers",
+        "Amazon Eks",
+        "AWS Govcloud Us"
+      ],
+      "services": [
+        "EKS"
+      ],
+      "tags": [
+        "containers",
+        "amazon eks",
+        "aws govcloud us",
+        "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "5bf8bf2a8f3b2ae8",
+      "title": "Amazon Cognito now supports user pool session management",
+      "description": "Amazon Cognito now supports session management for user pools, giving you visibility into and control over the sessions your users establish when they sign in to your applications. Single sign-on (SSO) sessions are created when a user signs in through managed login and let them access other app clients without re-authenticating. Token sessions are created when a user signs in to an app client and receives tokens. Session management lets you list a user's active SSO and token sessions across all devices and app clients and revoke any of them on demand. You can also now configure how long each a",
+      "descriptionHtml": "&lt;p&gt;Amazon Cognito now supports session management for user pools, giving you visibility into and control over the sessions your users establish when they sign in to your applications. Single sign-on (SSO) sessions are created when a user signs in through managed login and let them access other app clients without re-authenticating. Token sessions are created when a user signs in to an app client and receives tokens. Session management lets you list a user's active SSO and token sessions across all devices and app clients and revoke any of them on demand. You can also now configure how long each app client reuses an SSO session before requiring re-authentication, instead of the previous fixed one-hour duration.&lt;/p&gt; \n&lt;p&gt;Each session includes details such as session type, app client ID, device type, last activity time and location, and initial sign-in time, so you can build your own end-user or admin session experiences. You can revoke an individual session, optionally with its linked sessions, or use global sign-out to end all sessions associated with one user. You can also set a maximum number of active token sessions per user.&lt;/p&gt; \n&lt;p&gt;Session management is available for user pools in the Essentials or Plus feature plans in all AWS Regions where Amazon Cognito is available.&lt;i&gt; &lt;/i&gt;You can manage sessions using the AWS Management Console, API, AWS Command Line Interface, and AWS Software Development Kits, and configure settings with AWS CloudFormation. Visit the &lt;a href=\"https://docs.aws.amazon.com/cognito/latest/developerguide/managing-user-sessions.html\"&gt;Developer Guide&lt;/a&gt; and &lt;a href=\"https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_Operations.html\"&gt;API Reference&lt;/a&gt; for details.&amp;nbsp;&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-session-management/",
+      "publishedAt": "2026-11-11T19:00:00.000Z",
+      "updatedAt": "2026-11-11T19:00:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "Amazon Cognito"
+      ],
+      "services": [
+        "Cognito"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "amazon cognito",
+        "cognito"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "58b4e8f4ca93a4d8",
+      "title": "AWS Lambda MicroVMs now supports the x86 CPU architecture",
+      "description": "AWS Lambda MicroVMs now supports the x86 CPU architecture, so you can run your existing x86 applications, tools, and software dependencies without recompiling or porting them. When you create a MicroVM image, you can now choose between x86 and Arm (AWS Graviton) to give each user or job an isolated MicroVM on the architecture your workload uses. Lambda MicroVMs is a serverless compute primitive that provides VM-level isolation, near-instant launch and resume, and state preservation for running user or AI-generated code, in applications such as AI coding assistants, CI/CD runners, interactive d",
+      "descriptionHtml": "&lt;p&gt;AWS Lambda MicroVMs now supports the x86 CPU architecture, so you can run your existing x86 applications, tools, and software dependencies without recompiling or porting them. When you create a MicroVM image, you can now choose between x86 and Arm (AWS Graviton) to give each user or job an isolated MicroVM on the architecture your workload uses.&lt;/p&gt; \n&lt;p&gt;Lambda MicroVMs is a serverless compute primitive that provides VM-level isolation, near-instant launch and resume, and state preservation for running user or AI-generated code, in applications such as AI coding assistants, CI/CD runners, interactive development environments, and vulnerability scanners. Today’s launch enables you to run x86-based workloads on Lambda MicroVMs as-is. For workloads that run on Arm, you can continue using AWS Graviton processors which is the default CPU architecture option.&lt;/p&gt; \n&lt;p&gt;To start building x86 workloads on Lambda MicroVMs, choose the x86 architecture when you create a MicroVM image from your Dockerfile, then launch MicroVMs from that image. You can use&amp;nbsp;MicroVMs through the AWS Lambda console, AWS CloudFormation, AWS Cloud Development Kit, or with your preferred agentic development tools using the &lt;a href=\"https://github.com/aws/agent-toolkit-for-aws/tree/main/skills/specialized-skills/serverless-skills/aws-lambda-microvms\"&gt;Agent Toolkit for AWS&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Support for the x86&amp;nbsp;CPU architecture is available in all AWS Regions where Lambda MicroVMs is available, except Asia Pacific (Hong Kong), Asia Pacific (Malaysia), Asia Pacific (Thailand), and Europe (Spain). To learn more, visit the &lt;a href=\"https://docs.aws.amazon.com/lambda/latest/dg/lambda-microvms-guide.html\"&gt;AWS Lambda MicroVMs developer guide&lt;/a&gt;. For information on pricing, see &lt;a href=\"https://aws.amazon.com/lambda/pricing/\"&gt;Lambda MicroVMs pricing&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-microvms-x86-architecture/",
+      "publishedAt": "2026-11-11T18:00:00.000Z",
+      "updatedAt": "2026-11-11T18:00:00.000Z",
+      "categories": [
+        "AWS Lambda",
+        "Serverless",
+        "Compute",
+        "Artificial Intelligence"
+      ],
+      "services": [
+        "Lambda"
+      ],
+      "tags": [
+        "aws lambda",
+        "serverless",
+        "compute",
+        "artificial intelligence",
+        "lambda"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "009a90b0a88046ec",
+      "title": "Amazon EKS Auto Mode now supports security groups for Pods",
+      "description": "Amazon EKS Auto Mode now supports security groups for Pods, letting you apply dedicated Amazon EC2 security group rules to individual Pods. Different workloads on the same node can carry different security groups, giving your Pods network-level segmentation without creating separate node pools for each application. Security groups for Pods extends your existing AWS network controls to the Pod level, so your Pods can reach resources such as Amazon RDS and Amazon ElastiCache databases that authorize connections by security group under the same rules the rest of your VPC uses. You define which Po",
+      "descriptionHtml": "&lt;p&gt;Amazon EKS Auto Mode now supports security groups for Pods, letting you apply dedicated Amazon EC2 security group rules to individual Pods. Different workloads on the same node can carry different security groups, giving your Pods network-level segmentation without creating separate node pools for each application.&lt;/p&gt; \n&lt;p&gt;Security groups for Pods extends your existing AWS network controls to the Pod level, so your Pods can reach resources such as Amazon RDS and Amazon ElastiCache databases that authorize connections by security group under the same rules the rest of your VPC uses. You define which Pods receive which security groups with a SecurityGroupPolicy resource, and Pods not matched by a policy keep using their node’s security groups.&lt;/p&gt; \n&lt;p&gt;Security groups for Pods is included as part of EKS Auto Mode at no additional charge and is available on clusters running Kubernetes version 1.36 or later, in all AWS Regions where EKS Auto Mode is supported. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/eks/latest/userguide/auto-sgp.html\"&gt;Security groups for Pods&lt;/a&gt; in the Amazon EKS User Guide and the &lt;a href=\"https://aws.amazon.com/eks/auto-mode/\"&gt;Amazon EKS Auto Mode&lt;/a&gt; product page.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-auto-mode-security-groups-for-pods/",
+      "publishedAt": "2026-11-11T17:26:00.000Z",
+      "updatedAt": "2026-11-11T17:26:00.000Z",
+      "categories": [
+        "Security Identity And Compliance",
+        "Containers",
+        "Networking",
+        "Amazon Eks",
+        "Compute"
+      ],
+      "services": [
+        "EKS"
+      ],
+      "tags": [
+        "security identity and compliance",
+        "containers",
+        "networking",
+        "amazon eks",
+        "compute",
+        "eks"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "9819cb88c33e68c8",
+      "title": "AWS Emulator is now available for building and testing AWS applications locally",
+      "description": "AWS Emulator is now available for building and testing AWS applications locally. Starting today, you can use AWS Emulator to build and test AWS applications on your computer or in your continuous integration (CI) environment. Your existing AWS SDK and CLI calls go to AWS Emulator and come back in milliseconds, so you and your coding agents can find and fix errors locally, with no deployments or AWS account required. You create and manage resources with the same AWS SDK and AWS CLI calls you use with AWS, signed with credentials the emulator provides. For the operations it supports, AWS Emulato",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/products/developer-tools/emulator/\"&gt;AWS Emulator&lt;/a&gt; is now available for building and testing AWS applications locally.&lt;/p&gt; \n&lt;p&gt;Starting today, you can use AWS Emulator to build and test AWS applications on your computer or in your continuous integration (CI) environment. Your existing AWS SDK and CLI calls go to AWS Emulator and come back in milliseconds, so you and your coding agents can find and fix errors locally, with no deployments or AWS account required.&lt;/p&gt; \n&lt;p&gt;You create and manage resources with the same AWS SDK and AWS CLI calls you use with AWS, signed with credentials the emulator provides. &lt;i&gt;For the operations it supports, AWS Emulator returns the same result as AWS for valid calls and the same errors for invalid ones. Operations it doesn’t yet support return 501 Not Implemented.&lt;/i&gt;&amp;nbsp;AWS Emulator keeps the state of your resources in memory until you stop it. Each copy you start gets its own port, keys and in-memory state, so agents, test suites, and CI jobs never see each other’s resources. For example, a coding agent can create an Amazon DynamoDB table, test against it offline, and fix its code before it deploys.&lt;/p&gt; \n&lt;p&gt;Services in AWS Emulator are generated from the API models AWS publishes, the same models behind the AWS SDKs. When AWS adds a service or API, it shows up in AWS Emulator, and its behavior is filled in and verified release by release. To see how its responses compare to AWS, review the &lt;a href=\"http://docs.aws.amazon.com/emulator/latest/userguide/fidelity.html\"&gt;AWS Emulator fidelity report&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;AWS Emulator doesn’t depend on an AWS Region. AWS Emulator has no additional service fee. You pay only for AWS resources when you deploy to AWS. Its source code is published under the CC0 1.0 Universal public domain dedication. To get started, see the &lt;a href=\"https://docs.aws.amazon.com/emulator\"&gt;AWS Emulator documentation&lt;/a&gt;, or view the source in the &lt;a href=\"https://github.com/aws/aws-emulator\"&gt;AWS Emulator GitHub repository&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-emulator-now-available/",
+      "publishedAt": "2026-11-11T17:00:00.000Z",
+      "updatedAt": "2026-11-11T17:00:00.000Z",
+      "categories": [
+        "AWS Tools And Sdks",
+        "AWS Command Line Interface",
+        "Developer Tools"
+      ],
+      "services": [],
+      "tags": [
+        "aws tools and sdks",
+        "aws command line interface",
+        "developer tools"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "e6ea23981dfebfe5",
+      "title": "AWS Quick apps are now available in Asia Pacific (Singapore)",
+      "description": "The AWS Quick desktop app for macOS and Windows and the Quick mobile app for iOS and Android are now available in the Asia Pacific (Singapore) Region. This launch builds on the recent availability of Quick in Singapore . The desktop app works with your local files and connects to your calendar, email, and business apps. The mobile app lets you chat with Quick, review your activity feed, and open dashboards. Your conversations, context, and agents stay in sync across web, desktop, and mobile, so you can start an agent on your desktop, check on it from your phone, and let it keep running after y",
+      "descriptionHtml": "&lt;p&gt;The AWS Quick desktop app for macOS and Windows and the Quick mobile app for iOS and Android are now available in the Asia Pacific (Singapore) Region. This launch builds on the recent &lt;a href=\"https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-quick-now-available-in-the-aws-singapore-region/\"&gt;availability of Quick in Singapore&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;The desktop app works with your local files and connects to your calendar, email, and business apps. The mobile app lets you chat with Quick, review your activity feed, and open dashboards. Your conversations, context, and agents stay in sync across web, desktop, and mobile, so you can start an agent on your desktop, check on it from your phone, and let it keep running after you close your computer.&amp;nbsp;&lt;/p&gt; \n&lt;p&gt;To get started, download the desktop app from the &lt;a href=\"https://aws.amazon.com/quick/download/\"&gt;AWS Quick download page&lt;/a&gt; or the mobile app from the &lt;a href=\"https://apps.apple.com/us/app/amazon-quick/id1148226615\"&gt;Apple App Store&lt;/a&gt; or &lt;a href=\"https://play.google.com/store/apps/details?id=com.amazonaws.quicksight.mobile&amp;amp;hl=en_US&amp;amp;trk=e0dcca02-d7b6-48fd-a721-6f3538a9b485&amp;amp;sc_channel=el\" target=\"_blank\"&gt;Google Play&lt;/a&gt;. To learn more, see &lt;a href=\"https://docs.aws.amazon.com/quick/latest/userguide/amazon-quick-mobile.html\"&gt;AWS Quick on mobile&lt;/a&gt; in the AWS Quick User Guide and the &lt;a href=\"https://aws.amazon.com/quick/\"&gt;AWS Quick product page&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-apps-available-in-asia-pacific-singapore/",
+      "publishedAt": "2026-11-11T15:20:00.000Z",
+      "updatedAt": "2026-11-11T15:20:00.000Z",
+      "categories": [
+        "Business Productivity",
+        "Artificial Intelligence"
+      ],
+      "services": [],
+      "tags": [
+        "business productivity",
+        "artificial intelligence"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "3b12cbb76bb339db",
+      "title": "Amazon SES now supports higher limits for email identities, tenants, and configuration sets",
+      "description": "Amazon Simple Email Service (Amazon SES) now supports higher limits for email identities, tenants, and configuration sets. You can view your current usage against each limit and request increases in the AWS Service Quotas console. A single account can now keep pace with your growth, so you no longer need to split email workloads across several accounts to stay within per-account limits. Customers running multi-tenant workloads often create a separate email identity, tenant, or configuration set for each customer, brand, or AI agent they serve. As you add more customers, brands, and AI agents, ",
+      "descriptionHtml": "&lt;p&gt;Amazon Simple Email Service (Amazon SES) now supports higher limits for email identities, tenants, and configuration sets. You can view your current usage against each limit and request increases in the AWS Service Quotas console. A single account can now keep pace with your growth, so you no longer need to split email workloads across several accounts to stay within per-account limits.&lt;/p&gt; \n&lt;p&gt;Customers running multi-tenant workloads often create a separate email identity, tenant, or configuration set for each customer, brand, or AI agent they serve. As you add more customers, brands, and AI agents, these resources can multiply quickly, and higher limits let all of these workloads grow in one account. To help you manage larger accounts, you can now also search these resources by name or status.&lt;/p&gt; \n&lt;p&gt;Higher limits for email identities, tenants, and configuration sets are available in all AWS Regions where Amazon SES is available.&lt;/p&gt; \n&lt;p&gt;To learn more, see &lt;a href=\"https://docs.aws.amazon.com/ses/latest/dg/quotas.html\"&gt;Service quotas in Amazon SES&lt;/a&gt; in the &lt;i&gt;Amazon SES Developer Guide&lt;/i&gt; and the &lt;a href=\"https://aws.amazon.com/ses/\"&gt;Amazon SES&lt;/a&gt; product page.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ses-higher-resource-limits/",
+      "publishedAt": "2026-11-11T08:00:00.000Z",
+      "updatedAt": "2026-11-11T08:00:00.000Z",
+      "categories": [
+        "Amazon Ses"
+      ],
+      "services": [
+        "SES"
+      ],
+      "tags": [
+        "amazon ses",
+        "ses"
+      ],
+      "isNew": true
+    },
     {
       "id": "1a1d1291e8347307",
       "title": "AWS Billing and Cost Management now supports AWS Billing Conductor and AWS Billing Transfer views as source views for custom billing views",
@@ -350,15 +606,18 @@
       "id": "46885685e963227d",
       "title": "Amazon DocumentDB (with MongoDB compatibility) now supports post-quantum TLS, wildcard indexes, and $unionWith in version 8.0.3",
       "description": "Amazon DocumentDB (with MongoDB compatibility) 8.0.3 adds hybrid post-quantum key exchange for TLS, wildcard indexes, the $unionWith aggregation stage, and new change stream events. Post-quantum TLS protects data in transit from traffic that is recorded today and decrypted later with a quantum computer. The new MongoDB APIs let you move more MongoDB workloads to Amazon DocumentDB without changing application code. What's new in 8.0.3: Post-quantum TLS: TLS 1.3 connections use hybrid key exchange based on the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) when the client supports it.",
-      "descriptionHtml": "&lt;p&gt;Amazon DocumentDB (with MongoDB compatibility) 8.0.3 adds hybrid post-quantum key exchange for TLS, wildcard indexes, the $unionWith aggregation stage, and new change stream events. Post-quantum TLS protects data in transit from traffic that is recorded today and decrypted later with a quantum computer. The new MongoDB APIs let you move more MongoDB workloads to Amazon DocumentDB without changing application code.&lt;/p&gt; \n&lt;p&gt;What's new in 8.0.3:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Post-quantum TLS: TLS 1.3 connections use hybrid key exchange based on the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) when the client supports it. Other clients keep using classical key exchange. Two new Amazon CloudWatch metrics, TLSHandshakesClassical and TLSHandshakesPostQuantum, count the handshakes of each type.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Wildcard indexes: index every field, or every field under a path, to query documents with dynamic schemas.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Aggregation: $unionWith combines results from multiple collections in one pipeline. $lookup and $graphLookup work in views, and correlated $lookup sub-pipelines accept $unionWith and $facet.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Change streams: dropIndex() and dropIndexes() now emit dropIndexes events.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Compression metrics: collStats and stats() report per-collection input bytes, output bytes, and compression ratio.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon DocumentDB 8.0.3 is available in all AWS Regions where Amazon DocumentDB is offered. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/\" target=\"_blank\"&gt;Amazon DocumentDB Developer Guide&lt;/a&gt;.&lt;/p&gt;",
+      "descriptionHtml": "&lt;p&gt;Amazon DocumentDB (with MongoDB compatibility) 8.0.3 adds hybrid post-quantum key exchange for TLS, wildcard indexes, the $unionWith aggregation stage, and new change stream events. Post-quantum TLS protects data in transit from traffic that is recorded today and decrypted later with a quantum computer. The new MongoDB APIs let you move more MongoDB workloads to Amazon DocumentDB without changing application code.&lt;/p&gt; \n&lt;p&gt;What's new in 8.0.3:&lt;/p&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Post-quantum TLS: TLS 1.3 connections use hybrid key exchange based on the Module-Lattice-Based Key-Encapsulation Mechanism (ML-KEM) when the client supports it. Other clients keep using classical key exchange. Two new Amazon CloudWatch metrics, TLSHandshakesClassical and TLSHandshakesPostQuantum, count the handshakes of each type.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Wildcard indexes: index every field, or every field under a path, to query documents with dynamic schemas.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Aggregation: $unionWith combines results from multiple collections in one pipeline. $lookup and $graphLookup work in views, and correlated $lookup sub-pipelines accept $unionWith and $facet.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Change streams: dropIndex() and dropIndexes() now emit dropIndexes events.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;ul&gt; \n &lt;li&gt;&lt;p&gt;Compression metrics: collStats and stats() report per-collection input bytes, output bytes, and compression ratio.&lt;/p&gt; &lt;/li&gt; \n&lt;/ul&gt; \n&lt;p&gt;Amazon DocumentDB 8.0.3 is available in all AWS Regions where Amazon DocumentDB is offered. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/documentdb/latest/developerguide/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon DocumentDB Developer Guide&lt;/a&gt;.&lt;/p&gt;",
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-8-0-3/",
       "publishedAt": "2026-11-10T00:00:00.000Z",
       "updatedAt": "2026-11-10T00:00:00.000Z",
-      "categories": [],
+      "categories": [
+        "Amazon Documentdb"
+      ],
       "services": [
         "DocumentDB"
       ],
       "tags": [
+        "amazon documentdb",
         "documentdb"
       ],
       "isNew": true
@@ -1207,7 +1466,7 @@
         "amazon fsx for lustre",
         "fsx"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "2efcc1bd9fac2e7d",
@@ -1231,7 +1490,7 @@
         "security identity and compliance",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f0a17685baff9d76",
@@ -1257,7 +1516,7 @@
         "security identity and compliance",
         "security hub"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "555cd6194b755d49",
@@ -1277,7 +1536,7 @@
         "aws lambda",
         "lambda"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "f22f5d0bc3aa61b8",
@@ -1294,7 +1553,7 @@
       "tags": [
         "aws govcloud us"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "41b330d67647b912",
@@ -1318,7 +1577,7 @@
         "iam identity center",
         "sagemaker"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "08359c65650dd3b9",
@@ -1342,7 +1601,7 @@
         "cloudfront",
         "waf"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "28a3e0a7d01eb8e1",
@@ -1362,7 +1621,7 @@
         "aws management console",
         "q"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "20abdd1966496c44",
@@ -1388,7 +1647,7 @@
         "ec2",
         "cloudwatch"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "9d4b54033d209b2b",
@@ -1408,7 +1667,7 @@
         "aws systems manager",
         "systems manager"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fb472f37e8ad5a39",
@@ -1430,7 +1689,7 @@
         "analytics",
         "mwaa"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b7dda2c1b5853746",
@@ -1456,7 +1715,7 @@
         "ecs",
         "fargate"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "4f963263fa2a5799",
@@ -1466,14 +1725,19 @@
       "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-mongodb-compatibility-asia-pacific-taipei-new-zealand-regions/",
       "publishedAt": "2026-11-04T19:00:00.000Z",
       "updatedAt": "2026-11-04T19:00:00.000Z",
-      "categories": [],
+      "categories": [
+        "Databases",
+        "Amazon Documentdb"
+      ],
       "services": [
         "DocumentDB"
       ],
       "tags": [
+        "databases",
+        "amazon documentdb",
         "documentdb"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "b5e0021e571c1dae",
@@ -1497,7 +1761,7 @@
         "aws iam",
         "iam"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d600785138fcfb01",
@@ -1519,7 +1783,7 @@
         "amazon rds",
         "rds"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "fd967385c80b6aad",
@@ -1541,7 +1805,7 @@
         "aws direct connect",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "d2293883430a9b2f",
@@ -1567,7 +1831,7 @@
         "contact center",
         "connect"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "063fa34b1a782035",
@@ -10932,250 +11196,6 @@
         "aws glue",
         "analytics",
         "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "54d6b57494498b3e",
-      "title": "AWS improves regional resiliency for root user sign-in",
-      "description": "AWS root user sign-in is now served across US East (N. Virginia), US East (Ohio), and US West (Oregon), with sign-in traffic distributed across all three Regions. This change reduces reliance on US East (N. Virginia) and improves resiliency during service disruptions. AWS automatically routes your root user sign-in to a supported Region without requiring you to select a Region or change how you sign in. This improvement is available now for all AWS accounts. In AWS CloudTrail, ConsoleLogin events for root user sign-ins are recorded in the Region that processed the sign-in request. To maintain ",
-      "descriptionHtml": "&lt;p&gt;AWS root user sign-in is now served across US East (N. Virginia), US East (Ohio), and US West (Oregon), with sign-in traffic distributed across all three Regions. This change reduces reliance on US East (N. Virginia) and improves resiliency during service disruptions. AWS automatically routes your root user sign-in to a supported Region without requiring you to select a Region or change how you sign in. This improvement is available now for all AWS accounts.&lt;/p&gt;\n&lt;p&gt;In AWS CloudTrail, ConsoleLogin events for root user sign-ins are recorded in the Region that processed the sign-in request. To maintain full visibility into root user sign-in activity, update your monitoring and alerting to cover US East (N. Virginia), US East (Ohio), and US West (Oregon).&lt;/p&gt;\n&lt;p&gt;To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/signin/latest/userguide/introduction-to-root-user-sign-in-tutorial.html\"&gt;AWS Sign-In documentation&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-aws-console-sign-in-events.html#cloudtrail-event-reference-aws-console-sign-in-events-root\"&gt;CloudTrail ConsoleLogin event reference&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/root-user-regional-resiliency/",
-      "publishedAt": "2026-09-14T19:30:00.000Z",
-      "updatedAt": "2026-09-14T19:30:00.000Z",
-      "categories": [
-        "Security Identity And Compliance",
-        "AWS Identity And Access Management",
-        "AWS Iam"
-      ],
-      "services": [
-        "IAM"
-      ],
-      "tags": [
-        "security identity and compliance",
-        "aws identity and access management",
-        "aws iam",
-        "iam"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "8732e22c58dc561e",
-      "title": "Qwen3.6-35B-A3B-NVFP4 and Wan2.1-T2V-1.3B-Diffusers models now available on Amazon SageMaker JumpStart",
-      "description": "NVIDIA's Qwen3.6-35B-A3B-NVFP4 and Alibaba's Wan2.1-T2V-1.3B-Diffusers models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models bring specialized capabilities spanning agentic coding with long-context reasoning and lightweight text-to-video generation, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure. These models address different enterprise AI challenges with specialized capabilities: Qwen3.6-35B-A3B-NVFP4 is optimized for agentic coding, multimodal reasoning, an",
-      "descriptionHtml": "&lt;p&gt;NVIDIA's Qwen3.6-35B-A3B-NVFP4 and Alibaba's Wan2.1-T2V-1.3B-Diffusers models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models bring specialized capabilities spanning agentic coding with long-context reasoning and lightweight text-to-video generation, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.&lt;/p&gt;\n&lt;p&gt;These models address different enterprise AI challenges with specialized capabilities:&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;Qwen3.6-35B-A3B-NVFP4&lt;/b&gt; is optimized for &lt;b&gt;agentic coding, multimodal reasoning, and long-context understanding&lt;/b&gt; as the NVIDIA-quantized variant of Alibaba's Qwen3.6-35B-A3B. This Mixture-of-Experts model contains 35B total parameters with only 3B activated per token (8 of 256 experts), supporting a 262K-token context window extendable to ~1M via YaRN scaling. Quantized to NVFP4 using NVIDIA's ModelOpt framework, it preserves thinking across conversation turns, multi-token prediction, and tool calling for multi-step agent pipelines—all at a significantly reduced memory footprint.&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;Wan2.1-T2V-1.3B-Diffusers&lt;/b&gt; excels in &lt;b&gt;text-to-video generation on consumer-grade hardware&lt;/b&gt;. Built on the diffusion transformer paradigm with a novel Video Variational Autoencoder (VAE), this 1.3B-parameter model generates high-quality, physics-consistent video clips from text prompts while requiring only 8.19 GB of VRAM. It can produce a 5-second 480p video on an RTX 4090 in approximately 4 minutes, making it one of the most accessible open-source video generation models available.&lt;/p&gt;\n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt;\n&lt;p&gt;To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/qwen3.6-35b-a3b-nvfp4-wan2.1-t2v-1.3B-diffusers-jumpstart/",
-      "publishedAt": "2026-09-14T17:39:00.000Z",
-      "updatedAt": "2026-09-14T17:39:00.000Z",
-      "categories": [
-        "Aiml",
-        "Amazon Sagemaker Jumpstart",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "aiml",
-        "amazon sagemaker jumpstart",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "327a7b0dd0e4df8f",
-      "title": "Ministral-3-3B-Instruct-2512 and Ministral-3-8B-Instruct-2512 models now available on Amazon SageMaker JumpStart",
-      "description": "Mistral AI's Ministral-3-3B-Instruct-2512 and Ministral-3-8B-Instruct-2512 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models from the Ministral 3 family bring compact, vision-capable language models purpose-built for edge deployment and resource-constrained environments, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure. These models address different enterprise AI challenges with specialized capabilities: Ministral-3-3B-Instruct-2512 is engineered for ultra-",
-      "descriptionHtml": "&lt;p&gt;Mistral AI's Ministral-3-3B-Instruct-2512 and Ministral-3-8B-Instruct-2512 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models from the Ministral 3 family bring compact, vision-capable language models purpose-built for edge deployment and resource-constrained environments, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.&lt;/p&gt;\n&lt;p&gt;These models address different enterprise AI challenges with specialized capabilities:&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;Ministral-3-3B-Instruct-2512&lt;/b&gt; is engineered for &lt;b&gt;ultra-lightweight edge deployment with multimodal understanding&lt;/b&gt;. Comprising a 3.4B language model and a 0.4B vision encoder, it fits in just 8GB of VRAM in FP8 while supporting a 256K-token context window. It offers vision analysis, multilingual instruction following across dozens of languages (including English, French, Spanish, German, Chinese, Japanese, Korean, and Arabic), strong system-prompt adherence, and native function calling with structured JSON output—all under the Apache 2.0 license.&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;Ministral-3-8B-Instruct-2512&lt;/b&gt; delivers &lt;b&gt;frontier-class capabilities comparable to its larger Mistral Small 3.2 24B counterpart&lt;/b&gt; in a compact 8B form factor. Built with an 8.4B language model and a 0.4B vision encoder, it fits in 12GB of VRAM in FP8 and features an interleaved sliding-window attention pattern for faster, memory-efficient inference. It shares the same vision, multilingual, agentic, and function-calling capabilities as its 3B sibling while offering stronger reasoning and generation performance.&lt;/p&gt;\n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt;\n&lt;p&gt;To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/ministral-3-3b-instruct-2512-ministral-3-8B-Instruct-2512-jumpstart/",
-      "publishedAt": "2026-09-14T17:35:00.000Z",
-      "updatedAt": "2026-09-14T17:35:00.000Z",
-      "categories": [
-        "Aiml",
-        "Artificial Intelligence",
-        "Amazon Sagemaker Jumpstart"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "aiml",
-        "artificial intelligence",
-        "amazon sagemaker jumpstart",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "13e94cc65ebb117f",
-      "title": "Gemma-4-31B-it-assistant and Gemma-4-31B-IT-NVFP4 models now available on Amazon SageMaker JumpStart",
-      "description": "Google DeepMind's Gemma-4-31B-it-assistant and NVIDIA's Gemma-4-31B-IT-NVFP4 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models bring the flagship Gemma 4 31B dense architecture to enterprise workloads in both full-precision and optimized quantized variants, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure. These models address different enterprise AI challenges with specialized capabilities: Gemma-4-31B-it-assistant is built for multimodal reasoning, coding,",
-      "descriptionHtml": "&lt;p&gt;Google DeepMind's Gemma-4-31B-it-assistant and NVIDIA's Gemma-4-31B-IT-NVFP4 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These two models bring the flagship Gemma 4 31B dense architecture to enterprise workloads in both full-precision and optimized quantized variants, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.&lt;/p&gt;\n&lt;p&gt;These models address different enterprise AI challenges with specialized capabilities:&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;Gemma-4-31B-it-assistant&lt;/b&gt; is built for &lt;b&gt;multimodal reasoning, coding, and agentic workflows&lt;/b&gt; as the assistant-tuned variant of Google's flagship 31B dense model. It handles text and image inputs (including video as frame sequences) and generates text output, with a 256K-token context window and support for over 140 languages. Ranked #3 among open models on the Arena AI text leaderboard—outcompeting models 20x its size—it features a hybrid attention mechanism interleaving local sliding-window and full global attention with native function calling for building autonomous agents.&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;Gemma-4-31B-IT-NVFP4&lt;/b&gt; delivers the &lt;b&gt;same Gemma 4 31B capabilities at a fraction of the memory footprint&lt;/b&gt;. Quantized with NVIDIA's ModelOpt framework to 4-bit FP4 precision, it reduces memory usage to ~18.5 GB (68% smaller than the base model) and achieves approximately 2.5x faster inference while retaining 97–99% of the original model's quality. Ideal for cost-efficient, high-throughput production deployments on NVIDIA RTX, DGX Spark, and data center GPUs.&lt;/p&gt;\n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt;\n&lt;p&gt;To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/gemma-4-31b-it-assistant-gemma-4-31b-it-nvfp4-jumpstart/",
-      "publishedAt": "2026-09-14T17:32:00.000Z",
-      "updatedAt": "2026-09-14T17:32:00.000Z",
-      "categories": [
-        "Amazon Sagemaker Jumpstart",
-        "Aiml",
-        "Artificial Intelligence"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "amazon sagemaker jumpstart",
-        "aiml",
-        "artificial intelligence",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ab4a968a1915c206",
-      "title": "granite-speech-4.1-2b, kanana-2-30b-a3b-instruct, and OpenFold3 models now available on Amazon SageMaker JumpStart",
-      "description": "BM's granite-speech-4.1-2b, Kakao's kanana-2-30b-a3b-instruct, and the OpenFold Consortium's OpenFold3 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three models bring specialized capabilities spanning multilingual speech recognition, bilingual agentic AI, and biomolecular structure prediction, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure. These models address different enterprise AI challenges with specialized capabilities: granite-speech-4.1-2b is purpose-bui",
-      "descriptionHtml": "&lt;p&gt;BM's granite-speech-4.1-2b, Kakao's kanana-2-30b-a3b-instruct, and the OpenFold Consortium's OpenFold3 models are now available on Amazon SageMaker JumpStart, expanding the portfolio of foundation models available to AWS customers. These three models bring specialized capabilities spanning multilingual speech recognition, bilingual agentic AI, and biomolecular structure prediction, enabling customers to deploy high-performance, scalable AI solutions on AWS infrastructure.&lt;/p&gt;\n&lt;p&gt;These models address different enterprise AI challenges with specialized capabilities:&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;granite-speech-4.1-2b&lt;/b&gt; is purpose-built for &lt;b&gt;multilingual automatic speech recognition (ASR) and bidirectional speech translation (AST)&lt;/b&gt; across English, French, German, Spanish, Portuguese, and Japanese. This compact 2B-parameter speech-language model delivers a word error rate of 5.33% with a real-time factor of ~231, making it one of the most efficient ASR models in its class. Released under Apache 2.0, it integrates seamlessly into enterprise voice workflows for transcription, translation, and audio processing at scale.&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;kanana-2-30b-a3b-instruct&lt;/b&gt; excels in &lt;b&gt;bilingual Korean-English instruction following and agentic AI workflows&lt;/b&gt;. Developed by Kakao, it adopts a cutting-edge architecture featuring Multi-head Latent Attention (MLA) and Mixture-of-Experts (MoE), activating only 3B of its 30B total parameters per forward pass for superior throughput. Post-trained with supervised fine-tuning and reinforcement learning, it supports up to 128K tokens via YaRN scaling and is designed to function as an AI collaborator that understands context and acts proactively.&lt;/p&gt;\n&lt;p&gt;&lt;b&gt;OpenFold3&lt;/b&gt; provides &lt;b&gt;all-atom biomolecular complex structure prediction&lt;/b&gt; for proteins, DNA, RNA, and small-molecule ligands. Developed by the OpenFold Consortium and the AlQuraishi Lab at Columbia University, this diffusion-based model extends structure prediction beyond single proteins to model multi-chain complexes and heterogeneous biomolecular interactions. It supports computer-aided drug design and is applicable across academic and pharmaceutical research labs.&lt;/p&gt;\n&lt;p&gt;With SageMaker JumpStart, customers can deploy any of these models with just a few clicks to address their specific AI use cases.&lt;/p&gt;\n&lt;p&gt;To get started with these models, navigate to the SageMaker JumpStart model catalog in the SageMaker console or use the SageMaker Python SDK to deploy the models to your AWS account. For more information about deploying and using foundation models in SageMaker JumpStart, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html\"&gt;Amazon SageMaker JumpStart documentation&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/01/granite-speech-4.1-2b-edge-kanana-2-30b-a3b-instruct-openfold3-jumpstart/",
-      "publishedAt": "2026-09-14T17:30:00.000Z",
-      "updatedAt": "2026-09-14T17:30:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Sagemaker Jumpstart",
-        "Aiml"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon sagemaker jumpstart",
-        "aiml",
-        "sagemaker"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "19c29d32a1b7977a",
-      "title": "AWS Glue zero-ETL adds target table property ownership and conflict detection",
-      "description": "AWS Glue zero-ETL integrations now detect table property conflicts and track integration ownership. When you configure a source table and target catalog, Glue associates the resulting table properties with the owning integration, so two integrations can no longer be pointed at the same target table without your knowledge. This works across Amazon S3 Tables and SageMaker Lakehouse catalogs. Data teams running multiple zero-ETL integrations gain predictable control over where each source table lands. If you attempt to create or modify an integration whose table properties are owned by another in",
-      "descriptionHtml": "&lt;p&gt;AWS Glue zero-ETL integrations now detect table property conflicts and track integration ownership. When you configure a source table and target catalog, Glue associates the resulting table properties with the owning integration, so two integrations can no longer be pointed at the same target table without your knowledge. This works across Amazon S3 Tables and SageMaker Lakehouse catalogs.&lt;/p&gt;\n&lt;p&gt;Data teams running multiple zero-ETL integrations gain predictable control over where each source table lands. If you attempt to create or modify an integration whose table properties are owned by another integration, Glue identifies the owning integration and guides you to choose a different target or update the existing one, so your pipelines stay isolated and your data lands exactly where you intend.&lt;/p&gt;\n&lt;p&gt;This feature is available in all AWS Commercial and AWS GovCloud (US) Regions where AWS Glue zero-ETL integrations are supported.&lt;/p&gt;\n&lt;p&gt;To learn more, refer to the &lt;a href=\"https://docs.aws.amazon.com/glue/latest/dg/zero-etl-target.html\"&gt;AWS Glue Developer Guide&lt;/a&gt; and get started in the &lt;a href=\"https://console.aws.amazon.com/glue/\"&gt;AWS Glue console&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/glue-zero-etl-ownership-conflicts/",
-      "publishedAt": "2026-09-14T08:00:00.000Z",
-      "updatedAt": "2026-09-14T08:00:00.000Z",
-      "categories": [],
-      "services": [
-        "Glue"
-      ],
-      "tags": [
-        "glue"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "c8a4cb591530d013",
-      "title": "AWS End User Messaging now supports Dynamic Flows in WhatsApp",
-      "description": "AWS End User Messaging now supports dynamic WhatsApp flows so you can turn WhatsApp conversations into rich, interactive experiences that end-users complete directly in WhatsApp. Instead of pushing end-users to a website or a separate form to complete an interactive experience, you can instead guide them through an appointment booking, lead generation, sign-up, survey or a transaction directly in the chat. Customers can start building a flow using one of Meta's stater templates with familiar building blocks like text inputs, date pickers, drop downs, and buttons, or customize the flow from scr",
-      "descriptionHtml": "&lt;p&gt;AWS End User Messaging now supports dynamic WhatsApp flows so you can turn WhatsApp conversations into rich, interactive experiences that end-users complete directly in WhatsApp.\n &lt;br&gt;\n &lt;br&gt;\n Instead of pushing end-users to a website or a separate form to complete an interactive experience, you can instead guide them through an appointment booking, lead generation, sign-up, survey or a transaction directly in the chat. Customers can start building a flow using one of Meta's stater templates with familiar building blocks like text inputs, date pickers, drop downs, and buttons, or customize the flow from scratch. With dynamic flows, each screen can call your own HTTPS endpoint in real time, so you can show live availability, and personalize each step in the flow for your end-users.\n &lt;br&gt;\n &lt;br&gt;\n You build and manage flows entirely in AWS End User Messaging Social, through the console or APIs. Define a flow with a JSON schema, then deliver it with a message template to reach customers where they are.\n &lt;br&gt;\n &lt;br&gt;\n WhatsApp flows are available in all regions where End User Messaging Social is available. To get started, see the &lt;a href=\"https://docs.aws.amazon.com/social-messaging/latest/userguide/what-is-service.html\"&gt;User Guide.&lt;/a&gt;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-whatsapp-dynamic-flows",
-      "publishedAt": "2026-09-14T07:00:00.000Z",
-      "updatedAt": "2026-09-14T07:00:00.000Z",
-      "categories": [
-        "Business Productivity"
-      ],
-      "services": [],
-      "tags": [
-        "business productivity"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "51dde609fe26c7ba",
-      "title": "AWS End User Messaging strengthens SMS deliverability with automatic failover",
-      "description": "AWS End User Messaging is advancing its deliverability capabilities in phone pools. Now, customers sending through phone pools automatically benefit from automatic failover to the next best performing number in the pool when SMS delivery is impacted from downstream disruptions. SMS deliverability can be affected by drops or delays when trying to reach the end recipient while it's being routed from AWS to messaging providers and eventually mobile carriers. These disruptions can hit the most important parts of your messaging program, including delivery notifications, one-time passcodes, reminder",
-      "descriptionHtml": "&lt;p&gt;AWS End User Messaging is advancing its deliverability capabilities in phone pools. Now, customers sending through phone pools automatically benefit from automatic failover to the next best performing number in the pool when SMS delivery is impacted from downstream disruptions.\n &lt;br&gt;\n &lt;br&gt;\n SMS deliverability can be affected by drops or delays when trying to reach the end recipient while it's being routed from AWS to messaging providers and eventually mobile carriers. These disruptions can hit the most important parts of your messaging program, including delivery notifications, one-time passcodes, reminders, and other time-sensitive messages. AWS End User Messaging watches for delivery delays, message failures, or drops in conversion and reroutes traffic to a more optimized delivery path.\n &lt;br&gt;\n &lt;br&gt;\n Customers do not need to take any action to receive this benefit for phone pools. If you are not sending through phone pools today, you can create one by following these &lt;a href=\"https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-pool-create.html\"&gt;instructions&lt;/a&gt;. This capability is available in all AWS Regions where AWS End User Messaging is available.\n &lt;br&gt;\n &lt;br&gt;\n To learn more, see the AWS End User Messaging SMS &lt;a href=\"https://docs.aws.amazon.com/sms-voice/latest/userguide/what-is-sms-mms.html\"&gt;User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-improves-deliverability",
-      "publishedAt": "2026-09-14T07:00:00.000Z",
-      "updatedAt": "2026-09-14T07:00:00.000Z",
-      "categories": [
-        "Amazon Pinpoint",
-        "Business Productivity"
-      ],
-      "services": [
-        "Pinpoint"
-      ],
-      "tags": [
-        "amazon pinpoint",
-        "business productivity",
-        "pinpoint"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "ed901b7c4c2c001e",
-      "title": "AWS Elemental MediaLive enables frame-accurate pipeline locking for streams without timecode",
-      "description": "AWS Elemental MediaLive now supports Video Aligned Locking, a new feature to synchronize video pipelines without requiring timecode from the source. Previously, achieving frame-accurate locking across video outputs required investing in specialized hardware or managing complex, external synchronization workflows. While timecode is generally standard for highly produced, traditional broadcast content, it is often unavailable and difficult to manage in typical digital streaming workflows. The new capability uses visual signatures to automatically identify and align specific frames across multipl",
-      "descriptionHtml": "&lt;p&gt;AWS Elemental MediaLive now supports Video Aligned Locking, a new feature to synchronize video pipelines without requiring timecode from the source. Previously, achieving frame-accurate locking across video outputs required investing in specialized hardware or managing complex, external synchronization workflows. While timecode is generally standard for highly produced, traditional broadcast content, it is often unavailable and difficult to manage in typical digital streaming workflows. The new capability uses visual signatures to automatically identify and align specific frames across multiple video streams, enabling customers to achieve frame-accurate input switching across standard pipeline channels, as well as linked, cross-region single-pipeline channels.&lt;/p&gt;\n&lt;p&gt;Video Aligned Locking supports outputs including HLS, MediaPackage, CMAF Ingest, UDP and SRT. To learn more about how to configure this feature, visit the &lt;a href=\"https://docs.aws.amazon.com/medialive/latest/ug/pipeline-locking-verify-input.html#pipeline-locking-video-alignment-inputs\"&gt;Requirements for Video Aligned Locking&lt;/a&gt; documentation. For a deeper dive into channel synchronization, visit the guide on &lt;a href=\"https://docs.aws.amazon.com/medialive/latest/ug/pipeline-lock.html\"&gt;Implementing Pipeline Locking&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/medialive-pipeline-locking/",
-      "publishedAt": "2026-09-12T08:00:00.000Z",
-      "updatedAt": "2026-09-12T08:00:00.000Z",
-      "categories": [
-        "AWS Elemental Medialive",
-        "Media Services"
-      ],
-      "services": [
-        "Elemental",
-        "MediaLive"
-      ],
-      "tags": [
-        "aws elemental medialive",
-        "media services",
-        "elemental",
-        "medialive"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "a60364c6fd05dba8",
-      "title": "Amazon EC2 X2idn instances are now available in Asia Pacific (Hong Kong)",
-      "description": "Memory-optimized Amazon Elastic Compute Cloud (Amazon EC2) X2idn instances are now available in Asia Pacific (Hong Kong) Region. These instances, powered by 3rd generation Intel Xeon Scalable Processors and built with AWS Nitro System, are designed for memory-intensive workloads and deliver improvements in performance compared to previous generation X1 instances. These instances are SAP-certified for running Business Suite on HANA, SAP S/4HANA, Data Mart Solutions on HANA, Business Warehouse on HANA, SAP BW/4HANA, and SAP NetWeaver workloads on any database.",
-      "descriptionHtml": "&lt;p&gt;Memory-optimized Amazon Elastic Compute Cloud (Amazon EC2) X2idn instances are now available in Asia Pacific (Hong Kong) Region. These instances, powered by 3rd generation Intel Xeon Scalable Processors and built with AWS Nitro System, are designed for memory-intensive workloads and deliver improvements in performance compared to previous generation X1 instances. These instances are SAP-certified for running Business Suite on HANA, SAP S/4HANA, Data Mart Solutions on HANA, Business Warehouse on HANA, SAP BW/4HANA, and SAP NetWeaver workloads on any database.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-x2idn-asia-pacific-hong-kong/",
-      "publishedAt": "2026-09-11T18:35:00.000Z",
-      "updatedAt": "2026-09-11T18:35:00.000Z",
-      "categories": [
-        "Amazon Ec2",
-        "Compute"
-      ],
-      "services": [
-        "EC2"
-      ],
-      "tags": [
-        "amazon ec2",
-        "compute",
-        "ec2"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "da4cc670b70a2f5c",
-      "title": "Amazon SageMaker HyperPod now supports model caching for faster inference autoscaling and reduced cold starts",
-      "description": "Amazon SageMaker HyperPod now supports model caching, an inference optimization that pre-loads model weights and container images onto cluster nodes so pods start in seconds instead of minutes. When running LLM inference at scale for workloads like chat assistants, agentic pipelines, RAG, and document analysis, cold start is a real bottleneck. Deployments and scale-out events spend most of their time downloading container images and model weights. As model size increases, this gets worse, with large models taking tens of minutes before they can serve traffic. Model caching solves this with two",
-      "descriptionHtml": "&lt;p&gt;Amazon SageMaker HyperPod now supports model caching, an inference optimization that pre-loads model weights and container images onto cluster nodes so pods start in seconds instead of minutes.&lt;/p&gt;\n&lt;p&gt;When running LLM inference at scale for workloads like chat assistants, agentic pipelines, RAG, and document analysis, cold start is a real bottleneck. Deployments and scale-out events spend most of their time downloading container images and model weights. As model size increases, this gets worse, with large models taking tens of minutes before they can serve traffic.&lt;/p&gt;\n&lt;p&gt;Model caching solves this with two independent capabilities. The weights cache stores model weights on local NVMe so pods read from fast local storage instead of pulling from S3 or FSx over the network. The image cache pre-pulls the container image so pods skip the ECR download entirely. If a pod lands on a node without a warm cache, it falls back to pulling from the original source automatically, so there is no risk of pods getting stuck or failing.&lt;/p&gt;\n&lt;p&gt;Benchmarks across models from 57 GB to 145 GB show around 60% faster scale-out, and the image cache cuts over two minutes of image-pull time (97% reduction). The benefit grows with model size while retaining the reliability of the original source path.&lt;/p&gt;\n&lt;p&gt;Customers enable model caching through the HyperPod Inference Operator by adding a modelCacheConfig section to their InferenceEndpointConfig or JumpStartModel resource. The operator handles the full lifecycle with no manual setup or cleanup.&lt;/p&gt;\n&lt;p&gt;Model caching is now generally available in all regions where SageMaker HyperPod is available. To get started, see the &lt;a href=\"https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-model-deployment-model-caching.html\"&gt;SageMaker HyperPod documentation&lt;/a&gt;.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/09/sgm-hyperpod-model-caching-inf/",
-      "publishedAt": "2026-09-11T18:25:00.000Z",
-      "updatedAt": "2026-09-11T18:25:00.000Z",
-      "categories": [
-        "Artificial Intelligence",
-        "Amazon Sagemaker"
-      ],
-      "services": [
-        "SageMaker"
-      ],
-      "tags": [
-        "artificial intelligence",
-        "amazon sagemaker",
-        "sagemaker"
       ],
       "isNew": false
     }
