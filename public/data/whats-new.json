@@ -1,7 +1,29 @@
 {
-  "lastUpdated": "2026-11-26T18:10:08.980Z",
+  "lastUpdated": "2026-11-27T17:53:36.366Z",
   "itemCount": 500,
   "items": [
+    {
+      "id": "4dfca2852e3109a6",
+      "title": "Amazon RDS for PostgreSQL supports minor versions 18.7, 17.12, 16.16, 15.20, and 14.25",
+      "description": "Amazon Relational Database Service (RDS) for PostgreSQL now supports the latest minor versions 18.7, 17.12, 16.16, 15.20, and 14.25. We recommend that you upgrade to the latest minor versions to address Common Vulnerabilities and Exposures (CVEs) in prior versions of PostgreSQL, and to benefit from the bug fixes and improvements added by the PostgreSQL community. You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable automatic minor version upgrades and use the AWS Organizations Upgrade Rollout Policy ",
+      "descriptionHtml": "&lt;p&gt;&lt;a href=\"https://aws.amazon.com/rds/postgresql/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon Relational Database Service (RDS) for PostgreSQL&lt;/a&gt; now supports the latest minor versions 18.7, 17.12, 16.16, 15.20, and 14.25. We recommend that you upgrade to the latest minor versions to address Common Vulnerabilities and Exposures (CVEs) in prior versions of PostgreSQL, and to benefit from the bug fixes and improvements added by the PostgreSQL community.&lt;/p&gt; \n&lt;p&gt;You can upgrade your databases during scheduled maintenance windows using automatic minor version upgrades. To simplify operations at scale, enable automatic minor version upgrades and use the AWS Organizations &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/RDS.Maintenance.AMVU.UpgradeRollout.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Upgrade Rollout Policy&lt;/a&gt; to orchestrate multiple upgrades in phases, validating on lower-priority environments before upgrading your most critical ones. You can also use Amazon RDS Blue/Green deployments to minimize downtime for minor version upgrades. For more information, see &lt;a href=\"https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.PostgreSQL.html\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Upgrading RDS for PostgreSQL DB engine&lt;/a&gt;.&lt;/p&gt; \n&lt;p&gt;Amazon RDS for PostgreSQL makes it simple to set up, operate, and scale PostgreSQL deployments in the cloud. See &lt;a href=\"https://aws.amazon.com/rds/postgresql/pricing/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS for PostgreSQL Pricing&lt;/a&gt; for pricing details and regional availability. Create or update a fully managed Amazon RDS database in the &lt;a href=\"https://console.aws.amazon.com/rds/\" target=\"_blank\" rel=\"noopener noreferrer\"&gt;Amazon RDS Management Console&lt;/a&gt; or by using the AWS Command Line Interface (CLI).&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-postgresql-18-7-17-12-16-16-15-20-14-25/",
+      "publishedAt": "2026-11-26T17:00:00.000Z",
+      "updatedAt": "2026-11-26T17:00:00.000Z",
+      "categories": [
+        "Amazon Rds",
+        "Databases"
+      ],
+      "services": [
+        "RDS"
+      ],
+      "tags": [
+        "amazon rds",
+        "databases",
+        "rds"
+      ],
+      "isNew": true
+    },
     {
       "id": "388c2a2ab8d290ea",
       "title": "AWS Lambda now supports orchestrating MicroVMs with Lambda durable functions",
@@ -372,6 +394,28 @@
         "business productivity",
         "aws govcloud us",
         "connect"
+      ],
+      "isNew": true
+    },
+    {
+      "id": "78b8e42ab6c04fd6",
+      "title": "Amazon OpenSearch Service new engine now joins logs, traces, and metadata",
+      "description": "Amazon OpenSearch Service now supports distributed joins, high-cardinality aggregations, and OpenSearch query DSL on the new engine. Observability data often spans logs, traces, service metadata, deployment records, and tenant data. Engineers and their AI agents must connect these datasets to determine what failed, where it failed, and who was affected. With Piped Processing Language (PPL) or SQL, engineers and agents can query multiple petabytes of data to connect an error log to its trace, and enrich telemetry with service ownership or deployment metadata, in one query. High-cardinality aggr",
+      "descriptionHtml": "&lt;p&gt;Amazon OpenSearch Service now supports distributed joins, high-cardinality aggregations, and OpenSearch query DSL on the new engine. Observability data often spans logs, traces, service metadata, deployment records, and tenant data. Engineers and their AI agents must connect these datasets to determine what failed, where it failed, and who was affected.&lt;/p&gt; \n&lt;p&gt;With Piped Processing Language (PPL) or SQL, engineers and agents can query multiple petabytes of data to connect an error log to its trace, and enrich telemetry with service ownership or deployment metadata, in one query. High-cardinality aggregations measure incident impact across millions of distinct hosts, users, or tenants. The new engine spreads aggregations and joins across data nodes, so you don't need to copy related data into a single index first. With routing key support, you can keep related documents on the same shard, so lookups and joins on that key stay fast.&lt;/p&gt; \n&lt;p&gt;In addition to PPL and SQL, the new engine now supports OpenSearch query DSL. You get the engine's cost savings and performance improvements for supported analytics workloads without rewriting queries in PPL or SQL. Applications, alerts, and integrations that send query DSL keep working.&lt;/p&gt; \n&lt;p&gt;These features are available on OpenSearch 3.9, at no additional charge, in the following AWS Regions: US East (N. Virginia), US East (Ohio), US West (Oregon), Canada (Central), Asia Pacific (Mumbai), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo), Europe (Frankfurt), Europe (Ireland), Europe (London), and Europe (Spain). To get started, create or upgrade a domain to OpenSearch 3.9 with the new engine. To learn more, see the &lt;a href=\"https://docs.aws.amazon.com/opensearch-service/latest/developerguide/optimized-log-analytics-queries.html\"&gt;documentation&lt;/a&gt;.&lt;/p&gt;",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-distributed-joins",
+      "publishedAt": "2026-11-24T17:00:00.000Z",
+      "updatedAt": "2026-11-24T17:00:00.000Z",
+      "categories": [
+        "Analytics",
+        "Amazon Opensearch Service"
+      ],
+      "services": [
+        "OpenSearch"
+      ],
+      "tags": [
+        "analytics",
+        "amazon opensearch service",
+        "opensearch"
       ],
       "isNew": true
     },
@@ -2073,7 +2117,7 @@
         "aws cloudformation stacksets",
         "cloudformation"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "33f9b4d6cc8dbc16",
@@ -2093,7 +2137,7 @@
         "application services",
         "eventbridge"
       ],
-      "isNew": true
+      "isNew": false
     },
     {
       "id": "ff730bb9ceaf273b",
@@ -10958,49 +11002,6 @@
         "networking",
         "containers",
         "eks"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "cc1c24c0de2e935d",
-      "title": "AWS Backup adds restore testing support for Amazon Redshift",
-      "description": "AWS Backup restore testing now supports Amazon Redshift. Restore testing helps you automate and periodically run restore tests of your backups, so you can confirm that your Amazon Redshift backups restore successfully and measure how long the restores take. You can now include Amazon Redshift in your restore testing plans alongside other supported AWS resources across storage, compute, and database services. Restore testing plans automatically select recovery points, run restores on a schedule, and measure restore job completion time against your recovery time objectives (RTO). This helps you ",
-      "descriptionHtml": "&lt;p&gt;AWS Backup restore testing now supports Amazon Redshift. Restore testing helps you automate and periodically run restore tests of your backups, so you can confirm that your Amazon Redshift backups restore successfully and measure how long the restores take.&lt;/p&gt; \n&lt;p&gt;You can now include Amazon Redshift in your restore testing plans alongside other supported AWS resources across storage, compute, and database services. Restore testing plans automatically select recovery points, run restores on a schedule, and measure restore job completion time against your recovery time objectives (RTO). This helps you evaluate recovery readiness and meet regulatory and compliance requirements for disaster recovery and business continuity.&lt;/p&gt; \n&lt;p&gt;To get started, create a restore testing plan and assign your Amazon Redshift resources by Amazon Resource Name (ARN) or tag. Choose whether each test restores the latest or a random eligible recovery point. Optionally, use restore testing validation to confirm the restored resource before AWS Backup deletes the test resources.&lt;/p&gt; \n&lt;p&gt;This support is available in all AWS Regions where both restore testing and Amazon Redshift are supported by AWS Backup. You can use the AWS Backup console, AWS Command Line Interface (CLI), or AWS SDKs. For a complete list of supported Regions and features, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-feature-availability.html#features-by-region\" target=\"_blank\"&gt;AWS Backup documentation&lt;/a&gt;. To learn more about restore testing, visit the &lt;a href=\"https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-testing.html\" target=\"_blank\"&gt;product page&lt;/a&gt; and &lt;a href=\"https://aws.amazon.com/backup/pricing/\" target=\"_blank\"&gt;pricing page&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-adds-redshift-restore-testing/",
-      "publishedAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z",
-      "categories": [
-        "Storage",
-        "Amazon Redshift",
-        "AWS Backup"
-      ],
-      "services": [
-        "Backup",
-        "Redshift"
-      ],
-      "tags": [
-        "storage",
-        "amazon redshift",
-        "aws backup",
-        "backup",
-        "redshift"
-      ],
-      "isNew": false
-    },
-    {
-      "id": "f11899420a6211ae",
-      "title": "Announcing the AWS Marketplace and Amazon Business unified storefront",
-      "description": "Today, AWS Marketplace and Amazon Business announced the unified storefront. Organizations can now give their teams one curated catalog that puts software, data, and AI tools from AWS Marketplace alongside physical goods and supplies from Amazon Business. Many enterprises already buy from both, but they manage two catalogs with duplicated approval rules and separate reporting. The unified storefront can now give procurement teams one front door for both. Built on AWS Marketplace Storefront, the unified storefront lets administrators connect their organization's Amazon Business account and impo",
-      "descriptionHtml": "&lt;p&gt;Today, AWS Marketplace and Amazon Business announced the unified storefront. Organizations can now give their teams one curated catalog that puts software, data, and AI tools from AWS Marketplace alongside physical goods and supplies from Amazon Business. Many enterprises already buy from both, but they manage two catalogs with duplicated approval rules and separate reporting. The unified storefront can now give procurement teams one front door for both.&lt;/p&gt;\n&lt;p&gt;Built on AWS Marketplace Storefront, the unified storefront lets administrators connect their organization's Amazon Business account and import Amazon Business products into their branded storefront. Administrators set governance rules once, and they apply across both catalogs. Buyers can browse AWS Marketplace listings and Amazon Business products in one place. Purchases of AWS Marketplace listings complete directly in the storefront and appear on the customer's AWS invoice. When a buyer selects an Amazon Business product, single sign-on takes them to an authenticated Amazon Business cart, so they don't need a second login. Each storefront connects only to the accounts its administrator sets up.&lt;/p&gt;\n&lt;p&gt;The Amazon Business connector is available in all AWS Regions where AWS Marketplace operates to AWS Marketplace Storefront customers who have access to both the AWS Marketplace and Amazon Business APIs.&lt;/p&gt;\n&lt;p&gt;To learn more, visit the &lt;a href=\"https://aws.amazon.com/marketplace/partners/storefront\"&gt;AWS Marketplace Storefront product page&lt;/a&gt; and the &lt;a href=\"https://docs.aws.amazon.com/marketplace/latest/storefrontguide/what-is-marketplace-storefront.html\"&gt;AWS Marketplace Storefront User Guide&lt;/a&gt;.&lt;/p&gt;",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/marketplace-business-storefront/",
-      "publishedAt": "2026-10-28T08:00:00.000Z",
-      "updatedAt": "2026-10-28T08:00:00.000Z",
-      "categories": [
-        "AWS Marketplace"
-      ],
-      "services": [],
-      "tags": [
-        "aws marketplace"
       ],
       "isNew": false
     }
